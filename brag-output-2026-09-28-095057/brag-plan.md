@@ -12,7 +12,7 @@ When your kid is bored, don't hand over a smartphone. Hand them Cheeko and a sta
 |---|---|---|
 | 0.0–3.0 | **The problem** | The site's own photo of a kid glued to a phone (desaturated). **"Kid bored?"**, then a red ✕ stamps onto the phone with a shake: **"Skip the phone."** |
 | 3.0–5.5 | **The swap** | A sun-yellow wipe. The device pops in and a stack of real cards fans out behind it. Pill "Instead" + **"Hand them Cheeko."** |
-| 5.5–13.0 | **Insert a card…** (three rounds, each landing on the beat) | Storytime Adventures drops into the slot, the story world blooms out of the device, and confetti bursts: **"…a story plays."** Then Play & Sing Along ("**…a rhyme starts.**") and Floor is Lava ("**…a game begins.**"). Each old card pops back out and flies away. |
+| 5.5–13.0 | **Insert a card…** (three rounds, each landing on the beat) | Storytime Adventures drops into the slot. The screen switches from the Talk home menu to the card's story scene (as in the site's photo of a Rhymes card playing), then the story world blooms out of the device, and confetti bursts: **"…a story plays."** Then Play & Sing Along ("**…a rhyme starts.**") and Floor is Lava ("**…a game begins.**"). Each old card pops back out and flies away. |
 | 13.0–16.0 | **Proof** | **"Insert. Play. Repeat."** (site copy) with three real photos from the shoot: a boy inserting a card, a girl dancing, a girl giggling. "Real device. Real kids." |
 | 16.0–22.5 | **Outro** | Logo, device, cards and confetti. **Less screen, more childhood.** "₹5,999 · Device + 10 cards · Free delivery across India", then **cheekoai.in**. |
 
