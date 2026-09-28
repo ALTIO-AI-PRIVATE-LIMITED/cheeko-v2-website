@@ -1,6 +1,6 @@
 import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
 import { spawn } from 'child_process';
-const FF = process.argv[2], FPS = 30, DUR = 22.5, N = Math.round(FPS * DUR);
+const FF = process.argv[2], FPS = 30, DUR = 22.0, N = Math.round(FPS * DUR);
 const ff = spawn(FF, ['-y','-loglevel','error','-f','image2pipe','-framerate',String(FPS),'-c:v','mjpeg','-i','-',
   '-i','music-final.wav','-c:v','libx264','-preset','slow','-crf','17','-pix_fmt','yuv420p','-profile:v','high',
   '-c:a','aac','-b:a','192k','-shortest','-movflags','+faststart','raw.mp4'], { stdio: ['pipe','inherit','inherit'] });
