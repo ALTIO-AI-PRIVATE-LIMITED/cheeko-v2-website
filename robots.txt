@@ -1,0 +1,11 @@
+# cheekoai.in: open to search engines, ChatGPT search and ChatGPT ad review
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: OAI-AdsBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.cheekoai.in/sitemap.xml
