@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800;900&family=Hanken+Grotesk:wght@600;800&display=block">
+<style>
+:root{--brand:#F0521D;--sun:#FFC81A;--ink:#231A10;--red:#E5341B;--disp:"Gabarito",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#000}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden}
+#cam{position:absolute;inset:0;transform-origin:0 0}
+.abs{position:absolute}
+.st{position:absolute;display:block;transform-origin:50% 100%;filter:url(#stk)}
+/* party world: warm sunburst with halftone */
+#bg{position:absolute;inset:-200px;background:repeating-conic-gradient(from 0deg at 50% 45%,#FFC7A1 0 8deg,#FFB48C 8deg 16deg)}
+#bg::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(240,82,29,.12) 3.4px,transparent 4px) 0 0/38px 38px}
+#floor{position:absolute;left:-200px;right:-200px;top:900px;height:400px;background:#F59E6B;border-top:10px solid var(--ink);border-radius:50% 50% 0 0/70px 70px 0 0}
+.bunt{position:absolute;left:-30px;right:-30px;top:0;height:170px}
+.bunt svg{width:100%;height:100%}
+.bub{position:absolute;background:#fff;border:7px solid var(--ink);border-radius:52px;padding:22px 42px 26px;font:900 56px/1.12 var(--disp);color:var(--ink);transform-origin:20% 100%;max-width:640px}
+.bub svg{position:absolute;top:calc(100% - 7px)}
+.chip{position:absolute;border:7px solid var(--ink);border-radius:99px;padding:10px 32px 14px;font:900 50px var(--disp);color:#fff;white-space:nowrap;transform-origin:50% 50%}
+.conf{position:absolute;left:0;top:0;width:24px;height:15px;border-radius:3px;opacity:0}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <filter id="stk" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
+  <feComponentTransfer in="SourceAlpha" result="a"><feFuncA type="discrete" tableValues="0 1 1 1 1 1 1 1"/></feComponentTransfer>
+  <feMorphology in="a" operator="dilate" radius="12" result="d"/>
+  <feFlood flood-color="#ffffff"/><feComposite in2="d" operator="in" result="border"/>
+  <feGaussianBlur in="d" stdDeviation="9"/><feOffset dx="6" dy="14" result="o"/>
+  <feFlood flood-color="#231A10" flood-opacity=".28"/><feComposite in2="o" operator="in" result="shadow"/>
+  <feMerge><feMergeNode in="shadow"/><feMergeNode in="border"/><feMergeNode in="SourceGraphic"/></feMerge>
+ </filter>
+</defs></svg>
+<div id="stage"><div id="cam">
+ <div id="bg"></div>
+ <div id="floor"></div>
+ <div class="bunt" id="bunt"></div>
+ <div class="abs" id="confhost" style="inset:0"></div>
+ <img class="st" id="balloons" src="stickers/balloons.png" style="left:90px;top:170px;height:600px">
+ <img class="st" id="balloons2" src="stickers/balloons.png" style="left:1660px;top:120px;height:470px">
+ <img class="st" id="rohan" src="stickers/rohan-cheer-hat.png" style="left:560px;top:190px;height:790px">
+ <img class="st" id="rohan2" src="stickers/rohan-confused-hat.png" style="left:560px;top:200px;height:780px">
+ <img class="st" id="cake" src="stickers/cake.png" style="left:330px;top:560px;height:470px">
+ <img class="st" id="tara" src="stickers/tara-filming.png" style="left:1180px;top:210px;height:790px">
+ <div class="chip" id="rec" style="left:1560px;top:890px;background:var(--red)">● REC</div>
+ <div class="chip" id="norec" style="left:1440px;top:890px;background:#7A6E5D">✕ Not recorded</div>
+ <div class="bub" id="b-tara" style="left:1080px;top:40px">Do the reaction again. It didn't record.<svg width="80" height="70" viewBox="0 0 80 70" style="left:170px"><path d="M8 0 L28 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+ <div class="bub" id="b-rohan" style="left:170px;top:90px">I have to be happy again?<svg width="80" height="70" viewBox="0 0 80 70" style="left:430px"><path d="M8 0 L50 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+</div></div>
+<script>
+const $ = id => document.getElementById(id);
+const clamp = (x,a=0,b=1) => Math.min(b, Math.max(a, x));
+const prog = (t,a,b) => clamp((t-a)/(b-a));
+const eOut = x => 1 - Math.pow(1-x, 3);
+const eInOut = x => x < .5 ? 4*x*x*x : 1 - Math.pow(-2*x+2, 3)/2;
+const eBack = x => { const c=2.0, d=c+1; return 1 + d*Math.pow(x-1,3) + c*Math.pow(x-1,2); };
+const lerp = (a,b,x) => a + (b-a)*x;
+const rnd = x => { const s = Math.sin(x*12.9898)*43758.5453; return s - Math.floor(s); };
+const boil = (t, i, amt=.8) => (rnd(Math.floor(t*8)*31 + i*97) - .5) * amt;
+
+const LIP = {"6": {"dur": 2.261, "env": [0.01, 0.63, 0.26, 0.43, 1, 1, 0.93, 0.38, 0.94, 0.76, 0.61, 0.79, 0.81, 0.87, 0.82, 0.7, 0.5, 0.2, 0.13, 0.17, 0.21, 0.51, 0.82, 0.66, 0.53, 0.2, 0.22, 0.43, 0.32, 0.25, 0.22, 0.21, 0.19, 0.09, 0.02, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.71, 0.52, 0.06, 0.19, 0.64, 0.67, 0.46, 1, 0.74, 0.15, 0.4, 0.67, 0.36, 0.0, 0.18, 0.11, 0.66, 0.83, 0.65, 0.48, 0.35, 0.23, 0.09, 0.02]}, "7": {"dur": 1.66, "env": [0.03, 0.79, 0.83, 0.73, 0.46, 0.15, 0.09, 0.13, 0.56, 1, 0.73, 0.19, 0.07, 0.05, 0.01, 0.23, 0.29, 0.33, 0.2, 0.44, 0.61, 0.48, 0.25, 0.09, 0.13, 0.12, 0.62, 0.92, 0.9, 0.78, 0.05, 0.01, 0.17, 0.35, 0.38, 0.95, 1, 0.69, 0.21, 0.08, 0.41, 0.5, 0.37, 0.35, 0.27, 0.2, 0.29, 0.16, 0.02]}};
+const LINES = [{ el: 'tara', t0: 1.8, id: 6 }, { el: 'rohan2', t0: 4.7, id: 7 }];
+const lvl = (el, t) => { for (const L of LINES) if (L.el === el) { const k = Math.floor((t - L.t0)*30), e = LIP[L.id].env; if (k >= 0 && k < e.length) return e[k]; } return 0; };
+
+// pop in with a bounce + hand-made boil + talk wobble while the voice is loud
+function stick(el, t, t0, i, o={}) {
+  const p = prog(t, t0, t0 + (o.dur ?? .4)); el.style.opacity = t < t0 ? 0 : clamp(p*4) * (o.alpha ?? 1);
+  const talk = lvl(el.id, t);
+  el.style.transform = `translate(${o.dx||0}px,${o.dy||0}px) rotate(${(o.rot||0) + boil(t, i, o.amt ?? .8) + Math.sin(t*22)*1.4*talk}deg) scale(${lerp(o.from ?? .3, 1, eBack(p)) * (1 - .015*talk)}, ${lerp(o.from ?? .3, 1, eBack(p)) * (1 + .04*talk)})`;
+}
+// bunting
+{ const n = 16, w = 1980 / n; let s = '<svg viewBox="0 0 1980 170" preserveAspectRatio="none"><path d="M0 22 Q990 80 1980 22" stroke="#231A10" stroke-width="6" fill="none"/>';
+  const C = ['#F0521D','#FFC81A','#6C3DFF','#2F9E5B','#FF7AA8','#3D8BFF'];
+  for (let k = 0; k < n; k++) { const x = k*w + 8, y = 22 + 58*Math.sin(Math.PI*(k+.5)/n)*.9; s += `<path d="M${x} ${y} L${x+w-16} ${y} L${x+(w-16)/2} ${y+100}Z" fill="${C[k%C.length]}" stroke="#231A10" stroke-width="5" stroke-linejoin="round"/>`; }
+  $('bunt').innerHTML = s + '</svg>'; }
+// confetti burst when Rohan pops up
+const COL = ['#F0521D','#FFC81A','#6C3DFF','#2F9E5B','#FF7AA8','#3D8BFF','#FFFFFF'];
+const conf = []; { let r = 7; const R = () => (r = (r*16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < 90; i++) { const d = document.createElement('div'); d.className = 'conf'; d.style.background = COL[i % COL.length]; $('confhost').appendChild(d);
+    const a = -Math.PI/2 + (R()-.5)*2.6, v = 900 + R()*1300; conf.push({ d, vx: Math.cos(a)*v, vy: Math.sin(a)*v, spin: (R()-.5)*1400, w: .6 + R()*.9 }); } }
+
+window.render = function(t) {
+  $('bunt').style.transform = `translateY(${lerp(-200, 0, eBack(prog(t, 0, .5)))}px)`;
+  stick($('balloons'), t, .15, 1, { rot: -4, dy: Math.sin(t*2)*12 });
+  stick($('balloons2'), t, .3, 2, { rot: 5, dy: Math.sin(t*2+1)*12 });
+  // Rohan: party bounce, freezes when Tara stops everyone, then his smile fades
+  // a clean sticker swap (no double exposure): the smile drops in one beat with a small squash
+  const party = t < 1.9, swapped = t >= 4.45;
+  $('rohan').style.display = swapped ? 'none' : ''; $('rohan2').style.display = swapped ? '' : 'none';
+  if (!swapped) stick($('rohan'), t, .35, 3, { dy: party ? -Math.abs(Math.sin(t*6))*26 : 0 });
+  else stick($('rohan2'), t, 4.45, 4, { from: .9, dur: .25, amt: .5 });
+  stick($('cake'), t, .5, 5, { rot: 2 });
+  // Tara slides in, phone up
+  const tin = eOut(prog(t, 1.15, 1.6));
+  stick($('tara'), t, 1.15, 6, { dx: lerp(700, 0, tin), from: 1, dur: .01, rot: lerp(12, -2, tin) });
+  // REC -> Not recorded
+  const recOn = t >= 1.6 && t < 3.25, noOn = t >= 3.25 && t < 7.0;
+  $('rec').style.opacity = recOn ? (Math.floor(t*3) % 2 ? 1 : .55) : 0; $('rec').style.transform = `scale(${lerp(.3, 1, eBack(prog(t, 1.6, 1.9)))})`;
+  $('norec').style.opacity = noOn ? 1 : 0; $('norec').style.transform = `scale(${lerp(.3, 1, eBack(prog(t, 3.25, 3.55)))}) rotate(-3deg)`;
+  // speech bubbles
+  const bt = prog(t, 1.75, 2.05) * (1 - prog(t, 4.25, 4.45)), br = prog(t, 4.65, 4.95);
+  $('b-tara').style.opacity = bt > 0 ? 1 : 0; $('b-tara').style.transform = `scale(${lerp(.3, 1, eBack(clamp(bt)))}) rotate(-2deg)`;
+  $('b-rohan').style.opacity = br > 0 ? 1 : 0; $('b-rohan').style.transform = `scale(${lerp(.3, 1, eBack(br))}) rotate(2deg)`;
+  // confetti
+  const dt = t - .4;
+  for (const p of conf) { if (dt < 0 || dt > 2.6) { p.d.style.opacity = 0; continue; }
+    const drag = (1 - Math.exp(-dt*1.6))/1.6; p.d.style.opacity = clamp((2.6 - dt)/.5);
+    p.d.style.transform = `translate(${760 + p.vx*drag}px,${560 + p.vy*drag + 520*dt*dt}px) rotate(${p.spin*dt}deg) scale(${p.w},${Math.cos(dt*9 + p.spin)})`; }
+  // the party loses its colour when Rohan's smile fades; camera pushes in on him
+  const q = eInOut(prog(t, 4.4, 5.4));
+  for (const id of ['bg','bunt','balloons','balloons2','cake','tara','floor']) $(id).style.filter = (id.startsWith('b') && id !== 'bg' && id !== 'bunt' || id === 'cake' || id === 'tara' ? 'url(#stk) ' : '') + `saturate(${1 - .65*q}) brightness(${1 - .06*q})`;
+  const push = eInOut(prog(t, 4.6, 7.2)), z = lerp(1, 1.45, push), cx = lerp(960, 760, push), cy = lerp(540, 470, push);
+  $('cam').style.transform = `translate(960px,540px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+};
+window.ready = (async () => { await document.fonts.ready; await Promise.all([...document.images].map(i => i.decode().catch(()=>{}))); await document.fonts.load('900 60px Gabarito'); window.render(0); return true; })();
+</script>
+</body></html>

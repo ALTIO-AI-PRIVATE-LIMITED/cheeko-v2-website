@@ -1,0 +1,26 @@
+---
+name: feedback-video-style
+description: Ravi wants Cheeko videos written as viral Instagram Reels — fun, high-energy voice and script — not slow emotional brand films
+metadata:
+  type: feedback
+---
+
+On 2026-09-28 Ravi rejected the first manifesto video (37.5s, calm Sarvam "kavya" narrator, site manifesto lines): "voice not good… voice need more fun and energy and script is also boring… we need a script which works for insta reels to go viral". He also caught the same girl appearing twice in one collage (hero-kid-joy.jpg and kid-joy.jpg are the same shoot/pose).
+
+**Why:** the videos are for Instagram Reels; slow reflective narration and site-copy recitation don't stop the scroll.
+
+**How to apply:** hook in the first second, reel-native formats (POV, "things my kid does instead of scrolling", relatable Indian-parent moments, Hinglish is fair game), fast cuts, word-synced captions, energetic/playful VO, a loopable ending, ~15–25s. Site facts still must be true, but the script can be written freshly rather than quoting the site. Check every photo set for duplicates of the same child/pose. See [[cheeko-marketing-videos]].
+
+2026-09-28, second round: Ravi flagged (from his phone) a blank dark device screen held for ~1s, and screen overlays whose corners poked past the bezel "in a lot of places". Fixed with a measured screen mask (assets/img/device_live_screen_mask.png, inlined as data: URI — Chromium blocks file:// masks and hides the element). Never show the device with an empty screen; check screen overlays in close-up stills.
+
+2026-09-28, third round: Ravi said the VO "doesn't have any expressions and emotions". Cause: MiniMax takes ONE `emotion` per request, and I voiced whole scripts in one take with emotion=happy. Fixes: (a) MiniMax line by line, a different emotion per line (happy/surprised/calm/fluent… + (laughs)/(gasps) sound tags), joined with short gaps; (b) Qwen-Audio 3.0 (qwen-audio-3.0-tts-plus via the dev lab's `tts_test.qwen_tts`, key QWEN_API_KEY) which takes inline tags — only these work: excited, amazed, curious, mischievously, serious, whispers, sad, … and sounds giggles, laughing, gasp, sighing (unknown [tags] are READ ALOUD). Qwen English voices: loongnorahu (Lively & Spirited), loonglunawang, loongolivialin, … Always verify with Sarvam STT that no tag was spoken. On the dev box never join audio with `apad` without a duration (it wrote 2.5 GB of silence) — join locally.
+
+**Voice decision (Ravi, 2026-09-28):** MiniMax `English_Upbeat_Woman`, one clip per line with its own emotion (he liked `minimax_perline_English_Upbeat_Woman`). V03–V05 re-voiced that way: lines in `marketing/tools/vo_lines.json` (emotion, text, old start, gap), `build_vo.py <clips dir>` builds vo-tight.wav + work/warp.json, and compose.html/synth.py follow the voice through a piecewise time-warp (groove keeps steady tempo). Split any line where a visual lands on a word into its own clip. Upbeat Woman is slower: Reels became 31–37s.
+
+**Hindi versions (2026-09-28):** Ravi asked for Qwen multilingual; it garbled Hindi (Sarvam hi-IN STT) and ran 42s vs 28s, so rejected. He chose MiniMax `hindi_male_1_v2` (Trustworthy Advisor, language_boost Hindi). Hindi videos are copies `<dir>-hi` built by `marketing/tools/make_hindi.py` (Devanagari font fallback, captions from vo_lines_hi.json in the English caption windows, translated stamps/outro; device screens + the child's Imagine wish stay English). Write Cheeko as चीको for TTS (Latin "Cheeko" in captions). Drive: V03-HI / V04-HI / V05-HI.
+
+**No AI tells (Ravi, 2026-09-28, strongly):** never use em dashes (—), "…" or curly quotes in anything people read or hear: voice text, captions, on-screen text, Instagram captions, docs, and my own chat replies. "People hate it, it looks AI generated." Use commas/full stops, casual human phrasing. **Emojis wanted** in on-screen captions (emoji tokens after key words, class .emo without stroke), Instagram captions and thumbnails, never in TTS text. Tool: `marketing/tools/captions_clean.py`. Every video also needs a designed **thumbnail** (Reel cover).
+
+**Taste references (Ravi, 2026-09-29):** savee.com (curated visual inspiration), landdding.com (landing-page gallery: clean sans-serif, polished product/UI mockups), motionin.design ("Motion that stops the scroll": dark cinematic sections, 3D cover-flow and helix card walls, iris/aperture transitions, liquid-glass lenses, sticker-label "Cutout" words on a cutting mat, spring physics, one saturated accent on muted backgrounds, big editorial type). Use these for a more premium look, especially for parent-facing videos (app, safety).
+
+**Phones are iPhones (Ravi, 2026-09-29):** "For phone use iphone screen and body." Every phone in a video is an iPhone 16-style body (titanium frame, black bezel, Dynamic Island, side buttons) with the iOS status bar (9:41, signal, Wi-Fi, battery) and home bar: `makeIphone()` in marketing/tools/feature/feature.html, used by the phone, flow and duo shots. App screens should be rendered as iOS (`debugDefaultTargetPlatformOverride = TargetPlatform.iOS` in the appshots tests), which gives iOS switches and back chevrons. **Why:** a generic phone looks fake next to the real app screens. **How to apply:** never draw an Android or generic phone; re-render older app shots as iOS when a video that uses them is rebuilt.

@@ -29,18 +29,42 @@
   }
 
   /* Film: click-to-play (no preload — India mobile first) */
-  document.querySelectorAll("[data-film]").forEach(function (frame) {
+  var filmFrames = document.querySelectorAll("[data-film]");
+  filmFrames.forEach(function (frame) {
     var video = frame.querySelector("video");
     var badge = frame.querySelector(".play-badge");
+    var track = frame.closest(".press-track");
     if (!video || !badge) return;
     badge.addEventListener("click", function () {
-      badge.classList.add("hidden");
+      filmFrames.forEach(function (otherFrame) {
+        var otherVideo = otherFrame.querySelector("video");
+        if (otherVideo && otherVideo !== video && !otherVideo.paused) otherVideo.pause();
+      });
       video.setAttribute("controls", "controls");
-      video.play();
+      video.muted = false;
+      if (track) track.classList.add("paused");
+      var playRequest = video.play();
+      if (playRequest && typeof playRequest.catch === "function") {
+        playRequest.catch(function () {
+          badge.classList.remove("hidden");
+          video.load();
+          if (track) track.classList.remove("paused");
+        });
+      }
+    });
+    video.addEventListener("playing", function () {
+      badge.classList.add("hidden");
+      if (track) track.classList.add("paused");
+    });
+    video.addEventListener("pause", function () {
+      if (track) track.classList.remove("paused");
     });
     video.addEventListener("ended", function () {
+      if (track) track.classList.remove("paused");
       badge.classList.remove("hidden");
       video.removeAttribute("controls");
+      video.currentTime = 0;
+      video.load();
     });
   });
 
@@ -169,10 +193,15 @@
       if (paudio) { paudio.pause(); paudio = null; }
       pplayer.classList.remove("playing"); plabel.textContent = "Hear me";
     }
+    function pSampleUnavailable() {
+      ptoast.classList.add("show");
+      setTimeout(function () { ptoast.classList.remove("show"); }, 2200);
+    }
     function pShow(i) {
       pcur = (i + PCH.length) % PCH.length;
       var ch = PCH[pcur];
       pStop();
+      pplayer.hidden = ch.k === "cheeko";
       document.getElementById("pglow").style.setProperty("--pc", ch.pc);
       var stage = document.getElementById("pstage");
       stage.querySelectorAll(".pfx").forEach(function (e) { e.remove(); });
@@ -192,16 +221,13 @@
       var sk = document.getElementById("pskills");
       sk.innerHTML = "<b>Builds</b>";
       ch.sk.forEach(function (s2) { var el = document.createElement("i"); el.textContent = s2; sk.appendChild(el); });
+      document.dispatchEvent(new CustomEvent("cheeko:character-change", { detail: { character: ch.k } }));
       popEl.classList.remove("open"); void popEl.offsetWidth; popEl.classList.add("open");
       document.body.classList.add("plocked");
-      paudio = new Audio("assets/audio/voice-" + ch.k + ".mp3");
-      paudio.play().then(function () {
-        pplayer.classList.add("playing"); plabel.textContent = "Playing";
-        paudio.onended = pStop;
-      }).catch(function () { paudio = null; });
     }
     function pClose() {
       pStop();
+      document.dispatchEvent(new CustomEvent("cheeko:modal-close"));
       popEl.classList.remove("open");
       document.body.classList.remove("plocked");
     }
@@ -215,6 +241,7 @@
     document.getElementById("pscrim").addEventListener("click", pClose);
     document.getElementById("pprev").addEventListener("click", function () { pShow(pcur - 1); });
     document.getElementById("pnext").addEventListener("click", function () { pShow(pcur + 1); });
+    document.addEventListener("cheeko:talk-open", pStop);
     document.addEventListener("keydown", function (e) {
       if (!popEl.classList.contains("open")) return;
       if (e.key === "Escape") pClose();
@@ -223,14 +250,15 @@
     });
     pplayer.addEventListener("click", function () {
       if (pplayer.classList.contains("playing")) { pStop(); return; }
-      paudio = new Audio("assets/audio/voice-" + PCH[pcur].k + ".mp3");
+      var sample = PCH[pcur].audio;
+      if (!sample) { pSampleUnavailable(); return; }
+      paudio = new Audio(sample);
       paudio.play().then(function () {
         pplayer.classList.add("playing"); plabel.textContent = "Playing";
         paudio.onended = pStop;
       }).catch(function () {
         paudio = null;
-        ptoast.classList.add("show");
-        setTimeout(function () { ptoast.classList.remove("show"); }, 2200);
+        pSampleUnavailable();
       });
     });
   }

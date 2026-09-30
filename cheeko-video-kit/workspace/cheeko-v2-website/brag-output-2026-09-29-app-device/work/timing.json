@@ -1,0 +1,126 @@
+{
+ "vid": "V25.2",
+ "dur": 35.84,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 2.608,
+   "spk": "N",
+   "text": "The Device tab is Cheeko's remote control.",
+   "show": "The Device tab is Cheeko's remote control.",
+   "emoji": {
+    "control.": "🎛️"
+   },
+   "hl": [
+    "remote"
+   ]
+  },
+  {
+   "s": 2.958,
+   "e": 6.875,
+   "spk": "N",
+   "text": "See the battery, the Wi-Fi network, and when Cheeko was last online.",
+   "show": "See the battery, the Wi-Fi network, and when Cheeko was last online.",
+   "emoji": {
+    "battery,": "🔋"
+   },
+   "hl": []
+  },
+  {
+   "s": 7.225,
+   "e": 9.444,
+   "spk": "N",
+   "text": "Too loud? Slide the volume down.",
+   "show": "Too loud? Slide the volume down.",
+   "emoji": {
+    "down.": "🔉"
+   },
+   "hl": [
+    "volume"
+   ]
+  },
+  {
+   "s": 9.794,
+   "e": 13.183,
+   "spk": "N",
+   "text": "Set the brightness, and pick a colour theme for Cheeko's screen.",
+   "show": "Set the brightness, and pick a colour theme for Cheeko's screen.",
+   "emoji": {
+    "screen.": "🎨"
+   },
+   "hl": [
+    "theme"
+   ]
+  },
+  {
+   "s": 13.533,
+   "e": 16.385,
+   "spk": "N",
+   "text": "Turn system sounds and vibration on or off.",
+   "show": "Turn system sounds and vibration on or off.",
+   "emoji": {
+    "off.": "🔔"
+   },
+   "hl": []
+  },
+  {
+   "s": 16.735,
+   "e": 19.974,
+   "spk": "N",
+   "text": "Sleep mode lets Cheeko nap by itself when nobody's playing.",
+   "show": "Sleep mode lets Cheeko nap by itself when nobody's playing.",
+   "emoji": {
+    "playing.": "🌙"
+   },
+   "hl": [
+    "nap"
+   ]
+  },
+  {
+   "s": 20.324,
+   "e": 23.177,
+   "spk": "N",
+   "text": "Then tap Save, and the changes go to Cheeko.",
+   "show": "Then tap Save, and the changes go to Cheeko.",
+   "emoji": {
+    "Cheeko.": "✅"
+   },
+   "hl": [
+    "Save,"
+   ]
+  },
+  {
+   "s": 23.527,
+   "e": 26.229,
+   "spk": "N",
+   "text": "Got two Cheekos? Switch between them at the top.",
+   "show": "Got two Cheekos? Switch between them at the top.",
+   "emoji": {
+    "top.": "🔁"
+   },
+   "hl": []
+  },
+  {
+   "s": 26.579,
+   "e": 30.188,
+   "spk": "N",
+   "text": "Remove Device unlinks a Cheeko. Your child's progress stays with them.",
+   "show": "Remove Device unlinks a Cheeko. Your child's progress stays with them.",
+   "emoji": {
+    "them.": "💛"
+   },
+   "hl": []
+  },
+  {
+   "s": 30.638,
+   "e": 32.442,
+   "spk": "N",
+   "text": "Next up, Analytics!",
+   "show": "Next up, Analytics!",
+   "emoji": {
+    "Analytics!": "👉"
+   },
+   "hl": []
+  }
+ ]
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#000}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden}
+svg{display:block}
+</style></head><body>
+<div id="stage">
+<svg id="sv" width="1920" height="1080" viewBox="0 0 1920 1080">
+ <defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFA85E"/><stop offset=".55" stop-color="#FFD393"/><stop offset="1" stop-color="#FFE9C4"/></linearGradient>
+  <radialGradient id="sunglow"><stop offset="0" stop-color="#FFF4CF" stop-opacity=".9"/><stop offset="1" stop-color="#FFF4CF" stop-opacity="0"/></radialGradient>
+  <radialGradient id="phoneglow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#BDE8FF" stop-opacity=".8"/><stop offset="1" stop-color="#9FDcff" stop-opacity="0"/></radialGradient>
+  <clipPath id="r-eyeL"><ellipse cx="-38" cy="0" rx="22" ry="26"/></clipPath>
+  <clipPath id="r-eyeR"><ellipse cx="38" cy="0" rx="22" ry="26"/></clipPath>
+  <clipPath id="k-eyeL"><ellipse cx="-36" cy="0" rx="21" ry="24"/></clipPath>
+  <clipPath id="k-eyeR"><ellipse cx="36" cy="0" rx="21" ry="24"/></clipPath>
+  <clipPath id="r-mclip"><path id="r-mclipPath" d=""/></clipPath>
+  <clipPath id="k-mclip"><path id="k-mclipPath" d=""/></clipPath>
+ </defs>
+ <g id="cam">
+  <!-- sky, sun, clouds -->
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <g id="sun"><circle cx="1540" cy="330" r="260" fill="url(#sunglow)"/><circle cx="1540" cy="330" r="105" fill="#FFF1C4"/></g>
+  <g id="clouds" fill="#FFF7E6" opacity=".75">
+   <rect x="260" y="150" width="260" height="56" rx="28"/><rect x="330" y="120" width="140" height="56" rx="28"/>
+   <rect x="1080" y="210" width="220" height="46" rx="23"/><rect x="1130" y="186" width="110" height="46" rx="23"/>
+  </g>
+  <!-- apartment blocks -->
+  <g id="bldgs"></g>
+  <!-- trees -->
+  <g id="trees"></g>
+  <!-- ground -->
+  <path id="grass" d="M0 790 Q480 760 960 780 T1920 770 L1920 1080 L0 1080Z" fill="#A9D46F"/>
+  <path id="path" d="M-40 930 Q600 890 1100 915 T1960 900 L1960 1000 Q1300 1010 700 990 T-40 1010Z" fill="#EFD9A8"/>
+  <!-- swing set and slide -->
+  <g id="swing">
+   <path d="M150 800 L260 470 L370 800 M560 800 L670 470 L780 800" stroke="#3E6FB8" stroke-width="16" stroke-linecap="round" fill="none"/>
+   <path d="M250 470 L680 470" stroke="#3E6FB8" stroke-width="18" stroke-linecap="round"/>
+   <g id="sw1"><path d="M380 470 L380 690 M460 470 L460 690" stroke="#6B6B6B" stroke-width="5"/><rect x="366" y="686" width="108" height="18" rx="9" fill="#FFC53D"/></g>
+   <g id="sw2"><path d="M520 470 L520 700 M600 470 L600 700" stroke="#6B6B6B" stroke-width="5"/><rect x="506" y="696" width="108" height="18" rx="9" fill="#F05A3C"/></g>
+  </g>
+  <g id="slide">
+   <path d="M880 800 L880 520 M960 800 L960 520" stroke="#3E6FB8" stroke-width="12"/>
+   <path d="M868 530 L972 530 M868 600 L972 600 M868 670 L972 670 M868 740 L972 740" stroke="#3E6FB8" stroke-width="9"/>
+   <path d="M960 520 Q1010 520 1040 580 L1150 790 Q1160 806 1140 806 L1120 806 L1010 600 Q990 560 960 560Z" fill="#F05A3C"/>
+   <rect x="860" y="505" width="120" height="22" rx="11" fill="#FFC53D"/>
+  </g>
+  <!-- bench (foreground right) with Kabir -->
+  <g id="bench">
+   <rect x="1180" y="640" width="500" height="26" rx="10" fill="#B5703E"/>
+   <rect x="1180" y="682" width="500" height="26" rx="10" fill="#A9653A"/>
+   <rect x="1160" y="760" width="540" height="30" rx="10" fill="#C17B45"/>
+   <path d="M1200 790 L1200 880 M1660 790 L1660 880 M1220 640 L1220 760 M1640 640 L1640 760" stroke="#5B4636" stroke-width="16" stroke-linecap="round"/>
+   <!-- backpack -->
+   <g transform="translate(1600,690)"><rect x="-44" y="0" width="88" height="80" rx="24" fill="#2C3E78"/><rect x="-30" y="30" width="60" height="34" rx="10" fill="#3A52A0"/><path d="M-22 4 Q0 -24 22 4" stroke="#1C2A55" stroke-width="8" fill="none"/></g>
+  </g>
+  <ellipse id="k-shadow" cx="1400" cy="982" rx="150" ry="18" fill="#6E9A45" opacity=".45"/>
+  <ellipse id="r-shadow" cx="620" cy="972" rx="120" ry="16" fill="#6E9A45" opacity=".45"/>
+  <!-- KABIR, sitting; origin = hips on the seat -->
+  <g id="kabir" transform="translate(1400,768)">
+   <g id="k-body">
+    <!-- legs -->
+    <rect x="-70" y="-14" width="62" height="56" rx="22" fill="#26335F"/><rect x="8" y="-14" width="62" height="56" rx="22" fill="#26335F"/>
+    <rect x="-66" y="30" width="48" height="160" rx="20" fill="#26335F"/><rect x="18" y="30" width="48" height="160" rx="20" fill="#26335F"/>
+    <ellipse cx="-44" cy="196" rx="38" ry="18" fill="#1C1C1C"/><ellipse cx="44" cy="196" rx="38" ry="18" fill="#1C1C1C"/>
+    <!-- torso: white shirt -->
+    <path d="M-88 -200 Q-98 -90 -96 0 L96 0 Q98 -90 88 -200 Q0 -222 -88 -200Z" fill="#F8F8F6"/>
+    <path d="M-88 -200 Q-98 -90 -96 0 L-80 0 Q-84 -100 -70 -196Z" fill="#E4E4E0"/>
+    <path d="M-34 -210 L0 -176 L34 -210 L20 -218 L0 -196 L-20 -218Z" fill="#FFFFFF" stroke="#DADAD5" stroke-width="3"/>
+    <path d="M-12 -190 L12 -190 L8 -176 L-8 -176Z" fill="#1F2D5A"/><path d="M-9 -176 L9 -176 L16 -70 L0 -52 L-16 -70Z" fill="#1F2D5A"/>
+    <!-- neck -->
+    <rect x="-20" y="-236" width="40" height="36" rx="12" fill="#BF8157"/>
+    <!-- headset around the neck -->
+    <path d="M-60 -206 Q0 -160 60 -206" stroke="#222" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <rect x="-84" y="-222" width="40" height="46" rx="14" fill="#2A2A2A"/><rect x="44" y="-222" width="40" height="46" rx="14" fill="#2A2A2A"/>
+    <!-- phone arm (viewer's right) -->
+    <g id="k-armP" transform="translate(86,-190) rotate(-12)">
+     <rect x="-20" y="0" width="40" height="104" rx="20" fill="#F2F2EF"/>
+     <g id="k-foreP" transform="translate(0,96) rotate(-150)">
+      <rect x="-18" y="0" width="36" height="92" rx="18" fill="#BF8157"/><circle cx="0" cy="96" r="22" fill="#BF8157"/>
+      <g transform="translate(0,104) rotate(162)"><circle cx="0" cy="30" r="95" fill="url(#phoneglow)" opacity=".7"/><rect x="-30" y="-20" width="60" height="104" rx="12" fill="#1B1B22"/><circle cx="-14" cy="-6" r="5" fill="#44444f"/></g>
+     </g>
+    </g>
+   </g>
+   <!-- head (bored, looking down at the phone) -->
+   <g id="k-head" transform="translate(0,-330)">
+    <ellipse cx="0" cy="0" rx="94" ry="98" fill="#BF8157"/>
+    <circle cx="-90" cy="8" r="18" fill="#BF8157"/><circle cx="90" cy="8" r="18" fill="#BF8157"/>
+    <path d="M-98 -8 Q-104 -96 -20 -110 Q60 -118 96 -60 Q102 -30 98 -6 Q86 -52 50 -62 Q10 -48 -30 -66 Q-70 -60 -98 -8Z" fill="#1B1716"/>
+    <path d="M-20 -110 Q-30 -80 -58 -62" stroke="#0e0c0b" stroke-width="5" fill="none"/>
+    <g clip-path="url(#k-eyeL)"><ellipse cx="-36" cy="0" rx="21" ry="24" fill="#fff"/><circle id="k-pupL" cx="-36" cy="10" r="12" fill="#3A2416"/><circle cx="-32" cy="5" r="4" fill="#fff"/><rect id="k-lidL" x="-60" y="-26" width="48" height="24" fill="#B67A51"/></g>
+    <g clip-path="url(#k-eyeR)"><ellipse cx="36" cy="0" rx="21" ry="24" fill="#fff"/><circle id="k-pupR" cx="36" cy="10" r="12" fill="#3A2416"/><circle cx="40" cy="5" r="4" fill="#fff"/><rect id="k-lidR" x="12" y="-26" width="48" height="24" fill="#B67A51"/></g>
+    <path id="k-browL" d="M-58 -36 L-16 -34" stroke="#1B1716" stroke-width="9" stroke-linecap="round"/>
+    <path id="k-browR" d="M16 -34 L58 -36" stroke="#1B1716" stroke-width="9" stroke-linecap="round"/>
+    <path d="M-5 20 Q0 28 6 20" stroke="#8E5634" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(0,52)"><path id="k-mRest" d="M-16 0 L16 0" stroke="#5A2A1E" stroke-width="7" stroke-linecap="round"/><path id="k-mOpen" d="" fill="#6B2323"/><g clip-path="url(#k-mclip)"><ellipse id="k-tongue" cx="0" cy="22" rx="14" ry="9" fill="#E07A7A"/></g></g>
+   </g>
+   <!-- palm arm (viewer's left), in front -->
+   <g id="k-armH" transform="translate(-86,-190) rotate(8)">
+    <rect x="-20" y="0" width="40" height="104" rx="20" fill="#F2F2EF"/>
+    <g id="k-foreH" transform="translate(0,96) rotate(-40)">
+     <rect x="-18" y="0" width="36" height="92" rx="18" fill="#BF8157"/>
+     <g id="k-hand" transform="translate(0,92)"><rect x="-24" y="-6" width="48" height="46" rx="18" fill="#BF8157"/>
+      <rect x="-24" y="30" width="11" height="34" rx="5.5" fill="#BF8157"/><rect x="-11" y="34" width="11" height="38" rx="5.5" fill="#BF8157"/><rect x="2" y="34" width="11" height="36" rx="5.5" fill="#BF8157"/><rect x="15" y="30" width="10" height="30" rx="5" fill="#BF8157"/>
+      <rect x="20" y="-2" width="12" height="30" rx="6" fill="#BF8157" transform="rotate(-30 26 12)"/></g>
+    </g>
+   </g>
+  </g>
+  <!-- ROHAN, standing; origin = between the feet -->
+  <g id="rohan" transform="translate(620,960)">
+   <g id="r-legL" transform="translate(-28,-250)"><rect x="-22" y="0" width="44" height="216" rx="20" fill="#2F3E73"/><g transform="translate(-6,214)"><ellipse cx="0" cy="0" rx="40" ry="21" fill="#3D7BFF"/><rect x="-40" y="4" width="80" height="12" rx="6" fill="#fff"/></g></g>
+   <g id="r-legR" transform="translate(28,-250)"><rect x="-22" y="0" width="44" height="216" rx="20" fill="#2F3E73"/><g transform="translate(6,214)"><ellipse cx="0" cy="0" rx="40" ry="21" fill="#3D7BFF"/><rect x="-40" y="4" width="80" height="12" rx="6" fill="#fff"/></g></g>
+   <g id="r-upper">
+    <!-- ball held at the side (viewer's left) -->
+    <g id="r-ball" transform="translate(-132,-262)"><circle r="56" fill="#E23B2E"/><path d="M-56 0 Q0 -26 56 0 M-30 -48 Q-6 0 -30 48 M30 -48 Q6 0 30 48" stroke="#FFD9D2" stroke-width="5" fill="none" opacity=".8"/><circle cx="-18" cy="-22" r="12" fill="#fff" opacity=".35"/></g>
+    <!-- hoodie -->
+    <path d="M-66 -448 Q0 -500 66 -448 L40 -428 Q0 -452 -40 -428Z" fill="#F0B02A"/>
+    <path d="M-96 -432 Q-108 -320 -112 -232 L112 -232 Q108 -320 96 -432 Q0 -456 -96 -432Z" fill="#FFC53D"/>
+    <rect x="-112" y="-258" width="224" height="26" rx="10" fill="#F2B02A"/>
+    <path d="M-62 -330 L62 -330 L72 -262 L-72 -262Z" fill="#F7BA31"/>
+    <g transform="translate(0,-356)"><circle cx="-26" cy="-28" r="12" fill="#FFEFC6"/><circle cx="26" cy="-28" r="12" fill="#FFEFC6"/><circle r="32" fill="#FFEFC6"/><circle cx="-11" cy="-5" r="4" fill="#5A3A22"/><circle cx="11" cy="-5" r="4" fill="#5A3A22"/><ellipse cx="0" cy="8" rx="7" ry="5" fill="#5A3A22"/></g>
+    <rect x="-22" y="-470" width="44" height="36" rx="12" fill="#C98B5E"/>
+    <!-- ball arm (viewer's left) -->
+    <g id="r-armB" transform="translate(-100,-420) rotate(10)">
+     <rect x="-22" y="0" width="44" height="116" rx="22" fill="#FFC53D"/>
+     <g id="r-foreB" transform="translate(0,108) rotate(-38)"><rect x="-20" y="0" width="40" height="92" rx="20" fill="#FFC53D"/><circle cx="0" cy="98" r="25" fill="#C98B5E"/></g>
+    </g>
+    <!-- gesture arm (viewer's right) -->
+    <g id="r-armG" transform="translate(100,-420) rotate(-8)">
+     <rect x="-22" y="0" width="44" height="116" rx="22" fill="#FFC53D"/>
+     <g id="r-foreG" transform="translate(0,108) rotate(6)"><rect x="-20" y="0" width="40" height="92" rx="20" fill="#FFC53D"/><circle cx="0" cy="98" r="25" fill="#C98B5E"/></g>
+    </g>
+    <!-- head -->
+    <g id="r-head" transform="translate(0,-560)">
+     <path d="M-96 10 Q-110 -90 -30 -112 Q60 -126 100 -50 Q108 -10 96 20Z" fill="#1E1A1A"/>
+     <circle cx="-94" cy="10" r="20" fill="#C98B5E"/><circle cx="94" cy="10" r="20" fill="#C98B5E"/>
+     <ellipse cx="0" cy="4" rx="96" ry="100" fill="#C98B5E"/>
+     <path d="M-100 -4 Q-96 -94 -20 -110 Q70 -120 100 -44 L96 -10 Q84 -42 64 -54 L58 -30 Q40 -62 18 -60 L10 -36 Q-6 -64 -28 -58 L-40 -34 Q-52 -62 -74 -48 L-84 -22Z" fill="#1E1A1A"/>
+     <path d="M-30 -112 L-44 -140 L-10 -116 L0 -146 L18 -114 L44 -134 L40 -104Z" fill="#1E1A1A"/>
+     <g clip-path="url(#r-eyeL)"><ellipse cx="-38" cy="0" rx="22" ry="26" fill="#fff"/><g id="r-pupL"><circle cx="-36" cy="3" r="13" fill="#3A2416"/><circle cx="-32" cy="-2" r="4.5" fill="#fff"/></g><rect id="r-lidL" x="-62" y="-28" width="48" height="0" fill="#BB7F55"/></g>
+     <g clip-path="url(#r-eyeR)"><ellipse cx="38" cy="0" rx="22" ry="26" fill="#fff"/><g id="r-pupR"><circle cx="40" cy="3" r="13" fill="#3A2416"/><circle cx="44" cy="-2" r="4.5" fill="#fff"/></g><rect id="r-lidR" x="14" y="-28" width="48" height="0" fill="#BB7F55"/></g>
+     <path id="r-browL" d="M-60 -40 Q-40 -52 -18 -44" stroke="#1E1A1A" stroke-width="9" fill="none" stroke-linecap="round"/>
+     <path id="r-browR" d="M18 -44 Q40 -52 60 -40" stroke="#1E1A1A" stroke-width="9" fill="none" stroke-linecap="round"/>
+     <ellipse cx="-62" cy="34" rx="18" ry="10" fill="#E0876A" opacity=".45"/><ellipse cx="62" cy="34" rx="18" ry="10" fill="#E0876A" opacity=".45"/>
+     <path d="M-6 20 Q0 28 6 20" stroke="#9A5F3C" stroke-width="5" fill="none" stroke-linecap="round"/>
+     <g transform="translate(0,54)"><path id="r-mRest" d="M-24 -2 Q0 16 24 -2" stroke="#5A2A1E" stroke-width="7" fill="none" stroke-linecap="round"/><path id="r-mOpen" d="" fill="#6B2323"/><g clip-path="url(#r-mclip)"><ellipse id="r-tongue" cx="0" cy="24" rx="16" ry="10" fill="#E07A7A"/></g></g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const clamp = (x,a=0,b=1) => Math.min(b, Math.max(a, x));
+const prog = (t,a,b) => clamp((t-a)/(b-a));
+const eOut = x => 1 - Math.pow(1-x, 3);
+const eInOut = x => x < .5 ? 4*x*x*x : 1 - Math.pow(-2*x+2, 3)/2;
+const eBack = x => { const c=1.9, d=c+1; return 1 + d*Math.pow(x-1,3) + c*Math.pow(x-1,2); };
+const lerp = (a,b,x) => a + (b-a)*x;
+const tf = (el, s) => el.setAttribute('transform', s);
+
+// background: apartment blocks and trees, drawn once
+{ const B = [[40,360,300,'#F4C7A2'],[330,300,240,'#EDB894'],[1180,330,260,'#F6D2AE'],[1460,380,220,'#EFBE98'],[1680,300,260,'#F4C7A2'],[560,400,220,'#F7D6B5']];
+  let s = ''; for (const [x,y,w,c] of B) { s += `<g class="bl"><rect x="${x}" y="${y}" width="${w}" height="${820-y}" rx="6" fill="${c}"/>`;
+    for (let yy = y+30; yy < 780; yy += 58) for (let xx = x+24; xx < x+w-30; xx += 52) s += `<rect x="${xx}" y="${yy}" width="26" height="32" rx="4" fill="${(xx*7+yy*3)%5===0?'#FFE3A6':'#E6A882'}"/>`;
+    s += '</g>'; } $('bldgs').innerHTML = s; }
+{ const T = [[110,700,1],[1030,690,.9],[1760,700,1.1],[1100,720,.8]];
+  let s = ''; for (const [x,y,k] of T) s += `<g class="tr" transform="translate(${x},${y}) scale(${k})"><rect x="-12" y="0" width="24" height="110" rx="10" fill="#8A5A3B"/><circle cx="-50" cy="-10" r="62" fill="#6AA84F"/><circle cx="46" cy="-18" r="66" fill="#7DBA5E"/><circle cx="0" cy="-70" r="70" fill="#86C466"/></g>`;
+  $('trees').innerHTML = s; }
+
+// lip-sync: 30 fps loudness per line, measured from the recorded clips
+const LIP = {"0": {"dur": 0.711, "env": [0.03, 0.46, 0.98, 1, 1, 0.37, 0.89, 0.98, 0.12, 0.02, 0.14, 0.32, 0.98, 1, 0.92, 0.91, 1, 0.63, 0.63, 0.2, 0.02]}, "1": {"dur": 2.961, "env": [0.04, 0.52, 0.4, 0.79, 0.72, 0.6, 0.57, 0.06, 0.01, 0.01, 0.01, 0.46, 1, 1, 0.82, 0.82, 0.98, 0.41, 0.02, 0.56, 0.3, 0.91, 0.52, 0.63, 0.64, 0.51, 0.46, 0.48, 0.48, 0.48, 0.38, 0.18, 0.05, 0.02, 0.01, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.13, 0.97, 0.85, 0.87, 0.67, 0.37, 0.08, 0.56, 0.11, 0.01, 0.24, 0.79, 1, 1, 1, 0.82, 0.67, 0.25, 0.02, 0.01, 0.01, 0.51, 0.86, 1, 1, 1, 0.93, 0.92, 0.92, 0.86, 0.78, 0.7, 0.63, 0.55, 0.48, 0.49, 0.5, 0.53, 0.52, 0.28, 0.03]}};
+const LINES = [{ who: 'r', t0: 2.25, env: LIP[0].env }, { who: 'k', t0: 3.45, env: LIP[1].env }];
+function mouth(p, lvl, rest) {           // p = 'r' or 'k'; lvl 0..1
+  const open = lvl > .12;
+  $(p + '-mRest').style.display = open ? 'none' : ''; $(p + '-mOpen').style.display = open ? '' : 'none';
+  if (rest) $(p + '-mRest').setAttribute('d', rest);
+  if (!open) { $(p + '-mclipPath').setAttribute('d', ''); $(p + '-tongue').style.display = 'none'; return; }
+  const w = (p === 'r' ? 17 : 15) + 9*lvl, h = 5 + 30*lvl;
+  const d = `M${-w} 0 Q0 -5 ${w} 0 Q${w*.9} ${h} 0 ${h*1.12} Q${-w*.9} ${h} ${-w} 0Z`;
+  $(p + '-mOpen').setAttribute('d', d); $(p + '-mclipPath').setAttribute('d', d); $(p + '-tongue').style.display = '';
+  $(p + '-tongue').setAttribute('cy', h*.95);
+}
+function level(who, t) {
+  for (const L of LINES) if (L.who === who) { const k = Math.floor((t - L.t0) * 30); if (k >= 0 && k < L.env.length) return L.env[k]; }
+  return 0;
+}
+// blinks: short and irregular
+const blinkR = [1.3, 4.6, 7.1], blinkK = [2.7, 6.9];
+const blink = (t, list) => { for (const b of list) { const d = t - b; if (d >= 0 && d < .16) return 1 - Math.abs(d - .08)/.08; } return 0; };
+const pop = (el, t, t0, dur=.45, from=0) => { const p = prog(t, t0, t0 + dur); el.style.opacity = p > 0 ? 1 : 0; return lerp(from, 1, eBack(p)); };
+
+window.render = function(t) {
+  // scene build: motion-graphic pop-ins
+  $('sun').setAttribute('transform', `translate(0,${lerp(80, 0, eOut(prog(t, 0, 1.0)))})`);
+  [...document.querySelectorAll('.bl')].forEach((g, i) => { const p = eOut(prog(t, .05 + i*.05, .55 + i*.05)); g.setAttribute('transform', `translate(0,${lerp(500, 0, p)})`); });
+  [...document.querySelectorAll('.tr')].forEach((g, i) => { const base = g.getAttribute('data-base') || g.getAttribute('transform'); g.setAttribute('data-base', base);
+    const s = pop(g, t, .35 + i*.07, .5); g.setAttribute('transform', `${base} scale(${Math.max(.001, s)})`); });
+  for (const [id, t0] of [['swing', .45], ['slide', .55]]) { const s = pop($(id), t, t0, .5, .3); const bb = id === 'swing' ? '465 800' : '1010 800';
+    $(id).setAttribute('transform', `translate(${bb.split(' ')[0]},${bb.split(' ')[1]}) scale(${s}) translate(-${bb.split(' ')[0]},-${bb.split(' ')[1]})`); }
+  $('bench').setAttribute('transform', `translate(${lerp(700, 0, eOut(prog(t, .5, 1.0)))},0)`);
+  const kx = 1400 + lerp(700, 0, eOut(prog(t, .55, 1.05)));
+  $('kabir').setAttribute('transform', `translate(${kx},768) scale(1.15)`); $('k-shadow').setAttribute('cx', kx);
+  const sw = Math.sin(t*1.6) * 5; tf($('sw1'), `rotate(${sw} 420 470)`); tf($('sw2'), `rotate(${-sw*.8} 560 470)`);
+  $('clouds').setAttribute('transform', `translate(${t*6},0)`);
+
+  // ROHAN walks in, stops, asks, then deflates
+  const walkP = prog(t, .6, 2.05), x = lerp(-260, 620, eInOut(walkP)), walking = walkP > 0 && walkP < 1;
+  const ph = t * 9.5, sway = walking ? Math.sin(ph) : 0, bob = walking ? Math.abs(Math.sin(ph)) * 10 : 0;
+  const sad = eInOut(prog(t, 6.55, 7.2));
+  tf($('rohan'), `translate(${x},${972 - bob}) scale(1.15)`); $('r-shadow').setAttribute('cx', x); $('r-shadow').setAttribute('rx', 120 - bob*2);
+  tf($('r-legL'), `translate(-28,-250) rotate(${sway*22})`); tf($('r-legR'), `translate(28,-250) rotate(${-sway*22})`);
+  tf($('r-upper'), `translate(0,${sad*10}) rotate(${walking ? Math.sin(ph*2)*1.2 : 0})`);
+  // gesture arm: swings while walking, opens toward Kabir on "Wanna play?", drops when he says no
+  const g = eBack(prog(t, 2.05, 2.45)) * (1 - eInOut(prog(t, 6.6, 7.1)));
+  tf($('r-armG'), `translate(100,-420) rotate(${lerp(-8 + (walking ? -sway*18 : 0), -78, g)})`);
+  tf($('r-foreG'), `translate(0,108) rotate(${lerp(6, -28, g)})`);
+  tf($('r-armB'), `translate(-100,-420) rotate(${10 + (walking ? sway*6 : 0) + sad*6})`);
+  tf($('r-ball'), `translate(-132,${-262 + sad*18})`);
+  const rh = walking ? Math.sin(ph*2)*1.5 : 0;
+  tf($('r-head'), `translate(${sad*-4},${-560 + sad*14}) rotate(${rh - sad*4})`);
+  // eyes: toward Kabir; sad brows; blink
+  tf($('r-pupL'), `translate(${lerp(0, 8, prog(t, 1.6, 2.0))},${sad*6})`); tf($('r-pupR'), `translate(${lerp(0, 8, prog(t, 1.6, 2.0))},${sad*6})`);
+  const bR = blink(t, blinkR), lidR = 52*bR + sad*12;
+  $('r-lidL').setAttribute('height', lidR); $('r-lidR').setAttribute('height', lidR);
+  tf($('r-browL'), `rotate(${sad*14} -18 -44) translate(0,${-lerp(0, 6, g) + sad*2})`); tf($('r-browR'), `rotate(${-sad*14} 18 -44) translate(0,${-lerp(0, 6, g) + sad*2})`);
+  mouth('r', level('r', t), sad > .05 ? `M-20 8 Q0 ${lerp(16, -4, sad)} 20 8` : 'M-24 -2 Q0 16 24 -2');
+
+  // KABIR: never looks up; palm up on his line
+  const hp = eBack(prog(t, 3.25, 3.6)) * (1 - eInOut(prog(t, 6.6, 7.1)));
+  tf($('k-armH'), `translate(-86,-190) rotate(${lerp(8, 72, hp)})`);
+  tf($('k-foreH'), `translate(0,96) rotate(${lerp(-40, 104, hp)})`);
+  tf($('k-hand'), `translate(0,92) rotate(${lerp(0, 8, hp)})`);
+  const thumb = Math.floor(t * 2.2) % 3 === 0 ? 3 : 0;                      // scrolling thumb twitch
+  tf($('k-foreP'), `translate(0,96) rotate(${-150 + thumb})`);
+  tf($('k-head'), `translate(0,${-330 + Math.sin(t*1.3)*2}) rotate(${Math.sin(t*.9)*1.2})`);
+  const bK = blink(t, blinkK), lidK = 24 + 26*bK;
+  $('k-lidL').setAttribute('height', lidK); $('k-lidR').setAttribute('height', lidK);
+  tf($('k-browL'), `translate(0,${hp*3})`); tf($('k-browR'), `translate(0,${hp*3})`);
+  mouth('k', level('k', t));
+
+  // camera: gentle drift, then a slow push-in on Rohan's face for the reaction
+  const push = eInOut(prog(t, 6.5, 8.6)), cx = lerp(960, x, push), cy = lerp(540, 360, push), z = lerp(1.0, 1.55, push) * (1 + .012*Math.sin(t*.6));
+  tf($('cam'), `translate(960,540) scale(${z}) translate(${-cx},${-cy})`);
+};
+window.ready = (async () => { window.render(0); return true; })();
+</script>
+</body></html>

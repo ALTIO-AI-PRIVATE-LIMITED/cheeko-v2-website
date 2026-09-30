@@ -1,0 +1,100 @@
+{
+ "vid": "V25.4",
+ "dur": 30.56,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 2.909,
+   "spk": "N",
+   "text": "Everything your child imagines is saved in the Gallery.",
+   "show": "Everything your child imagines is saved in the Gallery.",
+   "emoji": {
+    "Gallery.": "🎨"
+   },
+   "hl": [
+    "Gallery."
+   ]
+  },
+  {
+   "s": 3.259,
+   "e": 6.47,
+   "spk": "N",
+   "text": "Open a picture to save it, or share it with family.",
+   "show": "Open a picture to save it, or share it with family.",
+   "emoji": {
+    "family.": "💌"
+   },
+   "hl": []
+  },
+  {
+   "s": 6.82,
+   "e": 9.291,
+   "spk": "N",
+   "text": "Hold to pick a few, and share them together.",
+   "show": "Hold to pick a few, and share them together.",
+   "emoji": {
+    "together.": "👆"
+   },
+   "hl": []
+  },
+  {
+   "s": 9.641,
+   "e": 12.146,
+   "spk": "N",
+   "text": "Custom cards put your own voice on a card.",
+   "show": "Custom cards put your own voice on a card.",
+   "emoji": {
+    "card.": "🎙️"
+   },
+   "hl": [
+    "voice"
+   ]
+  },
+  {
+   "s": 12.496,
+   "e": 17.403,
+   "spk": "N",
+   "text": "Record a story, a song or a message. Or upload an audio file.",
+   "show": "Record a story, a song or a message. Or upload an audio file.",
+   "emoji": {
+    "message.": "💬"
+   },
+   "hl": []
+  },
+  {
+   "s": 17.753,
+   "e": 20.392,
+   "spk": "N",
+   "text": "Add a picture, crop it, and pick a filter.",
+   "show": "Add a picture, crop it, and pick a filter.",
+   "emoji": {
+    "filter.": "🖼️"
+   },
+   "hl": []
+  },
+  {
+   "s": 20.742,
+   "e": 25.13,
+   "spk": "N",
+   "text": "Up to ten recordings, and Cheeko plays them when your child taps their custom card.",
+   "show": "Up to ten recordings, and Cheeko plays them when your child taps their custom card.",
+   "emoji": {
+    "card.": "❤️"
+   },
+   "hl": [
+    "ten"
+   ]
+  },
+  {
+   "s": 25.58,
+   "e": 27.159,
+   "spk": "N",
+   "text": "Next up, Profile!",
+   "show": "Next up, Profile!",
+   "emoji": {
+    "Profile!": "👉"
+   },
+   "hl": []
+  }
+ ]
+}

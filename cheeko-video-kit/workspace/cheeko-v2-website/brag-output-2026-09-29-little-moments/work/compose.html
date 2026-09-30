@@ -1,0 +1,78 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800;900&family=Hanken+Grotesk:wght@500;600;700;800&display=block" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#FFF4E3;font-family:Gabarito,sans-serif;color:#231A10}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#FFF4E3}
+#texture{position:absolute;inset:0;background-image:radial-gradient(#231a1011 2px,transparent 2px);background-size:32px 32px}
+#orb{position:absolute;left:-230px;top:535px;width:1500px;height:1500px;border-radius:50%;background:#FFC81A}
+header{position:absolute;left:78px;right:78px;top:80px;display:flex;align-items:center;justify-content:space-between}
+#logo{font-weight:900;color:#F0521D;font-size:66px;letter-spacing:-4px}#series{font-family:'Hanken Grotesk',sans-serif;font-weight:800;font-size:25px;letter-spacing:3px}
+#eyebrow{position:absolute;top:205px;left:84px;font-weight:800;font-size:29px;letter-spacing:4px;color:#6C3DFF}
+#title{position:absolute;left:78px;top:257px;width:920px;font-size:102px;line-height:.99;font-weight:900;letter-spacing:-4px;white-space:pre-line}
+#title .hl{color:#F0521D}
+#card{position:absolute;left:98px;top:534px;width:884px;height:806px;border:12px solid white;border-radius:50px;background:white;box-shadow:0 24px 0 #231a1014,0 35px 65px #231a1018;overflow:hidden;transform-origin:50% 70%}
+#panel{position:absolute;inset:0;overflow:hidden;background:#fff}
+#sheet{position:absolute;max-width:none;transform-origin:0 0}
+#badge{position:absolute;left:57px;top:478px;background:#6C3DFF;color:white;border:7px solid #FFF4E3;padding:14px 28px;border-radius:28px;font-size:37px;font-weight:800;transform:rotate(-5deg);z-index:3}
+#device{position:absolute;left:360px;top:530px;width:360px;filter:drop-shadow(0 24px 15px #231a1028);transform-origin:50% 80%;display:none}
+#circle{position:absolute;left:143px;top:515px;width:794px;height:794px;border-radius:50%;border:3px solid #231a1020;display:none}
+#circle:after{content:'';position:absolute;inset:42px;border-radius:50%;border:3px dashed #231a1020}
+.float{position:absolute;z-index:4;font-size:92px;line-height:1;text-shadow:0 10px 0 #231a1008}
+#f1{left:60px;top:1190px}#f2{right:65px;top:550px}#spark{position:absolute;right:51px;top:1270px;font-size:85px;color:#F0521D;font-weight:800}
+#captions{position:absolute;top:1420px;left:76px;right:76px;text-align:center;font-size:65px;font-weight:900;line-height:1.25;letter-spacing:-1px}
+#captions span{display:inline-block;padding:1px 9px;border-radius:13px;white-space:nowrap}#captions .active{background:#FFC81A;box-shadow:0 6px 0 #231a1020}
+#foot{position:absolute;left:80px;right:80px;top:1695px;display:flex;justify-content:space-between;align-items:center;font-size:27px;font-family:'Hanken Grotesk',sans-serif;font-weight:800}
+#dots{display:flex;gap:10px}.dot{width:13px;height:13px;border-radius:99px;background:#231a1020}.dot.on{background:#F0521D;width:38px}
+#cta{position:absolute;left:120px;right:120px;top:1390px;display:none;text-align:center}#cta strong{display:block;background:#F0521D;color:white;border-radius:70px;padding:20px;font-size:63px;box-shadow:0 10px 0 #231a1020}#cta p{font-size:36px;font-weight:700;line-height:1.25;margin:29px 0}
+#wipe{position:absolute;left:0;top:0;height:1920px;width:1100px;background:#F0521D;z-index:99;transform:translateX(-1200px)}
+#progress{position:absolute;bottom:0;left:0;height:10px;background:#F0521D;transform-origin:0 0}
+</style></head><body><div id="stage"><div id="texture"></div><div id="orb"></div>
+<header><div id="logo">Cheeko</div><div id="series">LITTLE MOMENTS</div></header><div id="eyebrow"></div><div id="title"></div><div id="circle"></div>
+<div id="card"><div id="panel"><img id="sheet" src="assets/family-situations.png"></div></div><img id="device" src="assets/device_current.png"><div id="badge"></div><div id="f1" class="float"></div><div id="f2" class="float"></div><div id="spark">✦</div><div id="captions"></div>
+<div id="cta"><strong>Link in bio 👆</strong><p>Send this to a parent<br>who needs it 👀</p></div><div id="foot"><span id="footerText">A little wonder. Every day.</span><div id="dots"></div></div><div id="progress"></div><div id="wipe"></div></div>
+<script src="timeline.js"></script><script>
+const $=s=>document.getElementById(s), clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const rects=[[4,90,277,263],[291,113,274,238],[574,96,276,256],[862,90,277,261],[11,407,270,240],[291,406,276,241],[577,407,272,240],[862,410,275,238],[8,704,274,243],[294,707,272,238],[578,708,272,239],[861,704,275,243],[10,997,271,271],[294,1004,273,264],[578,1001,272,267],[862,1003,276,265]];
+// Each shot references the provided art. Cropping is done in the browser, so the original file is intact.
+const shots=[
+{t:0,p:0,title:'Sound like\nyour house?',eye:'EVERYDAY FAMILY LIFE',badge:'We know the feeling',em:['⏰','💛'],bg:'#FFF4E3',orb:'#FFD676'},
+{t:2,p:0,title:'Shoes? Bag?\nLet\'s go!',eye:'THE MORNING RUSH',badge:'One busy morning',em:['👟','⏰'],bg:'#FFF4E3',orb:'#FFC81A'},
+{t:3.6,p:2,title:'Are we\nthere yet?',eye:'THE WAITING GAME',badge:'Still waiting!',em:['⌛','💭'],bg:'#ECE9FF',orb:'#CDC4FF'},
+{t:5,p:4,title:'Rain, rain.\nNow what?',eye:'PLANS HAVE CHANGED',badge:'Indoor day',em:['☔','💧'],bg:'#E7F0FF',orb:'#B9D6FC'},
+{t:7,p:3,title:'Make room\nfor wonder.',eye:'A SMALL SHIFT',badge:'What if?',em:['✨','💬'],bg:'#FFF4E3',orb:'#FFC81A'},
+{t:8.4,p:5,title:'Hello,\nimagination.',eye:'A SMALL SHIFT',badge:'Adventure starts here',em:['🦁','✨'],bg:'#FFF4E3',orb:'#FFC81A'},
+{t:9.5,p:-1,title:'Meet\nCheeko.',eye:'THE AI LEARNING DEVICE FOR KIDS',badge:'Stories. Questions. Play.',em:['🦊','✨'],bg:'#FFC81A',orb:'#FFE991'},
+{t:11.2,p:7,title:'A story.\nA shared smile.',eye:'LISTEN TOGETHER',badge:'Story time',em:['📖','✨'],bg:'#FFF4E3',orb:'#FFD676'},
+{t:13,p:6,title:'Big questions.\nLittle voices.',eye:'STAY CURIOUS',badge:'Why? How? What if?',em:['🌙','💬'],bg:'#ECE9FF',orb:'#C9BDFE'},
+{t:14,p:3,title:'Let\'s\nfind out.',eye:'STAY CURIOUS',badge:'Ask. Listen. Discover.',em:['💡','💬'],bg:'#ECE9FF',orb:'#C9BDFE'},
+{t:15,p:5,title:'A sofa?\nA safari!',eye:'IMAGINATION AT HOME',badge:'Off we go',em:['🦁','🔎'],bg:'#FFF4E3',orb:'#FFD676'},
+{t:17,p:8,title:'One more\nstory?',eye:'THE BEDTIME CHAPTER',badge:'Nearly bedtime',em:['🌙','⭐'],bg:'#E9E6FF',orb:'#C1BAEB'},
+{t:18.2,p:9,title:'A softer\nend to the day.',eye:'THE BEDTIME CHAPTER',badge:'Listen. Snuggle. Rest.',em:['🌙','💛'],bg:'#E9E6FF',orb:'#C1BAEB'},
+{t:19.5,p:13,title:'Small\nmoments.',eye:'TOGETHER IS THE BEST PART',badge:'Little helper',em:['🥕','💛'],bg:'#FFF4E3',orb:'#FFD676'},
+{t:20.5,p:11,title:'Try. Build.\nTry again.',eye:'TOGETHER IS THE BEST PART',badge:'We did it!',em:['🧩','✨'],bg:'#FFF4E3',orb:'#FFD676'},
+{t:21.4,p:14,title:'Look what\nI made!',eye:'TOGETHER IS THE BEST PART',badge:'A moment to notice',em:['🖍️','💛'],bg:'#FFF4E3',orb:'#FFD676'},
+{t:22,p:15,title:'Less screen.\nMore childhood.',eye:'LITTLE MOMENTS. MORE CONNECTION.',badge:'Our favourite moment',em:['💛','✨'],bg:'#FFF4E3',orb:'#FFC81A'},
+{t:24.5,p:-1,title:'More wonder.\nTogether.',eye:'LITTLE MOMENTS. MORE CONNECTION.',badge:'Cheeko',em:['🦊','💛'],bg:'#FFC81A',orb:'#FFE991',end:true}
+];
+$('dots').innerHTML=Array.from({length:6},()=>'<i class="dot"></i>').join('');
+const interp=(v,x,y)=>{let i=0;while(i<x.length-2&&v>x[i+1])i++;return y[i]+(v-x[i])/(x[i+1]-x[i])*(y[i+1]-y[i])};
+window.render=function(t){
+ const st=interp(t,[0,...TIMELINE.new],[0,...TIMELINE.old]);let k=0;while(k<shots.length-1&&st>=shots[k+1].t)k++;const s=shots[k],dt=st-s.t;
+ $('stage').style.background=s.bg;$('orb').style.background=s.orb;$('orb').style.transform=`translateY(${Math.sin(t*.6)*12}px) scale(${1+Math.sin(t*.4)*.015})`;
+ $('eyebrow').textContent=s.eye;$('title').textContent=s.title;$('title').style.transform=`translateY(${22*Math.exp(-dt*9)}px)`;
+ $('badge').textContent=s.badge;$('badge').style.transform=`rotate(-5deg) scale(${1+.07*Math.sin(dt*13)*Math.exp(-dt*7)})`;
+ $('badge').style.display=s.p<0?'none':'block';$('card').style.display=s.p<0?'none':'block';$('device').style.display=s.p<0?'block':'none';$('circle').style.display=s.p<0?'block':'none';
+ if(s.p>=0){const [x,y,w,h]=rects[s.p];const scale=Math.min(860/w,782/h);$('sheet').style.width=(1145*scale)+'px';$('sheet').style.left=((860-w*scale)/2-x*scale)+'px';$('sheet').style.top=((782-h*scale)/2-y*scale)+'px';$('card').style.transform=`translate(${(k%2?1:-1)*75*Math.exp(-dt*12)}px,${32*Math.exp(-dt*9)}px) rotate(${(k%2?1:-1)*(.9+2*Math.exp(-dt*10))}deg) scale(${1+.012*Math.sin(t*1.2)})`}
+ $('device').style.transform=`translateY(${Math.sin(t*2)*9}px) rotate(${-3+Math.sin(t)*1.2}deg) scale(${1+.06*Math.sin(dt*12)*Math.exp(-dt*7)})`;
+ $('f1').textContent=s.em[0];$('f2').textContent=s.em[1];$('f1').style.transform=`translateY(${12*Math.sin(t*2) }px) rotate(-12deg)`;$('f2').style.transform=`translateY(${12*Math.cos(t*2)}px) rotate(12deg)`;
+ $('spark').style.transform=`rotate(${t*15}deg)`;
+ const ci=TIMELINE.new.findLastIndex(v=>t>=v); const line=LINES[Math.min(ci,LINES.length-1)];
+ $('captions').style.display=s.end?'none':'block';$('cta').style.display=s.end?'block':'none';
+ if(line&&ci>=0&&ci<LINES.length){const words=line.split(' '),a=TIMELINE.new[ci],b=LINE_ENDS[ci];const weights=words.map(w=>Math.max(2,w.replace(/[^a-z]/gi,'').length)**.65);let sum=weights.reduce((a,b)=>a+b,0),cum=0;const frac=clamp((t-a)/(b-a));let wi=weights.length-1;for(let j=0;j<weights.length;j++){cum+=weights[j]/sum;if(frac<cum){wi=j;break}}$('captions').innerHTML=words.map((w,j)=>`<span class="${j===wi?'active':''}">${w}</span>`).join(' ')}else $('captions').textContent='';
+ [...document.querySelectorAll('.dot')].forEach((el,j)=>el.classList.toggle('on',j===Math.min(5,Math.floor(st/5))));$('footerText').textContent=s.end?'cheekoai.in':'A little wonder. Every day.';
+ $('progress').style.width=(1080*clamp(t/TIMELINE.dur))+'px';
+ // A quick graphic edge wipe hides the cut without double-exposing two characters.
+ const realStart=interp(s.t,[0,...TIMELINE.old],[0,...TIMELINE.new]);const d=t-realStart;$('wipe').style.transform=(k>0&&d<.16)?`translateX(${1080+d/.16*1200}px)`:'translateX(-1200px)';
+};
+window.ready=Promise.all([document.fonts.ready,...[...document.images].map(i=>i.decode())]);window.ready.then(()=>window.render(0));
+</script></body></html>

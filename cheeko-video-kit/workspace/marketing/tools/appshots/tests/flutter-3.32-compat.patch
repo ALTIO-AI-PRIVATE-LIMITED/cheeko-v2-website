@@ -1,0 +1,75 @@
+--- a/pubspec.yaml
++++ b/pubspec.yaml
+@@ -36,7 +36,7 @@
+   mobile_scanner: ^7.1.3
+   mqtt_client: ^10.4.0
+   package_info_plus: ^9.0.0
+-  path_provider: ^2.1.6
++  path_provider: ^2.1.5
+   permission_handler: ^12.0.1
+   pinput: ^6.0.1
+   provider: ^6.1.5+1
+--- a/lib/screens/device/device_reference_widgets.dart
++++ b/lib/screens/device/device_reference_widgets.dart
+@@ -1183,7 +1183,7 @@
+           ),
+           Switch(
+             value: value,
+-            activeThumbColor: AppColors.white,
++            activeColor: AppColors.white,
+             activeTrackColor: AppColors.homeGreen,
+             inactiveThumbColor: AppColors.white,
+             inactiveTrackColor: AppColors.black.withValues(alpha: 0.14),
+--- a/lib/screens/profile/house_rules_screen.dart
++++ b/lib/screens/profile/house_rules_screen.dart
+@@ -398,7 +398,7 @@
+                 Switch(
+                   value: _noScaryStories,
+                   onChanged: (value) => setState(() => _noScaryStories = value),
+-                  activeThumbColor: AppColors.white,
++                  activeColor: AppColors.white,
+                   activeTrackColor: AppColors.profileIconOrange,
+                   inactiveThumbColor: AppColors.white,
+                   inactiveTrackColor: AppColors.black.withValues(alpha: 0.14),
+--- a/lib/widgets/toy_activation/welcome_step_widget.dart
++++ b/lib/widgets/toy_activation/welcome_step_widget.dart
+@@ -554,7 +554,7 @@
+             Switch(
+               value: isChecked,
+               onChanged: (_) => onTap(),
+-              activeThumbColor: Colors.white,
++              activeColor: Colors.white,
+               activeTrackColor: AppColors.orange,
+               inactiveThumbColor: Colors.white,
+               inactiveTrackColor: const Color(0xFFDDD8D0),
+--- a/lib/screens/agent/agent_details_screen.dart
++++ b/lib/screens/agent/agent_details_screen.dart
+@@ -577,7 +577,7 @@
+         ],
+       ),
+       child: DropdownButtonFormField<Map<String, dynamic>>(
+-        initialValue: currentTemplate,
++        value: currentTemplate,
+         onChanged:
+             (_isEditing && !_isLoading)
+                 ? (Map<String, dynamic>? newTemplate) {
+@@ -942,7 +942,7 @@
+                 : null,
+       ),
+       child: DropdownButtonFormField<String>(
+-        initialValue:
++        value:
+             languages.contains(_selectedLanguage) ? _selectedLanguage : null,
+         style: TextStyle(
+           fontSize: 16,
+--- a/lib/screens/onboarding/parent_profile_setup_screen.dart
++++ b/lib/screens/onboarding/parent_profile_setup_screen.dart
+@@ -534,7 +534,7 @@
+                   ),
+                   Constants.h16,
+                   DropdownButtonFormField<String>(
+-                    initialValue: _selectedLanguage,
++                    value: _selectedLanguage,
+                     decoration: _inputDecoration('Preferred language'),
+                     items:
+                         _languages

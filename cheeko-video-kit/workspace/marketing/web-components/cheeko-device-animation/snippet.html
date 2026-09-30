@@ -1,0 +1,32 @@
+<!-- 1. In <head> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Patrick+Hand&display=swap" />
+<link rel="stylesheet" href="device-anim.css" />
+
+<!-- 2. Where the section goes -->
+<div class="devmap dm" id="devanim">
+  <div class="dm-stage">
+    <div class="dm-dev">
+      <img class="dm-body" src="img/cheeko-front.webp" width="1000" height="1674" alt="The Cheeko device in yellow, with its parts labelled: the screen, card slot at the back, rotary dial, front speaker, side buttons for power and volume, a headphone jack for private listening, and USB-C charging" loading="lazy" />
+      <div class="dm-screen" aria-hidden="true">
+        <img class="dm-scr on" data-name="Talk" src="img/menu-talk.webp" alt="" loading="lazy" />
+        <img class="dm-scr" data-name="Imagine" src="img/menu-imagine.webp" alt="" loading="lazy" />
+        <img class="dm-scr" data-name="Games" src="img/menu-games.webp" alt="" loading="lazy" />
+        <img class="dm-scr" data-name="Funny Voice" src="img/menu-funny_voice.webp" alt="" loading="lazy" />
+        <img class="dm-scr" data-name="Radio" src="img/menu-radio.webp" alt="" loading="lazy" />
+        <img class="dm-scr" data-name="Settings" src="img/menu-settings.webp" alt="" loading="lazy" />
+      </div>
+      <button class="dm-knob" type="button" aria-label="Turn the dial. Showing Talk" title="Turn the dial"><img src="img/knob.webp" alt="" loading="lazy" /></button>
+    </div>
+    <svg class="dm-arrows" aria-hidden="true"><defs><marker id="dmHead" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="3.6" markerHeight="3.6" orient="auto-start-reverse"><path d="M1 1 L8 5 L1 9"/></marker></defs><g></g></svg>
+    <div class="dm-lab" data-side="l" data-fx=".27" data-fy=".2" style="--x:12.5%;--y:13%;--m:1;--i:0"><b>The screen</b><span>Cheeko's face. Never video</span></div>
+    <div class="dm-lab" data-side="l" data-fx="-.01" data-fy=".325" data-bow=".16" style="--x:11.9%;--y:31%;--m:6;--i:1"><b>USB-C</b><span>any USB-C charger works</span><span>4 to 6 hours of play</span></div>
+    <div class="dm-lab" data-side="l" data-fx="-.01" data-fy=".51" data-bow=".04" style="--x:9%;--y:51%;--m:7;--i:2"><b>Headphone jack</b><span>for private listening</span></div>
+    <div class="dm-lab" data-side="l" data-fx=".34" data-fy=".83" data-bow="-.08" style="--x:14%;--y:80%;--m:4;--i:3"><b>Front speaker</b><span>big, clear sound</span></div>
+    <div class="dm-lab" data-side="r" data-fx=".54" data-fy="-.005" data-bow=".18" style="--x:70%;--y:2%;--m:3;--i:4"><b>Card slot</b><span>at the back, for stories,</span><span>rhymes and more</span></div>
+    <div class="dm-lab" data-side="r" data-fx="1.005" data-fy=".33" data-bow="-.1" style="--x:72.2%;--y:32%;--m:5;--i:5"><b>Side buttons</b><span>power and volume</span></div>
+    <div class="dm-lab" data-side="r" data-fx=".7" data-fy=".571" data-bow=".04" style="--x:72.2%;--y:54%;--m:2;--i:6"><b>Rotary dial</b><span>turn to explore, press to</span><span>choose</span></div>
+  </div>
+</div>
+
+<!-- 3. Before </body> -->
+<script src="device-anim.js" defer></script>

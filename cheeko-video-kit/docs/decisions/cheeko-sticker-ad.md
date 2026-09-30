@@ -1,0 +1,21 @@
+---
+name: cheeko-sticker-ad
+description: "V06 sticker-animation ad in progress (quirky/sarcastic, phone narrator); Ravi's family sticker library lives in ~/Documents and is low-res"
+metadata:
+  node_type: memory
+  type: project
+  originSessionId: 480d3e99-894a-4e4d-a066-4d9c8a8a3d65
+  modified: 2026-09-28T20:16:23.555Z
+---
+
+2026-09-28/29: Ravi wants quirky, sarcastic "Moonshot-style" story ads made as 2D sticker animation, built with the same web pipeline (compose.html + render.mjs), not live action. First one is V06, working title "The Phone Got Dumped" (the family phone narrates, jealous of Cheeko; Nani roasts it: "Arre, even my stories end.").
+
+**Ravi's sticker assets (2026-09-29):** `~/Documents/cheeko-home-sticker-sheet.svg` (45 named `<symbol>`s: kid/dad/mom poses, family moments, home props) + `~/Documents/assets.json` (manifest), plus a 16-panel storyboard image "Five Minutes. Lifetime Validity." (dad/mom working, "5 min?" phone handoff, kid hooked, family drained, meet Cheeko, together again). The SVGs are auto colour traces of ~200 px art and the storyboard is 1145x1374 (~270 px panels), so both go blotchy/soft above about half-screen size. No higher-res originals were on the Mac. Extracted per-sticker SVGs into the session scratchpad (home-lib/svg).
+
+**Don't use from that pack:** assets.json's device link is `device_live.png` (old dark UI, banned) and storyboard panels 13-16 show an AI-drawn device (panel 14 also puts the card in the top slot, which is unsettled). Use the real `device_current.png` + fw-screens instead. "Lifetime validity" could read as no subscription (Talk/Imagine are free 3 months then an optional plan), so flag it before using as a tagline.
+
+**V06 build (2026-09-29):** folder `cheeko-v2-website/brag-output-2026-09-29-five-minutes/` (work/: compose.html, cut_panels.py cuts storyboard panels 01-12 to stickers/, mix.py = voice + sfx + music-src.*, review_sheet.py). Voice: 20 MiniMax lines in vo_lines.json "V06", phone = English_Upbeat_Woman played at tempo 1.08 (new "tempo" key in build_vo.py; run with `VIDS=V06`), Nani = hindi_female_2_v1 because English_Wiselady said "Arre" as "array". Recorder: marketing/tools/vo_rec.py (runs on the dev box, keys from ui.py env, Sarvam STT check). Real sfx from Drive Sounds (doorbell, clock, battery_low, charge_full, card_insert, success, popup). 34.4 s; render takes ~4.7 min; raw-keep.mp4 kept so new music only needs mix.py + finish.sh. Final (2026-09-29): Ravi picked Envato "Sneaky Pizzicato Comedy" (Korolkov), downloaded in the built-in browser after his yes (new Envato app licenses on download, no project-name step), MUSIC_START=48.0. Published to Drive V06 + Ready to post; process written up in HOW-WE-MAKE-VIDEOS.md "Sticker animation videos".
+
+**V09 "Tiny Adults" (2026-09-29, published; first called V07, renumbered because another session had already taken V07/V08):** kids at a 7th birthday party act like adults from phones (Corporate Arjun, Influencer Myra, News Anaya shouting "World War Three... source? A reel", WhatsApp Uncle Bunty, Burnt-out Pihu), freeze + "Kids stay kids when you give them kid things. Give them grown-up things, and you get this.", rewind, Cheeko, kids being kids (Talk, Funny Voice chipmunk of Bunty's own line, Jump game). Folder `brag-output-2026-09-29-tiny-adults/`. Ravi makes stickers himself in ChatGPT/Codex: sheet in ~/Downloads, single high-res stickers in `~/.codex/generated_images/<id>/` (7 of 14 hi-res so far); `work/cut_stickers.py` prefers `stickers/hires-source/<name>.png` over the sheet crop. Kid voices: Strong-WilledBoy, PlayfulGirl, UpsetGirl, SadTeen, Soft-spokenGirl at voices_tempo 1.12; narrator Upbeat_Woman 1.1; 43.9 s. Music: Envato "Quirky Fun Sports Party Dance" (SunChannelMusic, 114 BPM, comes with stems); Ravi downloaded it himself. mix.py follows the story: chorus on the hook, record scratch, bass+organ+soft drums stems under the grown-up scenes, silence on the freeze, final chorus from 63.16 s so the final hit lands on the end card. He asked why I couldn't generate stickers: I can (OpenArt Pro, 9,145 credits; Nano Banana 2 i2i 2K = 30 credits), I just ask before spending.
+
+Sticker look is done in the browser: SVG filter (alpha threshold + feMorphology dilate) for the white die-cut border and shadow. See [[cheeko-marketing-videos]], [[feedback-video-style]].

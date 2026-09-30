@@ -1,0 +1,114 @@
+{
+ "vid": "V15",
+ "dur": 26.49,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 1.745,
+   "spk": "N",
+   "text": "Grandma lives far away.",
+   "show": "Grandma lives far away.",
+   "emoji": {
+    "away": "✈️"
+   },
+   "hl": []
+  },
+  {
+   "s": 2.045,
+   "e": 3.74,
+   "spk": "N",
+   "text": "But her stories don't have to.",
+   "show": "But her stories don't have to.",
+   "emoji": {
+    "to": "💛"
+   },
+   "hl": [
+    "stories"
+   ]
+  },
+  {
+   "s": 4.04,
+   "e": 7.116,
+   "spk": "N",
+   "text": "Record her voice in the Cheeko app. Add a photo too.",
+   "show": "Record her voice in the Cheeko app. Add a photo too.",
+   "emoji": {
+    "app": "📱",
+    "too": "📸"
+   },
+   "hl": [
+    "Record"
+   ]
+  },
+  {
+   "s": 7.366,
+   "e": 9.071,
+   "spk": "N",
+   "text": "It plays on the Make Your Own card.",
+   "show": "It plays on the Make Your Own card.",
+   "emoji": {
+    "card": "🎴"
+   },
+   "hl": [
+    "Make",
+    "Your",
+    "Own"
+   ]
+  },
+  {
+   "s": 9.571,
+   "e": 13.502,
+   "spk": "grandma",
+   "text": "Once upon a time, there was a little elephant who loved mangoes.",
+   "show": "Once upon a time, there was a little elephant who loved mangoes.",
+   "emoji": {
+    "mangoes": "🐘"
+   },
+   "hl": []
+  },
+  {
+   "s": 13.802,
+   "e": 14.594,
+   "spk": "kid",
+   "text": "दादी!",
+   "show": "Dadi!",
+   "emoji": {
+    "Dadi!": "🥰"
+   },
+   "hl": []
+  },
+  {
+   "s": 14.994,
+   "e": 16.919,
+   "spk": "N",
+   "text": "Every night. Whenever they miss her.",
+   "show": "Every night. Whenever they miss her.",
+   "emoji": {
+    "her": "🌙"
+   },
+   "hl": []
+  },
+  {
+   "s": 17.219,
+   "e": 19.963,
+   "spk": "N",
+   "text": "Record 10 clips. Play them forever.",
+   "show": "Record 10 clips. Play them forever.",
+   "emoji": {
+    "forever": "❤️"
+   },
+   "hl": [
+    "forever."
+   ]
+  },
+  {
+   "s": 20.263,
+   "e": 23.092,
+   "spk": "N",
+   "text": "Cheeko. Less screen, more childhood!",
+   "show": "Cheeko. Less screen, more childhood!",
+   "emoji": {},
+   "hl": []
+  }
+ ]
+}

@@ -88,10 +88,23 @@ site/
 ## 4. Run locally
 
 ```bash
-python3 server.py        # serves http://127.0.0.1:8123
-# or
-python3 -m http.server 8123
+python3 server.py        # serves http://127.0.0.1:8123 and proxies /api/web-demo/*
 ```
+
+The Cheeko **Talk live** demo also needs the Manager API running on
+`http://127.0.0.1:8002` and the Cheeko LiveKit voice worker running. If the
+Manager API uses another host, set `CHEEKO_MANAGER_API_URL` to its origin when
+starting `server.py`. Restart an older preview server after changing this file.
+Plain `python3 -m http.server` only serves files and returns HTTP 501 for the
+demo's POST requests. On Netlify, `netlify.toml` handles the API proxy instead.
+
+Google sign-in is required before the one-minute Talk live demo. The Manager
+API must have `WEB_DEMO_GOOGLE_AUTH_REQUIRED=true`, a `WEB_DEMO_SECRET` (or
+existing `SERVICE_SECRET_KEY`), the web-demo database migration, and its usual
+LiveKit URL/key/secret. Firebase Authentication must have Google enabled and
+the deployed website domain authorized. The GPT-Live worker must be registered
+under the same name as `WEB_DEMO_AGENT_NAME` (default `cheeko-agent`). Restart
+the Manager API and worker after their configuration or code changes.
 
 ## 5. Deploy
 

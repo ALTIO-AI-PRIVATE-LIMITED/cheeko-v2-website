@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@800;900&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#FFF4E3;font-family:Gabarito,system-ui,sans-serif}
+  #dev{position:absolute;left:50%;top:430px;width:640px;transform-origin:50% 60%}
+  #dev img{position:absolute;display:block}
+  #body{width:100%;position:relative!important}
+  #knob{left:29.9%;top:45.69%;width:38.2%}
+  h1{position:absolute;left:0;right:0;top:170px;margin:0;text-align:center;font-size:96px;line-height:1.05;color:#231A10}
+  h1 b{background:linear-gradient(transparent 55%,#FFC81A 55%)}
+  p{position:absolute;left:0;right:0;bottom:170px;margin:0;text-align:center;font-size:52px;color:#F0521D}
+</style></head>
+<body>
+<h1 id="t">Your Cheeko kit<br><b>works.</b></h1>
+<div id="dev"><img id="body" src="../../assets/img/device-v2/web/cheeko-front.webp"><img id="knob" src="../../assets/img/device-v2/web/knob.webp"></div>
+<p id="p">render(t) + Chromium + ffmpeg</p>
+<script>
+// The whole method in one page: render(t) is a pure function of time, ready resolves when assets are loaded.
+const $ = id => document.getElementById(id);
+const ease = x => 1 - Math.pow(1 - Math.min(Math.max(x, 0), 1), 3);
+const back = x => { x = Math.min(Math.max(x, 0), 1); const c = 1.70158; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+window.render = t => {
+  const s = back(t / 0.6);
+  $('dev').style.transform = `translateX(-50%) scale(${0.6 + 0.4 * s})`;
+  $('dev').style.opacity = ease(t / 0.3);
+  $('knob').style.transform = `rotate(${30 * back((t - 0.9) / 0.5) + 30 * back((t - 1.5) / 0.5)}deg)`;
+  $('t').style.opacity = ease((t - 0.2) / 0.4); $('t').style.transform = `translateY(${40 * (1 - ease((t - 0.2) / 0.4))}px)`;
+  $('p').style.opacity = ease((t - 0.8) / 0.4);
+};
+window.ready = Promise.all([document.fonts.ready, ...[...document.images].map(i => i.decode())]).then(() => window.render(0));
+</script>
+</body></html>

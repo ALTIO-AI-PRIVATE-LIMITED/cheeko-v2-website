@@ -16,10 +16,11 @@
 <link rel="icon" type="image/png" href="assets/img/logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800;900&family=Hanken+Grotesk:wght@400;600;800&family=Spline+Sans+Mono:wght@500;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800;900&family=Gochi+Hand&family=Hanken+Grotesk:wght@400;600;800&family=Patrick+Hand&family=Spline+Sans+Mono:wght@500;700&display=swap" />
 <link rel="preload" as="image" href="assets/img/live/hero-2.jpg" />
 <link rel="preload" as="image" href="assets/img/live/hero-3.jpg" />
-<link rel="stylesheet" href="assets/css/premium.css?v=64" />
+<link rel="stylesheet" href="assets/css/premium.css?v=69" />
+<link rel="stylesheet" href="assets/cheeko-device-animation/device-anim.css?v=1" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -94,7 +95,7 @@
 </header>
 
 <!-- trust row + backers -->
-<div class="wrap" style="padding-top:18px;">
+<div class="wrap trust-backers">
   <div class="tstrip rv">
     <span><i>✓</i><b>₹5,999 once</b><small>device and 10 cards</small></span>
     <span><i>✓</i><b>Free delivery</b><small>everywhere in India</small></span>
@@ -117,8 +118,29 @@
         <span class="eyebrow">Built for curious minds</span>
         <h2 class="disp">Meet the device.</h2>
       </div>
-      <div class="devmap">
-        <img class="dev" src="assets/img/live/device-annotated.png?v=2" alt="The Cheeko device with its parts labelled: the screen, card slot at the back, rotary dial, front speaker, side buttons for power and volume, a headphone jack for private listening, and USB-C charging" loading="lazy" />
+      <div class="devmap dm" id="devanim">
+        <div class="dm-stage">
+          <div class="dm-dev">
+            <img class="dm-body" src="assets/cheeko-device-animation/img/cheeko-front.webp" width="1000" height="1674" alt="The Cheeko device in yellow, with its parts labelled: the screen, card slot at the back, rotary dial, front speaker, side buttons for power and volume, a headphone jack for private listening, and USB-C charging" loading="lazy" />
+            <div class="dm-screen" aria-hidden="true">
+              <img class="dm-scr on" data-name="Talk" src="assets/cheeko-device-animation/img/menu-talk.webp" alt="" loading="lazy" />
+              <img class="dm-scr" data-name="Imagine" src="assets/cheeko-device-animation/img/menu-imagine.webp" alt="" loading="lazy" />
+              <img class="dm-scr" data-name="Games" src="assets/cheeko-device-animation/img/menu-games.webp" alt="" loading="lazy" />
+              <img class="dm-scr" data-name="Funny Voice" src="assets/cheeko-device-animation/img/menu-funny_voice.webp" alt="" loading="lazy" />
+              <img class="dm-scr" data-name="Radio" src="assets/cheeko-device-animation/img/menu-radio.webp" alt="" loading="lazy" />
+              <img class="dm-scr" data-name="Settings" src="assets/cheeko-device-animation/img/menu-settings.webp" alt="" loading="lazy" />
+            </div>
+            <button class="dm-knob" type="button" aria-label="Turn the dial. Showing Talk" title="Turn the dial"><img src="assets/cheeko-device-animation/img/knob.webp" alt="" loading="lazy" /></button>
+          </div>
+          <svg class="dm-arrows" aria-hidden="true"><defs><marker id="dmHead" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="3.6" markerHeight="3.6" orient="auto-start-reverse"><path d="M1 1 L8 5 L1 9"/></marker></defs><g></g></svg>
+          <div class="dm-lab" data-side="l" data-fx=".27" data-fy=".2" style="--x:12.5%;--y:13%;--m:1;--i:0"><b>The screen</b><span>Cheeko's face. Never video</span></div>
+          <div class="dm-lab" data-side="l" data-fx="-.01" data-fy=".325" data-bow=".16" style="--x:11.9%;--y:31%;--m:6;--i:1"><b>USB-C</b><span>any USB-C charger works</span><span>4 to 6 hours of play</span></div>
+          <div class="dm-lab" data-side="l" data-fx="-.01" data-fy=".51" data-bow=".04" style="--x:9%;--y:51%;--m:7;--i:2"><b>Headphone jack</b><span>for private listening</span></div>
+          <div class="dm-lab" data-side="l" data-fx=".34" data-fy=".83" data-bow="-.08" style="--x:14%;--y:80%;--m:4;--i:3"><b>Front speaker</b><span>big, clear sound</span></div>
+          <div class="dm-lab" data-side="r" data-fx=".54" data-fy="-.005" data-bow=".18" style="--x:70%;--y:2%;--m:3;--i:4"><b>Card slot</b><span>at the back, for stories,</span><span>rhymes and more</span></div>
+          <div class="dm-lab" data-side="r" data-fx="1.005" data-fy=".33" data-bow="-.1" style="--x:72.2%;--y:32%;--m:5;--i:5"><b>Side buttons</b><span>power and volume</span></div>
+          <div class="dm-lab" data-side="r" data-fx=".7" data-fy=".571" data-bow=".04" style="--x:72.2%;--y:54%;--m:2;--i:6"><b>Rotary dial</b><span>turn to explore, press to</span><span>choose</span></div>
+        </div>
       </div>
       
     </div>
@@ -139,9 +161,9 @@
         <p>Insert. Play. Repeat.</p>
         <span class="btcats"><span>Stories</span><span>Rhymes</span><span>Skills</span><span>Games</span><span>Custom</span></span>
         <span class="cardfan">
-          <img src="assets/img/live/card-clever.jpg" alt="The Clever Little Tales card" loading="lazy" />
-          <img src="assets/img/live/card-storytime.jpg" alt="The Storytime Adventures card" loading="lazy" />
-          <img src="assets/img/live/card-ravi.jpg" alt="The Ravi's Wild Journey card" loading="lazy" />
+          <img src="assets/img/updated-cards/clever%20little%20tales.png" alt="The Clever Little Tales card" loading="lazy" />
+          <img src="assets/img/updated-cards/tales%20of%20kindness.png" alt="The Tales of Kindness card" loading="lazy" />
+          <img src="assets/img/updated-cards/ravi%20and%20nila.png" alt="The Ravi and Nila card" loading="lazy" />
         </span>
       </a>
       <a class="bt c-sun rv has-chars" href="#characters" style="grid-column:span 2;">
@@ -217,23 +239,23 @@
     <div class="howsteps rv">
       <div class="hbeat">
         <div class="hviz">
-          <span class="hb-fan"><img src="assets/img/live/card-clever.jpg" alt="The Clever Little Tales card" loading="lazy" /><img src="assets/img/live/card-playsing.jpg" alt="The Play and Sing Along card" loading="lazy" /><img src="assets/img/live/card-storytime.jpg" alt="The Storytime Adventures card" loading="lazy" /></span>
+          <span class="hb-fan"><img src="assets/img/updated-cards/clever%20little%20tales.png" alt="The Clever Little Tales card" loading="lazy" /><img src="assets/img/updated-cards/play%20and%20sing%20along%20.png" alt="The Play and Sing Along card" loading="lazy" /><img src="assets/img/updated-cards/tales%20of%20kindness.png" alt="The Tales of Kindness card" loading="lazy" /></span>
         </div>
         <span class="hcap">1 · Pick a card</span>
       </div>
       <div class="hbeat">
         <div class="hviz">
-          <img class="hb-drop" src="assets/img/live/card-storytime.jpg" alt="A card dropping into the device" loading="lazy" />
+          <img class="hb-drop" src="assets/img/updated-cards/tales%20of%20kindness.png" alt="The Tales of Kindness card dropping into the device" loading="lazy" />
           <svg class="hb-arrow" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v14M6 12l6 6 6-6"></path></svg>
-          <img class="hb-dev" src="assets/img/device_live.png?v=2" alt="The Cheeko device" loading="lazy" />
+          <img class="hb-dev" src="assets/img/final-tilted-cheeko.png" alt="The Cheeko device" loading="lazy" />
         </div>
         <span class="hcap">2 · Into the card slot at the back</span>
       </div>
       <div class="hbeat">
         <div class="hviz">
-          <span class="hb-chip"><i>♪</i> Storytime Adventures</span>
-          <img class="hb-behind" src="assets/img/live/card-storytime.jpg" alt="The card sitting in the back of the device" loading="lazy" />
-          <img class="hb-dev" src="assets/img/device_live.png?v=2" alt="The Cheeko device playing a card" loading="lazy" />
+          <span class="hb-chip"><i>✦</i> Tales of Kindness</span>
+          <img class="hb-behind" src="assets/img/updated-cards/tales%20of%20kindness.png" alt="The Tales of Kindness card sitting in the back of the device" loading="lazy" />
+          <img class="hb-dev" src="assets/img/final-tilted-cheeko.png" alt="The Cheeko device playing a card" loading="lazy" />
         </div>
         <span class="hcap">3 · It comes alive</span>
       </div>
@@ -245,83 +267,83 @@
     <div class="decktrain">
       <div class="deckrail">
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-storytime.jpg" alt="The Storytime Adventures card" loading="lazy" /><span class="cardno">N&ordm; 01/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/tales%20of%20kindness.png" alt="The Tales of Kindness card" loading="lazy" /><span class="cardno">N&ordm; 01/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 01/10 &middot; STORIES</span><b style="display:block;margin-top:4px;">Five famous tales</b><p>World classics, told beautifully.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-ravi.jpg" alt="The Ravi's Wild Journey card" loading="lazy" /><span class="cardno">N&ordm; 02/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/ravi%20and%20nila.png" alt="The Ravi and Nila card" loading="lazy" /><span class="cardno">N&ordm; 02/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 02/10 &middot; STORIES</span><b style="display:block;margin-top:4px;">Five curated adventures</b><p>Ravi in the forest. Nila in the ocean.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-clever.jpg" alt="The Clever Little Tales card" loading="lazy" /><span class="cardno">N&ordm; 03/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/clever%20little%20tales.png" alt="The Clever Little Tales card" loading="lazy" /><span class="cardno">N&ordm; 03/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 03/10 &middot; STORIES</span><b style="display:block;margin-top:4px;">The tales every family knows</b><p>The crow, the cap seller, the woodcutter.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-nani.jpg" alt="The Nani card" loading="lazy" /><span class="cardno">N&ordm; 04/10</span></div>
+        <div class="fface front full-art"><img class="cardface" src="assets/img/updated-cards/Nani.png" alt="The Nani card" loading="lazy" /><span class="cardno">N&ordm; 04/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 04/10 &middot; CHARACTER</span><b style="display:block;margin-top:4px;">Your storytelling grandma</b><p>Interrupt her mid-story. She listens.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-mitthu.jpg" alt="The Mitthu the Parrot card" loading="lazy" /><span class="cardno">N&ordm; 05/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/mitthu.png" alt="The Mitthu the Parrot card" loading="lazy" /><span class="cardno">N&ordm; 05/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 05/10 &middot; CHARACTER</span><b style="display:block;margin-top:4px;">Your spelling partner</b><p>He says a word. Your child spells it.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-playsing.jpg" alt="The Play and Sing Along card" loading="lazy" /><span class="cardno">N&ordm; 06/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/play%20and%20sing%20along%20.png" alt="The Play and Sing Along card" loading="lazy" /><span class="cardno">N&ordm; 06/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 06/10 &middot; RHYMES</span><b style="display:block;margin-top:4px;">Rhymes for little explorers</b><p>Ready for the hundredth encore.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-dreamy.jpg" alt="The Dreamy Melodies card" loading="lazy" /><span class="cardno">N&ordm; 07/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/dream%20melodies.png" alt="The Dreamy Melodies card" loading="lazy" /><span class="cardno">N&ordm; 07/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 07/10 &middot; RHYMES</span><b style="display:block;margin-top:4px;">Soft songs for little dreamers</b><p>In the language you choose.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front"><div class="fart" style="background:var(--tint);"><img class="artimg" src="assets/img/card_habits.jpg" alt="" loading="lazy" /></div><div class="fmeta"><span class="serial">N&ordm; 08/10 &middot; GAME</span><b>Around the House</b></div></div>
+        <div class="fface front full-art"><img class="cardface" src="assets/img/updated-cards/sounds%20around%20me.png" alt="Around the House sound game card" loading="lazy" /></div>
         <div class="fface back"><div><span class="serial">N&ordm; 08/10 &middot; GAME</span><b style="display:block;margin-top:4px;">The sound detective game</b><p>Cooker whistle. Doorbell. Name that sound.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-lava.jpg" alt="The Floor is Lava! card" loading="lazy" /><span class="cardno">N&ordm; 09/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/floor%20is%20lava.png" alt="The Floor is Lava! card" loading="lazy" /><span class="cardno">N&ordm; 09/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 09/10 &middot; GAME</span><b style="display:block;margin-top:4px;">The music party game</b><p>Music stops. Everybody freeze.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-makeyourown.jpg" alt="The Make Your Own card" loading="lazy" /><span class="cardno">N&ordm; 10/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/make%20your%20own%20.png" alt="The Make Your Own card" loading="lazy" /><span class="cardno">N&ordm; 10/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 10/10 &middot; YOURS</span><b style="display:block;margin-top:4px;">Grandma's voice, on demand</b><p>Record 10 clips. Play them forever.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-storytime.jpg" alt="The Storytime Adventures card" loading="lazy" /><span class="cardno">N&ordm; 01/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/tales%20of%20kindness.png" alt="The Tales of Kindness card" loading="lazy" /><span class="cardno">N&ordm; 01/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 01/10 &middot; STORIES</span><b style="display:block;margin-top:4px;">Five famous tales</b><p>World classics, told beautifully.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-ravi.jpg" alt="The Ravi's Wild Journey card" loading="lazy" /><span class="cardno">N&ordm; 02/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/ravi%20and%20nila.png" alt="The Ravi and Nila card" loading="lazy" /><span class="cardno">N&ordm; 02/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 02/10 &middot; STORIES</span><b style="display:block;margin-top:4px;">Five curated adventures</b><p>Ravi in the forest. Nila in the ocean.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-clever.jpg" alt="The Clever Little Tales card" loading="lazy" /><span class="cardno">N&ordm; 03/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/clever%20little%20tales.png" alt="The Clever Little Tales card" loading="lazy" /><span class="cardno">N&ordm; 03/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 03/10 &middot; STORIES</span><b style="display:block;margin-top:4px;">The tales every family knows</b><p>The crow, the cap seller, the woodcutter.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-nani.jpg" alt="The Nani card" loading="lazy" /><span class="cardno">N&ordm; 04/10</span></div>
+        <div class="fface front full-art"><img class="cardface" src="assets/img/updated-cards/Nani.png" alt="The Nani card" loading="lazy" /><span class="cardno">N&ordm; 04/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 04/10 &middot; CHARACTER</span><b style="display:block;margin-top:4px;">Your storytelling grandma</b><p>Interrupt her mid-story. She listens.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-mitthu.jpg" alt="The Mitthu the Parrot card" loading="lazy" /><span class="cardno">N&ordm; 05/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/mitthu.png" alt="The Mitthu the Parrot card" loading="lazy" /><span class="cardno">N&ordm; 05/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 05/10 &middot; CHARACTER</span><b style="display:block;margin-top:4px;">Your spelling partner</b><p>He says a word. Your child spells it.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-playsing.jpg" alt="The Play and Sing Along card" loading="lazy" /><span class="cardno">N&ordm; 06/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/play%20and%20sing%20along%20.png" alt="The Play and Sing Along card" loading="lazy" /><span class="cardno">N&ordm; 06/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 06/10 &middot; RHYMES</span><b style="display:block;margin-top:4px;">Rhymes for little explorers</b><p>Ready for the hundredth encore.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-dreamy.jpg" alt="The Dreamy Melodies card" loading="lazy" /><span class="cardno">N&ordm; 07/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/dream%20melodies.png" alt="The Dreamy Melodies card" loading="lazy" /><span class="cardno">N&ordm; 07/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 07/10 &middot; RHYMES</span><b style="display:block;margin-top:4px;">Soft songs for little dreamers</b><p>In the language you choose.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front"><div class="fart" style="background:var(--tint);"><img class="artimg" src="assets/img/card_habits.jpg" alt="" loading="lazy" /></div><div class="fmeta"><span class="serial">N&ordm; 08/10 &middot; GAME</span><b>Around the House</b></div></div>
+        <div class="fface front full-art"><img class="cardface" src="assets/img/updated-cards/sounds%20around%20me.png" alt="Around the House sound game card" loading="lazy" /></div>
         <div class="fface back"><div><span class="serial">N&ordm; 08/10 &middot; GAME</span><b style="display:block;margin-top:4px;">The sound detective game</b><p>Cooker whistle. Doorbell. Name that sound.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-lava.jpg" alt="The Floor is Lava! card" loading="lazy" /><span class="cardno">N&ordm; 09/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/floor%20is%20lava.png" alt="The Floor is Lava! card" loading="lazy" /><span class="cardno">N&ordm; 09/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 09/10 &middot; GAME</span><b style="display:block;margin-top:4px;">The music party game</b><p>Music stops. Everybody freeze.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       <div class="fcardw rv" aria-hidden="true"><div class="flip">
-        <div class="fface front real"><img class="cardface" src="assets/img/live/card-makeyourown.jpg" alt="The Make Your Own card" loading="lazy" /><span class="cardno">N&ordm; 10/10</span></div>
+        <div class="fface front real"><img class="cardface" src="assets/img/updated-cards/make%20your%20own%20.png" alt="The Make Your Own card" loading="lazy" /><span class="cardno">N&ordm; 10/10</span></div>
         <div class="fface back"><div><span class="serial">N&ordm; 10/10 &middot; YOURS</span><b style="display:block;margin-top:4px;">Grandma's voice, on demand</b><p>Record 10 clips. Play them forever.</p></div><span class="serial">TAP TO FLIP BACK</span></div>
       </div></div>
       </div>
@@ -395,7 +417,27 @@
         <div class="role" id="prole"></div>
         <p id="pline"></p>
         <div class="pskills" id="pskills"></div>
-        <button class="player" id="pplayer" type="button"><span class="ptri">▶</span><span class="peq"><i></i><i></i><i></i><i></i></span><span id="plabel">Hear me</span></button>
+        <div class="character-actions">
+          <button class="player" id="pplayer" type="button"><span class="ptri">▶</span><span class="peq"><i></i><i></i><i></i><i></i></span><span id="plabel">Hear me</span></button>
+          <button class="talk-trigger" id="ptalk" type="button" aria-controls="talkpanel" aria-expanded="false" hidden><span aria-hidden="true">●</span> Talk live</button>
+        </div>
+        <div class="talk-panel" id="talkpanel" hidden>
+          <div class="talk-status" id="talk-status" role="status" aria-live="polite">Getting Cheeko ready…</div>
+          <div class="talk-step talk-auth" id="talk-auth-step" hidden>
+            <button class="talk-google" id="talk-google" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.07H12v3.92h5.38a4.6 4.6 0 0 1-2 3.02v2.54h3.24c1.9-1.75 2.98-4.32 2.98-7.41Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.36l-3.24-2.54c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.62A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.4 13.93A6 6 0 0 1 6.08 12c0-.67.12-1.32.32-1.93V7.45H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.55l3.35-2.62Z"/><path fill="#EA4335" d="M12 5.94c1.47 0 2.79.5 3.83 1.5l2.87-2.88A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.45l3.35 2.62C7.19 7.7 9.4 5.94 12 5.94Z"/></svg><span>Continue with Google</span></button>
+            <small>Google confirms your identity only for this voice demo. No Cheeko account or password is created.</small>
+          </div>
+          <div class="talk-step talk-live" id="talk-live-step" hidden>
+            <div class="talk-orb" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <strong>Talk with Cheeko</strong>
+            <span class="talk-time" id="talk-time">1:00</span>
+            <div class="talk-live-controls" id="talk-live-controls" hidden>
+              <button id="talk-mic" class="talk-mic" type="button" aria-pressed="false">🎙 Tap to talk</button>
+              <button id="talk-end" class="talk-end" type="button">End talk</button>
+            </div>
+          </div>
+          <div id="talk-audio" hidden></div>
+        </div>
       </div>
     </div>
   </div>
@@ -412,18 +454,18 @@
           <p class="sub" style="color:#C9BCA4;margin:0;max-width:44ch;">Your child says a wish out loud. Cheeko draws it on the screen in seconds, and it is never the same picture twice.</p>
         </div>
         <button class="vthumb" data-play type="button" aria-label="Play the film of Cheeko drawing a picture">
-          <img src="assets/img/live/imagine-thumb.jpg" alt="" />
+          <img src="assets/img/V12%20Imagine%20-%20thumbnail.jpg" alt="" />
           <span class="vplay"><svg width="26" height="26" viewBox="0 0 16 16" fill="#FFFFFF"><path d="M4 2.5v11l9-5.5-9-5.5Z"></path></svg></span>
           <span class="vlabel">Watch it draw<small>50 seconds · filmed on a Cheeko</small></span>
         </button>
       </div>
-      <div class="imstrip" aria-label="Pictures drawn by Cheeko"><div class="imtrack"><figure><img src="assets/img/imagine/im-05.jpg" width="320" height="240" alt="a tiger riding a bicycle, drawn by a Cheeko" loading="lazy" /><figcaption>“a tiger riding a bicycle”</figcaption></figure><figure><img src="assets/img/imagine/im-07.jpg" width="320" height="240" alt="an auto rickshaw flying to the moon, drawn by a Cheeko" loading="lazy" /><figcaption>“an auto rickshaw flying to the moon”</figcaption></figure><figure><img src="assets/img/imagine/im-17.jpg" width="320" height="240" alt="a robot cooking dosa, drawn by a Cheeko" loading="lazy" /><figcaption>“a robot cooking dosa”</figcaption></figure><figure><img src="assets/img/imagine/im-13.jpg" width="320" height="240" alt="a castle in the clouds, drawn by a Cheeko" loading="lazy" /><figcaption>“a castle in the clouds”</figcaption></figure><figure><img src="assets/img/imagine/im-18.jpg" width="320" height="240" alt="a banana wearing shoes, drawn by a Cheeko" loading="lazy" /><figcaption>“a banana wearing shoes”</figcaption></figure><figure><img src="assets/img/imagine/im-10.jpg" width="320" height="240" alt="a giant mango with a door in it, drawn by a Cheeko" loading="lazy" /><figcaption>“a giant mango with a door in it”</figcaption></figure><figure><img src="assets/img/imagine/im-14.jpg" width="320" height="240" alt="a submarine full of fish having tea, drawn by a Cheeko" loading="lazy" /><figcaption>“a submarine full of fish having tea”</figcaption></figure><figure><img src="assets/img/imagine/im-08.jpg" width="320" height="240" alt="a dinosaur wearing a birthday hat, drawn by a Cheeko" loading="lazy" /><figcaption>“a dinosaur wearing a birthday hat”</figcaption></figure><figure><img src="assets/img/imagine/im-11.jpg" width="320" height="240" alt="a rocket going past a purple planet, drawn by a Cheeko" loading="lazy" /><figcaption>“a rocket going past a purple planet”</figcaption></figure><figure><img src="assets/img/imagine/im-16.jpg" width="320" height="240" alt="a peacock dancing at a Diwali party, drawn by a Cheeko" loading="lazy" /><figcaption>“a peacock dancing at a Diwali party”</figcaption></figure><figure><img src="assets/img/imagine/im-15.jpg" width="320" height="240" alt="my school bag walking to school by itself, drawn by a Cheeko" loading="lazy" /><figcaption>“my school bag walking to school by itself”</figcaption></figure><figure><img src="assets/img/imagine/im-12.jpg" width="320" height="240" alt="rain made of orange juice, drawn by a Cheeko" loading="lazy" /><figcaption>“rain made of orange juice”</figcaption></figure><figure><img src="assets/img/imagine/im-05.jpg" width="320" height="240" alt="a tiger riding a bicycle, drawn by a Cheeko" loading="lazy" /><figcaption>“a tiger riding a bicycle”</figcaption></figure><figure><img src="assets/img/imagine/im-07.jpg" width="320" height="240" alt="an auto rickshaw flying to the moon, drawn by a Cheeko" loading="lazy" /><figcaption>“an auto rickshaw flying to the moon”</figcaption></figure><figure><img src="assets/img/imagine/im-17.jpg" width="320" height="240" alt="a robot cooking dosa, drawn by a Cheeko" loading="lazy" /><figcaption>“a robot cooking dosa”</figcaption></figure><figure><img src="assets/img/imagine/im-13.jpg" width="320" height="240" alt="a castle in the clouds, drawn by a Cheeko" loading="lazy" /><figcaption>“a castle in the clouds”</figcaption></figure><figure><img src="assets/img/imagine/im-18.jpg" width="320" height="240" alt="a banana wearing shoes, drawn by a Cheeko" loading="lazy" /><figcaption>“a banana wearing shoes”</figcaption></figure><figure><img src="assets/img/imagine/im-10.jpg" width="320" height="240" alt="a giant mango with a door in it, drawn by a Cheeko" loading="lazy" /><figcaption>“a giant mango with a door in it”</figcaption></figure><figure><img src="assets/img/imagine/im-14.jpg" width="320" height="240" alt="a submarine full of fish having tea, drawn by a Cheeko" loading="lazy" /><figcaption>“a submarine full of fish having tea”</figcaption></figure><figure><img src="assets/img/imagine/im-08.jpg" width="320" height="240" alt="a dinosaur wearing a birthday hat, drawn by a Cheeko" loading="lazy" /><figcaption>“a dinosaur wearing a birthday hat”</figcaption></figure><figure><img src="assets/img/imagine/im-11.jpg" width="320" height="240" alt="a rocket going past a purple planet, drawn by a Cheeko" loading="lazy" /><figcaption>“a rocket going past a purple planet”</figcaption></figure><figure><img src="assets/img/imagine/im-16.jpg" width="320" height="240" alt="a peacock dancing at a Diwali party, drawn by a Cheeko" loading="lazy" /><figcaption>“a peacock dancing at a Diwali party”</figcaption></figure><figure><img src="assets/img/imagine/im-15.jpg" width="320" height="240" alt="my school bag walking to school by itself, drawn by a Cheeko" loading="lazy" /><figcaption>“my school bag walking to school by itself”</figcaption></figure><figure><img src="assets/img/imagine/im-12.jpg" width="320" height="240" alt="rain made of orange juice, drawn by a Cheeko" loading="lazy" /><figcaption>“rain made of orange juice”</figcaption></figure></div></div>
+      <div class="imstrip" aria-label="Pictures drawn by Cheeko"><div class="imtrack"><figure><img src="assets/img/imagine/im-05.jpg" width="320" height="240" alt="a tiger riding a bicycle, drawn by a Cheeko" loading="lazy" /><figcaption>“a tiger riding a bicycle”</figcaption></figure><figure><img src="assets/img/imagine/im-07.jpg" width="320" height="240" alt="an auto rickshaw flying to the moon, drawn by a Cheeko" loading="lazy" /><figcaption>“an auto rickshaw flying to the moon”</figcaption></figure><figure><img src="assets/img/imagine/im-17.jpg" width="320" height="240" alt="a robot cooking dosa, drawn by a Cheeko" loading="lazy" /><figcaption>“a robot cooking dosa”</figcaption></figure><figure><img src="assets/img/imagine/im-13.jpg" width="320" height="240" alt="a castle in the clouds, drawn by a Cheeko" loading="lazy" /><figcaption>“a castle in the clouds”</figcaption></figure><figure><img src="assets/img/imagine/im-18.jpg" width="320" height="240" alt="a banana wearing shoes, drawn by a Cheeko" loading="lazy" /><figcaption>“a banana wearing shoes”</figcaption></figure><figure><img src="assets/img/imagine/im-10.jpg" width="320" height="240" alt="a giant mango with a door in it, drawn by a Cheeko" loading="lazy" /><figcaption>“a giant mango with a door in it”</figcaption></figure><figure><img src="assets/img/imagine/im-14.jpg" width="320" height="240" alt="a submarine full of fish having tea, drawn by a Cheeko" loading="lazy" /><figcaption>“a submarine full of fish having tea”</figcaption></figure><figure><img src="assets/img/imagine/im-08.jpg" width="320" height="240" alt="a dinosaur wearing a birthday hat, drawn by a Cheeko" loading="lazy" /><figcaption>“a dinosaur wearing a birthday hat”</figcaption></figure><figure><img src="assets/img/imagine/im-11.jpg" width="320" height="240" alt="a rocket going past a purple planet, drawn by a Cheeko" loading="lazy" /><figcaption>“a rocket going past a purple planet”</figcaption></figure><figure><img src="assets/img/imagine/im-16.jpg" width="320" height="240" alt="a peacock dancing at a Diwali party, drawn by a Cheeko" loading="lazy" /><figcaption>“a peacock dancing at a Diwali party”</figcaption></figure><figure><img src="assets/img/imagine/im-12.jpg" width="320" height="240" alt="rain made of orange juice, drawn by a Cheeko" loading="lazy" /><figcaption>“rain made of orange juice”</figcaption></figure><figure><img src="assets/img/imagine/im-05.jpg" width="320" height="240" alt="a tiger riding a bicycle, drawn by a Cheeko" loading="lazy" /><figcaption>“a tiger riding a bicycle”</figcaption></figure><figure><img src="assets/img/imagine/im-07.jpg" width="320" height="240" alt="an auto rickshaw flying to the moon, drawn by a Cheeko" loading="lazy" /><figcaption>“an auto rickshaw flying to the moon”</figcaption></figure><figure><img src="assets/img/imagine/im-17.jpg" width="320" height="240" alt="a robot cooking dosa, drawn by a Cheeko" loading="lazy" /><figcaption>“a robot cooking dosa”</figcaption></figure><figure><img src="assets/img/imagine/im-13.jpg" width="320" height="240" alt="a castle in the clouds, drawn by a Cheeko" loading="lazy" /><figcaption>“a castle in the clouds”</figcaption></figure><figure><img src="assets/img/imagine/im-18.jpg" width="320" height="240" alt="a banana wearing shoes, drawn by a Cheeko" loading="lazy" /><figcaption>“a banana wearing shoes”</figcaption></figure><figure><img src="assets/img/imagine/im-10.jpg" width="320" height="240" alt="a giant mango with a door in it, drawn by a Cheeko" loading="lazy" /><figcaption>“a giant mango with a door in it”</figcaption></figure><figure><img src="assets/img/imagine/im-14.jpg" width="320" height="240" alt="a submarine full of fish having tea, drawn by a Cheeko" loading="lazy" /><figcaption>“a submarine full of fish having tea”</figcaption></figure><figure><img src="assets/img/imagine/im-08.jpg" width="320" height="240" alt="a dinosaur wearing a birthday hat, drawn by a Cheeko" loading="lazy" /><figcaption>“a dinosaur wearing a birthday hat”</figcaption></figure><figure><img src="assets/img/imagine/im-11.jpg" width="320" height="240" alt="a rocket going past a purple planet, drawn by a Cheeko" loading="lazy" /><figcaption>“a rocket going past a purple planet”</figcaption></figure><figure><img src="assets/img/imagine/im-16.jpg" width="320" height="240" alt="a peacock dancing at a Diwali party, drawn by a Cheeko" loading="lazy" /><figcaption>“a peacock dancing at a Diwali party”</figcaption></figure><figure><img src="assets/img/imagine/im-12.jpg" width="320" height="240" alt="rain made of orange juice, drawn by a Cheeko" loading="lazy" /><figcaption>“rain made of orange juice”</figcaption></figure></div></div>
       <p class="serial" style="color:#8F8371;margin-top:18px;">TALK + IMAGINE: FREE FOR 3 MONTHS, THEN AN OPTIONAL PLAN &middot; CARDS, STORIES &amp; GAMES FREE FOREVER</p>
     </div>
   </section>
   <div class="vbox" id="vbox">
     <button type="button" id="vclose" aria-label="Close">&#10005;</button>
-    <video id="vplayer" src="assets/vid/imagine.mp4" poster="assets/img/live/imagine-poster.jpg" controls playsinline></video>
+    <video id="vplayer" src="assets/vid/V12%20Imagine%20-%20video.mp4" poster="assets/img/V12%20Imagine%20-%20thumbnail.jpg" controls playsinline muted></video>
   </div>
 </div>
 
@@ -436,13 +478,63 @@
         <h2 class="disp">Press play.</h2>
       <p class="sub" style="margin:6px 0 0;">How your world changes with Cheeko.</p>
       </div>
-      <div class="row" style="justify-content:center;align-items:flex-start;">
-          <div class="phone-frame rv" data-film>
-            <video src="assets/vid/film.mp4" poster="assets/img/live/film-poster.jpg" preload="none" playsinline></video>
-            <div class="play-badge"><svg width="70" height="70" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></div>
+      <div class="press-marquee" role="region" tabindex="0" aria-label="Cheeko videos">
+        <div class="press-track">
+          <div class="press-group">
+            <div class="press-card press-film" data-film>
+              <video src="assets/vid/V01%20Everything%20Cheeko%20Does%20-%20video.mp4" poster="assets/img/V01%20Everything%20Cheeko%20Does%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play the 20-second Cheeko film"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V02%20Hand%20Them%20Cheeko%20-%20video.mp4" poster="assets/updated-vids/V02%20Hand%20Them%20Cheeko%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play Hand Them Cheeko"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V03%20No%20Tantrum%20-%20video.mp4" poster="assets/updated-vids/V03%20No%20Tantrum%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play No Tantrum"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V04%20Built%20to%20END%20-%20video.mp4" poster="assets/updated-vids/V04%20Built%20to%20END%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play Built to END"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V06%20Five%20Minutes%20-%20video.mp4" poster="assets/updated-vids/V06%20Five%20Minutes%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play Five Minutes"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V19%20Parent%20App%20-%20video.mp4" poster="assets/updated-vids/V19%20Parent%20App%20-%20thumbnail%20%281%29.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play Parent App"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
           </div>
-          <p class="serial" style="width:100%;text-align:center;">The 20-second film</p>
+          <div class="press-group" data-marquee-copy>
+            <div class="press-card press-film" data-film>
+              <video src="assets/vid/V01%20Everything%20Cheeko%20Does%20-%20video.mp4" poster="assets/img/V01%20Everything%20Cheeko%20Does%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play the 20-second Cheeko film"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V02%20Hand%20Them%20Cheeko%20-%20video.mp4" poster="assets/updated-vids/V02%20Hand%20Them%20Cheeko%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play Hand Them Cheeko"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V03%20No%20Tantrum%20-%20video.mp4" poster="assets/updated-vids/V03%20No%20Tantrum%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play No Tantrum"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V04%20Built%20to%20END%20-%20video.mp4" poster="assets/updated-vids/V04%20Built%20to%20END%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play Built to END"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V06%20Five%20Minutes%20-%20video.mp4" poster="assets/updated-vids/V06%20Five%20Minutes%20-%20thumbnail.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play Five Minutes"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+            <div class="press-card press-film" data-film>
+              <video src="assets/updated-vids/V19%20Parent%20App%20-%20video.mp4" poster="assets/updated-vids/V19%20Parent%20App%20-%20thumbnail%20%281%29.jpg" preload="none" playsinline></video>
+              <button class="play-badge" type="button" aria-label="Play Parent App"><svg width="70" height="70" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#F0521D"></circle><path d="M26 20v24l18-12-18-12Z" fill="#FFFFFF"></path></svg></button>
+            </div>
+          </div>
         </div>
+      </div>
+      <input class="press-scroll" type="range" min="0" max="1000" value="500" aria-label="Scroll Cheeko videos" />
     </div>
   </section>
 </div>
@@ -676,6 +768,9 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
-<script src="assets/js/playbold.js?v=10" defer></script>
+<script src="assets/js/press-rail.js?v=1" defer></script>
+<script src="assets/js/playbold.js?v=14" defer></script>
+<script src="assets/js/cheeko-talk.js?v=3" defer></script>
+<script src="assets/cheeko-device-animation/device-anim.js?v=1" defer></script>
 </body>
 </html>
