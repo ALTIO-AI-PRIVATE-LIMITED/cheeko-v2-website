@@ -10,39 +10,48 @@ const js = fs.readFileSync(`${root}/assets/js/playbold.js`, "utf8");
 const section = html.match(/<!-- press play -->([\s\S]*?)<!-- honest screen -->/)?.[1] ?? "";
 const primary = section.match(/<div class="press-group">([\s\S]*?)<div class="press-group" data-marquee-copy>/)?.[1] ?? "";
 const duplicate = section.match(/<div class="press-group" data-marquee-copy>([\s\S]*)/)?.[1] ?? "";
+const cdnBase = "https://dsmzc13oafp54.cloudfront.net/website-media/cheekoai.in/";
 
 const videos = [
-  "assets/vid/V01%20Everything%20Cheeko%20Does%20-%20video.mp4",
-  "assets/updated-vids/V02%20Hand%20Them%20Cheeko%20-%20video.mp4",
-  "assets/updated-vids/V03%20No%20Tantrum%20-%20video.mp4",
-  "assets/updated-vids/V04%20Built%20to%20END%20-%20video.mp4",
-  "assets/updated-vids/V06%20Five%20Minutes%20-%20video.mp4",
-  "assets/updated-vids/V19%20Parent%20App%20-%20video.mp4",
-];
+  "v01-everything-cheeko-does.mp4",
+  "v02-hand-them-cheeko.mp4",
+  "v03-no-tantrum.mp4",
+  "v04-built-to-end.mp4",
+  "v06-five-minutes.mp4",
+  "v19-parent-app.mp4",
+].map((name) => cdnBase + name);
 const posters = [
-  "assets/img/V01%20Everything%20Cheeko%20Does%20-%20thumbnail.jpg",
-  "assets/updated-vids/V02%20Hand%20Them%20Cheeko%20-%20thumbnail.jpg",
-  "assets/updated-vids/V03%20No%20Tantrum%20-%20thumbnail.jpg",
-  "assets/updated-vids/V04%20Built%20to%20END%20-%20thumbnail.jpg",
-  "assets/updated-vids/V06%20Five%20Minutes%20-%20thumbnail.jpg",
-  "assets/updated-vids/V19%20Parent%20App%20-%20thumbnail%20%281%29.jpg",
-];
+  "v01-everything-cheeko-does-thumbnail.jpg",
+  "v02-hand-them-cheeko-thumbnail.jpg",
+  "v03-no-tantrum-thumbnail.jpg",
+  "v04-built-to-end-thumbnail.jpg",
+  "v06-five-minutes-thumbnail.jpg",
+  "v19-parent-app-thumbnail.jpg",
+].map((name) => cdnBase + name);
 
-test("Press play uses every unique local video and no Instagram embeds", () => {
-  for (const src of videos) assert.match(primary, new RegExp(`src="${src}"`));
+test("all seven video and thumbnail pairs use direct CloudFront URLs", () => {
+  const imagineVideo = `${cdnBase}v12-imagine.mp4`;
+  const imaginePoster = `${cdnBase}v12-imagine-thumbnail.jpg`;
+  assert.ok(html.includes(`<img src="${imaginePoster}" alt=""`));
+  assert.ok(html.includes(`<video id="vplayer" src="${imagineVideo}" poster="${imaginePoster}"`));
+  assert.doesNotMatch(html, /assets\/videos\/|media-cdn\.js/);
+});
+
+test("Press play uses every unique CDN video and no Instagram embeds", () => {
+  for (const src of videos) assert.ok(primary.includes(`src="${src}"`));
   assert.equal((primary.match(/<video\b/g) ?? []).length, videos.length);
   assert.doesNotMatch(section, /instagram\.com|<iframe\b/i);
 });
 
 test("each primary video card has the requested poster and a labeled play button", () => {
-  for (const poster of posters) assert.match(primary, new RegExp(`poster="${poster}"`));
+  for (const poster of posters) assert.ok(primary.includes(`poster="${poster}"`));
   assert.equal((primary.match(/class="play-badge"/g) ?? []).length, videos.length);
   assert.equal((primary.match(/aria-label="Play [^"]+"/g) ?? []).length, videos.length);
   assert.doesNotMatch(section, /press-caption/);
 });
 
 test("the seamless duplicate remains fully playable", () => {
-  for (const src of videos) assert.match(duplicate, new RegExp(`src="${src}"`));
+  for (const src of videos) assert.ok(duplicate.includes(`src="${src}"`));
   assert.equal((duplicate.match(/<video\b/g) ?? []).length, videos.length);
   assert.equal((duplicate.match(/class="play-badge"/g) ?? []).length, videos.length);
   assert.equal((duplicate.match(/aria-label="Play [^"]+"/g) ?? []).length, videos.length);
@@ -67,14 +76,15 @@ test("the Imagine rail omits the school-bag drawing from both matching halves", 
   assert.ok(sources.every((source) => !source.endsWith("im-15.jpg")));
 });
 
-test("playback is unmuted and failed play requests recover", () => {
+test("CDN playback is unmuted and failed play requests recover", () => {
   assert.match(js, /video\.muted = false/);
-  assert.match(js, /playRequest\.catch/);
   assert.match(js, /video\.addEventListener\("playing"/);
   assert.doesNotMatch(js, /video\.addEventListener\("play"/);
   assert.match(js, /badge\.classList\.remove\("hidden"\)/);
-  assert.match(js, /playRequest\.catch\([\s\S]*?video\.load\(\)/);
   assert.match(js, /badge\.addEventListener\("click"[\s\S]*?track\.classList\.add\("paused"\)[\s\S]*?video\.play\(\)/);
+  assert.match(js, /playRequest\.catch\([\s\S]*?video\.load\(\)/);
+  assert.match(js, /vplayer\.play\(\)/);
+  assert.doesNotMatch(js, /CheekoMediaCdn/);
   assert.match(js, /video\.addEventListener\("ended"[\s\S]*?track\.classList\.remove\("paused"\)/);
 });
 
