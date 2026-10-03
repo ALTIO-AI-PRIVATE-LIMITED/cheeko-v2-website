@@ -9,6 +9,10 @@
   const API_BASE = String(window.CHEEKO_WEB_DEMO_API || "/api/web-demo").replace(/\/$/, "");
   const STORAGE_KEY = "cheeko.webDemoAccess.v2";
   const SESSION_LIMIT_MS = 60_000;
+  const WEB_TALK_CHARACTERS = new Set([
+    "cheeko", "quizzy", "nani", "mitthu",
+    // "chanda", "masti", "tara", // Character-card voices stay off the website.
+  ]);
   const FIREBASE_CONFIG = window.CHEEKO_FIREBASE_CONFIG || {
     apiKey: "AIzaSyDIIWOKDcvrEQpIQiu3UNCzSrWhAygVk9I",
     authDomain: "cheekoai.firebaseapp.com",
@@ -20,23 +24,38 @@
   let session = null;
   let livekit = null;
   let timer = null;
+  let deadlineTimer = null;
   let stopping = false;
   let currentCharacter = "";
+  let characterName = "Cheeko";
   let firebasePromise = null;
-  let talking = false;
+  let playbackReady = false;
   let attempt = 0;
+  let pushToTalk = null;
+  let experienceStarted = false;
+  let greetingSent = false;
+  let countdownStarted = false;
 
   const authStep = $("talk-auth-step");
   const liveStep = $("talk-live-step");
   const status = $("talk-status");
   const googleButton = $("talk-google");
   const micButton = $("talk-mic");
+  function setVoiceState(next) {
+    panel.dataset.state = next;
+    const recording = next === "recording";
+    micButton.disabled = next === "ended" || next === "connecting";
+    micButton.setAttribute("aria-pressed", String(recording));
+    micButton.setAttribute("aria-label", next === "start" ? "Start" : recording ? "Done talking" : "Talk");
+    $("talk-hint").textContent = ({ start: "Tap to start", connecting: "Connecting…", ready: "Tap to talk", recording: "Done talking", thinking: "Tap Talk to ask again", speaking: "Tap Talk to interrupt", ended: "Talk ended" })[next];
+    if (next !== "ended") setStatus(({ start: "", connecting: `Calling ${characterName}…`, ready: "", recording: "Listening / recording", thinking: "Getting the answer…", speaking: `${characterName} is speaking` })[next], "live");
+  }
 
-  function setTalking(active) {
-    talking = active;
-    micButton.setAttribute("aria-pressed", String(active));
-    micButton.classList.toggle("talking", active);
-    micButton.textContent = active ? "■ Done — listen" : "🎙 Tap to talk";
+  async function publish(payload) {
+    if (!room) return;
+    await room.localParticipant.publishData(
+      new TextEncoder().encode(JSON.stringify(payload)), { reliable: true }
+    );
   }
 
   function setStatus(message, kind = "") {
@@ -82,7 +101,7 @@
   function access() {
     try {
       const value = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "null");
-      if (!value?.token || !value?.email || Date.parse(value.expiresAt) <= Date.now()) throw new Error("expired");
+      if (!value?.token || !value.email || Date.parse(value.expiresAt) <= Date.now()) throw new Error("expired");
       return value;
     } catch (_) {
       sessionStorage.removeItem(STORAGE_KEY);
@@ -90,15 +109,58 @@
     }
   }
 
+  function showQuota(quota) {
+    if (quota?.remainingSessions > 0) {
+      $("talk-timer-ring").hidden = false;
+      $("talk-wave").hidden = false;
+      setStatus(`${quota.remainingSessions} one-minute Talk ${quota.remainingSessions === 1 ? "session" : "sessions"} left.`, "live");
+      return true;
+    }
+    showStep(liveStep);
+    $("talk-live-controls").hidden = true;
+    $("talk-timer-ring").hidden = true;
+    $("talk-wave").hidden = true;
+    setVoiceState("ended");
+    setStatus("You have reached your 10-minute Talk live limit. Each one-minute session counts toward this lifetime allowance.", "error");
+    return false;
+  }
+
+  async function refreshQuota(verified = access()) {
+    if (!verified) return;
+    try {
+      const quota = await api("/quota", { headers: { Authorization: `Bearer ${verified.token}` } });
+      if (!panel.hidden && access()?.token === verified.token && !experienceStarted && !session) showQuota(quota);
+    } catch (error) {
+      if (panel.hidden || access()?.token !== verified.token || experienceStarted) return;
+      if (error.status === 401) {
+        sessionStorage.removeItem(STORAGE_KEY);
+        showStep(authStep);
+        setStatus("Continue with Google to start your one-minute conversation.");
+      } else setStatus(error.message, "error");
+    }
+  }
+
   function resetPanel() {
     clearInterval(timer);
+    clearTimeout(deadlineTimer);
     timer = null;
+    deadlineTimer = null;
     const verified = access();
-    $("talk-live-controls").hidden = true;
-    setTalking(false);
+    $("talk-live-controls").hidden = false;
+    $("talk-timer-ring").hidden = false;
+    $("talk-wave").hidden = false;
+    playbackReady = false;
+    pushToTalk = null;
+    experienceStarted = false;
+    greetingSent = false;
+    countdownStarted = false;
+    setVoiceState("start");
+    $("talk-time").textContent = "1:00";
+    $("talk-timer-ring").style.setProperty("--remaining-angle", "360deg");
+    $("talk-greeting").textContent = ({ cheeko: "Hi! I'm Cheeko. Ask me anything!", quizzy: "Hey! I'm Quizzy Bee. Let's take a quiz!", nani: "Hello! I'm Nani. Shall I tell you a story?", mitthu: "Hi! I'm Mitthu. Let's learn spellings!" })[currentCharacter] || `Hi! I'm ${characterName}.`;
     if (verified) {
       showStep(liveStep);
-      setStatus("Ready to talk with Cheeko.");
+      refreshQuota(verified);
       return;
     }
     showStep(authStep);
@@ -108,7 +170,7 @@
   }
 
   function setPanelOpen(open) {
-    if (!open) attempt += 1;
+    attempt += 1;
     panel.hidden = !open;
     talkButton.setAttribute("aria-expanded", String(open));
     $("pop")?.classList.toggle("talk-active", open);
@@ -121,10 +183,26 @@
     const tick = () => {
       const seconds = Math.max(0, Math.ceil((hardStopAt - Date.now()) / 1000));
       $("talk-time").textContent = `0:${String(seconds).padStart(2, "0")}`;
+      $("talk-timer-ring").style.setProperty("--remaining-angle", `${seconds * 6}deg`);
       if (!seconds) stopConversation(false);
     };
     tick();
     timer = setInterval(tick, 250);
+    deadlineTimer = setTimeout(() => {
+      $("talk-time").textContent = "0:00";
+      $("talk-timer-ring").style.setProperty("--remaining-angle", "0deg");
+      stopConversation(false);
+    }, Math.max(0, hardStopAt - Date.now()));
+  }
+
+  function startCountdownAtAgentSpeech() {
+    if (countdownStarted || !experienceStarted || !session || !room) return;
+    countdownStarted = true;
+    countdown(session.expiresAt);
+  }
+
+  function startCountdownWhenCharacterSpeaks(speakers) {
+    if (speakers.some((participant) => participant !== room?.localParticipant)) startCountdownAtAgentSpeech();
   }
 
   async function requestMicrophone() {
@@ -136,6 +214,7 @@
   }
 
   async function startConversation() {
+    if (!WEB_TALK_CHARACTERS.has(currentCharacter)) return;
     const verified = access();
     const currentAttempt = attempt;
     if (!verified) {
@@ -145,15 +224,17 @@
     }
 
     showStep(liveStep);
-    setStatus("Allow your microphone to start the demo…");
-    $("talk-live-controls").hidden = true;
     try {
+      const quota = await api("/quota", { headers: { Authorization: `Bearer ${verified.token}` } });
+      if (!showQuota(quota)) return;
+      setStatus("Allow your microphone to start the demo…");
       await requestMicrophone();
       if (panel.hidden || currentAttempt !== attempt) return;
-      setStatus("Calling Cheeko…");
+      setStatus(`Calling ${characterName}…`);
       session = await api("/voice/start", {
         method: "POST",
-        headers: { Authorization: `Bearer ${verified.token}` }
+        headers: { Authorization: `Bearer ${verified.token}` },
+        body: JSON.stringify({ character: currentCharacter })
       });
       if (panel.hidden || currentAttempt !== attempt) {
         await stopConversation(false);
@@ -169,15 +250,26 @@
       room.on(livekit.RoomEvent.TrackSubscribed, (track) => {
         if (track.kind !== livekit.Track.Kind.Audio) return;
         const audio = track.attach();
-        audio.autoplay = true;
+        audio.autoplay = pushToTalk?.state !== "recording";
         $("talk-audio").appendChild(audio);
+        if (pushToTalk?.state === "recording") audio.pause();
+        else if (playbackReady) audio.play().catch(() => setStatus("Sound is blocked. Tap Talk to allow audio.", "error"));
       });
-      room.on(livekit.RoomEvent.ParticipantConnected, () => setStatus("Cheeko is ready. Tap the mic to talk.", "live"));
       room.on(livekit.RoomEvent.ParticipantAttributesChanged, (changed, participant) => {
         if (participant === room?.localParticipant || !changed["lk.agent.state"]) return;
-        const states = { listening: "Cheeko is listening…", thinking: "Cheeko is thinking…", speaking: "Cheeko is speaking…" };
-        setStatus(states[changed["lk.agent.state"]] || "Connected to Cheeko", "live");
+        if (changed["lk.agent.state"] === "speaking") startCountdownAtAgentSpeech();
+        pushToTalk?.agentState(changed["lk.agent.state"]);
       });
+      room.on(livekit.RoomEvent.DataReceived, (payload, participant) => {
+        if (participant === room?.localParticipant) return;
+        let message;
+        try { message = JSON.parse(new TextDecoder().decode(payload)); } catch (_) { return; }
+        if (message.type === "agent_state_changed" && message.data?.new_state === "speaking") {
+          startCountdownAtAgentSpeech();
+        }
+      });
+      room.on(livekit.RoomEvent.ActiveSpeakersChanged, startCountdownWhenCharacterSpeaks);
+      room.on(livekit.RoomEvent.ParticipantConnected, () => { greetIfReady(); });
       room.on(livekit.RoomEvent.Disconnected, () => {
         if (!stopping) stopConversation(false);
       });
@@ -186,33 +278,94 @@
         await stopConversation(false);
         return;
       }
-      // Keep input closed until the visitor taps the mic, like Persona Admin's Test tab.
+      // The mic stays closed until the visitor taps Talk after the greeting.
       await room.localParticipant.setMicrophoneEnabled(false);
-      setTalking(false);
+      try {
+        await room.startAudio();
+        playbackReady = true;
+      } catch (_) {
+        setStatus("Sound is blocked. Tap Talk to allow audio.", "error");
+      }
+      pushToTalk = window.createCheekoPushToTalk({
+        getRoom: () => room,
+        getSession: () => session,
+        publish,
+        onInterrupt: () => $("talk-audio").querySelectorAll("audio").forEach((audio) => audio.pause()),
+        onResumePlayback: () => $("talk-audio").querySelectorAll("audio").forEach((audio) => audio.play().catch(() => setStatus("Sound is blocked. Tap Talk again to allow audio.", "error"))),
+        startAudio: async () => {
+          const activeRoom = room;
+          await activeRoom.startAudio();
+          if (room !== activeRoom) return;
+          playbackReady = true;
+          if (pushToTalk?.state !== "recording") $("talk-audio").querySelectorAll("audio").forEach((audio) => audio.play().catch(() => {}));
+        },
+        onState: setVoiceState,
+        onError: (error) => setStatus(error.name === "NotAllowedError" ? `Please allow microphone access to talk to ${characterName}.` : error.message, "error")
+      });
       $("talk-live-controls").hidden = false;
-      countdown(session.expiresAt);
       const existingAgent = [...room.remoteParticipants.values()][0];
-      setStatus(existingAgent ? "Tap the mic to talk to Cheeko." : "Waiting for Cheeko to join…", "live");
+      setVoiceState("ready");
+      if (existingAgent?.attributes?.["lk.agent.state"]) {
+        pushToTalk.agentState(existingAgent.attributes["lk.agent.state"]);
+        if (existingAgent.attributes["lk.agent.state"] === "speaking") startCountdownAtAgentSpeech();
+      }
+      if (existingAgent?.isSpeaking) startCountdownWhenCharacterSpeaks([existingAgent]);
+      greetIfReady();
+      if (!existingAgent) setStatus(`Waiting for ${characterName} to join…`, "live");
     } catch (error) {
       await stopConversation(false);
+      if (error.status === 401) {
+        sessionStorage.removeItem(STORAGE_KEY);
+        showStep(authStep);
+        setStatus("Your Talk access expired. Continue with Google to sign in again.", "error");
+        return;
+      }
       showStep(liveStep);
-      setStatus(error.name === "NotAllowedError" ? "Microphone permission was blocked. Please allow it and try again." : error.message, "error");
+      if (error.status === 403) showQuota({ remainingSessions: 0 });
+      else setStatus(error.name === "NotAllowedError" ? "Microphone permission was blocked. Please allow it and try again." : error.message, "error");
+    }
+  }
+
+  function greetIfReady() {
+    if (greetingSent || !experienceStarted || !pushToTalk || !room || !session || !room.remoteParticipants.size) return;
+    greetingSent = true;
+    if (pushToTalk?.state === "ready") setVoiceState("speaking");
+    publish({ type: "ready_for_greeting", session_id: session.roomName || session.sessionId, timestamp: Date.now() })
+      .catch((error) => setStatus(error.message, "error"));
+  }
+
+  async function startExperience() {
+    if (stopping || experienceStarted || panel.hidden || !WEB_TALK_CHARACTERS.has(currentCharacter)) return;
+    experienceStarted = true;
+    setVoiceState("connecting");
+    if (access()) await startConversation();
+    else {
+      experienceStarted = false;
+      showStep(authStep);
     }
   }
 
   async function stopConversation(showEnded = true) {
-    if (stopping) return;
+    if (stopping || (!room && !session && !pushToTalk && !experienceStarted)) return;
     stopping = true;
+    attempt += 1;
+    const stoppingAttempt = attempt;
     clearInterval(timer);
+    clearTimeout(deadlineTimer);
     timer = null;
+    deadlineTimer = null;
     const endingSession = session;
     const verified = access();
+    const endingPushToTalk = pushToTalk;
+    const endingRoom = room;
+    pushToTalk = null;
     session = null;
-    try { await room?.disconnect(); } catch (_) { /* already disconnected */ }
     room = null;
-    setTalking(false);
-    micButton.disabled = false;
-    $("talk-audio").replaceChildren();
+    playbackReady = false;
+    experienceStarted = false;
+    countdownStarted = false;
+    await endingPushToTalk?.stop();
+    try { await endingRoom?.disconnect(); } catch (_) { /* already disconnected */ }
     if (endingSession?.sessionId && verified?.token) {
       api(`/voice/${encodeURIComponent(endingSession.sessionId)}`, {
         method: "DELETE",
@@ -220,10 +373,13 @@
       }).catch(() => {});
     }
     stopping = false;
-    if (panel.hidden) return;
+    if (panel.hidden || stoppingAttempt !== attempt) return;
+    setVoiceState("ended");
+    $("talk-audio").replaceChildren();
     showStep(liveStep);
     $("talk-live-controls").hidden = true;
-    setStatus(showEnded ? "Thanks for talking with Cheeko! Close and tap Talk live whenever you want another demo." : "The demo has ended. Close and tap Talk live to try again.");
+    setStatus(showEnded ? `Thanks for talking with ${characterName}! Close and tap Talk live whenever you want another demo.` : "The one-minute demo has ended. Close and tap Talk live to try again.");
+    refreshQuota();
   }
 
   function googleErrorMessage(error) {
@@ -248,8 +404,11 @@
         headers: { Authorization: `Bearer ${idToken}` }
       });
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify(result));
-      setStatus("Google verified. Connecting you to Cheeko…", "live");
-      await startConversation();
+      showStep(liveStep);
+      if (result.quota?.remainingSessions > 0) {
+        setVoiceState("start");
+        showQuota(result.quota);
+      } else showQuota(result.quota);
     } catch (error) {
       showStep(authStep);
       setStatus(googleErrorMessage(error), "error");
@@ -260,6 +419,7 @@
   }
 
   talkButton.addEventListener("click", () => {
+    if (!WEB_TALK_CHARACTERS.has(currentCharacter)) return;
     const opening = panel.hidden;
     if (opening) document.dispatchEvent(new CustomEvent("cheeko:talk-open"));
     setPanelOpen(opening);
@@ -267,39 +427,22 @@
       stopConversation(false);
       return;
     }
-    if (access()) startConversation();
   });
 
   googleButton.addEventListener("click", signInWithGoogle);
-  micButton.addEventListener("click", async () => {
-    if (!room || micButton.disabled) return;
-    const activeRoom = room;
-    micButton.disabled = true;
-    try {
-      const next = !talking;
-      // Unlock remote audio during a real tap, including on mobile Safari.
-      const audioReady = activeRoom.startAudio().then(() => true, () => false);
-      await activeRoom.localParticipant.setMicrophoneEnabled(next);
-      if (room !== activeRoom) return;
-      setTalking(next);
-      setStatus(await audioReady
-        ? (next ? "Speak now. Tap Done when you finish." : "Cheeko is listening and getting ready to answer…")
-        : "Browser audio is blocked. Allow sound playback, then tap the mic again.", "live");
-    } catch (error) {
-      setStatus(error.name === "NotAllowedError" ? "Please allow microphone access to talk to Cheeko." : error.message, "error");
-    } finally {
-      micButton.disabled = false;
-    }
+  micButton.addEventListener("click", () => {
+    if (micButton.disabled) return;
+    if (!experienceStarted) startExperience();
+    else pushToTalk?.toggle();
   });
   $("talk-end").addEventListener("click", () => stopConversation(true));
 
   document.addEventListener("cheeko:character-change", (event) => {
     currentCharacter = event.detail?.character || "";
-    talkButton.hidden = currentCharacter !== "cheeko";
-    if (currentCharacter !== "cheeko") {
-      setPanelOpen(false);
-      stopConversation(false);
-    }
+    characterName = $("pname").textContent || "Cheeko";
+    talkButton.hidden = !WEB_TALK_CHARACTERS.has(currentCharacter);
+    setPanelOpen(false);
+    stopConversation(false);
   });
   document.addEventListener("cheeko:modal-close", () => {
     setPanelOpen(false);

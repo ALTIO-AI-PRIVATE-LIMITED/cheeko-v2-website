@@ -27,6 +27,28 @@ test('the page loads the local animation styles, script, and existing image asse
   await Promise.all(images.map(([, path]) => access(new URL(path, site))));
 });
 
+test('mobile device map keeps the same device image and pairs seven numbered arrows with feature cards', async () => {
+  const mobileCss = await readFile(new URL('assets/cheeko-device-animation/device-mobile.css', site), 'utf8');
+  assert.match(section, /class="dm-body" src="assets\/cheeko-device-animation\/img\/cheeko-front\.webp"/);
+  assert.equal((section.match(/class="dm-body"/g) || []).length, 1);
+  assert.deepEqual([...section.matchAll(/class="dm-mobile-arrow" data-feature="(\d)"/g)].map((match) => Number(match[1])), [1, 2, 3, 4, 5, 6, 7]);
+  assert.deepEqual([...section.matchAll(/class="dm-feature-card" data-feature="(\d)"/g)].map((match) => Number(match[1])), [1, 2, 3, 4, 5, 6, 7]);
+  for (const [name, description] of [
+    ['The screen', "Cheeko's face. Never video."],
+    ['Rotary dial', 'Turn to explore, press to choose.'],
+    ['Card slot', 'At the back, for stories, rhymes and more.'],
+    ['Side buttons', 'Power and volume.'],
+    ['Front speaker', 'Big, clear sound.'],
+    ['USB-C', 'Any USB-C charger works. 4 to 6 hours of play.'],
+    ['Headphone jack', 'For private listening.']
+  ]) {
+    assert.ok(section.includes(name), `missing ${name}`);
+    assert.ok(section.includes(description), `missing ${description}`);
+  }
+  assert.match(mobileCss, /@media\s*\(max-width:\s*900px\)/);
+  assert.match(mobileCss, /\.dm-lab\s*,\s*#devanim\s+\.dm-arrows\s*\{\s*display:\s*none/);
+});
+
 test('the supplied animation responds to a dial tap and respects narrow screens and reduced motion', async () => {
   const [script, stylesheet] = await Promise.all([
     readFile(new URL('assets/cheeko-device-animation/device-anim.js', site), 'utf8'),

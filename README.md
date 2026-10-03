@@ -98,13 +98,44 @@ starting `server.py`. Restart an older preview server after changing this file.
 Plain `python3 -m http.server` only serves files and returns HTTP 501 for the
 demo's POST requests. On Netlify, `netlify.toml` handles the API proxy instead.
 
-Google sign-in is required before the one-minute Talk live demo. The Manager
-API must have `WEB_DEMO_GOOGLE_AUTH_REQUIRED=true`, a `WEB_DEMO_SECRET` (or
-existing `SERVICE_SECRET_KEY`), the web-demo database migration, and its usual
-LiveKit URL/key/secret. Firebase Authentication must have Google enabled and
-the deployed website domain authorized. The GPT-Live worker must be registered
-under the same name as `WEB_DEMO_AGENT_NAME` (default `cheeko-agent`). Restart
-the Manager API and worker after their configuration or code changes.
+Talk live is available in four character dialogs (Cheeko, Quizzy Bee,
+Nani, and Mitthu). Each dialog starts a separate 60-second
+LiveKit session with that character's manager persona. **Talk** opens the mic;
+**Done talking** closes that turn; **Listen** plays the character audio and
+**Pause listening** pauses it. Closing the dialog ends the room.
+
+Talk live requires Google sign-in through the `cheekoai` Firebase project.
+The Manager API verifies the Google Firebase ID token and issues a temporary
+website token. Each Google identity can start at most ten one-minute Talk
+sessions across all characters, tabs, devices, and sign-ins. Starting a session
+uses one allowance even if it ends early. The allowance never resets. At the
+limit, the website displays a message and the Manager API refuses another room.
+Guest access is disabled, including tokens issued before this change.
+
+The Manager API needs `FIREBASE_PROJECT_ID=cheekoai`, a valid
+`FIREBASE_SERVICE_ACCOUNT_PATH` or `FIREBASE_SERVICE_ACCOUNT`, a dedicated
+`WEB_DEMO_SECRET` (or existing `SERVICE_SECRET_KEY`), the web-demo database
+migration, and its usual LiveKit URL/key/secret. In Firebase Authentication,
+enable Google as a sign-in provider and add the deployed website domain to
+Authorized domains. The Firebase service account and LiveKit secrets stay on
+the server, never in website JavaScript.
+The voice worker must be registered under the same name as
+`WEB_DEMO_AGENT_NAME` (default `cheeko-agent`). For the local Picoclaw setup,
+copy `LIVEKIT_URL`, `LIVEKIT_PUBLIC_URL`, `LIVEKIT_API_KEY`, and
+`LIVEKIT_API_SECRET` from `admin-dashboard/.env` into `manager-api-node/.env`,
+set `WEB_DEMO_AGENT_NAME=cheeko-web-demo`, restart the Manager API, then run:
+
+```bash
+python3 scripts/run-local-web-demo-worker.py
+```
+
+The runner uses the existing local Picoclaw config and Manager API service key,
+and gives website rooms a separate temporary workspace. Keep it running while
+testing. Restart the Manager API and worker after their configuration or code
+changes.
+Guest access also requires the `20261003000000_web_demo_guest_nullable_lead`
+Manager API migration when an existing database has a non-null `lead_id` on
+`web_demo_access_session`.
 
 ## 5. Deploy
 

@@ -19,8 +19,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800;900&family=Gochi+Hand&family=Hanken+Grotesk:wght@400;600;800&family=Patrick+Hand&family=Spline+Sans+Mono:wght@500;700&display=swap" />
 <link rel="preload" as="image" href="assets/img/live/hero-2.jpg" />
 <link rel="preload" as="image" href="assets/img/live/hero-3.jpg" />
-<link rel="stylesheet" href="assets/css/premium.css?v=69" />
+<link rel="stylesheet" href="assets/css/premium.css?v=70" />
+<link rel="stylesheet" href="assets/css/voice-card.css?v=4" />
 <link rel="stylesheet" href="assets/cheeko-device-animation/device-anim.css?v=1" />
+<link rel="stylesheet" href="assets/cheeko-device-animation/device-mobile.css?v=1" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -133,6 +135,16 @@
             <button class="dm-knob" type="button" aria-label="Turn the dial. Showing Talk" title="Turn the dial"><img src="assets/cheeko-device-animation/img/knob.webp" alt="" loading="lazy" /></button>
           </div>
           <svg class="dm-arrows" aria-hidden="true"><defs><marker id="dmHead" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="3.6" markerHeight="3.6" orient="auto-start-reverse"><path d="M1 1 L8 5 L1 9"/></marker></defs><g></g></svg>
+          <svg class="dm-mobile-arrows" viewBox="0 0 400 590" aria-hidden="true" focusable="false">
+            <defs><marker id="dmMobileHead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L8 5 L1 9" /></marker></defs>
+            <g class="dm-mobile-arrow" data-feature="1"><path d="M45 170 Q81 170 139 190" /><circle cx="29" cy="167" r="17" /><text x="29" y="168">1</text></g>
+            <g class="dm-mobile-arrow" data-feature="2"><path d="M355 343 Q303 342 230 345" /><circle cx="372" cy="343" r="17" /><text x="372" y="344">2</text></g>
+            <g class="dm-mobile-arrow" data-feature="3"><path d="M227 56 Q222 76 207 92" /><circle cx="231" cy="38" r="17" /><text x="231" y="39">3</text></g>
+            <g class="dm-mobile-arrow" data-feature="4"><path d="M356 233 Q342 231 328 232" /><circle cx="373" cy="233" r="17" /><text x="373" y="234">4</text></g>
+            <g class="dm-mobile-arrow" data-feature="5"><path d="M251 548 Q237 518 209 470" /><circle cx="258" cy="564" r="17" /><text x="258" y="565">5</text></g>
+            <g class="dm-mobile-arrow" data-feature="6"><path d="M45 244 Q55 241 71 232" /><circle cx="28" cy="247" r="17" /><text x="28" y="248">6</text></g>
+            <g class="dm-mobile-arrow" data-feature="7"><path d="M45 332 Q57 327 71 312" /><circle cx="28" cy="339" r="17" /><text x="28" y="340">7</text></g>
+          </svg>
           <div class="dm-lab" data-side="l" data-fx=".27" data-fy=".2" style="--x:12.5%;--y:13%;--m:1;--i:0"><b>The screen</b><span>Cheeko's face. Never video</span></div>
           <div class="dm-lab" data-side="l" data-fx="-.01" data-fy=".325" data-bow=".16" style="--x:11.9%;--y:31%;--m:6;--i:1"><b>USB-C</b><span>any USB-C charger works</span><span>4 to 6 hours of play</span></div>
           <div class="dm-lab" data-side="l" data-fx="-.01" data-fy=".51" data-bow=".04" style="--x:9%;--y:51%;--m:7;--i:2"><b>Headphone jack</b><span>for private listening</span></div>
@@ -141,6 +153,15 @@
           <div class="dm-lab" data-side="r" data-fx="1.005" data-fy=".33" data-bow="-.1" style="--x:72.2%;--y:32%;--m:5;--i:5"><b>Side buttons</b><span>power and volume</span></div>
           <div class="dm-lab" data-side="r" data-fx=".7" data-fy=".571" data-bow=".04" style="--x:72.2%;--y:54%;--m:2;--i:6"><b>Rotary dial</b><span>turn to explore, press to</span><span>choose</span></div>
         </div>
+      </div>
+      <div class="dm-feature-cards" aria-label="Cheeko device features">
+        <div class="dm-feature-card" data-feature="1"><span class="dm-feature-num">1</span><div><h3>The screen</h3><p>Cheeko's face. Never video.</p></div></div>
+        <div class="dm-feature-card" data-feature="2"><span class="dm-feature-num">2</span><div><h3>Rotary dial</h3><p>Turn to explore, press to choose.</p></div></div>
+        <div class="dm-feature-card" data-feature="3"><span class="dm-feature-num">3</span><div><h3>Card slot</h3><p>At the back, for stories, rhymes and more.</p></div></div>
+        <div class="dm-feature-card" data-feature="4"><span class="dm-feature-num">4</span><div><h3>Side buttons</h3><p>Power and volume.</p></div></div>
+        <div class="dm-feature-card" data-feature="5"><span class="dm-feature-num">5</span><div><h3>Front speaker</h3><p>Big, clear sound.</p></div></div>
+        <div class="dm-feature-card" data-feature="6"><span class="dm-feature-num">6</span><div><h3>USB-C</h3><p>Any USB-C charger works. 4 to 6 hours of play.</p></div></div>
+        <div class="dm-feature-card" data-feature="7"><span class="dm-feature-num">7</span><div><h3>Headphone jack</h3><p>For private listening.</p></div></div>
       </div>
       
     </div>
@@ -410,30 +431,32 @@
       <button class="pclose" id="pclose" aria-label="Close" type="button">✕</button>
       <button class="parrow prev" id="pprev" aria-label="Previous character" type="button">‹</button>
       <button class="parrow next" id="pnext" aria-label="Next character" type="button">›</button>
-      <div class="pstage" id="pstage"><img id="pimg" src="" alt="" /></div>
+      <div class="pstage" id="pstage"><img id="pimg" src="" alt="" /><span class="talk-greeting" id="talk-greeting" aria-hidden="true"></span></div>
       <div class="pmeta">
         <span class="chip" id="pchip"></span>
         <h3 id="pname"></h3>
         <div class="role" id="prole"></div>
         <p id="pline"></p>
         <div class="pskills" id="pskills"></div>
+        <p class="card-store-note" id="pcard-store-note" hidden></p>
         <div class="character-actions">
           <button class="player" id="pplayer" type="button"><span class="ptri">▶</span><span class="peq"><i></i><i></i><i></i><i></i></span><span id="plabel">Hear me</span></button>
           <button class="talk-trigger" id="ptalk" type="button" aria-controls="talkpanel" aria-expanded="false" hidden><span aria-hidden="true">●</span> Talk live</button>
+          <a class="card-store-link" id="pcard-store-link" href="https://shop.cheekoai.in/" hidden>Visit Cheeko store <span aria-hidden="true">↗</span></a>
         </div>
         <div class="talk-panel" id="talkpanel" hidden>
-          <div class="talk-status" id="talk-status" role="status" aria-live="polite">Getting Cheeko ready…</div>
+          <div class="talk-status" id="talk-status" role="status" aria-live="polite">Getting your character ready…</div>
           <div class="talk-step talk-auth" id="talk-auth-step" hidden>
             <button class="talk-google" id="talk-google" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.4-.18-2.07H12v3.92h5.38a4.6 4.6 0 0 1-2 3.02v2.54h3.24c1.9-1.75 2.98-4.32 2.98-7.41Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.36l-3.24-2.54c-.9.6-2.05.96-3.38.96-2.6 0-4.81-1.76-5.6-4.13H3.05v2.62A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.4 13.93A6 6 0 0 1 6.08 12c0-.67.12-1.32.32-1.93V7.45H3.05A10 10 0 0 0 2 12c0 1.63.39 3.17 1.05 4.55l3.35-2.62Z"/><path fill="#EA4335" d="M12 5.94c1.47 0 2.79.5 3.83 1.5l2.87-2.88A9.63 9.63 0 0 0 12 2a10 10 0 0 0-8.95 5.45l3.35 2.62C7.19 7.7 9.4 5.94 12 5.94Z"/></svg><span>Continue with Google</span></button>
             <small>Google confirms your identity only for this voice demo. No Cheeko account or password is created.</small>
           </div>
           <div class="talk-step talk-live" id="talk-live-step" hidden>
-            <div class="talk-orb" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-            <strong>Talk with Cheeko</strong>
-            <span class="talk-time" id="talk-time">1:00</span>
+            <div class="talk-timer-ring" id="talk-timer-ring" aria-label="Time remaining"><span aria-hidden="true">◴</span><strong class="talk-time" id="talk-time">1:00</strong><small>Time remaining</small></div>
+            <div class="talk-wave" id="talk-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
             <div class="talk-live-controls" id="talk-live-controls" hidden>
-              <button id="talk-mic" class="talk-mic" type="button" aria-pressed="false">🎙 Tap to talk</button>
-              <button id="talk-end" class="talk-end" type="button">End talk</button>
+              <button id="talk-mic" class="talk-mic" type="button" aria-label="Start" aria-pressed="false"><span class="talk-start-label" aria-hidden="true">Start</span><svg class="talk-mic-icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="12" y="4" width="8" height="16" rx="4"/><path d="M8 15a8 8 0 0 0 16 0M16 23v5m-5 0h10"/></svg><span class="talk-stop-icon" aria-hidden="true"></span></button>
+              <span class="talk-hint" id="talk-hint">Tap to start</span>
+              <button id="talk-end" class="talk-end" type="button"><span aria-hidden="true">☎</span> End Talk</button>
             </div>
           </div>
           <div id="talk-audio" hidden></div>
@@ -769,8 +792,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
 <script src="assets/js/press-rail.js?v=1" defer></script>
-<script src="assets/js/playbold.js?v=16" defer></script>
-<script src="assets/js/cheeko-talk.js?v=3" defer></script>
+<script src="assets/js/playbold.js?v=19" defer></script>
+<script src="assets/js/voice-ptt.js?v=2" defer></script>
+<script src="assets/js/cheeko-talk.js?v=14" defer></script>
 <script src="assets/cheeko-device-animation/device-anim.js?v=1" defer></script>
 </body>
 </html>

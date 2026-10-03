@@ -1,0 +1,32 @@
+/* The desktop device map remains in device-anim.css. */
+.dm-mobile-arrows,
+.dm-feature-cards{display:none}
+
+@media (max-width:900px){
+  #device .sec-head{margin-bottom:10px}
+  #devanim{max-width:480px;margin-inline:auto}
+  #devanim .dm-stage{display:block;aspect-ratio:400/590}
+  #devanim .dm-dev{position:absolute;top:15.25%;left:50%;width:65%;height:auto;aspect-ratio:1000/1674;transform:translateX(-50%);margin:0}
+  #devanim .dm-body{position:absolute;inset:0;width:100%;height:100%}
+  #devanim .dm-lab, #devanim .dm-arrows{display:none}
+  #devanim .dm-mobile-arrows{display:block;position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:2}
+  .dm-mobile-arrow path{fill:none;stroke:#f04b1d;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#dmMobileHead)}
+  .dm-mobile-arrow circle{fill:#f04b1d;stroke:#fff;stroke-width:2.5}
+  .dm-mobile-arrow text{fill:#fff;font:800 20px 'Gabarito',system-ui,sans-serif;text-anchor:middle;dominant-baseline:middle}
+  #dmMobileHead path{fill:none;stroke:#f04b1d;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  .dm-feature-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:720px;margin:4px auto 0}
+  .dm-feature-card{display:flex;align-items:flex-start;gap:10px;min-width:0;padding:15px 14px;background:#fffdf8;border:1px solid #f0e6d8;border-radius:18px;box-shadow:0 5px 18px rgba(72,45,12,.05)}
+  .dm-feature-card:last-child{grid-column:1/-1}
+  .dm-feature-num{display:grid;flex:none;place-items:center;width:30px;height:30px;border-radius:50%;background:#ffd451;color:#1f190d;font:800 18px 'Gabarito',system-ui,sans-serif}
+  .dm-feature-card h3{margin:2px 0 5px;font:800 17px/1.15 'Gabarito',system-ui,sans-serif;color:#21180d}
+  .dm-feature-card p{margin:0;font:400 14px/1.35 'Hanken Grotesk',system-ui,sans-serif;color:#514537}
+}
+
+@media (max-width:480px){
+  .dm-feature-cards{gap:9px}
+  .dm-feature-card{gap:7px;padding:12px 10px;border-radius:15px}
+  .dm-feature-num{width:27px;height:27px;font-size:16px}
+  .dm-feature-card h3{font-size:15px}
+  .dm-feature-card p{font-size:13px}
+}

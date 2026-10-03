@@ -1,5 +1,7 @@
 # Cheeko Web Voice Demo Design
 
+> Historical design note: the temporary guest-testing mode below was removed on 2026-10-03. Current Talk live access requires Google sign-in and permits ten lifetime one-minute sessions per verified Google identity. See the website README for current setup.
+
 ## Goal
 
 Add a website-only Cheeko voice demo to the v2 marketing site. A visitor clicks **Talk**, confirms their identity with Google, and receives temporary access to a live back-and-forth voice session with the existing Cheeko realtime agent.

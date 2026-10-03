@@ -185,6 +185,8 @@
     var pcur = 0, paudio = null;
     var pplayer = document.getElementById("pplayer");
     var plabel = document.getElementById("plabel");
+    var storeNote = document.getElementById("pcard-store-note");
+    var storeLink = document.getElementById("pcard-store-link");
     var ptoast = document.createElement("div");
     ptoast.className = "ptoast";
     ptoast.textContent = "Real voices land before launch";
@@ -201,8 +203,14 @@
       pcur = (i + PCH.length) % PCH.length;
       var ch = PCH[pcur];
       pStop();
-      pplayer.hidden = ch.k === "cheeko";
+      pplayer.hidden = true;
+      var cardShopCharacter = ch.k === "chanda" || ch.k === "masti" || ch.k === "tara";
+      storeNote.hidden = !cardShopCharacter;
+      storeLink.hidden = !cardShopCharacter;
+      if (cardShopCharacter) storeNote.textContent = "To talk with " + ch.n + ", get the character card from the Cheeko store. This voice is available on the device, not on the website.";
       document.getElementById("pglow").style.setProperty("--pc", ch.pc);
+      var voiceColors = { cheeko: "#FF9B4B", quizzy: "#F6C54F", nani: "#88B9F7", mitthu: "#A4D86B" };
+      popEl.style.setProperty("--voice-accent", voiceColors[ch.k] || ch.pc);
       var stage = document.getElementById("pstage");
       stage.querySelectorAll(".pfx").forEach(function (e) { e.remove(); });
       var img = document.getElementById("pimg");
