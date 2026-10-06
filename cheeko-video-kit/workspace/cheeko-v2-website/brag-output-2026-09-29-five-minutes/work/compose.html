@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800;900&family=Hanken+Grotesk:wght@600;800&display=block">
+<style>
+:root{--brand:#F0521D;--sun:#FFC81A;--ink:#231A10;--tint:#FFF4E3;--cream:#FFF6E8;--purple:#6C3DFF;--green:#2F9E5B;--red:#E5341B;
+  --disp:"Gabarito",sans-serif;--body:"Hanken Grotesk",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#E3E8FF}
+.abs{position:absolute}
+.layer{position:absolute;inset:0;overflow:hidden;visibility:hidden}
+.stk{filter:url(#stk)}
+.st{position:absolute;display:block;transform-origin:50% 60%}
+/* backgrounds: the phone's world is cool blue, Cheeko's world is warm */
+#bgA{background:#E3E8FF}
+#bgA::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,#C7D0FF 3.2px,transparent 3.7px) 0 0/34px 34px}
+#bgB{background:repeating-conic-gradient(from 0deg at 50% 34%,#FFD447 0 9deg,#FFC21A 9deg 18deg)}
+#bgB::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(240,82,29,.16) 3px,transparent 3.5px) 0 0/30px 30px}
+#floor{position:absolute;left:-80px;right:-80px;top:1230px;height:800px;background:#F28C4B;border-top:10px solid var(--ink);border-radius:50% 50% 0 0/80px 80px 0 0}
+#bgC{background:var(--cream)}
+#bgC::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,#F7D9B8 3px,transparent 3.5px) 0 0/34px 34px}
+/* shared bits */
+.chip{position:absolute;background:#fff;border:6px solid var(--ink);border-radius:99px;padding:10px 30px 14px;font:900 52px var(--disp);color:var(--ink);white-space:nowrap;transform-origin:50% 50%}
+.chip.red{background:var(--red);color:#fff}
+.chip.ink{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip.green{background:var(--green);color:#fff}
+.bub{position:absolute;background:#fff;border:6px solid var(--ink);border-radius:46px;padding:20px 38px 24px;font:900 60px var(--disp);color:var(--ink);white-space:nowrap;transform-origin:20% 100%}
+.bub svg{position:absolute;top:calc(100% - 6px)}
+.stamp{position:absolute;border:12px solid var(--red);color:var(--red);border-radius:24px;padding:6px 32px 12px;font:900 112px var(--disp);letter-spacing:-.01em;filter:url(#ink);white-space:nowrap;background:rgba(255,255,255,.55)}
+.boom{position:absolute;font:900 150px var(--disp);color:var(--sun);-webkit-text-stroke:18px var(--ink);paint-order:stroke fill;white-space:nowrap;letter-spacing:-.02em}
+.emo{position:absolute;font-size:110px;line-height:1}
+/* the phone (narrator) */
+.ph{position:absolute;width:190px;height:340px;border-radius:40px;background:#262A38;border:7px solid #111;padding:16px 12px 18px}
+.ph::before{content:"";position:absolute;left:50%;top:6px;width:54px;height:8px;margin-left:-27px;border-radius:4px;background:#555a6a}
+.phs{width:100%;height:100%;border-radius:26px;background:linear-gradient(165deg,#DDEBFF,#9DBEFF);display:flex;align-items:center;justify-content:center;font-size:118px;line-height:1}
+/* device with the real screen, clipped by the measured screen mask */
+.dev{position:absolute;transform-origin:50% 100%}
+.dev img.d{display:block;width:100%}
+.scr{position:absolute;left:22.4%;top:10.39%;width:62.4%;height:29.99%;overflow:hidden;-webkit-mask:url(data:image/png;base64,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) 0 0/100% 100% no-repeat;mask:url(data:image/png;base64,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) 0 0/100% 100% no-repeat}
+.scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* captions */
+#caps{position:absolute;left:70px;right:70px;top:1350px;z-index:50;text-align:center;font-family:var(--disp);font-weight:900;font-size:90px;line-height:1.14}
+#caps .w{display:inline-block;color:#fff;margin:0 .11em;paint-order:stroke fill;-webkit-text-stroke:15px var(--ink);text-shadow:0 8px 0 rgba(35,26,16,.3)}
+#caps .w.emo{position:static;font-size:inherit;-webkit-text-stroke:0;text-shadow:none;transform-origin:50% 60%}
+#caps .w.hl{color:var(--ink);-webkit-text-stroke:0;background:var(--sun);border-radius:.18em;padding:0 .14em;text-shadow:none;box-shadow:0 8px 0 rgba(35,26,16,.3)}
+/* end card */
+#e-tag{top:300px;font:900 74px var(--disp);color:var(--ink);letter-spacing:-.02em}
+#e-tag span{color:var(--brand)}
+#e-price{top:1238px;font:900 140px var(--disp);color:var(--ink);letter-spacing:-.03em}
+#e-sub{top:1392px;font:800 46px var(--body);color:var(--ink)}
+#e-pill{left:540px;top:1470px;background:var(--brand);color:#fff;font:800 54px var(--disp);padding:18px 58px 22px;border-radius:99px;border:6px solid var(--ink);white-space:nowrap}
+#e-send{left:540px;top:1610px;background:var(--ink);color:#fff;font:800 40px var(--disp);padding:16px 34px 18px;border-radius:99px;white-space:nowrap}
+.center{left:0;right:0;text-align:center}
+.card{position:absolute;width:200px;border-radius:12px;transform-origin:50% 160%}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <filter id="stk" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+  <feComponentTransfer in="SourceAlpha" result="a"><feFuncA type="discrete" tableValues="0 1 1 1 1 1 1 1"/></feComponentTransfer>
+  <feMorphology in="a" operator="dilate" radius="10" result="d"/>
+  <feFlood flood-color="#ffffff"/><feComposite in2="d" operator="in" result="border"/>
+  <feGaussianBlur in="d" stdDeviation="7"/><feOffset dx="5" dy="12" result="o"/>
+  <feFlood flood-color="#231A10" flood-opacity=".28"/><feComposite in2="o" operator="in" result="shadow"/>
+  <feMerge><feMergeNode in="shadow"/><feMergeNode in="border"/><feMergeNode in="SourceGraphic"/></feMerge>
+ </filter>
+ <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+  <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -1.2" result="m"/>
+  <feComposite in="SourceGraphic" in2="m" operator="in"/>
+ </filter>
+</defs></svg>
+<div id="stage">
+ <div class="layer" id="bgA"></div>
+ <div class="layer" id="bgB"><div id="floor"></div></div>
+ <div class="layer" id="bgC"></div>
+
+ <!-- S1 hook: POV, the phone -->
+ <div class="layer" id="s1">
+  <div class="chip ink" id="s1-pov" style="left:540px;top:150px">POV: you're the family phone 📱</div>
+  <img class="st stk" id="s1-kid" src="stickers/p04.png" style="left:130px;top:440px;width:820px">
+  <div class="chip red" id="s1-bell" style="left:790px;top:330px;font-size:58px">🔔 99+</div>
+  <div class="emo" id="h1" style="left:120px;top:900px">❤️</div>
+  <div class="emo" id="h2" style="left:860px;top:980px;font-size:90px">👍</div>
+  <div class="emo" id="h3" style="left:780px;top:900px;font-size:80px">🔥</div>
+ </div>
+
+ <!-- S2 the handoff -->
+ <div class="layer" id="s2">
+  <img class="st stk" id="s2-dad" src="stickers/p01.png" style="left:40px;top:170px;width:480px">
+  <img class="st stk" id="s2-mom" src="stickers/p02.png" style="left:560px;top:185px;width:480px">
+  <div class="stamp" id="s2-b1" style="left:100px;top:450px;font-size:84px">BUSY</div>
+  <div class="stamp" id="s2-b2" style="left:700px;top:430px;font-size:84px">BUSY</div>
+  <img class="st stk" id="s2-hand" src="stickers/p03.png" style="left:150px;top:680px;width:780px">
+  <div class="bub" id="s2-5" style="left:640px;top:620px">5 min? ⏰<svg width="70" height="60" viewBox="0 0 70 60" style="left:60px"><path d="M6 0 L18 54 L60 0" fill="#fff" stroke="#231A10" stroke-width="6" stroke-linejoin="round"/></svg></div>
+ </div>
+
+ <!-- S3 five minutes becomes everything -->
+ <div class="layer" id="s3">
+  <img class="st stk" id="s3-a" src="stickers/p05.png" style="left:40px;top:180px;width:470px">
+  <img class="st stk" id="s3-b" src="stickers/p06.png" style="left:570px;top:195px;width:470px">
+  <img class="st stk" id="s3-c" src="stickers/p07.png" style="left:40px;top:735px;width:470px">
+  <img class="st stk" id="s3-d" src="stickers/p08.png" style="left:620px;top:700px;width:390px">
+  <div class="chip" id="s3-la" style="left:60px;top:140px">5 min ⏰</div>
+  <div class="chip" id="s3-lb" style="left:610px;top:150px">Dinner 🍛</div>
+  <div class="chip" id="s3-lc" style="left:60px;top:700px">Football ⚽</div>
+  <div class="chip red" id="s3-ld" style="left:590px;top:670px">ONE MORE! 😤</div>
+ </div>
+
+ <!-- S4 low battery -->
+ <div class="layer" id="s4">
+  <img class="st stk" id="s4-dad" src="stickers/p10.png" style="left:50px;top:190px;width:400px">
+  <img class="st stk" id="s4-mom" src="stickers/p11.png" style="left:630px;top:200px;width:400px">
+  <img class="st stk" id="s4-fam" src="stickers/p12.png" style="left:110px;top:640px;width:860px">
+  <div class="chip red" id="s4-low" style="left:540px;top:560px">🪫 5%</div>
+  <div class="ph stk" id="s4-ph" style="left:830px;top:700px"><div class="phs">😎</div></div>
+  <div class="chip green" id="s4-full" style="left:925px;top:610px">100% 🔋</div>
+ </div>
+
+ <!-- S5 then THIS showed up -->
+ <div class="layer" id="s5">
+  <div class="boom" id="s5-ding" style="left:540px;top:170px">DING DONG!</div>
+  <div class="abs" id="s5-doorw" style="left:20px;top:520px;width:620px;height:620px;perspective:1400px">
+   <img class="st stk" id="s5-door" src="stickers/home-door.svg" style="left:0;top:0;width:620px;transform-origin:18% 50%">
+  </div>
+  <div class="dev stk" id="s5-dev" style="left:610px;top:560px;width:380px"><img class="d" src="../../assets/img/device_current.png"></div>
+  <div class="emo" id="s5-sp1" style="left:560px;top:520px;font-size:90px">✨</div>
+  <div class="emo" id="s5-sp2" style="left:960px;top:640px;font-size:80px">✨</div>
+  <div class="emo" id="s5-sp3" style="left:930px;top:1080px;font-size:70px">✨</div>
+ </div>
+
+ <!-- S6 the "flaws" -->
+ <div class="layer" id="s6">
+  <img class="st stk" id="s6-kid" src="stickers/kid-happy.svg" style="left:0;top:650px;width:640px">
+  <div class="dev stk" id="s6-dev" style="left:640px;top:640px;width:360px"><img class="d" src="../../assets/img/device_current.png"><div class="scr"><img src="../../assets/img/fw-screens/imagine_tiger_5_result.png"></div></div>
+  <div class="stamp" id="s6-1" style="left:70px;top:120px">NO VIDEOS</div>
+  <div class="stamp" id="s6-2" style="left:300px;top:300px">NO REELS</div>
+  <div class="stamp" id="s6-3" style="left:150px;top:470px">NO ADS</div>
+ </div>
+
+ <!-- S7 Nani -->
+ <div class="layer" id="s7">
+  <svg class="abs" id="s7-mo" style="left:130px;top:380px" width="820" height="620" viewBox="0 0 820 620"><path d="M60 230 L0 205 M70 310 L5 310 M60 390 L0 420 M760 230 L820 205 M750 310 L815 310 M760 390 L820 420" stroke="#231A10" stroke-width="9" stroke-linecap="round" fill="none"/></svg>
+  <img class="st stk" id="s7-nani" src="stickers/char-nani.png" style="left:210px;top:390px;width:640px">
+  <div class="bub" id="s7-bub" style="left:120px;top:170px;font-size:64px">Arre, even my stories end.<svg width="70" height="60" viewBox="0 0 70 60" style="left:430px"><path d="M6 0 L22 54 L60 0" fill="#fff" stroke="#231A10" stroke-width="6" stroke-linejoin="round"/></svg></div>
+  <img class="st stk" id="s7-card" src="../../assets/img/cards-shipping/10-nani.jpg" style="left:40px;top:560px;width:165px;border-radius:12px">
+  <div class="dev stk" id="s7-dev" style="left:90px;top:900px;width:330px"><img class="d" src="../../assets/img/device_current.png"><div class="scr"><img src="../../assets/img/fw-screens/03_talk_4_nani_6_talking.png"></div></div>
+  <div class="ph stk" id="s7-ph" style="left:770px;top:1000px"><div class="phs">😳</div></div>
+ </div>
+
+ <!-- S8 now they play; the phone lives on the fridge -->
+ <div class="layer" id="s8">
+  <div class="abs" id="s8-cam" style="inset:0;transform-origin:800px 360px">
+   <img class="st stk" id="s8-fridge" src="stickers/home-fridge.svg" style="left:560px;top:300px;width:520px">
+   <div class="ph stk" id="s8-ph" style="left:745px;top:62px;width:150px;height:268px;border-radius:32px;padding:13px 10px 14px"><div class="phs" style="font-size:92px;border-radius:20px">🥲</div></div>
+   <img class="st stk" id="s8-fam" src="stickers/family-playing-together.svg" style="left:0;top:640px;width:720px">
+   <div class="dev stk" id="s8-dev" style="left:720px;top:850px;width:250px"><img class="d" src="../../assets/img/device_current.png"></div>
+  </div>
+ </div>
+
+ <!-- S9 end card -->
+ <div class="layer" id="s9">
+  <img class="abs" id="e-logo" src="../../assets/img/logo.png" style="left:340px;top:110px;width:400px">
+  <div class="abs center" id="e-tag">Less screen. <span>More childhood.</span></div>
+  <div class="abs" id="e-cards" style="left:0;top:0;width:1080px;height:1920px"></div>
+  <div class="dev stk" id="e-dev" style="left:340px;top:520px;width:400px"><img class="d" src="../../assets/img/device_current.png"></div>
+  <img class="st stk" id="e-fox" src="stickers/char-cheeko.png" style="left:740px;top:850px;width:290px">
+  <div class="ph stk" id="e-ph" style="left:50px;top:1150px;width:120px;height:214px;border-radius:28px;padding:11px 8px 12px"><div class="phs" style="font-size:72px;border-radius:18px">🙄</div></div>
+  <div class="bub" id="e-fine" style="left:120px;top:1040px;font-size:46px;padding:12px 26px 16px;border-radius:30px">Fine.<svg width="50" height="44" viewBox="0 0 50 44" style="left:14px"><path d="M4 0 L10 40 L40 0" fill="#fff" stroke="#231A10" stroke-width="6" stroke-linejoin="round"/></svg></div>
+  <div class="abs center" id="e-price">₹5,999</div>
+  <div class="abs center" id="e-sub">Device + 10 cards 🎁 &nbsp;Free delivery 🚚</div>
+  <div class="abs" id="e-pill">Link in bio 👆</div>
+  <div class="abs" id="e-send">Send this to a parent who needs it 👀</div>
+ </div>
+
+ <div id="caps"></div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const clamp = (x,a=0,b=1) => Math.min(b, Math.max(a, x));
+const prog = (t,a,b) => clamp((t-a)/(b-a));
+const eOut = x => 1 - Math.pow(1-x, 3);
+const eIn = x => x*x;
+const eBack = x => { const c=2.2, d=c+1; return 1 + d*Math.pow(x-1,3) + c*Math.pow(x-1,2); };
+const lerp = (a,b,x) => a + (b-a)*x;
+// hidden scenes leave the page entirely (a 3D-rotated sticker kept painting through visibility:hidden)
+const vis = (el, on) => { el.style.visibility = on ? 'visible' : 'hidden'; el.style.display = on ? '' : 'none'; };
+const rnd = x => { const s = Math.sin(x*12.9898)*43758.5453; return s - Math.floor(s); };
+// hand-made "boil": every sticker twitches a little, 8 times a second
+const boil = (t, i, amt=1.1) => (rnd(Math.floor(t*8)*31 + i*97) - .5) * amt;
+// pop in with a bounce, then boil. o = {rot, dx, dy, s, dur, amt, from}
+function stick(el, t, t0, i, o={}) {
+  const dur = o.dur ?? .34, p = prog(t, t0, t0 + dur);
+  el.style.opacity = t < t0 ? 0 : clamp(p*4);
+  const s = (o.s ?? 1) * lerp(o.from ?? .25, 1, eBack(p));
+  el.style.transform = `${o.pre || ''} translate(${o.dx||0}px,${o.dy||0}px) rotate(${(o.rot||0) + boil(t, i, o.amt ?? 1.1)}deg) scale(${s})`;
+}
+// rubber stamp: drops from big and slams down
+function slam(el, t, t0, rot, i) {
+  const p = prog(t, t0, t0 + .16);
+  el.style.opacity = t < t0 ? 0 : 1;
+  el.style.transform = `rotate(${rot + boil(t, i, .6)}deg) scale(${lerp(2.3, 1, eOut(p))})`;
+}
+// centred chips/pills keep their translateX(-50%)
+const CX = 'translateX(-50%)';
+const SHAKES = [10.2, 15.2, 17.2, 18.1, 19.0];
+const shake = t => { let a = 0; for (const s of SHAKES) if (t >= s && t < s + .3) a = Math.max(a, 22*(1 - (t-s)/.3)); return a; };
+
+/* word-synced captions: [start, end, [[word, time, highlight?], ...]] in the scene timeline; the warp below maps them onto the voice */
+const CAPS = [
+  [0.05, 1.45, [["Hi,",0.1],["I'm",0.3],["the",0.45],["family",0.55],["phone.",0.9,1],["📱",1.0]]],
+  [1.45, 3.35, [["Best",1.5],["babysitter",1.75,1],["in",2.3],["the",2.4],["house.",2.5],["😇",2.62]]],
+  [3.4, 4.9, [["Dad's",3.5],["busy.",3.8,1],["Mom's",4.2],["busy.",4.5,1],["💼",4.6]]],
+  [4.9, 6.9, [["Kid",5.0],["gets",5.2],["me",5.4],["for",5.55],["five",5.8,1],["minutes.",6.1,1],["⏰",6.25]]],
+  [7.0, 8.8, [["Five",7.1],["minutes",7.35],["became",7.7],["dinner.",8.0,1],["🍛",8.12]]],
+  [8.8, 9.8, [["Became",8.9],["football.",9.2,1],["⚽",9.32]]],
+  [9.8, 11.1, [["Became",9.9],["ONE",10.2,1],["MORE!",10.45,1],["😤",10.57]]],
+  [11.2, 12.9, [["Whole",11.25],["family",11.5],["on",11.8],["low",11.95,1],["battery.",12.2,1],["🪫",12.32]]],
+  [12.9, 14.35, [["Me?",13.0],["Fully",13.4],["charged.",13.7,1],["😎",13.82]]],
+  [15.0, 16.7, [["Then",15.0],["THIS",15.2,1],["showed",15.5],["up.",15.8],["😤",15.92]]],
+  [16.95, 19.9, [["No",17.0],["videos.",17.2,1],["No",17.9],["reels?",18.1,1],["No",18.8],["ads?!",19.0,1],["🚫",19.12]]],
+  [22.85, 24.4, [["Now",22.9],["they",23.1],["play",23.3],["together.",23.55,1],["🧸",23.67]]],
+  [24.5, 26.3, [["I",24.6],["live",24.75],["on",25.0],["the",25.15],["fridge.",25.3,1],["🥲",25.42]]],
+];
+const capEl = $('caps'); let capIdx = -1;
+function renderCaps(t) {
+  const i = CAPS.findIndex(([a, b]) => t >= a && t < b);
+  if (i !== capIdx) {
+    capEl.innerHTML = '';
+    if (i >= 0) for (const [w, , hl] of CAPS[i][2]) {
+      const s = document.createElement('span');
+      const emo = /\p{Extended_Pictographic}/u.test(w) && !/[\p{L}\p{N}]/u.test(w);
+      s.className = 'w' + (emo ? ' emo' : hl ? ' hl' : ''); s.textContent = w;
+      capEl.appendChild(s); capEl.appendChild(document.createTextNode(' '));
+    }
+    capIdx = i;
+  }
+  if (i < 0) return;
+  [...capEl.querySelectorAll('.w')].forEach((s, k) => {
+    const t0 = CAPS[i][2][k][1], p = prog(t, t0 - .04, t0 + .14);
+    s.style.opacity = p > 0 ? 1 : 0;
+    s.style.transform = `scale(${lerp(.5, 1, eBack(p))}) rotate(${CAPS[i][2][k][2] ? -3 : 0}deg)`;
+  });
+}
+
+// end card: the 10 real cards fan out behind the device
+const CARDS = ['01-tales-of-kindness','02-floor-is-lava','03-play-and-sing-along','04-dreamy-melodies','05-mitthu-the-parrot','06-make-your-own','07-clever-little-tales','08-ravi-and-nila','09-sounds-around-me','10-nani'];
+const cardEls = CARDS.map((c, k) => { const im = document.createElement('img'); im.className = 'card stk'; im.src = `../../assets/img/cards-shipping/${c}.jpg`;
+  im.style.left = '440px'; im.style.top = '600px'; $('e-cards').appendChild(im); return im; });
+
+// scene windows (provisional, re-timed to the voice later)
+const S = [[0, 3.4], [3.4, 7.0], [7.0, 11.2], [11.2, 14.4], [14.4, 16.8], [16.8, 20.0], [20.0, 22.8], [22.8, 26.4], [26.4, 99]];
+const inS = (t, k) => t >= S[k][0] && t < S[k][1];
+
+window.render = function(t) {
+  vis($('bgA'), t < 14.4); vis($('bgB'), t >= 14.4 && t < 26.4); vis($('bgC'), t >= 26.4);
+  S.forEach((_, k) => vis($('s' + (k + 1)), inS(t, k)));
+  const sh = shake(t); $('stage').style.transform = sh ? `translate(${(rnd(t*60)-.5)*sh}px,${(rnd(t*77)-.5)*sh}px)` : '';
+
+  if (inS(t, 0)) {                                     // S1 hook
+    stick($('s1-pov'), t, 0.0, 1, { pre: CX, dur: .3 });
+    stick($('s1-kid'), t, 0.05, 2, { s: 1 + .05*prog(t, 0, 3.4) });
+    stick($('s1-bell'), t, 1.0, 3, { pre: CX, rot: 8 });
+    [['h1', .6], ['h2', 1.2], ['h3', 1.9]].forEach(([id, t0], k) => {
+      const e = $(id), d = t - t0; e.style.opacity = d < 0 ? 0 : clamp(1.4 - d/1.4);
+      e.style.transform = `translateY(${-d*260}px) rotate(${Math.sin(d*5)*10}deg) scale(${lerp(.4, 1, eBack(prog(t, t0, t0+.3)))})`; });
+  }
+  if (inS(t, 1)) {                                     // S2 handoff
+    stick($('s2-dad'), t, 3.42, 4, { rot: -2 });
+    slam($('s2-b1'), t, 3.8, -8, 5);
+    stick($('s2-mom'), t, 4.12, 6, { rot: 2 });
+    slam($('s2-b2'), t, 4.5, 7, 7);
+    stick($('s2-hand'), t, 4.95, 8, { rot: -1, from: .5 });
+    stick($('s2-5'), t, 5.8, 9, { rot: -3 });
+  }
+  if (inS(t, 2)) {                                     // S3 five minutes grows
+    const P = [['s3-a','s3-la',7.05,-2,-4], ['s3-b','s3-lb',8.0,2,3], ['s3-c','s3-lc',9.2,-1,-3], ['s3-d','s3-ld',10.2,3,4]];
+    P.forEach(([im, lb, t0, r, lr], k) => { stick($(im), t, t0, 10+k, { rot: r }); stick($(lb), t, t0 + .12, 20+k, { rot: lr }); });
+    if (t > 10.2) $('s3-d').style.transform += ` translateX(${Math.sin(t*70)*6*Math.max(0, 1-(t-10.2)*1.2)}px)`;
+  }
+  if (inS(t, 3)) {                                     // S4 low battery
+    stick($('s4-dad'), t, 11.2, 30, { rot: -3 });
+    stick($('s4-mom'), t, 11.4, 31, { rot: 3 });
+    stick($('s4-fam'), t, 11.6, 32, { rot: -1 });
+    stick($('s4-low'), t, 12.2, 33, { pre: CX, rot: -4 });
+    if (t > 12.5) $('s4-low').style.opacity = Math.floor(t*4) % 2 ? 1 : .35;
+    stick($('s4-ph'), t, 13.0, 34, { rot: 8, from: .1 });
+    stick($('s4-full'), t, 13.4, 35, { pre: CX, rot: 5 });
+  }
+  if (inS(t, 4)) {                                     // S5 the rival arrives
+    stick($('s5-ding'), t, 14.45, 40, { pre: CX, rot: -6 + Math.sin(t*18)*3*Math.max(0, 1-(t-14.45)) });
+    stick($('s5-door'), t, 14.4, 41, { pre: `rotateY(${-lerp(0, 68, eOut(prog(t, 14.65, 15.05)))}deg)`, amt: .6 });
+    stick($('s5-dev'), t, 15.0, 42, { dx: lerp(-420, 0, eOut(prog(t, 15.0, 15.35))), rot: lerp(-20, 3, eOut(prog(t, 15.0, 15.4))), from: .4 });
+    ['s5-sp1','s5-sp2','s5-sp3'].forEach((id, k) => stick($(id), t, 15.25 + k*.12, 43+k, { rot: Math.sin(t*6+k)*15 }));
+  }
+  if (inS(t, 5)) {                                     // S6 the "flaws"
+    stick($('s6-kid'), t, 16.8, 50, { rot: -2, dy: -Math.abs(Math.sin((t-16.8)*5))*24 });
+    stick($('s6-dev'), t, 16.9, 51, { rot: 4 });
+    slam($('s6-1'), t, 17.2, -6, 52); slam($('s6-2'), t, 18.1, 4, 53); slam($('s6-3'), t, 19.0, -3, 54);
+  }
+  if (inS(t, 6)) {                                     // S7 Nani
+    stick($('s7-dev'), t, 20.0, 60, { rot: -6 });
+    const cp = eOut(prog(t, 20.05, 20.4));
+    stick($('s7-card'), t, 20.05, 61, { rot: lerp(-40, -14, cp), dx: lerp(-250, 0, cp), dy: lerp(-120, 0, cp), from: .8 });
+    stick($('s7-nani'), t, 20.3, 62, { rot: -3 + Math.sin((t-20.3)*9)*2, from: .1, dur: .45 });
+    $('s7-mo').style.opacity = t > 20.45 ? (Math.floor(t*6) % 2 ? 1 : .6) : 0;
+    stick($('s7-bub'), t, 20.5, 63, { rot: -2 });
+    stick($('s7-ph'), t, 21.7, 64, { rot: 10, dx: Math.sin(t*40)*4*Math.max(0, 1-(t-21.7)*2) });
+  }
+  if (inS(t, 7)) {                                     // S8 together; the phone on the fridge
+    stick($('s8-fam'), t, 22.8, 70, { rot: -1 });
+    stick($('s8-dev'), t, 23.0, 71, { rot: 5 });
+    stick($('s8-fridge'), t, 22.9, 72, { amt: .5 });
+    const drop = eOut(prog(t, 24.45, 24.75));
+    stick($('s8-ph'), t, 24.45, 73, { dy: lerp(-420, 0, drop), rot: lerp(30, -4, drop) + (t > 24.8 ? Math.sin((t-24.8)*3)*3 : 0), from: 1 });
+    $('s8-cam').style.transform = `scale(${1 + .1*eOut(prog(t, 24.4, 25.0))})`;
+  }
+  if (inS(t, 8)) {                                     // S9 end card
+    stick($('e-logo'), t, 26.45, 80, { amt: .3 });
+    stick($('e-tag'), t, 26.7, 81, { amt: .3 });
+    stick($('e-dev'), t, 26.5, 82, { from: .3 });
+    cardEls.forEach((c, k) => { const p = eOut(prog(t, 26.75 + k*.03, 27.2 + k*.03)); c.style.opacity = p > 0 ? 1 : 0;
+      c.style.transform = `rotate(${lerp(0, -66 + k*14.7, p) + boil(t, 90+k, .5)}deg) translateY(${lerp(0, -40, p)}px)`; });
+    stick($('e-fox'), t, 27.0, 83, { rot: Math.sin((t-27)*5)*5 });
+    stick($('e-ph'), t, 26.4, 88, { rot: -8, from: .2 });
+    stick($('e-fine'), t, 26.45, 89, { rot: -4 });
+    stick($('e-price'), t, 27.35, 84, { amt: .3 });
+    stick($('e-sub'), t, 27.55, 85, { amt: .2 });
+    stick($('e-pill'), t, 27.75, 86, { pre: CX, s: 1 + (t > 28.2 ? .05*Math.max(0, Math.sin((t-28.2)*Math.PI*2)) : 0), amt: .3 });
+    stick($('e-send'), t, 28.0, 87, { pre: CX, amt: .3 });
+  }
+  renderCaps(t);
+};
+
+window.ready = (async () => {
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(i => i.decode().catch(()=>{})));
+  await Promise.all(['900 100px Gabarito','800 40px Gabarito','800 46px "Hanken Grotesk"'].map(f => document.fonts.load(f)));
+  window.render(0);
+  return true;
+})();
+</script>
+<script id="warp">
+// Timed to the V06 voiceover (MiniMax English_Upbeat_Woman at 1.08x, Nani = hindi_female_2_v1): scenes keep their
+// timeline and are stretched piecewise between voice-line anchors (work/warp.json, built by marketing/tools/build_vo.py).
+(() => { const NEW = [0.1, 1.799, 4.171, 5.098, 6.201, 7.356, 8.425, 9.775, 10.877, 13.408, 15.473, 18.127, 19.718, 20.74, 21.623, 22.67, 25.661, 27.411, 30.074, 30.831, 32.357, 34.36], OLD = [0.1, 1.5, 3.5, 4.2, 5.0, 5.8, 7.1, 8.9, 9.9, 11.25, 13.0, 14.75, 17.0, 17.9, 18.8, 20.5, 22.9, 24.6, 26.45, 26.9, 27.9, 29.9];
+  const warp = t => { if (t <= NEW[0]) return OLD[0] * t / NEW[0]; for (let i = 1; i < NEW.length; i++) if (t <= NEW[i]) return OLD[i-1] + (OLD[i]-OLD[i-1]) * (t-NEW[i-1]) / (NEW[i]-NEW[i-1]); return OLD[OLD.length-1] + (t - NEW[NEW.length-1]); };
+  const R = window.render; window.render = t => R(warp(t)); })();
+</script>
+</body></html>

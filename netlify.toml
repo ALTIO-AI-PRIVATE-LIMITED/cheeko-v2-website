@@ -1,3 +1,15 @@
 [build]
   publish = "."
   command = ""
+
+[[redirects]]
+  from = "/api/web-demo/*"
+  to = "https://ota.cheekoai.in/toy/web-demo/:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "microphone=(self)"
+    Referrer-Policy = "strict-origin-when-cross-origin"

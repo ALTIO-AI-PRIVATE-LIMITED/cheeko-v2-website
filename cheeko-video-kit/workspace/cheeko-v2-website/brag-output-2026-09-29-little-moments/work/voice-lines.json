@@ -1,0 +1,95 @@
+{
+  "voice": "English_Upbeat_Woman",
+  "V07": {
+    "dir": "brag-output-2026-09-29-little-moments",
+    "old_vo_end": 29,
+    "old_dur": 30.5,
+    "tempo": 1.06,
+    "lines": [
+      [
+        "surprised",
+        "Sound like your house?",
+        0,
+        0.05
+      ],
+      [
+        "fluent",
+        "The morning rush.",
+        2,
+        0.413
+      ],
+      [
+        "sad",
+        "The waiting.",
+        3.6,
+        0.628
+      ],
+      [
+        "sad",
+        "The rainy-day blues.",
+        5,
+        0.789
+      ],
+      [
+        "happy",
+        "Make a little room for wonder.",
+        7,
+        0.367
+      ],
+      [
+        "happy",
+        "Meet Cheeko.",
+        9.5,
+        0.504
+      ],
+      [
+        "calm",
+        "Stories to listen to.",
+        11.2,
+        0.557
+      ],
+      [
+        "surprised",
+        "Questions to explore.",
+        13,
+        0.415
+      ],
+      [
+        "happy",
+        "A little imagination.",
+        15,
+        0.319
+      ],
+      [
+        "calm",
+        "And a story before bed.",
+        17,
+        0.331
+      ],
+      [
+        "happy",
+        "Small moments. Shared adventures.",
+        19.5,
+        0.436
+      ],
+      [
+        "happy",
+        "Less screen. More childhood.",
+        22,
+        0.301
+      ],
+      [
+        "happy",
+        "Link in bio.",
+        24.5,
+        0.506
+      ],
+      [
+        "fluent",
+        "Send this to a parent who needs it.",
+        26,
+        0.476
+      ]
+    ]
+  }
+}

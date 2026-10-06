@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "",
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/api/web-demo/:path*",
+      "destination": "https://ota.cheekoai.in/toy/web-demo/:path*"
+    }
+  ]
+}

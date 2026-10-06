@@ -1,0 +1,230 @@
+{
+ "vid": "V26",
+ "dur": 60.6,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 2.299,
+   "spk": "N",
+   "text": "Your voice, on a Cheeko card!",
+   "show": "Your voice, on a Cheeko card!",
+   "emoji": {
+    "card!": "🎙️"
+   },
+   "hl": [
+    "voice,"
+   ]
+  },
+  {
+   "s": 2.649,
+   "e": 7.11,
+   "spk": "N",
+   "text": "Open the Cheeko app. Tap Profile, then Add Custom Cards.",
+   "show": "Open the Cheeko app. Tap Profile, then Add Custom Cards.",
+   "emoji": {
+    "Cards.": "📱"
+   },
+   "hl": []
+  },
+  {
+   "s": 7.41,
+   "e": 9.693,
+   "spk": "N",
+   "text": "Upload a song or a story from your phone.",
+   "show": "Upload a song or a story from your phone.",
+   "emoji": {
+    "phone.": "🎵"
+   },
+   "hl": []
+  },
+  {
+   "s": 9.993,
+   "e": 12.163,
+   "spk": "N",
+   "text": "Or record your voice right in the app.",
+   "show": "Or record your voice right in the app.",
+   "emoji": {
+    "app.": "🎙️"
+   },
+   "hl": []
+  },
+  {
+   "s": 12.463,
+   "e": 15.378,
+   "spk": "N",
+   "text": "Add a picture. Crop it, pick a filter.",
+   "show": "Add a picture. Crop it, pick a filter.",
+   "emoji": {
+    "filter.": "🖼️"
+   },
+   "hl": []
+  },
+  {
+   "s": 15.678,
+   "e": 18.099,
+   "spk": "N",
+   "text": "Tap Add to Custom Card. Done!",
+   "show": "Tap Add to Custom Card. Done!",
+   "emoji": {
+    "Done!": "✅"
+   },
+   "hl": []
+  },
+  {
+   "s": 18.449,
+   "e": 21.299,
+   "spk": "N",
+   "text": "Now slide the card into Cheeko's back pocket.",
+   "show": "Now slide the card into Cheeko's back pocket.",
+   "emoji": {
+    "pocket.": "👇"
+   },
+   "hl": []
+  },
+  {
+   "s": 21.599,
+   "e": 24.691,
+   "spk": "N",
+   "text": "Your picture shows up, and the recording plays!",
+   "show": "Your picture shows up, and the recording plays!",
+   "emoji": {
+    "plays!": "🔊"
+   },
+   "hl": []
+  },
+  {
+   "s": 24.991,
+   "e": 26.559,
+   "spk": "N",
+   "text": "Turn the knob for the next one.",
+   "show": "Turn the knob for the next one.",
+   "emoji": {
+    "one.": "👉"
+   },
+   "hl": []
+  },
+  {
+   "s": 26.709,
+   "e": 29.13,
+   "spk": "mom",
+   "text": "Good morning, sunshine! Time to wake up!",
+   "show": "Good morning, sunshine! Time to wake up!",
+   "emoji": {
+    "sunshine!": "☀️"
+   },
+   "hl": []
+  },
+  {
+   "s": 29.38,
+   "e": 31.879,
+   "spk": "N",
+   "text": "Up to ten recordings on one card!",
+   "show": "Up to ten recordings on one card!",
+   "emoji": {
+    "card!": "🃏"
+   },
+   "hl": [
+    "ten"
+   ]
+  },
+  {
+   "s": 32.329,
+   "e": 33.599,
+   "spk": "N",
+   "text": "Grandma lives far away?",
+   "show": "Grandma lives far away?",
+   "emoji": {
+    "away?": "✈️"
+   },
+   "hl": []
+  },
+  {
+   "s": 33.899,
+   "e": 35.915,
+   "spk": "N",
+   "text": "Record her lullaby on your next visit.",
+   "show": "Record her lullaby on your next visit.",
+   "emoji": {
+    "visit.": "👵"
+   },
+   "hl": []
+  },
+  {
+   "s": 36.165,
+   "e": 37.883,
+   "spk": "grandma",
+   "text": "Sleep now, my little star.",
+   "show": "Sleep now, my little star.",
+   "emoji": {
+    "star.": "⭐"
+   },
+   "hl": []
+  },
+  {
+   "s": 38.283,
+   "e": 43.017,
+   "spk": "N",
+   "text": "Their favourite song. The story only you tell. It's all on the card.",
+   "show": "Their favourite song. The story only you tell. It's all on the card.",
+   "emoji": {
+    "card.": "❤️"
+   },
+   "hl": []
+  },
+  {
+   "s": 43.267,
+   "e": 44.928,
+   "spk": "kid",
+   "text": "Again! Again!",
+   "show": "Again! Again! 🔁",
+   "emoji": {},
+   "hl": []
+  },
+  {
+   "s": 45.128,
+   "e": 48.214,
+   "spk": "N",
+   "text": "Again and again? Cheeko never gets tired.",
+   "show": "Again and again? Cheeko never gets tired.",
+   "emoji": {
+    "tired.": "😄"
+   },
+   "hl": []
+  },
+  {
+   "s": 48.464,
+   "e": 51.174,
+   "spk": "N",
+   "text": "Once it's saved, it even plays without Wi-Fi.",
+   "show": "Once it's saved, it even plays without Wi-Fi.",
+   "emoji": {
+    "Wi-Fi.": "📶"
+   },
+   "hl": []
+  },
+  {
+   "s": 51.524,
+   "e": 53.927,
+   "spk": "N",
+   "text": "The Make Your Own card comes in the box!",
+   "show": "The Make Your Own card comes in the box!",
+   "emoji": {
+    "box!": "📦"
+   },
+   "hl": [
+    "Make",
+    "Your",
+    "Own"
+   ]
+  },
+  {
+   "s": 54.327,
+   "e": 57.2,
+   "spk": "N",
+   "text": "Cheeko. Less screen, more childhood!",
+   "show": "Cheeko. Less screen, more childhood!",
+   "emoji": {},
+   "hl": []
+  }
+ ]
+}

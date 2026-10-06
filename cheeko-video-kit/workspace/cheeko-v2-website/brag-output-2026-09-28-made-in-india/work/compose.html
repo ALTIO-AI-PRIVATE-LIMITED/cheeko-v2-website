@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800;900&family=Hanken+Grotesk:wght@600;800&family=Noto+Sans+Devanagari:wght@800&family=Noto+Sans+Kannada:wght@800&family=Noto+Sans+Tamil:wght@800&family=Noto+Sans+Bengali:wght@800&display=block">
+<style>
+:root{--brand:#F0521D;--sun:#FFC81A;--ink:#231A10;--tint:#FFF4E3;--cream:#FFF6E8;--mut:#7A6E5D;--purple:#6C3DFF;--green:#2F6B4F;--red:#E5341B;--pink:#FFA9C9;
+  --disp:"Gabarito",sans-serif;--body:"Hanken Grotesk",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#000}
+.abs{position:absolute}
+.layer{position:absolute;inset:0;overflow:hidden;visibility:hidden;z-index:0}
+.disp{font-family:var(--disp);font-weight:900;letter-spacing:-.02em;line-height:1}
+.center{left:0;right:0;text-align:center}
+.full{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.conf{position:absolute;left:0;top:0;width:22px;height:14px;border-radius:3px;opacity:0}
+#caps{position:absolute;left:90px;right:90px;top:1270px;z-index:50;text-align:center;font-family:var(--disp);font-weight:900;font-size:92px;line-height:1.12}
+#caps .w{display:inline-block;color:#fff;margin:0 .12em;paint-order:stroke fill;-webkit-text-stroke:14px var(--ink);text-shadow:0 8px 0 rgba(35,26,16,.35)}
+#caps .w.emo{-webkit-text-stroke:0;text-shadow:none;background:none;box-shadow:none;transform-origin:50% 60%}
+#caps .w.hl{color:var(--ink);-webkit-text-stroke:0;background:var(--sun);border-radius:.18em;padding:0 .14em;text-shadow:none;box-shadow:0 8px 0 rgba(35,26,16,.35)}
+.ray{position:absolute;left:540px;top:700px;width:2600px;height:2600px;margin:-1300px 0 0 -1300px;background:repeating-conic-gradient(from 0deg,rgba(255,255,255,.22) 0 10deg,rgba(255,255,255,0) 10deg 20deg)}
+/* device + screen mask (measured from device_live.png, see the cheeko-video skill) */
+.devw{position:absolute;width:461px;height:780px;transform-origin:50% 100%}
+.devw img.d{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 30px 40px rgba(35,26,16,.3))}
+.scr{position:absolute;left:22.4%;top:10.39%;width:62.4%;height:29.99%;overflow:hidden;-webkit-mask:url(data:image/png;base64,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) 0 0/100% 100% no-repeat;mask:url(data:image/png;base64,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) 0 0/100% 100% no-repeat}
+.scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* S1 cooker */
+#s1{background:var(--brand)}
+#cooker{left:240px;top:430px;width:600px;height:600px;transform-origin:50% 90%}
+.puff{position:absolute;border-radius:50%;background:#fff;opacity:0}
+#qm{left:0;right:0;top:170px;text-align:center;font-size:150px;color:#fff}
+#pc{left:40px;right:40px;top:1180px;text-align:center;font-size:150px;color:var(--ink);line-height:.95}
+#pc span{background:var(--sun);border-radius:.12em;padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+/* S2 card */
+#s2{background:var(--sun)}
+#d2{left:309px;top:330px}
+.card{position:absolute;width:292px;height:409px;left:394px;top:104px;object-fit:cover;border-radius:28px;border:9px solid #fff;box-shadow:0 20px 40px rgba(35,26,16,.25);z-index:3}
+.bub{position:absolute;width:260px;height:260px;border-radius:50%;background:#fff;box-shadow:0 20px 40px rgba(35,26,16,.2);display:flex;align-items:center;justify-content:center;z-index:5}
+.bub svg{width:170px;height:170px}
+/* S3 made in India */
+#s3{background:var(--tint)}
+#d3{left:309px;top:700px}
+#stamp{left:540px;top:400px;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:16px solid var(--brand);display:flex;align-items:center;justify-content:center;flex-direction:column;z-index:6;background:rgba(255,244,227,.9)}
+#stamp div{font-family:var(--disp);font-weight:900;color:var(--brand);text-align:center;line-height:.9}
+#backed{left:0;right:0;top:1520px;white-space:nowrap;text-align:center}
+#backed p{font-family:var(--body);font-weight:800;font-size:30px;letter-spacing:.14em;color:var(--mut);margin-bottom:22px}
+#backed img{height:58px;margin:0 18px;vertical-align:middle}
+/* S4 Nani */
+#s4{background:linear-gradient(#3B1F4F,#6B2F4F)}
+#nani{left:170px;top:360px;width:740px}
+.sb{position:absolute;background:#fff;border-radius:40px;padding:22px 40px;font-family:var(--disp);font-weight:900;font-size:64px;color:var(--ink);box-shadow:0 18px 36px rgba(0,0,0,.25)}
+#dots{left:620px;top:220px}
+#wait{left:80px;top:1040px;background:var(--sun)}
+#heart{left:760px;top:250px;font-size:130px}
+#ncard{left:60px;top:170px;width:230px;height:362px;object-fit:cover;border-radius:20px;border:7px solid #fff;transform-origin:50% 100%}
+/* S5 imagine */
+#imag{background:var(--green)}
+#g-dev{left:270px;top:340px;width:540px;height:914px;transform-origin:50% 100%}
+#g-idle{background:#FFF4E3}
+#g-draw{background:#fff}
+#g-quote{z-index:10;left:90px;right:90px;top:150px;background:#fff;border-radius:44px;padding:30px 36px;font-family:var(--disp);font-weight:800;font-size:56px;color:var(--ink);text-align:center;box-shadow:0 24px 48px rgba(0,30,10,.35)}
+#g-quote:after{content:"";position:absolute;left:50%;bottom:-28px;margin-left:-28px;border:28px solid transparent;border-top-color:#fff;border-bottom:0}
+#flash{position:absolute;inset:0;background:#fff;z-index:40;opacity:0}
+/* S6 languages */
+#lang{background:var(--ink)}
+#bigg{left:0;right:0;top:330px;height:620px;text-align:center;font-size:520px;line-height:620px;font-weight:800}
+/* S7 parents */
+/* outro */
+#out{background:var(--tint)}
+#o-send{left:540px;top:210px;background:var(--ink);color:#fff;font-family:var(--disp);font-weight:800;font-size:44px;padding:18px 36px;border-radius:99px;white-space:nowrap}
+#o-logo{left:365px;top:330px;width:350px}
+#o-dev{width:300px;height:508px;left:390px;top:520px;z-index:3;filter:drop-shadow(0 30px 40px rgba(35,26,16,.22))}
+.oc{width:200px;height:280px;object-fit:cover;border-radius:20px;border:7px solid #fff;box-shadow:0 18px 36px rgba(35,26,16,.2);left:440px;top:560px;z-index:2;transform-origin:50% 110%}
+#o-l1{top:1060px;font-size:104px;color:var(--ink)}
+#o-l2{top:1170px;font-size:104px;color:var(--ink)}
+.hl{position:relative;display:inline-block;z-index:0}
+.hl b{position:absolute;left:-.1em;right:-.1em;top:.06em;bottom:-.04em;background:var(--sun);border-radius:.16em;z-index:-1;transform-origin:left center;transform:scaleX(0)}
+#o-price{top:1300px;font-size:64px;color:var(--brand)}
+#o-pill{left:540px;top:1390px;background:var(--brand);color:#fff;font-family:var(--disp);font-weight:800;font-size:50px;padding:20px 56px;border-radius:99px;box-shadow:0 16px 34px rgba(240,82,29,.35);white-space:nowrap}
+</style></head>
+<body><div id="stage">
+
+<!-- S1: guess this sound -> PRESSURE COOKER! -->
+<div class="layer" id="s1">
+  <div class="ray" id="ray1"></div>
+  <div class="abs disp" id="qm">?</div>
+  <svg class="abs" id="cooker" viewBox="0 0 200 200">
+    <g id="weight"><rect x="93" y="30" width="14" height="16" rx="3" fill="#3a3a3a"/><rect x="89" y="24" width="22" height="9" rx="4" fill="#555"/></g>
+    <rect x="104" y="58" width="92" height="14" rx="7" fill="#231A10"/>
+    <rect x="4" y="60" width="44" height="11" rx="5" fill="#231A10"/>
+    <ellipse cx="100" cy="62" rx="62" ry="14" fill="#cfd6dc"/>
+    <path d="M34 66 Q30 150 50 172 Q100 188 150 172 Q170 150 166 66 Z" fill="#dfe5ea"/>
+    <path d="M44 80 Q42 145 58 164" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round" opacity=".8"/>
+    <path d="M34 66 Q100 84 166 66" stroke="#b9c1c8" stroke-width="5" fill="none"/>
+    <ellipse cx="100" cy="46" rx="16" ry="6" fill="#aab3bb"/>
+  </svg>
+  <div id="puffs"></div>
+  <div class="abs disp" id="pc"><span>PRESSURE</span><br><span>COOKER!</span></div>
+  <div id="c1"></div>
+</div>
+
+<!-- S2: Sounds Around Me card -->
+<div class="layer" id="s2">
+  <div class="ray" id="ray2"></div>
+  <img class="card" id="card" src="../../assets/img/cards-shipping/09-sounds-around-me.jpg">
+  <div class="devw" id="d2"><img class="d" src="../../assets/img/device_current.png"><div class="scr"><img id="scr2" src="../../assets/img/cards-shipping/09-sounds-around-me.jpg" style="object-position:50% 30%"></div></div>
+  <div class="bub" id="b1" style="left:30px;top:640px"><svg viewBox="0 0 200 200"><rect x="92" y="36" width="16" height="20" rx="3" fill="#3a3a3a"/><rect x="104" y="58" width="92" height="14" rx="7" fill="#231A10"/><ellipse cx="100" cy="62" rx="62" ry="14" fill="#cfd6dc"/><path d="M34 66 Q30 150 50 172 Q100 188 150 172 Q170 150 166 66 Z" fill="#dfe5ea"/><path d="M34 66 Q100 84 166 66" stroke="#b9c1c8" stroke-width="5" fill="none"/></svg></div>
+  <div class="bub" id="b2" style="left:790px;top:640px"><svg viewBox="0 0 100 100"><path d="M50 12c-14 0-24 11-24 26v18l-8 12h64l-8-12V38c0-15-10-26-24-26z" fill="#FFC81A" stroke="#231A10" stroke-width="4"/><circle cx="50" cy="78" r="8" fill="#231A10"/><rect x="46" y="4" width="8" height="10" rx="3" fill="#231A10"/></svg></div>
+</div>
+
+<!-- S3: made in India -->
+<div class="layer" id="s3">
+  <div class="devw" id="d3"><img class="d" src="../../assets/img/device_current.png"></div>
+  <div class="abs" id="stamp"><div style="font-size:100px">MADE IN</div><div style="font-size:160px">INDIA</div><div style="font-size:44px;margin-top:14px;font-family:var(--body);font-weight:800;letter-spacing:.12em">FOR INDIAN KIDS</div></div>
+  <div class="abs" id="backed"><p>BACKED BY</p><img src="../../assets/img/partners/anvesana.png"><img src="../../assets/img/partners/swissnex.svg"><img src="../../assets/img/partners/sarvam.svg"></div>
+</div>
+
+<!-- S4: Nani -->
+<div class="layer" id="s4">
+  <img class="abs" id="ncard" src="../../assets/img/cards-shipping/10-nani.jpg">
+  <img class="abs" id="nani" src="../../assets/img/live/char-nani.png">
+  <div class="sb abs" id="dots">• • •</div>
+  <div class="sb abs" id="wait">✋ Wait, why?</div>
+  <div class="abs" id="heart">💛</div>
+</div>
+
+<!-- S5: imagine -->
+<div class="layer" id="imag">
+  <div class="ray" id="ray5" style="top:780px;opacity:0"></div>
+  <div class="abs" id="g-quote"><span id="g-qt"></span></div>
+  <div class="devw" id="g-dev"><img class="d" src="../../assets/img/device_current.png">
+    <div class="scr" id="g-idle"><img id="gi1" src="../../assets/img/fw-screens/imagine_rickshaw_1_listening.png"><img id="gi2" src="../../assets/img/fw-screens/imagine_rickshaw_2_listening_transcript.png"><img id="gi3" src="../../assets/img/fw-screens/imagine_rickshaw_3_painting.png"></div>
+    <div class="scr" id="g-draw"><img src="../../assets/img/fw-screens/imagine_rickshaw_5_result.png"></div>
+  </div>
+  <div id="c5"></div>
+</div>
+
+<!-- S6: languages -->
+<div class="layer" id="lang"><div class="abs disp" id="bigg"></div></div>
+
+<!-- S7: built by Indian parents -->
+<div class="layer" id="s7"><img class="full" id="fam" src="../../assets/img/live/hero-1.jpg" style="object-position:50% 50%"></div>
+
+<!-- S8: outro -->
+<div class="layer" id="out">
+  <div class="abs" id="o-send">Send this to a parent who needs it 👀</div>
+  <img class="abs" id="o-logo" src="../../assets/img/logo.png">
+  <img class="abs oc" id="o-c1" src="../../assets/img/cards-shipping/07-clever-little-tales.jpg">
+  <img class="abs oc" id="o-c2" src="../../assets/img/cards-shipping/05-mitthu-the-parrot.jpg">
+  <img class="abs oc" id="o-c3" src="../../assets/img/cards-shipping/10-nani.jpg">
+  <img class="abs" id="o-dev" src="../../assets/img/device_current.png">
+  <div class="abs center disp" id="o-l1">Less screen.</div>
+  <div class="abs center disp" id="o-l2">More <span class="hl">childhood.<b id="o-hl"></b></span> 🧡</div>
+  <div class="abs center disp" id="o-price">₹5,999 · Device + 10 cards</div>
+  <div class="abs" id="o-pill">Link in bio 👆</div>
+  <div id="c8"></div>
+</div>
+
+<div id="flash"></div>
+<div id="caps"></div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const clamp = (x,a=0,b=1) => Math.min(b, Math.max(a, x));
+const prog = (t,a,b) => clamp((t-a)/(b-a));
+const eOut = x => 1 - Math.pow(1-x, 3);
+const eIn = x => x*x;
+const eBack = x => { const c=2.2, d=c+1; return 1 + d*Math.pow(x-1,3) + c*Math.pow(x-1,2); };
+const lerp = (a,b,x) => a + (b-a)*x;
+const vis = (el, on) => el.style.visibility = on ? 'visible' : 'hidden';
+function pop(el, t, t0, dur=.3, base='') {
+  const p = prog(t, t0, t0+dur);
+  el.style.opacity = clamp(p*3);
+  el.style.transform = `${base} scale(${lerp(.3, 1, eBack(p))})`;
+}
+const punch = (t, t0, amt=.08) => 1 + amt*Math.exp(-Math.max(0, t-t0)*9)*(t >= t0 ? 1 : 0);
+const wob = (t, t0, amp=8, f=30, k=4) => t > t0 ? Math.sin((t-t0)*f) * amp * Math.exp(-(t-t0)*k) : 0;
+function seeded(s){ return () => (s = (s*16807) % 2147483647) / 2147483647; }
+const COLORS = ['#F0521D','#FFC81A','#6C3DFF','#2F6B4F','#FFA9C9','#FFFFFF'];
+function makeConf(host, n, seed) {
+  const r = seeded(seed); const parts = [];
+  for (let i=0;i<n;i++) {
+    const d = document.createElement('div'); d.className='conf';
+    d.style.background = COLORS[i % COLORS.length]; host.appendChild(d);
+    const a = -Math.PI/2 + (r()-.5)*2.4, v = 1000 + r()*1500;
+    parts.push({ d, vx: Math.cos(a)*v, vy: Math.sin(a)*v, spin: (r()-.5)*1400, w: .6 + r()*.8 });
+  }
+  return parts;
+}
+function drawConf(parts, t, t0, x0, y0) {
+  const dt = t - t0;
+  for (const p of parts) {
+    if (dt < 0 || dt > 2.4) { p.d.style.opacity = 0; continue; }
+    const drag = (1 - Math.exp(-dt*1.6)) / 1.6;
+    p.d.style.opacity = clamp((2.4-dt)/.5);
+    p.d.style.transform = `translate(${x0 + p.vx*drag}px,${y0 + p.vy*drag + 500*dt*dt}px) rotate(${p.spin*dt}deg) scale(${p.w}, ${Math.cos(dt*9+p.spin)})`;
+  }
+}
+const conf1 = makeConf($('c1'), 80, 5), conf5 = makeConf($('c5'), 70, 11), conf8 = makeConf($('c8'), 90, 29);
+// steam puffs out of the whistle
+const PUFF = []; { const r = seeded(7); for (let i = 0; i < 26; i++) { const d = document.createElement('div'); d.className = 'puff'; $('puffs').appendChild(d);
+  PUFF.push({ d, t0: 1.0 + i*.042, dx: (r()-.5)*260, s: 60 + r()*90 }); } }
+
+const CAPS = [
+  [0, 2.1, [["Guess", 0.05], ["this", 0.3], ["sound!", 0.5, 1], ["👂", 0.75]]],
+  [3.5, 5.6, [["That's", 3.56], ["Cheeko's", 3.75], ["Sounds", 4.1], ["Around", 4.38], ["Me", 4.62], ["card.", 4.86, 1], ["🎴", 4.98]]],
+  [5.6, 7.8, [["Cooker", 5.67], ["whistle,", 6.0, 1], ["♨️", 6.12], ["doorbell,", 6.45, 1], ["🔔", 6.57]]],
+  [7.8, 9.1, [["name", 7.86], ["that", 8.1], ["sound!", 8.3, 1], ["👂", 8.42]]],
+  [12.5, 15.2, [["Nani", 12.56, 1], ["👵", 12.68], ["tells", 12.9], ["the", 13.15], ["stories", 13.3], ["every", 13.75], ["family", 14.0], ["knows,", 14.34]]],
+  [15.2, 17.5, [["and", 15.28], ["when", 15.45], ["you", 15.6], ["interrupt?", 15.75], ["She", 16.47], ["listens!", 16.7, 1], ["💛", 16.82]]],
+  [17.5, 20.2, [["Say,", 17.58], ["an", 18.1], ["auto", 18.2], ["rickshaw", 18.45], ["🛺", 18.57], ["flying", 18.8], ["to", 19.1], ["the", 19.2], ["moon,", 19.3], ["🌙", 19.42]]],
+  [20.2, 21.45, [["and", 20.22], ["it's", 20.4], ["drawn!", 20.6, 1], ["🎨", 20.72]]],
+  [21.45, 25.75, [["Hindi,", 21.52], ["Tamil,", 22.22], ["Kannada,", 22.92], ["Bengali,", 23.7], ["and", 24.6], ["English", 24.8, 1], ["too!", 25.2], ["🙌", 25.32]]],
+  [25.75, 27.7, [["Built", 25.83], ["by", 26.1], ["Indian", 26.3, 1], ["parents.", 26.65, 1], ["🧡", 26.77]]],
+];
+const capEl = $('caps'); let capIdx = -1;
+function renderCaps(t) {
+  let i = CAPS.findIndex(([a, b]) => t >= a && t < b);
+  if (i !== capIdx) {
+    capEl.innerHTML = '';
+    if (i >= 0) for (const [w, , hl] of CAPS[i][2]) {
+      const s = document.createElement('span'); const emo = /\p{Extended_Pictographic}/u.test(w) && !/[\p{L}\p{N}]/u.test(w); s.className = 'w' + (emo ? ' emo' : hl ? ' hl' : ''); s.textContent = w; capEl.appendChild(s); capEl.appendChild(document.createTextNode(' '));
+    }
+    capIdx = i;
+  }
+  if (i < 0) return;
+  [...capEl.querySelectorAll('.w')].forEach((s, k) => {
+    const t0 = CAPS[i][2][k][1], p = prog(t, t0 - .04, t0 + .14);
+    s.style.opacity = p > 0 ? 1 : 0;
+    s.style.transform = `scale(${lerp(.5, 1, eBack(p))}) rotate(${CAPS[i][2][k][2] ? -3 : 0}deg)`;
+  });
+}
+const LANG = [[21.52,'अ','Noto Sans Devanagari','#FFC81A'],[22.22,'அ','Noto Sans Tamil','#FFA9C9'],[22.92,'ಅ','Noto Sans Kannada','#F0521D'],[23.7,'অ','Noto Sans Bengali','#FFF6E8'],[24.6,'A','Gabarito','#FFC81A']];
+const QUOTE = 'an auto rickshaw flying to the moon 🛺🌙';
+
+window.render = function(t) {
+  /* S1 0-3.5 */
+  vis($('s1'), t < 3.75);
+  {
+    $('ray1').style.transform = `rotate(${t*20}deg)`;
+    pop($('qm'), t, .05, .3); $('qm').style.transform += ` rotate(${wob(t, .35, 10, 18, 2)}deg)`; vis($('qm'), t < 2.12);
+    pop($('cooker'), t, .1, .35);
+    const shake = t > 1.0 && t < 2.15 ? Math.sin(t*70)*5 : 0;
+    $('cooker').style.transform = `rotate(${shake}deg) scale(${lerp(.3, 1, eBack(prog(t, .1, .45))) * punch(t, 2.15, .12)})`;
+    $('weight').style.transform = t > 1.0 && t < 2.15 ? `translateY(${-4 - Math.abs(Math.sin(t*40))*6}px)` : '';
+    for (const p of PUFF) {
+      const k = prog(t, p.t0, p.t0 + .9);
+      p.d.style.opacity = k > 0 && k < 1 ? (1-k)*.95 : 0;
+      p.d.style.width = p.d.style.height = (p.s*(0.4 + k)) + 'px';
+      p.d.style.transform = `translate(${540 + p.dx*k - p.s*(0.4+k)/2}px, ${540 - k*520 - p.s*(0.4+k)/2}px)`;
+    }
+    pop($('pc'), t, 2.15, .3, 'rotate(-4deg)'); vis($('pc'), t >= 2.1);
+    drawConf(conf1, t, 2.2, 540, 1150);
+  }
+
+  /* S2 3.5-9.15: the card goes in; cooker + doorbell bubbles */
+  vis($('s2'), t >= 3.5 && t < 9.4);
+  {
+    $('s2').style.clipPath = `circle(${eOut(prog(t, 3.5, 3.75))*150}% at 50% 40%)`;
+    $('ray2').style.transform = `rotate(${-t*20}deg)`;
+    pop($('d2'), t, 3.55, .35);
+    const c = prog(t, 4.45, 4.86), card = $('card');
+    const bounce = t > 4.86 ? Math.sin(prog(t, 4.86, 5.1)*Math.PI) * -30 * (1-prog(t, 4.86, 5.1)) : 0;
+    card.style.opacity = t >= 4.45 ? 1 : 0;
+    card.style.top = (lerp(-560, 104, eIn(c)) + bounce) + 'px';
+    card.style.transform = `rotate(${lerp(12, 0, c)}deg)`;
+    const q = prog(t, 4.86, 5.1), sq = 1 + Math.sin(q*Math.PI)*.07;
+    if (t > 3.95) $('d2').style.transform = `scale(${2-sq}, ${sq})`;
+    vis($('scr2'), t >= 4.86 && t < 9.4);
+    $('scr2').style.clipPath = `circle(${eOut(prog(t, 4.86, 5.1))*80}% at 50% 50%)`;
+    pop($('b1'), t, 5.67, .3); $('b1').style.transform += ` rotate(${wob(t, 5.97, 6, 40, 3)}deg)`;
+    pop($('b2'), t, 6.45, .3); $('b2').style.transform += ` rotate(${wob(t, 7.05, 16, 26, 2.2)}deg)`;
+  }
+
+  /* S3 9.1-12.55: made in India */
+  vis($('s3'), t >= 9.1 && t < 12.8);
+  {
+    $('s3').style.transform = `translateY(${(1-eOut(prog(t, 9.1, 9.35)))*1920}px)`;
+    pop($('d3'), t, 9.2, .35);
+    const s = prog(t, 10.05, 10.25);
+    $('stamp').style.opacity = clamp(s*2);
+    $('stamp').style.transform = `scale(${lerp(2.4, 1, eOut(s))}) rotate(${lerp(-25, -10, s)}deg)`;
+    $('d3').style.transform = `scale(${punch(t, 10.25, .06)})`;
+    const b = eOut(prog(t, 11.2, 11.5));
+    $('backed').style.opacity = b; $('backed').style.transform = `translateY(${(1-b)*40}px)`;
+  }
+
+  /* S4 12.5-17.55: Nani */
+  vis($('s4'), t >= 12.5 && t < 17.8);
+  {
+    $('s4').style.clipPath = `circle(${eOut(prog(t, 12.5, 12.75))*150}% at 50% 50%)`;
+    pop($('nani'), t, 12.56, .35);
+    $('nani').style.transform += ` translateY(${Math.sin(t*2.2)*8}px) rotate(${t > 16.47 ? -6*eOut(prog(t, 16.47, 16.8)) : 0}deg)`;
+    pop($('ncard'), t, 12.8, .3, 'rotate(-8deg)');
+    pop($('dots'), t, 13.3, .3); vis($('dots'), t < 15.75);
+    $('dots').style.letterSpacing = (4 + Math.sin(t*8)*4) + 'px';
+    pop($('wait'), t, 15.75, .25, 'rotate(-4deg)');
+    pop($('heart'), t, 16.5, .3); $('heart').style.transform += ` translateY(${-prog(t, 16.5, 17.5)*40}px)`;
+  }
+
+  /* S5 17.5-21.5: imagine */
+  vis($('imag'), t >= 17.5 && t < 21.75);
+  {
+    $('imag').style.clipPath = `circle(${eOut(prog(t, 17.5, 17.75))*150}% at 50% 100%)`;
+    pop($('g-dev'), t, 17.55, .35);
+    pop($('g-quote'), t, 17.6, .3);
+    const Q = [...new Intl.Segmenter().segment(QUOTE)].map(g => g.segment), n = Math.round(Q.length * prog(t, 18.1, 19.6));
+    $('g-qt').textContent = Q.slice(0, Math.max(1, n)).join('');
+    $('gi1').style.visibility = t < 18.1 ? 'inherit' : 'hidden'; $('gi2').style.visibility = t >= 18.1 && t < 19.7 ? 'inherit' : 'hidden'; $('gi3').style.visibility = t >= 19.7 ? 'inherit' : 'hidden';   // firmware Imagine screens: listening -> transcript -> painting
+    vis($('g-draw'), t >= 20.45 && t < 21.75);
+    $('g-draw').style.clipPath = `inset(0 0 ${(1 - eOut(prog(t, 20.45, 20.75)))*100}% 0)`;
+    const q = prog(t, 20.45, 20.75), sq = 1 + Math.sin(q*Math.PI)*.12;
+    if (t > 17.95) $('g-dev').style.transform = `scale(${(2-sq)*lerp(1, 1.02, eOut(prog(t, 20.45, 21.5)))}, ${sq*lerp(1, 1.02, eOut(prog(t, 20.45, 21.5)))})`;
+    $('ray5').style.opacity = t >= 20.45 ? 1 : 0;
+    $('ray5').style.transform = `rotate(${t*30}deg) scale(${eOut(prog(t, 20.45, 21))})`;
+    drawConf(conf5, t, 20.47, 540, 700);
+  }
+  $('flash').style.opacity = .9 * (1 - prog(t, 20.45, 20.65)) * (t >= 20.45 ? 1 : 0);
+
+  /* S6 21.45-25.8: languages */
+  vis($('lang'), t >= 21.45 && t < 25.85);
+  {
+    const b = [...LANG].reverse().find(([t0]) => t >= t0), big = $('bigg');
+    if (b) {
+      big.textContent = b[1]; big.style.fontFamily = `"${b[2]}"`; big.style.color = b[3];
+      const p = prog(t, b[0], b[0] + .22);
+      big.style.opacity = 1; big.style.transform = `scale(${lerp(.4, 1, eBack(p))}) rotate(${lerp(-12, 0, p)}deg)`;
+    } else big.style.opacity = 0;
+  }
+
+  /* S7 25.75-27.75: built by Indian parents */
+  vis($('s7'), t >= 25.75 && t < 27.95);
+  $('s7').style.clipPath = `circle(${eOut(prog(t, 25.75, 26.0))*150}% at 50% 50%)`;
+  $('fam').style.transform = `scale(${lerp(1.18, 1.06, prog(t, 25.75, 27.75)) * punch(t, 26.65, .06)})`;
+
+  /* S8 27.7-end: outro */
+  vis($('out'), t >= 27.7);
+  {
+    $('out').style.transform = `translateY(${(1-eOut(prog(t, 27.7, 27.95)))*1920}px)`;
+    pop($('o-logo'), t, 27.74, .35);
+    $('o-logo').style.transform += ` rotate(${wob(t, 27.74, 6, 12, 3)}deg)`;
+    pop($('o-dev'), t, 27.85, .35);
+    const f = eBack(prog(t, 28.0, 28.4));
+    [[-22,-150],[22,150],[0,0]].forEach(([r, x], i) => {
+      const c = $('o-c'+(i+1));
+      c.style.opacity = clamp(prog(t, 27.95, 28.05));
+      c.style.transform = `translateX(${x*f}px) rotate(${r*f}deg) translateY(${(1-clamp(f))*150}px)`;
+    });
+    pop($('o-l1'), t, 28.45, .3);
+    pop($('o-l2'), t, 29.24, .3);
+    $('o-hl').style.transform = `scaleX(${eOut(prog(t, 29.57, 29.87))})`;
+    pop($('o-price'), t, 30.3, .3);
+    pop($('o-pill'), t, 30.6, .3, 'translateX(-50%)');
+    if (t > 31.1) $('o-pill').style.transform += ` scale(${1 + .05*Math.max(0, Math.sin((t-31.1)*Math.PI*2))})`;
+    pop($('o-send'), t, 30.9, .3, 'translateX(-50%)');
+    drawConf(conf8, t, 29.6, 540, 500);
+  }
+  renderCaps(t);
+};
+
+window.ready = (async () => {
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(i => i.decode().catch(()=>{})));
+  await Promise.all(['900 100px Gabarito','800 40px Gabarito','800 38px "Hanken Grotesk"'].map(f => document.fonts.load(f)));
+  await Promise.all(LANG.map(([, ch, font]) => document.fonts.load(`800 100px "${font}"`, ch)));
+  window.render(0);
+  return true;
+})();
+</script>
+
+<script id="warp">
+// Re-timed to the Upbeat Woman voiceover (2026-09-28): every scene keeps its original timing,
+// stretched piecewise between voice-line anchors (see work/warp.json, built by marketing/tools/build_vo.py).
+(() => { const NEW = [0.0, 0.05, 2.48, 4.311, 6.544, 7.667, 9.238, 10.734, 14.231, 17.087, 18.46, 19.656, 22.402, 24.125, 24.903, 25.708, 26.789, 27.993, 29.244, 31.379, 32.408, 33.325, 34.537, 37.09], OLD = [0.0, 0.03, 2.15, 3.56, 5.67, 6.45, 7.86, 9.18, 12.56, 15.28, 16.47, 17.58, 20.22, 21.52, 22.22, 22.92, 23.7, 24.6, 25.83, 27.74, 28.45, 29.24, 30.05, 32.6];
+  const warp = t => { if (t <= NEW[0]) return OLD[0]; for (let i = 1; i < NEW.length; i++) if (t <= NEW[i]) return OLD[i-1] + (OLD[i]-OLD[i-1]) * (t-NEW[i-1]) / (NEW[i]-NEW[i-1]); return OLD[OLD.length-1] + (t - NEW[NEW.length-1]); };
+  const R = window.render; window.render = t => R(warp(t)); })();
+</script>
+</body></html>

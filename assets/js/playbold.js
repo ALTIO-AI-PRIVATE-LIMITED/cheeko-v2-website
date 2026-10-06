@@ -29,18 +29,58 @@
   }
 
   /* Film: click-to-play (no preload — India mobile first) */
-  document.querySelectorAll("[data-film]").forEach(function (frame) {
+  var filmFrames = document.querySelectorAll("[data-film]");
+  function pauseOtherFilms(currentVideo) {
+    filmFrames.forEach(function (otherFrame) {
+      var otherVideo = otherFrame.querySelector("video");
+      if (otherVideo && otherVideo !== currentVideo && !otherVideo.paused) otherVideo.pause();
+    });
+  }
+  function syncFilmTrack(track) {
+    if (!track) return;
+    var playing = false;
+    filmFrames.forEach(function (frame) {
+      var video = frame.querySelector("video");
+      if (video && !video.paused && !video.ended) playing = true;
+    });
+    if (playing) track.classList.add("paused");
+    else track.classList.remove("paused");
+  }
+  filmFrames.forEach(function (frame) {
     var video = frame.querySelector("video");
     var badge = frame.querySelector(".play-badge");
+    var track = frame.closest(".press-track");
     if (!video || !badge) return;
     badge.addEventListener("click", function () {
-      badge.classList.add("hidden");
+      pauseOtherFilms(video);
       video.setAttribute("controls", "controls");
-      video.play();
+      video.muted = false;
+      if (track) track.classList.add("paused");
+      var playRequest = video.play();
+      if (playRequest && typeof playRequest.catch === "function") {
+        playRequest.catch(function () {
+          badge.classList.remove("hidden");
+          video.load();
+          syncFilmTrack(track);
+        });
+      }
+    });
+    video.addEventListener("playing", function () {
+      pauseOtherFilms(video);
+      badge.classList.add("hidden");
+      if (track) track.classList.add("paused");
+    });
+    video.addEventListener("pause", function () {
+      badge.classList.remove("hidden");
+      video.removeAttribute("controls");
+      syncFilmTrack(track);
     });
     video.addEventListener("ended", function () {
       badge.classList.remove("hidden");
       video.removeAttribute("controls");
+      video.currentTime = 0;
+      video.load();
+      syncFilmTrack(track);
     });
   });
 
@@ -81,12 +121,57 @@
     });
   });
 
-  /* Card flip on tap */
+  /* Card deck: native touch scrolling, mouse drag, and tap-to-flip. */
   var deckTrain = document.querySelector(".decktrain");
-  document.querySelectorAll(".fcardw").forEach(function (w) {
+  if (deckTrain) {
+    var dragStart = null;
+    var dragged = false;
+    deckTrain.addEventListener("dragstart", function (event) { event.preventDefault(); });
+    deckTrain.addEventListener("pointerdown", function (event) {
+      if (event.pointerType !== "mouse" || event.button !== 0) return;
+      dragStart = { x: event.clientX, scrollLeft: deckTrain.scrollLeft, pointerId: event.pointerId };
+      dragged = false;
+    });
+    deckTrain.addEventListener("pointermove", function (event) {
+      if (!dragStart || event.pointerId !== dragStart.pointerId) return;
+      var distance = event.clientX - dragStart.x;
+      if (!dragged && Math.abs(distance) < 6) return;
+      if (!dragged) {
+        dragged = true;
+        deckTrain.classList.add("dragging");
+        deckTrain.setPointerCapture(event.pointerId);
+      }
+      deckTrain.scrollLeft = dragStart.scrollLeft - distance;
+      event.preventDefault();
+    });
+    function finishDrag() {
+      dragStart = null;
+      deckTrain.classList.remove("dragging");
+      setTimeout(function () { dragged = false; }, 0);
+    }
+    deckTrain.addEventListener("pointerup", finishDrag);
+    deckTrain.addEventListener("pointercancel", finishDrag);
+    deckTrain.addEventListener("click", function (event) {
+      if (!dragged) return;
+      event.preventDefault();
+      event.stopPropagation();
+    }, true);
+  }
+  document.querySelectorAll(".decktrain .fcardw").forEach(function (w) {
+    function flipCard() {
+      var next = !w.classList.contains("flipped");
+      deckTrain.querySelectorAll('[data-card-index="' + w.dataset.cardIndex + '"]').forEach(function (card) {
+        card.classList.toggle("flipped", next);
+        if (!card.hasAttribute("aria-hidden")) card.setAttribute("aria-pressed", next ? "true" : "false");
+      });
+    }
     w.addEventListener("click", function () {
-      w.classList.toggle("flipped");
-      if (deckTrain) deckTrain.classList.toggle("hold", !!document.querySelector(".fcardw.flipped"));
+      flipCard();
+    });
+    w.addEventListener("keydown", function (event) {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      flipCard();
     });
   });
 
@@ -161,6 +246,8 @@
     var pcur = 0, paudio = null;
     var pplayer = document.getElementById("pplayer");
     var plabel = document.getElementById("plabel");
+    var storeNote = document.getElementById("pcard-store-note");
+    var storeLink = document.getElementById("pcard-store-link");
     var ptoast = document.createElement("div");
     ptoast.className = "ptoast";
     ptoast.textContent = "Real voices land before launch";
@@ -169,11 +256,22 @@
       if (paudio) { paudio.pause(); paudio = null; }
       pplayer.classList.remove("playing"); plabel.textContent = "Hear me";
     }
+    function pSampleUnavailable() {
+      ptoast.classList.add("show");
+      setTimeout(function () { ptoast.classList.remove("show"); }, 2200);
+    }
     function pShow(i) {
       pcur = (i + PCH.length) % PCH.length;
       var ch = PCH[pcur];
       pStop();
+      pplayer.hidden = true;
+      var cardShopCharacter = ch.k === "chanda" || ch.k === "masti" || ch.k === "tara";
+      storeNote.hidden = !cardShopCharacter;
+      storeLink.hidden = !cardShopCharacter;
+      if (cardShopCharacter) storeNote.textContent = "To talk with " + ch.n + ", get the character card from the Cheeko store. This voice is available on the device, not on the website.";
       document.getElementById("pglow").style.setProperty("--pc", ch.pc);
+      var voiceColors = { cheeko: "#FF9B4B", quizzy: "#F6C54F", nani: "#88B9F7", mitthu: "#A4D86B" };
+      popEl.style.setProperty("--voice-accent", voiceColors[ch.k] || ch.pc);
       var stage = document.getElementById("pstage");
       stage.querySelectorAll(".pfx").forEach(function (e) { e.remove(); });
       var img = document.getElementById("pimg");
@@ -192,16 +290,13 @@
       var sk = document.getElementById("pskills");
       sk.innerHTML = "<b>Builds</b>";
       ch.sk.forEach(function (s2) { var el = document.createElement("i"); el.textContent = s2; sk.appendChild(el); });
+      document.dispatchEvent(new CustomEvent("cheeko:character-change", { detail: { character: ch.k } }));
       popEl.classList.remove("open"); void popEl.offsetWidth; popEl.classList.add("open");
       document.body.classList.add("plocked");
-      paudio = new Audio("assets/audio/voice-" + ch.k + ".mp3");
-      paudio.play().then(function () {
-        pplayer.classList.add("playing"); plabel.textContent = "Playing";
-        paudio.onended = pStop;
-      }).catch(function () { paudio = null; });
     }
     function pClose() {
       pStop();
+      document.dispatchEvent(new CustomEvent("cheeko:modal-close"));
       popEl.classList.remove("open");
       document.body.classList.remove("plocked");
     }
@@ -215,6 +310,7 @@
     document.getElementById("pscrim").addEventListener("click", pClose);
     document.getElementById("pprev").addEventListener("click", function () { pShow(pcur - 1); });
     document.getElementById("pnext").addEventListener("click", function () { pShow(pcur + 1); });
+    document.addEventListener("cheeko:talk-open", pStop);
     document.addEventListener("keydown", function (e) {
       if (!popEl.classList.contains("open")) return;
       if (e.key === "Escape") pClose();
@@ -223,14 +319,15 @@
     });
     pplayer.addEventListener("click", function () {
       if (pplayer.classList.contains("playing")) { pStop(); return; }
-      paudio = new Audio("assets/audio/voice-" + PCH[pcur].k + ".mp3");
+      var sample = PCH[pcur].audio;
+      if (!sample) { pSampleUnavailable(); return; }
+      paudio = new Audio(sample);
       paudio.play().then(function () {
         pplayer.classList.add("playing"); plabel.textContent = "Playing";
         paudio.onended = pStop;
       }).catch(function () {
         paudio = null;
-        ptoast.classList.add("show");
-        setTimeout(function () { ptoast.classList.remove("show"); }, 2200);
+        pSampleUnavailable();
       });
     });
   }

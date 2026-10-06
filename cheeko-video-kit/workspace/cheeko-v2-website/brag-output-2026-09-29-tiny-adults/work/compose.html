@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800;900&family=Hanken+Grotesk:wght@600;800&display=block">
+<style>
+:root{--brand:#F0521D;--sun:#FFC81A;--ink:#231A10;--tint:#FFF4E3;--cream:#FFF6E8;--purple:#6C3DFF;--green:#2F9E5B;--red:#E5341B;--wa:#DCF8C6;
+  --disp:"Gabarito",sans-serif;--body:"Hanken Grotesk",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#DCE3EE}
+.abs{position:absolute}
+.layer{position:absolute;inset:0;overflow:hidden;visibility:hidden}
+.stk{filter:url(#stk)}
+.st{position:absolute;display:block;transform-origin:50% 60%}
+/* the grown-up world: dull office blue-grey, even at a birthday party */
+#bgA{background:#DCE3EE}
+#bgA::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,#C3CEDD 3.2px,transparent 3.7px) 0 0/34px 34px}
+/* the kid world: warm and loud */
+#bgB{background:repeating-conic-gradient(from 0deg at 50% 34%,#FFD447 0 9deg,#FFC21A 9deg 18deg)}
+#bgB::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(240,82,29,.16) 3px,transparent 3.5px) 0 0/30px 30px}
+#floor{position:absolute;left:-80px;right:-80px;top:1230px;height:800px;background:#F28C4B;border-top:10px solid var(--ink);border-radius:50% 50% 0 0/80px 80px 0 0}
+#bgC{background:var(--cream)}
+#bgC::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,#F7D9B8 3px,transparent 3.5px) 0 0/34px 34px}
+/* bunting */
+.bunt{position:absolute;left:-20px;right:-20px;top:40px;height:150px}
+.bunt svg{width:100%;height:100%}
+/* shared bits */
+.chip{position:absolute;background:#fff;border:6px solid var(--ink);border-radius:99px;padding:10px 30px 14px;font:900 50px var(--disp);color:var(--ink);white-space:nowrap;transform-origin:50% 50%}
+.chip.red{background:var(--red);color:#fff}
+.chip.ink{background:var(--ink);color:#fff}
+.chip.green{background:var(--green);color:#fff}
+.tag{position:absolute;background:var(--ink);color:#fff;border-radius:16px;padding:12px 26px 14px;font:800 40px var(--disp);white-space:nowrap;transform-origin:0 50%;box-shadow:0 10px 0 rgba(35,26,16,.25)}
+.tag b{color:var(--sun);font-weight:900}
+.bub{position:absolute;background:#fff;border:6px solid var(--ink);border-radius:46px;padding:20px 38px 24px;font:900 58px var(--disp);color:var(--ink);white-space:nowrap;transform-origin:20% 100%}
+.bub svg{position:absolute;top:calc(100% - 6px)}
+.stamp{position:absolute;border:12px solid var(--red);color:var(--red);border-radius:24px;padding:6px 32px 12px;font:900 108px var(--disp);letter-spacing:-.01em;filter:url(#ink);white-space:nowrap;background:rgba(255,255,255,.55)}
+.boom{position:absolute;font:900 130px var(--disp);color:var(--sun);-webkit-text-stroke:18px var(--ink);paint-order:stroke fill;white-space:nowrap;letter-spacing:-.02em}
+.emo{position:absolute;font-size:110px;line-height:1}
+.card{position:absolute;border-radius:12px}
+/* calendar invite, chat bubbles, TV */
+.cal{position:absolute;width:420px;background:#fff;border:6px solid var(--ink);border-radius:28px;padding:22px 28px;font:800 40px var(--disp);color:var(--ink);line-height:1.2}
+.cal small{display:block;font:800 30px var(--body);color:#7A6E5D}
+.wa{position:absolute;max-width:470px;background:var(--wa);border:5px solid var(--ink);border-radius:30px 30px 30px 8px;padding:18px 26px 16px;font:800 44px/1.15 var(--disp);color:var(--ink)}
+.wa small{display:block;font:italic 700 28px var(--body);color:#5b6b5b;margin-bottom:6px}
+.wa i{display:block;text-align:right;font:700 26px var(--body);color:#34B7F1;font-style:normal;margin-top:4px}
+#tv{position:absolute;left:50px;top:300px;width:980px;height:990px;border-radius:40px;overflow:hidden;background:linear-gradient(160deg,#1B2A6B,#0E1640);border:10px solid var(--ink)}
+#tv::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.04) 0 3px,transparent 3px 6px)}
+#tv-live{position:absolute;left:30px;top:26px;background:var(--red);color:#fff;font:900 44px var(--disp);padding:6px 22px 10px;border-radius:12px}
+#tv-bar{position:absolute;left:0;right:0;top:760px;height:110px;background:var(--red);color:#fff;font:900 76px var(--disp);padding:10px 34px;letter-spacing:.01em;white-space:nowrap}
+#tv-tick{position:absolute;left:0;right:0;top:870px;height:100px;background:#fff;overflow:hidden;border-top:6px solid var(--ink)}
+#tv-tick div{position:absolute;top:14px;white-space:nowrap;font:900 56px var(--disp);color:var(--ink)}
+/* VHS overlays */
+.vhs{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.08) 0 2px,transparent 2px 5px);pointer-events:none}
+.osd{position:absolute;left:60px;top:220px;font:900 90px var(--disp);color:#fff;-webkit-text-stroke:10px var(--ink);paint-order:stroke fill;letter-spacing:.02em}
+/* the phone-free device with real screens */
+.dev{position:absolute;transform-origin:50% 100%}
+.dev img.d{display:block;width:100%}
+.scr{position:absolute;left:22.4%;top:10.39%;width:62.4%;height:29.99%;overflow:hidden;-webkit-mask:url(data:image/png;base64,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) 0 0/100% 100% no-repeat;mask:url(data:image/png;base64,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) 0 0/100% 100% no-repeat}
+.scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* captions */
+#caps{position:absolute;left:70px;right:70px;top:1350px;z-index:50;text-align:center;font-family:var(--disp);font-weight:900;font-size:86px;line-height:1.14}
+#caps .w{display:inline-block;color:#fff;margin:0 .11em;paint-order:stroke fill;-webkit-text-stroke:15px var(--ink);text-shadow:0 8px 0 rgba(35,26,16,.3)}
+#caps .w.emo{position:static;font-size:inherit;-webkit-text-stroke:0;text-shadow:none;transform-origin:50% 60%}
+#caps .w.hl{color:var(--ink);-webkit-text-stroke:0;background:var(--sun);border-radius:.18em;padding:0 .14em;text-shadow:none;box-shadow:0 8px 0 rgba(35,26,16,.3)}
+/* end card */
+.center{left:0;right:0;text-align:center}
+#e-tag{top:300px;font:900 70px var(--disp);color:var(--ink);letter-spacing:-.02em}
+#e-tag span{color:var(--brand)}
+#e-price{top:1238px;font:900 140px var(--disp);color:var(--ink);letter-spacing:-.03em}
+#e-sub{top:1392px;font:800 46px var(--body);color:var(--ink)}
+#e-pill{left:540px;top:1470px;background:var(--brand);color:#fff;font:800 54px var(--disp);padding:18px 58px 22px;border-radius:99px;border:6px solid var(--ink);white-space:nowrap}
+#e-send{left:540px;top:1610px;background:var(--ink);color:#fff;font:800 40px var(--disp);padding:16px 34px 18px;border-radius:99px;white-space:nowrap}
+.ecard{position:absolute;width:190px;border-radius:12px;transform-origin:50% 160%}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <filter id="stk" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+  <feComponentTransfer in="SourceAlpha" result="a"><feFuncA type="discrete" tableValues="0 1 1 1 1 1 1 1"/></feComponentTransfer>
+  <feMorphology in="a" operator="dilate" radius="10" result="d"/>
+  <feFlood flood-color="#ffffff"/><feComposite in2="d" operator="in" result="border"/>
+  <feGaussianBlur in="d" stdDeviation="7"/><feOffset dx="5" dy="12" result="o"/>
+  <feFlood flood-color="#231A10" flood-opacity=".28"/><feComposite in2="o" operator="in" result="shadow"/>
+  <feMerge><feMergeNode in="shadow"/><feMergeNode in="border"/><feMergeNode in="SourceGraphic"/></feMerge>
+ </filter>
+ <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+  <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -1.2" result="m"/>
+  <feComposite in="SourceGraphic" in2="m" operator="in"/>
+ </filter>
+ <filter id="grey"><feColorMatrix type="saturate" values=".12"/></filter>
+</defs></svg>
+<div id="stage">
+ <div class="layer" id="bgA"></div>
+ <div class="layer" id="bgB"><div id="floor"></div></div>
+ <div class="layer" id="bgC"></div>
+ <div class="layer" id="buntA" style="visibility:hidden"><div class="bunt" id="bunt1"></div></div>
+
+ <!-- S1 the party -->
+ <div class="layer" id="s1">
+  <div class="boom" id="s1-hb" style="left:540px;top:215px;font-size:98px">HAPPY 7th BIRTHDAY!</div>
+  <img class="st stk" id="s1-bal" src="stickers/balloons.png" style="left:20px;top:420px;width:330px">
+  <img class="st stk" id="s1-cake" src="stickers/cake.png" style="left:700px;top:700px;width:330px">
+  <img class="st stk" id="s1-boy" src="stickers/bday-cheer.png" style="left:300px;top:560px;width:440px">
+  <img class="st stk" id="s1-boy2" src="stickers/bday-confused.png" style="left:280px;top:560px;width:470px">
+  <div class="emo" id="s1-e1" style="left:120px;top:1050px;font-size:90px">🎉</div>
+  <div class="emo" id="s1-e2" style="left:880px;top:520px;font-size:90px">🎈</div>
+ </div>
+
+ <!-- S2 corporate kid -->
+ <div class="layer" id="s2">
+  <img class="st stk" id="s2-kid" src="stickers/corp-adult.png" style="left:60px;top:430px;width:480px">
+  <div class="tag" id="s2-tag" style="left:60px;top:300px">Arjun, 7 · <b>CEO of nothing</b> 💼</div>
+  <div class="chip red" id="s2-call" style="left:590px;top:470px">📞 On a call 47:12</div>
+  <div class="cal" id="s2-cal" style="left:590px;top:640px">📅 Tag with friends<small>Today, 4:00 PM · Garden</small></div>
+  <div class="stamp" id="s2-dec" style="left:600px;top:700px;font-size:78px">DECLINED</div>
+  <div class="chip" id="s2-cb" style="left:560px;top:900px;font-size:42px">↩️ Circle back: after cake</div>
+  <img class="st stk" id="s2-boy" src="stickers/bday-confused.png" style="left:850px;top:1040px;width:190px">
+ </div>
+
+ <!-- S3 influencer kid -->
+ <div class="layer" id="s3">
+  <img class="st stk" id="s3-kid" src="stickers/infl-adult.png" style="left:40px;top:470px;width:560px">
+  <div class="tag" id="s3-tag" style="left:60px;top:300px">Myra, 7 · <b>Influencer (2 followers)</b> 📸</div>
+  <div class="chip red" id="s3-rec" style="left:700px;top:420px">● LIVE 👁 2</div>
+  <img class="st stk" id="s3-cake" src="stickers/cake.png" style="left:720px;top:570px;width:280px">
+  <div class="chip" id="s3-no" style="left:630px;top:990px;font-size:44px">🚫 Content first</div>
+  <div class="emo" id="s3-h1" style="left:600px;top:980px;font-size:80px">❤️</div>
+  <div class="emo" id="s3-h2" style="left:520px;top:1000px;font-size:70px">👍</div>
+  <img class="st stk" id="s3-boy" src="stickers/bday-confused.png" style="left:890px;top:1100px;width:160px">
+ </div>
+
+ <!-- S4 news kid -->
+ <div class="layer" id="s4">
+  <div id="tv">
+   <img class="st" id="s4-kid" src="stickers/news-adult.png" style="left:230px;top:60px;width:520px">
+   <div id="tv-live">● LIVE</div>
+   <div id="tv-bar">BREAKING NEWS</div>
+   <div id="tv-tick"><div id="s4-tick">WORLD WAR 3 TOMORROW &nbsp;•&nbsp; SOURCE: A REEL I SAW &nbsp;•&nbsp; CAKE AT 5 PM &nbsp;•&nbsp; WORLD WAR 3 TOMORROW &nbsp;•&nbsp; SOURCE: A REEL I SAW &nbsp;•&nbsp; CAKE AT 5 PM &nbsp;•&nbsp;</div></div>
+  </div>
+  <div class="tag" id="s4-tag" style="left:60px;top:210px">Anaya, 8 · <b>News anchor</b> 📺</div>
+  <img class="st stk" id="s4-boy" src="stickers/bday-confused.png" style="left:860px;top:1080px;width:190px">
+ </div>
+
+ <!-- S5 WhatsApp uncle kid -->
+ <div class="layer" id="s5">
+  <img class="st stk" id="s5-kid" src="stickers/uncle-adult.png" style="left:40px;top:500px;width:500px">
+  <div class="tag" id="s5-tag" style="left:60px;top:300px">Bunty, 7 · <b>WhatsApp University</b> 🎓</div>
+  <div class="wa" id="s5-w1" style="left:560px;top:440px"><small>↪ Forwarded many times</small>Cold water after 7 pm is BANNED in Japan 😱<i>✓✓</i></div>
+  <div class="wa" id="s5-w2" style="left:590px;top:840px"><small>↪ Forwarded many times</small>Forward to 10 groups 🙏<i>✓✓</i></div>
+  <div class="emo" id="s5-f1" style="left:860px;top:1060px;font-size:70px">↪️</div>
+  <div class="emo" id="s5-f2" style="left:760px;top:1100px;font-size:70px">↪️</div>
+  <div class="emo" id="s5-f3" style="left:950px;top:1120px;font-size:70px">↪️</div>
+ </div>
+
+ <!-- S6 burnt-out kid -->
+ <div class="layer" id="s6">
+  <img class="st stk" id="s6-sofa" src="stickers/home-sofa.svg" style="left:60px;top:560px;width:960px">
+  <img class="st stk" id="s6-kid" src="stickers/tired-adult.png" style="left:230px;top:560px;width:620px">
+  <div class="tag" id="s6-tag" style="left:60px;top:300px">Pihu, 6 · <b>Burnt out</b> 🪫</div>
+  <div class="chip red" id="s6-bat" style="left:760px;top:460px">🪫 1%</div>
+  <div class="chip" id="s6-ooo" style="left:540px;top:1180px">Out of office 🏖️</div>
+ </div>
+
+ <!-- S7 freeze: the tiny adults -->
+ <div class="layer" id="s7">
+  <div class="abs" id="s7-g" style="inset:0;transform-origin:540px 800px">
+   <img class="st stk" id="s7-a" src="stickers/corp-adult.png" style="left:40px;top:320px;width:280px">
+   <img class="st stk" id="s7-b" src="stickers/news-adult.png" style="left:370px;top:300px;width:340px">
+   <img class="st stk" id="s7-c" src="stickers/infl-adult.png" style="left:740px;top:320px;width:320px">
+   <img class="st stk" id="s7-d" src="stickers/uncle-adult.png" style="left:40px;top:800px;width:330px">
+   <img class="st stk" id="s7-e" src="stickers/tired-adult.png" style="left:640px;top:900px;width:420px">
+   <img class="st stk" id="s7-boy" src="stickers/bday-confused.png" style="left:390px;top:760px;width:300px">
+  </div>
+  <div class="stamp" id="s7-st" style="left:170px;top:690px;font-size:130px">TINY ADULTS</div>
+  <div class="vhs"></div>
+  <div class="osd" id="s7-osd">❚❚ PAUSE</div>
+ </div>
+
+ <!-- S8 rewind, then Cheeko -->
+ <div class="layer" id="s8">
+  <div class="dev stk" id="s8-dev" style="left:330px;top:520px;width:420px"><img class="d" src="../../assets/img/device_current.png"></div>
+  <div class="emo" id="s8-sp1" style="left:230px;top:520px;font-size:100px">✨</div>
+  <div class="emo" id="s8-sp2" style="left:770px;top:600px;font-size:90px">✨</div>
+  <div class="emo" id="s8-sp3" style="left:760px;top:1060px;font-size:80px">✨</div>
+  <div class="vhs" id="s8-vhs"></div>
+  <div class="osd" id="s8-osd">◀◀ REWIND</div>
+ </div>
+
+ <!-- S9 kids being kids -->
+ <div class="layer" id="s9">
+  <div class="layer" id="s9a">
+   <img class="st stk" id="s9a-kid" src="stickers/infl-kid.png" style="left:60px;top:520px;width:500px">
+   <div class="dev stk" id="s9a-dev" style="left:620px;top:600px;width:360px"><img class="d" src="../../assets/img/device_current.png"><div class="scr"><img src="../../assets/img/fw-screens/03_talk_1_cheeko_4_listening.png"></div></div>
+   <div class="emo" id="s9a-q" style="left:470px;top:440px;font-size:100px">🤔</div>
+  </div>
+  <div class="layer" id="s9b">
+   <img class="st stk" id="s9b-kid" src="stickers/uncle-kid.png" style="left:110px;top:500px;width:410px">
+   <div class="dev stk" id="s9b-dev" style="left:620px;top:600px;width:360px"><img class="d" src="../../assets/img/device_current.png"><div class="scr"><img src="../../assets/img/fw-screens/07_funny_voice_1_chipmunk.png"></div></div>
+   <div class="chip" id="s9b-chip" style="left:800px;top:470px">🐿️ Chipmunk!</div>
+  </div>
+  <div class="layer" id="s9c">
+   <img class="st stk" id="s9c-news" src="stickers/news-kid.png" style="left:10px;top:330px;width:400px">
+   <img class="st stk" id="s9c-tired" src="stickers/tired-kid.png" style="left:560px;top:340px;width:500px">
+   <img class="st stk" id="s9c-corp" src="stickers/corp-kid.png" style="left:100px;top:770px;width:390px">
+   <div class="dev stk" id="s9c-dev" style="left:600px;top:760px;width:300px"><img class="d" src="../../assets/img/device_current.png"><div class="scr"><img src="../../assets/img/fw-screens/05_game_4_jump.png"></div></div>
+   <img class="card stk" id="s9c-card" src="../../assets/img/cards-shipping/02-floor-is-lava.jpg" style="left:900px;top:820px;width:150px">
+   <div class="emo" id="s9c-e1" style="left:380px;top:330px;font-size:80px">🎶</div>
+  </div>
+ </div>
+
+ <!-- S10 end card -->
+ <div class="layer" id="s10">
+  <img class="abs" id="e-logo" src="../../assets/img/logo.png" style="left:340px;top:110px;width:400px">
+  <div class="abs center" id="e-tag">Made for kids. <span>Not tiny adults.</span></div>
+  <div class="abs" id="e-cards" style="left:0;top:0;width:1080px;height:1920px"></div>
+  <div class="dev stk" id="e-dev" style="left:350px;top:540px;width:380px"><img class="d" src="../../assets/img/device_current.png"></div>
+  <img class="st stk" id="e-boy" src="stickers/bday-cheer.png" style="left:20px;top:760px;width:300px">
+  <img class="st stk" id="e-corp" src="stickers/corp-kid.png" style="left:760px;top:760px;width:310px">
+  <div class="bub" id="e-bub" style="left:500px;top:1010px;width:400px;white-space:normal;text-align:center;line-height:1.1;font-size:46px;padding:14px 24px 18px;border-radius:30px">Okay fine, tag is way more fun! 😅<svg width="50" height="44" viewBox="0 0 50 44" style="left:330px"><path d="M4 0 L40 40 L40 0" fill="#fff" stroke="#231A10" stroke-width="6" stroke-linejoin="round"/></svg></div>
+  <div class="abs center" id="e-price">₹5,999</div>
+  <div class="abs center" id="e-sub">Device + 10 cards 🎁 &nbsp;Free delivery 🚚</div>
+  <div class="abs" id="e-pill">Link in bio 👆</div>
+  <div class="abs" id="e-send">Send this to a parent who needs it 👀</div>
+ </div>
+
+ <div id="caps"></div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const clamp = (x,a=0,b=1) => Math.min(b, Math.max(a, x));
+const prog = (t,a,b) => clamp((t-a)/(b-a));
+const eOut = x => 1 - Math.pow(1-x, 3);
+const eIn = x => x*x;
+const eBack = x => { const c=2.2, d=c+1; return 1 + d*Math.pow(x-1,3) + c*Math.pow(x-1,2); };
+const lerp = (a,b,x) => a + (b-a)*x;
+// hidden scenes leave the page entirely (a 3D-rotated sticker kept painting through visibility:hidden in V06)
+const vis = (el, on) => { el.style.visibility = on ? 'visible' : 'hidden'; el.style.display = on ? '' : 'none'; };
+const rnd = x => { const s = Math.sin(x*12.9898)*43758.5453; return s - Math.floor(s); };
+const boil = (t, i, amt=1.1) => (rnd(Math.floor(t*8)*31 + i*97) - .5) * amt;   // hand-made twitch, 8x a second
+function stick(el, t, t0, i, o={}) {
+  const dur = o.dur ?? .34, p = prog(t, t0, t0 + dur);
+  el.style.opacity = t < t0 ? 0 : clamp(p*4);
+  const s = (o.s ?? 1) * lerp(o.from ?? .25, 1, eBack(p));
+  el.style.transform = `${o.pre || ''} translate(${o.dx||0}px,${o.dy||0}px) rotate(${(o.rot||0) + boil(t, i, o.amt ?? 1.1)}deg) scale(${s})`;
+}
+function slam(el, t, t0, rot, i, pre='') {
+  const p = prog(t, t0, t0 + .16);
+  el.style.opacity = t < t0 ? 0 : 1;
+  el.style.transform = `${pre} rotate(${rot + boil(t, i, .6)}deg) scale(${lerp(2.3, 1, eOut(p))})`;
+}
+const CX = 'translateX(-50%)';
+const SHAKES = [2.45, 5.6, 10.3, 24.2];
+const shake = t => { let a = 0; for (const s of SHAKES) if (t >= s && t < s + .3) a = Math.max(a, 22*(1 - (t-s)/.3)); return a; };
+
+// bunting: flags in the party colours (greyed in the grown-up world)
+{ const n = 14, w = 1120 / n; let s = '<svg viewBox="0 0 1120 150" preserveAspectRatio="none"><path d="M0 18 Q560 70 1120 18" stroke="#231A10" stroke-width="5" fill="none"/>';
+  const C = ['#F0521D','#FFC81A','#6C3DFF','#2F9E5B','#FF7AA8','#3D8BFF'];
+  for (let k = 0; k < n; k++) { const x = k*w + 6, y = 18 + 52*Math.sin(Math.PI*(k+.5)/n)*.9; s += `<path d="M${x} ${y} L${x+w-12} ${y} L${x+(w-12)/2} ${y+90}Z" fill="${C[k%C.length]}" stroke="#231A10" stroke-width="4" stroke-linejoin="round"/>`; }
+  $('bunt1').innerHTML = s + '</svg>'; }
+
+/* word-synced captions in the scene timeline; the warp below maps them onto the voice */
+const CAPS = [
+  [0.05, 2.7, [["A",0.1],["seven-year-old's",0.3],["birthday",1.1,1],["party!",1.5,1],["🎉",1.62]]],
+  [2.85, 4.95, [["Can't",2.9],["play",3.1],["tag,",3.3],["bro.",3.6],["Back-to-back",3.9,1],["calls.",4.5],["📞",4.62]]],
+  [4.95, 6.55, [["Let's",5.0],["circle",5.25],["back",5.55,1],["after",5.8],["cake.",6.0],["🎂",6.12]]],
+  [6.65, 8.55, [["Nobody",6.7],["touch",7.05],["the",7.3],["cake!",7.45,1],["Content",7.85],["first.",8.2,1],["📸",8.32]]],
+  [8.55, 10.15, [["Hi",8.6],["guys,",8.8],["welcome",9.1],["back",9.4],["to",9.55],["my",9.65],["channel!",9.8,1],["✨",9.92]]],
+  [10.25, 12.75, [["BREAKING",10.3,1],["NEWS!",10.75,1],["World",11.2],["War",11.45],["Three",11.7],["starts",11.95],["tomorrow!",12.2,1],["😱",12.32]]],
+  [12.75, 13.95, [["My",12.8],["source?",13.0],["A",13.35],["reel",13.45,1],["I",13.7],["saw!",13.8],["📱",13.92]]],
+  [14.05, 16.95, [["Also,",14.1],["cold",14.6],["water",14.85],["after",15.2],["7",15.45],["pm",15.65],["is",15.9],["banned",16.1,1],["in",16.45],["Japan.",16.6],["🤯",16.72]]],
+  [16.95, 18.35, [["Forward",17.0],["to",17.4],["ten",17.55,1],["groups.",17.75,1],["🙏",17.87]]],
+  [18.45, 20.75, [["I'm",19.1],["six",19.35,1],["and",19.6],["I",19.75],["need",19.9],["a",20.05],["vacation.",20.15,1],["🏖️",20.27]]],
+  [20.95, 23.35, [["Kids",21.0],["stay",21.3],["kids",21.55,1],["when",21.9],["you",22.05],["give",22.2],["them",22.4],["kid",22.6,1],["things.",22.85]]],
+  [23.35, 25.35, [["Give",23.4],["them",23.6],["grown-up",23.8,1],["things,",24.2],["and",24.5],["you",24.65],["get",24.8],["this.",24.95,1],["😬",25.07]]],
+  [25.95, 27.0, [["Cheeko!",26.0,1],["🦊",26.12]]],
+  [27.05, 28.95, [["Cheeko,",27.1],["why",27.6],["is",27.8],["the",27.9],["sky",28.05,1],["blue?",28.3,1],["🤔",28.42]]],
+  [28.95, 30.15, [["Forward",29.0],["to",29.25],["ten",29.35],["groups!",29.5,1],["🐿️",29.62]]],
+  [30.15, 31.35, [["Do",30.6],["it",30.75],["again!",30.9,1],["😂",31.02]]],
+  [31.35, 33.3, [["Made",31.4],["for",31.65],["kids.",31.85,1],["Not",32.4],["tiny",32.65],["adults.",32.9,1]]],
+];
+const capEl = $('caps'); let capIdx = -1;
+function renderCaps(t) {
+  const i = CAPS.findIndex(([a, b]) => t >= a && t < b);
+  if (i !== capIdx) {
+    capEl.innerHTML = '';
+    if (i >= 0) for (const [w, , hl] of CAPS[i][2]) {
+      const s = document.createElement('span');
+      const emo = /\p{Extended_Pictographic}/u.test(w) && !/[\p{L}\p{N}]/u.test(w);
+      s.className = 'w' + (emo ? ' emo' : hl ? ' hl' : ''); s.textContent = w;
+      capEl.appendChild(s); capEl.appendChild(document.createTextNode(' '));
+    }
+    capIdx = i;
+  }
+  if (i < 0) return;
+  [...capEl.querySelectorAll('.w')].forEach((s, k) => {
+    const t0 = CAPS[i][2][k][1], p = prog(t, t0 - .04, t0 + .14);
+    s.style.opacity = p > 0 ? 1 : 0;
+    s.style.transform = `scale(${lerp(.5, 1, eBack(p))}) rotate(${CAPS[i][2][k][2] ? -3 : 0}deg)`;
+  });
+}
+
+const CARDS = ['01-tales-of-kindness','02-floor-is-lava','03-play-and-sing-along','04-dreamy-melodies','05-mitthu-the-parrot','06-make-your-own','07-clever-little-tales','08-ravi-and-nila','09-sounds-around-me','10-nani'];
+const cardEls = CARDS.map(c => { const im = document.createElement('img'); im.className = 'ecard stk'; im.src = `../../assets/img/cards-shipping/${c}.jpg`;
+  im.style.left = '445px'; im.style.top = '620px'; $('e-cards').appendChild(im); return im; });
+
+// scene windows (scene timeline; re-timed to the voice by the warp)
+const S = [[0, 2.8], [2.8, 6.6], [6.6, 10.2], [10.2, 14.0], [14.0, 18.4], [18.4, 20.8], [20.8, 25.8], [25.8, 27.0], [27.0, 33.3], [33.3, 99]];
+const inS = (t, k) => t >= S[k][0] && t < S[k][1];
+
+window.render = function(t) {
+  vis($('bgA'), t < 25.8); vis($('bgB'), t >= 25.8 && t < 33.3); vis($('bgC'), t >= 33.3);
+  vis($('buntA'), t < 20.8 || (t >= 25.8 && t < 33.3));
+  $('bunt1').style.filter = t < 25.8 && t >= 2.45 ? 'url(#grey)' : '';
+  S.forEach((_, k) => vis($('s' + (k + 1)), inS(t, k)));
+  const sh = shake(t); $('stage').style.transform = sh ? `translate(${(rnd(t*60)-.5)*sh}px,${(rnd(t*77)-.5)*sh}px)` : '';
+
+  if (inS(t, 0)) {                                   // S1 the party, then the record scratch
+    stick($('s1-hb'), t, 0.0, 1, { pre: CX, rot: -3, dur: .3 });
+    stick($('s1-bal'), t, 0.15, 2, { rot: -4, dy: Math.sin(t*2.5)*10 });
+    stick($('s1-cake'), t, 0.3, 3, { rot: 3 });
+    const scratch = t >= 2.45;
+    $('s1-boy').style.display = scratch ? 'none' : ''; $('s1-boy2').style.display = scratch ? '' : 'none';
+    if (!scratch) stick($('s1-boy'), t, 0.05, 4, { dy: -Math.abs(Math.sin(t*6))*20 });
+    else stick($('s1-boy2'), t, 2.45, 5, { from: .9, dur: .15 });
+    stick($('s1-e1'), t, 0.5, 6, { rot: Math.sin(t*5)*10 }); stick($('s1-e2'), t, 0.7, 7, { rot: Math.sin(t*4)*10 });
+    // after the record scratch the party loses its colour
+    for (const id of ['s1-bal','s1-cake']) $(id).style.filter = scratch ? 'url(#stk) saturate(.3)' : '';
+    for (const id of ['s1-e1','s1-e2']) $(id).style.filter = scratch ? 'saturate(.3)' : '';
+  }
+  if (inS(t, 1)) {                                   // S2 corporate kid
+    stick($('s2-kid'), t, 2.82, 10, { rot: -1 });
+    stick($('s2-tag'), t, 3.0, 11, { amt: .4 });
+    stick($('s2-call'), t, 3.2, 12, { rot: 3 });
+    stick($('s2-cal'), t, 3.9, 13, { rot: -2 });
+    slam($('s2-dec'), t, 4.5, -10, 14);
+    stick($('s2-cb'), t, 5.55, 15, { rot: 2 });
+    stick($('s2-boy'), t, 3.5, 16, { rot: 6 });
+  }
+  if (inS(t, 2)) {                                   // S3 influencer kid
+    stick($('s3-kid'), t, 6.62, 20, { rot: 1 });
+    stick($('s3-tag'), t, 6.8, 21, { amt: .4 });
+    stick($('s3-rec'), t, 7.0, 22, { rot: -3 }); if (t > 7.3) $('s3-rec').style.opacity = Math.floor(t*3) % 2 ? 1 : .55;
+    stick($('s3-cake'), t, 7.45, 23, { rot: 4 });
+    stick($('s3-no'), t, 8.2, 24, { rot: -3 });
+    [['s3-h1', 8.8], ['s3-h2', 9.3]].forEach(([id, t0], k) => { const e = $(id), d = t - t0;
+      e.style.opacity = d < 0 ? 0 : clamp(1.4 - d/1.2); e.style.transform = `translateY(${-d*240}px) rotate(${Math.sin(d*5)*12}deg)`; });
+    stick($('s3-boy'), t, 7.6, 25, { rot: -6 });
+  }
+  if (inS(t, 3)) {                                   // S4 breaking news
+    stick($('tv'), t, 10.2, 30, { from: .6, amt: .3 });
+    stick($('s4-kid'), t, 10.3, 31, { dy: Math.sin(t*14)*4 });
+    stick($('s4-tag'), t, 10.6, 32, { amt: .4 });
+    $('tv-live').style.opacity = Math.floor(t*3) % 2 ? 1 : .6;
+    $('s4-tick').style.transform = `translateX(${1000 - ((t - 10.2) * 420) % 2600}px)`;
+    stick($('s4-boy'), t, 11.0, 33, { rot: 8 });
+  }
+  if (inS(t, 4)) {                                   // S5 WhatsApp University
+    stick($('s5-kid'), t, 14.02, 40, { rot: -1 });
+    stick($('s5-tag'), t, 14.2, 41, { amt: .4 });
+    stick($('s5-w1'), t, 14.6, 42, { rot: -1 });
+    stick($('s5-w2'), t, 17.0, 43, { rot: 1 });
+    ['s5-f1','s5-f2','s5-f3'].forEach((id, k) => { const e = $(id), d = t - 17.5 - k*.12;
+      e.style.opacity = d < 0 ? 0 : clamp(1.5 - d); e.style.transform = `translate(${d*260}px,${-d*300}px) rotate(${d*120}deg)`; });
+  }
+  if (inS(t, 5)) {                                   // S6 burnt out at six
+    stick($('s6-sofa'), t, 18.4, 50, { amt: .4 });
+    stick($('s6-kid'), t, 18.5, 51, { dy: Math.sin(t*1.5)*6, amt: .6 });
+    stick($('s6-tag'), t, 18.7, 52, { amt: .4 });
+    stick($('s6-bat'), t, 19.35, 53, { rot: 5 }); if (t > 19.7) $('s6-bat').style.opacity = Math.floor(t*4) % 2 ? 1 : .4;
+    stick($('s6-ooo'), t, 20.15, 54, { pre: CX, rot: -3 });
+  }
+  if (inS(t, 6)) {                                   // S7 freeze frame
+    const ids = ['s7-a','s7-b','s7-c','s7-d','s7-e','s7-boy'];
+    ids.forEach((id, k) => { stick($(id), t, 20.8 + k*.05, 60+k, { from: .9, dur: .12, amt: 0 }); $(id).style.filter = id === 's7-boy' ? '' : 'url(#stk) url(#grey)'; });
+    const rw = prog(t, 25.4, 25.8);                  // rewind: everything spins back and shrinks away
+    $('s7-g').style.transform = `scale(${(1 + .06*eOut(prog(t, 24.8, 25.1))) * (1 - .85*eIn(rw))}) rotate(${-540*eIn(rw)}deg)`;
+    slam($('s7-st'), t, 24.95, -6, 66); if (rw > 0) $('s7-st').style.opacity = 1 - rw*2;
+    $('s7-osd').textContent = rw > 0 ? '◀◀ REWIND' : '❚❚ PAUSE';
+    $('s7-osd').style.opacity = rw > 0 ? 1 : (Math.floor(t*2) % 2 ? 1 : .35);
+    $('stage').style.filter = rw > 0 ? `hue-rotate(${Math.sin(t*40)*25}deg) contrast(1.15)` : '';
+  }
+  if (inS(t, 7)) {                                   // S8 Cheeko drops in
+    vis($('s8-osd'), false); vis($('s8-vhs'), false);
+    stick($('s8-dev'), t, 25.85, 70, { dy: lerp(-700, 0, eOut(prog(t, 25.85, 26.2))), from: .6 });
+    ['s8-sp1','s8-sp2','s8-sp3'].forEach((id, k) => stick($(id), t, 26.15 + k*.1, 71+k, { rot: Math.sin(t*6+k)*15 }));
+  }
+  if (!inS(t, 6)) $('stage').style.filter = '';
+  if (inS(t, 8)) {                                   // S9 kids being kids
+    const a = t < 28.95, b = t >= 28.95 && t < 31.35, c = t >= 31.35;
+    vis($('s9a'), a); vis($('s9b'), b); vis($('s9c'), c);
+    if (a) { stick($('s9a-kid'), t, 27.0, 80, { rot: -2 }); stick($('s9a-dev'), t, 27.1, 81, { rot: 4 }); stick($('s9a-q'), t, 28.0, 82, { rot: Math.sin(t*4)*10 }); }
+    if (b) { stick($('s9b-kid'), t, 28.95, 83, { dy: -Math.abs(Math.sin(t*9))*14 }); stick($('s9b-dev'), t, 29.0, 84, { rot: -4 }); stick($('s9b-chip'), t, 29.1, 85, { pre: CX, rot: 5 }); }
+    if (c) {
+      stick($('s9c-news'), t, 31.35, 86, { rot: Math.sin(t*6)*5 });
+      stick($('s9c-tired'), t, 31.5, 87, { dy: -Math.abs(Math.sin(t*5))*40 });
+      stick($('s9c-corp'), t, 31.65, 88, { dy: -Math.abs(Math.sin(t*5+1))*40 });
+      stick($('s9c-dev'), t, 31.8, 89, { rot: 5 });
+      stick($('s9c-card'), t, 31.9, 90, { rot: 12 });
+      stick($('s9c-e1'), t, 31.5, 91, { rot: Math.sin(t*5)*12 });
+    }
+  }
+  if (inS(t, 9)) {                                   // S10 end card
+    stick($('e-logo'), t, 33.35, 100, { amt: .3 });
+    stick($('e-tag'), t, 33.5, 101, { amt: .3 });
+    stick($('e-dev'), t, 33.4, 102, { from: .3 });
+    cardEls.forEach((c, k) => { const p = eOut(prog(t, 33.6 + k*.03, 34.05 + k*.03)); c.style.opacity = p > 0 ? 1 : 0;
+      c.style.transform = `rotate(${lerp(0, -60 + k*13.3, p) + boil(t, 110+k, .5)}deg) translateY(${lerp(0, -40, p)}px)`; });
+    stick($('e-boy'), t, 33.7, 103, { dy: -Math.abs(Math.sin(t*5))*16 });
+    stick($('e-corp'), t, 33.8, 104, { dy: -Math.abs(Math.sin(t*5+1))*16 });
+    stick($('e-bub'), t, 33.65, 105, { rot: -2 });
+    stick($('e-price'), t, 34.3, 106, { amt: .3 });
+    stick($('e-sub'), t, 34.5, 107, { amt: .2 });
+    stick($('e-pill'), t, 34.7, 108, { pre: CX, s: 1 + (t > 35.2 ? .05*Math.max(0, Math.sin((t-35.2)*Math.PI*2)) : 0), amt: .3 });
+    stick($('e-send'), t, 34.95, 109, { pre: CX, amt: .3 });
+  }
+  renderCaps(t);
+};
+
+window.ready = (async () => {
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(i => i.decode().catch(()=>{})));
+  await Promise.all(['900 100px Gabarito','800 40px Gabarito','800 46px "Hanken Grotesk"'].map(f => document.fonts.load(f)));
+  window.render(0);
+  return true;
+})();
+</script>
+<script id="warp">
+// Timed to the V09 voiceover (narrator MiniMax English_Upbeat_Woman at 1.1x, five kid voices at 1.12x): scenes keep their
+// timeline and are stretched piecewise between voice-line anchors (work/warp.json, built by marketing/tools/build_vo.py).
+(() => { const NEW = [0.1, 1.968, 4.123, 5.724, 8.35, 10.224, 13.499, 15.502, 19.57, 20.986, 24.994, 27.245, 30.168, 30.933, 33.355, 34.267, 35.899, 37.217, 38.822, 41.787, 43.89], OLD = [0.1, 2.9, 5.0, 6.7, 8.6, 10.3, 12.8, 14.1, 17.0, 18.5, 21.0, 23.4, 26.0, 27.1, 29.0, 30.2, 31.4, 32.4, 33.6, 35.4, 37.5];
+  const warp = t => { if (t <= NEW[0]) return OLD[0] * t / NEW[0]; for (let i = 1; i < NEW.length; i++) if (t <= NEW[i]) return OLD[i-1] + (OLD[i]-OLD[i-1]) * (t-NEW[i-1]) / (NEW[i]-NEW[i-1]); return OLD[OLD.length-1] + (t - NEW[NEW.length-1]); };
+  const R = window.render; window.render = t => R(warp(t)); })();
+</script>
+</body></html>

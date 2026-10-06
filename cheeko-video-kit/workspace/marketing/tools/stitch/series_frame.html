@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- 16:9 frame around a vertical series film (stitch_series.py). #hash = JSON {mode: 'chapter'|'thumb', title, sub, chapters: [..], cur, hook, pill, shots: [..], hi}
+     chapter: the vertical video is overlaid in the middle (x 656..1264) by ffmpeg; this page draws the sides.
+     thumb: a 1920x1080 YouTube thumbnail with the hook and three iPhones showing real app screens. -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800;900&family=Hanken+Grotesk:wght@500;700;800&family=Noto+Sans+Devanagari:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#F0521D;--sun:#FFC81A;--ink:#231A10;--tint:#FFF4E3;--disp:"Gabarito","Noto Sans Devanagari",sans-serif;--body:"Hanken Grotesk","Noto Sans Devanagari",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--tint)}
+#t{position:relative;width:1920px;height:1080px;overflow:hidden;background:radial-gradient(circle at 20% 30%,#FFE3B8 0,rgba(255,227,184,0) 45%),radial-gradient(circle at 85% 75%,#FFD9C7 0,rgba(255,217,199,0) 40%),var(--tint)}
+.abs{position:absolute}
+.slot{left:648px;top:0;width:624px;height:1080px;background:rgba(35,26,16,.10);filter:blur(24px)}
+.logo{width:300px}
+.title{font-family:var(--disp);font-weight:900;color:var(--ink);line-height:1.02;letter-spacing:-.01em}
+.title .hl{background:var(--sun);border-radius:.14em;padding:0 .12em}
+.sub{font-family:var(--body);font-weight:700;color:#6b5a48;font-size:30px;line-height:1.35}
+.ch{display:flex;align-items:center;gap:22px;font-family:var(--disp);font-weight:800;font-size:40px;color:#9c8a76;padding:18px 26px;border-radius:26px;margin-bottom:14px}
+.ch b{display:flex;align-items:center;justify-content:center;width:62px;height:62px;border-radius:50%;background:#fff;color:#9c8a76;font-size:32px;flex:none;box-shadow:0 6px 14px rgba(0,0,0,.08)}
+.ch.on{background:var(--ink);color:#fff;box-shadow:0 16px 34px rgba(35,26,16,.25)}
+.ch.on b{background:var(--brand);color:#fff}
+.ch.done{color:#6b5a48}
+.ch.done b{background:var(--sun);color:var(--ink)}
+.pill{background:var(--brand);color:#fff;font-family:var(--disp);font-weight:800;border-radius:99px;padding:16px 36px;font-size:36px;white-space:nowrap;display:inline-block}
+.e{font-family:"Apple Color Emoji"}
+/* iPhone (same geometry as makeIphone() in feature/feature.html) */
+.iph{background:linear-gradient(135deg,#5f5c58 0%,#c9c5be 18%,#efece6 30%,#a9a59f 46%,#6d6a66 62%,#d6d2cb 80%,#77746f 100%);box-shadow:0 40px 80px rgba(0,0,0,.35),0 0 0 1.5px rgba(0,0,0,.35)}
+.iph .bz{position:absolute;background:#040404}
+.iph .ps{position:absolute;overflow:hidden;background:#fff}
+.iph .ps img{position:absolute;left:0;top:0;width:100%}
+.iph .tm{position:absolute;font-family:-apple-system,"SF Pro Text",sans-serif;font-weight:600;text-align:center;color:#000}
+.iph .isl{position:absolute;background:#000}
+</style></head>
+<body><div id="t"></div>
+<script>
+const S = JSON.parse(decodeURIComponent(location.hash.slice(1)));
+const A = S.assets || '../../../cheeko-v2-website/assets/img/';
+const iphone = (src, x, y, BW, r) => { const fr = BW*.013, bz = BW*.032, off = fr + bz, SW = BW - 2*off, SH = SW*852/393, BH = SH + 2*off, u = SW/393, rS = 55*u;
+  const sig = [4, 6.2, 8.4, 10.8].map((h, i) => `<rect x="${i*4.6}" y="${11.4-h}" width="3.1" height="${h}" rx=".9"/>`).join('');
+  return `<div class="abs iph" style="left:${x}px;top:${y}px;width:${BW}px;height:${BH}px;border-radius:${rS+bz+fr}px;transform:rotate(${r}deg)">
+    <div class="bz" style="left:${fr}px;top:${fr}px;right:${fr}px;bottom:${fr}px;border-radius:${rS+bz}px">
+      <div class="ps" style="left:${bz}px;top:${bz}px;width:${SW}px;height:${SH}px;border-radius:${rS}px"><img src="${A}${src}"></div>
+      <div class="tm" style="left:${bz+22*u}px;width:${90*u}px;top:${bz+19*u}px;font-size:${17*u}px;line-height:${22*u}px">9:41</div>
+      <svg viewBox="0 0 72 12.6" style="position:absolute;right:${bz+22*u}px;top:${bz+23.5*u}px;width:${72*u}px;height:${12.6*u}px" fill="#000">${sig}<g transform="translate(24.5 0)"><path d="M7.7 11.4 L5.2 8.6 A3.6 3.6 0 0 1 10.2 8.6 Z"/><path d="M3.3 6.6 A6.4 6.4 0 0 1 12.1 6.6 L10.9 8 A4.7 4.7 0 0 0 4.5 8 Z"/><path d="M1.1 4.2 A9.6 9.6 0 0 1 14.3 4.2 L13.1 5.6 A7.9 7.9 0 0 0 2.3 5.6 Z"/></g><g transform="translate(46 0)"><rect x=".5" y=".6" width="24" height="11.4" rx="3.6" fill="none" stroke="#000" stroke-opacity=".4"/><rect x="2.4" y="2.5" width="17.6" height="7.6" rx="2"/></g></svg>
+      <div class="isl" style="left:${bz+SW/2-63*u}px;top:${bz+11*u}px;width:${126*u}px;height:${37*u}px;border-radius:${19*u}px"></div>
+    </div></div>`; };
+const T = document.getElementById('t');
+if (S.mode === 'chapter') {
+  T.innerHTML = `<div class="abs slot"></div>
+    <img class="abs logo" src="${A}logo.png" style="left:150px;top:150px">
+    <div class="abs title" style="left:110px;top:330px;width:500px;font-size:${S.hi ? 76 : 86}px">${S.title}</div>
+    <div class="abs sub" style="left:112px;top:${S.hi ? 540 : 560}px;width:470px">${S.sub}</div>
+    <div class="abs" style="left:112px;top:860px"><span class="pill" style="font-size:30px;padding:14px 30px">${S.pill}</span></div>
+    <div class="abs" style="left:1330px;top:${540 - S.chapters.length * 49}px;width:520px">
+      ${S.chapters.map((c, i) => `<div class="ch ${i === S.cur ? 'on' : i < S.cur ? 'done' : ''}"><b>${i + 1}</b>${c}</div>`).join('')}</div>`;
+} else {
+  T.innerHTML = `<img class="abs logo" src="${A}logo.png" style="left:120px;top:120px;width:260px">
+    <div class="abs title" style="left:110px;top:250px;width:820px;font-size:${S.hi ? 92 : 98}px">${S.hook}</div>
+    <div class="abs" style="left:116px;top:780px"><span class="pill" style="font-size:44px;padding:20px 44px">${S.pill}</span></div>
+    ${iphone(S.shots[0], 930, 170, 360, -8)}${iphone(S.shots[2], 1500, 170, 360, 8)}${iphone(S.shots[1], 1200, 110, 400, 0)}`;
+}
+window.ready = Promise.all([...document.images].map(i => i.complete ? 1 : new Promise(r => { i.onload = i.onerror = r; }))).then(() => document.fonts.ready);
+</script></body></html>

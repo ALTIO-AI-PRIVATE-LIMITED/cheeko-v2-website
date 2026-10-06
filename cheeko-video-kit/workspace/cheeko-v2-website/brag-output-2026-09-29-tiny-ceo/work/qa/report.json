@@ -1,0 +1,209 @@
+{
+  "errors": [],
+  "report": [
+    {
+      "shot": 0,
+      "time": 0.06,
+      "issues": [],
+      "file": "qa/shot-00-transition.jpg"
+    },
+    {
+      "shot": 0,
+      "time": 0.55,
+      "issues": [],
+      "file": "qa/shot-00-settled.jpg"
+    },
+    {
+      "shot": 1,
+      "time": 2.7,
+      "issues": [],
+      "file": "qa/shot-01-transition.jpg"
+    },
+    {
+      "shot": 1,
+      "time": 3.1900000000000004,
+      "issues": [],
+      "file": "qa/shot-01-settled.jpg"
+    },
+    {
+      "shot": 2,
+      "time": 5.3,
+      "issues": [],
+      "file": "qa/shot-02-transition.jpg"
+    },
+    {
+      "shot": 2,
+      "time": 5.79,
+      "issues": [],
+      "file": "qa/shot-02-settled.jpg"
+    },
+    {
+      "shot": 3,
+      "time": 7.1,
+      "issues": [],
+      "file": "qa/shot-03-transition.jpg"
+    },
+    {
+      "shot": 3,
+      "time": 7.59,
+      "issues": [],
+      "file": "qa/shot-03-settled.jpg"
+    },
+    {
+      "shot": 4,
+      "time": 8.700000000000001,
+      "issues": [],
+      "file": "qa/shot-04-transition.jpg"
+    },
+    {
+      "shot": 4,
+      "time": 9.190000000000001,
+      "issues": [],
+      "file": "qa/shot-04-settled.jpg"
+    },
+    {
+      "shot": 5,
+      "time": 10.1,
+      "issues": [],
+      "file": "qa/shot-05-transition.jpg"
+    },
+    {
+      "shot": 5,
+      "time": 10.59,
+      "issues": [],
+      "file": "qa/shot-05-settled.jpg"
+    },
+    {
+      "shot": 6,
+      "time": 11.5,
+      "issues": [],
+      "file": "qa/shot-06-transition.jpg"
+    },
+    {
+      "shot": 6,
+      "time": 11.99,
+      "issues": [],
+      "file": "qa/shot-06-settled.jpg"
+    },
+    {
+      "shot": 7,
+      "time": 13,
+      "issues": [],
+      "file": "qa/shot-07-transition.jpg"
+    },
+    {
+      "shot": 7,
+      "time": 13.49,
+      "issues": [],
+      "file": "qa/shot-07-settled.jpg"
+    },
+    {
+      "shot": 8,
+      "time": 14,
+      "issues": [],
+      "file": "qa/shot-08-transition.jpg"
+    },
+    {
+      "shot": 8,
+      "time": 14.49,
+      "issues": [],
+      "file": "qa/shot-08-settled.jpg"
+    },
+    {
+      "shot": 9,
+      "time": 15.6,
+      "issues": [],
+      "file": "qa/shot-09-transition.jpg"
+    },
+    {
+      "shot": 9,
+      "time": 16.09,
+      "issues": [],
+      "file": "qa/shot-09-settled.jpg"
+    },
+    {
+      "shot": 10,
+      "time": 17.599999999999998,
+      "issues": [],
+      "file": "qa/shot-10-transition.jpg"
+    },
+    {
+      "shot": 10,
+      "time": 18.09,
+      "issues": [],
+      "file": "qa/shot-10-settled.jpg"
+    },
+    {
+      "shot": 11,
+      "time": 19.099999999999998,
+      "issues": [],
+      "file": "qa/shot-11-transition.jpg"
+    },
+    {
+      "shot": 11,
+      "time": 19.59,
+      "issues": [],
+      "file": "qa/shot-11-settled.jpg"
+    },
+    {
+      "shot": 12,
+      "time": 21.9,
+      "issues": [],
+      "file": "qa/shot-12-transition.jpg"
+    },
+    {
+      "shot": 12,
+      "time": 22.39,
+      "issues": [],
+      "file": "qa/shot-12-settled.jpg"
+    },
+    {
+      "shot": 13,
+      "time": 24.5,
+      "issues": [],
+      "file": "qa/shot-13-transition.jpg"
+    },
+    {
+      "shot": 13,
+      "time": 24.990000000000002,
+      "issues": [],
+      "file": "qa/shot-13-settled.jpg"
+    },
+    {
+      "shot": 14,
+      "time": 27.299999999999997,
+      "issues": [],
+      "file": "qa/shot-14-transition.jpg"
+    },
+    {
+      "shot": 14,
+      "time": 27.79,
+      "issues": [],
+      "file": "qa/shot-14-settled.jpg"
+    },
+    {
+      "shot": 15,
+      "time": 29.9,
+      "issues": [],
+      "file": "qa/shot-15-transition.jpg"
+    },
+    {
+      "shot": 15,
+      "time": 30.39,
+      "issues": [],
+      "file": "qa/shot-15-settled.jpg"
+    },
+    {
+      "shot": 16,
+      "time": 31.799999999999997,
+      "issues": [],
+      "file": "qa/shot-16-transition.jpg"
+    },
+    {
+      "shot": 16,
+      "time": 32.29,
+      "issues": [],
+      "file": "qa/shot-16-settled.jpg"
+    }
+  ]
+}

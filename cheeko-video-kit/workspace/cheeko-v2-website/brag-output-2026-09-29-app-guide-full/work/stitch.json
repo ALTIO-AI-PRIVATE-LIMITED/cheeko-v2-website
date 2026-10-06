@@ -1,0 +1,29 @@
+{
+ "out": "brag-output-2026-09-29-app-guide-full",
+ "parts": [
+  "brag-output-2026-09-29-app-home",
+  "brag-output-2026-09-29-app-device",
+  "brag-output-2026-09-29-app-analytics",
+  "brag-output-2026-09-29-app-gallery-cards",
+  "brag-output-2026-09-29-app-profile"
+ ],
+ "chapters": [
+  "Home",
+  "Device",
+  "Analytics",
+  "Gallery &amp; cards",
+  "Profile"
+ ],
+ "title": "Cheeko<br><span class=\"hl\">App Guide</span>",
+ "sub": "Every tab and setting in the parent app, step by step.",
+ "pill": "iPhone &amp; Android",
+ "hook": "The whole<br><span class=\"hl\">Cheeko app</span><br>in under 3 min <span class=\"e\">📱</span>",
+ "thumbPill": "Full app guide · 5 chapters",
+ "thumbShots": [
+  "app-shots-ios/01_home.png",
+  "app-shots-ios/03_device_controls.png",
+  "app-shots-ios/06_analytics_week_breakdown.png"
+ ],
+ "hi": 0,
+ "tail": 1.2
+}

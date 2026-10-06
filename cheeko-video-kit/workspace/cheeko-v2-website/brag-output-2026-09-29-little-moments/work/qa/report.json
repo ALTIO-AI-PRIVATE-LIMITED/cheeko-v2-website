@@ -1,0 +1,221 @@
+{
+  "errors": [],
+  "report": [
+    {
+      "shot": 0,
+      "time": null,
+      "issues": [],
+      "file": "qa/shot-00-transition.jpg"
+    },
+    {
+      "shot": 0,
+      "time": null,
+      "issues": [],
+      "file": "qa/shot-00-settled.jpg"
+    },
+    {
+      "shot": 1,
+      "time": 1.72,
+      "issues": [],
+      "file": "qa/shot-01-transition.jpg"
+    },
+    {
+      "shot": 1,
+      "time": 2.15,
+      "issues": [],
+      "file": "qa/shot-01-settled.jpg"
+    },
+    {
+      "shot": 2,
+      "time": 3.32,
+      "issues": [],
+      "file": "qa/shot-02-transition.jpg"
+    },
+    {
+      "shot": 2,
+      "time": 3.75,
+      "issues": [],
+      "file": "qa/shot-02-settled.jpg"
+    },
+    {
+      "shot": 3,
+      "time": 4.82,
+      "issues": [],
+      "file": "qa/shot-03-transition.jpg"
+    },
+    {
+      "shot": 3,
+      "time": 5.25,
+      "issues": [],
+      "file": "qa/shot-03-settled.jpg"
+    },
+    {
+      "shot": 4,
+      "time": 6.62,
+      "issues": [],
+      "file": "qa/shot-04-transition.jpg"
+    },
+    {
+      "shot": 4,
+      "time": 7.05,
+      "issues": [],
+      "file": "qa/shot-04-settled.jpg"
+    },
+    {
+      "shot": 5,
+      "time": 7.740000000000001,
+      "issues": [],
+      "file": "qa/shot-05-transition.jpg"
+    },
+    {
+      "shot": 5,
+      "time": 8.170000000000002,
+      "issues": [],
+      "file": "qa/shot-05-settled.jpg"
+    },
+    {
+      "shot": 6,
+      "time": 8.620000000000001,
+      "issues": [],
+      "file": "qa/shot-06-transition.jpg"
+    },
+    {
+      "shot": 6,
+      "time": 9.05,
+      "issues": [],
+      "file": "qa/shot-06-settled.jpg"
+    },
+    {
+      "shot": 7,
+      "time": 10.120000000000001,
+      "issues": [],
+      "file": "qa/shot-07-transition.jpg"
+    },
+    {
+      "shot": 7,
+      "time": 10.55,
+      "issues": [],
+      "file": "qa/shot-07-settled.jpg"
+    },
+    {
+      "shot": 8,
+      "time": 11.92,
+      "issues": [],
+      "file": "qa/shot-08-transition.jpg"
+    },
+    {
+      "shot": 8,
+      "time": 12.35,
+      "issues": [],
+      "file": "qa/shot-08-settled.jpg"
+    },
+    {
+      "shot": 9,
+      "time": 12.77,
+      "issues": [],
+      "file": "qa/shot-09-transition.jpg"
+    },
+    {
+      "shot": 9,
+      "time": 13.2,
+      "issues": [],
+      "file": "qa/shot-09-settled.jpg"
+    },
+    {
+      "shot": 10,
+      "time": 13.620000000000001,
+      "issues": [],
+      "file": "qa/shot-10-transition.jpg"
+    },
+    {
+      "shot": 10,
+      "time": 14.05,
+      "issues": [],
+      "file": "qa/shot-10-settled.jpg"
+    },
+    {
+      "shot": 11,
+      "time": 15.42,
+      "issues": [],
+      "file": "qa/shot-11-transition.jpg"
+    },
+    {
+      "shot": 11,
+      "time": 15.85,
+      "issues": [],
+      "file": "qa/shot-11-settled.jpg"
+    },
+    {
+      "shot": 12,
+      "time": 16.38,
+      "issues": [],
+      "file": "qa/shot-12-transition.jpg"
+    },
+    {
+      "shot": 12,
+      "time": 16.81,
+      "issues": [],
+      "file": "qa/shot-12-settled.jpg"
+    },
+    {
+      "shot": 13,
+      "time": 17.42,
+      "issues": [],
+      "file": "qa/shot-13-transition.jpg"
+    },
+    {
+      "shot": 13,
+      "time": 17.85,
+      "issues": [],
+      "file": "qa/shot-13-settled.jpg"
+    },
+    {
+      "shot": 14,
+      "time": 18.42,
+      "issues": [],
+      "file": "qa/shot-14-transition.jpg"
+    },
+    {
+      "shot": 14,
+      "time": 18.85,
+      "issues": [],
+      "file": "qa/shot-14-settled.jpg"
+    },
+    {
+      "shot": 15,
+      "time": 19.32,
+      "issues": [],
+      "file": "qa/shot-15-transition.jpg"
+    },
+    {
+      "shot": 15,
+      "time": 19.75,
+      "issues": [],
+      "file": "qa/shot-15-settled.jpg"
+    },
+    {
+      "shot": 16,
+      "time": 19.92,
+      "issues": [],
+      "file": "qa/shot-16-transition.jpg"
+    },
+    {
+      "shot": 16,
+      "time": 20.35,
+      "issues": [],
+      "file": "qa/shot-16-settled.jpg"
+    },
+    {
+      "shot": 17,
+      "time": 22.32,
+      "issues": [],
+      "file": "qa/shot-17-transition.jpg"
+    },
+    {
+      "shot": 17,
+      "time": 22.75,
+      "issues": [],
+      "file": "qa/shot-17-settled.jpg"
+    }
+  ]
+}

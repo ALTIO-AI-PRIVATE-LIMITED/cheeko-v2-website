@@ -1,0 +1,879 @@
+{
+ "_about": "Voiceover lines for the Reels, one clip per line so each gets its own emotion. old = where the line started in the previous voice (seconds), used to re-time the video. gap = silence before the line in the new voice. MiniMax emotions: happy, sad, angry, fearful, disgusted, surprised, calm, fluent. Voice chosen by Ravi 2026-09-28: English_Upbeat_Woman.",
+ "voice": "English_Upbeat_Woman",
+ "V03": {
+  "dir": "brag-output-2026-09-28-reel",
+  "old_vo_end": 23.88,
+  "old_dur": 26.5,
+  "lines": [
+   [
+    "surprised",
+    "Took the phone away, and NO tantrum?!",
+    0.15,
+    0.1
+   ],
+   [
+    "happy",
+    "Because now there is Cheeko!",
+    3.25,
+    0.3
+   ],
+   [
+    "happy",
+    "Card in, story time!",
+    5.12,
+    0.25
+   ],
+   [
+    "surprised",
+    "Ask it anything, and it actually talks back!",
+    6.49,
+    0.25
+   ],
+   [
+    "happy",
+    "In Hindi,",
+    9.07,
+    0.3
+   ],
+   [
+    "happy",
+    "Tamil,",
+    9.91,
+    0.12
+   ],
+   [
+    "happy",
+    "Kannada,",
+    10.59,
+    0.12
+   ],
+   [
+    "happy",
+    "ten Indian languages!",
+    11.2,
+    0.12
+   ],
+   [
+    "fluent",
+    "Say, a tiger on a bicycle,",
+    12.66,
+    0.3
+   ],
+   [
+    "surprised",
+    "and BOOM, it draws it! (laughs)",
+    14.84,
+    0.35
+   ],
+   [
+    "calm",
+    "No videos.",
+    16.93,
+    0.3
+   ],
+   [
+    "calm",
+    "No reels.",
+    17.87,
+    0.15
+   ],
+   [
+    "calm",
+    "No ads.",
+    18.69,
+    0.15
+   ],
+   [
+    "happy",
+    "Just",
+    19.69,
+    0.3
+   ],
+   [
+    "happy",
+    "play!",
+    20.42,
+    0.5
+   ],
+   [
+    "happy",
+    "Less screen.",
+    21.09,
+    0.35
+   ],
+   [
+    "happy",
+    "More childhood.",
+    22.05,
+    0.15
+   ],
+   [
+    "happy",
+    "Cheeko!",
+    23.17,
+    0.2
+   ]
+  ]
+ },
+ "V04": {
+  "dir": "brag-output-2026-09-28-made-to-end",
+  "old_vo_end": 27.22,
+  "old_dur": 29.8,
+  "lines": [
+   [
+    "calm",
+    "Your phone is built to never end.",
+    0.04,
+    0.05
+   ],
+   [
+    "fluent",
+    "Scroll,",
+    2.01,
+    0.3
+   ],
+   [
+    "fluent",
+    "scroll,",
+    2.91,
+    0.15
+   ],
+   [
+    "fluent",
+    "scroll.",
+    3.85,
+    0.15
+   ],
+   [
+    "surprised",
+    "Cheeko?",
+    4.9,
+    0.4
+   ],
+   [
+    "happy",
+    "Built to END! (laughs)",
+    5.64,
+    0.3
+   ],
+   [
+    "calm",
+    "No feed.",
+    7.36,
+    0.3
+   ],
+   [
+    "calm",
+    "No videos.",
+    8.3,
+    0.15
+   ],
+   [
+    "calm",
+    "Nothing to scroll.",
+    9.42,
+    0.15
+   ],
+   [
+    "happy",
+    "Here is everything it ever shows:",
+    10.71,
+    0.3
+   ],
+   [
+    "happy",
+    "Talk!",
+    12.76,
+    0.25
+   ],
+   [
+    "happy",
+    "Games!",
+    13.34,
+    0.12
+   ],
+   [
+    "happy",
+    "Imagine!",
+    14.06,
+    0.12
+   ],
+   [
+    "happy",
+    "Radio!",
+    14.71,
+    0.12
+   ],
+   [
+    "happy",
+    "Funny Voice!",
+    15.43,
+    0.12
+   ],
+   [
+    "surprised",
+    "That is it!",
+    16.57,
+    0.3
+   ],
+   [
+    "calm",
+    "And when nobody is playing?",
+    17.66,
+    0.35
+   ],
+   [
+    "calm",
+    "It goes to sleep.",
+    19.26,
+    0.25
+   ],
+   [
+    "calm",
+    "By itself.",
+    20.39,
+    0.15
+   ],
+   [
+    "calm",
+    "Screens that end,",
+    21.51,
+    0.4
+   ],
+   [
+    "happy",
+    "raise kids who know how to stop.",
+    22.66,
+    0.15
+   ],
+   [
+    "happy",
+    "Cheeko.",
+    24.47,
+    0.4
+   ],
+   [
+    "happy",
+    "Less screen,",
+    25.26,
+    0.2
+   ],
+   [
+    "happy",
+    "more childhood!",
+    26.17,
+    0.12
+   ]
+  ]
+ },
+ "V05": {
+  "dir": "brag-output-2026-09-28-made-in-india",
+  "old_vo_end": 30.05,
+  "old_dur": 32.6,
+  "lines": [
+   [
+    "happy",
+    "Guess this sound!",
+    0.03,
+    0.05
+   ],
+   [
+    "surprised",
+    "Pressure cooker! (laughs)",
+    2.15,
+    1.2
+   ],
+   [
+    "happy",
+    "That is Cheeko's Sounds Around Me card.",
+    3.56,
+    0.3
+   ],
+   [
+    "happy",
+    "Cooker whistle,",
+    5.67,
+    0.25
+   ],
+   [
+    "happy",
+    "doorbell,",
+    6.45,
+    0.15
+   ],
+   [
+    "happy",
+    "name that sound!",
+    7.86,
+    0.8
+   ],
+   [
+    "happy",
+    "Because Cheeko is made in India, for Indian kids.",
+    9.18,
+    0.3
+   ],
+   [
+    "calm",
+    "Nani tells the stories every family knows,",
+    12.56,
+    0.3
+   ],
+   [
+    "surprised",
+    "and when you interrupt?",
+    15.28,
+    0.25
+   ],
+   [
+    "happy",
+    "She listens!",
+    16.47,
+    0.15
+   ],
+   [
+    "fluent",
+    "Say, an auto rickshaw flying to the moon,",
+    17.58,
+    0.3
+   ],
+   [
+    "surprised",
+    "and it is drawn!",
+    20.22,
+    0.3
+   ],
+   [
+    "happy",
+    "Hindi,",
+    21.52,
+    0.3
+   ],
+   [
+    "happy",
+    "Tamil,",
+    22.22,
+    0.12
+   ],
+   [
+    "happy",
+    "Kannada,",
+    22.92,
+    0.12
+   ],
+   [
+    "happy",
+    "Bengali,",
+    23.7,
+    0.12
+   ],
+   [
+    "happy",
+    "and English too!",
+    24.6,
+    0.15
+   ],
+   [
+    "happy",
+    "Built by Indian parents.",
+    25.83,
+    0.3
+   ],
+   [
+    "happy",
+    "Cheeko.",
+    27.74,
+    0.35
+   ],
+   [
+    "happy",
+    "Less screen,",
+    28.45,
+    0.2
+   ],
+   [
+    "happy",
+    "more childhood!",
+    29.24,
+    0.12
+   ]
+  ]
+ },
+ "V06": {
+  "dir": "brag-output-2026-09-29-five-minutes",
+  "old_vo_end": 27.9,
+  "old_dur": 29.9,
+  "voices": {
+   "15": "hindi_female_2_v1"
+  },
+  "_voices": "line index -> voice for that line; every other line uses the top-level voice. 15 is Nani (Hindi voice says 'Arre' properly; English_Wiselady said 'array'). Recorded with marketing/tools/vo_rec.py on the dev box.",
+  "lines": [
+   [
+    "happy",
+    "Hi, I'm the family phone.",
+    0.1,
+    0.1
+   ],
+   [
+    "happy",
+    "Best babysitter in the house! (chuckle)",
+    1.5,
+    0.12
+   ],
+   [
+    "fluent",
+    "Dad's busy.",
+    3.5,
+    0.2
+   ],
+   [
+    "fluent",
+    "Mom's busy.",
+    4.2,
+    0.1
+   ],
+   [
+    "happy",
+    "Kid gets me for",
+    5.0,
+    0.12
+   ],
+   [
+    "surprised",
+    "five minutes.",
+    5.8,
+    0.05
+   ],
+   [
+    "happy",
+    "Five minutes became dinner.",
+    7.1,
+    0.25
+   ],
+   [
+    "surprised",
+    "Became football.",
+    8.9,
+    0.1
+   ],
+   [
+    "happy",
+    "Became one more! (laughs)",
+    9.9,
+    0.1
+   ],
+   [
+    "sad",
+    "Whole family on low battery.",
+    11.25,
+    0.25
+   ],
+   [
+    "happy",
+    "Me? Fully charged! (chuckle)",
+    13.0,
+    0.15
+   ],
+   [
+    "surprised",
+    "(gasps) Then this showed up.",
+    14.75,
+    0.3
+   ],
+   [
+    "disgusted",
+    "No videos.",
+    17.0,
+    0.25
+   ],
+   [
+    "surprised",
+    "No reels?",
+    17.9,
+    0.1
+   ],
+   [
+    "angry",
+    "No ads?!",
+    18.8,
+    0.1
+   ],
+   [
+    "happy",
+    "Arre, even my stories end! (chuckle)",
+    20.5,
+    0.3
+   ],
+   [
+    "sad",
+    "Now they play together.",
+    22.9,
+    0.3
+   ],
+   [
+    "sad",
+    "I live on the fridge. (sighs)",
+    24.6,
+    0.15
+   ],
+   [
+    "disgusted",
+    "Fine.",
+    26.45,
+    0.25
+   ],
+   [
+    "happy",
+    "Cheeko! Link in bio.",
+    26.9,
+    0.1
+   ]
+  ],
+  "tempo": 1.08
+ },
+ "V07": {
+  "dir": "brag-output-2026-09-29-little-moments",
+  "old_vo_end": 29,
+  "old_dur": 30.5,
+  "tempo": 1.06,
+  "lines": [
+   [
+    "surprised",
+    "Sound like your house?",
+    0,
+    0.05
+   ],
+   [
+    "fluent",
+    "The morning rush.",
+    2,
+    0.413
+   ],
+   [
+    "sad",
+    "The waiting.",
+    3.6,
+    0.628
+   ],
+   [
+    "sad",
+    "The rainy-day blues.",
+    5,
+    0.789
+   ],
+   [
+    "happy",
+    "Make a little room for wonder.",
+    7,
+    0.367
+   ],
+   [
+    "happy",
+    "Meet Cheeko.",
+    9.5,
+    0.504
+   ],
+   [
+    "calm",
+    "Stories to listen to.",
+    11.2,
+    0.557
+   ],
+   [
+    "surprised",
+    "Questions to explore.",
+    13,
+    0.415
+   ],
+   [
+    "happy",
+    "A little imagination.",
+    15,
+    0.319
+   ],
+   [
+    "calm",
+    "And a story before bed.",
+    17,
+    0.331
+   ],
+   [
+    "happy",
+    "Small moments. Shared adventures.",
+    19.5,
+    0.436
+   ],
+   [
+    "happy",
+    "Less screen. More childhood.",
+    22,
+    0.301
+   ],
+   [
+    "happy",
+    "Link in bio.",
+    24.5,
+    0.506
+   ],
+   [
+    "fluent",
+    "Send this to a parent who needs it.",
+    26,
+    0.476
+   ]
+  ]
+ },
+ "V08": {
+  "dir": "brag-output-2026-09-29-tiny-ceo",
+  "old_vo_end": 33.4,
+  "old_dur": 34.6,
+  "tempo": 1.04,
+  "lines": [
+   [
+    "fluent",
+    "Your five-year-old wants passive income.",
+    0,
+    0.04
+   ],
+   [
+    "surprised",
+    "His portfolio? Three crayons.",
+    3,
+    0.472
+   ],
+   [
+    "fluent",
+    "You gave him your phone.",
+    5.5,
+    0.379
+   ],
+   [
+    "happy",
+    "Your feed came free.",
+    7.8,
+    0.415
+   ],
+   [
+    "fluent",
+    "Home loans.",
+    9.5,
+    0.237
+   ],
+   [
+    "fluent",
+    "Anti-ageing.",
+    10.7,
+    0.654
+   ],
+   [
+    "fluent",
+    "Hustle culture.",
+    11.9,
+    0.334
+   ],
+   [
+    "happy",
+    "Brilliant.",
+    13.2,
+    0.485
+   ],
+   [
+    "fluent",
+    "Nursery by day.",
+    14.2,
+    0.294
+   ],
+   [
+    "fluent",
+    "Midlife crisis by night.",
+    15.8,
+    0.408
+   ],
+   [
+    "fluent",
+    "Meet, Cheeko.",
+    18,
+    0.432
+   ],
+   [
+    "happy",
+    "Stories. Questions. Play.",
+    19.7,
+    0.528
+   ],
+   [
+    "fluent",
+    "No videos. No feed. No ads.",
+    22,
+    0.113
+   ],
+   [
+    "happy",
+    "Let them ask why the moon follows them.",
+    24.5,
+    0.593
+   ],
+   [
+    "fluent",
+    "Not why their portfolio is down.",
+    27.6,
+    0.474
+   ],
+   [
+    "happy",
+    "Cheeko. More childhood.",
+    30.2,
+    0.406
+   ],
+   [
+    "happy",
+    "Link in bio.",
+    32.3,
+    0.174
+   ]
+  ]
+ },
+ "V09": {
+  "dir": "brag-output-2026-09-29-tiny-adults",
+  "old_vo_end": 35.4,
+  "old_dur": 37.5,
+  "tempo": 1.1,
+  "voices": {
+   "1": "English_Strong-WilledBoy",
+   "2": "English_Strong-WilledBoy",
+   "18": "English_Strong-WilledBoy",
+   "3": "English_PlayfulGirl",
+   "4": "English_PlayfulGirl",
+   "13": "English_PlayfulGirl",
+   "5": "English_UpsetGirl",
+   "6": "English_UpsetGirl",
+   "7": "English_SadTeen",
+   "8": "English_SadTeen",
+   "14": "English_SadTeen",
+   "15": "English_SadTeen",
+   "9": "English_Soft-spokenGirl"
+  },
+  "_voices": "Narrator = top-level voice (sped up by tempo). Kids: Corporate = Strong-WilledBoy, Influencer = PlayfulGirl, News = UpsetGirl, WhatsApp Uncle = SadTeen, Burnt-out = Soft-spokenGirl.",
+  "derived": {
+   "14": "chipmunk of line 08 (Funny Voice on Cheeko): ffmpeg asetrate x1.5, made by the V07 work/chipmunk step, not recorded"
+  },
+  "lines": [
+   [
+    "happy",
+    "A seven-year-old's birthday party!",
+    0.1,
+    0.1
+   ],
+   [
+    "fluent",
+    "Can't play tag, bro. Back-to-back calls.",
+    2.9,
+    0.25
+   ],
+   [
+    "calm",
+    "Let's circle back after cake.",
+    5.0,
+    0.1
+   ],
+   [
+    "surprised",
+    "Nobody touch the cake! Content first.",
+    6.7,
+    0.2
+   ],
+   [
+    "happy",
+    "Hi guys, welcome back to my channel!",
+    8.6,
+    0.1
+   ],
+   [
+    "angry",
+    "Breaking news! World War Three starts tomorrow!",
+    10.3,
+    0.2
+   ],
+   [
+    "happy",
+    "My source? A reel I saw!",
+    12.8,
+    0.1
+   ],
+   [
+    "calm",
+    "Also, cold water after 7 pm is banned in Japan.",
+    14.1,
+    0.2
+   ],
+   [
+    "fluent",
+    "Forward to ten groups.",
+    17.0,
+    0.1
+   ],
+   [
+    "sad",
+    "(sighs) I'm six and I need a vacation.",
+    18.5,
+    0.2
+   ],
+   [
+    "calm",
+    "Kids stay kids when you give them kid things.",
+    21.0,
+    0.35
+   ],
+   [
+    "surprised",
+    "Give them grown-up things, and you get this.",
+    23.4,
+    0.15
+   ],
+   [
+    "happy",
+    "Cheeko!",
+    26.0,
+    0.35
+   ],
+   [
+    "surprised",
+    "Cheeko, why is the sky blue?",
+    27.1,
+    0.2
+   ],
+   [
+    "fluent",
+    "Forward to ten groups!",
+    29.0,
+    0.2
+   ],
+   [
+    "happy",
+    "(laughs) Do it again!",
+    30.2,
+    0.1
+   ],
+   [
+    "happy",
+    "Made for kids.",
+    31.4,
+    0.2
+   ],
+   [
+    "happy",
+    "Not tiny adults.",
+    32.4,
+    0.1
+   ],
+   [
+    "happy",
+    "Okay fine, tag is way more fun!",
+    33.6,
+    0.3
+   ]
+  ],
+  "voices_tempo": 1.12
+ }
+}

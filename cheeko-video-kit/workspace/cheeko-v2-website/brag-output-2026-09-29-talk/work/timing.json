@@ -1,0 +1,90 @@
+{
+ "vid": "V11",
+ "dur": 26.84,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 4.621,
+   "spk": "N",
+   "text": "Why is the sky blue? Why do cats purr? Why, why, why?",
+   "show": "Why is the sky blue? Why do cats purr? Why, why, why?",
+   "emoji": {
+    "why?": "🤔"
+   },
+   "hl": []
+  },
+  {
+   "s": 4.921,
+   "e": 6.658,
+   "spk": "N",
+   "text": "Press the knob and ask Cheeko.",
+   "show": "Press the knob and ask Cheeko.",
+   "emoji": {
+    "Cheeko": "🦊"
+   },
+   "hl": [
+    "Press"
+   ]
+  },
+  {
+   "s": 6.958,
+   "e": 8.612,
+   "spk": "kid",
+   "text": "Cheeko, why is the sky blue?",
+   "show": "Cheeko, why is the sky blue?",
+   "emoji": {
+    "blue?": "🌤️"
+   },
+   "hl": []
+  },
+  {
+   "s": 9.612,
+   "e": 14.507,
+   "spk": "cheeko",
+   "text": "Great question! Sunlight bounces off tiny bits of air, and blue bounces the most!",
+   "show": "Great question! Sunlight bounces off tiny bits of air, and blue bounces the most!",
+   "emoji": {
+    "most!": "☀️"
+   },
+   "hl": []
+  },
+  {
+   "s": 14.907,
+   "e": 17.183,
+   "spk": "N",
+   "text": "And it answers in your family's language.",
+   "show": "And it answers in your family's language.",
+   "emoji": {
+    "language": "💬"
+   },
+   "hl": [
+    "family's"
+   ]
+  },
+  {
+   "s": 17.483,
+   "e": 21.046,
+   "spk": "N",
+   "text": "It only listens while the button is pressed. No camera, ever.",
+   "show": "It only listens while the button is pressed. No camera, ever.",
+   "emoji": {
+    "ever": "🔒"
+   },
+   "hl": [
+    "No",
+    "camera,"
+   ]
+  },
+  {
+   "s": 21.346,
+   "e": 23.435,
+   "spk": "N",
+   "text": "Ask anything. Cheeko!",
+   "show": "Ask anything. Cheeko!",
+   "emoji": {
+    "Cheeko!": "🦊"
+   },
+   "hl": []
+  }
+ ]
+}

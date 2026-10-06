@@ -1,0 +1,3 @@
+const TIMELINE={"new": [0.05, 1.65, 3.25, 4.75, 6.55, 8.55, 10.05, 11.85, 13.55, 15.35, 17.35, 19.85, 22.25, 23.55, 25.319, 26.82], "old": [0, 2, 3.6, 5, 7, 9.5, 11.2, 13, 15, 17, 19.5, 22, 24.5, 26, 29, 30.5], "dur": 26.82};
+const LINES=["Sound like your house?", "The morning rush.", "The waiting.", "The rainy-day blues.", "Make a little room for wonder.", "Meet Cheeko.", "Stories to listen to.", "Questions to explore.", "A little imagination.", "And a story before bed.", "Small moments. Shared adventures.", "Less screen. More childhood.", "Link in bio.", "Send this to a parent who needs it."];
+const LINE_ENDS=[1.2369999999999999, 2.622, 3.961, 6.183, 8.046000000000001, 9.493, 11.435, 13.231, 15.019, 16.914, 19.549000000000003, 21.744, 23.074, 25.319];
