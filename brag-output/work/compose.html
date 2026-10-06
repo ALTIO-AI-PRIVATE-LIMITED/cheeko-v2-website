@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800;900&family=Hanken+Grotesk:wght@600;800&family=Noto+Sans+Devanagari:wght@800&family=Noto+Sans+Kannada:wght@800&family=Noto+Sans+Tamil:wght@800&family=Noto+Sans+Telugu:wght@800&family=Noto+Sans+Bengali:wght@800&display=block">
+<style>
+:root{--brand:#F0521D;--sun:#FFC81A;--ink:#231A10;--tint:#FFF4E3;--cream:#FFF6E8;--mut:#7A6E5D;--green:#2F6B4F;--purple:#6C3DFF;--pink:#FFA9C9;
+  --disp:"Gabarito",sans-serif;--body:"Hanken Grotesk",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--tint)}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--tint)}
+.abs{position:absolute}
+.scene{position:absolute;inset:0;overflow:hidden;visibility:hidden}
+.disp{font-family:var(--disp);font-weight:900;letter-spacing:-.02em;line-height:1}
+.center{left:0;right:0;text-align:center}
+.kick{position:absolute;left:540px;top:250px;font-family:var(--disp);font-weight:800;font-size:50px;letter-spacing:.06em;text-transform:uppercase;padding:16px 40px;border-radius:99px;white-space:nowrap}
+.head{position:absolute;left:0;right:0;top:360px;text-align:center;font-size:124px}
+.head span{display:inline-block}
+.conf{position:absolute;left:0;top:0;width:22px;height:14px;border-radius:3px}
+/* hook */
+#h-dev{width:461px;height:780px;left:309px;top:560px;z-index:3;filter:drop-shadow(0 30px 40px rgba(35,26,16,.22));transform-origin:50% 100%}
+#h-card{width:292px;height:409px;left:311px;object-fit:cover;border-radius:28px;border:9px solid #fff;box-shadow:0 20px 40px rgba(35,26,16,.2);z-index:2}
+#h-l1{top:1400px;font-size:110px;color:var(--ink)}
+#h-l2{top:1515px;font-size:110px;color:var(--brand)}
+/* cards */
+.fan{width:300px;height:420px;object-fit:cover;border-radius:26px;border:9px solid #fff;box-shadow:0 22px 44px rgba(35,26,16,.3);left:390px;top:880px;transform-origin:50% 120%}
+/* talk */
+.char{position:absolute;filter:drop-shadow(0 24px 30px rgba(35,26,16,.25))}
+.bub{position:absolute;background:#fff;color:var(--ink);font-family:var(--disp);font-weight:900;font-size:110px;width:170px;height:170px;border-radius:50% 50% 50% 12%;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(35,26,16,.2)}
+/* imagine */
+.pol{position:absolute;width:560px;padding:20px 20px 80px;background:#fff;border-radius:18px;box-shadow:0 26px 50px rgba(0,0,0,.45)}
+.pol img{width:100%;height:390px;object-fit:cover;border-radius:8px;display:block}
+.pol p{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-family:var(--disp);font-weight:800;font-size:32px;color:var(--ink)}
+/* games */
+.gchip{position:absolute;background:#fff;color:var(--ink);font-family:var(--disp);font-weight:800;font-size:44px;padding:18px 34px;border-radius:99px;white-space:nowrap;box-shadow:0 12px 26px rgba(0,0,0,.2)}
+/* languages */
+.glass{position:absolute;width:250px;height:250px;border-radius:44px;background:rgba(255,255,255,.14);border:3px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;font-family:"Gabarito","Noto Sans Devanagari","Noto Sans Kannada","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Bengali",sans-serif;font-weight:800;font-size:150px;color:#fff;text-shadow:0 6px 16px rgba(0,0,0,.25)}
+/* radio */
+.eqb{position:absolute;width:44px;border-radius:22px;background:var(--brand);bottom:0}
+#onair{position:absolute;left:540px;top:1500px;font-family:var(--disp);font-weight:800;font-size:40px;letter-spacing:.14em;color:#fff;background:var(--brand);border-radius:99px;padding:14px 34px}
+/* funny */
+.wob{display:inline-block;font-family:var(--disp);font-weight:900;font-size:170px;color:var(--ink)}
+/* parent */
+#p-photo{left:90px;top:680px;width:900px;height:860px;border-radius:48px;overflow:hidden;box-shadow:0 30px 60px rgba(35,26,16,.3)}
+#p-photo img{width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+/* manifesto */
+.man{font-size:160px;color:#fff;line-height:1.05}
+.hl{position:relative;display:inline-block;z-index:0;color:var(--ink)}
+.hl b{position:absolute;left:-.12em;right:-.12em;top:.08em;bottom:.02em;background:var(--sun);border-radius:.16em;z-index:-1;transform-origin:left center}
+/* outro */
+#o-logo{left:330px;top:190px;width:420px}
+#o-dev{width:340px;height:576px;left:370px;top:430px;z-index:3;filter:drop-shadow(0 30px 40px rgba(35,26,16,.22))}
+.oc{width:230px;height:322px;object-fit:cover;border-radius:22px;border:8px solid #fff;box-shadow:0 18px 36px rgba(35,26,16,.2);left:425px;top:470px;z-index:2;transform-origin:50% 110%}
+#o-h{top:1060px;font-size:108px;color:var(--ink)}
+#o-price{top:1300px;font-size:88px;color:var(--brand)}
+#o-sub{top:1405px;font-family:var(--body);font-weight:800;font-size:38px;color:var(--mut)}
+#o-pill{left:540px;top:1480px;background:var(--brand);color:#fff;font-family:var(--disp);font-weight:800;font-size:50px;padding:24px 62px;border-radius:99px;box-shadow:0 16px 34px rgba(240,82,29,.35)}
+</style></head>
+<body><div id="stage">
+
+<!-- HOOK -->
+<div class="scene" id="hook" style="background:var(--tint);visibility:visible">
+  <img class="abs" id="h-card" src="../../assets/img/live/card-storytime.jpg">
+  <img class="abs" id="h-dev" src="../../assets/img/device_live.png">
+  <div class="abs center disp" id="h-l1">Insert a card.</div>
+  <div class="abs center disp" id="h-l2">Stories play!</div>
+  <div id="h-conf"></div>
+</div>
+
+<!-- F1 cards -->
+<div class="scene" id="f1" style="background:var(--brand)">
+  <div class="kick" style="background:var(--sun);color:var(--ink)">In the box</div>
+  <div class="head disp" style="color:#fff"><span>10 story cards</span></div>
+  <img class="abs fan" src="../../assets/img/live/card-lava.jpg">
+  <img class="abs fan" src="../../assets/img/live/card-playsing.jpg">
+  <img class="abs fan" src="../../assets/img/live/card-ravi.jpg">
+  <img class="abs fan" src="../../assets/img/live/card-clever.jpg">
+  <img class="abs fan" src="../../assets/img/live/card-storytime.jpg">
+</div>
+
+<!-- F2 talk -->
+<div class="scene" id="f2" style="background:var(--sun)">
+  <div class="kick" style="background:var(--ink);color:var(--sun)">Talk</div>
+  <div class="head disp" style="color:var(--ink)"><span>Ask anything.</span></div>
+  <img class="char" id="t-fox" src="../../assets/img/live/char-cheeko.png" style="left:80px;top:760px;width:560px">
+  <img class="char" id="t-bee" src="../../assets/img/live/char-quizzy.png" style="left:560px;top:900px;width:470px">
+  <div class="bub" id="t-b1" style="left:430px;top:640px">?</div>
+  <div class="bub" id="t-b2" style="left:800px;top:760px;background:var(--brand);color:#fff">!</div>
+</div>
+
+<!-- F3 imagine -->
+<div class="scene" id="f3" style="background:var(--ink)">
+  <div class="kick" style="background:var(--sun);color:var(--ink)">Imagine</div>
+  <div class="head disp" style="color:var(--cream)"><span>Say it. See it.</span></div>
+  <div class="pol" id="i1" style="left:70px;top:620px"><img src="../../assets/img/imagine/im-05.jpg"><p>“a tiger riding a bicycle”</p></div>
+  <div class="pol" id="i2" style="left:450px;top:900px"><img src="../../assets/img/imagine/im-07.jpg"><p>“an auto rickshaw to the moon”</p></div>
+  <div class="pol" id="i3" style="left:150px;top:1180px"><img src="../../assets/img/imagine/im-17.jpg"><p>“a robot cooking dosa”</p></div>
+</div>
+
+<!-- F4 games -->
+<div class="scene" id="f4" style="background:var(--purple)">
+  <div class="kick" style="background:var(--sun);color:var(--ink)">Games</div>
+  <div class="head disp" style="color:#fff"><span>8 games,<br>all offline</span></div>
+  <img class="char" id="g-fox" src="../../assets/img/live/menu-games.png" style="left:250px;top:780px;width:580px">
+  <div class="gchip" style="left:60px;top:680px">Animal Sounds</div>
+  <div class="gchip" style="left:700px;top:760px">Numbers</div>
+  <div class="gchip" style="left:40px;top:1200px">Space</div>
+  <div class="gchip" style="left:760px;top:1230px">Jump</div>
+  <div class="gchip" style="left:420px;top:1480px">Trace</div>
+</div>
+
+<!-- F5 languages -->
+<div class="scene" id="f5" style="background:var(--green)">
+  <div class="kick" style="background:var(--sun);color:var(--ink)">Languages</div>
+  <div class="head disp" style="color:#fff"><span>English +<br>10 Indian</span></div>
+  <div class="glass" style="left:115px;top:760px">अ</div>
+  <div class="glass" style="left:415px;top:760px">ಅ</div>
+  <div class="glass" style="left:715px;top:760px">அ</div>
+  <div class="glass" style="left:115px;top:1060px">అ</div>
+  <div class="glass" style="left:415px;top:1060px">অ</div>
+  <div class="glass" style="left:715px;top:1060px;background:var(--sun);color:var(--ink);text-shadow:none">A</div>
+</div>
+
+<!-- F6 radio -->
+<div class="scene" id="f6" style="background:var(--tint)">
+  <div class="kick" style="background:var(--ink);color:var(--sun)">Radio</div>
+  <div class="head disp" style="color:var(--ink)"><span>Kid-safe<br>channels</span></div>
+  <img class="char" id="r-fox" src="../../assets/img/live/menu-radio.png" style="left:250px;top:720px;width:580px">
+  <div class="abs" id="r-eqL" style="left:80px;top:1000px;width:200px;height:320px"></div>
+  <div class="abs" id="r-eqR" style="left:800px;top:1000px;width:200px;height:320px"></div>
+  <div id="onair">● ON AIR</div>
+</div>
+
+<!-- F7 funny voice -->
+<div class="scene" id="f7" style="background:var(--pink)">
+  <div class="kick" style="background:var(--ink);color:var(--pink)">Funny Voice</div>
+  <div class="head disp" style="color:var(--ink)"><span>Instant giggles</span></div>
+  <img class="char" id="v-fox" src="../../assets/img/live/menu-funny.png" style="left:230px;top:760px;width:620px">
+  <div class="abs center" id="v-word" style="top:1440px"></div>
+</div>
+
+<!-- F8 parent app -->
+<div class="scene" id="f8" style="background:#fff">
+  <div class="kick" style="background:var(--brand);color:#fff">Parent app</div>
+  <div class="head disp" style="color:var(--ink)"><span>You see<br>everything</span></div>
+  <div class="abs" id="p-photo"><img src="../../assets/img/live/s2-manage-content.jpg"></div>
+</div>
+
+<!-- manifesto -->
+<div class="scene" id="man" style="background:var(--brand)">
+  <div class="abs center disp man" id="m1" style="top:520px">No video.</div>
+  <div class="abs center disp man" id="m2" style="top:690px">No feed.</div>
+  <div class="abs center disp man" id="m3" style="top:860px">No ads.</div>
+  <div class="abs center disp man" id="m4" style="top:1080px"><span class="hl">All play.<b id="m-hl"></b></span></div>
+</div>
+
+<!-- outro -->
+<div class="scene" id="out" style="background:var(--tint)">
+  <img class="abs" id="o-logo" src="../../assets/img/logo.png">
+  <img class="abs oc" id="o-c1" src="../../assets/img/live/card-clever.jpg">
+  <img class="abs oc" id="o-c2" src="../../assets/img/live/card-ravi.jpg">
+  <img class="abs oc" id="o-c3" src="../../assets/img/live/card-storytime.jpg">
+  <img class="abs" id="o-dev" src="../../assets/img/device_live.png">
+  <div class="abs center disp" id="o-h">Less screen,<br>more <span class="hl">childhood.<b id="o-hl"></b></span></div>
+  <div class="abs center disp" id="o-price">₹5,999</div>
+  <div class="abs center" id="o-sub">Device + 10 cards · Free delivery across India</div>
+  <div class="abs" id="o-pill">cheekoai.in</div>
+  <div id="o-conf"></div>
+</div>
+
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const Q = (sel, root=document) => [...root.querySelectorAll(sel)];
+const clamp = (x,a=0,b=1) => Math.min(b, Math.max(a, x));
+const prog = (t,a,b) => clamp((t-a)/(b-a));
+const eOut = x => 1 - Math.pow(1-x, 3);
+const eBack = x => { const c=2.2, d=c+1; return 1 + d*Math.pow(x-1,3) + c*Math.pow(x-1,2); };
+const lerp = (a,b,x) => a + (b-a)*x;
+function pop(el, t, t0, dur=.35, base='') {
+  const p = prog(t, t0, t0+dur);
+  el.style.opacity = clamp(p*3);
+  el.style.transform = `${base} scale(${lerp(.3, 1, eBack(p))})`;
+}
+function rise(el, t, t0, dur=.3, dy=60, base='') {
+  const p = eOut(prog(t, t0, t0+dur));
+  el.style.opacity = p; el.style.transform = `${base} translateY(${(1-p)*dy}px)`;
+}
+// deterministic confetti
+function seeded(s){ return () => (s = (s*16807) % 2147483647) / 2147483647; }
+const COLORS = ['#F0521D','#FFC81A','#6C3DFF','#2F6B4F','#FFA9C9','#FFFFFF'];
+function makeConf(host, n, seed) {
+  const r = seeded(seed); const parts = [];
+  for (let i=0;i<n;i++) {
+    const d = document.createElement('div'); d.className='conf';
+    d.style.background = COLORS[i % COLORS.length]; host.appendChild(d);
+    const a = -Math.PI/2 + (r()-.5)*2.2, v = 900 + r()*1400;
+    parts.push({ d, vx: Math.cos(a)*v, vy: Math.sin(a)*v, spin: (r()-.5)*1400, w: .6 + r()*.8 });
+  }
+  return parts;
+}
+function drawConf(parts, t, t0, x0, y0) {
+  const dt = t - t0;
+  for (const p of parts) {
+    if (dt < 0 || dt > 2.6) { p.d.style.opacity = 0; continue; }
+    const drag = (1 - Math.exp(-dt*1.6)) / 1.6;
+    const x = x0 + p.vx*drag, y = y0 + p.vy*drag + 900*dt*dt*.5;
+    p.d.style.opacity = clamp((2.6-dt)/.5);
+    p.d.style.transform = `translate(${x}px,${y}px) rotate(${p.spin*dt}deg) scale(${p.w}, ${Math.cos(dt*9+p.spin)})`;
+  }
+}
+const hookConf = makeConf($('h-conf'), 60, 11);
+const outConf = makeConf($('o-conf'), 110, 29);
+
+// timeline (120 BPM: 1 beat = .5s)
+const F = ['f1','f2','f3','f4','f5','f6','f7','f8'];
+const T0 = { f1:2.5, f2:4, f3:5.5, f4:7, f5:8.5, f6:10, f7:11.5, f8:13, man:14.5, out:17 };
+const ORDER = ['hook', ...F, 'man', 'out'];
+const DIRS = [[1,0],[-1,0],[0,1],[1,0],[0,-1],[-1,0],[0,1],[1,0],[0,1],[0,1]];
+const IN = .28;
+
+window.render = function(t) {
+  // scene slide-ins: each new scene slides over the previous one
+  ORDER.forEach((id, i) => {
+    const el = $(id);
+    if (id === 'hook') { el.style.visibility = t < T0.f1 + IN ? 'visible' : 'hidden'; return; }
+    const t0 = T0[id], next = ORDER[i+1];
+    const on = t >= t0 && (!next || t < T0[next] + IN);
+    el.style.visibility = on ? 'visible' : 'hidden';
+    el.style.zIndex = i;
+    const p = eOut(prog(t, t0, t0 + IN));
+    const [dx, dy] = DIRS[i-1];
+    el.style.transform = `translate(${(1-p)*dx*1080}px, ${(1-p)*dy*1920}px) rotate(${(1-p)*dx*6}deg)`;
+  });
+
+  /* hook */
+  {
+    const p = prog(t, 0, .5);
+    const y = lerp(-480, 334, p*p);   // accelerate into the slot, land on beat 1
+    const b = t > .5 ? Math.sin(prog(t,.5,.8)*Math.PI) * -40 * (1-prog(t,.5,.8)) : 0;
+    $('h-card').style.top = (y + b) + 'px';
+    $('h-card').style.transform = `rotate(${lerp(14, 0, p)}deg)`;
+    const q = prog(t, .5, .75), sq = 1 + Math.sin(q*Math.PI) * .06;
+    $('h-dev').style.transform = `scale(${2-sq}, ${sq})`;
+    pop($('h-l1'), t, .6);
+    pop($('h-l2'), t, 1.0);
+    $('h-l2').style.transform += ` rotate(${Math.sin(t*6)*2}deg)`;
+    drawConf(hookConf, t, .5, 530, 640);
+  }
+
+  /* scene heads: kicker + headline pop in after the slide */
+  ORDER.slice(1, 9).forEach(id => {
+    const s = $(id), t0 = T0[id];
+    pop(s.querySelector('.kick'), t, t0 + .12, .3, 'translateX(-50%)');
+    pop(s.querySelector('.head span'), t, t0 + .2, .35);
+  });
+
+  /* f1 cards fan out */
+  Q('#f1 .fan').forEach((el, i) => {
+    const p = eBack(prog(t, 2.5 + .3 + i*.06, 2.5 + .7 + i*.06));
+    const ang = (i - 2) * 16, dx = (i - 2) * 120;
+    el.style.opacity = clamp(prog(t, 2.75 + i*.06, 2.85 + i*.06));
+    el.style.transform = `translateX(${dx*p}px) rotate(${ang*p}deg) translateY(${(1-clamp(p))*500}px)`;
+  });
+
+  /* f2 talk */
+  pop($('t-fox'), t, 4.3, .4);
+  pop($('t-bee'), t, 4.45, .4);
+  pop($('t-b1'), t, 4.6, .3, `rotate(${Math.sin(t*8)*6}deg)`);
+  pop($('t-b2'), t, 4.85, .3, `rotate(${Math.sin(t*8+1)*6}deg)`);
+  $('t-fox').style.transform += ` translateY(${Math.sin(t*9)*8}px)`;
+  $('t-bee').style.transform += ` translateY(${Math.sin(t*9+2)*12}px)`;
+
+  /* f3 imagine: three wishes drop in on the beat */
+  [['i1',5.8,-6],['i2',6.3,5],['i3',6.8,-3]].forEach(([id,t0,r]) => pop($(id), t, t0, .35, `rotate(${r}deg)`));
+
+  /* f4 games */
+  pop($('g-fox'), t, 7.25, .4, `rotate(${Math.sin(t*10)*3}deg)`);
+  Q('#f4 .gchip').forEach((el, i) => pop(el, t, 7.4 + i*.1, .3, `rotate(${[-6,5,4,-5,3][i]}deg)`));
+
+  /* f5 languages */
+  Q('#f5 .glass').forEach((el, i) => pop(el, t, 8.75 + i*.08, .3, `rotate(${Math.sin(t*5+i)*4}deg)`));
+
+  /* f6 radio: bouncing equaliser */
+  pop($('r-fox'), t, 10.25, .4, `rotate(${Math.sin(t*2*Math.PI)*4}deg)`);
+  ['r-eqL','r-eqR'].forEach((id, k) => {
+    const host = $(id);
+    if (!host.children.length) for (let i=0;i<4;i++){ const b=document.createElement('i'); b.className='eqb'; b.style.left=(i*52)+'px'; host.appendChild(b); }
+    [...host.children].forEach((b, i) => {
+      const h = .25 + .75*Math.abs(Math.sin(t*Math.PI*2 + i*1.3 + k));
+      b.style.height = (320*h*clamp(prog(t, 10.35, 10.6))) + 'px';
+    });
+  });
+  pop($('onair'), t, 10.5, .3, 'translateX(-50%)');
+  $('onair').style.opacity *= (Math.floor(t*4) % 2 ? .75 : 1);
+
+  /* f7 funny voice: wobbly hellooo! */
+  pop($('v-fox'), t, 11.75, .4);
+  $('v-fox').style.transform += ` rotate(${Math.sin(t*14)*4}deg)`;
+  const w = $('v-word');
+  if (!w.children.length) 'hellooo!'.split('').forEach(c => { const s=document.createElement('span'); s.className='wob'; s.textContent=c; w.appendChild(s); });
+  [...w.children].forEach((s, i) => {
+    const p = prog(t, 11.9 + i*.04, 12.1 + i*.04);
+    s.style.opacity = p;
+    s.style.transform = `translateY(${Math.sin(t*12 - i*.8)*26 + (1-eOut(p))*80}px) rotate(${Math.sin(t*10 - i)*10}deg)`;
+  });
+
+  /* f8 parent app */
+  rise($('p-photo'), t, 13.25, .35, 200);
+  $('p-photo').querySelector('img').style.transform = `scale(${lerp(1.12, 1.02, prog(t, 13.25, 14.8))})`;
+
+  /* manifesto */
+  ['m1','m2','m3'].forEach((id, i) => pop($(id), t, 14.75 + i*.25, .25));
+  pop($('m4'), t, 15.5, .35, `rotate(${-3*clamp(prog(t,15.5,15.85))}deg)`);
+  $('m-hl').style.transform = `scaleX(${eOut(prog(t, 15.55, 15.85))})`;
+
+  /* outro */
+  rise($('o-logo'), t, 17.2, .35, 40);
+  pop($('o-dev'), t, 17.3, .4);
+  const f = eBack(prog(t, 17.55, 17.95));
+  [[-22,-150],[22,150],[0,0]].forEach(([r, x], i) => {
+    const el = $('o-c'+(i+1));
+    el.style.opacity = clamp(prog(t, 17.5, 17.6));
+    el.style.transform = `translateX(${x*f}px) rotate(${r*f}deg) translateY(${(1-clamp(f))*150}px)`;
+  });
+  rise($('o-h'), t, 17.7, .35, 50);
+  $('o-hl').style.transform = `scaleX(${eOut(prog(t, 18.0, 18.3))})`;
+  pop($('o-price'), t, 18.5, .35);
+  rise($('o-sub'), t, 18.75, .3, 24);
+  pop($('o-pill'), t, 19.0, .35, 'translateX(-50%)');
+  $('o-pill').style.transform += ` scale(${1 + .04*Math.max(0, Math.sin((t-19.5)*Math.PI*2))*(t>19.5?1:0)})`;
+  drawConf(outConf, t, 18.0, 540, 700);
+};
+
+window.ready = (async () => {
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(i => i.decode().catch(()=>{})));
+  await document.fonts.load('900 100px Gabarito');
+  await document.fonts.load('800 40px Gabarito');
+  await document.fonts.load('800 38px "Hanken Grotesk"');
+  for (const f of ['Devanagari','Kannada','Tamil','Telugu','Bengali']) await document.fonts.load(`800 150px "Noto Sans ${f}"`, 'अಅஅఅঅ');
+  window.render(0);
+  return true;
+})();
+</script>
+</body></html>
