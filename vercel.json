@@ -3,5 +3,11 @@
   "framework": null,
   "installCommand": "",
   "buildCommand": "",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/api/web-demo/:path*",
+      "destination": "https://ota.cheekoai.in/toy/web-demo/:path*"
+    }
+  ]
 }

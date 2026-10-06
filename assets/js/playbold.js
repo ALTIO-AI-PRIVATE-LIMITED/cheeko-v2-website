@@ -30,16 +30,29 @@
 
   /* Film: click-to-play (no preload — India mobile first) */
   var filmFrames = document.querySelectorAll("[data-film]");
+  function pauseOtherFilms(currentVideo) {
+    filmFrames.forEach(function (otherFrame) {
+      var otherVideo = otherFrame.querySelector("video");
+      if (otherVideo && otherVideo !== currentVideo && !otherVideo.paused) otherVideo.pause();
+    });
+  }
+  function syncFilmTrack(track) {
+    if (!track) return;
+    var playing = false;
+    filmFrames.forEach(function (frame) {
+      var video = frame.querySelector("video");
+      if (video && !video.paused && !video.ended) playing = true;
+    });
+    if (playing) track.classList.add("paused");
+    else track.classList.remove("paused");
+  }
   filmFrames.forEach(function (frame) {
     var video = frame.querySelector("video");
     var badge = frame.querySelector(".play-badge");
     var track = frame.closest(".press-track");
     if (!video || !badge) return;
     badge.addEventListener("click", function () {
-      filmFrames.forEach(function (otherFrame) {
-        var otherVideo = otherFrame.querySelector("video");
-        if (otherVideo && otherVideo !== video && !otherVideo.paused) otherVideo.pause();
-      });
+      pauseOtherFilms(video);
       video.setAttribute("controls", "controls");
       video.muted = false;
       if (track) track.classList.add("paused");
@@ -48,23 +61,26 @@
         playRequest.catch(function () {
           badge.classList.remove("hidden");
           video.load();
-          if (track) track.classList.remove("paused");
+          syncFilmTrack(track);
         });
       }
     });
     video.addEventListener("playing", function () {
+      pauseOtherFilms(video);
       badge.classList.add("hidden");
       if (track) track.classList.add("paused");
     });
     video.addEventListener("pause", function () {
-      if (track) track.classList.remove("paused");
+      badge.classList.remove("hidden");
+      video.removeAttribute("controls");
+      syncFilmTrack(track);
     });
     video.addEventListener("ended", function () {
-      if (track) track.classList.remove("paused");
       badge.classList.remove("hidden");
       video.removeAttribute("controls");
       video.currentTime = 0;
       video.load();
+      syncFilmTrack(track);
     });
   });
 
@@ -105,12 +121,57 @@
     });
   });
 
-  /* Card flip on tap */
+  /* Card deck: native touch scrolling, mouse drag, and tap-to-flip. */
   var deckTrain = document.querySelector(".decktrain");
-  document.querySelectorAll(".fcardw").forEach(function (w) {
+  if (deckTrain) {
+    var dragStart = null;
+    var dragged = false;
+    deckTrain.addEventListener("dragstart", function (event) { event.preventDefault(); });
+    deckTrain.addEventListener("pointerdown", function (event) {
+      if (event.pointerType !== "mouse" || event.button !== 0) return;
+      dragStart = { x: event.clientX, scrollLeft: deckTrain.scrollLeft, pointerId: event.pointerId };
+      dragged = false;
+    });
+    deckTrain.addEventListener("pointermove", function (event) {
+      if (!dragStart || event.pointerId !== dragStart.pointerId) return;
+      var distance = event.clientX - dragStart.x;
+      if (!dragged && Math.abs(distance) < 6) return;
+      if (!dragged) {
+        dragged = true;
+        deckTrain.classList.add("dragging");
+        deckTrain.setPointerCapture(event.pointerId);
+      }
+      deckTrain.scrollLeft = dragStart.scrollLeft - distance;
+      event.preventDefault();
+    });
+    function finishDrag() {
+      dragStart = null;
+      deckTrain.classList.remove("dragging");
+      setTimeout(function () { dragged = false; }, 0);
+    }
+    deckTrain.addEventListener("pointerup", finishDrag);
+    deckTrain.addEventListener("pointercancel", finishDrag);
+    deckTrain.addEventListener("click", function (event) {
+      if (!dragged) return;
+      event.preventDefault();
+      event.stopPropagation();
+    }, true);
+  }
+  document.querySelectorAll(".decktrain .fcardw").forEach(function (w) {
+    function flipCard() {
+      var next = !w.classList.contains("flipped");
+      deckTrain.querySelectorAll('[data-card-index="' + w.dataset.cardIndex + '"]').forEach(function (card) {
+        card.classList.toggle("flipped", next);
+        if (!card.hasAttribute("aria-hidden")) card.setAttribute("aria-pressed", next ? "true" : "false");
+      });
+    }
     w.addEventListener("click", function () {
-      w.classList.toggle("flipped");
-      if (deckTrain) deckTrain.classList.toggle("hold", !!document.querySelector(".fcardw.flipped"));
+      flipCard();
+    });
+    w.addEventListener("keydown", function (event) {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      flipCard();
     });
   });
 

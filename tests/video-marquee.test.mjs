@@ -64,7 +64,7 @@ test("video cards have a visible manual scroll control as well as auto movement"
   assert.match(css, /\.press-marquee\{[^}]*overflow-x:auto/);
   assert.match(css, /\.press-scroll\{/);
   assert.doesNotMatch(css, /@keyframes pressflow/);
-  assert.match(html, /press-rail\.js\?v=\d+" defer><\/script>\s*<script src="assets\/js\/playbold\.js/);
+  assert.match(html, /press-rail\.js\?v=\d+" defer><\/script>\s*(?:<script src="assets\/js\/card-rail\.js\?v=\d+" defer><\/script>\s*)?<script src="assets\/js\/playbold\.js/);
   assert.doesNotMatch(css, /\.press-caption\{/);
 });
 
@@ -85,12 +85,12 @@ test("CDN playback is unmuted and failed play requests recover", () => {
   assert.match(js, /playRequest\.catch\([\s\S]*?video\.load\(\)/);
   assert.match(js, /vplayer\.play\(\)/);
   assert.doesNotMatch(js, /CheekoMediaCdn/);
-  assert.match(js, /video\.addEventListener\("ended"[\s\S]*?track\.classList\.remove\("paused"\)/);
+  assert.match(js, /video\.addEventListener\("ended"[\s\S]*?syncFilmTrack\(track\)/);
 });
 
 test("updated marquee assets use fresh cache versions", () => {
   const cssVersion = html.match(/assets\/css\/premium\.css\?v=(\d+)/);
   const scriptVersion = html.match(/assets\/js\/playbold\.js\?v=(\d+)/);
   assert.ok(cssVersion && Number(cssVersion[1]) >= 66);
-  assert.ok(scriptVersion && Number(scriptVersion[1]) >= 12);
+  assert.ok(scriptVersion && Number(scriptVersion[1]) >= 20);
 });

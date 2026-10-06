@@ -107,6 +107,7 @@ section{padding:76px 0}
 .hero-photo .photo-card{transform:none;border-radius:28px}
 .hero-note{position:absolute;left:-12px;bottom:26px;transform:rotate(-2deg);background:#FFFFFF;border:none;border-radius:16px 16px 16px 4px;padding:11px 16px;font-family:var(--disp);font-weight:800;font-size:13.5px;box-shadow:var(--shadow-sm);color:var(--brand)}
 .burst{position:absolute;pointer-events:none;opacity:.9}
+@media (max-width:1024px){.burst{display:none}}
 
 /* ---------- trust row ---------- */
 .trust-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:-34px;position:relative;z-index:2}
@@ -477,15 +478,17 @@ a.schip:hover{transform:translateY(-2px);border-color:var(--brand)}
 
 
 /* ---------- the 10-card flip deck ---------- */
-.decktrain{position:relative;overflow:hidden;padding:6px 0;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%)}
-.deckrail{display:flex;gap:16px;width:max-content;animation:decktrain 78s linear infinite;will-change:transform}
-.decktrain:hover .deckrail,.decktrain.hold .deckrail{animation-play-state:paused}
-@keyframes decktrain{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 8px))}}
-.fcardw{flex:0 0 clamp(146px,14.5vw,206px);perspective:900px;aspect-ratio:1276/2008;animation:cardbob 4.5s ease-in-out infinite}
+.decktrain{position:relative;overflow-x:auto;overflow-y:hidden;padding:6px 0 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;cursor:grab}
+.decktrain::-webkit-scrollbar{display:none}
+.decktrain.dragging{cursor:grabbing;scroll-snap-type:none}
+.decktrain:focus-visible,.fcardw:focus-visible{outline:3px solid var(--brand);outline-offset:-3px;border-radius:18px}
+.deckrail{display:flex;gap:16px;width:max-content}
+.fcardw{flex:0 0 clamp(146px,14.5vw,206px);perspective:900px;aspect-ratio:1276/2008;scroll-snap-align:start;animation:cardbob 4.5s ease-in-out infinite}
 .fcardw:nth-child(2n){animation-delay:.7s}.fcardw:nth-child(3n){animation-delay:1.3s}.fcardw:nth-child(5n){animation-delay:2s}
 @keyframes cardbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 .flip{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.7,.3,1);cursor:pointer}
-.fcardw:hover .flip,.fcardw.flipped .flip{transform:rotateY(180deg)}
+.fcardw.flipped .flip{transform:rotateY(180deg)}
+@media (hover:hover) and (pointer:fine){.fcardw:hover .flip{transform:rotateY(180deg)}}
 .fface{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
 .fface.front{background:#FFFFFF;border:1px solid var(--line)}
 .fface.front.full-art{display:block;padding:0}
@@ -497,13 +500,13 @@ a.schip:hover{transform:translateY(-2px);border-color:var(--brand)}
 .fface.front .fmeta{padding:10px 12px;background:#FFFFFF}
 .fface.front .fmeta .serial{font-size:9px}
 .fface.front .fmeta b{font-family:var(--disp);font-weight:800;font-size:13.5px;display:block;line-height:1.25}
-.fface.back{background:var(--ink);color:#FFF6E8;transform:rotateY(180deg);padding:16px 15px;justify-content:space-between}
+.fface.back{background:var(--ink);color:#FFF6E8;transform:rotateY(180deg);padding:16px 15px;justify-content:center}
 .fface.back b{font-family:var(--disp);font-weight:800;font-size:14px}
 .fface.back p{font-size:11.8px;line-height:1.5;font-weight:500;color:#D8CDB9;margin:6px 0 0}
 .fface.back .serial{color:var(--sun);font-size:9px}
-@media (max-width:920px){.fcardw{flex:0 0 152px}.deckrail{gap:14px;animation-duration:62s}@keyframes decktrain{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 7px))}}}
+@media (max-width:920px){.fcardw{flex:0 0 152px}.deckrail{gap:14px}}
 @media (max-width:600px){.fcardw{flex:0 0 138px}}
-@media (prefers-reduced-motion:reduce){.fcardw{animation:none}.deckrail{animation:none;width:auto;overflow-x:auto;padding-bottom:10px}.decktrain{overflow:visible;-webkit-mask-image:none;mask-image:none}}
+@media (prefers-reduced-motion:reduce){.fcardw{animation:none}.decktrain{scroll-snap-type:x proximity}}
 /* ---------- how-to-use: three beats ---------- */
 .howsteps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;max-width:1040px;margin:0 auto}
 .hbeat{display:flex;flex-direction:column;align-items:center;gap:16px}
@@ -803,9 +806,10 @@ body.plocked{overflow:hidden}
 .hsend{margin:0;font-family:var(--disp);font-weight:800;font-size:clamp(20px,2.4vw,26px);color:var(--brand);line-height:1.2}
 .hsend small{display:block;margin-top:6px;font-family:var(--body);font-weight:600;font-size:14.5px;color:var(--mut);line-height:1.45}
 @media (max-width:820px){
-  .hsgrid{grid-template-columns:1fr;gap:34px}
-  .hsstage{max-width:250px}
-  .hsnote{max-width:340px;margin:0 auto;text-align:center}
+  .hsgrid{grid-template-columns:1fr;gap:48px}
+  .hsstage,.hsnote{width:100%;max-width:340px}
+  .hsnote{margin:0 auto;text-align:center}
+  #parents .grid2{max-width:340px;margin-inline:auto}
   .hschips{justify-content:center;gap:6px}
   .hschips span{font-size:12px;padding:7px 11px}
   .hsend{font-size:19px}
