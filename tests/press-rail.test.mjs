@@ -19,7 +19,7 @@ function emitter(fields = {}) {
   };
 }
 
-function fixture(reducedMotion = false) {
+function fixture(reducedMotion = false, roundScroll = false) {
   const frames = [];
   const target = emitter();
   let clock = 0;
@@ -43,6 +43,13 @@ function fixture(reducedMotion = false) {
     contains() { return false; },
   });
   const range = emitter({ value: "500", contains() { return false; } });
+  if (roundScroll) {
+    let scrollLeft = 0;
+    Object.defineProperty(rail, "scrollLeft", {
+      get() { return scrollLeft; },
+      set(value) { scrollLeft = Math.floor(value); },
+    });
+  }
   createPressRail(rail, range, {
     reducedMotion,
     requestFrame(callback) { frames.push(callback); },
@@ -69,6 +76,18 @@ test("the video rail auto-advances through repeated cards and wraps seamlessly",
   app.frame(100);
   assert.ok(app.rail.scrollLeft >= 500 && app.rail.scrollLeft < 600);
 });
+
+for (const refreshRate of [60, 120]) {
+  test(`auto scrolling retains its speed at ${refreshRate} Hz when scroll positions round to pixels`, () => {
+    const app = fixture(false, true);
+    app.frame(0);
+    for (let frame = 1; frame <= refreshRate; frame++) {
+      app.frame(frame * 1000 / refreshRate);
+    }
+    assert.ok(Math.abs(app.rail.scrollLeft - 1022) <= 1,
+      `expected about 22 pixels of movement, got ${app.rail.scrollLeft - 1000}`);
+  });
+}
 
 test("the visible slider scrolls manually and auto motion resumes after interaction", () => {
   const app = fixture();
