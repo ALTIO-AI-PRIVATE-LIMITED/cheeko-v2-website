@@ -391,7 +391,6 @@
       ["a house made of chocolate", "im-06"],
       ["a dinosaur wearing a birthday hat", "im-08"],
       ["a castle in the clouds", "im-13"],
-      ["my school bag walking to school by itself", "im-15"],
       ["a rocket going past a purple planet", "im-11"],
       ["a banana wearing shoes", "im-18"]
     ];
