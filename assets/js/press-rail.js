@@ -19,6 +19,7 @@
     var hovered = false;
     var focused = false;
     var previousFrame = null;
+    var scrollRemainder = 0;
 
     if (!reducedMotion) {
       var leadingCopy = track.children[0].cloneNode(true);
@@ -92,7 +93,11 @@
     function tick(time) {
       if (previousFrame !== null && !pageHidden() && !pointerHeld && !hovered &&
         !focused && now() >= heldUntil && !track.classList.contains("paused") && step) {
-        rail.scrollLeft += Math.min(64, Math.max(0, time - previousFrame)) * 0.022;
+        // Retain movement that browsers round away when setting scrollLeft.
+        var nextScroll = rail.scrollLeft + scrollRemainder +
+          Math.min(64, Math.max(0, time - previousFrame)) * 0.022;
+        rail.scrollLeft = nextScroll;
+        scrollRemainder = nextScroll - rail.scrollLeft;
         normalize();
         syncRange();
       }
