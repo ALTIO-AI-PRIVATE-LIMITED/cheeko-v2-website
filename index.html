@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800;900&family=Gochi+Hand&family=Hanken+Grotesk:wght@400;600;800&family=Patrick+Hand&family=Spline+Sans+Mono:wght@500;700&display=swap" />
 <link rel="preload" as="image" href="assets/img/live/hero-2.jpg" />
 <link rel="preload" as="image" href="assets/img/live/hero-3.jpg" />
-<link rel="stylesheet" href="assets/css/premium.css?v=75" />
+<link rel="stylesheet" href="assets/css/premium.css?v=76" />
 <link rel="stylesheet" href="assets/css/voice-card.css?v=4" />
 <link rel="stylesheet" href="assets/cheeko-device-animation/device-anim.css?v=1" />
 <link rel="stylesheet" href="assets/cheeko-device-animation/device-mobile.css?v=1" />
@@ -244,7 +244,18 @@
 </section>
 
 <!-- brand band -->
-<div class="band-brand">
+<div class="band-brand mf-band">
+  <svg class="mf-doodle d1" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="22"/><path d="M12 26c12 6 28 6 40 0M12 38c12-6 28-6 40 0M32 10c-7 12-7 32 0 44"/></svg>
+  <svg class="mf-doodle d2" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 6l7.6 15.6 17.2 2.5-12.4 12.1 2.9 17.1L32 45.2l-15.3 8.1 2.9-17.1L7.2 24.1l17.2-2.5z"/></svg>
+  <svg class="mf-doodle d3" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 6L52 28 32 50 12 28z"/><path d="M32 6v44M12 28h40"/><path d="M32 50c-3 4 2 6-1 9"/></svg>
+  <svg class="mf-doodle d4" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="34" width="20" height="20" rx="3"/><rect x="34" y="34" width="20" height="20" rx="3"/><rect x="21" y="12" width="20" height="20" rx="3"/><path d="M15 44h6M44 40v8M31 18v8"/></svg>
+  <svg class="mf-doodle d5" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 30L58 8 44 56 32 38z"/><path d="M58 8L32 38"/></svg>
+  <svg class="mf-doodle d6" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 46V14l30-6v32"/><circle cx="14" cy="46" r="6"/><circle cx="44" cy="40" r="6"/></svg>
+  <ul class="mf-nos" aria-hidden="true">
+    <li><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="26" rx="5"/><path d="M20 17v12l10-6z"/><path d="M16 42h16"/><path class="x" d="M5 5l38 38"/></svg><span>No video</span></li>
+    <li><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="13" y="4" width="22" height="40" rx="5"/><path d="M19 13h10M19 20h10M19 27h10M19 34h6"/><path class="x" d="M5 5l38 38"/></svg><span>No feed</span></li>
+    <li><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20v8h7l15 10V10L15 20z"/><path d="M36 18c3 3 3 9 0 12M40 14c5 5 5 15 0 20"/><path class="x" d="M5 5l38 38"/></svg><span>No ads</span></li>
+  </ul>
   <p class="manifesto">No video. No feed. No ads.<br><span class="y">All play.</span></p>
 </div>
 
@@ -283,6 +294,9 @@
       <h2 class="disp" style="font-size:clamp(22px,2.6vw,30px);">Explore the magic behind the cards.</h2>
       <p class="sub" style="margin:8px 0 0;">Ten in the box. Tap any card to flip it.</p>
     </div>
+    <div class="deckwrap">
+    <button class="deckarrow prev" type="button" aria-label="Previous cards"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="deckarrow next" type="button" aria-label="Next cards"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
     <div class="decktrain" role="region" aria-label="Explore Cheeko cards" tabindex="0">
       <div class="deckrail">
       <div class="fcardw rv" role="button" tabindex="0" aria-pressed="false"><div class="flip">
@@ -326,6 +340,7 @@
         <div class="fface back"><div><span class="serial">YOURS</span><b style="display:block;margin-top:4px;">Grandma's voice, on demand</b><p>Record 10 clips. Play them forever.</p></div></div>
       </div></div>
       </div>
+    </div>
     </div>
     <p class="rv" style="text-align:center;margin-top:18px;"><a href="cards.html" style="color:var(--brand);font-weight:800;font-size:15px;">See what is inside every card →</a></p>
     <div class="nocard rv">
@@ -548,7 +563,7 @@
 <section id="parents">
   <div class="wrap">
     <div class="grid2">
-      <div class="photo-card rv" style="max-width:440px;"><img src="assets/img/live/s2-manage-content.jpg" alt="The Cheeko parent app showing activity and controls" loading="lazy" /></div>
+      <div class="photo-card rv"><img src="assets/img/live/s2-manage-content.jpg" alt="The Cheeko parent app showing activity and controls" loading="lazy" /></div>
       <div class="stack">
         <span class="eyebrow">Safety you can check</span>
         <h2 class="disp">You hold the keys.</h2>
@@ -750,7 +765,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
 <script src="assets/js/press-rail.js?v=2" defer></script>
-<script src="assets/js/card-rail.js?v=1" defer></script>
+<script src="assets/js/card-rail.js?v=2" defer></script>
 <script src="assets/js/playbold.js?v=22" defer></script>
 <script src="assets/js/voice-ptt.js?v=2" defer></script>
 <script src="assets/js/cheeko-talk.js?v=14" defer></script>
