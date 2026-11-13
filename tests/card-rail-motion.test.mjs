@@ -3,71 +3,112 @@ import test from "node:test";
 import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
-const { createCardRail } = require("../assets/js/card-rail.js");
+const { createCardRail, cardsPerView } = require("../assets/js/card-rail.js");
 
-function makeRail() {
+function makeRail(count = 10, width = 1100) {
   const handlers = new Map();
-  const cards = Array.from({ length: 3 }, (_, index) => ({
+  const arrows = new Map();
+  const cards = Array.from({ length: count }, (_, index) => ({
     index,
     dataset: {},
     offsetLeft: index * 110,
     classList: { add() {} },
     setAttribute() {},
     removeAttribute() {},
-    cloneNode() { return { ...this, offsetLeft: (index + 3) * 110 }; },
+    cloneNode() { return { ...this }; },
   }));
   const track = {
     children: cards,
+    style: { vars: {}, setProperty(name, value) { this.vars[name] = value; } },
     appendChild(card) { this.children.push(card); },
+  };
+  const wrap = {
+    querySelectorAll() { return []; },
+    querySelector(sel) {
+      const key = sel.includes("prev") ? "prev" : "next";
+      return { addEventListener(_, cb) { arrows.set(key, cb); } };
+    },
   };
   const rail = {
     scrollLeft: 0,
+    clientWidth: width,
+    scrollWidth: width * 4,
+    parentNode: wrap,
     querySelector() { return track; },
     addEventListener(name, callback) { handlers.set(name, callback); },
     contains() { return false; },
   };
-  return { rail, track, handlers };
+  return { rail, track, handlers, arrows };
 }
 
-test("cards move right to left and wrap to the same visual position", () => {
-  const { rail, track } = makeRail();
-  let frame;
+/* Runs queued animation frames until the animation finishes. */
+function frameRunner() {
+  let queue = [];
   let time = 0;
-  createCardRail(rail, {
-    requestFrame(callback) { frame = callback; },
-    now() { return time; },
-    eventTarget: { addEventListener() {} },
-    pageHidden() { return false; },
+  return {
+    requestFrame(cb) { queue.push(cb); },
+    flush() {
+      while (queue.length) {
+        const q = queue; queue = []; time += 600;
+        q.forEach((cb) => cb(time));
+      }
+    },
+  };
+}
+
+test("cards are sized so only whole cards fit the row", () => {
+  assert.equal(cardsPerView(1152), 6);
+  assert.equal(cardsPerView(800), 5);
+  assert.equal(cardsPerView(600), 3);
+  assert.equal(cardsPerView(350), 2);
+  const { rail, track } = makeRail(10, 1100);
+  const frames = frameRunner();
+  const api = createCardRail(rail, {
+    requestFrame: frames.requestFrame, gap: () => 16,
+    eventTarget: { addEventListener() {} }, pageHidden: () => false,
   });
-  assert.equal(track.children.length, 6);
-  frame(0);
-  frame(1000);
-  assert.ok(rail.scrollLeft > 0);
-  rail.scrollLeft = 329;
-  frame(1100);
-  assert.ok(rail.scrollLeft >= 0 && rail.scrollLeft < 30);
+  api.stop();
+  assert.equal(track.style.vars["--fcw"], ((1100 - 16 * 5) / 6).toFixed(2) + "px");
+  assert.equal(track.children.length, 20);
 });
 
-test("interaction pauses movement and reduced motion leaves a manual row", () => {
-  const { rail, track, handlers } = makeRail();
-  let frame;
-  let time = 0;
-  createCardRail(rail, {
-    requestFrame(callback) { frame = callback; },
-    now() { return time; },
-    eventTarget: { addEventListener() {} },
-    pageHidden() { return false; },
+test("arrows move exactly one card and loop in both directions", () => {
+  const { rail, arrows } = makeRail(10, 1100);
+  const frames = frameRunner();
+  const api = createCardRail(rail, {
+    requestFrame: frames.requestFrame, gap: () => 16,
+    eventTarget: { addEventListener() {} }, pageHidden: () => false,
   });
-  frame(0);
+  api.stop();
+  const step = (1100 - 16 * 5) / 6 + 16;
+  arrows.get("next")(); frames.flush();
+  assert.ok(Math.abs(rail.scrollLeft - step) < 0.01);
+  arrows.get("prev")(); frames.flush();
+  assert.ok(Math.abs(rail.scrollLeft) < 0.01);
+  arrows.get("prev")(); frames.flush();
+  assert.ok(Math.abs(rail.scrollLeft - step * 9) < 0.01);
+  arrows.get("next")(); frames.flush();
+  assert.ok(Math.abs(rail.scrollLeft) < 0.01, "wraps back to the first card");
+});
+
+test("autoplay advances only when nobody is interacting; reduced motion leaves a manual row", () => {
+  const { rail, handlers } = makeRail(10, 1100);
+  const frames = frameRunner();
+  let time = 0;
+  const api = createCardRail(rail, {
+    requestFrame: frames.requestFrame, gap: () => 16, now: () => time,
+    eventTarget: { addEventListener() {} }, pageHidden: () => false,
+  });
+  api.stop();
   handlers.get("mouseenter")();
-  frame(1000);
+  api.tick(); frames.flush();
   assert.equal(rail.scrollLeft, 0);
   handlers.get("mouseleave")();
-  time = 3000;
-  frame(2000);
+  api.tick(); frames.flush();
   assert.ok(rail.scrollLeft > 0);
 
-  const reduced = makeRail();
-  createCardRail(reduced.rail, { reducedMotion: true });
-  assert.equal(reduced.track.children.length, 3);
+  const reduced = makeRail(10, 1100);
+  const r = createCardRail(reduced.rail, { reducedMotion: true, gap: () => 16, eventTarget: { addEventListener() {} } });
+  r.stop();
+  assert.equal(reduced.track.children.length, 10);
 });
