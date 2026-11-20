@@ -10,11 +10,11 @@ When your kid is bored, don't hand over a smartphone. Hand them Cheeko and a sta
 
 | Time | Beat | On screen |
 |---|---|---|
-| 0.0–3.0 | **The problem** | The site's own photo of a kid glued to a phone (desaturated). **"Kid bored?"**, then a red ✕ stamps onto the phone with a shake: **"Skip the phone."** |
-| 3.0–5.5 | **The swap** | A sun-yellow wipe. The device pops in and a stack of real cards fans out behind it. Pill "Instead" + **"Hand them Cheeko."** |
-| 5.5–13.0 | **Insert a card…** (three rounds, each landing on the beat) | Storytime Adventures drops into the slot. The screen switches from the Talk home menu to the card's story scene (as in the site's photo of a Rhymes card playing), then the story world blooms out of the device, and confetti bursts: **"…a story plays."** Then Play & Sing Along ("**…a rhyme starts.**") and Floor is Lava ("**…a game begins.**"). Each old card pops back out and flies away. |
-| 13.0–16.0 | **Proof** | **"Insert. Play. Repeat."** (site copy) with three real photos from the shoot: a boy inserting a card, a girl dancing, a girl giggling. "Real device. Real kids." |
-| 16.0–22.5 | **Outro** | Logo, device, cards and confetti. **Less screen, more childhood.** "₹5,999 · Device + 10 cards · Free delivery across India", then **cheekoai.in**. |
+| 0.0-3.0 | **The problem** | The site's own photo of a kid glued to a phone (desaturated). **"Kid bored?"**, then a red ✕ stamps onto the phone with a shake: **"Skip the phone."** |
+| 3.0-5.5 | **The swap** | A sun-yellow wipe. The device pops in and a stack of real cards fans out behind it. Pill "Instead" + **"Hand them Cheeko."** |
+| 5.5-13.0 | **Insert a card...** (three rounds, each landing on the beat) | Tales of Kindness drops into the slot. The screen switches from the Talk home menu to the card's story scene (as in the site's photo of a Rhymes card playing), then the story world blooms out of the device, and confetti bursts: **"...a story plays."** Then Play & Sing Along ("**...a rhyme starts.**") and Floor is Lava ("**...a game begins.**"). Each old card pops back out and flies away. |
+| 13.0-16.0 | **Proof** | **"Insert. Play. Repeat."** (site copy) with three real photos from the shoot: a boy inserting a card, a girl dancing, a girl giggling. "Real device. Real kids." |
+| 16.0-22.5 | **Outro** | Logo, device, cards and confetti. **Less screen, more childhood.** "₹5,999 · Device + 10 cards · Free delivery across India", then **cheekoai.in**. |
 
 ## Sound
 
@@ -25,3 +25,12 @@ The soundtrack is original and synthesised for this video. It opens with a dull,
 - The copy comes from `index.html` or the site's art: "Insert a card and stories play", "Insert. Play. Repeat.", "Real device. Real kids.", and each card's own category (Storytime = stories, Play & Sing Along = rhymes, Floor is Lava = game).
 - There is no "once" on the price.
 - The site's ship date is left out because it has already passed.
+
+
+**Updated 2026-09-28:** every card is now the real shipping card from `assets/img/cards-shipping/` (Ravi's Drive folder); story worlds use the card's own art, blurred.
+
+**Updated 2026-09-28 (current firmware UI):** the device now shows the real current screens rendered from firmware b05c95d (FW 2.4.311, `assets/img/device_current.png` and `assets/img/fw-screens/`) instead of the old dark Talk screen.
+
+**Updated 2026-09-30 (full refresh, v2kit):** V02: new device (v2kit.js), the three cards glide into the back pocket (no drop), the fan is now the A4 card wheel round Cheeko, proof photo 3 is DSC03232 (the old one showed the grill), end card with the pocket card. Kit: `marketing/tools/v2kit/` (patches/ has the per-video edits).
+
+**Updated 2026-09-30 (voiceover):** Ravi: music only looked dull, so it now has a voiceover (English_Upbeat_Woman 1.05x, lines in marketing/tools/vo_lines.json following the on-screen headlines). build_vo.py -> work/warp.json -> the warp script in compose.html (v2kit/add_warp.py); synth.py keeps the groove on a steady grid and ducks the music under the voice (v2kit/patches/synth_vo_v01_v02.py).

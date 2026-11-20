@@ -1,0 +1,219 @@
+{
+ "idea": "06-a-for-apple",
+ "id": "V37",
+ "level": 1,
+ "nLevels": 3,
+ "mode": "letter",
+ "theme": {
+  "bg": "chalk",
+  "pals": [
+   [
+    "#2F6B4F",
+    "#173D2C"
+   ],
+   [
+    "#2E5E7A",
+    "#163246"
+   ],
+   [
+    "#5A3E7A",
+    "#2D1D42"
+   ],
+   [
+    "#7A4E2E",
+    "#3D2716"
+   ],
+   [
+    "#2E7A6E",
+    "#163D37"
+   ]
+  ],
+  "trans": "blinds",
+  "enter": "flip",
+  "fx": "stars",
+  "knob": "✏️",
+  "bar": [
+   "#FFFFFF",
+   "#DDE3EA"
+  ],
+  "music": "piano"
+ },
+ "answer": 3,
+ "dur": 83.13,
+ "n": 9,
+ "t1": "A for",
+ "t2": "Apple!",
+ "head": "What starts with <span>this</span>?",
+ "chips": [
+  [
+   "A",
+   "Look at the letter"
+  ],
+  [
+   "3",
+   "3 seconds"
+  ],
+  [
+   "!",
+   "Say the word"
+  ]
+ ],
+ "outroText": [
+  "Super!",
+  "Level 1 done!",
+  "Play Level 2!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.8646041666666666,
+  "rules": 5.242875,
+  "go": 8.193666666666667
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 10.017,
+   "label": "A for Apple",
+   "pill": "A for Apple",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 4.669,
+    "name": 4.919
+   },
+   "dur": 7.269,
+   "img": "fruit_apple",
+   "letter": "A"
+  },
+  {
+   "k": 2,
+   "start": 17.286,
+   "label": "B for Ball",
+   "pill": "B for Ball",
+   "times": {
+    "tick0": 2.019,
+    "reveal": 5.019,
+    "name": 5.269
+   },
+   "dur": 7.619,
+   "img": "ball",
+   "letter": "B"
+  },
+  {
+   "k": 3,
+   "start": 24.905,
+   "label": "C for Cat",
+   "pill": "C for Cat",
+   "times": {
+    "tick0": 1.588,
+    "reveal": 4.588,
+    "name": 4.838
+   },
+   "dur": 7.188,
+   "img": "cat",
+   "letter": "C"
+  },
+  {
+   "k": 4,
+   "start": 32.094,
+   "label": "D for Dog",
+   "pill": "D for Dog",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 4.708,
+    "name": 4.958
+   },
+   "dur": 7.308,
+   "img": "dog",
+   "letter": "D"
+  },
+  {
+   "k": 5,
+   "start": 39.402,
+   "label": "E for Elephant",
+   "pill": "E for Elephant",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 4.596,
+    "name": 4.846
+   },
+   "dur": 7.196,
+   "img": "elephant",
+   "letter": "E"
+  },
+  {
+   "k": 6,
+   "start": 46.598,
+   "label": "F for Fish",
+   "pill": "F for Fish",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 4.584,
+    "name": 4.834
+   },
+   "dur": 7.184,
+   "img": "fish",
+   "letter": "F"
+  },
+  {
+   "k": 7,
+   "start": 53.782,
+   "label": "G for Grapes",
+   "pill": "G for Grapes",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 4.53,
+    "name": 4.78
+   },
+   "dur": 7.13,
+   "img": "fruit_grapes",
+   "letter": "G"
+  },
+  {
+   "k": 8,
+   "start": 60.912,
+   "label": "H for Hat",
+   "pill": "H for Hat",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 4.58,
+    "name": 4.83
+   },
+   "dur": 7.18,
+   "img": "hat",
+   "letter": "H"
+  },
+  {
+   "k": 9,
+   "start": 68.092,
+   "label": "I for Ice cream",
+   "pill": "I for Ice cream",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 4.851,
+    "name": 5.101
+   },
+   "dur": 7.451,
+   "img": "ice_cream",
+   "letter": "I"
+  }
+ ],
+ "outroStart": 75.543,
+ "outro": {
+  "done": 75.89254166666666,
+  "howmany": 77.371625,
+  "next": 79.05975,
+  "bye": 80.69429166666666
+ },
+ "paths": {
+  "fruit_apple": "../images/fruit_apple.jpg",
+  "ball": "../images/ball.jpg",
+  "cat": "../images/cat.jpg",
+  "dog": "../images/dog.jpg",
+  "elephant": "../images/elephant.jpg",
+  "fish": "../images/fish.jpg",
+  "fruit_grapes": "../images/fruit_grapes.jpg",
+  "hat": "../images/hat.jpg",
+  "ice_cream": "../images/ice_cream.jpg"
+ }
+}

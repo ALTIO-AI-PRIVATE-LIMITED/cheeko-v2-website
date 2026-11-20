@@ -1,0 +1,242 @@
+{
+ "_about": "V31 image generation spend, dev box image lab (keys on the box). Prices from the provider price sheet Ravi shared on 2026-10-09.",
+ "price_per_image_usd": {
+  "seedream-5.0-flash": 0.018,
+  "seedream-5.0-lite": 0.035,
+  "seedream-5.0-pro (<=2.61 MP)": 0.045,
+  "seedream-5.0-pro (>2.61 MP)": 0.09,
+  "kling-image-3.0 (1K or 2K)": 0.028,
+  "kling-image-3.0-omni (1K or 2K)": 0.028,
+  "kling-image-3.0-omni (4K)": 0.056,
+  "reference images": "Seedream Pro: first free, then 0.003 each; Flash and Lite: free; Kling: no separate charge"
+ },
+ "tests": [
+  {
+   "tag": "test_car_photo_seedream",
+   "model": "seedream-5.0-pro",
+   "size": "2368x1776",
+   "est_usd": 0.09
+  },
+  {
+   "tag": "test_car_toy_seedream",
+   "model": "seedream-5.0-pro",
+   "size": "2368x1776",
+   "est_usd": 0.09
+  },
+  {
+   "tag": "test_car_photo_kling",
+   "model": "kling-image-v3",
+   "size": "2K",
+   "tokens": 20000,
+   "est_usd": 0.028
+  },
+  {
+   "tag": "test_car_toy_kling",
+   "model": "kling-image-v3",
+   "size": "2K",
+   "tokens": 20000,
+   "est_usd": 0.028
+  },
+  {
+   "tag": "test2_car_toy_seedflash",
+   "model": "seedream-5.0-flash",
+   "size": "1536x1152",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "test2_car_photo_seedflash",
+   "model": "seedream-5.0-flash",
+   "size": "1536x1152",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "test2_car_toy_kling1k",
+   "model": "kling-image-v3",
+   "size": "1K",
+   "tokens": 20000,
+   "est_usd": 0.028
+  },
+  {
+   "tag": "ab_bus_noref",
+   "model": "seedream-5.0-flash",
+   "size": "1536x1152",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "ab_bus_ref",
+   "model": "seedream-5.0-flash",
+   "size": "1536x1152",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "ab_aeroplane_noref",
+   "model": "seedream-5.0-flash",
+   "size": "1536x1152",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "ab_aeroplane_ref",
+   "model": "seedream-5.0-flash",
+   "size": "1536x1152",
+   "est_usd": 0.018
+  }
+ ],
+ "spent_usd": 0.93,
+ "vehicles": [
+  {
+   "tag": "v03_truck",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v04_bicycle",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v05_motorbike",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v07_train",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v08_boat",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v09_auto_rickshaw",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v10_scooter",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v11_fire_engine",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v12_ambulance",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v13_police_car",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v14_helicopter",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v15_ship",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v16_tractor",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v17_school_bus",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v18_cycle_rickshaw",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v19_garbage_truck",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v20_hot_air_balloon",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v21_excavator",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v22_cement_mixer",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v23_crane",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v24_road_roller",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v25_bulldozer",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v26_rocket",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v27_submarine",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v28_tram",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v29_cable_car",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v30_hovercraft",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v05_motorbike_r2",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v12_ambulance_r2",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v16_tractor_r2",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  },
+  {
+   "tag": "v12_ambulance_r3",
+   "model": "seedream-5.0-flash",
+   "est_usd": 0.018
+  }
+ ]
+}

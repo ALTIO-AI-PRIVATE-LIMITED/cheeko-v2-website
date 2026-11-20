@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<!-- Ravi stories (V08, V27, V28): the kids' autoplay feed on the parent's iPhone, 5 screens stacked (393 x 852 pt each, rendered at 3x).
+     Made-up channels and rhyme videos (traditional rhymes only), no real brands or characters. The top 59 pt stay clear for the iOS
+     status bar the template draws. Render: node feedshot.mjs (scratchpad) -> feed.png -->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:393px;background:#000;font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;color:#fff}
+.s{position:relative;width:393px;height:852px;overflow:hidden}
+/* screen 0: a rhyme video with the autoplay countdown */
+.vid{position:absolute;top:59px;left:0;right:0;height:221px;background:linear-gradient(180deg,#7fd3ff,#c9f0ff 62%,#8bd66b 62%,#5fb84a);overflow:hidden}
+.vid .sun{position:absolute;right:28px;top:18px;font-size:44px}
+.vid .bus{position:absolute;left:120px;top:92px;font-size:96px}
+.vid .n{position:absolute;font-size:28px}
+.bar{position:absolute;left:0;right:0;bottom:0;height:4px;background:rgba(255,255,255,.35)}.bar i{display:block;height:100%;width:96%;background:#ff3b30}
+.cd{position:absolute;inset:0;background:rgba(0,0,0,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:15px}
+.ring{width:74px;height:74px;border-radius:50%;border:6px solid rgba(255,255,255,.3);border-top-color:#fff;border-right-color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800}
+.meta{position:absolute;top:292px;left:14px;right:14px}
+.meta h2{font-size:18px;line-height:1.25;font-weight:800}.meta p{font-size:13px;opacity:.7;margin-top:6px}
+.chan{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:14px;font-weight:700}.chan b{width:34px;height:34px;border-radius:50%;background:#ffcc00;display:flex;align-items:center;justify-content:center;font-size:18px}
+.auto{margin-left:auto;font-size:12px;font-weight:800;background:#1f1f22;padding:6px 10px;border-radius:99px}.auto em{font-style:normal;color:#34c759}
+.list{position:absolute;top:436px;left:14px;right:14px;display:flex;flex-direction:column;gap:12px}
+.row{display:flex;gap:12px;align-items:center}.th{width:150px;height:84px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:44px;position:relative;flex:none}
+.th small{position:absolute;right:6px;bottom:5px;font-size:11px;font-weight:700;background:rgba(0,0,0,.7);padding:1px 5px;border-radius:4px}
+.row div.t{font-size:14px;font-weight:700;line-height:1.3}.row div.t span{display:block;font-size:12px;font-weight:500;opacity:.65;margin-top:4px}
+/* screens 1-4: rhyme shorts, one after another */
+.short .emoji{position:absolute;left:0;right:0;text-align:center;font-size:170px;top:230px}
+.short .top{position:absolute;top:66px;left:0;right:0;display:flex;justify-content:center;gap:22px;font-weight:700;font-size:16px}.short .top span{opacity:.6}.short .top b{border-bottom:2px solid #fff;padding-bottom:4px}
+.side{position:absolute;right:12px;bottom:170px;display:flex;flex-direction:column;gap:18px;align-items:center;font-size:12px;font-weight:700}
+.side div{display:flex;flex-direction:column;align-items:center;gap:3px}.side em{font-style:normal;font-size:30px}
+.who{position:absolute;left:16px;right:80px;bottom:104px;font-size:14px;line-height:1.35}.who b{font-size:15px}
+.title{position:absolute;left:20px;right:78px;top:470px;text-align:center;font-weight:900;font-size:31px;line-height:1.1;text-shadow:0 3px 0 rgba(0,0,0,.25)}
+.next{position:absolute;left:16px;right:16px;bottom:44px;height:42px;border-radius:12px;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;gap:8px;font-weight:800;font-size:14px}
+.prog{position:absolute;left:0;right:0;bottom:30px;height:3px;background:rgba(255,255,255,.3)}.prog i{display:block;height:100%;background:#fff}
+</style></head><body>
+
+<!-- 0: a rhyme video ends, the next one is coming -->
+<div class="s" style="background:#0f0f10">
+  <div class="vid"><div class="sun">☀️</div><div class="bus">🚌</div><div class="n" style="left:40px;top:40px">🎵</div><div class="n" style="left:300px;top:110px">🎶</div>
+    <div class="bar"><i></i></div>
+    <div class="cd"><div class="ring">3</div>Next video in 3</div></div>
+  <div class="meta"><h2>Wheels on the Bus 🚌 | Nursery Rhymes for Kids</h2><p>48M views · 2 years ago</p>
+    <div class="chan"><b>🎈</b>Tiny Tunes TV<div class="auto">Autoplay <em>ON</em></div></div></div>
+  <div class="list">
+    <div class="row"><div class="th" style="background:linear-gradient(135deg,#ffb3d1,#ff6fa5)">🐘<small>3:12</small></div><div class="t">Baby Elephant Dance 🐘<span>Tiny Tunes TV · 12M views</span></div></div>
+    <div class="row"><div class="th" style="background:linear-gradient(135deg,#9be7ff,#3fb6ff)">🦆<small>2:45</small></div><div class="t">Five Little Ducks<span>Rhyme Planet · 31M views</span></div></div>
+    <div class="row"><div class="th" style="background:linear-gradient(135deg,#c6f58a,#5ccc3c)">🦖<small>4:02</small></div><div class="t">Colours Song with Dinos 🌈<span>Kiddo Beats · 9M views</span></div></div>
+    <div class="row"><div class="th" style="background:linear-gradient(135deg,#ffe38a,#ffb020)">🥚<small>8:30</small></div><div class="t">SURPRISE EGGS!!! 😱 Open them all<span>Toy Pop Kids · 22M views</span></div></div>
+  </div>
+</div>
+
+<!-- 1-4: shorts that never stop -->
+<div class="s short" style="background:linear-gradient(170deg,#ff7eb6 0%,#7a1f55 80%)">
+  <div class="top"><span>Following</span><b>For you</b></div><div class="emoji">🐘</div><div class="title">Baby Elephant Dance!</div>
+  <div class="side"><div><em>♥</em>1.2M</div><div><em>💬</em>8.4k</div><div><em>↗</em>Share</div></div>
+  <div class="who"><b>@tiny.tunes.tv</b><br>Dance with baby elephant 🐘🎵 #rhymes #kids</div><div class="prog"><i style="width:88%"></i></div></div>
+<div class="s short" style="background:linear-gradient(170deg,#4fc3ff 0%,#0b3d74 80%)">
+  <div class="top"><span>Following</span><b>For you</b></div><div class="emoji">🦆</div><div class="title">Five Little Ducks</div>
+  <div class="side"><div><em>♥</em>2.9M</div><div><em>💬</em>12k</div><div><em>↗</em>Share</div></div>
+  <div class="who"><b>@rhyme.planet</b><br>Went out one day 🦆🦆🦆 #nurseryrhymes</div><div class="prog"><i style="width:64%"></i></div></div>
+<div class="s short" style="background:linear-gradient(170deg,#8be05b 0%,#1f5e17 80%)">
+  <div class="top"><span>Following</span><b>For you</b></div><div class="emoji">🦖</div><div class="title">Dino Colours Song 🌈</div>
+  <div class="side"><div><em>♥</em>880k</div><div><em>💬</em>5.1k</div><div><em>↗</em>Share</div></div>
+  <div class="who"><b>@kiddo.beats</b><br>Red dino, blue dino 🦖 #learncolours</div><div class="prog"><i style="width:40%"></i></div></div>
+<div class="s short" style="background:linear-gradient(170deg,#ffc93c 0%,#8a4b00 80%)">
+  <div class="top"><span>Following</span><b>For you</b></div><div class="emoji">🥚</div><div class="title">SURPRISE EGGS!!! 😱</div>
+  <div class="side"><div><em>♥</em>4.4M</div><div><em>💬</em>31k</div><div><em>↗</em>Share</div></div>
+  <div class="who"><b>@toy.pop.kids</b><br>What's inside?? 🥚🎁 #surprise</div><div class="prog"><i style="width:20%"></i></div></div>
+</body></html>

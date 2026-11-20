@@ -1,0 +1,244 @@
+{
+ "idea": "12-sounds-around-the-house",
+ "id": "V43",
+ "level": 2,
+ "nLevels": 2,
+ "mode": "sound",
+ "theme": {
+  "bg": "home",
+  "pals": [
+   [
+    "#FFE3B3",
+    "#B5835A"
+   ],
+   [
+    "#D3F9D8",
+    "#9C7A54"
+   ],
+   [
+    "#E5DBFF",
+    "#8D6E4C"
+   ],
+   [
+    "#FFDEEB",
+    "#A47148"
+   ],
+   [
+    "#D0EBFF",
+    "#8B6B4A"
+   ]
+  ],
+  "trans": "curtain",
+  "enter": "pop",
+  "fx": "dots",
+  "knob": "🏠",
+  "bar": [
+   "#FFA94D",
+   "#FD7E14"
+  ],
+  "music": "soft"
+ },
+ "answer": 5,
+ "dur": 136.99,
+ "n": 10,
+ "t1": "Sounds Around",
+ "t2": "the House!",
+ "head": "What is that <span>sound</span>?",
+ "chips": [
+  [
+   "?",
+   "Listen closely"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Well done!",
+  "Level 2 done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.921520833333333,
+  "rules": 5.183916666666666,
+  "go": 7.653645833333333
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.477,
+   "label": "Washing machine",
+   "pill": "Washing machine",
+   "times": {
+    "snd0": 1.619,
+    "snd1": 4.219,
+    "tick0": 4.519,
+    "reveal": 9.519,
+    "name": 9.769
+   },
+   "dur": 12.119,
+   "img": "house_washer"
+  },
+  {
+   "k": 2,
+   "start": 21.596,
+   "label": "Keys",
+   "pill": "Keys",
+   "times": {
+    "snd0": 2.418,
+    "snd1": 4.678,
+    "tick0": 4.978,
+    "reveal": 9.978,
+    "name": 10.228
+   },
+   "dur": 12.578,
+   "img": "house_keys"
+  },
+  {
+   "k": 3,
+   "start": 34.173,
+   "label": "Zip",
+   "pill": "Zip",
+   "times": {
+    "snd0": 2.106,
+    "snd1": 3.615,
+    "tick0": 3.915,
+    "reveal": 8.915,
+    "name": 9.165
+   },
+   "dur": 11.515,
+   "img": "house_zip"
+  },
+  {
+   "k": 4,
+   "start": 45.688,
+   "label": "Scissors",
+   "pill": "Scissors",
+   "times": {
+    "snd0": 1.658,
+    "snd1": 3.398,
+    "tick0": 3.698,
+    "reveal": 8.698,
+    "name": 8.948
+   },
+   "dur": 11.298,
+   "img": "house_scissors"
+  },
+  {
+   "k": 5,
+   "start": 56.987,
+   "label": "Brushing teeth",
+   "pill": "Brushing teeth",
+   "times": {
+    "snd0": 1.546,
+    "snd1": 3.254,
+    "tick0": 3.554,
+    "reveal": 8.554,
+    "name": 8.804
+   },
+   "dur": 11.154,
+   "img": "house_brushing"
+  },
+  {
+   "k": 6,
+   "start": 68.141,
+   "label": "Rain",
+   "pill": "Rain",
+   "times": {
+    "snd0": 1.534,
+    "snd1": 4.134,
+    "tick0": 4.434,
+    "reveal": 9.434,
+    "name": 9.684
+   },
+   "dur": 12.034,
+   "img": "house_rain"
+  },
+  {
+   "k": 7,
+   "start": 80.175,
+   "label": "Sizzling dosa",
+   "pill": "Sizzling dosa",
+   "times": {
+    "snd0": 1.48,
+    "snd1": 4.08,
+    "tick0": 4.38,
+    "reveal": 9.38,
+    "name": 9.63
+   },
+   "dur": 11.98,
+   "img": "house_tawa"
+  },
+  {
+   "k": 8,
+   "start": 92.155,
+   "label": "Door creak",
+   "pill": "Door creak",
+   "times": {
+    "snd0": 1.53,
+    "snd1": 3.59,
+    "tick0": 3.89,
+    "reveal": 8.89,
+    "name": 9.14
+   },
+   "dur": 11.49,
+   "img": "house_creak"
+  },
+  {
+   "k": 9,
+   "start": 103.645,
+   "label": "Car horn",
+   "pill": "Car horn",
+   "times": {
+    "snd0": 1.659,
+    "snd1": 4.259,
+    "tick0": 4.559,
+    "reveal": 9.559,
+    "name": 9.809
+   },
+   "dur": 12.159,
+   "img": "house_horn"
+  },
+  {
+   "k": 10,
+   "start": 115.803,
+   "label": "Footsteps",
+   "pill": "Footsteps",
+   "times": {
+    "snd0": 1.801,
+    "snd1": 4.141,
+    "tick0": 4.441,
+    "reveal": 9.441,
+    "name": 9.691
+   },
+   "dur": 12.041,
+   "img": "house_footsteps"
+  }
+ ],
+ "outroStart": 127.844,
+ "outro": {
+  "done": 128.19397966666668,
+  "howmany": 130.19745883333334,
+  "next": 131.88558383333333,
+  "bye": 134.56131299999998
+ },
+ "paths": {
+  "house_washer": "../images/house_washer.jpg",
+  "house_keys": "../images/house_keys.jpg",
+  "house_zip": "../images/house_zip.jpg",
+  "house_scissors": "../images/house_scissors.jpg",
+  "house_brushing": "../images/house_brushing.jpg",
+  "house_rain": "../images/house_rain.jpg",
+  "house_tawa": "../images/house_tawa.jpg",
+  "house_creak": "../images/house_creak.jpg",
+  "house_horn": "../images/house_horn.jpg",
+  "house_footsteps": "../images/house_footsteps.jpg"
+ }
+}

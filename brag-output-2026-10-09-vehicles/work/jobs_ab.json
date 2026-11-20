@@ -1,0 +1,24 @@
+[
+ {
+  "tag": "ab_bus_noref",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered big blue city bus with many windows for a children's picture book, smooth glossy rounded shapes, the whole bus visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags."
+ },
+ {
+  "tag": "ab_bus_ref",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered big blue city bus with many windows for a children's picture book, smooth glossy rounded shapes, the whole bus visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the bus.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "ab_aeroplane_noref",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white passenger aeroplane with blue stripes, flying for a children's picture book, smooth glossy rounded shapes, the whole aeroplane visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags."
+ },
+ {
+  "tag": "ab_aeroplane_ref",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white passenger aeroplane with blue stripes, flying for a children's picture book, smooth glossy rounded shapes, the whole aeroplane visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the aeroplane.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ }
+]

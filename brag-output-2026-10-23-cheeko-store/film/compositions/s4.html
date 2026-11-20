@@ -1,0 +1,32 @@
+<!-- S4 quiz (21.05 to 24.6 s). Inside Cheeko's screen: the real Guess the Dinosaur Level 1, round 1 ("Here's the first one"),
+     the boy shouts "T-Rex!", cut to the reveal. Video 592 x 480 shown 1080 x 875.7 at y 230; its sound is in the mix. -->
+<template>
+  <style>
+    @font-face { font-family: 'Gabarito'; src: url('assets/fonts/Gabarito.woff2') format('woff2'); font-weight: 400 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #1E6B34; }
+    #s4-frame { position: absolute; left: 0; top: 230px; width: 1080px; height: 875.7px; overflow: hidden; }
+    #s4-frame video { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: fill; }
+    #s4-boy { position: absolute; left: 10px; top: 1060px; width: 590px; filter: drop-shadow(0 18px 26px rgba(0, 0, 0, .3)); }
+    #s4-bub { position: absolute; left: 560px; top: 1150px; background: #FFC81A; color: #231A10; font-family: 'Gabarito', sans-serif; font-weight: 900;
+      font-size: 96px; line-height: 1; padding: 26px 40px 30px; border-radius: 48px; box-shadow: 0 16px 32px rgba(0, 0, 0, .3); white-space: nowrap; }
+  </style>
+  <div data-hf-id="hf-q5j8" id="root" data-composition-id="s4" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-mljg" id="s4-frame">
+      <video data-hf-id="hf-d65c" id="s4-a" class="clip" data-start="0" data-duration="1.9" muted playsinline src="assets/video/dino_roundA.mp4"></video>
+      <video data-hf-id="hf-fz6o" id="s4-b" class="clip" data-start="1.9" data-duration="1.65" muted playsinline src="assets/video/dino_roundB.mp4"></video>
+    </div>
+    <img data-hf-id="hf-8i93" id="s4-boy" src="assets/img/st_a8-laugh-point.png" />
+    <div data-hf-id="hf-bb7v" id="s4-bub">T-Rex! 🦖</div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    // lands from the zoom through Cheeko's screen: slightly large, settles
+    tl.fromTo("#s4-frame", { scale: 1.18, transformOrigin: "50% 50%", filter: "blur(10px)" }, { scale: 1, filter: "blur(0px)", duration: .4, ease: "expo.out" }, 0);
+    // the boy pops up and shouts
+    tl.fromTo("#s4-boy", { y: 950, rotation: -6 }, { y: 0, rotation: 0, duration: .35, ease: "back.out(1.5)" }, 1.45);
+    tl.fromTo("#s4-bub", { scale: 0, rotation: -8, transformOrigin: "20% 80%" }, { scale: 1, rotation: -4, duration: .25, ease: "back.out(2)" }, 1.6);
+    tl.to("#s4-bub", { opacity: 0, filter: "blur(8px)", duration: .15, ease: "power2.in" }, 2.75);
+    window.__timelines["s4"] = tl;
+  </script>
+</template>

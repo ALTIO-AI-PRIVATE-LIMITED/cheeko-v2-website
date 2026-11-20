@@ -1,0 +1,244 @@
+{
+ "idea": "12-sounds-around-the-house",
+ "id": "V43",
+ "level": 1,
+ "nLevels": 2,
+ "mode": "sound",
+ "theme": {
+  "bg": "home",
+  "pals": [
+   [
+    "#FFE3B3",
+    "#B5835A"
+   ],
+   [
+    "#D3F9D8",
+    "#9C7A54"
+   ],
+   [
+    "#E5DBFF",
+    "#8D6E4C"
+   ],
+   [
+    "#FFDEEB",
+    "#A47148"
+   ],
+   [
+    "#D0EBFF",
+    "#8B6B4A"
+   ]
+  ],
+  "trans": "curtain",
+  "enter": "pop",
+  "fx": "dots",
+  "knob": "🏠",
+  "bar": [
+   "#FFA94D",
+   "#FD7E14"
+  ],
+  "music": "soft"
+ },
+ "answer": 4,
+ "dur": 128.75,
+ "n": 10,
+ "t1": "Sounds Around",
+ "t2": "the House!",
+ "head": "What is that <span>sound</span>?",
+ "chips": [
+  [
+   "?",
+   "Listen closely"
+  ],
+  [
+   "4",
+   "4 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Brilliant!",
+  "Level 1 done!",
+  "Play Level 2!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.921520833333333,
+  "rules": 5.299791666666666,
+  "go": 7.769520833333333
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.593,
+   "label": "Doorbell",
+   "pill": "Doorbell",
+   "times": {
+    "snd0": 1.619,
+    "snd1": 4.219,
+    "tick0": 4.519,
+    "reveal": 8.519,
+    "name": 8.769
+   },
+   "dur": 11.119,
+   "img": "house_doorbell"
+  },
+  {
+   "k": 2,
+   "start": 20.712,
+   "label": "Pressure cooker",
+   "pill": "Pressure cooker",
+   "times": {
+    "snd0": 2.418,
+    "snd1": 3.998,
+    "tick0": 4.298,
+    "reveal": 8.298,
+    "name": 8.548
+   },
+   "dur": 10.898,
+   "img": "pressure_cooker"
+  },
+  {
+   "k": 3,
+   "start": 31.609,
+   "label": "Mixer",
+   "pill": "Mixer",
+   "times": {
+    "snd0": 2.106,
+    "snd1": 4.706,
+    "tick0": 5.006,
+    "reveal": 9.006,
+    "name": 9.256
+   },
+   "dur": 11.606,
+   "img": "house_mixer"
+  },
+  {
+   "k": 4,
+   "start": 43.215,
+   "label": "Tap water",
+   "pill": "Tap water",
+   "times": {
+    "snd0": 1.658,
+    "snd1": 4.258,
+    "tick0": 4.558,
+    "reveal": 8.558,
+    "name": 8.808
+   },
+   "dur": 11.158,
+   "img": "house_tap"
+  },
+  {
+   "k": 5,
+   "start": 54.373,
+   "label": "Clock",
+   "pill": "Clock",
+   "times": {
+    "snd0": 1.546,
+    "snd1": 3.866,
+    "tick0": 4.166,
+    "reveal": 8.166,
+    "name": 8.416
+   },
+   "dur": 10.766,
+   "img": "clock"
+  },
+  {
+   "k": 6,
+   "start": 65.14,
+   "label": "Knock on the door",
+   "pill": "Knock on the door",
+   "times": {
+    "snd0": 1.534,
+    "snd1": 4.134,
+    "tick0": 4.434,
+    "reveal": 8.434,
+    "name": 8.684
+   },
+   "dur": 11.034,
+   "img": "house_knock"
+  },
+  {
+   "k": 7,
+   "start": 76.173,
+   "label": "Alarm clock",
+   "pill": "Alarm clock",
+   "times": {
+    "snd0": 1.48,
+    "snd1": 4.08,
+    "tick0": 4.38,
+    "reveal": 8.38,
+    "name": 8.63
+   },
+   "dur": 10.98,
+   "img": "house_alarm"
+  },
+  {
+   "k": 8,
+   "start": 87.153,
+   "label": "Kettle",
+   "pill": "Kettle",
+   "times": {
+    "snd0": 1.53,
+    "snd1": 4.13,
+    "tick0": 4.43,
+    "reveal": 8.43,
+    "name": 8.68
+   },
+   "dur": 11.03,
+   "img": "house_kettle"
+  },
+  {
+   "k": 9,
+   "start": 98.183,
+   "label": "Broom",
+   "pill": "Broom",
+   "times": {
+    "snd0": 1.659,
+    "snd1": 4.259,
+    "tick0": 4.559,
+    "reveal": 8.559,
+    "name": 8.809
+   },
+   "dur": 11.159,
+   "img": "house_broom"
+  },
+  {
+   "k": 10,
+   "start": 109.342,
+   "label": "Ceiling fan",
+   "pill": "Ceiling fan",
+   "times": {
+    "snd0": 1.801,
+    "snd1": 4.401,
+    "tick0": 4.701,
+    "reveal": 8.701,
+    "name": 8.951
+   },
+   "dur": 11.301,
+   "img": "house_fan"
+  }
+ ],
+ "outroStart": 120.643,
+ "outro": {
+  "done": 120.99254166666668,
+  "howmany": 122.99602083333335,
+  "next": 124.68414583333335,
+  "bye": 126.31868750000001
+ },
+ "paths": {
+  "house_doorbell": "../images/house_doorbell.jpg",
+  "pressure_cooker": "../images/pressure_cooker.jpg",
+  "house_mixer": "../images/house_mixer.jpg",
+  "house_tap": "../images/house_tap.jpg",
+  "clock": "../images/clock.jpg",
+  "house_knock": "../images/house_knock.jpg",
+  "house_alarm": "../images/house_alarm.jpg",
+  "house_kettle": "../images/house_kettle.jpg",
+  "house_broom": "../images/house_broom.jpg",
+  "house_fan": "../images/house_fan.jpg"
+ }
+}

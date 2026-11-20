@@ -1,0 +1,19 @@
+{
+  "_about": "V55 Cheeko Store launch (HyperFrames build, storyline A 'Done. Done. Done.'), 2026-10-23. Same line format as feature_lines.json.",
+  "voices": {"N": ["minimax", "English_Upbeat_Woman"], "cheeko": ["minimax", "English_PlayfulGirl"], "kid": ["minimax", "English_LovelyGirl"], "kidboy": ["minimax", "English_Strong-WilledBoy"]},
+  "V55": {"slug": "cheeko-store", "dir": "brag-output-2026-10-23-cheeko-store", "title": "Cheeko Store", "tempo": {"N": 1.05}, "lines": [
+    ["N", "surprised", "He's finished everything on his Cheeko. Twice!", 0.1, {}],
+    ["N", "fluent", "(sighs) So, now what?", 0.3, {"show": "So, now what?"}],
+    ["N", "happy", "Say hello to the Cheeko Store!", 0.3, {}],
+    ["N", "fluent", "Brand new learning videos, picked by you, right on your phone.", 0.25, {}],
+    ["N", "happy", "Guess the Dinosaur? Tap. Send to Cheeko!", 0.25, {}],
+    ["cheeko", "happy", "Hold on! I'm learning new tricks!", 0.2, {}],
+    ["N", "surprised", "It flies straight to Cheeko, over Wi-Fi.", 0.2, {}],
+    ["cheeko", "happy", "Ta-da! I learned new tricks!", 0.2, {}],
+    ["kid", "happy", "T-Rex!", 0.1, {}],
+    ["N", "happy", "And there's more! Guess the Instrument, for little musicians. Space Quiz, for star gazers.", 0.3, {}],
+    ["N", "fluent", "Odd One Out and Cheeko's Riddles, for clever thinkers. What Is Missing, for sharp eyes. And Emoji Words, for new words.", 0.2, {}],
+    ["N", "happy", "Cheeko Store. A little more play, a world of learning.", 0.3, {}],
+    ["N", "surprised", "Coming soon!", 0.2, {}]
+  ]}
+}

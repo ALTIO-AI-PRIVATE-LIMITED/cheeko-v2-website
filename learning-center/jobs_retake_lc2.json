@@ -1,0 +1,14 @@
+[
+ {
+  "tag": "lc_baby_cub",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered lion cub that looks like a big kitten, short smooth golden fur all over, no mane, no ruff, no fluffy collar, small round ears, big eyes, sitting for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_inst_cymbals",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered pair of shiny golden hand cymbals seen from the side at an angle, showing their curved bowl shape and a small leather strap on each, one cymbal tilted toward the other for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ }
+]

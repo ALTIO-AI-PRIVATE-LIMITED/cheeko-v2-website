@@ -1,0 +1,1435 @@
+{
+ "title": "Ocean and Water Animals",
+ "prompts": [
+  "What animal is this?",
+  "Can you guess this one?",
+  "Do you know this one?",
+  "Who is this?",
+  "Look closely!",
+  "Ooh, what's this?",
+  "Make your guess!",
+  "Try this one!"
+ ],
+ "rounds": [
+  {
+   "n": 1,
+   "name": "Dolphin",
+   "label": "Dolphin",
+   "say": "Dolphin!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": "first",
+   "img": "assets/animals/01_dolphin.jpg",
+   "crop": [
+    0.55,
+    0.38,
+    1.5
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/dolphin-underwater-view-bimini-bahamas-PH3MJ49",
+    "title": "Dolphin, underwater view, Bimini, Bahamas",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/97/14/19/e7/5b/v1_E11/E118F7I2.jpg?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=1cd3877c16910401ffec9e8006787d519e11f8e62c590eec4ce4242ffd579ec4",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/01_dolphin-underwater-view-bimini-bahamas-2026-09-22-03-44-27-utc.jpg",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 2,
+   "name": "Sea turtle",
+   "label": "Sea Turtle",
+   "say": "Sea turtle!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": "assets/animals/02_sea_turtle.jpg",
+   "crop": [
+    0.5,
+    0.45,
+    2.1
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/sea-turtle-swimming-in-crystal-clear-water-AR5CAKA",
+    "title": "Sea turtle swimming in crystal clear water",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/5f/d4/4c/5e/d4/v1_E10/E105FU8R.jpg?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=244c33534e3c242a4f0a2e4835fa3e0e12732e83e35bec6ba64215c87e5d86da",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/02_sea-turtle-glides-effortlessly-through-the-turquoi-2026-09-21-16-27-39-utc.jpg",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 3,
+   "name": "Orca",
+   "label": "Orca",
+   "say": "Orca!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": "assets/animals/03_orca.jpg",
+   "crop": [
+    0.56,
+    0.45,
+    1.15
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/biggs-orca-whale-jumping-out-of-the-sea-in-vancouv-2NX7TUN",
+    "title": "Bigg's orca whale jumping out of the sea in Vancouver Island, Canada",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/0b/91/36/48/44/v1_E10/E105XPM2.jpeg?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=fe2d5bbcaf5912d464c86599ba07683f5d92e55baad3d6fd0061f995d2c634b8",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/03_bigg-s-orca-whale-jumping-out-of-the-sea-in-vancou-2026-09-24-03-12-13-utc.jpeg",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 4,
+   "name": "Crab",
+   "label": "Crab",
+   "say": "Crab!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 0,
+   "img": "assets/animals/04_crab.jpg",
+   "crop": [
+    0.5,
+    0.42,
+    1.1
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/close-up-photo-of-a-sally-lightfoot-crab-on-a-volc-HSRQEFL",
+    "title": "Close up photo of a Sally Lightfoot crab on a volcanic rock",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/05/85/9b/d5/6f/v1_E10/E10GMIAW.jpg?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=84e89ff05b672626202ad8f695d82228a64fd30701f2b8e65dfa9344b3e079be",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/04_sally-lightfoot-crab-on-volcanic-rock-coastline-2026-09-24-15-43-02-utc.jpg",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 5,
+   "name": "Great white shark",
+   "label": "Great White Shark",
+   "say": "Great white shark!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": "assets/animals/05_great_white_shark.jpg",
+   "crop": [
+    0.5,
+    0.45,
+    1.55
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/underwater-view-of-white-shark-swimming-in-blue-se-Q45HXL8",
+    "title": "Underwater view of white shark swimming in blue sea, Sinaloa, Mexico",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/9b/eb/45/d6/4d/v1_E10/E10FMOO.jpg?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=766311f8205cc43df03483512efebea8b929b53984e0c4b15a49d0397598162f",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/05_underwater-view-of-white-shark-swimming-in-blue-se-2026-09-24-11-38-08-utc.jpg",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 6,
+   "name": "Jellyfish",
+   "label": "Jellyfish",
+   "say": "Jellyfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": "assets/animals/06_jellyfish.jpg",
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/beautiful-shot-of-blue-jellyfish-underwater-with-a-8GVTF4W",
+    "title": "Beautiful shot of blue jellyfish underwater with a blurred background",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/a9/c1/e3/be/3a/v1_E10/E105I27D.jpeg?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=706a3f2f1dc43490dd9763f0d03de457012dd574accd3a7e13215f42dfc32e7b",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/06_luminous-jellyfish-floating-gracefully-in-deep-blu-2026-09-23-12-04-19-utc.jpeg",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 7,
+   "name": "Goldfish",
+   "label": "Goldfish",
+   "say": "Goldfish!",
+   "emotion": "happy",
+   "habitat": "freshwater",
+   "prompt": 1,
+   "img": "assets/animals/07_goldfish.jpg",
+   "crop": [
+    0.4,
+    0.45,
+    1.7
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/goldfish-with-fins-swimming-in-aquarium-on-blue-ba-QNHCAKZ",
+    "title": "Goldfish with fins swimming in aquarium on blue background. Fish float in water column",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/9b/ff/25/62/3e/v1_E10/E10ATIFP.jpg?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=b026c6fa8da32c106deb9fecee73cbdc6537ceae23fbc7070182d880db38335a",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/07_orange-goldfish-swimming-in-a-blue-aquatic-environ-2026-09-23-05-45-31-utc.jpg",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 8,
+   "name": "Octopus",
+   "label": "Octopus",
+   "say": "Octopus!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": "assets/animals/08_octopus.jpg",
+   "crop": [
+    0.5,
+    0.45,
+    1.05
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/close-up-of-an-octopus-6DL5GNQ",
+    "title": "Close up of an octopus",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/e1/a1/22/ec/87/v1_E11/E116JTT.JPG?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=a31618aae29a3c216bd8de1f8ac67a05f22d225ac71946f2e30b8a7d2dd5c256",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/08_beautiful-close-up-of-a-detailed-octopus-2026-09-22-17-54-28-utc.JPG",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 9,
+   "name": "Shrimp",
+   "label": "Shrimp",
+   "say": "Shrimp!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": "assets/animals/09_shrimp.jpg",
+   "crop": [
+    0.5,
+    0.45,
+    1.0
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/a-shrimp-that-is-on-some-rocks-with-blue-waters-ar-JELFYQN",
+    "title": "a shrimp that is on some rocks with blue waters around",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/3e/cb/4b/8c/93/v1_E10/E105G65L.jpg?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=74f37d2e50810b8a443a4579d9963bb9ebae9317d694933a62e7be28b97df51a",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/09_red-cherry-shrimp-crawling-on-a-rock-2026-09-23-11-59-57-utc.jpg",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 10,
+   "name": "Emperor penguin",
+   "label": "Emperor Penguin",
+   "say": "Emperor penguin!",
+   "emotion": "happy",
+   "habitat": "coast/ice",
+   "prompt": 2,
+   "img": "assets/animals/10_emperor_penguin.jpg",
+   "crop": [
+    0.5,
+    0.48,
+    1.9
+   ],
+   "source": {
+    "envato_item": "https://elements.envato.com/emperor-penguin-on-the-ice-floe-in-the-southern-oc-ZEV33SU",
+    "title": "Emperor penguin on the ice floe in the southern ocean, 180 miles north of East Antarctica,",
+    "preview": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/af/71/b6/f8/14/v1_E10/E10FC73.jpg?w=600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=25cc5db5dfd696eedcde1fb9c5acef5f9ea954387938aa18b8359e1fa40d01fa",
+    "file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/10_emperor-penguin-on-the-ice-floe-in-the-southern-oc-2026-09-24-12-14-17-utc.jpg",
+    "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)"
+   },
+   "check": null
+  },
+  {
+   "n": 11,
+   "name": "Hammerhead shark",
+   "label": "Hammerhead Shark",
+   "say": "Hammerhead shark!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 12,
+   "name": "Walrus",
+   "label": "Walrus",
+   "say": "Walrus!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 13,
+   "name": "Manta ray",
+   "label": "Manta Ray",
+   "say": "Manta ray!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 3,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 14,
+   "name": "Flamingo",
+   "label": "Flamingo",
+   "say": "Flamingo!",
+   "emotion": "happy",
+   "habitat": "wetland",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 15,
+   "name": "Sea lion",
+   "label": "Sea Lion",
+   "say": "Sea lion!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 16,
+   "name": "Crocodile",
+   "label": "Crocodile",
+   "say": "Crocodile!",
+   "emotion": "happy",
+   "habitat": "river/estuary",
+   "prompt": 4,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 17,
+   "name": "Seahorse",
+   "label": "Seahorse",
+   "say": "Seahorse!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 18,
+   "name": "Blue whale",
+   "label": "Blue Whale",
+   "say": "Blue whale!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 19,
+   "name": "Starfish",
+   "label": "Starfish",
+   "say": "Starfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 5,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 20,
+   "name": "Hermit crab",
+   "label": "Hermit Crab",
+   "say": "Hermit crab!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 21,
+   "name": "Whale shark",
+   "label": "Whale Shark",
+   "say": "Whale shark!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 22,
+   "name": "Sea urchin",
+   "label": "Sea Urchin",
+   "say": "Sea urchin!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 6,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 23,
+   "name": "Humpback whale",
+   "label": "Humpback Whale",
+   "say": "Humpback whale!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 24,
+   "name": "Seagull",
+   "label": "Seagull",
+   "say": "Seagull!",
+   "emotion": "happy",
+   "habitat": "coast",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 25,
+   "name": "Pufferfish",
+   "label": "Pufferfish",
+   "say": "Pufferfish!",
+   "emotion": "surprised",
+   "habitat": "sea",
+   "prompt": 7,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 26,
+   "name": "Zebra shark",
+   "label": "Zebra Shark",
+   "say": "Zebra shark!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 27,
+   "name": "Tiger shark",
+   "label": "Tiger Shark",
+   "say": "Tiger shark!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 28,
+   "name": "Clownfish",
+   "label": "Clownfish",
+   "say": "Clownfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 0,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 29,
+   "name": "Sunfish",
+   "label": "Sunfish",
+   "say": "Sunfish!",
+   "emotion": "surprised",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 30,
+   "name": "Sea otter",
+   "label": "Sea Otter",
+   "say": "Sea otter!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 31,
+   "name": "Surgeonfish",
+   "label": "Surgeonfish",
+   "say": "Surgeonfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 1,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 32,
+   "name": "Sawfish",
+   "label": "Sawfish",
+   "say": "Sawfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 33,
+   "name": "Spiny lobster",
+   "label": "Spiny Lobster",
+   "say": "Spiny lobster!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 34,
+   "name": "Sea snake",
+   "label": "Sea Snake",
+   "say": "Sea snake!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 2,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 35,
+   "name": "Koi carp",
+   "label": "Koi Carp",
+   "say": "Koi carp!",
+   "emotion": "happy",
+   "habitat": "freshwater",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 36,
+   "name": "Manatee",
+   "label": "Manatee",
+   "say": "Manatee!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 37,
+   "name": "Mussel",
+   "label": "Mussel",
+   "say": "Mussel!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 3,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 38,
+   "name": "Seal",
+   "label": "Seal",
+   "say": "Seal!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 39,
+   "name": "Sperm whale",
+   "label": "Sperm Whale",
+   "say": "Sperm whale!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 40,
+   "name": "Lobster",
+   "label": "Lobster",
+   "say": "Lobster!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 4,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 41,
+   "name": "Giant squid",
+   "label": "Giant Squid",
+   "say": "Giant squid!",
+   "emotion": "surprised",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 42,
+   "name": "Pelican",
+   "label": "Pelican",
+   "say": "Pelican!",
+   "emotion": "happy",
+   "habitat": "coast",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 43,
+   "name": "Stonefish",
+   "label": "Stonefish",
+   "say": "Stonefish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 5,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 44,
+   "name": "Albatross",
+   "label": "Albatross",
+   "say": "Albatross!",
+   "emotion": "happy",
+   "habitat": "open ocean bird",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 45,
+   "name": "Barracuda",
+   "label": "Barracuda",
+   "say": "Barracuda!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 46,
+   "name": "Flying fish",
+   "label": "Flying Fish",
+   "say": "Flying fish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 6,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 47,
+   "name": "Sea anemone",
+   "label": "Sea Anemone",
+   "say": "Sea anemone!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 48,
+   "name": "Butterflyfish",
+   "label": "Butterflyfish",
+   "say": "Butterflyfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 49,
+   "name": "Pink dolphin",
+   "label": "Pink Dolphin",
+   "say": "Pink dolphin!",
+   "emotion": "happy",
+   "habitat": "freshwater river",
+   "prompt": 7,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 50,
+   "name": "Lanternfish",
+   "label": "Lanternfish",
+   "say": "Lanternfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 51,
+   "name": "Lionfish",
+   "label": "Lionfish",
+   "say": "Lionfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 52,
+   "name": "Sardine",
+   "label": "Sardine",
+   "say": "Sardine!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 0,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 53,
+   "name": "Galápagos marine iguana",
+   "label": "Galápagos Marine Iguana",
+   "say": "Galápagos marine iguana!",
+   "emotion": "surprised",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 54,
+   "name": "Scallop",
+   "label": "Scallop",
+   "say": "Scallop!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 55,
+   "name": "Parrotfish",
+   "label": "Parrotfish",
+   "say": "Parrotfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 1,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 56,
+   "name": "Piranha",
+   "label": "Piranha",
+   "say": "Piranha!",
+   "emotion": "happy",
+   "habitat": "freshwater river",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 57,
+   "name": "Beluga",
+   "label": "Beluga",
+   "say": "Beluga!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 58,
+   "name": "Cod",
+   "label": "Cod",
+   "say": "Cod!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 2,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 59,
+   "name": "Razor clam",
+   "label": "Razor Clam",
+   "say": "Razor clam!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 60,
+   "name": "Leatherback turtle",
+   "label": "Leatherback Turtle",
+   "say": "Leatherback turtle!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 61,
+   "name": "Conch",
+   "label": "Conch",
+   "say": "Conch!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 3,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 62,
+   "name": "Cuttlefish",
+   "label": "Cuttlefish",
+   "say": "Cuttlefish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 63,
+   "name": "Narwhal",
+   "label": "Narwhal",
+   "say": "Narwhal!",
+   "emotion": "surprised",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 64,
+   "name": "Angelfish",
+   "label": "Angelfish",
+   "say": "Angelfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 4,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 65,
+   "name": "Giant spider crab",
+   "label": "Giant Spider Crab",
+   "say": "Giant spider crab!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 66,
+   "name": "Elephant seal",
+   "label": "Elephant Seal",
+   "say": "Elephant seal!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 67,
+   "name": "Porpoise",
+   "label": "Porpoise",
+   "say": "Porpoise!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 5,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 68,
+   "name": "Swordfish",
+   "label": "Swordfish",
+   "say": "Swordfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 69,
+   "name": "Dugong",
+   "label": "Dugong",
+   "say": "Dugong!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 70,
+   "name": "Gharial",
+   "label": "Gharial",
+   "say": "Gharial!",
+   "emotion": "happy",
+   "habitat": "freshwater river",
+   "prompt": 6,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 71,
+   "name": "Boxfish",
+   "label": "Boxfish",
+   "say": "Boxfish!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 72,
+   "name": "Krill",
+   "label": "Krill",
+   "say": "Krill!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 73,
+   "name": "Sleeper shark",
+   "label": "Sleeper Shark",
+   "say": "Sleeper shark!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": 7,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 74,
+   "name": "Plankton",
+   "label": "Plankton",
+   "say": "Plankton!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 75,
+   "name": "Platypus",
+   "label": "Platypus",
+   "say": "Platypus!",
+   "emotion": "surprised",
+   "habitat": "freshwater river",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 76,
+   "name": "Rockhopper penguin",
+   "label": "Rockhopper Penguin",
+   "say": "Rockhopper penguin!",
+   "emotion": "happy",
+   "habitat": "coast",
+   "prompt": 0,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 77,
+   "name": "Nautilus",
+   "label": "Nautilus",
+   "say": "Nautilus!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 78,
+   "name": "Lamprey",
+   "label": "Lamprey",
+   "say": "Lamprey!",
+   "emotion": "happy",
+   "habitat": "sea",
+   "prompt": null,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 79,
+   "name": "Horseshoe crab",
+   "label": "Horseshoe Crab",
+   "say": "Horseshoe crab!",
+   "emotion": "surprised",
+   "habitat": "sea",
+   "prompt": 1,
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  },
+  {
+   "n": 80,
+   "name": "Blobfish",
+   "label": "Blobfish",
+   "say": "Blobfish!",
+   "emotion": "surprised",
+   "habitat": "sea",
+   "prompt": "last",
+   "img": null,
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "source": null,
+   "check": null
+  }
+ ]
+}

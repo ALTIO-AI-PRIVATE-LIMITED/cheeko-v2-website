@@ -1,0 +1,45 @@
+<!-- S6 end card (37.55 to 45.5 s). The store's own app icon drops in on "Cheeko Store.", the store's tagline lands word by word
+     on the voice, then "Coming soon" and store.cheekoai.in hold to the end. The real Cheeko peeks up from the bottom (decoration band). -->
+<template>
+  <style>
+    @font-face { font-family: 'Gabarito'; src: url('assets/fonts/Gabarito.woff2') format('woff2'); font-weight: 400 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #FFF6E8; }
+    #s6-icon { position: absolute; left: 290px; top: 190px; width: 500px; height: 494px; filter: drop-shadow(0 26px 36px rgba(35, 26, 16, .25)); }
+    .ln { position: absolute; left: 0; width: 1080px; text-align: center; font-family: 'Gabarito', sans-serif; font-weight: 900; font-size: 96px; line-height: 1; letter-spacing: -.02em; color: #231A10; }
+    .ln span { display: inline-block; margin: 0 .12em; }
+    #s6-pillrow { position: absolute; left: 0; top: 1062px; width: 1080px; text-align: center; }
+    #s6-pill { display: inline-block; background: #231A10; color: #FFF6E8; font-family: 'Gabarito', sans-serif; font-weight: 800; font-size: 62px; line-height: 1; padding: 24px 56px 26px; border-radius: 99px; }
+    #s6-url { position: absolute; left: 0; top: 1196px; width: 1080px; text-align: center; font-family: 'Gabarito', sans-serif; font-weight: 900; font-size: 76px; line-height: 1; color: #F0521D; }
+    .dev { position: absolute; }
+    .dev > img.d { position: absolute; inset: 0; width: 100%; height: 100%; filter: drop-shadow(0 20px 30px rgba(35, 26, 16, .25)); }
+    .scr { position: absolute; left: 16.19%; top: 7.71%; width: 65.26%; height: 32.5%; overflow: hidden; background: #1D1A17;
+      -webkit-mask: url('assets/img/screen_mask.png') 0 0/100% 100% no-repeat; mask: url('assets/img/screen_mask.png') 0 0/100% 100% no-repeat; }
+    .scr img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: fill; }
+  </style>
+  <div data-hf-id="hf-az72" id="root" data-composition-id="s6" data-width="1080" data-height="1920">
+    <img data-hf-id="hf-oed9" id="s6-icon" src="assets/img/store_icon.png" />
+    <div data-hf-id="hf-ld9f" class="ln" style="top:770px"><span data-hf-id="hf-lb8u" id="s6-w0">A</span><span data-hf-id="hf-mt12" id="s6-w1">little</span><span data-hf-id="hf-7lws" id="s6-w2">more</span><span data-hf-id="hf-vuhg" id="s6-w3">play.</span></div>
+    <div data-hf-id="hf-62k0" class="ln" style="top:885px"><span data-hf-id="hf-tcgq" id="s6-w4">A</span><span data-hf-id="hf-efpe" id="s6-w5">world</span><span data-hf-id="hf-tapc" id="s6-w6">of</span><span data-hf-id="hf-vtl0" id="s6-w7" style="color:#F0521D">learning.</span></div>
+    <div data-hf-id="hf-nnce" id="s6-pillrow"><div data-hf-id="hf-co18" id="s6-pill">Coming soon ✨</div></div>
+    <div data-hf-id="hf-h507" id="s6-url">store.cheekoai.in</div>
+    <div data-hf-id="hf-fuil" id="s6-dev" class="dev" style="left:330px;top:1400px;width:420px;height:703px">
+      <img data-hf-id="hf-1zye" class="d" src="assets/img/cheeko_yellow.png" />
+      <div data-hf-id="hf-zn7g" class="scr"><img data-hf-id="hf-g946" src="assets/img/fw_00_home_clock.png" /></div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    // "Cheeko Store.": the store's icon drops in and settles
+    tl.fromTo("#s6-icon", { y: -900, rotation: -8 }, { y: 0, rotation: 0, duration: .55, ease: "back.out(1.3)" }, 0);
+    tl.fromTo("#s6-dev", { y: 520 }, { y: 0, duration: .6, ease: "expo.out" }, .5);
+    // the tagline, word by word on the voice
+    [1.58, 1.68, 1.9, 2.08, 2.9, 2.96, 3.2, 3.38].forEach((t, i) => {
+      tl.fromTo("#s6-w" + i, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: .13, ease: "power2.out" }, t);
+    });
+    // Coming soon + the address, held to the end
+    tl.fromTo("#s6-pill", { scale: .5, opacity: 0 }, { scale: 1, opacity: 1, duration: .3, ease: "back.out(1.8)" }, 4.3);
+    tl.fromTo("#s6-url", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: .18, ease: "power2.out" }, 4.55);
+    window.__timelines["s6"] = tl;
+  </script>
+</template>

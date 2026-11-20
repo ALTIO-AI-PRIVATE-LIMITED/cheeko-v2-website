@@ -1,0 +1,254 @@
+{
+ "idea": "07-how-many",
+ "id": "V38",
+ "level": 2,
+ "nLevels": 2,
+ "mode": "count",
+ "theme": {
+  "bg": "counting",
+  "pals": [
+   [
+    "#FFD43B",
+    "#F08C00"
+   ],
+   [
+    "#74C0FC",
+    "#1864AB"
+   ],
+   [
+    "#FF8787",
+    "#C92A2A"
+   ],
+   [
+    "#69DB7C",
+    "#2B8A3E"
+   ],
+   [
+    "#DA77F2",
+    "#862E9C"
+   ]
+  ],
+  "trans": "diamond",
+  "enter": "pop",
+  "fx": "dots",
+  "knob": "🔢",
+  "bar": [
+   "#69DB7C",
+   "#40C057"
+  ],
+  "music": "xylophone"
+ },
+ "answer": 5,
+ "dur": 130.25,
+ "n": 10,
+ "t1": "How",
+ "t2": "Many?",
+ "head": "How <span>many</span>?",
+ "chips": [
+  [
+   "?",
+   "Count them"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Say how many"
+  ]
+ ],
+ "outroText": [
+  "Well done!",
+  "Level 2 done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.435875,
+  "rules": 4.698270833333333,
+  "go": 7.6591458333333335
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.482,
+   "label": "6 stars",
+   "pill": "6 stars",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 3.38,
+    "reveal": 8.38,
+    "name": 8.63
+   },
+   "dur": 10.98,
+   "cut": "cut_star",
+   "count": 6
+  },
+  {
+   "k": 2,
+   "start": 20.462,
+   "label": "8 ducks",
+   "pill": "8 ducks",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.325,
+    "tick0": 3.7,
+    "reveal": 8.7,
+    "name": 8.95
+   },
+   "dur": 11.3,
+   "cut": "cut_rubber_duck",
+   "count": 8
+  },
+  {
+   "k": 3,
+   "start": 31.762,
+   "label": "7 strawberries",
+   "pill": "7 strawberries",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.371,
+    "tick0": 3.7,
+    "reveal": 8.7,
+    "name": 8.95
+   },
+   "dur": 11.3,
+   "cut": "cut_fruit_strawberry",
+   "count": 7
+  },
+  {
+   "k": 4,
+   "start": 43.062,
+   "label": "10 balls",
+   "pill": "10 balls",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.26,
+    "tick0": 3.7,
+    "reveal": 8.7,
+    "name": 8.95
+   },
+   "dur": 11.3,
+   "cut": "cut_ball",
+   "count": 10
+  },
+  {
+   "k": 5,
+   "start": 54.362,
+   "label": "9 flowers",
+   "pill": "9 flowers",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.289,
+    "tick0": 3.7,
+    "reveal": 8.7,
+    "name": 8.95
+   },
+   "dur": 11.3,
+   "cut": "cut_pink_flower",
+   "count": 9
+  },
+  {
+   "k": 6,
+   "start": 65.662,
+   "label": "6 cupcakes",
+   "pill": "6 cupcakes",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 3.38,
+    "reveal": 8.38,
+    "name": 8.63
+   },
+   "dur": 10.98,
+   "cut": "cut_cupcake",
+   "count": 6
+  },
+  {
+   "k": 7,
+   "start": 76.642,
+   "label": "7 fish",
+   "pill": "7 fish",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.371,
+    "tick0": 3.7,
+    "reveal": 8.7,
+    "name": 8.95
+   },
+   "dur": 11.3,
+   "cut": "cut_fish",
+   "count": 7
+  },
+  {
+   "k": 8,
+   "start": 87.942,
+   "label": "8 balloons",
+   "pill": "8 balloons",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.325,
+    "tick0": 3.7,
+    "reveal": 8.7,
+    "name": 8.95
+   },
+   "dur": 11.3,
+   "cut": "cut_red_balloon",
+   "count": 8
+  },
+  {
+   "k": 9,
+   "start": 99.242,
+   "label": "10 butterflies",
+   "pill": "10 butterflies",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.26,
+    "tick0": 3.7,
+    "reveal": 8.7,
+    "name": 8.95
+   },
+   "dur": 11.3,
+   "cut": "cut_butterfly",
+   "count": 10
+  },
+  {
+   "k": 10,
+   "start": 110.542,
+   "label": "9 apples",
+   "pill": "9 apples",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.289,
+    "tick0": 3.7,
+    "reveal": 8.7,
+    "name": 8.95
+   },
+   "dur": 11.3,
+   "cut": "cut_fruit_apple",
+   "count": 9
+  }
+ ],
+ "outroStart": 121.842,
+ "outro": {
+  "done": 122.1924583333333,
+  "howmany": 123.45831249999998,
+  "next": 125.14643749999998,
+  "bye": 127.82216666666663
+ },
+ "paths": {
+  "cut_star": "../images/cut/star.png",
+  "cut_rubber_duck": "../images/cut/rubber_duck.png",
+  "cut_fruit_strawberry": "../images/cut/fruit_strawberry.png",
+  "cut_ball": "../images/cut/ball.png",
+  "cut_pink_flower": "../images/cut/pink_flower.png",
+  "cut_cupcake": "../images/cut/cupcake.png",
+  "cut_fish": "../images/cut/fish.png",
+  "cut_red_balloon": "../images/cut/red_balloon.png",
+  "cut_butterfly": "../images/cut/butterfly.png",
+  "cut_fruit_apple": "../images/cut/fruit_apple.png"
+ }
+}

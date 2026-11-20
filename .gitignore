@@ -3,3 +3,12 @@
 .DS_Store
 *.log
 .vercel
+
+# Photoshoot library (Aug 2026), small copies kept outside the repo: marketing/photoshoot/small-2400 (family photos, not for git)
+assets/img/shoot
+
+# Ravi's family photos for V29 (a child): never commit
+assets/img/car-trip/
+
+# Stock downloads (Pixabay/Pexels; licences forbid re-uploading unaltered files): kept out of git, logged in marketing/assets/stock/LICENSES.csv
+assets/img/stock/

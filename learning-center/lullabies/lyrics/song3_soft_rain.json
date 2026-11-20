@@ -1,0 +1,183 @@
+{
+ "title": "Soft Rain / Dheemi Baarish",
+ "note": "Original lyrics written for Cheeko. Not based on any existing song. Hindi needs a native speaker check.",
+ "en": {
+  "styles": [
+   "gentle lullaby",
+   "soft warm female vocal, intimate",
+   "music box, harp and soft strings",
+   "slow rocking 3/4 waltz feel",
+   "about 64 bpm",
+   "very quiet and calm",
+   "simple melody with falling phrases",
+   "instruments prominent in the mix",
+   "vocals soft and blended into the music, not upfront",
+   "long instrumental passages"
+  ],
+  "negative": [
+   "drums",
+   "percussion",
+   "electric guitar",
+   "loud",
+   "auto-tune",
+   "belting",
+   "choir",
+   "fast singing"
+  ],
+  "sections": [
+   {
+    "name": "Intro",
+    "ms": 12000,
+    "lines": [
+     "{instrumental only, music box and harp play the melody softly, no vocals}"
+    ]
+   },
+   {
+    "name": "Refrain",
+    "ms": 20000,
+    "lines": [
+     "Soft rain, falling slow,",
+     "river humming low.",
+     "Close your eyes, my love,",
+     "off to dreams you go."
+    ]
+   },
+   {
+    "name": "Verse 1",
+    "ms": 20000,
+    "lines": [
+     "The frogs have said goodnight,",
+     "the boats are tied up tight,",
+     "the window wears the rain",
+     "like ribbons, soft and light."
+    ]
+   },
+   {
+    "name": "Interlude",
+    "ms": 16000,
+    "lines": [
+     "{instrumental only, music box and harp play the refrain melody, no vocals}"
+    ]
+   },
+   {
+    "name": "Verse 2",
+    "ms": 20000,
+    "lines": [
+     "The puddles hold the moon,",
+     "the crickets hum a tune,",
+     "the morning will be bright,",
+     "and I will see you soon."
+    ]
+   },
+   {
+    "name": "Refrain",
+    "ms": 20000,
+    "lines": [
+     "Soft rain, falling slow,",
+     "river humming low.",
+     "Close your eyes, my love,",
+     "off to dreams you go."
+    ]
+   },
+   {
+    "name": "Outro",
+    "ms": 18000,
+    "lines": [
+     "{instruments carry the melody, very soft humming, slowing down and fading out}",
+     "Mmm."
+    ]
+   }
+  ]
+ },
+ "hi": {
+  "styles": [
+   "gentle Indian lori lullaby",
+   "soft warm Indian female vocal singing in Hindi",
+   "short sung phrases with long held notes and pauses",
+   "harp, music box and soft bansuri with a tanpura drone",
+   "slow rocking 6/8 feel",
+   "about 64 bpm",
+   "very quiet and calm",
+   "instruments prominent in the mix",
+   "vocals soft and blended into the music, not upfront",
+   "long instrumental passages"
+  ],
+  "negative": [
+   "drums",
+   "tabla",
+   "percussion",
+   "electric guitar",
+   "loud",
+   "auto-tune",
+   "belting",
+   "Bollywood film orchestra",
+   "choir",
+   "fast singing",
+   "long wordy lines"
+  ],
+  "sections": [
+   {
+    "name": "Intro",
+    "ms": 12000,
+    "lines": [
+     "{instrumental only, bansuri, harp and music box play the melody softly, no vocals}"
+    ]
+   },
+   {
+    "name": "Refrain",
+    "ms": 20000,
+    "lines": [
+     "धीमी बारिश,",
+     "नदिया गाए,",
+     "आँखें मूँदो,",
+     "नींद आए।"
+    ]
+   },
+   {
+    "name": "Verse 1",
+    "ms": 20000,
+    "lines": [
+     "मेंढक सोए,",
+     "नाव किनारे,",
+     "खिड़की पे बूँदें,",
+     "चमकें तारे।"
+    ]
+   },
+   {
+    "name": "Interlude",
+    "ms": 16000,
+    "lines": [
+     "{instrumental only, bansuri, harp and music box play the refrain melody, no vocals}"
+    ]
+   },
+   {
+    "name": "Verse 2",
+    "ms": 20000,
+    "lines": [
+     "पानी में चाँद,",
+     "झींगुर गाए,",
+     "कल फिर सुबह,",
+     "धूप मुस्काए।"
+    ]
+   },
+   {
+    "name": "Refrain",
+    "ms": 20000,
+    "lines": [
+     "धीमी बारिश,",
+     "नदिया गाए,",
+     "आँखें मूँदो,",
+     "नींद आए।"
+    ]
+   },
+   {
+    "name": "Outro",
+    "ms": 18000,
+    "lines": [
+     "{instruments carry the melody, very soft humming, slowing down and fading out}",
+     "Mmm."
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,302 @@
+{
+ "idea": "04-touch-your-nose",
+ "id": "V35",
+ "level": 1,
+ "nLevels": 1,
+ "mode": "zoom",
+ "theme": {
+  "bg": "playroom",
+  "pals": [
+   [
+    "#FFB86B",
+    "#E8590C"
+   ],
+   [
+    "#7CC8FF",
+    "#1971C2"
+   ],
+   [
+    "#FF8FB1",
+    "#C2255C"
+   ],
+   [
+    "#8CE99A",
+    "#2B8A3E"
+   ],
+   [
+    "#B197FC",
+    "#5F3DC4"
+   ]
+  ],
+  "trans": "zoom",
+  "enter": "flip",
+  "fx": "dots",
+  "knob": "👃",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "claps"
+ },
+ "answer": 4,
+ "dur": 124.64,
+ "n": 12,
+ "t1": "Touch Your",
+ "t2": "Nose!",
+ "head": "Touch and <span>say</span>!",
+ "chips": [
+  [
+   "?",
+   "Look at the circle"
+  ],
+  [
+   "4",
+   "4 seconds"
+  ],
+  [
+   "!",
+   "Touch and say"
+  ]
+ ],
+ "outroText": [
+  "Great job!",
+  "All done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "rules": 3.7733125,
+  "go": 8.023729166666667,
+  "level": 3.2383958333333336
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.847,
+   "label": "Nose",
+   "pill": "Nose",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 5.669,
+    "name": 5.919
+   },
+   "dur": 8.581,
+   "img": "boy_face",
+   "ring": [
+    0.5,
+    0.585,
+    0.06
+   ]
+  },
+  {
+   "k": 2,
+   "start": 18.428,
+   "label": "Eyes",
+   "pill": "Eyes",
+   "times": {
+    "tick0": 2.006,
+    "reveal": 6.006,
+    "name": 6.256
+   },
+   "dur": 8.748,
+   "img": "boy_face",
+   "ring": [
+    0.5,
+    0.52,
+    0.13
+   ]
+  },
+  {
+   "k": 3,
+   "start": 27.176,
+   "label": "Ears",
+   "pill": "Ears",
+   "times": {
+    "tick0": 1.866,
+    "reveal": 5.866,
+    "name": 6.116
+   },
+   "dur": 8.975,
+   "img": "boy_face",
+   "ring": [
+    0.285,
+    0.57,
+    0.065
+   ]
+  },
+  {
+   "k": 4,
+   "start": 36.151,
+   "label": "Mouth",
+   "pill": "Mouth",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 5.708,
+    "name": 5.958
+   },
+   "dur": 8.424,
+   "img": "boy_face",
+   "ring": [
+    0.5,
+    0.655,
+    0.07
+   ]
+  },
+  {
+   "k": 5,
+   "start": 44.575,
+   "label": "Hair",
+   "pill": "Hair",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 5.596,
+    "name": 5.846
+   },
+   "dur": 8.55,
+   "img": "boy_face",
+   "ring": [
+    0.5,
+    0.2,
+    0.13
+   ]
+  },
+  {
+   "k": 6,
+   "start": 53.125,
+   "label": "Cheeks",
+   "pill": "Cheeks",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 5.584,
+    "name": 5.834
+   },
+   "dur": 8.521,
+   "img": "boy_face",
+   "ring": [
+    0.36,
+    0.615,
+    0.06
+   ]
+  },
+  {
+   "k": 7,
+   "start": 61.646,
+   "label": "Hands",
+   "pill": "Hands",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 5.53,
+    "name": 5.78
+   },
+   "dur": 8.345,
+   "img": "boy_full",
+   "ring": [
+    0.355,
+    0.645,
+    0.05
+   ]
+  },
+  {
+   "k": 8,
+   "start": 69.991,
+   "label": "Tummy",
+   "pill": "Tummy",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 5.58,
+    "name": 5.83
+   },
+   "dur": 9.27,
+   "img": "boy_full",
+   "ring": [
+    0.5,
+    0.525,
+    0.06
+   ]
+  },
+  {
+   "k": 9,
+   "start": 79.261,
+   "label": "Knees",
+   "pill": "Knees",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 5.709,
+    "name": 5.959
+   },
+   "dur": 9.209,
+   "img": "boy_full",
+   "ring": [
+    0.5,
+    0.765,
+    0.06
+   ]
+  },
+  {
+   "k": 10,
+   "start": 88.469,
+   "label": "Feet",
+   "pill": "Feet",
+   "times": {
+    "tick0": 2.006,
+    "reveal": 6.006,
+    "name": 6.256
+   },
+   "dur": 8.768,
+   "img": "boy_full",
+   "ring": [
+    0.5,
+    0.86,
+    0.08
+   ]
+  },
+  {
+   "k": 11,
+   "start": 97.238,
+   "label": "Shoulders",
+   "pill": "Shoulders",
+   "times": {
+    "tick0": 1.866,
+    "reveal": 5.866,
+    "name": 6.116
+   },
+   "dur": 9.017,
+   "img": "boy_full",
+   "ring": [
+    0.42,
+    0.45,
+    0.045
+   ]
+  },
+  {
+   "k": 12,
+   "start": 106.255,
+   "label": "Toes",
+   "pill": "Toes",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 5.851,
+    "name": 6.101
+   },
+   "dur": 9.211,
+   "img": "boy_full",
+   "ring": [
+    0.445,
+    0.872,
+    0.035
+   ]
+  }
+ ],
+ "outroStart": 115.465,
+ "outro": {
+  "done": 115.81520833333332,
+  "howmany": 117.84120833333331,
+  "next": 119.52933333333331,
+  "bye": 122.20506249999997
+ },
+ "paths": {
+  "boy_face": "../images/boy_face.jpg",
+  "boy_full": "../images/boy_full.jpg"
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "dur": 109.99,
+ "round": 9.0,
+ "n": 10,
+ "intro": {
+  "hi": 0.45,
+  "title": 2.2110416666666666,
+  "rules": 4.4929375,
+  "go": 8.296770833333333,
+  "go_end": 10.074354166666666
+ },
+ "rounds": [
+  {
+   "n": 1,
+   "label": "Dolphin",
+   "start": 10.424,
+   "prompt": 5,
+   "promptEnd": 1.673,
+   "nameEnd": 5.849,
+   "img": "assets/animals/01_dolphin.jpg",
+   "crop": [
+    0.55,
+    0.38,
+    1.5
+   ]
+  },
+  {
+   "n": 2,
+   "label": "Sea Turtle",
+   "start": 19.424,
+   "prompt": 6,
+   "promptEnd": 1.705,
+   "nameEnd": 6.185,
+   "img": "assets/animals/02_sea_turtle.jpg",
+   "crop": [
+    0.5,
+    0.45,
+    2.1
+   ]
+  },
+  {
+   "n": 3,
+   "label": "Orca",
+   "start": 28.424,
+   "prompt": 7,
+   "promptEnd": 1.478,
+   "nameEnd": 5.733,
+   "img": "assets/animals/03_orca.jpg",
+   "crop": [
+    0.56,
+    0.45,
+    1.15
+   ]
+  },
+  {
+   "n": 4,
+   "label": "Crab",
+   "start": 37.424,
+   "prompt": 8,
+   "promptEnd": 1.372,
+   "nameEnd": 5.711,
+   "img": "assets/animals/04_crab.jpg",
+   "crop": [
+    0.5,
+    0.42,
+    1.1
+   ]
+  },
+  {
+   "n": 5,
+   "label": "Great White Shark",
+   "start": 46.424,
+   "prompt": 9,
+   "promptEnd": 1.074,
+   "nameEnd": 6.113,
+   "img": "assets/animals/05_great_white_shark.jpg",
+   "crop": [
+    0.5,
+    0.45,
+    1.55
+   ]
+  },
+  {
+   "n": 6,
+   "label": "Jellyfish",
+   "start": 55.424,
+   "prompt": 10,
+   "promptEnd": 1.239,
+   "nameEnd": 5.914,
+   "img": "assets/animals/06_jellyfish.jpg",
+   "crop": [
+    0.5,
+    0.5,
+    1.0
+   ]
+  },
+  {
+   "n": 7,
+   "label": "Goldfish",
+   "start": 64.424,
+   "prompt": 11,
+   "promptEnd": 1.335,
+   "nameEnd": 5.891,
+   "img": "assets/animals/07_goldfish.jpg",
+   "crop": [
+    0.4,
+    0.45,
+    1.7
+   ]
+  },
+  {
+   "n": 8,
+   "label": "Octopus",
+   "start": 73.424,
+   "prompt": 12,
+   "promptEnd": 1.321,
+   "nameEnd": 5.89,
+   "img": "assets/animals/08_octopus.jpg",
+   "crop": [
+    0.5,
+    0.45,
+    1.05
+   ]
+  },
+  {
+   "n": 9,
+   "label": "Shrimp",
+   "start": 82.424,
+   "prompt": 13,
+   "promptEnd": 1.35,
+   "nameEnd": 5.748,
+   "img": "assets/animals/09_shrimp.jpg",
+   "crop": [
+    0.5,
+    0.45,
+    1.0
+   ]
+  },
+  {
+   "n": 10,
+   "label": "Emperor Penguin",
+   "start": 91.424,
+   "prompt": 102,
+   "promptEnd": 1.492,
+   "nameEnd": 6.317,
+   "img": "assets/animals/10_emperor_penguin.jpg",
+   "crop": [
+    0.5,
+    0.48,
+    1.9
+   ]
+  }
+ ],
+ "outroStart": 100.424,
+ "outro": {
+  "wow": 100.77435416666665,
+  "howmany": 103.00570833333332,
+  "again": 104.75031249999998,
+  "bye": 106.53418749999997
+ },
+ "times": {
+  "prompt": 0.4,
+  "tick0": 1.9,
+  "reveal": 4.9,
+  "name": 5.15
+ }
+}

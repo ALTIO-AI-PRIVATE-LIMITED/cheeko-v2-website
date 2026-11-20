@@ -1,0 +1,161 @@
+{
+ "model": "music_v2_5",
+ "lang": "en",
+ "secs": 15.3,
+ "headers": {
+  "song-id": "zcHFPSisFxxwkcZ2wdC0",
+  "x-trace-id": "50d0bf5993b9bd2637cfda7250bef3dd",
+  "x-region": "us-central1"
+ },
+ "plan": {
+  "model_id": "music_v2_5",
+  "composition_plan": {
+   "chunks": [
+    {
+     "text": "[Intro]\n{music box and harp only, no vocals}",
+     "duration_ms": 8000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate and close",
+      "music box and harp",
+      "slow rocking 3/4 waltz feel",
+      "about 66 bpm",
+      "very quiet and calm",
+      "simple melody with falling phrases",
+      "warm soft pad"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "bass drop",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Refrain]\nThe moon is in the sky,\nthe stars are winking slow.\nRest now, little one,\nthe night is soft and low.",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate and close",
+      "music box and harp",
+      "slow rocking 3/4 waltz feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "bass drop",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Verse 1]\nThe trees have gone to sleep,\nthe lamps are glowing gold,\nyour blanket keeps you warm,\nyour hand is mine to hold.",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate and close",
+      "music box and harp",
+      "slow rocking 3/4 waltz feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "bass drop",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Refrain]\nThe moon is in the sky,\nthe stars are winking slow.\nRest now, little one,\nthe night is soft and low.",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate and close",
+      "music box and harp",
+      "slow rocking 3/4 waltz feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "bass drop",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Verse 2]\nThe wind is humming low,\nthe clouds are drifting by,\nthe moon will stay awake\nand hum a lullaby.",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate and close",
+      "music box and harp",
+      "slow rocking 3/4 waltz feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "bass drop",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Refrain]\nThe moon is in the sky,\nthe stars are winking slow.\nRest now, little one,\nthe night is soft and low.",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate and close",
+      "music box and harp",
+      "slow rocking 3/4 waltz feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "bass drop",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Outro]\n{soft humming, slowing down and fading out}\nMmm, mmm, rest now, little one.\nMmm.",
+     "duration_ms": 16000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate and close",
+      "music box and harp",
+      "slow rocking 3/4 waltz feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "bass drop",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir"
+     ]
+    }
+   ]
+  }
+ }
+}

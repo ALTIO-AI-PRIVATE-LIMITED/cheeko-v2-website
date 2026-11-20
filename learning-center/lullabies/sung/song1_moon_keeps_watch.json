@@ -1,0 +1,30 @@
+{
+ "title": "The Moon Keeps Watch / Chaand Jaage",
+ "note": "Original lyrics written for Cheeko 2026-10-09. Not based on any existing song. Hindi needs a native speaker check before release.",
+ "en": {
+  "styles": ["gentle lullaby", "soft warm female vocal, intimate and close", "music box and harp", "slow rocking 3/4 waltz feel", "about 66 bpm", "very quiet and calm", "simple melody with falling phrases", "warm soft pad"],
+  "negative": ["drums", "percussion", "electric guitar", "bass drop", "loud", "auto-tune", "belting", "choir"],
+  "sections": [
+   {"name": "Intro", "ms": 8000, "lines": ["{music box and harp only, no vocals}"]},
+   {"name": "Refrain", "ms": 21000, "lines": ["The moon is in the sky,", "the stars are winking slow.", "Rest now, little one,", "the night is soft and low."]},
+   {"name": "Verse 1", "ms": 21000, "lines": ["The trees have gone to sleep,", "the lamps are glowing gold,", "your blanket keeps you warm,", "your hand is mine to hold."]},
+   {"name": "Refrain", "ms": 21000, "lines": ["The moon is in the sky,", "the stars are winking slow.", "Rest now, little one,", "the night is soft and low."]},
+   {"name": "Verse 2", "ms": 21000, "lines": ["The wind is humming low,", "the clouds are drifting by,", "the moon will stay awake", "and hum a lullaby."]},
+   {"name": "Refrain", "ms": 21000, "lines": ["The moon is in the sky,", "the stars are winking slow.", "Rest now, little one,", "the night is soft and low."]},
+   {"name": "Outro", "ms": 16000, "lines": ["{soft humming, slowing down and fading out}", "Mmm, mmm, rest now, little one.", "Mmm."]}
+  ]
+ },
+ "hi": {
+  "styles": ["gentle Indian lori lullaby", "soft warm Indian female vocal singing in Hindi, intimate and close", "harp and music box with a soft tanpura drone", "slow rocking 6/8 feel", "about 66 bpm", "very quiet and calm", "simple melody with falling phrases", "warm soft pad"],
+  "negative": ["drums", "tabla", "percussion", "electric guitar", "loud", "auto-tune", "belting", "Bollywood film orchestra", "choir"],
+  "sections": [
+   {"name": "Intro", "ms": 8000, "lines": ["{harp, music box and tanpura only, no vocals}"]},
+   {"name": "Refrain", "ms": 21000, "lines": ["आ आ, ऊ ऊ, सो जा रे,", "चाँद जागे, तारे गाएँ।", "पलकें मूँदो, मेरे प्यारे,", "सपने धीरे धीरे आएँ।"]},
+   {"name": "Verse 1", "ms": 21000, "lines": ["पेड़ भी चुप चुप सो गए,", "दीपक धीमे जल रहे,", "नरम रज़ाई ओढ़ के,", "सपने तुझ तक चल रहे।"]},
+   {"name": "Refrain", "ms": 21000, "lines": ["आ आ, ऊ ऊ, सो जा रे,", "चाँद जागे, तारे गाएँ।", "पलकें मूँदो, मेरे प्यारे,", "सपने धीरे धीरे आएँ।"]},
+   {"name": "Verse 2", "ms": 21000, "lines": ["हवा गुनगुनाती है,", "बादल धीरे जाते हैं,", "चाँद रात भर जागेगा,", "तारे लोरी गाते हैं।"]},
+   {"name": "Refrain", "ms": 21000, "lines": ["आ आ, ऊ ऊ, सो जा रे,", "चाँद जागे, तारे गाएँ।", "पलकें मूँदो, मेरे प्यारे,", "सपने धीरे धीरे आएँ।"]},
+   {"name": "Outro", "ms": 16000, "lines": ["{soft humming, slowing down and fading out}", "हम्म, हम्म, आ आ, ऊ ऊ।", "हम्म।"]}
+  ]
+ }
+}

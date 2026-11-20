@@ -1,0 +1,224 @@
+{
+ "idea": "02-guess-the-fruit",
+ "id": "V33",
+ "level": 2,
+ "nLevels": 3,
+ "mode": "picture",
+ "theme": {
+  "bg": "garden",
+  "pals": [
+   [
+    "#FF8A65",
+    "#D84315"
+   ],
+   [
+    "#AED581",
+    "#558B2F"
+   ],
+   [
+    "#FFD54F",
+    "#F57F17"
+   ],
+   [
+    "#F48FB1",
+    "#AD1457"
+   ],
+   [
+    "#81D4FA",
+    "#0277BD"
+   ]
+  ],
+  "trans": "slide",
+  "enter": "spin",
+  "fx": "confetti",
+  "knob": "🍎",
+  "bar": [
+   "#FF8A80",
+   "#FF5252"
+  ],
+  "music": "calypso"
+ },
+ "answer": 4,
+ "dur": 102.28,
+ "n": 10,
+ "t1": "Guess the",
+ "t2": "Fruit!",
+ "head": "Guess the <span>fruit</span>!",
+ "chips": [
+  [
+   "?",
+   "Look closely"
+  ],
+  [
+   "4",
+   "4 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Well done!",
+  "Level 2 done!",
+  "Play Level 3!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.821833333333333,
+  "rules": 5.084229166666666,
+  "go": 8.817791666666666
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 10.641,
+   "label": "Pomegranate",
+   "pill": "Pomegranate",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 5.669,
+    "name": 5.919
+   },
+   "dur": 8.269,
+   "img": "fruit_pomegranate"
+  },
+  {
+   "k": 2,
+   "start": 18.91,
+   "label": "Pear",
+   "pill": "Pear",
+   "times": {
+    "tick0": 1.852,
+    "reveal": 5.852,
+    "name": 6.102
+   },
+   "dur": 8.452,
+   "img": "fruit_pear"
+  },
+  {
+   "k": 3,
+   "start": 27.362,
+   "label": "Cherry",
+   "pill": "Cherry",
+   "times": {
+    "tick0": 1.658,
+    "reveal": 5.658,
+    "name": 5.908
+   },
+   "dur": 8.258,
+   "img": "fruit_cherry"
+  },
+  {
+   "k": 4,
+   "start": 35.62,
+   "label": "Coconut",
+   "pill": "Coconut",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 5.708,
+    "name": 5.958
+   },
+   "dur": 8.308,
+   "img": "fruit_coconut"
+  },
+  {
+   "k": 5,
+   "start": 43.928,
+   "label": "Lemon",
+   "pill": "Lemon",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 5.596,
+    "name": 5.846
+   },
+   "dur": 8.196,
+   "img": "fruit_lemon"
+  },
+  {
+   "k": 6,
+   "start": 52.125,
+   "label": "Kiwi",
+   "pill": "Kiwi",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 5.584,
+    "name": 5.834
+   },
+   "dur": 8.184,
+   "img": "fruit_kiwi"
+  },
+  {
+   "k": 7,
+   "start": 60.309,
+   "label": "Chikoo",
+   "pill": "Chikoo",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 5.53,
+    "name": 5.78
+   },
+   "dur": 8.13,
+   "img": "fruit_chikoo"
+  },
+  {
+   "k": 8,
+   "start": 68.438,
+   "label": "Jackfruit",
+   "pill": "Jackfruit",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 5.58,
+    "name": 5.83
+   },
+   "dur": 8.18,
+   "img": "fruit_jackfruit"
+  },
+  {
+   "k": 9,
+   "start": 76.619,
+   "label": "Custard apple",
+   "pill": "Custard apple",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 5.709,
+    "name": 5.959
+   },
+   "dur": 8.309,
+   "img": "fruit_custard_apple"
+  },
+  {
+   "k": 10,
+   "start": 84.927,
+   "label": "Lychee",
+   "pill": "Lychee",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 5.851,
+    "name": 6.101
+   },
+   "dur": 8.451,
+   "img": "fruit_lychee"
+  }
+ ],
+ "outroStart": 93.378,
+ "outro": {
+  "done": 93.72783333333335,
+  "howmany": 96.54258333333335,
+  "next": 98.23070833333335,
+  "bye": 99.85252083333334
+ },
+ "paths": {
+  "fruit_pomegranate": "../images/fruit_pomegranate.jpg",
+  "fruit_pear": "../images/fruit_pear.jpg",
+  "fruit_cherry": "../images/fruit_cherry.jpg",
+  "fruit_coconut": "../images/fruit_coconut.jpg",
+  "fruit_lemon": "../images/fruit_lemon.jpg",
+  "fruit_kiwi": "../images/fruit_kiwi.jpg",
+  "fruit_chikoo": "../images/fruit_chikoo.jpg",
+  "fruit_jackfruit": "../images/fruit_jackfruit.jpg",
+  "fruit_custard_apple": "../images/fruit_custard_apple.jpg",
+  "fruit_lychee": "../images/fruit_lychee.jpg"
+ }
+}

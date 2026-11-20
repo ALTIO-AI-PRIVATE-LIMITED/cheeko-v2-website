@@ -1,0 +1,179 @@
+{
+ "level": 1,
+ "answer": 3,
+ "dur": 110.18,
+ "round": 9.0,
+ "n": 10,
+ "intro": {
+  "hi": 0.45,
+  "title": 2.3359166666666664,
+  "level": 4.5384166666666665,
+  "rules": 5.787708333333333,
+  "go": 9.512854166666667
+ },
+ "rounds": [
+  {
+   "n": 1,
+   "k": 1,
+   "label": "Car",
+   "start": 11.593,
+   "prompt": 8,
+   "promptEnd": 1.512,
+   "nameEnd": 5.664,
+   "img": "assets/vehicles/01_car.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 2,
+   "k": 2,
+   "label": "Bus",
+   "start": 20.593,
+   "prompt": 9,
+   "promptEnd": 1.542,
+   "nameEnd": 5.706,
+   "img": "assets/vehicles/02_bus.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 3,
+   "k": 3,
+   "label": "Truck",
+   "start": 29.593,
+   "prompt": 10,
+   "promptEnd": 1.467,
+   "nameEnd": 5.666,
+   "img": "assets/vehicles/03_truck.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 4,
+   "k": 4,
+   "label": "Bicycle",
+   "start": 38.593,
+   "prompt": 11,
+   "promptEnd": 1.389,
+   "nameEnd": 5.852,
+   "img": "assets/vehicles/04_bicycle.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 5,
+   "k": 5,
+   "label": "Motorbike",
+   "start": 47.593,
+   "prompt": 12,
+   "promptEnd": 1.102,
+   "nameEnd": 5.954,
+   "img": "assets/vehicles/05_motorbike.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 6,
+   "k": 6,
+   "label": "Aeroplane",
+   "start": 56.593,
+   "prompt": 13,
+   "promptEnd": 1.21,
+   "nameEnd": 5.906,
+   "img": "assets/vehicles/06_aeroplane.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 7,
+   "k": 7,
+   "label": "Train",
+   "start": 65.593,
+   "prompt": 14,
+   "promptEnd": 1.607,
+   "nameEnd": 5.786,
+   "img": "assets/vehicles/07_train.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 8,
+   "k": 8,
+   "label": "Boat",
+   "start": 74.593,
+   "prompt": 15,
+   "promptEnd": 1.422,
+   "nameEnd": 5.593,
+   "img": "assets/vehicles/08_boat.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 9,
+   "k": 9,
+   "label": "Auto rickshaw",
+   "start": 83.593,
+   "prompt": 16,
+   "promptEnd": 1.275,
+   "nameEnd": 6.084,
+   "img": "assets/vehicles/09_auto_rickshaw.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 10,
+   "k": 10,
+   "label": "Scooter",
+   "start": 92.593,
+   "prompt": 17,
+   "promptEnd": 1.557,
+   "nameEnd": 5.632,
+   "img": "assets/vehicles/10_scooter.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  }
+ ],
+ "outroStart": 101.593,
+ "outro": {
+  "done": 101.94343749999999,
+  "howmany": 104.57983333333331,
+  "next": 106.2917083333333,
+  "bye": 107.65585416666663
+ },
+ "times": {
+  "prompt": 0.4,
+  "tick0": 1.9,
+  "reveal": 4.9,
+  "name": 5.15
+ }
+}

@@ -1,0 +1,74 @@
+[
+ {
+  "tag": "lc_mummy_cat",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother cat sitting alone, clearly an adult cat, no kittens for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_cow",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother cow standing alone, no calf for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_dog",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother dog standing alone, clearly an adult dog, no puppies for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_duck",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother duck standing alone, no ducklings for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_elephant",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother elephant standing alone, no baby elephant for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_frog",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up green frog sitting on a lily pad, alone, no tadpoles for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_hen",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother hen standing alone, no chicks for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_horse",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother horse standing alone, no foal for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_kangaroo",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother kangaroo standing alone, her pouch empty, no joey for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_lioness",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up lioness (female lion with no mane) standing alone, no cubs for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_pig",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother pig standing alone, no piglets for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_sheep",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother sheep with thick wool standing alone, no lamb for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ }
+]

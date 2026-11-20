@@ -1,0 +1,129 @@
+# V31 Guess the Vehicle: script
+
+Cheeko's voice (MiniMax English_PlayfulGirl). Times are in each finished video.
+
+## Level 1 (3 s to answer, 110 s)
+
+-   0.45s  Hi! I'm Cheeko!
+-   2.34s  Let's play Guess the Vehicle!
+-   4.54s  Level one!
+-   5.79s  Look at the picture, and say its name before the time runs out!
+-   9.51s  Ready? Let's go!
+-  11.99s  Here's the first one!
+-  13.49s  (3, 2, 1 ticks)
+-  16.74s  Car!
+-  20.99s  What vehicle is this?
+-  22.49s  (3, 2, 1 ticks)
+-  25.74s  Bus!
+-  29.99s  Can you guess this one?
+-  31.49s  (3, 2, 1 ticks)
+-  34.74s  Truck!
+-  38.99s  Do you know this one?
+-  40.49s  (3, 2, 1 ticks)
+-  43.74s  Bicycle!
+-  47.99s  What is this?
+-  49.49s  (3, 2, 1 ticks)
+-  52.74s  Motorbike!
+-  56.99s  Look closely!
+-  58.49s  (3, 2, 1 ticks)
+-  61.74s  Aeroplane!
+-  65.99s  Ooh, what's this?
+-  67.49s  (3, 2, 1 ticks)
+-  70.74s  Train!
+-  74.99s  Make your guess!
+-  76.49s  (3, 2, 1 ticks)
+-  79.74s  Boat!
+-  83.99s  Try this one!
+-  85.49s  (3, 2, 1 ticks)
+-  88.74s  Auto rickshaw!
+-  92.99s  Here's the last one!
+-  94.49s  (3, 2, 1 ticks)
+-  97.74s  Scooter!
+- 101.94s  Great job! You finished level one!
+- 104.58s  How many did you get right?
+- 106.29s  Ready for level two?
+- 107.66s  Bye bye!
+
+## Level 2 (4 s to answer, 120 s)
+
+-   0.45s  Hi again! It's Cheeko!
+-   2.67s  Let's play Guess the Vehicle!
+-   4.88s  Level two!
+-   6.03s  Look at the picture, and say its name before the time runs out!
+-   9.76s  Ready? Let's go!
+-  12.24s  Here's the first one!
+-  13.74s  (4, 3, 2, 1 ticks)
+-  17.99s  Fire engine!
+-  22.24s  What vehicle is this?
+-  23.74s  (4, 3, 2, 1 ticks)
+-  27.99s  Ambulance!
+-  32.24s  Can you guess this one?
+-  33.74s  (4, 3, 2, 1 ticks)
+-  37.99s  Police car!
+-  42.24s  Do you know this one?
+-  43.74s  (4, 3, 2, 1 ticks)
+-  47.99s  Helicopter!
+-  52.24s  What is this?
+-  53.74s  (4, 3, 2, 1 ticks)
+-  57.99s  Ship!
+-  62.24s  Look closely!
+-  63.74s  (4, 3, 2, 1 ticks)
+-  67.99s  Tractor!
+-  72.24s  Ooh, what's this?
+-  73.74s  (4, 3, 2, 1 ticks)
+-  77.99s  School bus!
+-  82.24s  Make your guess!
+-  83.74s  (4, 3, 2, 1 ticks)
+-  87.99s  Cycle rickshaw!
+-  92.24s  Try this one!
+-  93.74s  (4, 3, 2, 1 ticks)
+-  97.99s  Garbage truck!
+- 102.24s  Here's the last one!
+- 103.74s  (4, 3, 2, 1 ticks)
+- 107.99s  Hot air balloon!
+- 112.19s  Awesome! Level two is done!
+- 114.60s  How many did you get right?
+- 116.31s  Now try level three!
+- 117.91s  Bye bye!
+
+## Level 3 (5 s to answer, 132 s)
+
+-   0.45s  Hi again! It's Cheeko!
+-   2.67s  Let's play Guess the Vehicle!
+-   4.88s  Level three!
+-   6.05s  Look at the picture, and say its name before the time runs out!
+-   9.77s  Ready? Let's go!
+-  12.26s  Here's the first one!
+-  13.76s  (5, 4, 3, 2, 1 ticks)
+-  19.01s  Excavator!
+-  23.25s  What vehicle is this?
+-  24.75s  (5, 4, 3, 2, 1 ticks)
+-  30.01s  Cement mixer!
+-  34.25s  Can you guess this one?
+-  35.75s  (5, 4, 3, 2, 1 ticks)
+-  41.00s  Crane!
+-  45.25s  Do you know this one?
+-  46.75s  (5, 4, 3, 2, 1 ticks)
+-  52.00s  Road roller!
+-  56.25s  What is this?
+-  57.75s  (5, 4, 3, 2, 1 ticks)
+-  63.00s  Bulldozer!
+-  67.26s  Look closely!
+-  68.76s  (5, 4, 3, 2, 1 ticks)
+-  74.01s  Rocket!
+-  78.26s  Ooh, what's this?
+-  79.76s  (5, 4, 3, 2, 1 ticks)
+-  85.01s  Submarine!
+-  89.26s  Make your guess!
+-  90.76s  (5, 4, 3, 2, 1 ticks)
+-  96.01s  Tram!
+- 100.26s  Try this one!
+- 101.76s  (5, 4, 3, 2, 1 ticks)
+- 107.01s  Cable car!
+- 111.26s  Here's the last one!
+- 112.76s  (5, 4, 3, 2, 1 ticks)
+- 118.01s  Hovercraft!
+- 122.20s  Wow! You finished all three levels!
+- 125.07s  How many did you get right?
+- 126.78s  You're a vehicle champion!
+- 129.05s  Bye bye!

@@ -1,0 +1,294 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- V31 Guess the Vehicle (levels 1-3): on-device quiz for Cheeko's 2.01" screen (296x240, rounded glass).
+     window.render(t) draws the frame at time t; window.ready resolves after fonts and images load.
+     Everything readable (heading, round number, countdown, names) is an HTML layer, never baked into a picture.
+     Safe area: the glass corners curve in ~78 px from the sides and ~74 px from top and bottom (device-v2/screen_mask.png),
+     so the top and bottom strips only hold centred items and the photo card sits in the full-width middle band. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800;900&display=block">
+<style>
+:root{--ink:#10204a;--sun:#FFD84A;--disp:'Gabarito',sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;overflow:hidden}
+#stage{position:relative;width:296px;height:240px;overflow:hidden;background:#071a3a;font-family:var(--disp)}
+.layer{position:absolute;inset:0;visibility:hidden}
+canvas.bg,canvas.fx{position:absolute;left:0;top:0;width:296px;height:240px}
+.head{position:absolute;left:0;right:0;top:5px;text-align:center;color:#fff;font-weight:900;font-size:17px;letter-spacing:.01em;
+  -webkit-text-stroke:3px var(--ink);paint-order:stroke fill;text-shadow:0 2px 0 rgba(16,32,74,.45)}
+.head span{color:var(--sun)}
+.card{position:absolute;left:28px;top:30px;width:240px;height:180px;border-radius:17px;background:#fff;padding:4px;
+  box-shadow:0 4px 0 rgba(16,32,74,.35),0 8px 18px rgba(0,0,0,.28);transform-origin:50% 55%}
+.ph{position:relative;width:100%;height:100%;border-radius:13px;overflow:hidden;background:#0b3d7a}
+.ph img{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.flash{position:absolute;inset:4px;border-radius:13px;background:#fff;opacity:0}
+.badge{position:absolute;left:24px;top:26px;width:28px;height:28px;border-radius:50%;background:var(--sun);color:var(--ink);
+  border:2.5px solid #fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;
+  box-shadow:0 2px 0 rgba(16,32,74,.4)}
+.cd{position:absolute;left:241px;top:24px;width:33px;height:33px;border-radius:50%;border:2.5px solid #fff;display:flex;
+  align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:20px;box-shadow:0 2px 0 rgba(16,32,74,.45);
+  -webkit-text-stroke:2px rgba(16,32,74,.55);paint-order:stroke fill}
+.cd svg{width:19px;height:19px}
+.bar{position:absolute;left:70px;top:217px;width:156px;height:13px;border-radius:7px;background:rgba(255,255,255,.28);
+  border:2px solid var(--ink);overflow:hidden;transform-origin:50% 50%}
+.fill{position:absolute;left:0;top:0;bottom:0;border-radius:6px;
+  background:repeating-linear-gradient(115deg,#FFE066 0 6px,#FFC93C 6px 12px)}
+.knob{position:absolute;top:212px;width:21px;height:21px;margin-left:-10px;border-radius:50%;background:#fff;border:2px solid var(--ink);
+  display:flex;align-items:center;justify-content:center}
+.knob svg{width:13px;height:13px}
+.pill{position:absolute;left:50%;top:207px;height:28px;padding:0 14px;border-radius:14px;background:#fff;color:var(--ink);
+  display:flex;align-items:center;justify-content:center;white-space:nowrap;font-weight:900;font-size:20px;
+  box-shadow:0 3px 0 rgba(16,32,74,.45),0 6px 14px rgba(0,0,0,.25);transform:translateX(-50%) scale(0)}
+/* intro / outro */
+.chk{position:absolute;left:48px;top:72px;width:200px;height:168px;transform-origin:50% 100%}
+.chk img{position:absolute;inset:0;width:200px;height:168px;visibility:hidden}
+.say{position:absolute;left:50%;top:14px;transform:translateX(-50%) scale(0);white-space:nowrap;background:#fff;color:var(--ink);
+  font-weight:900;font-size:18px;padding:6px 14px 7px;border-radius:16px;box-shadow:0 3px 0 rgba(16,32,74,.4)}
+.say:after{content:'';position:absolute;left:50%;bottom:-7px;margin-left:-7px;border:7px solid transparent;border-bottom:0;border-top-color:#fff}
+.t1,.t2{position:absolute;left:0;right:0;text-align:center;font-weight:900;color:#fff;-webkit-text-stroke:3.5px var(--ink);paint-order:stroke fill;
+  text-shadow:0 3px 0 rgba(16,32,74,.45)}
+.t1{top:12px;font-size:21px}.t2{top:34px;font-size:36px;color:var(--sun)}
+.rule{position:absolute;left:136px;height:34px;white-space:nowrap;border-radius:17px;background:rgba(255,255,255,.95);color:var(--ink);
+  display:flex;align-items:center;gap:6px;padding:0 12px 0 6px;font-weight:900;font-size:15px;box-shadow:0 3px 0 rgba(16,32,74,.4);transform:scale(0);transform-origin:20% 50%}
+.rule i{font-style:normal;flex:none;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px}
+.stamp{position:absolute;left:0;right:0;text-align:center;font-weight:900;color:var(--sun);-webkit-text-stroke:4px var(--ink);
+  paint-order:stroke fill;text-shadow:0 3px 0 rgba(16,32,74,.5);transform:scale(0)}
+.score{position:absolute;left:50%;top:60px;margin-left:-38px;width:76px;height:40px;border-radius:12px;background:var(--sun);color:var(--ink);
+  border:2.5px solid #fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;box-shadow:0 3px 0 rgba(16,32,74,.4);transform:scale(0)}
+.again{position:absolute;left:50%;top:60px;height:34px;padding:0 14px 0 8px;border-radius:17px;background:#22c55e;color:#fff;
+  border:2.5px solid #fff;display:flex;align-items:center;gap:6px;font-weight:900;font-size:18px;white-space:nowrap;
+  box-shadow:0 3px 0 rgba(16,32,74,.4);transform:translateX(-50%) scale(0)}
+.again svg{width:22px;height:22px}
+#fade{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;z-index:10}
+#TOPFX{z-index:5}
+.lvl{position:absolute;left:50%;top:84px;height:30px;padding:0 16px;border-radius:15px;background:#ef4444;color:#fff;border:2.5px solid #fff;
+  display:flex;align-items:center;font-weight:900;font-size:19px;white-space:nowrap;box-shadow:0 3px 0 rgba(16,32,74,.4);transform:translateX(-50%) scale(0)}
+.lvl.done{top:56px;background:#22c55e}
+</style></head>
+<body><div id="stage">
+  <div class="layer" id="INTRO">
+    <canvas class="bg"></canvas>
+    <div class="chk"><img data-p="talk" src="assets/cheeko/talk.png"><img data-p="think" src="assets/cheeko/think.png"><img data-p="connect" src="assets/cheeko/connect.png"><img data-p="listen" src="assets/cheeko/listen.png"></div>
+    <div class="say"></div>
+    <div class="t1">Guess the</div><div class="t2">Vehicle!</div>
+    <div class="lvl"></div>
+    <div class="rule" style="top:40px"><i style="background:#3b82f6">?</i>Look closely</div>
+    <div class="rule" style="top:84px"><i style="background:#f97316" class="secs">3</i><span class="secs2">3 seconds</span></div>
+    <div class="rule" style="top:128px"><i style="background:#22c55e">!</i>Say the name</div>
+    <div class="stamp" style="top:16px;font-size:34px">Let's go!</div>
+    <canvas class="fx"></canvas>
+  </div>
+  <div class="layer" id="RA"></div>
+  <div class="layer" id="RB"></div>
+  <div class="layer" id="OUTRO">
+    <canvas class="bg"></canvas>
+    <div class="chk"><img data-p="talk" src="assets/cheeko/talk.png"><img data-p="think" src="assets/cheeko/think.png"><img data-p="connect" src="assets/cheeko/connect.png"><img data-p="listen" src="assets/cheeko/listen.png"></div>
+    <div class="stamp" style="top:14px;font-size:34px"></div>
+    <div class="lvl done"></div>
+    <div class="say"></div>
+    <div class="score">? / 10</div>
+    <div class="again"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 3.5v5h-5"/></svg><span></span></div>
+    <canvas class="fx"></canvas>
+  </div>
+  <canvas class="fx" id="TOPFX"></canvas>
+  <div id="fade"></div>
+</div>
+<script>const LV = new URLSearchParams(location.search).get('level') || '1'; document.write('<script src="timeline_L' + LV + '.js"><\/script>');</script>
+<script>
+const TL = window.TL, TM = TL.times, RD = TL.round, TR = .5;
+const PAL = [                                    // not sky blue: the vehicle pictures already sit on sky blue
+  {a:'#36D27E', b:'#0C6B45'},   // grass
+  {a:'#FFB347', b:'#D9480F'},   // sunset
+  {a:'#A07CFF', b:'#43239E'},   // purple
+  {a:'#FF7FA8', b:'#B8215A'},   // candy
+  {a:'#2EC4B6', b:'#0B5E66'},   // teal
+];
+const NSEC = TL.answer;
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = x => 1 - Math.pow(1 - cl(x), 3);
+const back = x => { x = cl(x); const c = 1.9; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const pop = (t, t0, d = .35) => t < t0 ? 0 : back((t - t0) / d);
+const outk = (t, t0, d = .25) => 1 - ease((t - t0) / d);
+function rnd(seed) { let s = seed * 9301 + 49297; return () => (s = (s * 9301 + 49297) % 233280) / 233280; }
+
+// ---------- background: radial colour, sun rays, drifting clouds, a road along the bottom ----------
+function setupCanvas(c) { c.width = 592; c.height = 480; const x = c.getContext('2d'); x.setTransform(2, 0, 0, 2, 0, 0); return x; }
+const CLOUD = (() => { const r = rnd(11); return Array.from({ length: 7 }, () => ({ y: 8 + r() * 170, s: .6 + r() * .8, v: 6 + r() * 10, o: r() * 400 })); })();
+function cloud(ctx, x, y, s) {
+  ctx.beginPath();
+  for (const [dx, dy, rr] of [[0, 0, 9], [10, -5, 11], [22, 0, 9], [11, 4, 9]]) { ctx.moveTo(x + dx * s + rr * s, y + dy * s); ctx.arc(x + dx * s, y + dy * s, rr * s, 0, 6.283); }
+  ctx.fill();
+}
+function drawBg(ctx, pal, t) {
+  ctx.clearRect(0, 0, 296, 240);
+  const g = ctx.createRadialGradient(148, 104, 10, 148, 120, 210); g.addColorStop(0, pal.a); g.addColorStop(1, pal.b);
+  ctx.fillStyle = g; ctx.fillRect(0, 0, 296, 240);
+  ctx.save(); ctx.translate(148, 96); ctx.rotate(t * .12); ctx.fillStyle = 'rgba(255,255,255,.07)';   // slow sun rays
+  for (let i = 0; i < 12; i++) { ctx.rotate(6.283 / 12); ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(-18, -260); ctx.lineTo(18, -260); ctx.closePath(); ctx.fill(); }
+  ctx.restore();
+  ctx.fillStyle = 'rgba(255,255,255,.22)';
+  for (const c of CLOUD) cloud(ctx, 330 - ((t * c.v + c.o) % 400), c.y, c.s);
+  ctx.fillStyle = 'rgba(30,34,48,.55)'; ctx.fillRect(0, 212, 296, 28);                   // road
+  ctx.fillStyle = 'rgba(255,255,255,.18)'; ctx.fillRect(0, 211, 296, 2);
+  ctx.fillStyle = 'rgba(255,216,74,.55)';
+  for (let x = -((t * 40) % 30); x < 296; x += 30) ctx.fillRect(x, 225, 16, 2.5);          // moving lane dashes
+}
+// burst of little bubbles and sparkles (reveal, stamps)
+function burst(ctx, cx, cy, k, seed, n = 12, R = 70) {
+  if (k <= 0 || k >= 1) return; const r = rnd(seed);
+  for (let i = 0; i < n; i++) {
+    const a = r() * 6.283, d = (.35 + .65 * r()) * R * ease(k), s = (1.5 + r() * 3) * (1 - k * .6);
+    const x = cx + Math.cos(a) * d, y = cy + Math.sin(a) * d * .7 - 10 * k;
+    ctx.globalAlpha = 1 - k; ctx.beginPath(); ctx.arc(x, y, s, 0, 6.283);
+    ctx.fillStyle = ['#fff', '#FFD84A', '#7CCBFF', '#FF9EC4'][i % 4]; ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+}
+
+// ---------- round layers ----------
+const ROUND_HTML = `<canvas class="bg"></canvas><div class="head">Guess the <span>vehicle</span>!</div>
+  <div class="card"><div class="ph"><img></div><div class="flash"></div></div>
+  <div class="badge"></div><div class="cd"></div>
+  <div class="bar"><div class="fill"></div></div><div class="knob"><svg viewBox="0 0 24 24"><path d="M3 15v-3l2.5-4.5h9L18 12h2.5l.5 3z" fill="#ef4444"/><path d="M7 9h3.5v3H6zM11.5 9h2.5l2 3h-4.5z" fill="#bfe3ff"/><circle cx="7" cy="16" r="2.4" fill="#1f2937"/><circle cx="17" cy="16" r="2.4" fill="#1f2937"/></svg></div>
+  <div class="pill"><span></span></div><canvas class="fx"></canvas>`;
+const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg>';
+const L = {}; const IMG = {}; const FIT = {};
+for (const id of ['RA', 'RB']) {
+  const el = $('#' + id); el.innerHTML = ROUND_HTML;
+  L[id] = { el, bg: setupCanvas($('canvas.bg', el)), fx: setupCanvas($('canvas.fx', el)), img: $('.ph img', el), card: $('.card', el), flash: $('.flash', el),
+    badge: $('.badge', el), cd: $('.cd', el), bar: $('.bar', el), fill: $('.fill', el), knob: $('.knob', el), pill: $('.pill', el), name: $('.pill span', el), cur: null, cdk: null };
+}
+for (const id of ['INTRO', 'OUTRO']) { const el = $('#' + id); L[id] = { el, bg: setupCanvas($('canvas.bg', el)), fx: setupCanvas($('canvas.fx', el)) }; }
+const TOP = setupCanvas($('#TOPFX'));
+
+function fitName(r) {           // largest size (20 down to 13 px) that keeps the name inside the 210 px pill
+  if (FIT[r.n]) return FIT[r.n];
+  const c = document.createElement('canvas').getContext('2d'); let s = 20;
+  for (; s > 13; s -= .5) { c.font = `900 ${s}px Gabarito`; if (c.measureText(r.label).width <= 182) break; }
+  return FIT[r.n] = s;
+}
+function drawRound(id, r, u, t) {
+  const R = L[id], pal = PAL[(r.n - 1) % PAL.length];
+  drawBg(R.bg, pal, t);
+  if (R.cur !== r.n) {                                   // new vehicle in this layer
+    R.cur = r.n; R.cdk = null; R.img.src = IMG[r.n].src; R.badge.textContent = r.k;
+    R.name.textContent = r.label; R.pill.style.fontSize = fitName(r) + 'px';
+  }
+  // card: pops in, then a slow Ken Burns zoom on the crop window
+  const ci = pop(u, .08, .5); R.card.style.transform = `scale(${.86 + .14 * ci}) rotate(${(1 - ci) * -3}deg)`;
+  const im = IMG[r.n], W = 232, H = 172, [fx, fy, z] = r.crop || [.5, .5, 1];
+  const kb = 1 + .05 * cl(u / RD) + .03 * pop(u, TM.reveal, .5);
+  const s = Math.max(W / im.naturalWidth, H / im.naturalHeight) * z * kb;
+  const iw = im.naturalWidth * s, ih = im.naturalHeight * s;
+  const x = cl(W / 2 - fx * iw, W - iw, 0), y = cl(H / 2 - fy * ih, H - ih, 0);
+  R.img.style.width = im.naturalWidth + 'px'; R.img.style.transform = `translate(${x}px,${y}px) scale(${s})`;
+  R.flash.style.opacity = u >= TM.reveal ? .55 * Math.exp(-(u - TM.reveal) * 7) : 0;
+  R.badge.style.transform = `scale(${pop(u, .3, .4)})`;
+  // countdown bubble: ? then N ... 1 (green, then amber for 2, red for 1), then a tick
+  const k = u < TM.tick0 ? '?' : u < TM.reveal ? String(NSEC - Math.floor(u - TM.tick0)) : 'ok';
+  if (R.cdk !== k) { R.cdk = k; R.cd.innerHTML = k === 'ok' ? CHECK : k; R.cd.style.background = k === '?' ? '#3b82f6' : k === 'ok' ? '#16a34a' : k === '1' ? '#ef4444' : k === '2' ? '#f59e0b' : '#22c55e'; }
+  const kt = k === '?' ? .35 : k === 'ok' ? TM.reveal : TM.tick0 + (NSEC - +k);
+  R.cd.style.transform = `scale(${(k === '?' ? pop(u, .35, .4) : 1) * (1 + .4 * Math.exp(-Math.max(0, u - kt) * 9) * (u >= kt ? 1 : 0))})`;
+  // timer bar drains during the countdown, then makes way for the name
+  const f = u < TM.tick0 ? 1 : cl(1 - (u - TM.tick0) / (TM.reveal - TM.tick0));
+  const bo = u < TM.reveal ? pop(u, .45, .4) : outk(u, TM.reveal, .18);
+  R.bar.style.opacity = R.knob.style.opacity = cl(bo); R.bar.style.transform = R.knob.style.transform = `scale(${cl(bo, 0, 1.2)})`;
+  R.fill.style.width = (f * 100) + '%'; R.fill.style.backgroundPosition = `${-u * 14}px 0`;
+  R.knob.style.left = (72 + 152 * f) + 'px';
+  // name pill pops on the reveal and bumps when Cheeko says it
+  const pk = pop(u, TM.reveal + .04, .38), say = u >= TM.name ? .07 * Math.exp(-(u - TM.name) * 5) * Math.sin((u - TM.name) * 18) : 0;
+  R.pill.style.transform = `translateX(-50%) scale(${pk * (1 + say)})`;
+  R.fx.clearRect(0, 0, 296, 240); burst(R.fx, 148, 220, (u - TM.reveal) / .9, r.n * 13, 14, 80); burst(R.fx, 257, 40, (u - TM.reveal) / .6, r.n * 7, 8, 30);
+}
+
+// ---------- intro and outro ----------
+function poseOf(id, p) { for (const im of $$('.chk img', L[id].el)) im.style.visibility = im.dataset.p === p ? 'visible' : 'hidden'; }
+function drawIntro(t) {
+  const I = L.INTRO, el = I.el, B = TL.intro, T0 = TL.rounds[0].start;
+  drawBg(I.bg, PAL[0], t);
+  const chk = $('.chk', el), say = $('.say', el);
+  const pose = t < B.rules ? 'talk' : t < B.go ? 'think' : 'connect'; poseOf('INTRO', pose);
+  const up = pop(t, .1, .55);
+  let dx = 0, dy = (1 - up) * 170, sc = 1;
+  if (t >= B.title) { const k = ease((t - B.title) / .4); dy += 34 * k; sc = 1 - .16 * k; }
+  if (t >= B.rules) { const k = ease((t - B.rules) / .4); dx = -66 * k; dy += 2 * k; sc -= .08 * k; }
+  if (t >= B.go) { const k = ease((t - B.go) / .4); dx *= 1 - k; dy -= 8 * k; sc += .12 * k; }
+  chk.style.transform = `translate(${dx}px,${dy + 2 * Math.sin(t * 5)}px) scale(${sc})`;
+  // speech bubble: "Hi! I'm Cheeko!" then "Ready?"
+  let txt = '', sk = 0;
+  if (t >= B.hi && t < B.title) { txt = TL.level === 1 ? "Hi! I'm Cheeko!" : 'Hi again!'; sk = pop(t, B.hi, .35) * (t > B.title - .2 ? outk(t, B.title - .2, .2) : 1); }
+  if (t >= B.go && t < B.go + .85) { txt = 'Ready?'; sk = pop(t, B.go, .3) * (t > B.go + .65 ? outk(t, B.go + .65, .2) : 1); }
+  if (say.textContent !== txt) say.textContent = txt; say.style.transform = `translateX(-50%) scale(${sk})`;
+  // title
+  const tk = t < B.rules ? 1 : outk(t, B.rules, .3);
+  $('.t1', el).style.transform = `translateY(${(1 - ease((t - B.title) / .35)) * -60}px) scale(${tk})`;
+  $('.t2', el).style.transform = `scale(${pop(t, B.title + .55, .45) * tk})`;
+  const lv = $('.lvl', el); if (!lv.textContent) { lv.textContent = 'Level ' + TL.level; $('.secs', el).textContent = NSEC; $('.secs2', el).textContent = NSEC + ' seconds'; }
+  lv.style.transform = `translateX(-50%) scale(${pop(t, B.level, .35) * (t < B.rules ? 1 : outk(t, B.rules, .25))}) rotate(${-3 * pop(t, B.level, .35)}deg)`;
+  // rules: three chips, timed to the words of the rules line
+  const rl = $$('.rule', el), rd = (B.go - B.rules), at = [.05, .38, .62];
+  rl.forEach((e, i) => e.style.transform = `scale(${pop(t, B.rules + at[i] * rd, .35) * (t < B.go ? 1 : outk(t, B.go, .25))})`);
+  // "Let's go!"
+  const gk = pop(t, B.go + .7, .35); $('.stamp', el).style.transform = `scale(${gk}) rotate(${-4 * gk}deg)`;
+  I.fx.clearRect(0, 0, 296, 240); burst(I.fx, 148, 40, (t - B.go - .7) / .9, 3, 16, 110); burst(I.fx, 148, 60, (t - B.title - .55) / .9, 5, 14, 100);
+}
+const OUT = { 1: ['Great job!', 'Level 1 done!', 'Play Level 2!'], 2: ['Awesome!', 'Level 2 done!', 'Play Level 3!'], 3: ['Champion!', 'All 3 levels done!', 'Play again!'] }[TL.level];
+function drawOutro(t) {
+  const O = L.OUTRO, el = O.el, B = TL.outro, t0 = TL.outroStart;
+  drawBg(O.bg, PAL[1], t);
+  if (!$('.stamp', el).textContent) { $('.stamp', el).textContent = OUT[0]; $('.lvl', el).textContent = OUT[1]; $('.again span', el).textContent = OUT[2]; }
+  poseOf('OUTRO', t < B.bye ? (t < B.howmany ? 'connect' : 'talk') : 'listen');
+  const chk = $('.chk', el); const up = pop(t, t0 + .15, .5);
+  chk.style.transform = `translate(0,${(1 - up) * 170 + 14 + 2 * Math.sin(t * 5)}px) scale(.9)`;
+  const sk = pop(t, B.done, .35) * (t < B.howmany - .15 ? 1 : outk(t, B.howmany - .15, .2));
+  $('.stamp', el).style.transform = `scale(${sk}) rotate(${-4 * sk}deg)`;
+  $('.lvl', el).style.transform = `translateX(-50%) scale(${pop(t, B.done + .45, .35) * (t < B.howmany - .15 ? 1 : outk(t, B.howmany - .15, .2))})`;
+  const say = $('.say', el); let txt = '', k = 0;
+  if (t >= B.howmany && t < B.next - .1) { txt = 'How many did you get?'; k = pop(t, B.howmany, .35) * (t < B.next - .3 ? 1 : outk(t, B.next - .3, .2)); }
+  if (t >= B.bye) { txt = 'Bye bye!'; k = pop(t, B.bye, .35); }
+  if (say.textContent !== txt) say.textContent = txt; say.style.transform = `translateX(-50%) scale(${k})`;
+  $('.score', el).style.transform = `scale(${pop(t, B.howmany + .5, .35) * (t < B.next - .3 ? 1 : outk(t, B.next - .3, .2))})`;
+  $('.again', el).style.transform = `translateX(-50%) scale(${pop(t, B.next + .1, .35) * (t < B.bye - .15 ? 1 : outk(t, B.bye - .15, .2))}) rotate(${-3 * Math.sin(t * 6) * (t > B.next + .4 ? 1 : 0)}deg)`;
+  O.fx.clearRect(0, 0, 296, 240); burst(O.fx, 148, 36, (t - B.done) / 1.1, 11, 20, 130); burst(O.fx, 148, 76, (t - B.next - .1) / .9, 17, 12, 90);
+}
+
+// ---------- wave wipe between scenes ----------
+function wipe(layerEl, k, t) {
+  if (k >= 1) { layerEl.style.clipPath = ''; return; }
+  const e = 330 - k * 380, pts = [];
+  for (let y = -10; y <= 250; y += 10) pts.push(`${e + 12 * Math.sin(y / 20 + t * 7)}px ${y}px`);
+  layerEl.style.clipPath = `polygon(${pts.join(',')},400px 250px,400px -10px)`;
+  // white edge with speed dashes
+  TOP.lineWidth = 4; TOP.strokeStyle = 'rgba(255,255,255,.9)'; TOP.beginPath();
+  for (let y = -10; y <= 250; y += 5) { const x = e + 12 * Math.sin(y / 20 + t * 7); y === -10 ? TOP.moveTo(x, y) : TOP.lineTo(x, y); }
+  TOP.stroke(); const r = rnd(Math.floor(k * 12) + 3);
+  for (let i = 0; i < 9; i++) { const y = r() * 240, x = e + 12 * Math.sin(y / 20 + t * 7) + 4 + r() * 16; TOP.beginPath(); TOP.arc(x, y, 1.5 + r() * 3, 0, 6.283); TOP.fillStyle = 'rgba(255,255,255,.75)'; TOP.fill(); }
+}
+
+function show(id, on, z) { const e = L[id].el; e.style.visibility = on ? 'visible' : 'hidden'; if (on) e.style.zIndex = z; }
+window.render = t => {
+  TOP.clearRect(0, 0, 296, 240);
+  const T0 = TL.rounds[0].start, O = TL.outroStart, n = TL.rounds.length;
+  for (const id of ['INTRO', 'RA', 'RB', 'OUTRO']) { L[id].el.style.visibility = 'hidden'; L[id].el.style.clipPath = ''; }
+  if (t < T0) { show('INTRO', 1, 1); drawIntro(t); }
+  else if (t < O) {
+    const i = Math.min(n - 1, Math.floor((t - T0) / RD)), r = TL.rounds[i], u = t - r.start, cur = i % 2 ? 'RB' : 'RA';
+    show(cur, 1, 2); drawRound(cur, r, u, t);
+    if (u < TR) {
+      if (i === 0) { show('INTRO', 1, 1); drawIntro(t); }
+      else { const prev = i % 2 ? 'RA' : 'RB'; show(prev, 1, 1); drawRound(prev, TL.rounds[i - 1], RD + u, t); }
+      wipe(L[cur].el, u / TR, t);
+    }
+  } else {
+    const u = t - O; show('OUTRO', 1, 2); drawOutro(t);
+    if (u < TR) { const last = (n - 1) % 2 ? 'RB' : 'RA'; show(last, 1, 1); drawRound(last, TL.rounds[n - 1], RD + u, t); wipe(L.OUTRO.el, u / TR, t); }
+  }
+  $('#fade').style.opacity = cl((t - (TL.dur - .7)) / .7);
+};
+window.ready = (async () => {
+  await Promise.all(TL.rounds.map(r => new Promise(res => { const im = new Image(); im.onload = res; im.onerror = res; im.src = r.img; IMG[r.n] = im; })));
+  await Promise.all($$('img').map(im => im.decode().catch(() => {})));
+  await document.fonts.ready; await document.fonts.load('900 20px Gabarito');
+  window.render(0);
+})();
+</script></body></html>

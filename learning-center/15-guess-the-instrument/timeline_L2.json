@@ -1,0 +1,244 @@
+{
+ "idea": "15-guess-the-instrument",
+ "id": "V46",
+ "level": 2,
+ "nLevels": 2,
+ "mode": "sound",
+ "theme": {
+  "bg": "notes",
+  "pals": [
+   [
+    "#E599F7",
+    "#862E9C"
+   ],
+   [
+    "#FFC078",
+    "#D9480F"
+   ],
+   [
+    "#91A7FF",
+    "#364FC7"
+   ],
+   [
+    "#8CE99A",
+    "#2B8A3E"
+   ],
+   [
+    "#FFA8A8",
+    "#C92A2A"
+   ]
+  ],
+  "trans": "zoom",
+  "enter": "pop",
+  "fx": "stars",
+  "knob": "🎵",
+  "bar": [
+   "#E599F7",
+   "#CC5DE8"
+  ],
+  "music": "indian"
+ },
+ "answer": 5,
+ "dur": 137.66,
+ "n": 10,
+ "t1": "Guess the",
+ "t2": "Instrument!",
+ "head": "What is <span>playing</span>?",
+ "chips": [
+  [
+   "?",
+   "Listen closely"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Super!",
+  "Level 2 done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.9925625,
+  "rules": 5.254958333333333,
+  "go": 8.635541666666667
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 10.459,
+   "label": "Sitar",
+   "pill": "Sitar",
+   "times": {
+    "snd0": 1.619,
+    "snd1": 3.259,
+    "tick0": 3.559,
+    "reveal": 8.559,
+    "name": 8.809
+   },
+   "dur": 11.159,
+   "img": "inst_sitar"
+  },
+  {
+   "k": 2,
+   "start": 21.618,
+   "label": "Dhol",
+   "pill": "Dhol",
+   "times": {
+    "snd0": 2.436,
+    "snd1": 5.036,
+    "tick0": 5.336,
+    "reveal": 10.336,
+    "name": 10.586
+   },
+   "dur": 12.936,
+   "img": "inst_dhol"
+  },
+  {
+   "k": 3,
+   "start": 34.553,
+   "label": "Harmonica",
+   "pill": "Harmonica",
+   "times": {
+    "snd0": 1.743,
+    "snd1": 3.483,
+    "tick0": 3.783,
+    "reveal": 8.783,
+    "name": 9.033
+   },
+   "dur": 11.383,
+   "img": "inst_harmonica"
+  },
+  {
+   "k": 4,
+   "start": 45.937,
+   "label": "Cymbals",
+   "pill": "Cymbals",
+   "times": {
+    "snd0": 1.658,
+    "snd1": 4.258,
+    "tick0": 4.558,
+    "reveal": 9.558,
+    "name": 9.808
+   },
+   "dur": 12.158,
+   "img": "inst_cymbals"
+  },
+  {
+   "k": 5,
+   "start": 58.095,
+   "label": "Mridangam",
+   "pill": "Mridangam",
+   "times": {
+    "snd0": 1.546,
+    "snd1": 4.146,
+    "tick0": 4.446,
+    "reveal": 9.446,
+    "name": 9.696
+   },
+   "dur": 12.046,
+   "img": "inst_mridangam"
+  },
+  {
+   "k": 6,
+   "start": 70.141,
+   "label": "Tambourine",
+   "pill": "Tambourine",
+   "times": {
+    "snd0": 1.534,
+    "snd1": 3.494,
+    "tick0": 3.794,
+    "reveal": 8.794,
+    "name": 9.044
+   },
+   "dur": 11.394,
+   "img": "inst_tambourine"
+  },
+  {
+   "k": 7,
+   "start": 81.535,
+   "label": "Saxophone",
+   "pill": "Saxophone",
+   "times": {
+    "snd0": 1.48,
+    "snd1": 4.08,
+    "tick0": 4.38,
+    "reveal": 9.38,
+    "name": 9.63
+   },
+   "dur": 11.98,
+   "img": "inst_saxophone"
+  },
+  {
+   "k": 8,
+   "start": 93.515,
+   "label": "Harp",
+   "pill": "Harp",
+   "times": {
+    "snd0": 1.53,
+    "snd1": 4.13,
+    "tick0": 4.43,
+    "reveal": 9.43,
+    "name": 9.68
+   },
+   "dur": 12.03,
+   "img": "inst_harp"
+  },
+  {
+   "k": 9,
+   "start": 105.545,
+   "label": "Accordion",
+   "pill": "Accordion",
+   "times": {
+    "snd0": 1.659,
+    "snd1": 3.059,
+    "tick0": 3.359,
+    "reveal": 8.359,
+    "name": 8.609
+   },
+   "dur": 10.959,
+   "img": "inst_accordion"
+  },
+  {
+   "k": 10,
+   "start": 116.504,
+   "label": "Triangle",
+   "pill": "Triangle",
+   "times": {
+    "snd0": 1.801,
+    "snd1": 4.401,
+    "tick0": 4.701,
+    "reveal": 9.701,
+    "name": 9.951
+   },
+   "dur": 12.301,
+   "img": "inst_triangle"
+  }
+ ],
+ "outroStart": 128.804,
+ "outro": {
+  "done": 129.15429166666667,
+  "howmany": 130.86002083333335,
+  "next": 132.54814583333334,
+  "bye": 135.223875
+ },
+ "paths": {
+  "inst_sitar": "../images/inst_sitar.jpg",
+  "inst_dhol": "../images/inst_dhol.jpg",
+  "inst_harmonica": "../images/inst_harmonica.jpg",
+  "inst_cymbals": "../images/inst_cymbals.jpg",
+  "inst_mridangam": "../images/inst_mridangam.jpg",
+  "inst_tambourine": "../images/inst_tambourine.jpg",
+  "inst_saxophone": "../images/inst_saxophone.jpg",
+  "inst_harp": "../images/inst_harp.jpg",
+  "inst_accordion": "../images/inst_accordion.jpg",
+  "inst_triangle": "../images/inst_triangle.jpg"
+ }
+}

@@ -1,0 +1,246 @@
+{
+ "dog": {
+  "src": "raw/dog/DogsBarkExteriorGr CT033001.wav",
+  "secs": 2.6
+ },
+ "cat": {
+  "src": "raw/cat/Cat Meows.wav",
+  "secs": 2.22
+ },
+ "cow": {
+  "src": "raw/cow/Cow Moo.wav",
+  "secs": 2.18
+ },
+ "duck": {
+  "src": "raw/duck/AnimalDuckCart CTE01_21.1.wav",
+  "secs": 1.74
+ },
+ "sheep": {
+  "src": "raw/sheep/SheepBaaMediumPers PE027001 trim.wav",
+  "secs": 1.3
+ },
+ "horse": {
+  "src": "raw/horse/Horse 2003_17.wav",
+  "secs": 2.26
+ },
+ "pig": {
+  "src": "raw/pig/PigOink_BW.2783.wav",
+  "secs": 1.46
+ },
+ "rooster": {
+  "src": "raw/rooster/AnimalBird CTV01_28_04.wav",
+  "secs": 2.14
+ },
+ "goat": {
+  "src": "raw/goat/AnimalGoat WWA09_24_6.wav",
+  "secs": 2.42
+ },
+ "donkey": {
+  "src": "raw/donkey/DonkeyBray PEHD016901.wav",
+  "secs": 2.5
+ },
+ "lion": {
+  "src": "raw/lion/LionRoarHeavySnarl AT013701.wav",
+  "secs": 2.6
+ },
+ "elephant": {
+  "src": "raw/elephant/ElephantSingleClas AT043701.wav",
+  "secs": 1.34
+ },
+ "monkey": {
+  "src": "raw/monkey/CartoonMonkey 4002_49_1.wav",
+  "secs": 2.6
+ },
+ "frog": {
+  "src": "raw/frog/25622 frog croak 1-full.wav",
+  "secs": 1.66
+ },
+ "tiger": {
+  "src": "raw/tiger/TigerGrowlsClassic AT018601.wav",
+  "secs": 2.06
+ },
+ "bear": {
+  "src": "raw/bear/BearGrowls SS015401.wav",
+  "secs": 2.6
+ },
+ "wolf": {
+  "src": "raw/wolf/LDj_Audio_WolfHowl_V1.wav",
+  "secs": 2.6
+ },
+ "owl": {
+  "src": "raw/owl/OwlGreatHornedHoot AT083001.wav",
+  "secs": 2.38
+ },
+ "snake": {
+  "src": "raw/snake/ANIMAL-SNAKE_GEN-HDF-01269.wav",
+  "secs": 2.51
+ },
+ "bee": {
+  "src": "raw/bee/bee-buzzing/bee-buzzing.wav",
+  "secs": 2.6
+ },
+ "house_doorbell": {
+  "src": "raw/house_doorbell/DoorbellHouseholdD EE144801.wav",
+  "secs": 2.6
+ },
+ "house_mixer": {
+  "src": "raw/house_mixer/BlenderStrtRunStp PE1043103.wav",
+  "secs": 2.6
+ },
+ "house_tap": {
+  "src": "raw/house_tap/WaterSink_DIGIB01-70.wav",
+  "secs": 2.6
+ },
+ "house_clock": {
+  "src": "raw/house_clock/Mountain Audio - Clock Ticking/Mountain Audio - Clock Ticking.wav",
+  "secs": 2.32
+ },
+ "house_knock": {
+  "src": "raw/house_knock/DoorKnock_DIGIB01-11.wav",
+  "secs": 2.6
+ },
+ "house_alarm": {
+  "src": "raw/house_alarm/AlarmClockAnalogRi PE251701.wav",
+  "secs": 2.6
+ },
+ "house_kettle": {
+  "src": "raw/house_kettle/23056 kettle boiling whistle-full.wav",
+  "secs": 2.6
+ },
+ "house_broom": {
+  "src": "raw/house_broom/Sweeping With Broom/Sweeping With Broom.wav",
+  "secs": 2.6
+ },
+ "house_fan": {
+  "src": "raw/house_fan/CeilingFanRunHigh_BW.14132.wav",
+  "secs": 2.6
+ },
+ "house_washer": {
+  "src": "raw/house_washer/19156 washing machine spinning-full.wav",
+  "secs": 2.6
+ },
+ "house_keys": {
+  "src": "raw/house_keys/KeysRattleJingle PE1027305.wav",
+  "secs": 2.26
+ },
+ "house_zip": {
+  "src": "raw/house_zip/Zippers SS029901.wav",
+  "secs": 1.51
+ },
+ "house_scissors": {
+  "src": "raw/house_scissors/ScissorPaper_DIGIK2-25-01.wav",
+  "secs": 1.74
+ },
+ "house_brushing": {
+  "src": "raw/house_brushing/BrushTeeth_BW.15820.wav",
+  "secs": 1.71
+ },
+ "house_rain": {
+  "src": "raw/house_rain/rain-on-window/rain-on-window.wav",
+  "secs": 2.6
+ },
+ "house_tawa": {
+  "src": "raw/house_tawa/FryingPanSizzle_BW.15245.wav",
+  "secs": 2.6
+ },
+ "house_creak": {
+  "src": "raw/house_creak/DoorWoodCreakSha SDT2049501.wav",
+  "secs": 2.06
+ },
+ "house_horn": {
+  "src": "raw/house_horn/VEHHorn_India Car Horn_SDINDIA075.wav",
+  "secs": 2.6
+ },
+ "house_footsteps": {
+  "src": "raw/house_footsteps/FootstepsWoodFloor PE287302.wav",
+  "secs": 2.34
+ },
+ "inst_drum": {
+  "src": "raw/inst_drum/DrumFill_BW.24999.wav",
+  "secs": 2.38
+ },
+ "inst_piano": {
+  "src": "raw/inst_piano/PianoChordC_BW.25859.wav",
+  "secs": 2.6
+ },
+ "inst_guitar": {
+  "src": "raw/inst_guitar/AcousticGuitarStrum_BW.24875.wav",
+  "secs": 2.6
+ },
+ "inst_flute": {
+  "src": "raw/inst_flute/indian bamboo flute.wav",
+  "secs": 2.6
+ },
+ "inst_tabla": {
+  "src": "raw/inst_tabla/India Tabla Percussion Logo (25s).wav",
+  "secs": 2.6
+ },
+ "inst_bell": {
+  "src": "raw/inst_bell/Bell-Hand_PREM11-0904.wav",
+  "secs": 2.6
+ },
+ "inst_xylophone": {
+  "src": "raw/inst_xylophone/Mountain Audio - Xylophone Trill/Mountain Audio - Xylophone Trill.wav",
+  "secs": 1.36
+ },
+ "inst_trumpet": {
+  "src": "raw/inst_trumpet/TrumpetNoteTrumpet AC053401.wav",
+  "secs": 2.0
+ },
+ "inst_violin": {
+  "src": "raw/inst_violin/ViolinScale_BW.26331.wav",
+  "secs": 2.34
+ },
+ "inst_harmonium": {
+  "src": "raw/inst_harmonium/Small_Reed_Organ_Playing_Single_Chord_ODY-1232-089.wav",
+  "secs": 2.6
+ },
+ "inst_sitar": {
+  "src": "raw/inst_sitar/SitarAccents EC10_99_1.wav",
+  "secs": 1.64
+ },
+ "inst_dhol": {
+  "src": "raw/inst_dhol/MusicDrums SME02_70.3.wav",
+  "secs": 2.6
+ },
+ "inst_mridangam": {
+  "src": "raw/inst_mridangam/MUSCPerc_India Musical Mridangam_SDINDIA275.wav",
+  "secs": 2.6
+ },
+ "inst_tambourine": {
+  "src": "raw/inst_tambourine/TambourineQuickSha AC058801.wav",
+  "secs": 1.96
+ },
+ "inst_saxophone": {
+  "src": "raw/inst_saxophone/SaxMelodySolo SDT2056601.wav",
+  "secs": 2.6
+ },
+ "inst_harp": {
+  "src": "raw/inst_harp/MusicFx IMA02_08_1.wav",
+  "secs": 2.6
+ },
+ "inst_accordion": {
+  "src": "raw/inst_accordion/AccordionHappyRhyt MA020501.wav",
+  "secs": 1.4
+ },
+ "inst_triangle": {
+  "src": "raw/inst_triangle/LargeMetalTriangleSingleRingingHits_YKSjm_02.wav",
+  "secs": 2.6
+ },
+ "inst_harmonica": {
+  "src": "raw/inst_harmonica/MouthOrganVibratoL MA026102.wav",
+  "secs": 1.74
+ },
+ "inst_cymbals": {
+  "src": "raw/inst_cymbals/02571212.wav",
+  "secs": 2.6
+ },
+ "house_pressure_cooker": {
+  "src": "raw/house_pressure_cooker/Steam Whistle.wav",
+  "secs": 1.58
+ },
+ "inst_maracas": {
+  "src": "raw/inst_maracas/MUSCShake_Maracas Short Shake Other Percussion_GENHD1-18702.wav",
+  "secs": 1.89
+ }
+}

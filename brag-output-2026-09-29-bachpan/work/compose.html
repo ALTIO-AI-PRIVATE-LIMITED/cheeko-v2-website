@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800;900&family=Hanken+Grotesk:wght@600;800&display=block">
+<style>
+:root{--brand:#F0521D;--sun:#FFC81A;--ink:#231A10;--red:#E5341B;--cream:#FFF6E8;--disp:"Gabarito",sans-serif;--body:"Hanken Grotesk",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#000}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden}
+.scene{position:absolute;inset:0;overflow:hidden;display:none}
+.cam{position:absolute;inset:0;transform-origin:0 0}
+.abs{position:absolute}
+.fill{position:absolute;inset:-200px}
+.st{position:absolute;display:block;transform-origin:50% 100%;filter:url(#stk)}
+.dots::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(35,26,16,.07) 3.4px,transparent 4px) 0 0/38px 38px}
+.floor{position:absolute;left:-200px;right:-200px;height:500px;border-top:10px solid var(--ink);border-radius:50% 50% 0 0/70px 70px 0 0}
+.bub{position:absolute;background:#fff;border:7px solid var(--ink);border-radius:52px;padding:22px 42px 26px;font:900 54px/1.12 var(--disp);color:var(--ink);transform-origin:20% 100%;max-width:700px}
+.bub svg{position:absolute;top:calc(100% - 7px)}
+.chip{position:absolute;border:7px solid var(--ink);border-radius:99px;padding:10px 32px 14px;font:900 48px var(--disp);color:#fff;white-space:nowrap;transform-origin:50% 50%}
+.vo{position:absolute;left:0;right:0;text-align:center;font:800 64px var(--disp);color:#fff;text-shadow:0 6px 24px rgba(0,0,0,.45);letter-spacing:.005em}
+.cloud{position:absolute;background:#fff;border-radius:99px;opacity:.8}
+.tree{position:absolute}
+.tree i{position:absolute;border-radius:50%}
+.conf{position:absolute;left:0;top:0;width:24px;height:15px;border-radius:3px;opacity:0}
+.dev{position:absolute;transform-origin:50% 100%;filter:url(#stk)}
+.dev img.d{display:block;width:100%}
+.scr{position:absolute;left:22.4%;top:10.39%;width:62.4%;height:29.99%;overflow:hidden;-webkit-mask:url(data:image/png;base64,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) 0 0/100% 100% no-repeat;mask:url(data:image/png;base64,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) 0 0/100% 100% no-repeat}
+.scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#wipe{position:absolute;top:-100px;bottom:-100px;width:2600px;left:0;background:var(--sun);border-left:14px solid var(--ink);border-right:14px solid var(--ink);transform:translateX(-2800px) skewX(-12deg);z-index:90}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <filter id="stk" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
+  <feComponentTransfer in="SourceAlpha" result="a"><feFuncA type="discrete" tableValues="0 1 1 1 1 1 1 1"/></feComponentTransfer>
+  <feMorphology in="a" operator="dilate" radius="12" result="d"/>
+  <feFlood flood-color="#ffffff"/><feComposite in2="d" operator="in" result="border"/>
+  <feGaussianBlur in="d" stdDeviation="9"/><feOffset dx="6" dy="14" result="o"/>
+  <feFlood flood-color="#231A10" flood-opacity=".28"/><feComposite in2="o" operator="in" result="shadow"/>
+  <feMerge><feMergeNode in="shadow"/><feMergeNode in="border"/><feMergeNode in="SourceGraphic"/></feMerge>
+ </filter>
+</defs></svg>
+<div id="stage">
+
+ <!-- S1 PLAYGROUND -->
+ <div class="scene" id="s1"><div class="cam" id="c1">
+  <div class="fill" style="background:linear-gradient(#FFB26B,#FFD9A0 55%,#FFE9C4)"></div>
+  <div class="abs" style="left:1440px;top:170px;width:220px;height:220px;border-radius:50%;background:#FFF1C4;box-shadow:0 0 120px 60px rgba(255,241,196,.6)"></div>
+  <div class="cloud" style="left:240px;top:140px;width:260px;height:60px"></div><div class="cloud" style="left:1000px;top:210px;width:210px;height:50px"></div>
+  <div class="tree" style="left:120px;top:500px"><i style="left:0;top:40px;width:150px;height:150px;background:#6AA84F"></i><i style="left:80px;top:0;width:170px;height:170px;background:#7DBA5E"></i></div>
+  <div class="tree" style="left:1650px;top:470px"><i style="left:0;top:50px;width:160px;height:160px;background:#6AA84F"></i><i style="left:90px;top:0;width:180px;height:180px;background:#86C466"></i></div>
+  <div class="floor" style="top:840px;background:#A9D46F"></div>
+  <img class="st" id="s1-rohan" src="stickers/rohan-inviting.png" style="left:380px;top:190px;height:790px">
+  <img class="st" id="s1-rohan2" src="stickers/rohan-disappointed.png" style="left:443px;top:200px;height:780px">
+  <img class="st" id="s1-kabir" src="stickers/kabir-call.png" style="left:1180px;top:180px;height:800px">
+  <div class="bub" id="s1-b1" style="left:120px;top:40px">Wanna play?<svg width="80" height="70" viewBox="0 0 80 70" style="left:300px"><path d="M8 0 L50 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+  <div class="bub" id="s1-b2" style="left:1060px;top:20px">Packed day today. Let's connect tomorrow.<svg width="80" height="70" viewBox="0 0 80 70" style="left:220px"><path d="M8 0 L28 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+ </div></div>
+
+ <!-- S2 RESTAURANT -->
+ <div class="scene" id="s2"><div class="cam" id="c2">
+  <div class="fill dots" style="background:repeating-conic-gradient(from 0deg at 50% 40%,#FFC97A 0 8deg,#FFBA63 8deg 16deg)"></div>
+  <div class="abs" style="left:340px;top:0;width:8px;height:170px;background:var(--ink)"></div><div class="abs" style="left:274px;top:160px;width:140px;height:70px;border-radius:70px 70px 0 0;background:#E5341B;border:7px solid var(--ink)"></div>
+  <div class="abs" style="left:1560px;top:0;width:8px;height:150px;background:var(--ink)"></div><div class="abs" style="left:1494px;top:140px;width:140px;height:70px;border-radius:70px 70px 0 0;background:#2F9E5B;border:7px solid var(--ink)"></div>
+  <img class="st" id="s2-rohan" src="stickers/rohan-hungry.png" style="left:300px;top:200px;height:790px">
+  <img class="st" id="s2-tara" src="stickers/tara-critical.png" style="left:1240px;top:170px;height:810px">
+  <div class="abs" style="left:-60px;right:-60px;top:760px;height:420px;background:#B5703E;border-top:12px solid var(--ink);border-radius:40px 40px 0 0"></div>
+  <div class="abs" style="left:-60px;right:-60px;top:790px;height:22px;background:#C98450"></div>
+  <img class="st" id="s2-dosa" src="stickers/masala-dosa.png" style="left:720px;top:600px;height:360px">
+  <div class="chip" id="s2-rec" style="left:1520px;top:860px;background:var(--red)">● REC</div>
+  <div class="bub" id="s2-b1" style="left:1000px;top:30px">Don't touch it. Content first.<svg width="80" height="70" viewBox="0 0 80 70" style="left:380px"><path d="M8 0 L28 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+  <div class="bub" id="s2-b2" style="left:120px;top:50px">But I'm hungry.<svg width="80" height="70" viewBox="0 0 80 70" style="left:280px"><path d="M8 0 L50 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+ </div></div>
+
+ <!-- S3 BEACH -->
+ <div class="scene" id="s3"><div class="cam" id="c3">
+  <div class="fill" style="background:linear-gradient(#7CC8F2,#BFE6FF 60%,#E6F6FF)"></div>
+  <div class="abs" style="left:1460px;top:120px;width:200px;height:200px;border-radius:50%;background:#FFF1B0;box-shadow:0 0 100px 50px rgba(255,241,176,.7)"></div>
+  <div class="cloud" style="left:300px;top:160px;width:240px;height:56px"></div>
+  <div class="abs" style="left:-100px;right:-100px;top:560px;height:360px;background:#2E9BD6"></div>
+  <div class="abs" id="s3-waves" style="left:-300px;right:-300px;top:600px;height:280px;background:repeating-linear-gradient(0deg,transparent 0 44px,rgba(255,255,255,.55) 44px 52px)"></div>
+  <div class="floor" style="top:840px;background:#F6D9A2"></div>
+  <img class="st" id="s3-tara" src="stickers/tara-critical.png" style="left:760px;top:170px;height:820px">
+  <div class="chip" id="s3-take" style="left:1440px;top:420px;background:var(--ink)">📸 Take 12</div>
+  <div class="abs" id="s3-flash" style="inset:0;background:#fff;opacity:0"></div>
+  <div class="bub" id="s3-b1" style="left:120px;top:40px">One more, Papa. I don't look like I'm enjoying it.<svg width="80" height="70" viewBox="0 0 80 70" style="left:560px"><path d="M8 0 L50 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+ </div></div>
+
+ <!-- S4 PARK BENCH -->
+ <div class="scene" id="s4"><div class="cam" id="c4">
+  <div class="fill dots" style="background:repeating-conic-gradient(from 0deg at 50% 40%,#CFEAB0 0 8deg,#BFE19A 8deg 16deg)"></div>
+  <div class="tree" style="left:60px;top:430px"><i style="left:0;top:60px;width:190px;height:190px;background:#6AA84F"></i><i style="left:110px;top:0;width:210px;height:210px;background:#7DBA5E"></i></div>
+  <div class="tree" style="left:1580px;top:420px"><i style="left:0;top:50px;width:190px;height:190px;background:#6AA84F"></i><i style="left:100px;top:0;width:210px;height:210px;background:#86C466"></i></div>
+  <div class="floor" style="top:860px;background:#8FC45E"></div>
+  <img class="st" id="s4-ishaan" src="stickers/ishaan-uncle.png" style="left:430px;top:230px;height:760px">
+  <img class="st" id="s4-rohan" src="stickers/rohan-side-eye.png" style="left:1090px;top:200px;height:790px">
+  <div class="bub" id="s4-b1" style="left:80px;top:40px">Kids these days. No hope for them.<svg width="80" height="70" viewBox="0 0 80 70" style="left:420px"><path d="M8 0 L50 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+ </div></div>
+
+ <!-- S5 BIRTHDAY -->
+ <div class="scene" id="s5"><div class="cam" id="c5">
+  <div class="fill dots" id="s5-bg" style="background:repeating-conic-gradient(from 0deg at 50% 45%,#FFC7A1 0 8deg,#FFB48C 8deg 16deg)"></div>
+  <div class="floor" id="s5-floor" style="top:900px;background:#F59E6B"></div>
+  <div class="abs" id="s5-bunt" style="left:-30px;right:-30px;top:0;height:170px"></div>
+  <div class="abs" id="confhost" style="inset:0"></div>
+  <img class="st" id="s5-bal" src="stickers/balloons.png" style="left:90px;top:170px;height:600px">
+  <img class="st" id="s5-bal2" src="stickers/balloons.png" style="left:1660px;top:120px;height:470px">
+  <img class="st" id="s5-rohan" src="stickers/rohan-cheer-hat.png" style="left:560px;top:190px;height:790px">
+  <img class="st" id="s5-rohan2" src="stickers/rohan-confused-hat.png" style="left:560px;top:200px;height:780px">
+  <img class="st" id="s5-cake" src="stickers/cake.png" style="left:330px;top:560px;height:470px">
+  <img class="st" id="s5-tara" src="stickers/tara-filming.png" style="left:1180px;top:210px;height:790px">
+  <div class="chip" id="s5-rec" style="left:1560px;top:890px;background:var(--red)">● REC</div>
+  <div class="chip" id="s5-norec" style="left:1440px;top:890px;background:#7A6E5D">✕ Not recorded</div>
+  <div class="bub" id="s5-b1" style="left:1080px;top:40px">Do the reaction again. It didn't record.<svg width="80" height="70" viewBox="0 0 80 70" style="left:170px"><path d="M8 0 L28 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+  <div class="bub" id="s5-b2" style="left:170px;top:90px">I have to be happy again?<svg width="80" height="70" viewBox="0 0 80 70" style="left:430px"><path d="M8 0 L50 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+ </div></div>
+
+ <!-- S6 BEDTIME, the turn and the ending (one bedroom) -->
+ <div class="scene" id="s6"><div class="cam" id="c6">
+  <div class="fill" id="s6-wall" style="background:#26306A"></div>
+  <div class="abs" style="left:250px;top:120px;width:360px;height:300px;border-radius:24px;background:#1A2150;border:12px solid #3A4488"></div>
+  <div class="abs" style="left:470px;top:170px;width:90px;height:90px;border-radius:50%;background:#FFF1B8;box-shadow:-22px 0 0 0 #1A2150 inset"></div>
+  <div class="abs" style="left:270px;top:140px;width:320px;height:260px;background:radial-gradient(circle,#fff 2px,transparent 3px) 0 0/70px 60px;opacity:.7"></div>
+  <div class="abs" id="s6-lampglow" style="left:40px;top:260px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(255,196,110,.55),rgba(255,196,110,0) 65%)"></div>
+  <div class="abs" style="left:230px;top:430px;width:170px;height:130px;border-radius:70px 70px 12px 12px;background:#FFD27A;border:7px solid var(--ink)"></div>
+  <div class="abs" style="left:306px;top:556px;width:18px;height:90px;background:var(--ink)"></div>
+  <div class="abs" style="left:160px;top:640px;width:320px;height:260px;border-radius:18px;background:#8A5A3B;border:7px solid var(--ink)"></div>
+  <!-- bed -->
+  <div class="abs" style="left:560px;top:420px;width:120px;height:420px;border-radius:30px 30px 10px 10px;background:#7B5BB0;border:7px solid var(--ink)"></div>
+  <div class="abs" style="left:620px;top:640px;width:1060px;height:170px;border-radius:30px;background:#F6F1FF;border:7px solid var(--ink)"></div>
+  <div class="abs" style="left:640px;top:580px;width:230px;height:110px;border-radius:40px;background:#fff;border:7px solid var(--ink)"></div>
+    <img class="st" id="s6-mira" src="stickers/mira-scrolling.png" style="left:760px;top:330px;height:470px">
+  <div class="abs" id="s6-phoneglow" style="left:870px;top:250px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(160,215,255,.5),rgba(160,215,255,0) 65%)"></div>
+  <img class="st" id="s6-mira2" src="stickers/mira-curious.png" style="left:900px;top:300px;height:600px">
+  <div class="abs" style="left:560px;top:740px;width:1180px;height:220px;border-radius:40px;background:#9EC5FF;border:7px solid var(--ink)"></div>
+  <img class="st" id="s6-teddy" src="stickers/teddy-bear.png" style="left:1680px;top:780px;height:270px">
+  <img class="st" id="s6-mum" src="stickers/mum-attentive.png" style="left:1330px;top:170px;height:840px">
+  <img class="st" id="s6-mum2" src="stickers/mum-thoughtful.png" style="left:1330px;top:170px;height:840px">
+  <img class="st" id="s6-mum3" src="stickers/mum-phone-down.png" style="left:1300px;top:170px;height:840px">
+  <img class="st" id="s6-mum4" src="stickers/mum-loving.png" style="left:1330px;top:170px;height:840px">
+  <!-- the real Cheeko on the bedside table, Nani card beside it -->
+  <div class="dev" id="s6-dev" style="left:210px;top:330px;width:190px"><img class="d" src="../../assets/img/device_current.png"><div class="scr"><img src="../../assets/img/fw-screens/03_talk_4_nani_6_talking.png"></div></div>
+  <img class="st" id="s6-card" src="../../assets/img/cards-shipping/10-nani.jpg" style="left:390px;top:540px;height:150px;border-radius:10px">
+  <div class="bub" id="s6-b1" style="left:980px;top:20px">Did you have fun today?<svg width="80" height="70" viewBox="0 0 80 70" style="left:420px"><path d="M8 0 L50 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+  <div class="bub" id="s6-b2" style="left:620px;top:120px;font-size:46px">I don't know.<svg width="80" height="70" viewBox="0 0 80 70" style="left:170px"><path d="M8 0 L28 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+  <div class="bub" id="s6-b3" style="left:80px;top:40px;font-size:46px">Once, an elephant went off to hide.<svg width="80" height="70" viewBox="0 0 80 70" style="left:150px"><path d="M8 0 L28 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+  <div class="bub" id="s6-b4" style="left:620px;top:40px">But where can such a big elephant hide?<svg width="80" height="70" viewBox="0 0 80 70" style="left:330px"><path d="M8 0 L28 62 L70 0" fill="#fff" stroke="#231A10" stroke-width="7" stroke-linejoin="round"/></svg></div>
+ </div>
+  <div class="vo" id="s6-vo" style="top:930px"><span style="background:rgba(22,20,48,.62);padding:14px 44px 20px;border-radius:99px">Why the rush to grow up?</span></div>
+ </div>
+
+ <!-- END CARD -->
+ <div class="scene" id="s7">
+  <div class="fill dots" style="background:var(--cream)"></div>
+  <img class="abs" id="e-logo" src="../../assets/img/logo.png" style="left:710px;top:330px;width:500px">
+  <div class="abs" id="e-tag" style="left:0;right:0;top:580px;text-align:center;font:900 96px var(--disp);color:var(--ink);letter-spacing:-.02em">Let kids be kids.</div>
+ </div>
+
+ <div id="wipe"></div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const clamp = (x,a=0,b=1) => Math.min(b, Math.max(a, x));
+const prog = (t,a,b) => clamp((t-a)/(b-a));
+const eOut = x => 1 - Math.pow(1-x, 3);
+const eInOut = x => x < .5 ? 4*x*x*x : 1 - Math.pow(-2*x+2, 3)/2;
+const eBack = x => { const c=2.0, d=c+1; return 1 + d*Math.pow(x-1,3) + c*Math.pow(x-1,2); };
+const lerp = (a,b,x) => a + (b-a)*x;
+const rnd = x => { const s = Math.sin(x*12.9898)*43758.5453; return s - Math.floor(s); };
+const boil = (t, i, amt=.8) => (rnd(Math.floor(t*8)*31 + i*97) - .5) * amt;
+
+/* scene timeline (seconds) */
+const SC = [[0, 6.8], [6.8, 12.2], [12.2, 16.4], [16.4, 22.2], [22.2, 30.0], [30.0, 50.5], [50.5, 99]];
+const LIP = {"0": {"dur": 0.711, "env": [0.03, 0.46, 0.98, 1, 1, 0.37, 0.89, 0.98, 0.12, 0.02, 0.14, 0.32, 0.98, 1, 0.92, 0.91, 1, 0.63, 0.63, 0.2, 0.02]}, "1": {"dur": 2.961, "env": [0.04, 0.52, 0.4, 0.79, 0.72, 0.6, 0.57, 0.06, 0.01, 0.01, 0.01, 0.46, 1, 1, 0.82, 0.82, 0.98, 0.41, 0.02, 0.56, 0.3, 0.91, 0.52, 0.63, 0.64, 0.51, 0.46, 0.48, 0.48, 0.48, 0.38, 0.18, 0.05, 0.02, 0.01, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.13, 0.97, 0.85, 0.87, 0.67, 0.37, 0.08, 0.56, 0.11, 0.01, 0.24, 0.79, 1, 1, 1, 0.82, 0.67, 0.25, 0.02, 0.01, 0.01, 0.51, 0.86, 1, 1, 1, 0.93, 0.92, 0.92, 0.86, 0.78, 0.7, 0.63, 0.55, 0.48, 0.49, 0.5, 0.53, 0.52, 0.28, 0.03]}, "2": {"dur": 2.015, "env": [0.02, 0.71, 0.92, 0.99, 1.0, 0.58, 0.11, 0.01, 0.14, 0.21, 0.65, 1, 0.34, 0.02, 0.17, 0.24, 0.6, 0.51, 0.3, 0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, 0.0, 0.0, 0.0, 0.01, 0.09, 0.12, 0.56, 1, 0.89, 0.23, 0.31, 0.84, 1, 0.81, 0.55, 0.03, 0.02, 0.03, 0.04, 0.91, 0.87, 0.87, 0.78, 0.47, 0.14, 0.1, 0.06, 0.05, 0.09, 0.02, 0.02, 0.06, 0.02]}, "3": {"dur": 1.626, "env": [0.03, 1, 1, 1, 1, 0.85, 0.15, 0.24, 0.17, 0.37, 0.15, 0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.0, 0.82, 1, 0.9, 0.45, 0.43, 0.25, 0.12, 0.06, 0.05, 0.17, 0.99, 1, 0.94, 0.75, 0.73, 0.69, 0.48, 0.9, 1, 0.99, 0.63, 0.55, 0.48, 0.27, 0.02]}, "4": {"dur": 2.207, "env": [0.02, 0.64, 0.92, 0.9, 1, 1, 1, 0.93, 0.79, 0.76, 0.54, 0.04, 0.05, 0.17, 0.23, 0.3, 0.2, 0.01, 0.04, 0.4, 0.37, 0.23, 0.13, 0.03, 0.0, 0.0, 0.0, 0.5, 0.41, 0.53, 0.61, 1, 0.89, 0.34, 0.12, 0.46, 0.76, 0.35, 0.01, 0.08, 0.56, 0.66, 0.26, 0.15, 0.41, 0.54, 0.71, 0.79, 0.59, 0.74, 0.84, 0.44, 0.29, 0.52, 0.56, 0.59, 0.54, 0.53, 0.49, 0.51, 0.45, 0.3, 0.27, 0.28, 0.13, 0.0]}, "5": {"dur": 3.394, "env": [0.0, 0.26, 0.14, 0.08, 0.32, 0.87, 1, 1, 0.16, 0.07, 0.23, 0.24, 0.1, 0.06, 0.4, 0.54, 0.41, 0.42, 0.18, 0.19, 0.11, 0.13, 0.4, 0.48, 0.42, 0.37, 0.29, 0.25, 0.26, 0.19, 0.08, 0.11, 0.1, 0.08, 0.07, 0.04, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.11, 0.16, 0.44, 0.64, 0.56, 0.8, 1, 1, 0.98, 0.55, 0.17, 0.12, 0.15, 0.44, 0.8, 0.73, 0.31, 0.02, 0.0, 0.1, 0.08, 0.05, 0.04, 0.37, 0.12, 0.03, 0.4, 0.39, 0.36, 0.33, 0.36, 0.34, 0.3, 0.22, 0.1, 0.02, 0.02, 0.01]}, "6": {"dur": 2.261, "env": [0.01, 0.63, 0.26, 0.43, 1, 1, 0.93, 0.38, 0.94, 0.76, 0.61, 0.79, 0.81, 0.87, 0.82, 0.7, 0.5, 0.2, 0.13, 0.17, 0.21, 0.51, 0.82, 0.66, 0.53, 0.2, 0.22, 0.43, 0.32, 0.25, 0.22, 0.21, 0.19, 0.09, 0.02, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.71, 0.52, 0.06, 0.19, 0.64, 0.67, 0.46, 1, 0.74, 0.15, 0.4, 0.67, 0.36, 0.0, 0.18, 0.11, 0.66, 0.83, 0.65, 0.48, 0.35, 0.23, 0.09, 0.02]}, "7": {"dur": 1.66, "env": [0.03, 0.79, 0.83, 0.73, 0.46, 0.15, 0.09, 0.13, 0.56, 1, 0.73, 0.19, 0.07, 0.05, 0.01, 0.23, 0.29, 0.33, 0.2, 0.44, 0.61, 0.48, 0.25, 0.09, 0.13, 0.12, 0.62, 0.92, 0.9, 0.78, 0.05, 0.01, 0.17, 0.35, 0.38, 0.95, 1, 0.69, 0.21, 0.08, 0.41, 0.5, 0.37, 0.35, 0.27, 0.2, 0.29, 0.16, 0.02]}, "8": {"dur": 1.216, "env": [0.02, 0.2, 0.2, 0.51, 0.82, 0.41, 0.21, 0.4, 0.79, 0.98, 0.8, 0.43, 0.62, 1, 1, 0.34, 0.03, 0.06, 0.04, 0.86, 0.92, 0.53, 0.37, 0.38, 0.23, 0.02, 0.14, 0.68, 0.53, 0.58, 1, 1, 0.79, 0.45, 0.12, 0.01]}, "9": {"dur": 0.787, "env": [0.04, 0.34, 0.86, 0.96, 0.99, 0.8, 0.62, 1, 1, 1, 0.94, 0.61, 0.88, 1, 1, 1, 1, 0.87, 0.64, 0.47, 0.37, 0.12, 0.04]}, "10": {"dur": 1.174, "env": [0.04, 0.71, 1, 1, 1, 0.77, 0.68, 0.31, 0.62, 0.79, 0.66, 0.69, 0.78, 0.75, 0.57, 0.31, 0.22, 0.23, 0.14, 0.2, 0.67, 0.22, 0.09, 0.63, 0.8, 0.74, 0.73, 0.76, 0.77, 0.78, 0.67, 0.51, 0.35, 0.09, 0.01]}, "11": {"dur": 2.353, "env": [0.01, 0.8, 1, 1, 0.97, 0.88, 0.76, 0.74, 0.77, 0.79, 0.28, 0.34, 0.24, 0.09, 0.03, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.28, 0.78, 0.97, 0.65, 0.09, 0.05, 0.86, 1, 1, 1, 1, 0.4, 0.12, 0.12, 1, 1, 1, 0.89, 0.59, 0.67, 1, 1, 0.87, 0.86, 0.6, 0.17, 0.78, 0.83, 0.71, 0.52, 0.07, 0.05, 0.01, 0.83, 0.87, 0.6, 0.23, 0.17, 0.3, 0.46, 0.42, 0.41, 0.38, 0.24, 0.02, 0.1, 0.02]}, "12": {"dur": 3.012, "env": [0.02, 0.58, 0.73, 0.14, 0.06, 0.31, 0.46, 0.6, 0.88, 0.85, 0.79, 0.81, 0.69, 0.43, 0.11, 0.11, 0.16, 0.15, 0.46, 0.67, 0.76, 0.45, 0.11, 0.25, 0.29, 0.25, 0.15, 0.65, 0.74, 0.35, 0.05, 0.43, 0.7, 0.64, 0.36, 0.04, 0.03, 0.04, 0.03, 0.03, 0.44, 1, 1, 1, 1, 0.93, 0.51, 0.3, 0.12, 0.14, 0.04, 0.02, 0.31, 0.76, 0.76, 0.73, 0.72, 0.72, 0.65, 0.24, 0.08, 0.07, 0.08, 0.4, 0.69, 0.25, 0.12, 0.1, 0.19, 0.24, 0.26, 0.25, 0.4, 0.62, 0.58, 0.61, 0.61, 0.66, 0.67, 0.38, 0.22, 0.14, 0.12, 0.12, 0.14, 0.13, 0.03, 0.08, 0.03, 0.02]}, "13": {"dur": 2.422, "env": [0.06, 0.49, 0.63, 0.59, 1, 1, 0.6, 0.03, 0.32, 0.78, 0.83, 0.58, 0.5, 0.5, 0.43, 0.4, 0.27, 0.04, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.02, 1, 1, 1, 1, 0.8, 0.28, 0.03, 0.01, 0.09, 0.12, 0.48, 0.87, 0.86, 0.9, 0.75, 0.4, 0.35, 0.39, 0.31, 0.06, 0.22, 1, 0.9, 0.56, 0.05, 0.11, 0.13, 0.33, 0.98, 0.83, 0.63, 0.53, 0.42, 0.2, 0.17, 0.1, 0.16, 0.17, 0.18, 0.11, 0.04]}};
+// who speaks when: sticker id, line number, start
+const LINES = [['s1-rohan', 0, 1.2], ['s1-kabir', 1, 2.4], ['s2-tara', 2, 7.6], ['s2-rohan', 3, 9.9], ['s3-tara', 4, 12.9], ['s4-ishaan', 5, 17.0],
+  ['s5-tara', 6, 24.0], ['s5-rohan2', 7, 26.9], ['s6-mum', 8, 31.0], ['s6-mira', 9, 32.8], ['vo', 10, 37.0], ['s6-dev', 11, 42.6], ['s6-mira2', 12, 45.5], ['vo', 13, 51.0]];
+const lvl = (el, t) => { for (const [id, n, t0] of LINES) if (id === el) { const k = Math.floor((t - t0)*30), e = LIP[n].env; if (k >= 0 && k < e.length) return e[k]; } return 0; };
+// pop in with a bounce + hand-made boil + talk wobble while the voice is loud
+function stick(el, t, t0, i, o={}) {
+  const p = prog(t, t0, t0 + (o.dur ?? .4)); el.style.opacity = t < t0 ? 0 : clamp(p*4);
+  const talk = lvl(el.id, t), s = lerp(o.from ?? .3, 1, eBack(p));
+  el.style.transform = `translate(${o.dx||0}px,${o.dy||0}px) rotate(${(o.rot||0) + boil(t, i, o.amt ?? .8) + Math.sin(t*22)*1.4*talk}deg) scale(${s * (1 - .015*talk) * (o.flip ? -1 : 1)}, ${s * (1 + .04*talk)})`;
+}
+// one sticker of a set at a time: hard swap with a small squash, never a crossfade (it double-exposes)
+function swap(ids, t, times, i, o={}) {
+  let k = 0; for (let j = 0; j < times.length; j++) if (t >= times[j]) k = j + 1;
+  ids.forEach((id, j) => { $(id).style.display = j === k ? '' : 'none'; });
+  const t0 = k === 0 ? (o.t0 ?? 0) : times[k-1];
+  stick($(ids[k]), t, t0, i + k, { ...o, from: k === 0 ? (o.from ?? .3) : .9, dur: k === 0 ? (o.dur ?? .4) : .25 });
+}
+function bubble(id, t, a, b, rot=0) {
+  const p = prog(t, a, a + .3) * (1 - prog(t, b, b + .2)); const e = $(id);
+  e.style.opacity = p > 0 ? 1 : 0; e.style.transform = `scale(${lerp(.3, 1, eBack(clamp(p)))}) rotate(${rot}deg)`;
+}
+const cam = (id, z, cx, cy) => $(id).style.transform = `translate(960px,540px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+
+// bunting + confetti for the party
+{ const n = 16, w = 1980 / n; let s = '<svg viewBox="0 0 1980 170" preserveAspectRatio="none" style="width:100%;height:100%"><path d="M0 22 Q990 80 1980 22" stroke="#231A10" stroke-width="6" fill="none"/>';
+  const C = ['#F0521D','#FFC81A','#6C3DFF','#2F9E5B','#FF7AA8','#3D8BFF'];
+  for (let k = 0; k < n; k++) { const x = k*w + 8, y = 22 + 58*Math.sin(Math.PI*(k+.5)/n)*.9; s += `<path d="M${x} ${y} L${x+w-16} ${y} L${x+(w-16)/2} ${y+100}Z" fill="${C[k%C.length]}" stroke="#231A10" stroke-width="5" stroke-linejoin="round"/>`; }
+  $('s5-bunt').innerHTML = s + '</svg>'; }
+const COL = ['#F0521D','#FFC81A','#6C3DFF','#2F9E5B','#FF7AA8','#3D8BFF','#FFFFFF'], conf = [];
+{ let r = 7; const R = () => (r = (r*16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < 90; i++) { const d = document.createElement('div'); d.className = 'conf'; d.style.background = COL[i % COL.length]; $('confhost').appendChild(d);
+    const a = -Math.PI/2 + (R()-.5)*2.6, v = 900 + R()*1300; conf.push({ d, vx: Math.cos(a)*v, vy: Math.sin(a)*v, spin: (R()-.5)*1400, w: .6 + R()*.9 }); } }
+
+window.render = function(t) {
+  SC.forEach(([a, b], k) => $('s' + (k + 1)).style.display = t >= a && t < b ? 'block' : 'none');
+  // wipe between scenes: a skewed brand-yellow panel sweeps across each cut
+  let wx = -2800; for (const [a] of SC.slice(1)) { const p = prog(t, a - .22, a + .22); if (p > 0 && p < 1) wx = lerp(-2800, 2200, eInOut(p)); }
+  $('wipe').style.transform = `translateX(${wx}px) skewX(-12deg)`;
+
+  if (t < 6.8) {                                                    // S1 playground
+    stick($('s1-kabir'), t, .25, 1, { flip: true });
+    swap(['s1-rohan', 's1-rohan2'], t, [5.55], 2, { t0: .1, dy: t < 1.1 ? -Math.abs(Math.sin(t*7))*18 : 0 });
+    bubble('s1-b1', t, 1.15, 2.2, -2); bubble('s1-b2', t, 2.35, 5.4, 2);
+    const push = eInOut(prog(t, 5.6, 6.8)); cam('c1', lerp(1, 1.35, push), lerp(960, 600, push), lerp(540, 500, push));
+  } else if (t < 12.2) {                                            // S2 restaurant
+    stick($('s2-rohan'), t, 6.85, 10, { dy: t > 9.9 ? -Math.abs(Math.sin(t*9))*6 : 0 });
+    stick($('s2-tara'), t, 7.0, 11);
+    stick($('s2-dosa'), t, 7.15, 12, { rot: -2 });
+    $('s2-rec').style.opacity = t > 7.4 ? (Math.floor(t*3) % 2 ? 1 : .5) : 0;
+    bubble('s2-b1', t, 7.55, 9.75, 2); bubble('s2-b2', t, 9.85, 11.8, -2);
+    cam('c2', 1 + .04*prog(t, 6.8, 12.2), 960, 560);
+  } else if (t < 16.4) {                                            // S3 beach: take after take
+    stick($('s3-tara'), t, 12.25, 20, { flip: true });
+    $('s3-waves').style.transform = `translateY(${Math.sin(t*1.4)*10}px)`;
+    const takes = [12.6, 13.3, 14.0, 14.7, 15.4, 16.0]; let n = 12, fl = 0;
+    for (const s of takes) if (t >= s) { n++; fl = Math.max(fl, 1 - (t - s)/.18); }
+    $('s3-take').textContent = `📸 Take ${n}`; $('s3-take').style.opacity = t > 12.5 ? 1 : 0;
+    $('s3-take').style.transform = `scale(${1 + .12*Math.max(0, fl)}) rotate(4deg)`; $('s3-flash').style.opacity = Math.max(0, fl) * .75;
+    bubble('s3-b1', t, 12.85, 15.3, -1);
+    cam('c3', 1 + .05*prog(t, 12.2, 16.4), 960, 540);
+  } else if (t < 22.2) {                                            // S4 park bench: the pause
+    stick($('s4-ishaan'), t, 16.45, 30, { rot: t > 17 && t < 20.4 ? Math.sin(t*3)*3 : 0 });
+    stick($('s4-rohan'), t, 16.6, 31, { flip: true });
+    bubble('s4-b1', t, 16.95, 20.5, -2);
+    const push = eInOut(prog(t, 20.4, 22.0)); cam('c4', lerp(1, 1.4, push), lerp(960, 1260, push), lerp(540, 480, push));
+  } else if (t < 30.0) {                                            // S5 birthday
+    const T = t - 22.2;
+    $('s5-bunt').style.transform = `translateY(${lerp(-200, 0, eBack(prog(T, 0, .5)))}px)`;
+    stick($('s5-bal'), t, 22.35, 40, { rot: -4, dy: Math.sin(t*2)*12 }); stick($('s5-bal2'), t, 22.5, 41, { rot: 5, dy: Math.sin(t*2+1)*12 });
+    swap(['s5-rohan', 's5-rohan2'], t, [26.65], 42, { t0: 22.55, dy: T < 1.9 ? -Math.abs(Math.sin(t*6))*26 : 0 });
+    stick($('s5-cake'), t, 22.7, 45, { rot: 2 });
+    const tin = eOut(prog(T, 1.15, 1.6)); stick($('s5-tara'), t, 23.35, 46, { dx: lerp(700, 0, tin), from: 1, dur: .01, rot: lerp(12, -2, tin) });
+    $('s5-rec').style.opacity = T >= 1.6 && T < 3.25 ? (Math.floor(t*3) % 2 ? 1 : .55) : 0;
+    $('s5-norec').style.opacity = T >= 3.25 ? 1 : 0; $('s5-norec').style.transform = `scale(${lerp(.3, 1, eBack(prog(T, 3.25, 3.55)))}) rotate(-3deg)`;
+    bubble('s5-b1', t, 23.95, 26.45, -2); bubble('s5-b2', t, 26.85, 29.8, 2);
+    const dt = T - .4;
+    for (const p of conf) { if (dt < 0 || dt > 2.6) { p.d.style.opacity = 0; continue; } const drag = (1 - Math.exp(-dt*1.6))/1.6; p.d.style.opacity = clamp((2.6 - dt)/.5);
+      p.d.style.transform = `translate(${760 + p.vx*drag}px,${560 + p.vy*drag + 520*dt*dt}px) rotate(${p.spin*dt}deg) scale(${p.w},${Math.cos(dt*9 + p.spin)})`; }
+    const q = eInOut(prog(T, 4.4, 5.4));
+    for (const id of ['s5-bg','s5-bunt','s5-floor']) $(id).style.filter = `saturate(${1 - .65*q})`;
+    for (const id of ['s5-bal','s5-bal2','s5-cake','s5-tara']) $(id).style.filter = `url(#stk) saturate(${1 - .65*q})`;
+    const push = eInOut(prog(T, 4.6, 7.2)); cam('c5', lerp(1, 1.45, push), lerp(960, 760, push), lerp(540, 470, push));
+  } else if (t < 50.5) {                                            // S6 bedtime -> the turn -> the ending
+    stick($('s6-teddy'), t, 30.3, 50, { rot: -8, amt: .3 });
+    swap(['s6-mira', 's6-mira2'], t, [41.2], 51, { t0: 30.15, amt: .5 });
+    $('s6-phoneglow').style.opacity = t < 41.2 ? .8 + .2*Math.sin(t*5) : 0;
+    swap(['s6-mum', 's6-mum2', 's6-mum3', 's6-mum4'], t, [35.6, 39.0, 41.2], 55, { t0: 30.35 });
+    stick($('s6-dev'), t, 41.6, 60, { rot: -3, amt: .4 }); stick($('s6-card'), t, 41.8, 61, { rot: -14, amt: .4 });
+    bubble('s6-b1', t, 30.95, 32.6, 2); bubble('s6-b2', t, 32.75, 34.2, -2); bubble('s6-b3', t, 42.55, 45.2, -2); bubble('s6-b4', t, 45.45, 49.3, 2);
+    const vo = prog(t, 36.9, 37.4) * (1 - prog(t, 38.8, 39.3)); $('s6-vo').style.opacity = vo; $('s6-vo').style.transform = `translateY(${lerp(20, 0, eOut(clamp(vo)))}px)`;
+    const warm = eInOut(prog(t, 40.8, 42.6));
+    $('s6-wall').style.background = `rgb(${lerp(38, 92, warm)},${lerp(48, 64, warm)},${lerp(106, 110, warm)})`;
+    $('s6-lampglow').style.opacity = .6 + .4*warm; $('s6-lampglow').style.transform = `scale(${1 + .35*warm})`;
+    const toTeddy = eInOut(prog(t, 34.2, 35.4)), back = eInOut(prog(t, 35.6, 36.6)), end = eInOut(prog(t, 40.8, 42.2));
+    const z = lerp(lerp(lerp(1.05, 1.7, toTeddy), 1.45, back), 1.0, end);
+    const cx = lerp(lerp(lerp(1000, 1700, toTeddy), 1440, back), 960, end), cy = lerp(lerp(lerp(560, 820, toTeddy), 470, back), 540, end);
+    cam('c6', z, cx, cy);
+  } else {                                                          // end card
+    const e = $('e-logo'); const p = prog(t, 50.6, 51.0); e.style.opacity = p; e.style.transform = `scale(${lerp(.6, 1, eBack(p))})`;
+    const q = prog(t, 51.2, 51.6); $('e-tag').style.opacity = q; $('e-tag').style.transform = `translateY(${lerp(30, 0, eOut(q))}px)`;
+  }
+};
+window.ready = (async () => { await document.fonts.ready; await Promise.all([...document.images].map(i => i.decode().catch(()=>{}))); await document.fonts.load('900 60px Gabarito'); window.render(0); return true; })();
+</script>
+</body></html>

@@ -1,0 +1,20 @@
+[
+ {
+  "tag": "v05_motorbike_r2",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered red motorcycle with a big fuel tank between the seat and the handlebars, a visible engine and exhaust pipe, two large wheels, sporty shape; it is a motorcycle, not a scooter for a children's picture book, smooth glossy rounded shapes, the whole motorcycle visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no rider, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the motorcycle.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v12_ambulance_r2",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white ambulance van with long red stripes along the sides and blue and red siren lights on the roof; the sides are plain with only stripes, absolutely no cross, no plus sign, no symbols or emblems anywhere for a children's picture book, smooth glossy rounded shapes, the whole ambulance visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no rider, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the ambulance.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v16_tractor_r2",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered bright red farm tractor with big black back wheels, small front wheels, grey wheel rims and a small cabin for a children's picture book, smooth glossy rounded shapes, the whole tractor visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no rider, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the tractor.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ }
+]

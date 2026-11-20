@@ -1,0 +1,8 @@
+[
+ {
+  "tag": "v12_ambulance_r3",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "Edit this image: remove the small red cross badge from the front grille and make that spot a plain grey grille like the rest. Keep everything else exactly the same: the white ambulance van, red side stripe, roof siren lights, sky-blue background, camera angle and style. No cross, no plus sign, no symbols, no text.",
+  "ref": "/root/tts-compare/out/v31/v12_ambulance_r2.jpg"
+ }
+]

@@ -1,0 +1,224 @@
+{
+ "idea": "20-famous-places-of-india",
+ "id": "V51",
+ "level": 2,
+ "nLevels": 2,
+ "mode": "picture",
+ "theme": {
+  "bg": "postcard",
+  "pals": [
+   [
+    "#FFC078",
+    "#E8590C"
+   ],
+   [
+    "#FFD8A8",
+    "#D9480F"
+   ],
+   [
+    "#FCC2D7",
+    "#C2255C"
+   ],
+   [
+    "#A5D8FF",
+    "#1971C2"
+   ],
+   [
+    "#B2F2BB",
+    "#2B8A3E"
+   ]
+  ],
+  "trans": "curtain",
+  "enter": "slide",
+  "fx": "confetti",
+  "knob": "🗺️",
+  "bar": [
+   "#FFA94D",
+   "#FD7E14"
+  ],
+  "music": "travel"
+ },
+ "answer": 5,
+ "dur": 113.3,
+ "n": 10,
+ "t1": "Famous Places",
+ "t2": "of India!",
+ "head": "Where is <span>this</span>?",
+ "chips": [
+  [
+   "?",
+   "Look closely"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Super!",
+  "Level 2 done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 4.406375,
+  "rules": 5.668770833333332,
+  "go": 8.642520833333332
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 10.466,
+   "label": "Howrah Bridge",
+   "pill": "Howrah Bridge",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 6.669,
+    "name": 6.919
+   },
+   "dur": 9.269,
+   "img": "place_howrah_bridge"
+  },
+  {
+   "k": 2,
+   "start": 19.735,
+   "label": "Jantar Mantar",
+   "pill": "Jantar Mantar",
+   "times": {
+    "tick0": 1.895,
+    "reveal": 6.895,
+    "name": 7.145
+   },
+   "dur": 9.574,
+   "img": "place_jantar_mantar"
+  },
+  {
+   "k": 3,
+   "start": 29.308,
+   "label": "Amber Fort",
+   "pill": "Amber Fort",
+   "times": {
+    "tick0": 2.043,
+    "reveal": 7.043,
+    "name": 7.293
+   },
+   "dur": 9.643,
+   "img": "place_amber_fort"
+  },
+  {
+   "k": 4,
+   "start": 38.951,
+   "label": "Hampi Stone Chariot",
+   "pill": "Hampi Stone Chariot",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 6.708,
+    "name": 6.958
+   },
+   "dur": 9.346,
+   "img": "place_hampi_stone_chariot"
+  },
+  {
+   "k": 5,
+   "start": 48.298,
+   "label": "Bandra Worli Sea Link",
+   "pill": "Bandra Worli Sea Link",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 6.596,
+    "name": 6.846
+   },
+   "dur": 9.28,
+   "img": "place_bandra_worli_sea_link"
+  },
+  {
+   "k": 6,
+   "start": 57.578,
+   "label": "Shore Temple",
+   "pill": "Shore Temple",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 6.584,
+    "name": 6.834
+   },
+   "dur": 9.184,
+   "img": "place_shore_temple"
+  },
+  {
+   "k": 7,
+   "start": 66.762,
+   "label": "Meenakshi Temple",
+   "pill": "Meenakshi Temple",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 6.53,
+    "name": 6.78
+   },
+   "dur": 9.13,
+   "img": "place_meenakshi_temple"
+  },
+  {
+   "k": 8,
+   "start": 75.892,
+   "label": "Sanchi Stupa",
+   "pill": "Sanchi Stupa",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 6.58,
+    "name": 6.83
+   },
+   "dur": 9.18,
+   "img": "place_sanchi_stupa"
+  },
+  {
+   "k": 9,
+   "start": 85.072,
+   "label": "Mehrangarh Fort",
+   "pill": "Mehrangarh Fort",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 6.709,
+    "name": 6.959
+   },
+   "dur": 9.309,
+   "img": "place_mehrangarh_fort"
+  },
+  {
+   "k": 10,
+   "start": 94.38,
+   "label": "Konark Sun Temple",
+   "pill": "Konark Sun Temple",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 6.851,
+    "name": 7.101
+   },
+   "dur": 9.48,
+   "img": "place_konark_sun_temple"
+  }
+ ],
+ "outroStart": 103.861,
+ "outro": {
+  "done": 104.21075000000003,
+  "howmany": 106.49995833333337,
+  "next": 108.18808333333337,
+  "bye": 110.86381250000002
+ },
+ "paths": {
+  "place_howrah_bridge": "../images/place_howrah_bridge.jpg",
+  "place_jantar_mantar": "../images/place_jantar_mantar.jpg",
+  "place_amber_fort": "../images/place_amber_fort.jpg",
+  "place_hampi_stone_chariot": "../images/place_hampi_stone_chariot.jpg",
+  "place_bandra_worli_sea_link": "../images/place_bandra_worli_sea_link.jpg",
+  "place_shore_temple": "../images/place_shore_temple.jpg",
+  "place_meenakshi_temple": "../images/place_meenakshi_temple.jpg",
+  "place_sanchi_stupa": "../images/place_sanchi_stupa.jpg",
+  "place_mehrangarh_fort": "../images/place_mehrangarh_fort.jpg",
+  "place_konark_sun_temple": "../images/place_konark_sun_temple.jpg"
+ }
+}

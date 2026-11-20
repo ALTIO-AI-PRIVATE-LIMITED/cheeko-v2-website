@@ -1,0 +1,20 @@
+[
+ {
+  "tag": "lc_mummy_pig",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered big grown-up mother pig standing on all four legs, side view, long adult body, small eyes, clearly an adult pig, no piglets for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_elephant",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered big tall grown-up mother elephant with adult body proportions, long trunk, small eyes, standing on four legs, side view, clearly an adult, no baby elephant for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_cat",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother cat with an adult body, long legs and long tail, standing on four legs, side view, small eyes, clearly an adult cat, no kittens for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ }
+]

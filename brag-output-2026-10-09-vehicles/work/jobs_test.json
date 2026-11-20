@@ -1,0 +1,22 @@
+[
+ {
+  "tag": "test_car_photo_seedream",
+  "model": "dola-seedream-5-0-pro-260628",
+  "prompt": "A realistic photograph of a small bright red family car, the whole car visible in a three-quarter front side view, centred with space around it, parked on a clean empty road on a sunny day, softly blurred green background. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags."
+ },
+ {
+  "tag": "test_car_toy_seedream",
+  "model": "dola-seedream-5-0-pro-260628",
+  "prompt": "A cute 3D rendered red family car for a children's picture book, smooth glossy rounded shapes, the whole car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags."
+ },
+ {
+  "tag": "test_car_photo_kling",
+  "model": "kling-image-v3",
+  "prompt": "A realistic photograph of a small bright red family car, the whole car visible in a three-quarter front side view, centred with space around it, parked on a clean empty road on a sunny day, softly blurred green background. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags."
+ },
+ {
+  "tag": "test_car_toy_kling",
+  "model": "kling-image-v3",
+  "prompt": "A cute 3D rendered red family car for a children's picture book, smooth glossy rounded shapes, the whole car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags."
+ }
+]

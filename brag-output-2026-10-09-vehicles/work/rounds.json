@@ -1,0 +1,575 @@
+{
+ "title": "Guess the Vehicle",
+ "rounds": [
+  {
+   "n": 1,
+   "name": "Car",
+   "label": "Car",
+   "say": "Car!",
+   "level": 1,
+   "img": "assets/vehicles/01_car.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "test2_car_toy_seedflash",
+    "prompt": "A cute 3D rendered red family car for a children's picture book, smooth glossy rounded shapes, the whole car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags.",
+    "style_ref": null
+   }
+  },
+  {
+   "n": 2,
+   "name": "Bus",
+   "label": "Bus",
+   "say": "Bus!",
+   "level": 1,
+   "img": "assets/vehicles/02_bus.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "ab_bus_ref",
+    "prompt": "A cute 3D rendered big blue city bus with many windows for a children's picture book, smooth glossy rounded shapes, the whole bus visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the bus.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 3,
+   "name": "Truck",
+   "label": "Truck",
+   "say": "Truck!",
+   "level": 1,
+   "img": "assets/vehicles/03_truck.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v03_truck",
+    "prompt": "A cute 3D rendered bright orange goods truck with a big open cargo bed for a children's picture book, smooth glossy rounded shapes, the whole truck visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the truck.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 4,
+   "name": "Bicycle",
+   "label": "Bicycle",
+   "say": "Bicycle!",
+   "level": 1,
+   "img": "assets/vehicles/04_bicycle.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v04_bicycle",
+    "prompt": "A cute 3D rendered green bicycle with a small front basket for a children's picture book, smooth glossy rounded shapes, the whole bicycle visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the bicycle.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 5,
+   "name": "Motorbike",
+   "label": "Motorbike",
+   "say": "Motorbike!",
+   "level": 1,
+   "img": "assets/vehicles/05_motorbike.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v05_motorbike_r2",
+    "prompt": "A cute 3D rendered red motorcycle with a big fuel tank between the seat and the handlebars, a visible engine and exhaust pipe, two large wheels, sporty shape; it is a motorcycle, not a scooter for a children's picture book, smooth glossy rounded shapes, the whole motorcycle visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no rider, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the motorcycle.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 6,
+   "name": "Aeroplane",
+   "label": "Aeroplane",
+   "say": "Aeroplane!",
+   "level": 1,
+   "img": "assets/vehicles/06_aeroplane.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "ab_aeroplane_ref",
+    "prompt": "A cute 3D rendered white passenger aeroplane with blue stripes, flying for a children's picture book, smooth glossy rounded shapes, the whole aeroplane visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the aeroplane.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 7,
+   "name": "Train",
+   "label": "Train",
+   "say": "Train!",
+   "level": 1,
+   "img": "assets/vehicles/07_train.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v07_train",
+    "prompt": "A cute 3D rendered red and yellow passenger train engine pulling two coaches on rails for a children's picture book, smooth glossy rounded shapes, the whole train visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the train.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 8,
+   "name": "Boat",
+   "label": "Boat",
+   "say": "Boat!",
+   "level": 1,
+   "img": "assets/vehicles/08_boat.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v08_boat",
+    "prompt": "A cute 3D rendered small wooden rowing boat with two oars, floating on a little patch of water for a children's picture book, smooth glossy rounded shapes, the whole boat visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the boat.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 9,
+   "name": "Auto rickshaw",
+   "label": "Auto rickshaw",
+   "say": "Auto rickshaw!",
+   "level": 1,
+   "img": "assets/vehicles/09_auto_rickshaw.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v09_auto_rickshaw",
+    "prompt": "A cute 3D rendered Indian auto rickshaw with three wheels, a yellow roof and a green body for a children's picture book, smooth glossy rounded shapes, the whole auto rickshaw visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the auto rickshaw.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 10,
+   "name": "Scooter",
+   "label": "Scooter",
+   "say": "Scooter!",
+   "level": 1,
+   "img": "assets/vehicles/10_scooter.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v10_scooter",
+    "prompt": "A cute 3D rendered light blue scooter for a children's picture book, smooth glossy rounded shapes, the whole scooter visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the scooter.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 11,
+   "name": "Fire engine",
+   "label": "Fire engine",
+   "say": "Fire engine!",
+   "level": 2,
+   "img": "assets/vehicles/11_fire_engine.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v11_fire_engine",
+    "prompt": "A cute 3D rendered red fire engine with a long ladder on top and siren lights for a children's picture book, smooth glossy rounded shapes, the whole fire engine visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the fire engine.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 12,
+   "name": "Ambulance",
+   "label": "Ambulance",
+   "say": "Ambulance!",
+   "level": 2,
+   "img": "assets/vehicles/12_ambulance.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v12_ambulance_r3",
+    "prompt": "Edit this image: remove the small red cross badge from the front grille and make that spot a plain grey grille like the rest. Keep everything else exactly the same: the white ambulance van, red side stripe, roof siren lights, sky-blue background, camera angle and style. No cross, no plus sign, no symbols, no text.",
+    "style_ref": "/root/tts-compare/out/v31/v12_ambulance_r2.jpg"
+   }
+  },
+  {
+   "n": 13,
+   "name": "Police car",
+   "label": "Police car",
+   "say": "Police car!",
+   "level": 2,
+   "img": "assets/vehicles/13_police_car.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v13_police_car",
+    "prompt": "A cute 3D rendered white and dark blue police car with a red and blue light bar on the roof for a children's picture book, smooth glossy rounded shapes, the whole police car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the police car.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 14,
+   "name": "Helicopter",
+   "label": "Helicopter",
+   "say": "Helicopter!",
+   "level": 2,
+   "img": "assets/vehicles/14_helicopter.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v14_helicopter",
+    "prompt": "A cute 3D rendered yellow helicopter with big rotor blades for a children's picture book, smooth glossy rounded shapes, the whole helicopter visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the helicopter.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 15,
+   "name": "Ship",
+   "label": "Ship",
+   "say": "Ship!",
+   "level": 2,
+   "img": "assets/vehicles/15_ship.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v15_ship",
+    "prompt": "A cute 3D rendered big ship with a white hull, a red funnel and stacked colourful containers, on a little patch of sea for a children's picture book, smooth glossy rounded shapes, the whole ship visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the ship.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 16,
+   "name": "Tractor",
+   "label": "Tractor",
+   "say": "Tractor!",
+   "level": 2,
+   "img": "assets/vehicles/16_tractor.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v16_tractor_r2",
+    "prompt": "A cute 3D rendered bright red farm tractor with big black back wheels, small front wheels, grey wheel rims and a small cabin for a children's picture book, smooth glossy rounded shapes, the whole tractor visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no rider, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the tractor.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 17,
+   "name": "School bus",
+   "label": "School bus",
+   "say": "School bus!",
+   "level": 2,
+   "img": "assets/vehicles/17_school_bus.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v17_school_bus",
+    "prompt": "A cute 3D rendered yellow school bus for a children's picture book, smooth glossy rounded shapes, the whole school bus visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the school bus.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 18,
+   "name": "Cycle rickshaw",
+   "label": "Cycle rickshaw",
+   "say": "Cycle rickshaw!",
+   "level": 2,
+   "img": "assets/vehicles/18_cycle_rickshaw.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v18_cycle_rickshaw",
+    "prompt": "A cute 3D rendered Indian cycle rickshaw: a three-wheeled pedal tricycle with a rider seat in front and a covered passenger seat with a folding canopy at the back for a children's picture book, smooth glossy rounded shapes, the whole cycle rickshaw visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the cycle rickshaw.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 19,
+   "name": "Garbage truck",
+   "label": "Garbage truck",
+   "say": "Garbage truck!",
+   "level": 2,
+   "img": "assets/vehicles/19_garbage_truck.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v19_garbage_truck",
+    "prompt": "A cute 3D rendered green garbage truck with a big rear loader for bins for a children's picture book, smooth glossy rounded shapes, the whole garbage truck visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the garbage truck.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 20,
+   "name": "Hot air balloon",
+   "label": "Hot air balloon",
+   "say": "Hot air balloon!",
+   "level": 2,
+   "img": "assets/vehicles/20_hot_air_balloon.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v20_hot_air_balloon",
+    "prompt": "A cute 3D rendered colourful striped hot air balloon with a wicker basket, floating for a children's picture book, smooth glossy rounded shapes, the whole hot air balloon visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the hot air balloon.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 21,
+   "name": "Excavator",
+   "label": "Excavator",
+   "say": "Excavator!",
+   "level": 3,
+   "img": "assets/vehicles/21_excavator.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v21_excavator",
+    "prompt": "A cute 3D rendered yellow excavator on crawler tracks with a long digging arm and bucket for a children's picture book, smooth glossy rounded shapes, the whole excavator visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the excavator.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 22,
+   "name": "Cement mixer",
+   "label": "Cement mixer",
+   "say": "Cement mixer!",
+   "level": 3,
+   "img": "assets/vehicles/22_cement_mixer.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v22_cement_mixer",
+    "prompt": "A cute 3D rendered cement mixer truck with a big striped rotating drum for a children's picture book, smooth glossy rounded shapes, the whole cement mixer truck visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the cement mixer truck.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 23,
+   "name": "Crane",
+   "label": "Crane",
+   "say": "Crane!",
+   "level": 3,
+   "img": "assets/vehicles/23_crane.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v23_crane",
+    "prompt": "A cute 3D rendered yellow and red mobile crane truck with a long raised boom and a hook for a children's picture book, smooth glossy rounded shapes, the whole crane visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the crane.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 24,
+   "name": "Road roller",
+   "label": "Road roller",
+   "say": "Road roller!",
+   "level": 3,
+   "img": "assets/vehicles/24_road_roller.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v24_road_roller",
+    "prompt": "A cute 3D rendered yellow road roller with a huge smooth steel drum at the front for a children's picture book, smooth glossy rounded shapes, the whole road roller visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the road roller.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 25,
+   "name": "Bulldozer",
+   "label": "Bulldozer",
+   "say": "Bulldozer!",
+   "level": 3,
+   "img": "assets/vehicles/25_bulldozer.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v25_bulldozer",
+    "prompt": "A cute 3D rendered orange bulldozer on crawler tracks with a big flat front blade for a children's picture book, smooth glossy rounded shapes, the whole bulldozer visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the bulldozer.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 26,
+   "name": "Rocket",
+   "label": "Rocket",
+   "say": "Rocket!",
+   "level": 3,
+   "img": "assets/vehicles/26_rocket.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v26_rocket",
+    "prompt": "A cute 3D rendered white and red space rocket standing upright on a small launch pad for a children's picture book, smooth glossy rounded shapes, the whole rocket visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the rocket.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 27,
+   "name": "Submarine",
+   "label": "Submarine",
+   "say": "Submarine!",
+   "level": 3,
+   "img": "assets/vehicles/27_submarine.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v27_submarine",
+    "prompt": "A cute 3D rendered red and white submarine with a periscope and a propeller, underwater with a few bubbles for a children's picture book, smooth glossy rounded shapes, the whole submarine visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the submarine.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 28,
+   "name": "Tram",
+   "label": "Tram",
+   "say": "Tram!",
+   "level": 3,
+   "img": "assets/vehicles/28_tram.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v28_tram",
+    "prompt": "A cute 3D rendered red and cream city tram on rails with a pole touching an overhead wire for a children's picture book, smooth glossy rounded shapes, the whole tram visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the tram.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 29,
+   "name": "Cable car",
+   "label": "Cable car",
+   "say": "Cable car!",
+   "level": 3,
+   "img": "assets/vehicles/29_cable_car.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v29_cable_car",
+    "prompt": "A cute 3D rendered red cable car cabin hanging from a thick cable, high in the air for a children's picture book, smooth glossy rounded shapes, the whole cable car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the cable car.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  },
+  {
+   "n": 30,
+   "name": "Hovercraft",
+   "label": "Hovercraft",
+   "say": "Hovercraft!",
+   "level": 3,
+   "img": "assets/vehicles/30_hovercraft.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ],
+   "source": {
+    "generator": "Seedream 5.0 Flash (dev box image lab), 1536x1152, watermark off",
+    "tag": "v30_hovercraft",
+    "prompt": "A cute 3D rendered hovercraft with a black inflated rubber skirt and a big fan at the back, gliding on a little patch of water for a children's picture book, smooth glossy rounded shapes, the whole hovercraft visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the hovercraft.",
+    "style_ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+   }
+  }
+ ]
+}

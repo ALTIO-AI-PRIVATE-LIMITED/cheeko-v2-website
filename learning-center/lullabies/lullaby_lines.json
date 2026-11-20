@@ -1,0 +1,83 @@
+{
+ "voices": {
+  "N": [
+   "minimax",
+   "English_Upbeat_Woman"
+  ],
+  "cheeko": [
+   "minimax",
+   "English_PlayfulGirl"
+  ],
+  "nani": [
+   "minimax",
+   "English_Graceful_Lady"
+  ],
+  "mitthu": [
+   "qwen",
+   "loongnorahu"
+  ],
+  "quizzy": [
+   "qwen",
+   "loongivyhu"
+  ],
+  "kid": [
+   "minimax",
+   "English_LovelyGirl"
+  ],
+  "grandma": [
+   "minimax",
+   "English_Wiselady"
+  ],
+  "mom": [
+   "minimax",
+   "English_CalmWoman"
+  ],
+  "mumma": [
+   "gemini",
+   "Kore"
+  ],
+  "ramp": [
+   "minimax",
+   "minimax_a24acd5b-5049-4728"
+  ]
+ },
+ "LUL": {
+  "lines": [
+   [
+    "cheeko",
+    "calm",
+    "Shh. It's sleepy time.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "calm",
+    "The moon is up, and the stars are twinkling.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "calm",
+    "Close your eyes, little one.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "calm",
+    "Cheeko is right here with you.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "calm",
+    "Goodnight. Sweet dreams.",
+    0,
+    {}
+   ]
+  ]
+ }
+}

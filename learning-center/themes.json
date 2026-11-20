@@ -1,0 +1,750 @@
+{
+ "1": {
+  "bg": "farm",
+  "pals": [
+   [
+    "#7ED957",
+    "#2E8B3A"
+   ],
+   [
+    "#FFD166",
+    "#E07A1F"
+   ],
+   [
+    "#8EC5F5",
+    "#2E6FB8"
+   ],
+   [
+    "#FF9AA2",
+    "#C2185B"
+   ],
+   [
+    "#B39DDB",
+    "#5E35B1"
+   ]
+  ],
+  "trans": "iris",
+  "enter": "drop",
+  "fx": "stars",
+  "knob": "🐮",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "farm"
+ },
+ "2": {
+  "bg": "garden",
+  "pals": [
+   [
+    "#FF8A65",
+    "#D84315"
+   ],
+   [
+    "#AED581",
+    "#558B2F"
+   ],
+   [
+    "#FFD54F",
+    "#F57F17"
+   ],
+   [
+    "#F48FB1",
+    "#AD1457"
+   ],
+   [
+    "#81D4FA",
+    "#0277BD"
+   ]
+  ],
+  "trans": "slide",
+  "enter": "spin",
+  "fx": "confetti",
+  "knob": "🍎",
+  "bar": [
+   "#FF8A80",
+   "#FF5252"
+  ],
+  "music": "calypso"
+ },
+ "3": {
+  "bg": "rainbow",
+  "pals": [
+   [
+    "#7FD3FF",
+    "#2B7BD6"
+   ],
+   [
+    "#FFB3C7",
+    "#E0457B"
+   ],
+   [
+    "#C5A3FF",
+    "#6A3FD1"
+   ],
+   [
+    "#9BE7A1",
+    "#2F9E44"
+   ],
+   [
+    "#FFD58A",
+    "#E8890C"
+   ]
+  ],
+  "trans": "curtain",
+  "enter": "pop",
+  "fx": "stars",
+  "knob": "🎨",
+  "bar": [
+   "#B197FC",
+   "#845EF7"
+  ],
+  "music": "musicbox"
+ },
+ "4": {
+  "bg": "playroom",
+  "pals": [
+   [
+    "#FFB86B",
+    "#E8590C"
+   ],
+   [
+    "#7CC8FF",
+    "#1971C2"
+   ],
+   [
+    "#FF8FB1",
+    "#C2255C"
+   ],
+   [
+    "#8CE99A",
+    "#2B8A3E"
+   ],
+   [
+    "#B197FC",
+    "#5F3DC4"
+   ]
+  ],
+  "trans": "zoom",
+  "enter": "flip",
+  "fx": "dots",
+  "knob": "👃",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "claps"
+ },
+ "5": {
+  "bg": "meadow",
+  "pals": [
+   [
+    "#B2F2BB",
+    "#2F9E44"
+   ],
+   [
+    "#FFE8A3",
+    "#F08C00"
+   ],
+   [
+    "#A5D8FF",
+    "#1C7ED6"
+   ],
+   [
+    "#FCC2D7",
+    "#D6336C"
+   ],
+   [
+    "#D0BFFF",
+    "#7048E8"
+   ]
+  ],
+  "trans": "iris",
+  "enter": "pop",
+  "fx": "hearts",
+  "knob": "🐣",
+  "bar": [
+   "#FFC9DE",
+   "#F783AC"
+  ],
+  "music": "lullaby"
+ },
+ "6": {
+  "bg": "chalk",
+  "pals": [
+   [
+    "#2F6B4F",
+    "#173D2C"
+   ],
+   [
+    "#2E5E7A",
+    "#163246"
+   ],
+   [
+    "#5A3E7A",
+    "#2D1D42"
+   ],
+   [
+    "#7A4E2E",
+    "#3D2716"
+   ],
+   [
+    "#2E7A6E",
+    "#163D37"
+   ]
+  ],
+  "trans": "blinds",
+  "enter": "flip",
+  "fx": "stars",
+  "knob": "✏️",
+  "bar": [
+   "#FFFFFF",
+   "#DDE3EA"
+  ],
+  "music": "piano"
+ },
+ "7": {
+  "bg": "counting",
+  "pals": [
+   [
+    "#FFD43B",
+    "#F08C00"
+   ],
+   [
+    "#74C0FC",
+    "#1864AB"
+   ],
+   [
+    "#FF8787",
+    "#C92A2A"
+   ],
+   [
+    "#69DB7C",
+    "#2B8A3E"
+   ],
+   [
+    "#DA77F2",
+    "#862E9C"
+   ]
+  ],
+  "trans": "diamond",
+  "enter": "pop",
+  "fx": "dots",
+  "knob": "🔢",
+  "bar": [
+   "#69DB7C",
+   "#40C057"
+  ],
+  "music": "xylophone"
+ },
+ "8": {
+  "bg": "night",
+  "pals": [
+   [
+    "#4B3B8F",
+    "#140D33"
+   ],
+   [
+    "#2B3F8F",
+    "#0B1233"
+   ],
+   [
+    "#5B2B7F",
+    "#1A0B2E"
+   ],
+   [
+    "#1F5F6F",
+    "#071E24"
+   ],
+   [
+    "#3F2B6F",
+    "#120B26"
+   ]
+  ],
+  "trans": "iris",
+  "enter": "pop",
+  "fx": "stars",
+  "knob": "🔦",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "mystery"
+ },
+ "9": {
+  "bg": "pastel",
+  "pals": [
+   [
+    "#FFC9DE",
+    "#E86AA0"
+   ],
+   [
+    "#C9E4FF",
+    "#5A9BE0"
+   ],
+   [
+    "#FFE7B3",
+    "#F0A43A"
+   ],
+   [
+    "#D7C9FF",
+    "#8A6CE0"
+   ],
+   [
+    "#C9F5DA",
+    "#4CB87A"
+   ]
+  ],
+  "trans": "zoom",
+  "enter": "pop",
+  "fx": "hearts",
+  "knob": "😊",
+  "bar": [
+   "#FFA8C5",
+   "#F06595"
+  ],
+  "music": "ukulele"
+ },
+ "10": {
+  "bg": "shapes",
+  "pals": [
+   [
+    "#5C7CFA",
+    "#2B3990"
+   ],
+   [
+    "#F76707",
+    "#A93E00"
+   ],
+   [
+    "#12B886",
+    "#087050"
+   ],
+   [
+    "#E64980",
+    "#9C1752"
+   ],
+   [
+    "#FAB005",
+    "#B37400"
+   ]
+  ],
+  "trans": "diamond",
+  "enter": "spin",
+  "fx": "rings",
+  "knob": "🔷",
+  "bar": [
+   "#74C0FC",
+   "#339AF0"
+  ],
+  "music": "synthpop"
+ },
+ "11": {
+  "bg": "city",
+  "pals": [
+   [
+    "#74C0FC",
+    "#1C5A99"
+   ],
+   [
+    "#FFA94D",
+    "#C2560C"
+   ],
+   [
+    "#9775FA",
+    "#4C2DA8"
+   ],
+   [
+    "#63E6BE",
+    "#0C8C6A"
+   ],
+   [
+    "#FF8787",
+    "#B02A2A"
+   ]
+  ],
+  "trans": "slide",
+  "enter": "slide",
+  "fx": "confetti",
+  "knob": "🤝",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "march"
+ },
+ "12": {
+  "bg": "home",
+  "pals": [
+   [
+    "#FFE3B3",
+    "#B5835A"
+   ],
+   [
+    "#D3F9D8",
+    "#9C7A54"
+   ],
+   [
+    "#E5DBFF",
+    "#8D6E4C"
+   ],
+   [
+    "#FFDEEB",
+    "#A47148"
+   ],
+   [
+    "#D0EBFF",
+    "#8B6B4A"
+   ]
+  ],
+  "trans": "curtain",
+  "enter": "pop",
+  "fx": "dots",
+  "knob": "🏠",
+  "bar": [
+   "#FFA94D",
+   "#FD7E14"
+  ],
+  "music": "soft"
+ },
+ "13": {
+  "bg": "sky",
+  "pals": [
+   [
+    "#A5D8FF",
+    "#3A86D6"
+   ],
+   [
+    "#FFD8A8",
+    "#F08C3A"
+   ],
+   [
+    "#B2F2BB",
+    "#3DAA5C"
+   ],
+   [
+    "#E5DBFF",
+    "#8C6CE0"
+   ],
+   [
+    "#FFC9C9",
+    "#E0606A"
+   ]
+  ],
+  "trans": "wave",
+  "enter": "drop",
+  "fx": "stars",
+  "knob": "🐦",
+  "bar": [
+   "#8CE99A",
+   "#51CF66"
+  ],
+  "music": "flute"
+ },
+ "14": {
+  "bg": "split",
+  "pals": [
+   [
+    "#FF6B6B",
+    "#4DABF7"
+   ],
+   [
+    "#FCC419",
+    "#845EF7"
+   ],
+   [
+    "#51CF66",
+    "#F06595"
+   ],
+   [
+    "#FF922B",
+    "#22B8CF"
+   ],
+   [
+    "#94D82D",
+    "#7950F2"
+   ]
+  ],
+  "trans": "blinds",
+  "enter": "flip",
+  "fx": "rings",
+  "knob": "↔️",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "funky"
+ },
+ "15": {
+  "bg": "notes",
+  "pals": [
+   [
+    "#E599F7",
+    "#862E9C"
+   ],
+   [
+    "#FFC078",
+    "#D9480F"
+   ],
+   [
+    "#91A7FF",
+    "#364FC7"
+   ],
+   [
+    "#8CE99A",
+    "#2B8A3E"
+   ],
+   [
+    "#FFA8A8",
+    "#C92A2A"
+   ]
+  ],
+  "trans": "zoom",
+  "enter": "pop",
+  "fx": "stars",
+  "knob": "🎵",
+  "bar": [
+   "#E599F7",
+   "#CC5DE8"
+  ],
+  "music": "indian"
+ },
+ "16": {
+  "bg": "space",
+  "pals": [
+   [
+    "#2B2F77",
+    "#0B0C2A"
+   ],
+   [
+    "#3B1F6B",
+    "#120725"
+   ],
+   [
+    "#1F3B6B",
+    "#071325"
+   ],
+   [
+    "#4A1F5B",
+    "#170A1F"
+   ],
+   [
+    "#1F4B5B",
+    "#071A1F"
+   ]
+  ],
+  "trans": "iris",
+  "enter": "spin",
+  "fx": "stars",
+  "knob": "🚀",
+  "bar": [
+   "#91A7FF",
+   "#5C7CFA"
+  ],
+  "music": "space"
+ },
+ "17": {
+  "bg": "puzzle",
+  "pals": [
+   [
+    "#FF922B",
+    "#C2410C"
+   ],
+   [
+    "#4DABF7",
+    "#1864AB"
+   ],
+   [
+    "#69DB7C",
+    "#2B8A3E"
+   ],
+   [
+    "#DA77F2",
+    "#862E9C"
+   ],
+   [
+    "#FFD43B",
+    "#E67700"
+   ]
+  ],
+  "trans": "slide",
+  "enter": "flip",
+  "fx": "confetti",
+  "knob": "🧩",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "quirky"
+ },
+ "18": {
+  "bg": "question",
+  "pals": [
+   [
+    "#845EF7",
+    "#3B1F9E"
+   ],
+   [
+    "#20C997",
+    "#0B6E57"
+   ],
+   [
+    "#FF8787",
+    "#B02A2A"
+   ],
+   [
+    "#339AF0",
+    "#124A82"
+   ],
+   [
+    "#FAB005",
+    "#B37400"
+   ]
+  ],
+  "trans": "diamond",
+  "enter": "drop",
+  "fx": "stars",
+  "knob": "❓",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "mystery2"
+ },
+ "19": {
+  "bg": "jungle",
+  "pals": [
+   [
+    "#8CE99A",
+    "#1E6B34"
+   ],
+   [
+    "#FFC078",
+    "#B85410"
+   ],
+   [
+    "#66D9E8",
+    "#0B6E7A"
+   ],
+   [
+    "#C0EB75",
+    "#4F7A12"
+   ],
+   [
+    "#FFA8A8",
+    "#9E2A2A"
+   ]
+  ],
+  "trans": "wave",
+  "enter": "drop",
+  "fx": "dots",
+  "knob": "🦖",
+  "bar": [
+   "#C0EB75",
+   "#94D82D"
+  ],
+  "music": "jungle"
+ },
+ "20": {
+  "bg": "postcard",
+  "pals": [
+   [
+    "#FFC078",
+    "#E8590C"
+   ],
+   [
+    "#FFD8A8",
+    "#D9480F"
+   ],
+   [
+    "#FCC2D7",
+    "#C2255C"
+   ],
+   [
+    "#A5D8FF",
+    "#1971C2"
+   ],
+   [
+    "#B2F2BB",
+    "#2B8A3E"
+   ]
+  ],
+  "trans": "curtain",
+  "enter": "slide",
+  "fx": "confetti",
+  "knob": "🗺️",
+  "bar": [
+   "#FFA94D",
+   "#FD7E14"
+  ],
+  "music": "travel"
+ },
+ "21": {
+  "bg": "cards",
+  "pals": [
+   [
+    "#748FFC",
+    "#2B3990"
+   ],
+   [
+    "#38D9A9",
+    "#087F5B"
+   ],
+   [
+    "#FFA94D",
+    "#C2560C"
+   ],
+   [
+    "#F783AC",
+    "#A61E4D"
+   ],
+   [
+    "#A9E34B",
+    "#5C940D"
+   ]
+  ],
+  "trans": "blinds",
+  "enter": "flip",
+  "fx": "rings",
+  "knob": "🃏",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "ticktock"
+ },
+ "22": {
+  "bg": "stickers",
+  "pals": [
+   [
+    "#FFD43B",
+    "#F08C00"
+   ],
+   [
+    "#FF8787",
+    "#C92A2A"
+   ],
+   [
+    "#74C0FC",
+    "#1864AB"
+   ],
+   [
+    "#B197FC",
+    "#5F3DC4"
+   ],
+   [
+    "#8CE99A",
+    "#2B8A3E"
+   ]
+  ],
+  "trans": "zoom",
+  "enter": "spin",
+  "fx": "confetti",
+  "knob": "😀",
+  "bar": [
+   "#FF8787",
+   "#FA5252"
+  ],
+  "music": "happysynth"
+ }
+}

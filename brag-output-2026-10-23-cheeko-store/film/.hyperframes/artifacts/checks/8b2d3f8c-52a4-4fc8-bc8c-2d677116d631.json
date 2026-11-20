@@ -1,0 +1,809 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 9,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s3-vid\"> has data-start=\"5.6\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s3-vid",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/compositions/s3.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"5.6\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/compositions/s3.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s4-b\"> has data-start=\"1.9\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s4-b",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/compositions/s4.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"1.9\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s5-v1\"> has data-start=\"1.85\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s5-v1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/compositions/s5.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"1.85\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s5-v2\"> has data-start=\"4.45\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s5-v2",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/compositions/s5.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"4.45\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s5-v3\"> has data-start=\"6.6\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s5-v3",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/compositions/s5.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"6.6\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s5-v4\"> has data-start=\"7.5\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s5-v4",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/compositions/s5.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"7.5\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s5-v5\"> has data-start=\"9.65\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s5-v5",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/compositions/s5.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"9.65\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s5-v6\"> has data-start=\"11.15\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s5-v6",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/compositions/s5.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"11.15\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      }
+    ],
+    "filesScanned": 8
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 11,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 7.583,
+        "selector": "#s2-finger",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 1150,
+          "top": 2000,
+          "right": 1280,
+          "bottom": 2130,
+          "width": 130,
+          "height": 130
+        },
+        "containerSelector": "#s2 > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 200,
+          "bottom": 210
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s2.html",
+        "bbox": {
+          "x": 1150,
+          "y": 2000,
+          "width": 130,
+          "height": 130
+        },
+        "firstSeen": 7.583,
+        "lastSeen": 12.639,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          7.583,
+          12.639
+        ]
+      },
+      {
+        "code": "escaped_container",
+        "severity": "warning",
+        "time": 7.583,
+        "selector": "#s2-finger",
+        "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
+        "rect": {
+          "left": 1150,
+          "top": 2000,
+          "right": 1280,
+          "bottom": 2130,
+          "width": 130,
+          "height": 130
+        },
+        "containerSelector": "#s2 > div:nth-of-type(1)",
+        "text": "👆",
+        "fixHint": "Compute left/top in the offset parent's frame (subtract its rect), or mark intentional placement with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s2.html",
+        "bbox": {
+          "x": 1150,
+          "y": 2000,
+          "width": 130,
+          "height": 130
+        },
+        "firstSeen": 7.583,
+        "lastSeen": 12.639,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          7.583,
+          12.639
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 2.528,
+        "selector": "#s1-floor",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -60,
+          "top": 1080,
+          "right": 1140,
+          "bottom": 1220,
+          "width": 1200,
+          "height": 140
+        },
+        "containerSelector": "#s1 > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 60,
+          "right": 60
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s1.html",
+        "bbox": {
+          "x": -60,
+          "y": 1080,
+          "width": 1200,
+          "height": 140
+        },
+        "firstSeen": 2.528,
+        "lastSeen": 2.528,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.528
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 2.528,
+        "selector": "#s1-mumma",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 1190,
+          "top": 200,
+          "right": 1810,
+          "bottom": 680.23,
+          "width": 620,
+          "height": 480.23
+        },
+        "containerSelector": "#s1 > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 730
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "s1-mumma",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/s1.html",
+        "bbox": {
+          "x": 1190,
+          "y": 200,
+          "width": 620,
+          "height": 480.23
+        },
+        "firstSeen": 2.528,
+        "lastSeen": 2.528,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.528
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 2.528,
+        "selector": "#s1-floor",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -60,
+          "top": 1080,
+          "right": 1140,
+          "bottom": 1220,
+          "width": 1200,
+          "height": 140
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 60,
+          "right": 60
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s1.html",
+        "bbox": {
+          "x": -60,
+          "y": 1080,
+          "width": 1200,
+          "height": 140
+        },
+        "firstSeen": 2.528,
+        "lastSeen": 2.528,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.528
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 7.583,
+        "selector": "#s2-finger",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1150,
+          "top": 1993,
+          "right": 1280,
+          "bottom": 2137,
+          "width": 130,
+          "height": 144
+        },
+        "containerSelector": "#root",
+        "text": "👆",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 200,
+          "bottom": 217
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s2.html",
+        "bbox": {
+          "x": 1150,
+          "y": 1993,
+          "width": 130,
+          "height": 144
+        },
+        "firstSeen": 7.583,
+        "lastSeen": 12.639,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          7.583,
+          12.639
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 7.583,
+        "selector": "div.sbar > svg:nth-of-type(1) > g:nth-of-type(2)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 780.69,
+          "top": 272.64,
+          "right": 825.76,
+          "bottom": 291.33,
+          "width": 45.07,
+          "height": 18.68
+        },
+        "containerSelector": "div.sbar > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 704.48,
+          "top": 271.48,
+          "right": 822.48,
+          "bottom": 292.48,
+          "width": 118,
+          "height": 21
+        },
+        "overflow": {
+          "right": 3.28
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s2.html",
+        "bbox": {
+          "x": 780.69,
+          "y": 272.64,
+          "width": 45.07,
+          "height": 18.68
+        },
+        "firstSeen": 7.583,
+        "lastSeen": 12.639,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          7.583,
+          12.639
+        ]
+      },
+      {
+        "code": "escaped_container",
+        "severity": "info",
+        "time": 7.583,
+        "selector": "#s2-scroll",
+        "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
+        "rect": {
+          "left": 221.48,
+          "top": -856.65,
+          "right": 858.48,
+          "bottom": 6923.49,
+          "width": 637,
+          "height": 7780.14
+        },
+        "containerSelector": "#s2-scrollwrap",
+        "text": "",
+        "fixHint": "Compute left/top in the offset parent's frame (subtract its rect), or mark intentional placement with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 221.48,
+          "top": 327.08,
+          "right": 858.48,
+          "bottom": 1612.47,
+          "width": 637,
+          "height": 1285.39
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "s2-scroll",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/s2.html",
+        "bbox": {
+          "x": 221.48,
+          "y": -856.65,
+          "width": 637,
+          "height": 7780.14
+        },
+        "firstSeen": 7.583,
+        "lastSeen": 7.583,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.583
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 12.639,
+        "selector": "div.sbar > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 47.77,
+          "top": -1506.03,
+          "right": 153.77,
+          "bottom": -1434.03,
+          "width": 106,
+          "height": 72
+        },
+        "containerSelector": "#root",
+        "text": "9:41",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1506.03
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s2.html",
+        "bbox": {
+          "x": 47.77,
+          "y": -1506.03,
+          "width": 106,
+          "height": 72
+        },
+        "firstSeen": 12.639,
+        "lastSeen": 12.639,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          12.639
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 12.639,
+        "selector": "#s2-cam",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -483.2,
+          "top": -2037,
+          "right": 1676.8,
+          "bottom": 1803,
+          "width": 2160,
+          "height": 3840
+        },
+        "containerSelector": "#s2 > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 483.2,
+          "right": 596.8,
+          "top": 2037
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s2.html",
+        "bbox": {
+          "x": -483.2,
+          "y": -2037,
+          "width": 2160,
+          "height": 3840
+        },
+        "firstSeen": 12.639,
+        "lastSeen": 12.639,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          12.639
+        ]
+      },
+      {
+        "code": "escaped_container",
+        "severity": "info",
+        "time": 12.639,
+        "selector": "#s2-cam",
+        "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
+        "rect": {
+          "left": -483.2,
+          "top": -2037,
+          "right": 1676.8,
+          "bottom": 1803,
+          "width": 2160,
+          "height": 3840
+        },
+        "containerSelector": "#s2 > div:nth-of-type(1)",
+        "text": "9:41",
+        "fixHint": "Compute left/top in the offset parent's frame (subtract its rect), or mark intentional placement with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s2.html",
+        "bbox": {
+          "x": -483.2,
+          "y": -2037,
+          "width": 2160,
+          "height": 3840
+        },
+        "firstSeen": 12.639,
+        "lastSeen": 12.639,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          12.639
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 17.694,
+        "selector": "#s3-cam",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 453.6,
+          "top": 327,
+          "right": 1123.2,
+          "bottom": 1517.4,
+          "width": 669.6,
+          "height": 1190.4
+        },
+        "containerSelector": "#s3 > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 43.2
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s3.html",
+        "bbox": {
+          "x": 453.6,
+          "y": 327,
+          "width": 669.6,
+          "height": 1190.4
+        },
+        "firstSeen": 17.694,
+        "lastSeen": 17.694,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          17.694
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 37.917,
+        "selector": "#s6-dev",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 330,
+          "top": 1920,
+          "right": 750,
+          "bottom": 2623,
+          "width": 420,
+          "height": 703
+        },
+        "containerSelector": "#s6 > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 703
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s6.html",
+        "bbox": {
+          "x": 330,
+          "y": 1920,
+          "width": 420,
+          "height": 703
+        },
+        "firstSeen": 37.917,
+        "lastSeen": 42.972,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          37.917,
+          42.972
+        ]
+      }
+    ],
+    "duration": 45.5,
+    "samples": [
+      2.528,
+      7.583,
+      12.639,
+      17.694,
+      22.75,
+      27.806,
+      32.861,
+      37.917,
+      42.972
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 13,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      2.528,
+      12.639,
+      22.75,
+      32.861,
+      42.972
+    ],
+    "checked": 23,
+    "passed": 23
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 364
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

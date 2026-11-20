@@ -1,0 +1,181 @@
+{
+ "model": "music_v2_5",
+ "lang": "en",
+ "secs": 17.8,
+ "headers": {
+  "song-id": "T5uF1MkhMN5QZpgjKldv",
+  "x-trace-id": "de3323969306da950d2acd8eae4c8217",
+  "x-region": "us-central1"
+ },
+ "plan": {
+  "model_id": "music_v2_5",
+  "composition_plan": {
+   "chunks": [
+    {
+     "text": "[Intro]\n{instrumental only, music box and harp play the melody softly, no vocals}",
+     "duration_ms": 12000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "about 64 bpm",
+      "very quiet and calm",
+      "simple melody with falling phrases",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Refrain]\nLittle moon is shining,\nlittle stars are near.\nEveryone is home now,\neveryone is here.",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Verse 1]\nThe bird is in her nest,\nthe calf is by the cow,\nthe fish is in the pond,\nand you are sleepy now.",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Interlude]\n{instrumental only, music box and harp play the refrain melody, no vocals}",
+     "duration_ms": 16000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Verse 2]\nThe bee is in the hive,\nthe lamb is with the sheep,\nthe moon is in the sky,\nand you are fast asleep.",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Refrain]\nLittle moon is shining,\nlittle stars are near.\nEveryone is home now,\neveryone is here.",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Outro]\n{instruments carry the melody, very soft humming, slowing down and fading out}\nMmm.",
+     "duration_ms": 18000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    }
+   ]
+  }
+ }
+}

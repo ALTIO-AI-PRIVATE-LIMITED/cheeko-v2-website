@@ -1,0 +1,168 @@
+{
+ "model": "music_v2_5",
+ "lang": "hi",
+ "secs": 16.0,
+ "headers": {
+  "song-id": "jmKiGMhDlbweD1cfpMNe",
+  "x-trace-id": "3a7f593e12bbb925801642a8641f722c",
+  "x-region": "us-central1"
+ },
+ "plan": {
+  "model_id": "music_v2_5",
+  "composition_plan": {
+   "chunks": [
+    {
+     "text": "[Intro]\n{harp, music box and tanpura only, no vocals}",
+     "duration_ms": 8000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi, intimate and close",
+      "harp and music box with a soft tanpura drone",
+      "slow rocking 6/8 feel",
+      "about 66 bpm",
+      "very quiet and calm",
+      "simple melody with falling phrases",
+      "warm soft pad"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Refrain]\nआ आ, ऊ ऊ, सो जा रे,\nचाँद जागे, तारे गाएँ।\nपलकें मूँदो, मेरे प्यारे,\nसपने धीरे धीरे आएँ।",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi, intimate and close",
+      "harp and music box with a soft tanpura drone",
+      "slow rocking 6/8 feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Verse 1]\nपेड़ भी चुप चुप सो गए,\nदीपक धीमे जल रहे,\nनरम रज़ाई ओढ़ के,\nसपने तुझ तक चल रहे।",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi, intimate and close",
+      "harp and music box with a soft tanpura drone",
+      "slow rocking 6/8 feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Refrain]\nआ आ, ऊ ऊ, सो जा रे,\nचाँद जागे, तारे गाएँ।\nपलकें मूँदो, मेरे प्यारे,\nसपने धीरे धीरे आएँ।",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi, intimate and close",
+      "harp and music box with a soft tanpura drone",
+      "slow rocking 6/8 feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Verse 2]\nहवा गुनगुनाती है,\nबादल धीरे जाते हैं,\nचाँद रात भर जागेगा,\nतारे लोरी गाते हैं।",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi, intimate and close",
+      "harp and music box with a soft tanpura drone",
+      "slow rocking 6/8 feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Refrain]\nआ आ, ऊ ऊ, सो जा रे,\nचाँद जागे, तारे गाएँ।\nपलकें मूँदो, मेरे प्यारे,\nसपने धीरे धीरे आएँ।",
+     "duration_ms": 21000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi, intimate and close",
+      "harp and music box with a soft tanpura drone",
+      "slow rocking 6/8 feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir"
+     ]
+    },
+    {
+     "text": "[Outro]\n{soft humming, slowing down and fading out}\nहम्म, हम्म, आ आ, ऊ ऊ।\nहम्म।",
+     "duration_ms": 16000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi, intimate and close",
+      "harp and music box with a soft tanpura drone",
+      "slow rocking 6/8 feel"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir"
+     ]
+    }
+   ]
+  }
+ }
+}

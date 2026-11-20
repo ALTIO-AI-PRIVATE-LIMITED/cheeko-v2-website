@@ -1,0 +1,98 @@
+{
+ "vid": "V16",
+ "dur": 31.43,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 2.514,
+   "spk": "N",
+   "text": "A storyteller who actually listens?",
+   "show": "A storyteller who actually listens?",
+   "emoji": {
+    "listens?": "👂"
+   },
+   "hl": [
+    "listens?"
+   ]
+  },
+  {
+   "s": 3.114,
+   "e": 7.297,
+   "spk": "nani",
+   "text": "Once upon a time, a thirsty crow found a pot of water.",
+   "show": "Once upon a time, a thirsty crow found a pot of water.",
+   "emoji": {
+    "water": "🐦"
+   },
+   "hl": []
+  },
+  {
+   "s": 7.497,
+   "e": 10.985,
+   "spk": "kid",
+   "text": "Wait! What if the crow could fly to the moon?",
+   "show": "Wait! What if the crow could fly to the moon?",
+   "emoji": {
+    "moon?": "🌙"
+   },
+   "hl": []
+  },
+  {
+   "s": 11.335,
+   "e": 15.865,
+   "spk": "nani",
+   "text": "Ooh! Then let's fly to the moon together!",
+   "show": "Ooh! Then let's fly to the moon together!",
+   "emoji": {
+    "together!": "✨"
+   },
+   "hl": []
+  },
+  {
+   "s": 16.215,
+   "e": 18.832,
+   "spk": "N",
+   "text": "Interrupt her mid-story. She listens.",
+   "show": "Interrupt her mid-story. She listens.",
+   "emoji": {
+    "listens": "💛"
+   },
+   "hl": [
+    "Interrupt"
+   ]
+  },
+  {
+   "s": 19.082,
+   "e": 22.259,
+   "spk": "N",
+   "text": "And next time, she picks up right where you stopped.",
+   "show": "And next time, she picks up right where you stopped.",
+   "emoji": {
+    "stopped": "🔖"
+   },
+   "hl": []
+  },
+  {
+   "s": 22.609,
+   "e": 24.874,
+   "spk": "N",
+   "text": "Bedtime stories, told their way.",
+   "show": "Bedtime stories, told their way.",
+   "emoji": {
+    "way": "😴"
+   },
+   "hl": [
+    "Bedtime"
+   ]
+  },
+  {
+   "s": 25.174,
+   "e": 28.028,
+   "spk": "N",
+   "text": "Cheeko. Less screen, more childhood!",
+   "show": "Cheeko. Less screen, more childhood!",
+   "emoji": {},
+   "hl": []
+  }
+ ]
+}

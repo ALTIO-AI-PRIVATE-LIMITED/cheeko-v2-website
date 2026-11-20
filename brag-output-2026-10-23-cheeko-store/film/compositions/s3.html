@@ -1,0 +1,109 @@
+<!-- S3 Cheeko (13.05 to 21.05 s). The dinosaur card falls into Cheeko's screen (real downloading screen), Cheeko: "Hold on!".
+     Pull back: the phone (real store, Sending 85% then Sent) and Cheeko, Wi-Fi dots between them. "Ta-da!": the real
+     Guess the Dinosaur video starts on Cheeko's screen, then the camera zooms through the screen into S4.
+     Cheeko: 640 wide at (220, 150); screen (323.6, 232.6) 417.7 x 348.2, centre (532.4, 406.7). -->
+<template>
+  <style>
+    @font-face { font-family: 'Gabarito'; src: url('assets/fonts/Gabarito.woff2') format('woff2'); font-weight: 400 900; }
+    @font-face { font-family: 'Hanken Grotesk'; src: url('assets/fonts/HankenGrotesk.woff2') format('woff2'); font-weight: 400 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #F0521D; }
+    #s3-cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    .dev { position: absolute; }
+    .dev > img.d { position: absolute; inset: 0; width: 100%; height: 100%; filter: drop-shadow(0 34px 40px rgba(35, 26, 16, .35)); }
+    .scr { position: absolute; left: 16.19%; top: 7.71%; width: 65.26%; height: 32.5%; overflow: hidden; background: #1D1A17;
+      -webkit-mask: url('assets/img/screen_mask.png') 0 0/100% 100% no-repeat; mask: url('assets/img/screen_mask.png') 0 0/100% 100% no-repeat; }
+    .scr img, .scr video { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: fill; }
+    #s3-card { position: absolute; left: 323.6px; top: 232.6px; width: 417.7px; height: 348.2px; border-radius: 22px; border: 8px solid #fff; object-fit: cover; box-shadow: 0 24px 44px rgba(35, 26, 16, .3); }
+    .iph { position: absolute; background: linear-gradient(145deg, #dcdddf, #8e9093 38%, #c9cbcd 68%, #7d7f82); box-shadow: 0 30px 60px rgba(35, 26, 16, .3); }
+    .bz { position: absolute; background: #0b0b0c; }
+    .ps { position: absolute; overflow: hidden; background: #FCF9F8; }
+    .isl { position: absolute; background: #000; }
+    .page { position: absolute; left: 0; width: 100%; overflow: hidden; }
+    .page img { position: absolute; left: 0; top: 0; width: 100%; }
+    .dot { position: absolute; left: 0; top: 0; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: #FFF6E8; box-shadow: 0 4px 10px rgba(35, 26, 16, .25); }
+    #s3-wifi { position: absolute; left: 420px; top: 180px; width: 150px; height: 150px; border-radius: 50%; background: #FFF6E8; box-shadow: 0 14px 28px rgba(35, 26, 16, .25); }
+    .conf { position: absolute; left: 532px; top: 300px; width: 22px; height: 34px; border-radius: 5px; }
+    .bub { position: absolute; left: 0; top: 1176px; width: 1080px; text-align: center; }
+    .bub > div { display: inline-flex; align-items: center; gap: 18px; background: #fff; color: #231A10; font-family: 'Gabarito', sans-serif; font-weight: 800;
+      font-size: 56px; line-height: 1.12; padding: 20px 38px 22px 22px; border-radius: 44px; box-shadow: 0 16px 32px rgba(35, 26, 16, .28); max-width: 980px; text-align: left; }
+    .bub img { width: 92px; height: 92px; }
+  </style>
+  <div data-hf-id="hf-vizh" id="root" data-composition-id="s3" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-756d" id="s3-cam">
+      <div data-hf-id="hf-ovo7" id="s3-dev" class="dev" style="left:220px;top:150px;width:640px;height:1071.3px">
+        <img data-hf-id="hf-1zye" class="d" src="assets/img/cheeko_yellow.png" />
+        <div data-hf-id="hf-zn7g" class="scr">
+          <img data-hf-id="hf-0poa" id="s3-scr-home" class="clip" data-start="0" data-duration="0.42" src="assets/img/fw_00_home_clock.png" />
+          <img data-hf-id="hf-c4tb" id="s3-scr-dl1" class="clip" data-start="0.42" data-duration="1.83" src="assets/img/fw_store_dl_a.png" />
+          <img data-hf-id="hf-j4ta" id="s3-scr-dl2" class="clip" data-start="2.25" data-duration="2.4" src="assets/img/fw_store_dl_b.png" />
+          <img data-hf-id="hf-hz4q" id="s3-scr-dl3" class="clip" data-start="4.65" data-duration="0.95" src="assets/img/fw_store_dl_c.png" />
+          <video data-hf-id="hf-wihv" id="s3-vid" class="clip" data-start="5.6" data-duration="2.4" muted playsinline src="assets/video/dino_intro.mp4"></video>
+        </div>
+      </div>
+      <img data-hf-id="hf-m1z9" id="s3-card" src="assets/img/dino_card.png" />
+      <div data-hf-id="hf-39c0" id="s3-confetti">
+        <div data-hf-id="hf-255o" class="conf" id="s3-c0" style="background:#FFC81A"></div><div data-hf-id="hf-7d6r" class="conf" id="s3-c1" style="background:#FFF6E8"></div>
+        <div data-hf-id="hf-a2n7" class="conf" id="s3-c2" style="background:#FFA9C9"></div><div data-hf-id="hf-mnnq" class="conf" id="s3-c3" style="background:#231A10"></div>
+        <div data-hf-id="hf-gwc0" class="conf" id="s3-c4" style="background:#FFC81A"></div><div data-hf-id="hf-7hcv" class="conf" id="s3-c5" style="background:#FFF6E8"></div>
+        <div data-hf-id="hf-gwxz" class="conf" id="s3-c6" style="background:#FFA9C9"></div><div data-hf-id="hf-349d" class="conf" id="s3-c7" style="background:#FFC81A"></div>
+        <div data-hf-id="hf-365k" class="conf" id="s3-c8" style="background:#FFF6E8"></div><div data-hf-id="hf-6okc" class="conf" id="s3-c9" style="background:#231A10"></div>
+        <div data-hf-id="hf-0xfg" class="conf" id="s3-c10" style="background:#FFA9C9"></div><div data-hf-id="hf-ngea" class="conf" id="s3-c11" style="background:#FFC81A"></div>
+      </div>
+    </div>
+    <div data-hf-id="hf-yq4f" id="s3-phone" class="iph" style="left:60px;top:330px;width:360px;height:742.6px;border-radius:62.1px">
+      <div data-hf-id="hf-leai" class="bz" style="left:4.68px;top:4.68px;right:4.68px;bottom:4.68px;border-radius:57.4px">
+        <div data-hf-id="hf-eu5f" class="ps" style="left:11.52px;top:11.52px;width:327.6px;height:710.2px;border-radius:45.85px">
+          <div data-hf-id="hf-m89g" class="page" style="top:49.2px;height:661px">
+            <img data-hf-id="hf-mjc8" id="s3-p85" class="clip" data-start="2.8" data-duration="1.85" src="assets/store/10_dino_sending85.png" />
+            <img data-hf-id="hf-w15g" id="s3-psent" class="clip" data-start="4.65" data-duration="1.1" src="assets/store/11_dino_sent.png" />
+          </div>
+        </div>
+        <div data-hf-id="hf-y2vv" class="isl" style="left:122.8px;top:20.7px;width:105px;height:30.8px;border-radius:15.4px"></div>
+      </div>
+    </div>
+    <div data-hf-id="hf-kias" id="s3-dots"><div data-hf-id="hf-hfbu" class="dot" id="s3-d0"></div><div data-hf-id="hf-ldfv" class="dot" id="s3-d1"></div><div data-hf-id="hf-ahy8" class="dot" id="s3-d2"></div><div data-hf-id="hf-b9m1" class="dot" id="s3-d3"></div><div data-hf-id="hf-2lq6" class="dot" id="s3-d4"></div><div data-hf-id="hf-6ju7" class="dot" id="s3-d5"></div></div>
+    <div data-hf-id="hf-1u3j" id="s3-wifi"><svg data-hf-id="hf-k7lg" viewBox="0 0 24 24" style="position:absolute;left:30px;top:32px;width:90px;height:90px" fill="none" stroke="#F0521D" stroke-width="2.6" stroke-linecap="round"><path data-hf-id="hf-uvnh" d="M2.5 9a14 14 0 0 1 19 0"/><path data-hf-id="hf-uy7c" d="M5.8 12.6a9 9 0 0 1 12.4 0"/><path data-hf-id="hf-ci6e" d="M9.1 16.1a4.2 4.2 0 0 1 5.8 0"/><circle data-hf-id="hf-r3rb" cx="12" cy="19.4" r="1.3" fill="#F0521D" stroke="none"/></svg></div>
+    <div data-hf-id="hf-ae6o" id="s3-b1" class="bub clip" data-start="0.3" data-duration="2.35"><div data-hf-id="hf-okkh" id="s3-b1i"><img data-hf-id="hf-e9kk" src="assets/img/fox.png" />Hold on! I'm learning new tricks!</div></div>
+    <div data-hf-id="hf-nw19" id="s3-b2" class="bub clip" data-start="5.6" data-duration="2.0"><div data-hf-id="hf-fyfd" id="s3-b2i"><img data-hf-id="hf-7g98" src="assets/img/fox.png" />Ta-da! 🎉 I learned new tricks!</div></div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    // the card arrives from S2 and lands in Cheeko's screen
+    tl.fromTo("#s3-card", { y: -980, scale: .8, rotation: 10, filter: "blur(12px)", opacity: 1 }, { y: 0, scale: 1, rotation: 0, filter: "blur(0px)", duration: .45, ease: "power2.out" }, 0);
+    tl.to("#s3-card", { opacity: 0, duration: .1, ease: "power2.in" }, .45);
+    tl.fromTo("#s3-dev", { scaleX: 1, scaleY: 1, transformOrigin: "50% 100%" }, { scaleX: 1.03, scaleY: .97, duration: .09, yoyo: true, repeat: 1, ease: "power1.out" }, .42);
+    tl.fromTo("#s3-b1i", { scale: .85, opacity: 0 }, { scale: 1, opacity: 1, duration: .25, ease: "back.out(1.7)" }, .3);
+    // pull back: the phone on the left, Cheeko on the right, Wi-Fi between them
+    tl.fromTo("#s3-cam", { x: 0, y: 0, scale: 1, transformOrigin: "0 0" }, { x: 453.6, y: 327, scale: .62, duration: .5, ease: "power2.inOut" }, 2.8);
+    tl.fromTo("#s3-phone", { x: -560 }, { x: 0, duration: .5, ease: "expo.out" }, 2.85);
+    // dots fly from the phone's Send button (281.7, 878.9) to Cheeko's screen (783.7, 579.2) over (530, 330)
+    const P0 = [281.7, 878.9], C = [530, 330], P1 = [783.7, 579.2], N = 10;
+    const path = Array.from({ length: N + 1 }, (_, k) => { const s = k / N, a = (1 - s) * (1 - s), b = 2 * (1 - s) * s, c = s * s;
+      return { x: a * P0[0] + b * C[0] + c * P1[0], y: a * P0[1] + b * C[1] + c * P1[1] }; });
+    for (let i = 0; i < 6; i++) {
+      const id = "#s3-d" + i;
+      tl.set(id, { x: P0[0], y: P0[1], opacity: 0 }, 0);
+      for (const t0 of [3.1 + i * .14, 3.95 + i * .14]) {
+        tl.set(id, { opacity: 1 }, t0);
+        tl.to(id, { keyframes: path.slice(1), duration: .75, ease: "none" }, t0);
+        tl.set(id, { opacity: 0, x: P0[0], y: P0[1] }, t0 + .75);
+      }
+    }
+    tl.fromTo("#s3-wifi", { scale: 0 }, { scale: 1, duration: .3, ease: "back.out(1.8)" }, 4.5);
+    tl.to("#s3-wifi", { scale: 0, duration: .18, ease: "power3.in" }, 5.1);
+    // back to Cheeko: "Ta-da!" and the real video starts on its screen
+    tl.to("#s3-phone", { x: -560, duration: .3, ease: "power3.in" }, 5.15);
+    tl.to("#s3-cam", { x: 0, y: 0, scale: 1, duration: .4, ease: "power2.inOut" }, 5.2);
+    tl.fromTo("#s3-b2i", { scale: .85, opacity: 0 }, { scale: 1, opacity: 1, duration: .25, ease: "back.out(1.7)" }, 5.6);
+    const burst = [[-420, -60], [-300, -230], [-160, -330], [0, -380], [170, -330], [310, -220], [430, -70], [-370, 120], [-200, 40], [220, 60], [380, 140], [60, -250]];
+    burst.forEach(([dx, dy], i) => {
+      tl.fromTo("#s3-c" + i, { x: 0, y: 0, rotation: 0, opacity: 0 }, { x: dx, y: dy, rotation: (i % 2 ? 1 : -1) * (200 + i * 30), opacity: 1, duration: .55, ease: "power3.out" }, 5.62);
+      tl.to("#s3-c" + i, { y: dy + 420, opacity: 0, duration: .7, ease: "power2.in" }, 6.17);
+    });
+    tl.to("#s3-b2i", { opacity: 0, filter: "blur(8px)", duration: .15, ease: "power2.in" }, 7.45);
+    // zoom through Cheeko's screen
+    tl.to("#s3-cam", { x: -2441.4, y: -1317.5, scale: 5.6, duration: .4, ease: "power3.in" }, 7.6);
+    window.__timelines["s3"] = tl;
+  </script>
+</template>

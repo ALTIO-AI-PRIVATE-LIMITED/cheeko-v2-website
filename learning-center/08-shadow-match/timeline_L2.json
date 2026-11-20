@@ -1,0 +1,244 @@
+{
+ "idea": "08-shadow-match",
+ "id": "V39",
+ "level": 2,
+ "nLevels": 3,
+ "mode": "shadow",
+ "theme": {
+  "bg": "night",
+  "pals": [
+   [
+    "#4B3B8F",
+    "#140D33"
+   ],
+   [
+    "#2B3F8F",
+    "#0B1233"
+   ],
+   [
+    "#5B2B7F",
+    "#1A0B2E"
+   ],
+   [
+    "#1F5F6F",
+    "#071E24"
+   ],
+   [
+    "#3F2B6F",
+    "#120B26"
+   ]
+  ],
+  "trans": "iris",
+  "enter": "pop",
+  "fx": "stars",
+  "knob": "🔦",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "mystery"
+ },
+ "answer": 4,
+ "dur": 101.28,
+ "n": 10,
+ "t1": "Shadow",
+ "t2": "Match!",
+ "head": "Whose <span>shadow</span>?",
+ "chips": [
+  [
+   "?",
+   "Look closely"
+  ],
+  [
+   "4",
+   "4 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Great job!",
+  "Level 2 done!",
+  "Play Level 3!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.9050624999999997,
+  "rules": 5.167458333333332,
+  "go": 8.0206875
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.844,
+   "label": "Car",
+   "pill": "Car",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 5.669,
+    "name": 5.919
+   },
+   "dur": 8.269,
+   "img": "sil_car",
+   "img2": "car"
+  },
+  {
+   "k": 2,
+   "start": 18.113,
+   "label": "Bus",
+   "pill": "Bus",
+   "times": {
+    "tick0": 1.691,
+    "reveal": 5.691,
+    "name": 5.941
+   },
+   "dur": 8.291,
+   "img": "sil_bus",
+   "img2": "bus"
+  },
+  {
+   "k": 3,
+   "start": 26.404,
+   "label": "Bicycle",
+   "pill": "Bicycle",
+   "times": {
+    "tick0": 2.466,
+    "reveal": 6.466,
+    "name": 6.716
+   },
+   "dur": 9.066,
+   "img": "sil_bicycle",
+   "img2": "bicycle"
+  },
+  {
+   "k": 4,
+   "start": 35.469,
+   "label": "Aeroplane",
+   "pill": "Aeroplane",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 5.708,
+    "name": 5.958
+   },
+   "dur": 8.308,
+   "img": "sil_aeroplane",
+   "img2": "aeroplane"
+  },
+  {
+   "k": 5,
+   "start": 43.778,
+   "label": "Helicopter",
+   "pill": "Helicopter",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 5.596,
+    "name": 5.846
+   },
+   "dur": 8.196,
+   "img": "sil_helicopter",
+   "img2": "helicopter"
+  },
+  {
+   "k": 6,
+   "start": 51.974,
+   "label": "Tractor",
+   "pill": "Tractor",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 5.584,
+    "name": 5.834
+   },
+   "dur": 8.184,
+   "img": "sil_tractor",
+   "img2": "tractor"
+  },
+  {
+   "k": 7,
+   "start": 60.158,
+   "label": "Train",
+   "pill": "Train",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 5.53,
+    "name": 5.78
+   },
+   "dur": 8.13,
+   "img": "sil_train",
+   "img2": "train"
+  },
+  {
+   "k": 8,
+   "start": 68.288,
+   "label": "Rocket",
+   "pill": "Rocket",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 5.58,
+    "name": 5.83
+   },
+   "dur": 8.18,
+   "img": "sil_rocket",
+   "img2": "rocket"
+  },
+  {
+   "k": 9,
+   "start": 76.468,
+   "label": "Boat",
+   "pill": "Boat",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 5.709,
+    "name": 5.959
+   },
+   "dur": 8.309,
+   "img": "sil_boat",
+   "img2": "boat"
+  },
+  {
+   "k": 10,
+   "start": 84.777,
+   "label": "Hot air balloon",
+   "pill": "Hot air balloon",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 5.851,
+    "name": 6.101
+   },
+   "dur": 8.451,
+   "img": "sil_hot_air_balloon",
+   "img2": "hot_air_balloon"
+  }
+ ],
+ "outroStart": 93.227,
+ "outro": {
+  "done": 93.57712500000002,
+  "howmany": 95.5382916666667,
+  "next": 97.2264166666667,
+  "bye": 98.84822916666668
+ },
+ "paths": {
+  "sil_car": "../images/sil/car.jpg",
+  "car": "../images/car.jpg",
+  "sil_bus": "../images/sil/bus.jpg",
+  "bus": "../images/bus.jpg",
+  "sil_bicycle": "../images/sil/bicycle.jpg",
+  "bicycle": "../images/bicycle.jpg",
+  "sil_aeroplane": "../images/sil/aeroplane.jpg",
+  "aeroplane": "../images/aeroplane.jpg",
+  "sil_helicopter": "../images/sil/helicopter.jpg",
+  "helicopter": "../images/helicopter.jpg",
+  "sil_tractor": "../images/sil/tractor.jpg",
+  "tractor": "../images/tractor.jpg",
+  "sil_train": "../images/sil/train.jpg",
+  "train": "../images/train.jpg",
+  "sil_rocket": "../images/sil/rocket.jpg",
+  "rocket": "../images/rocket.jpg",
+  "sil_boat": "../images/sil/boat.jpg",
+  "boat": "../images/boat.jpg",
+  "sil_hot_air_balloon": "../images/sil/hot_air_balloon.jpg",
+  "hot_air_balloon": "../images/hot_air_balloon.jpg"
+ }
+}

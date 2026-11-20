@@ -1,0 +1,392 @@
+[
+ {
+  "tag": "lc_dog",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered friendly brown dog for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_horse",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered brown horse for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_donkey",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grey donkey for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_tiger",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered Bengal tiger for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_snake",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered friendly green snake, coiled for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_fruit_orange",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered round orange fruit (an orange) with a leaf for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_fruit_pineapple",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered pineapple for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_fruit_pear",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered green pear for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_fruit_kiwi",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered kiwi fruit cut in half showing green flesh for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_fruit_lychee",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered bunch of red lychees with one peeled for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_fruit_peach",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered fuzzy peach for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_fruit_star_fruit",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered yellow star fruit with one star-shaped slice for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_leaf_green",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered big green leaf for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_cloud",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered fluffy white cloud for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_purple_butterfly",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered purple butterfly for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_boy_full",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered cheerful little Indian boy standing and facing the viewer, full body from head to bare feet, arms a little away from his body with open hands, wearing a yellow t-shirt and blue shorts for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mum_cat",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered mother cat with her kitten for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mum_duck",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered mother duck with her duckling for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mum_frog",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered green frog next to a tadpole in water for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_cow",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother cow standing alone, no calf for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_pig",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother pig standing alone, no piglets for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mummy_elephant",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered grown-up mother elephant standing alone, no baby elephant for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_jug",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered blue water jug for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_quilt",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered colourful patchwork quilt, folded for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_yoyo",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered red yo-yo with its string for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_cupcake",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered cupcake with pink icing for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_cheeko_scared",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "This exact fox character from the reference image (same face, same orange fur, same bandana), now scared, ears back, hiding behind its paws. Keep the same 3D look. Plain soft sky-blue background, the character centred, upper body visible. No text.",
+  "ref": "/root/tts-compare/out/v31/cheeko_hero.png"
+ },
+ {
+  "tag": "lc_cheeko_proud",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "This exact fox character from the reference image (same face, same orange fur, same bandana), now proud, standing tall with paws on its hips and a big smile. Keep the same 3D look. Plain soft sky-blue background, the character centred, upper body visible. No text.",
+  "ref": "/root/tts-compare/out/v31/cheeko_hero.png"
+ },
+ {
+  "tag": "lc_egg",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white egg for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_plate",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered round white plate, seen from above for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_mirror_oval",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered oval mirror with a wooden frame for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_rainbow",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered rainbow arc for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_helper_firefighter",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered firefighter in a red helmet and fire suit holding a hose, full body for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_helper_postman",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered Indian postman in a khaki uniform with a mail bag and letters, full body for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_helper_mechanic",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered mechanic in blue overalls holding a spanner, full body for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_helper_painter",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered house painter with a roller and a paint bucket, full body for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_helper_vegetable_seller",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered Indian vegetable seller with a cart full of vegetables, full body for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_house_knock",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered hand knocking on a wooden door for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_house_fan",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white ceiling fan for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_house_scissors",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered pair of scissors cutting paper for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_house_creak",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered old wooden door opening a little for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_bird_sparrow",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered house sparrow for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_bird_kingfisher",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered blue and orange kingfisher on a branch for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_bird_flamingo",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered pink flamingo standing on one leg for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_bird_swan",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white swan for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_opp_hot_cold",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered steaming cup of hot tea next to a cold ice cream cone for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_opp_open_closed",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered open gift box next to a closed gift box for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_opp_clean_dirty",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered clean white plate next to a dirty plate with food on it for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_inst_guitar",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered acoustic guitar for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_inst_violin",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered violin with its bow for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_inst_harmonica",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered silver harmonica (mouth organ) for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_inst_saxophone",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered golden saxophone for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_space_sun",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered the Sun, a glowing yellow and orange star, floating in space with a few small stars on a dark blue background instead of sky blue for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_space_moon",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered the Moon, grey with craters, floating in space with a few small stars on a dark blue background instead of sky blue for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_space_neptune",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered planet Neptune, deep blue, floating in space with a few small stars on a dark blue background instead of sky blue for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_shoes",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered pair of red sneakers for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_dino_triceratops",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered friendly Triceratops with three horns and a big frill dinosaur, side view for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_dino_ankylosaurus",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered friendly Ankylosaurus with armour and a club tail dinosaur, side view for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_dino_iguanodon",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered friendly Iguanodon with thumb spikes dinosaur, side view for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_dino_carnotaurus",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered friendly Carnotaurus with two horns and tiny arms dinosaur, side view for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_dino_oviraptor",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered friendly Oviraptor with a crest, next to its eggs dinosaur, side view for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_ribbon_bow",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered pink ribbon bow for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_teacup",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white teacup for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_tooth",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered smiling white tooth for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_jelly",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered wobbly red jelly dessert for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ }
+]

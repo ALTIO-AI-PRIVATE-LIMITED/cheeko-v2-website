@@ -1,0 +1,30 @@
+[
+ {
+  "tag": "lul_album",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "Cheeko the fox cub fast asleep, curled up on a big glowing crescent moon that floats among soft clouds, a tiny wooden music box beside him, a few stars twinkling. Soft, cozy 3D animated children's picture-book illustration at night, gentle and dreamy, rounded toy-like shapes, warm soft glow, deep blue and violet night sky with tiny twinkling stars, calm sleepy mood, leave empty sky space at the top third for a title. The fox must look exactly like Cheeko in the reference image: an orange fox cub with cream cheeks and chest, big ears, and a cream bandana with small colourful patterns. Use the reference only for the character, not the background. No text, no letters, no numbers, no logos, no flags, no brand names, no people.",
+  "size": "1536x1536",
+  "ref": "/root/tts-compare/out/v31/cheeko_hero.png"
+ },
+ {
+  "tag": "lul_song1",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A big gentle full moon with a kind, sleepy smiling face watches over Cheeko the fox cub, who sleeps in a small wooden cradle on a grassy hill under a soft blanket; trees asleep, stars twinkling, a tiny house with a lamp glowing gold nearby. Soft, cozy 3D animated children's picture-book illustration at night, gentle and dreamy, rounded toy-like shapes, warm soft glow, deep blue and violet night sky with tiny twinkling stars, calm sleepy mood, leave empty sky space at the top third for a title. The fox must look exactly like Cheeko in the reference image: an orange fox cub with cream cheeks and chest, big ears, and a cream bandana with small colourful patterns. Use the reference only for the character, not the background. No text, no letters, no numbers, no logos, no flags, no brand names, no people.",
+  "size": "1536x1536",
+  "ref": "/root/tts-compare/out/v31/cheeko_hero.png"
+ },
+ {
+  "tag": "lul_song2",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cozy little village at night: a bird asleep in her nest on a tree, a calf curled up beside a cow, a fish in a quiet pond, and Cheeko the fox cub asleep under a blanket in the warm lit window of a small round house; crescent moon and stars above. Soft, cozy 3D animated children's picture-book illustration at night, gentle and dreamy, rounded toy-like shapes, warm soft glow, deep blue and violet night sky with tiny twinkling stars, calm sleepy mood, leave empty sky space at the top third for a title. The fox must look exactly like Cheeko in the reference image: an orange fox cub with cream cheeks and chest, big ears, and a cream bandana with small colourful patterns. Use the reference only for the character, not the background. No text, no letters, no numbers, no logos, no flags, no brand names, no people.",
+  "size": "1536x1536",
+  "ref": "/root/tts-compare/out/v31/cheeko_hero.png"
+ },
+ {
+  "tag": "lul_song3",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A soft rainy night seen through a big round window with raindrops on the glass: Cheeko the fox cub asleep in a cozy bed by the window; outside, a calm river with a small boat tied up, a frog asleep on a lily pad, the moon reflected in a puddle, gentle rain falling. Soft, cozy 3D animated children's picture-book illustration at night, gentle and dreamy, rounded toy-like shapes, warm soft glow, deep blue and violet night sky with tiny twinkling stars, calm sleepy mood, leave empty sky space at the top third for a title. The fox must look exactly like Cheeko in the reference image: an orange fox cub with cream cheeks and chest, big ears, and a cream bandana with small colourful patterns. Use the reference only for the character, not the background. No text, no letters, no numbers, no logos, no flags, no brand names, no people.",
+  "size": "1536x1536",
+  "ref": "/root/tts-compare/out/v31/cheeko_hero.png"
+ }
+]

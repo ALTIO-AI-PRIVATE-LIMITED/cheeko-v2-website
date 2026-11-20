@@ -1,0 +1,174 @@
+{
+ "vid": "V19",
+ "dur": 38.45,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 1.941,
+   "spk": "N",
+   "text": "Your kid talks to Cheeko every day.",
+   "show": "Your kid talks to Cheeko every day.",
+   "emoji": {
+    "day": "🦊"
+   },
+   "hl": []
+  },
+  {
+   "s": 2.241,
+   "e": 3.687,
+   "spk": "N",
+   "text": "And you see every word.",
+   "show": "And you see every word.",
+   "emoji": {
+    "word": "👀"
+   },
+   "hl": [
+    "every",
+    "word."
+   ]
+  },
+  {
+   "s": 4.037,
+   "e": 6.122,
+   "spk": "N",
+   "text": "It only listens while the button is pressed.",
+   "show": "It only listens while the button is pressed.",
+   "emoji": {
+    "pressed": "🔘"
+   },
+   "hl": []
+  },
+  {
+   "s": 6.322,
+   "e": 8.397,
+   "spk": "N",
+   "text": "No camera. No wake word.",
+   "show": "No camera. No wake word.",
+   "emoji": {},
+   "hl": [
+    "No",
+    "camera."
+   ]
+  },
+  {
+   "s": 8.597,
+   "e": 10.561,
+   "spk": "N",
+   "text": "And child-safety filters are built in.",
+   "show": "And child-safety filters are built in.",
+   "emoji": {
+    "in": "🛡️"
+   },
+   "hl": [
+    "child-safety"
+   ]
+  },
+  {
+   "s": 10.911,
+   "e": 13.042,
+   "spk": "N",
+   "text": "Too loud? Turn it down from your phone.",
+   "show": "Too loud? Turn it down from your phone.",
+   "emoji": {
+    "phone": "🔉"
+   },
+   "hl": [
+    "phone."
+   ]
+  },
+  {
+   "s": 13.242,
+   "e": 15.56,
+   "spk": "N",
+   "text": "Dim the screen, or put it to sleep.",
+   "show": "Dim the screen, or put it to sleep.",
+   "emoji": {
+    "sleep": "🌙"
+   },
+   "hl": []
+  },
+  {
+   "s": 15.86,
+   "e": 18.354,
+   "spk": "N",
+   "text": "Set house rules, like no scary stories.",
+   "show": "Set house rules, like no scary stories.",
+   "emoji": {
+    "stories": "📏"
+   },
+   "hl": [
+    "house",
+    "rules,"
+   ]
+  },
+  {
+   "s": 18.554,
+   "e": 21.046,
+   "spk": "N",
+   "text": "Add their exam, and Cheeko wishes them luck.",
+   "show": "Add their exam, and Cheeko wishes them luck.",
+   "emoji": {
+    "luck": "🍀"
+   },
+   "hl": []
+  },
+  {
+   "s": 21.346,
+   "e": 23.852,
+   "spk": "N",
+   "text": "See what they played, and how the quiz went.",
+   "show": "See what they played, and how the quiz went.",
+   "emoji": {
+    "went": "📊"
+   },
+   "hl": []
+  },
+  {
+   "s": 24.052,
+   "e": 26.185,
+   "spk": "N",
+   "text": "Every picture they imagined, saved.",
+   "show": "Every picture they imagined, saved.",
+   "emoji": {
+    "saved": "🎨"
+   },
+   "hl": []
+  },
+  {
+   "s": 26.385,
+   "e": 29.228,
+   "spk": "N",
+   "text": "Plus a recap every night, and a streak to keep.",
+   "show": "Plus a recap every night, and a streak to keep.",
+   "emoji": {
+    "keep": "🔥"
+   },
+   "hl": [
+    "streak"
+   ]
+  },
+  {
+   "s": 29.578,
+   "e": 31.9,
+   "spk": "N",
+   "text": "Their playtime. Your rules.",
+   "show": "Their playtime. Your rules.",
+   "emoji": {
+    "rules": "🔑"
+   },
+   "hl": [
+    "Your",
+    "rules."
+   ]
+  },
+  {
+   "s": 32.2,
+   "e": 35.054,
+   "spk": "N",
+   "text": "Cheeko. Less screen, more childhood!",
+   "show": "Cheeko. Less screen, more childhood!",
+   "emoji": {},
+   "hl": []
+  }
+ ]
+}

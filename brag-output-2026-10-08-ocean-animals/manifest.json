@@ -1,0 +1,252 @@
+{
+ "id": "V30",
+ "title": "Ocean and Water Animals (on-device quiz)",
+ "date": "2026-10-08",
+ "status": "10-animal cut rendered; full list of 80 in rounds.json",
+ "screen": {
+  "panel": "JD9853 2.01in IPS",
+  "logical_px": [
+   296,
+   240
+  ],
+  "render": "2x (592x480) then Lanczos to 296x240",
+  "safe_area": "glass corners curve in ~78 px from the sides and ~74 px from top and bottom (device-v2/screen_mask.png)"
+ },
+ "voice": {
+  "engine": "MiniMax speech-2.8-hd",
+  "voice": "English_PlayfulGirl (Cheeko)",
+  "recorder": "marketing/tools/feature_rec.py feature_lines.json V30",
+  "check": "Sarvam saarika:v2.5 en-IN on every clip; Whisper for short names Sarvam mishears"
+ },
+ "music": "original, synth.py (D major, 112 BPM, marimba, glockenspiel, plucked bass, shaker), ducked under the voice and during each countdown",
+ "sfx": "synth.py: wood-block ticks at 3, 2, 1; glockenspiel chime on each reveal; water whoosh on each wave wipe; pops",
+ "timing_s": {
+  "round": 9.0,
+  "inside_round": {
+   "prompt": 0.4,
+   "tick0": 1.9,
+   "reveal": 4.9,
+   "name": 5.15
+  },
+  "first_round": 10.424,
+  "outro": 100.424,
+  "total": 109.99
+ },
+ "paid_generation": "none (no AI images or video used); voice TTS only",
+ "rounds": [
+  {
+   "n": 1,
+   "answer": "Dolphin",
+   "start_s": 10.424,
+   "image": "assets/animals/01_dolphin.jpg",
+   "crop_focus_zoom": [
+    0.55,
+    0.38,
+    1.5
+   ],
+   "envato_item": "https://elements.envato.com/dolphin-underwater-view-bimini-bahamas-PH3MJ49",
+   "envato_title": "Dolphin, underwater view, Bimini, Bahamas",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/01_dolphin-underwater-view-bimini-bahamas-2026-09-22-03-44-27-utc.jpg",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 5,
+   "prompt_text": "Here's the first one!",
+   "name_line": 22,
+   "name_heard_by_stt": "Dolphin",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  },
+  {
+   "n": 2,
+   "answer": "Sea Turtle",
+   "start_s": 19.424,
+   "image": "assets/animals/02_sea_turtle.jpg",
+   "crop_focus_zoom": [
+    0.5,
+    0.45,
+    2.1
+   ],
+   "envato_item": "https://elements.envato.com/sea-turtle-swimming-in-crystal-clear-water-AR5CAKA",
+   "envato_title": "Sea turtle swimming in crystal clear water",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/02_sea-turtle-glides-effortlessly-through-the-turquoi-2026-09-21-16-27-39-utc.jpg",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 6,
+   "prompt_text": "What animal is this?",
+   "name_line": 23,
+   "name_heard_by_stt": "Sea Turtle",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  },
+  {
+   "n": 3,
+   "answer": "Orca",
+   "start_s": 28.424,
+   "image": "assets/animals/03_orca.jpg",
+   "crop_focus_zoom": [
+    0.56,
+    0.45,
+    1.15
+   ],
+   "envato_item": "https://elements.envato.com/biggs-orca-whale-jumping-out-of-the-sea-in-vancouv-2NX7TUN",
+   "envato_title": "Bigg's orca whale jumping out of the sea in Vancouver Island, Canada",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/03_bigg-s-orca-whale-jumping-out-of-the-sea-in-vancou-2026-09-24-03-12-13-utc.jpeg",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 7,
+   "prompt_text": "Can you guess this one?",
+   "name_line": 24,
+   "name_heard_by_stt": "Orca",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  },
+  {
+   "n": 4,
+   "answer": "Crab",
+   "start_s": 37.424,
+   "image": "assets/animals/04_crab.jpg",
+   "crop_focus_zoom": [
+    0.5,
+    0.42,
+    1.1
+   ],
+   "envato_item": "https://elements.envato.com/close-up-photo-of-a-sally-lightfoot-crab-on-a-volc-HSRQEFL",
+   "envato_title": "Close up photo of a Sally Lightfoot crab on a volcanic rock",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/04_sally-lightfoot-crab-on-volcanic-rock-coastline-2026-09-24-15-43-02-utc.jpg",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 8,
+   "prompt_text": "Do you know this one?",
+   "name_line": 25,
+   "name_heard_by_stt": "Crab",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  },
+  {
+   "n": 5,
+   "answer": "Great White Shark",
+   "start_s": 46.424,
+   "image": "assets/animals/05_great_white_shark.jpg",
+   "crop_focus_zoom": [
+    0.5,
+    0.45,
+    1.55
+   ],
+   "envato_item": "https://elements.envato.com/underwater-view-of-white-shark-swimming-in-blue-se-Q45HXL8",
+   "envato_title": "Underwater view of white shark swimming in blue sea, Sinaloa, Mexico",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/05_underwater-view-of-white-shark-swimming-in-blue-se-2026-09-24-11-38-08-utc.jpg",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 9,
+   "prompt_text": "Who is this?",
+   "name_line": 26,
+   "name_heard_by_stt": "Great white shark",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  },
+  {
+   "n": 6,
+   "answer": "Jellyfish",
+   "start_s": 55.424,
+   "image": "assets/animals/06_jellyfish.jpg",
+   "crop_focus_zoom": [
+    0.5,
+    0.5,
+    1.0
+   ],
+   "envato_item": "https://elements.envato.com/beautiful-shot-of-blue-jellyfish-underwater-with-a-8GVTF4W",
+   "envato_title": "Beautiful shot of blue jellyfish underwater with a blurred background",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/06_luminous-jellyfish-floating-gracefully-in-deep-blu-2026-09-23-12-04-19-utc.jpeg",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 10,
+   "prompt_text": "Look closely!",
+   "name_line": 27,
+   "name_heard_by_stt": "Jellyfish",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  },
+  {
+   "n": 7,
+   "answer": "Goldfish",
+   "start_s": 64.424,
+   "image": "assets/animals/07_goldfish.jpg",
+   "crop_focus_zoom": [
+    0.4,
+    0.45,
+    1.7
+   ],
+   "envato_item": "https://elements.envato.com/goldfish-with-fins-swimming-in-aquarium-on-blue-ba-QNHCAKZ",
+   "envato_title": "Goldfish with fins swimming in aquarium on blue background. Fish float in water column",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/07_orange-goldfish-swimming-in-a-blue-aquatic-environ-2026-09-23-05-45-31-utc.jpg",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 11,
+   "prompt_text": "Ooh, what's this?",
+   "name_line": 28,
+   "name_heard_by_stt": "Goldfish",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  },
+  {
+   "n": 8,
+   "answer": "Octopus",
+   "start_s": 73.424,
+   "image": "assets/animals/08_octopus.jpg",
+   "crop_focus_zoom": [
+    0.5,
+    0.45,
+    1.05
+   ],
+   "envato_item": "https://elements.envato.com/close-up-of-an-octopus-6DL5GNQ",
+   "envato_title": "Close up of an octopus",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/08_beautiful-close-up-of-a-detailed-octopus-2026-09-22-17-54-28-utc.JPG",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 12,
+   "prompt_text": "Make your guess!",
+   "name_line": 29,
+   "name_heard_by_stt": "Octopus",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  },
+  {
+   "n": 9,
+   "answer": "Shrimp",
+   "start_s": 82.424,
+   "image": "assets/animals/09_shrimp.jpg",
+   "crop_focus_zoom": [
+    0.5,
+    0.45,
+    1.0
+   ],
+   "envato_item": "https://elements.envato.com/a-shrimp-that-is-on-some-rocks-with-blue-waters-ar-JELFYQN",
+   "envato_title": "a shrimp that is on some rocks with blue waters around",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/09_red-cherry-shrimp-crawling-on-a-rock-2026-09-23-11-59-57-utc.jpg",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 13,
+   "prompt_text": "Try this one!",
+   "name_line": 30,
+   "name_heard_by_stt": "Shrimp",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  },
+  {
+   "n": 10,
+   "answer": "Emperor Penguin",
+   "start_s": 91.424,
+   "image": "assets/animals/10_emperor_penguin.jpg",
+   "crop_focus_zoom": [
+    0.5,
+    0.48,
+    1.9
+   ],
+   "envato_item": "https://elements.envato.com/emperor-penguin-on-the-ice-floe-in-the-southern-oc-ZEV33SU",
+   "envato_title": "Emperor penguin on the ice floe in the southern ocean, 180 miles north of East Antarctica,",
+   "original_file": "/Users/ravikumar/Cheeko Master/marketing/assets/envato/v30-ocean-animals/10_emperor-penguin-on-the-ice-floe-in-the-southern-oc-2026-09-24-12-14-17-utc.jpg",
+   "licence": "Envato Elements, downloaded 2026-10-08 in the Envato app (automatically licensed)",
+   "prompt_line": 102,
+   "prompt_text": "Here's the last one!",
+   "name_line": 31,
+   "name_heard_by_stt": "Emperor Penguin",
+   "species_check": "checked by eye against the species (Claude, 2026-10-08)"
+  }
+ ],
+ "outputs": [
+  {
+   "file": "Cheeko_V30_Ocean_Animals_10_296x240.avi",
+   "bytes": 59469510
+  },
+  {
+   "file": "Cheeko_V30_Ocean_Animals_10_296x240.mp4",
+   "bytes": 8633855
+  },
+  {
+   "file": "preview_on_device.mp4",
+   "bytes": 14467583
+  }
+ ]
+}

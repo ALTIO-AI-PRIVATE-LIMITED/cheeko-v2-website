@@ -1,0 +1,76 @@
+<!-- S2 store (4.75 to 13.05 s). Mumma's phone with the REAL Cheeko Store page (captures from its own code, work/store_capture.mjs):
+     the header, the Videos page scrolling to Guess the Dinosaur, the detail page, Send to Cheeko Toy, Queued, Sending 40%.
+     Page geometry (css px, work/store-shots/geometry.json) maps to the stage as x = 221.5 + 1.6209 cx, y = 327.1 + 1.6209 cy. -->
+<template>
+  <style>
+    @font-face { font-family: 'Hanken Grotesk'; src: url('assets/fonts/HankenGrotesk.woff2') format('woff2'); font-weight: 400 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #FFF6E8; }
+    #s2-cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    .iph { position: absolute; background: linear-gradient(145deg, #dcdddf, #8e9093 38%, #c9cbcd 68%, #7d7f82); box-shadow: 0 46px 90px rgba(35, 26, 16, .26); }
+    .bz { position: absolute; background: #0b0b0c; }
+    .ps { position: absolute; overflow: hidden; background: #FCF9F8; }
+    .isl { position: absolute; background: #000; }
+    .sbar { position: absolute; left: 0; top: 0; width: 100%; background: #FCF9F8; color: #111; font-family: 'Hanken Grotesk', sans-serif; font-weight: 700; }
+    .page { position: absolute; left: 0; width: 100%; overflow: hidden; }
+    .page img, .page .pg { position: absolute; left: 0; top: 0; width: 100%; }
+    #s2-finger { position: absolute; left: 0; top: 0; font-size: 130px; line-height: 1; filter: drop-shadow(0 10px 14px rgba(35, 26, 16, .3)); }
+    #s2-card { position: absolute; left: 609px; top: 375px; width: 300px; height: 243px; border-radius: 26px; border: 8px solid #fff; object-fit: cover; box-shadow: 0 24px 44px rgba(35, 26, 16, .3); }
+  </style>
+  <div data-hf-id="hf-bmd6" id="root" data-composition-id="s2" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-69oc" id="s2-cam">
+      <div data-hf-id="hf-z6g4" id="s2-phone" class="iph" style="left:190px;top:200px;width:700px;height:1444px;border-radius:120.6px">
+        <div data-hf-id="hf-r31s" class="bz" style="left:9.1px;top:9.1px;right:9.1px;bottom:9.1px;border-radius:111.5px">
+          <div data-hf-id="hf-yhss" class="ps" style="left:22.4px;top:22.4px;width:637px;height:1381px;border-radius:89.1px">
+            <div data-hf-id="hf-6rid" class="sbar" style="height:95.6px">
+              <div data-hf-id="hf-pndv" style="position:absolute;left:44px;top:34px;font-size:27.6px">9:41</div>
+              <svg data-hf-id="hf-c02r" viewBox="0 0 72 12.6" style="position:absolute;right:36px;top:40px;width:118px;height:21px" fill="#111">
+                <rect data-hf-id="hf-yklf" x="0" y="7.4" width="3.1" height="4" rx=".9"/><rect data-hf-id="hf-u9v5" x="4.6" y="5.2" width="3.1" height="6.2" rx=".9"/><rect data-hf-id="hf-9dmy" x="9.2" y="3" width="3.1" height="8.4" rx=".9"/><rect data-hf-id="hf-2z7h" x="13.8" y=".6" width="3.1" height="10.8" rx=".9"/>
+                <g data-hf-id="hf-tjea" transform="translate(24.5 0)"><path data-hf-id="hf-kpr5" d="M7.7 11.4 L5.2 8.6 A3.6 3.6 0 0 1 10.2 8.6 Z"/><path data-hf-id="hf-u9xj" d="M3.3 6.6 A6.4 6.4 0 0 1 12.1 6.6 L10.9 8 A4.7 4.7 0 0 0 4.5 8 Z"/><path data-hf-id="hf-tavg" d="M1.1 4.2 A9.6 9.6 0 0 1 14.3 4.2 L13.1 5.6 A7.9 7.9 0 0 0 2.3 5.6 Z"/></g>
+                <g data-hf-id="hf-3qk3" transform="translate(46 0)"><rect data-hf-id="hf-rr3w" x=".5" y=".6" width="24" height="11.4" rx="3.6" fill="none" stroke="#111" stroke-opacity=".4" stroke-width="1"/><rect data-hf-id="hf-55hr" x="2.4" y="2.5" width="17.6" height="7.6" rx="2"/><path data-hf-id="hf-1txe" d="M25.9 4.2 v4.2 a2 2 0 0 0 0-4.2z" fill-opacity=".45"/></g>
+              </svg>
+            </div>
+            <div data-hf-id="hf-v4vu" class="page" style="top:95.6px;height:1285.4px">
+              <div data-hf-id="hf-89yf" id="s2-scrollwrap" class="pg clip" data-start="0" data-duration="5.9" style="height:1285.4px">
+                <img data-hf-id="hf-wyem" id="s2-scroll" src="assets/store/05_videos_scroll.png" />
+                <img data-hf-id="hf-asud" id="s2-head" src="assets/store/header_videos.png" />
+              </div>
+              <div data-hf-id="hf-pl3d" id="s2-detailwrap" class="pg clip" data-start="5.9" data-duration="0.8" style="height:1285.4px"><img data-hf-id="hf-13hw" id="s2-detail" src="assets/store/07_dino_detail.png" /></div>
+              <img data-hf-id="hf-b8ht" id="s2-queued" class="clip" data-start="6.7" data-duration="0.55" src="assets/store/08_dino_queued.png" />
+              <img data-hf-id="hf-fczl" id="s2-sending" class="clip" data-start="7.25" data-duration="1.05" src="assets/store/09_dino_sending40.png" />
+            </div>
+          </div>
+          <div data-hf-id="hf-02qc" class="isl" style="left:238.8px;top:40.2px;width:204.2px;height:60px;border-radius:30px"></div>
+        </div>
+      </div>
+    </div>
+    <div data-hf-id="hf-ex2n" id="s2-finger">👆</div>
+    <img data-hf-id="hf-x0z0" id="s2-card" src="assets/img/dino_card.png" />
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    // the phone rises out of Mumma's hands (continues S1's iris)
+    tl.fromTo("#s2-phone", { y: 1500, filter: "blur(10px)" }, { y: 0, filter: "blur(0px)", duration: .55, ease: "expo.out" }, 0);
+    // "Say hello to the Cheeko Store!": punch in on the store's own header, then back out
+    tl.fromTo("#s2-cam", { x: 0, y: 0, scale: 1, transformOrigin: "0 0" }, { x: -177.2, y: -244.3, scale: 2.1, duration: .5, ease: "power2.inOut" }, .6);
+    tl.to("#s2-cam", { x: 0, y: 0, scale: 1, duration: .4, ease: "power2.inOut" }, 1.8);
+    // the real Videos page scrolls to Guess the Dinosaur (header stays put, as on a phone); blurred while it moves fast
+    tl.fromTo("#s2-scroll", { y: 0, filter: "blur(0px)" }, { y: -6182, duration: 2.8, ease: "power2.inOut" }, 1.8);
+    tl.to("#s2-scroll", { filter: "blur(5px)", duration: .35, ease: "power1.in" }, 1.95);
+    tl.to("#s2-scroll", { filter: "blur(0px)", duration: .35, ease: "power1.out" }, 4.2);
+    // detail page arrives slightly large and settles
+    tl.fromTo("#s2-detail", { scale: 1.03, transformOrigin: "50% 30%" }, { scale: 1, duration: .25, ease: "expo.out" }, 5.9);
+    // punch in on Preview / Send to Cheeko Toy and the note under them
+    tl.to("#s2-cam", { x: -483.2, y: -2037, scale: 2, duration: .5, ease: "power2.inOut" }, 6.05);
+    // the finger: the dinosaur card (5.8), Send to Cheeko Toy (6.6)
+    tl.fromTo("#s2-finger", { x: 1150, y: 2000 }, { x: 481, y: 752, duration: .35, ease: "power3.out" }, 5.45);
+    tl.to("#s2-finger", { scale: .86, duration: .07, yoyo: true, repeat: 1, ease: "power1.inOut" }, 5.8);
+    tl.to("#s2-finger", { x: 701, y: 489, duration: .4, ease: "power2.inOut" }, 6.2);
+    tl.to("#s2-finger", { scale: .86, duration: .07, yoyo: true, repeat: 1, ease: "power1.inOut" }, 6.6);
+    tl.to("#s2-finger", { x: 1150, y: 2000, duration: .3, ease: "power3.in" }, 6.8);
+    // the Guess the Dinosaur card pops out of the Send button and drops towards Cheeko
+    tl.fromTo("#s2-card", { scale: 0, rotation: -6, opacity: 1 }, { scale: 1, rotation: 0, duration: .22, ease: "back.out(1.7)" }, 7.9);
+    tl.to("#s2-card", { y: 1600, rotation: 10, filter: "blur(12px)", duration: .18, ease: "power3.in" }, 8.12);
+    window.__timelines["s2"] = tl;
+  </script>
+</template>

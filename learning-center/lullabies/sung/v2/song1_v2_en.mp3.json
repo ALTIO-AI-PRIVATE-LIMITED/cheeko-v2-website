@@ -1,0 +1,181 @@
+{
+ "model": "music_v2_5",
+ "lang": "en",
+ "secs": 15.8,
+ "headers": {
+  "song-id": "vIhjSlBCWvIIyyjHxdi4",
+  "x-trace-id": "7d97fb4131bb347ad22f1f1fa647a67c",
+  "x-region": "us-central1"
+ },
+ "plan": {
+  "model_id": "music_v2_5",
+  "composition_plan": {
+   "chunks": [
+    {
+     "text": "[Intro]\n{instrumental only, music box and harp play the melody softly, no vocals}",
+     "duration_ms": 12000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "about 64 bpm",
+      "very quiet and calm",
+      "simple melody with falling phrases",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Refrain]\nThe moon is in the sky,\nthe stars are winking slow.\nRest now, little one,\nthe night is soft and low.",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Verse 1]\nThe trees have gone to sleep,\nthe lamps are glowing gold,\nyour blanket keeps you warm,\nyour hand is mine to hold.",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Interlude]\n{instrumental only, music box and harp play the refrain melody, no vocals}",
+     "duration_ms": 16000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Verse 2]\nThe wind is humming low,\nthe clouds are drifting by,\nthe moon will stay awake\nand hum a lullaby.",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Refrain]\nThe moon is in the sky,\nthe stars are winking slow.\nRest now, little one,\nthe night is soft and low.",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    },
+    {
+     "text": "[Outro]\n{instruments carry the melody, very soft humming, slowing down and fading out}\nMmm.",
+     "duration_ms": 18000,
+     "positive_styles": [
+      "gentle lullaby",
+      "soft warm female vocal, intimate",
+      "music box, harp and soft strings",
+      "slow rocking 3/4 waltz feel",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "choir",
+      "fast singing"
+     ]
+    }
+   ]
+  }
+ }
+}

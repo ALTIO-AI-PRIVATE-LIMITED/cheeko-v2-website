@@ -1,0 +1,114 @@
+{
+ "vid": "V25.1",
+ "dur": 35.61,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 2.2,
+   "spk": "N",
+   "text": "Here's everything the Cheeko app can do!",
+   "show": "Here's everything the Cheeko app can do!",
+   "emoji": {
+    "do!": "📱"
+   },
+   "hl": []
+  },
+  {
+   "s": 2.55,
+   "e": 5.567,
+   "spk": "N",
+   "text": "Four tabs. Home, Device, Analytics and Profile.",
+   "show": "Four tabs. Home, Device, Analytics and Profile.",
+   "emoji": {},
+   "hl": [
+    "tabs."
+   ]
+  },
+  {
+   "s": 5.917,
+   "e": 10.712,
+   "spk": "N",
+   "text": "Home shows your child's day. How long they played, and how many talks, cards and games.",
+   "show": "Home shows your child's day. How long they played, and how many talks, cards and games.",
+   "emoji": {
+    "games.": "🎮"
+   },
+   "hl": [
+    "day."
+   ]
+  },
+  {
+   "s": 11.062,
+   "e": 16.079,
+   "spk": "N",
+   "text": "Tap Review to read today's chats. Their questions, and Cheeko's answers, word for word.",
+   "show": "Tap Review to read today's chats. Their questions, and Cheeko's answers, word for word.",
+   "emoji": {
+    "word.": "👀"
+   },
+   "hl": [
+    "Review"
+   ]
+  },
+  {
+   "s": 16.429,
+   "e": 18.759,
+   "spk": "N",
+   "text": "Tap a character to see just their chats.",
+   "show": "Tap a character to see just their chats.",
+   "emoji": {
+    "chats.": "🦜"
+   },
+   "hl": []
+  },
+  {
+   "s": 19.109,
+   "e": 21.615,
+   "spk": "N",
+   "text": "Daily Quiz shows how Quizzy's questions went.",
+   "show": "Daily Quiz shows how Quizzy's questions went.",
+   "emoji": {
+    "went.": "🐝"
+   },
+   "hl": [
+    "Quiz"
+   ]
+  },
+  {
+   "s": 21.965,
+   "e": 24.983,
+   "spk": "N",
+   "text": "And the streak counts the days in a row they've kept it up.",
+   "show": "And the streak counts the days in a row they've kept it up.",
+   "emoji": {
+    "up.": "🔥"
+   },
+   "hl": [
+    "streak"
+   ]
+  },
+  {
+   "s": 25.333,
+   "e": 29.815,
+   "spk": "N",
+   "text": "Scroll down for the moment of the day, everything they imagined, and the cards they played.",
+   "show": "Scroll down for the moment of the day, everything they imagined, and the cards they played.",
+   "emoji": {
+    "imagined,": "🎨",
+    "played.": "🃏"
+   },
+   "hl": []
+  },
+  {
+   "s": 30.265,
+   "e": 32.208,
+   "spk": "N",
+   "text": "Next up, the Device tab!",
+   "show": "Next up, the Device tab!",
+   "emoji": {
+    "tab!": "👉"
+   },
+   "hl": []
+  }
+ ]
+}

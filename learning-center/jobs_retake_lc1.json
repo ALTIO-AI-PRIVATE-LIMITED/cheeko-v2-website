@@ -1,0 +1,38 @@
+[
+ {
+  "tag": "lc_baby_cub",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered baby lion cub with no mane at all, a small fluffy golden kitten-like cub with faint spots on its legs and big round eyes, sitting for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_baby_tadpole",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered tadpole, a tiny dark grey-brown round body with a long thin wavy tail like a black comma, swimming, not a fish, no fins, no scales for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_helper_nurse",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered friendly Indian nurse in a plain light blue uniform and plain light blue cap, holding a clipboard, full body, no crosses and no red symbols anywhere for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_house_doorbell",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered round doorbell push button with a glowing ring on a small square plate, fixed on a wall right beside a wooden front door frame, close-up so the button is clearly the main subject for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_inst_harmonica",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered silver harmonica (mouth organ) for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "lc_inst_cymbals",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered pair of shiny golden cymbals for a children's picture book, smooth glossy rounded shapes, the whole subject visible, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No text, no letters, no numbers, no logos, no flags, no brand names. Use the reference image only for its style: the same 3D toy render look, soft lighting and plain sky-blue background. Do not copy the car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ }
+]

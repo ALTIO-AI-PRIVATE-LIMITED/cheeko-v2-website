@@ -1,0 +1,550 @@
+{
+ "id": "V31",
+ "title": "Guess the Vehicle, Levels 1 to 3 (on-device quiz)",
+ "date": "2026-10-09",
+ "screen": {
+  "logical_px": [
+   296,
+   240
+  ],
+  "render": "2x (592x480) then Lanczos to 296x240",
+  "safe_area": "rounded glass, see V30 manifest"
+ },
+ "images": {
+  "generator": "Seedream 5.0 Flash via the dev box image lab (keys on the box), 1536x1152, watermark off, 3D toy style",
+  "style_reference": "the approved Car (gen/test2_car_toy_seedflash.jpg) passed as a reference image to every vehicle",
+  "retakes": "Motorbike (came out as a scooter), Ambulance (red cross removed; protected emblem), Tractor (green and yellow looked like one brand)",
+  "checked": "every image checked by eye for the right vehicle, no text, logos, flags or emblems (Claude, 2026-10-09)",
+  "items": [
+   {
+    "n": 1,
+    "name": "Car",
+    "level": 1,
+    "file": "assets/vehicles/01_car.jpg",
+    "prompt": "A cute 3D rendered red family car for a children's picture book, smooth glossy rounded shapes, the whole car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags."
+   },
+   {
+    "n": 2,
+    "name": "Bus",
+    "level": 1,
+    "file": "assets/vehicles/02_bus.jpg",
+    "prompt": "A cute 3D rendered big blue city bus with many windows for a children's picture book, smooth glossy rounded shapes, the whole bus visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the bus."
+   },
+   {
+    "n": 3,
+    "name": "Truck",
+    "level": 1,
+    "file": "assets/vehicles/03_truck.jpg",
+    "prompt": "A cute 3D rendered bright orange goods truck with a big open cargo bed for a children's picture book, smooth glossy rounded shapes, the whole truck visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the truck."
+   },
+   {
+    "n": 4,
+    "name": "Bicycle",
+    "level": 1,
+    "file": "assets/vehicles/04_bicycle.jpg",
+    "prompt": "A cute 3D rendered green bicycle with a small front basket for a children's picture book, smooth glossy rounded shapes, the whole bicycle visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the bicycle."
+   },
+   {
+    "n": 5,
+    "name": "Motorbike",
+    "level": 1,
+    "file": "assets/vehicles/05_motorbike.jpg",
+    "prompt": "A cute 3D rendered red motorcycle with a big fuel tank between the seat and the handlebars, a visible engine and exhaust pipe, two large wheels, sporty shape; it is a motorcycle, not a scooter for a children's picture book, smooth glossy rounded shapes, the whole motorcycle visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no rider, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the motorcycle."
+   },
+   {
+    "n": 6,
+    "name": "Aeroplane",
+    "level": 1,
+    "file": "assets/vehicles/06_aeroplane.jpg",
+    "prompt": "A cute 3D rendered white passenger aeroplane with blue stripes, flying for a children's picture book, smooth glossy rounded shapes, the whole aeroplane visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the aeroplane."
+   },
+   {
+    "n": 7,
+    "name": "Train",
+    "level": 1,
+    "file": "assets/vehicles/07_train.jpg",
+    "prompt": "A cute 3D rendered red and yellow passenger train engine pulling two coaches on rails for a children's picture book, smooth glossy rounded shapes, the whole train visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the train."
+   },
+   {
+    "n": 8,
+    "name": "Boat",
+    "level": 1,
+    "file": "assets/vehicles/08_boat.jpg",
+    "prompt": "A cute 3D rendered small wooden rowing boat with two oars, floating on a little patch of water for a children's picture book, smooth glossy rounded shapes, the whole boat visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the boat."
+   },
+   {
+    "n": 9,
+    "name": "Auto rickshaw",
+    "level": 1,
+    "file": "assets/vehicles/09_auto_rickshaw.jpg",
+    "prompt": "A cute 3D rendered Indian auto rickshaw with three wheels, a yellow roof and a green body for a children's picture book, smooth glossy rounded shapes, the whole auto rickshaw visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the auto rickshaw."
+   },
+   {
+    "n": 10,
+    "name": "Scooter",
+    "level": 1,
+    "file": "assets/vehicles/10_scooter.jpg",
+    "prompt": "A cute 3D rendered light blue scooter for a children's picture book, smooth glossy rounded shapes, the whole scooter visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the scooter."
+   },
+   {
+    "n": 11,
+    "name": "Fire engine",
+    "level": 2,
+    "file": "assets/vehicles/11_fire_engine.jpg",
+    "prompt": "A cute 3D rendered red fire engine with a long ladder on top and siren lights for a children's picture book, smooth glossy rounded shapes, the whole fire engine visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the fire engine."
+   },
+   {
+    "n": 12,
+    "name": "Ambulance",
+    "level": 2,
+    "file": "assets/vehicles/12_ambulance.jpg",
+    "prompt": "Edit this image: remove the small red cross badge from the front grille and make that spot a plain grey grille like the rest. Keep everything else exactly the same: the white ambulance van, red side stripe, roof siren lights, sky-blue background, camera angle and style. No cross, no plus sign, no symbols, no text."
+   },
+   {
+    "n": 13,
+    "name": "Police car",
+    "level": 2,
+    "file": "assets/vehicles/13_police_car.jpg",
+    "prompt": "A cute 3D rendered white and dark blue police car with a red and blue light bar on the roof for a children's picture book, smooth glossy rounded shapes, the whole police car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the police car."
+   },
+   {
+    "n": 14,
+    "name": "Helicopter",
+    "level": 2,
+    "file": "assets/vehicles/14_helicopter.jpg",
+    "prompt": "A cute 3D rendered yellow helicopter with big rotor blades for a children's picture book, smooth glossy rounded shapes, the whole helicopter visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the helicopter."
+   },
+   {
+    "n": 15,
+    "name": "Ship",
+    "level": 2,
+    "file": "assets/vehicles/15_ship.jpg",
+    "prompt": "A cute 3D rendered big ship with a white hull, a red funnel and stacked colourful containers, on a little patch of sea for a children's picture book, smooth glossy rounded shapes, the whole ship visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the ship."
+   },
+   {
+    "n": 16,
+    "name": "Tractor",
+    "level": 2,
+    "file": "assets/vehicles/16_tractor.jpg",
+    "prompt": "A cute 3D rendered bright red farm tractor with big black back wheels, small front wheels, grey wheel rims and a small cabin for a children's picture book, smooth glossy rounded shapes, the whole tractor visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no rider, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the tractor."
+   },
+   {
+    "n": 17,
+    "name": "School bus",
+    "level": 2,
+    "file": "assets/vehicles/17_school_bus.jpg",
+    "prompt": "A cute 3D rendered yellow school bus for a children's picture book, smooth glossy rounded shapes, the whole school bus visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the school bus."
+   },
+   {
+    "n": 18,
+    "name": "Cycle rickshaw",
+    "level": 2,
+    "file": "assets/vehicles/18_cycle_rickshaw.jpg",
+    "prompt": "A cute 3D rendered Indian cycle rickshaw: a three-wheeled pedal tricycle with a rider seat in front and a covered passenger seat with a folding canopy at the back for a children's picture book, smooth glossy rounded shapes, the whole cycle rickshaw visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the cycle rickshaw."
+   },
+   {
+    "n": 19,
+    "name": "Garbage truck",
+    "level": 2,
+    "file": "assets/vehicles/19_garbage_truck.jpg",
+    "prompt": "A cute 3D rendered green garbage truck with a big rear loader for bins for a children's picture book, smooth glossy rounded shapes, the whole garbage truck visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the garbage truck."
+   },
+   {
+    "n": 20,
+    "name": "Hot air balloon",
+    "level": 2,
+    "file": "assets/vehicles/20_hot_air_balloon.jpg",
+    "prompt": "A cute 3D rendered colourful striped hot air balloon with a wicker basket, floating for a children's picture book, smooth glossy rounded shapes, the whole hot air balloon visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the hot air balloon."
+   },
+   {
+    "n": 21,
+    "name": "Excavator",
+    "level": 3,
+    "file": "assets/vehicles/21_excavator.jpg",
+    "prompt": "A cute 3D rendered yellow excavator on crawler tracks with a long digging arm and bucket for a children's picture book, smooth glossy rounded shapes, the whole excavator visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the excavator."
+   },
+   {
+    "n": 22,
+    "name": "Cement mixer",
+    "level": 3,
+    "file": "assets/vehicles/22_cement_mixer.jpg",
+    "prompt": "A cute 3D rendered cement mixer truck with a big striped rotating drum for a children's picture book, smooth glossy rounded shapes, the whole cement mixer truck visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the cement mixer truck."
+   },
+   {
+    "n": 23,
+    "name": "Crane",
+    "level": 3,
+    "file": "assets/vehicles/23_crane.jpg",
+    "prompt": "A cute 3D rendered yellow and red mobile crane truck with a long raised boom and a hook for a children's picture book, smooth glossy rounded shapes, the whole crane visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the crane."
+   },
+   {
+    "n": 24,
+    "name": "Road roller",
+    "level": 3,
+    "file": "assets/vehicles/24_road_roller.jpg",
+    "prompt": "A cute 3D rendered yellow road roller with a huge smooth steel drum at the front for a children's picture book, smooth glossy rounded shapes, the whole road roller visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the road roller."
+   },
+   {
+    "n": 25,
+    "name": "Bulldozer",
+    "level": 3,
+    "file": "assets/vehicles/25_bulldozer.jpg",
+    "prompt": "A cute 3D rendered orange bulldozer on crawler tracks with a big flat front blade for a children's picture book, smooth glossy rounded shapes, the whole bulldozer visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the bulldozer."
+   },
+   {
+    "n": 26,
+    "name": "Rocket",
+    "level": 3,
+    "file": "assets/vehicles/26_rocket.jpg",
+    "prompt": "A cute 3D rendered white and red space rocket standing upright on a small launch pad for a children's picture book, smooth glossy rounded shapes, the whole rocket visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the rocket."
+   },
+   {
+    "n": 27,
+    "name": "Submarine",
+    "level": 3,
+    "file": "assets/vehicles/27_submarine.jpg",
+    "prompt": "A cute 3D rendered red and white submarine with a periscope and a propeller, underwater with a few bubbles for a children's picture book, smooth glossy rounded shapes, the whole submarine visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the submarine."
+   },
+   {
+    "n": 28,
+    "name": "Tram",
+    "level": 3,
+    "file": "assets/vehicles/28_tram.jpg",
+    "prompt": "A cute 3D rendered red and cream city tram on rails with a pole touching an overhead wire for a children's picture book, smooth glossy rounded shapes, the whole tram visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the tram."
+   },
+   {
+    "n": 29,
+    "name": "Cable car",
+    "level": 3,
+    "file": "assets/vehicles/29_cable_car.jpg",
+    "prompt": "A cute 3D rendered red cable car cabin hanging from a thick cable, high in the air for a children's picture book, smooth glossy rounded shapes, the whole cable car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the cable car."
+   },
+   {
+    "n": 30,
+    "name": "Hovercraft",
+    "level": 3,
+    "file": "assets/vehicles/30_hovercraft.jpg",
+    "prompt": "A cute 3D rendered hovercraft with a black inflated rubber skirt and a big fan at the back, gliding on a little patch of water for a children's picture book, smooth glossy rounded shapes, the whole hovercraft visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the hovercraft."
+   }
+  ]
+ },
+ "voice": {
+  "engine": "MiniMax speech-2.8-hd",
+  "voice": "English_PlayfulGirl (Cheeko)",
+  "lines": "feature_lines.json V31",
+  "check": "Sarvam saarika:v2.5 en-IN"
+ },
+ "music_sfx": "original, synth.py (free): marimba, glockenspiel, plucked bass, shaker; key and tempo rise per level; wood-block ticks, reveal chime, whoosh, pops",
+ "cost_usd": {
+  "images": 0.93,
+  "voice_estimate": 0.12,
+  "music_sfx": 0
+ },
+ "levels": [
+  {
+   "level": 1,
+   "answer_s": 3,
+   "round_s": 9.0,
+   "total_s": 110.18,
+   "first_round_s": 11.593,
+   "rounds": [
+    {
+     "n": 1,
+     "answer": "Car",
+     "start_s": 11.593,
+     "prompt": "Here's the first one!",
+     "name_line": 26,
+     "name_heard_by_stt": "Car"
+    },
+    {
+     "n": 2,
+     "answer": "Bus",
+     "start_s": 20.593,
+     "prompt": "What vehicle is this?",
+     "name_line": 27,
+     "name_heard_by_stt": "Bus"
+    },
+    {
+     "n": 3,
+     "answer": "Truck",
+     "start_s": 29.593,
+     "prompt": "Can you guess this one?",
+     "name_line": 28,
+     "name_heard_by_stt": "Truck"
+    },
+    {
+     "n": 4,
+     "answer": "Bicycle",
+     "start_s": 38.593,
+     "prompt": "Do you know this one?",
+     "name_line": 29,
+     "name_heard_by_stt": "Bicycle"
+    },
+    {
+     "n": 5,
+     "answer": "Motorbike",
+     "start_s": 47.593,
+     "prompt": "What is this?",
+     "name_line": 30,
+     "name_heard_by_stt": "Motorbike"
+    },
+    {
+     "n": 6,
+     "answer": "Aeroplane",
+     "start_s": 56.593,
+     "prompt": "Look closely!",
+     "name_line": 31,
+     "name_heard_by_stt": "Aeroplane"
+    },
+    {
+     "n": 7,
+     "answer": "Train",
+     "start_s": 65.593,
+     "prompt": "Ooh, what's this?",
+     "name_line": 32,
+     "name_heard_by_stt": "Train"
+    },
+    {
+     "n": 8,
+     "answer": "Boat",
+     "start_s": 74.593,
+     "prompt": "Make your guess!",
+     "name_line": 33,
+     "name_heard_by_stt": "Boat"
+    },
+    {
+     "n": 9,
+     "answer": "Auto rickshaw",
+     "start_s": 83.593,
+     "prompt": "Try this one!",
+     "name_line": 34,
+     "name_heard_by_stt": "Auto rickshaw"
+    },
+    {
+     "n": 10,
+     "answer": "Scooter",
+     "start_s": 92.593,
+     "prompt": "Here's the last one!",
+     "name_line": 35,
+     "name_heard_by_stt": "Scooter"
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "answer_s": 4,
+   "round_s": 10.0,
+   "total_s": 120.43,
+   "first_round_s": 11.838,
+   "rounds": [
+    {
+     "n": 11,
+     "answer": "Fire engine",
+     "start_s": 11.838,
+     "prompt": "Here's the first one!",
+     "name_line": 36,
+     "name_heard_by_stt": "Fire engine."
+    },
+    {
+     "n": 12,
+     "answer": "Ambulance",
+     "start_s": 21.838,
+     "prompt": "What vehicle is this?",
+     "name_line": 37,
+     "name_heard_by_stt": "Ambulance"
+    },
+    {
+     "n": 13,
+     "answer": "Police car",
+     "start_s": 31.838,
+     "prompt": "Can you guess this one?",
+     "name_line": 38,
+     "name_heard_by_stt": "Police car"
+    },
+    {
+     "n": 14,
+     "answer": "Helicopter",
+     "start_s": 41.838,
+     "prompt": "Do you know this one?",
+     "name_line": 39,
+     "name_heard_by_stt": "Helicopter"
+    },
+    {
+     "n": 15,
+     "answer": "Ship",
+     "start_s": 51.838,
+     "prompt": "What is this?",
+     "name_line": 40,
+     "name_heard_by_stt": "Ship"
+    },
+    {
+     "n": 16,
+     "answer": "Tractor",
+     "start_s": 61.838,
+     "prompt": "Look closely!",
+     "name_line": 41,
+     "name_heard_by_stt": "Tractor"
+    },
+    {
+     "n": 17,
+     "answer": "School bus",
+     "start_s": 71.838,
+     "prompt": "Ooh, what's this?",
+     "name_line": 42,
+     "name_heard_by_stt": "School bus (retake)"
+    },
+    {
+     "n": 18,
+     "answer": "Cycle rickshaw",
+     "start_s": 81.838,
+     "prompt": "Make your guess!",
+     "name_line": 43,
+     "name_heard_by_stt": "Cycle rickshaw"
+    },
+    {
+     "n": 19,
+     "answer": "Garbage truck",
+     "start_s": 91.838,
+     "prompt": "Try this one!",
+     "name_line": 44,
+     "name_heard_by_stt": "Garbage truck?"
+    },
+    {
+     "n": 20,
+     "answer": "Hot air balloon",
+     "start_s": 101.838,
+     "prompt": "Here's the last one!",
+     "name_line": 45,
+     "name_heard_by_stt": "Hot air balloon."
+    }
+   ]
+  },
+  {
+   "level": 3,
+   "answer_s": 5,
+   "round_s": 11.0,
+   "total_s": 131.57,
+   "first_round_s": 11.855,
+   "rounds": [
+    {
+     "n": 21,
+     "answer": "Excavator",
+     "start_s": 11.855,
+     "prompt": "Here's the first one!",
+     "name_line": 46,
+     "name_heard_by_stt": "Excavator"
+    },
+    {
+     "n": 22,
+     "answer": "Cement mixer",
+     "start_s": 22.855,
+     "prompt": "What vehicle is this?",
+     "name_line": 47,
+     "name_heard_by_stt": "Cement mixer"
+    },
+    {
+     "n": 23,
+     "answer": "Crane",
+     "start_s": 33.855,
+     "prompt": "Can you guess this one?",
+     "name_line": 48,
+     "name_heard_by_stt": "Crane"
+    },
+    {
+     "n": 24,
+     "answer": "Road roller",
+     "start_s": 44.855,
+     "prompt": "Do you know this one?",
+     "name_line": 49,
+     "name_heard_by_stt": "Road roller."
+    },
+    {
+     "n": 25,
+     "answer": "Bulldozer",
+     "start_s": 55.855,
+     "prompt": "What is this?",
+     "name_line": 50,
+     "name_heard_by_stt": "Bulldozer."
+    },
+    {
+     "n": 26,
+     "answer": "Rocket",
+     "start_s": 66.855,
+     "prompt": "Look closely!",
+     "name_line": 51,
+     "name_heard_by_stt": "Rocket"
+    },
+    {
+     "n": 27,
+     "answer": "Submarine",
+     "start_s": 77.855,
+     "prompt": "Ooh, what's this?",
+     "name_line": 52,
+     "name_heard_by_stt": "Submarine"
+    },
+    {
+     "n": 28,
+     "answer": "Tram",
+     "start_s": 88.855,
+     "prompt": "Make your guess!",
+     "name_line": 53,
+     "name_heard_by_stt": "Tram"
+    },
+    {
+     "n": 29,
+     "answer": "Cable car",
+     "start_s": 99.855,
+     "prompt": "Try this one!",
+     "name_line": 54,
+     "name_heard_by_stt": "Cable car (retake)"
+    },
+    {
+     "n": 30,
+     "answer": "Hovercraft",
+     "start_s": 110.855,
+     "prompt": "Here's the last one!",
+     "name_line": 55,
+     "name_heard_by_stt": "Hovercraft"
+    }
+   ]
+  }
+ ],
+ "outputs": [
+  {
+   "file": "Cheeko_V31.1_Guess_the_Vehicle_Level_1_296x240.avi",
+   "bytes": 54066402
+  },
+  {
+   "file": "Cheeko_V31.1_Guess_the_Vehicle_Level_1_296x240.mp4",
+   "bytes": 6446536
+  },
+  {
+   "file": "Cheeko_V31.2_Guess_the_Vehicle_Level_2_296x240.avi",
+   "bytes": 60153782
+  },
+  {
+   "file": "Cheeko_V31.2_Guess_the_Vehicle_Level_2_296x240.mp4",
+   "bytes": 6979228
+  },
+  {
+   "file": "Cheeko_V31.3_Guess_the_Vehicle_Level_3_296x240.avi",
+   "bytes": 64308752
+  },
+  {
+   "file": "Cheeko_V31.3_Guess_the_Vehicle_Level_3_296x240.mp4",
+   "bytes": 7365556
+  },
+  {
+   "file": "preview_on_device_L1.mp4",
+   "bytes": 11424770
+  },
+  {
+   "file": "preview_on_device_L2.mp4",
+   "bytes": 12475389
+  },
+  {
+   "file": "preview_on_device_L3.mp4",
+   "bytes": 13087038
+  }
+ ]
+}

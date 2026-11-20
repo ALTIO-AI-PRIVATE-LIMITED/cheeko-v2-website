@@ -1,0 +1,6083 @@
+{
+ "reuse": {
+  "car": "v31:01_car",
+  "bus": "v31:02_bus",
+  "bicycle": "v31:04_bicycle",
+  "motorbike": "v31:05_motorbike",
+  "aeroplane": "v31:06_aeroplane",
+  "train": "v31:07_train",
+  "boat": "v31:08_boat",
+  "scooter": "v31:10_scooter",
+  "fire_engine": "v31:11_fire_engine",
+  "helicopter": "v31:14_helicopter",
+  "ship": "v31:15_ship",
+  "tractor": "v31:16_tractor",
+  "school_bus": "v31:17_school_bus",
+  "hot_air_balloon": "v31:20_hot_air_balloon",
+  "rocket": "v31:26_rocket",
+  "submarine": "v31:27_submarine",
+  "cow": "lc:s01_cow",
+  "mango": "lc:s02_mango",
+  "red_balloon": "lc:s03_red_balloon",
+  "girl_nose": "lc:s04_nose",
+  "elephant_pair": "lc:s05_elephants",
+  "ball": "lc:s06_ball",
+  "rubber_duck": "lc:s07_duck",
+  "lion": "lc:s08_lion",
+  "clock": "lc:s10_clock",
+  "doctor": "lc:s11_doctor",
+  "pressure_cooker": "lc:s12_cooker",
+  "peacock": "lc:s13_peacock",
+  "big_small": "lc:s14_big_small",
+  "tabla": "lc:s15_tabla",
+  "saturn": "lc:s16_saturn",
+  "umbrella_red": "lc:s18_umbrella",
+  "taj_mahal": "env:taj_mahal",
+  "sun": "lc:s22_sun",
+  "pink_flower": "lc:s22_flower",
+  "fruit_mango": "lc:s02_mango",
+  "place_india_gate": "env:place_india_gate",
+  "place_qutub_minar": "env:place_qutub_minar",
+  "place_gateway_of_india": "env:place_gateway_of_india",
+  "place_red_fort": "env:place_red_fort",
+  "place_hawa_mahal": "env:place_hawa_mahal",
+  "place_mysore_palace": "env:place_mysore_palace",
+  "place_victoria_memorial": "env:place_victoria_memorial",
+  "place_lotus_temple": "env:place_lotus_temple",
+  "place_golden_temple": "env:place_golden_temple",
+  "place_howrah_bridge": "env:place_howrah_bridge",
+  "place_jantar_mantar": "env:place_jantar_mantar",
+  "place_amber_fort": "env:place_amber_fort",
+  "place_hampi_stone_chariot": "env:place_hampi_stone_chariot",
+  "place_bandra_worli_sea_link": "env:place_bandra_worli_sea_link",
+  "place_shore_temple": "env:place_shore_temple",
+  "place_meenakshi_temple": "env:place_meenakshi_temple",
+  "place_sanchi_stupa": "env:place_sanchi_stupa",
+  "place_mehrangarh_fort": "env:place_mehrangarh_fort",
+  "place_konark_sun_temple": "env:place_konark_sun_temple"
+ },
+ "new": {
+  "dog": "friendly brown dog",
+  "cat": "cute orange cat",
+  "duck": "white duck with an orange beak, a real farm duck",
+  "sheep": "fluffy white sheep",
+  "horse": "brown horse",
+  "pig": "pink pig",
+  "rooster": "colourful rooster",
+  "goat": "white goat with small horns",
+  "donkey": "grey donkey",
+  "elephant": "grey elephant",
+  "monkey": "playful brown monkey",
+  "frog": "green frog",
+  "tiger": "Bengal tiger",
+  "bear": "brown bear",
+  "wolf": "grey wolf",
+  "owl": "brown owl",
+  "snake": "friendly green snake, coiled",
+  "bee": "honey bee with yellow and black stripes",
+  "fruit_apple": "shiny red apple",
+  "fruit_banana": "bunch of three yellow bananas",
+  "fruit_orange": "round orange fruit (an orange) with a leaf",
+  "fruit_grapes": "bunch of purple grapes",
+  "fruit_watermelon": "whole green striped watermelon with one red slice cut out",
+  "fruit_strawberry": "red strawberry",
+  "fruit_pineapple": "pineapple",
+  "fruit_papaya": "papaya cut in half showing orange flesh and black seeds",
+  "fruit_guava": "green guava with one half cut showing pink flesh",
+  "fruit_pomegranate": "pomegranate cut open showing red seeds",
+  "fruit_pear": "green pear",
+  "fruit_cherry": "pair of red cherries on a stem",
+  "fruit_coconut": "brown coconut with one half cracked open showing white inside",
+  "fruit_lemon": "yellow lemon",
+  "fruit_kiwi": "kiwi fruit cut in half showing green flesh",
+  "fruit_chikoo": "brown chikoo (sapota) fruit with one cut in half",
+  "fruit_jackfruit": "big green spiky jackfruit",
+  "fruit_custard_apple": "green custard apple (sitaphal) with bumpy skin",
+  "fruit_lychee": "bunch of red lychees with one peeled",
+  "fruit_dragon_fruit": "pink dragon fruit cut in half showing white flesh with black seeds",
+  "fruit_fig": "purple fig cut in half",
+  "fruit_blueberry": "small heap of blueberries",
+  "fruit_peach": "fuzzy peach",
+  "fruit_apricot": "orange apricot",
+  "fruit_avocado": "avocado cut in half with its seed",
+  "fruit_jamun": "small heap of dark purple jamun berries",
+  "fruit_star_fruit": "yellow star fruit with one star-shaped slice",
+  "fruit_plum": "dark red plum",
+  "fruit_muskmelon": "muskmelon (cantaloupe) cut open showing orange flesh",
+  "umbrella_blue": "open blue umbrella",
+  "leaf_green": "big green leaf",
+  "pumpkin": "orange pumpkin",
+  "teddy_bear": "brown teddy bear",
+  "black_cat": "black cat sitting",
+  "cloud": "fluffy white cloud",
+  "blue_whale_toy": "blue whale",
+  "carrot": "orange carrot with green leaves",
+  "piggy_bank": "pink piggy bank",
+  "purple_butterfly": "purple butterfly",
+  "cookie": "brown chocolate chip cookie",
+  "black_boots": "pair of black rain boots",
+  "milk_glass": "glass of white milk",
+  "boy_full": "cheerful little Indian boy standing and facing the viewer, full body from head to bare feet, arms a little away from his body with open hands, wearing a yellow t-shirt and blue shorts",
+  "boy_face": "face and shoulders of a cheerful little Indian boy looking at the viewer, close up, black hair",
+  "mum_hen": "mother hen with her yellow chick",
+  "mum_dog": "mother dog with her puppy",
+  "mum_cat": "mother cat with her kitten",
+  "mum_cow": "mother cow with her calf",
+  "mum_sheep": "mother sheep with her lamb",
+  "mum_horse": "mother horse with her foal",
+  "mum_duck": "mother duck with her duckling",
+  "mum_pig": "mother pig with her piglet",
+  "mum_lion": "lioness with her cub",
+  "mum_kangaroo": "mother kangaroo with a joey in her pouch",
+  "mum_frog": "green frog next to a tadpole in water",
+  "mummy_hen": "grown-up mother hen standing alone, no chicks",
+  "mummy_dog": "grown-up mother dog standing alone, clearly an adult dog, no puppies",
+  "mummy_cat": "grown-up mother cat sitting alone, clearly an adult cat, no kittens",
+  "mummy_cow": "grown-up mother cow standing alone, no calf",
+  "mummy_sheep": "grown-up mother sheep with thick wool standing alone, no lamb",
+  "mummy_horse": "grown-up mother horse standing alone, no foal",
+  "mummy_duck": "grown-up mother duck standing alone, no ducklings",
+  "mummy_pig": "grown-up mother pig standing alone, no piglets",
+  "mummy_lioness": "grown-up lioness (female lion with no mane) standing alone, no cubs",
+  "mummy_kangaroo": "grown-up mother kangaroo standing alone, her pouch empty, no joey",
+  "mummy_frog": "grown-up green frog sitting on a lily pad, alone, no tadpoles",
+  "mummy_elephant": "grown-up mother elephant standing alone, no baby elephant",
+  "fish": "orange fish",
+  "hat": "straw sun hat",
+  "ice_cream": "ice cream cone with two scoops",
+  "jug": "blue water jug",
+  "kite": "colourful diamond-shaped kite with a tail",
+  "nest": "bird nest with three eggs",
+  "bird_parrot": "green Indian parrot with a red beak",
+  "quilt": "colourful patchwork quilt, folded",
+  "rabbit": "white rabbit",
+  "van": "small blue van",
+  "inst_xylophone": "colourful xylophone with two mallets",
+  "yoyo": "red yo-yo with its string",
+  "zebra": "zebra",
+  "star": "shiny yellow star",
+  "butterfly": "orange and blue butterfly",
+  "cupcake": "cupcake with pink icing",
+  "cheeko_happy": "CHEEKO:happy, with a big smile",
+  "cheeko_sad": "CHEEKO:sad, with droopy ears and one small tear",
+  "cheeko_angry": "CHEEKO:angry, frowning with puffed cheeks and arms crossed",
+  "cheeko_scared": "CHEEKO:scared, ears back, hiding behind its paws",
+  "cheeko_surprised": "CHEEKO:surprised, mouth open in an O and eyes wide",
+  "cheeko_sleepy": "CHEEKO:sleepy, yawning with half-closed eyes",
+  "cheeko_silly": "CHEEKO:silly, sticking out its tongue and making a funny face",
+  "cheeko_proud": "CHEEKO:proud, standing tall with paws on its hips and a big smile",
+  "gift_box": "square gift box with a ribbon, seen from the front",
+  "pizza_slice": "slice of pizza",
+  "door": "wooden door, seen from the front",
+  "egg": "white egg",
+  "heart_balloon": "red heart-shaped balloon",
+  "watermelon_slice": "half-moon slice of watermelon",
+  "honeycomb": "single golden honeycomb cell shape, a hexagon of honey",
+  "plate": "round white plate, seen from above",
+  "cushion": "square blue cushion, seen from the front",
+  "samosa": "samosa",
+  "book": "closed book lying flat, seen from above",
+  "mirror_oval": "oval mirror with a wooden frame",
+  "starfish": "orange starfish",
+  "heart_cookie": "heart-shaped cookie",
+  "diamond_sign": "yellow diamond-shaped road sign with no text",
+  "rainbow": "rainbow arc",
+  "hex_nut": "metal hexagon nut",
+  "helper_nurse": "friendly Indian nurse in a light blue uniform, full body",
+  "helper_police_officer": "friendly Indian police officer in a khaki uniform and cap, no badges or text, full body",
+  "helper_firefighter": "firefighter in a red helmet and fire suit holding a hose, full body",
+  "helper_teacher": "friendly Indian teacher holding a book in front of a blank green board, full body",
+  "helper_farmer": "Indian farmer with a turban holding a basket of vegetables, full body",
+  "helper_chef": "chef in a white chef hat holding a ladle, full body",
+  "helper_postman": "Indian postman in a khaki uniform with a mail bag and letters, full body",
+  "helper_pilot": "pilot in a dark uniform and cap, full body",
+  "helper_bus_driver": "smiling Indian bus driver at the steering wheel, full body",
+  "helper_dentist": "dentist holding a big toothbrush, with a smiling tooth, full body",
+  "helper_mechanic": "mechanic in blue overalls holding a spanner, full body",
+  "helper_carpenter": "carpenter holding a saw and a wooden plank, full body",
+  "helper_tailor": "Indian tailor with a measuring tape around the neck and a sewing machine, full body",
+  "helper_barber": "barber holding scissors and a comb, full body",
+  "helper_painter": "house painter with a roller and a paint bucket, full body",
+  "helper_plumber": "plumber holding a pipe wrench next to a tap, full body",
+  "helper_electrician": "electrician holding a light bulb and a screwdriver, wearing a helmet, full body",
+  "helper_astronaut": "astronaut in a white space suit with the helmet visor up, no flags or logos, full body",
+  "helper_vegetable_seller": "Indian vegetable seller with a cart full of vegetables, full body",
+  "house_doorbell": "doorbell button next to a door",
+  "house_mixer": "kitchen mixer grinder",
+  "house_tap": "kitchen tap with water running",
+  "house_knock": "hand knocking on a wooden door",
+  "house_alarm": "red twin-bell alarm clock",
+  "house_kettle": "steel kettle whistling with steam",
+  "house_broom": "Indian broom sweeping the floor",
+  "house_fan": "white ceiling fan",
+  "house_washer": "washing machine with clothes inside the round door",
+  "house_keys": "bunch of keys on a ring",
+  "house_zip": "zipper on a bag being opened",
+  "house_scissors": "pair of scissors cutting paper",
+  "house_brushing": "toothbrush with toothpaste next to a cup",
+  "house_rain": "rain falling on a window",
+  "house_tawa": "dosa cooking on a hot tawa with a little steam",
+  "house_creak": "old wooden door opening a little",
+  "house_horn": "small plain red car with a few curved sound lines coming from its front, a normal car with no face and no eyes",
+  "house_footsteps": "pair of sneakers walking",
+  "bird_crow": "black crow",
+  "bird_sparrow": "house sparrow",
+  "bird_pigeon": "grey pigeon",
+  "bird_hen": "brown hen",
+  "bird_eagle": "eagle with spread wings",
+  "bird_kingfisher": "blue and orange kingfisher on a branch",
+  "bird_myna": "common myna bird, brown with a yellow beak and yellow eye patch",
+  "bird_koel": "Asian koel bird, glossy black with red eyes",
+  "bird_hornbill": "great hornbill with a big yellow beak",
+  "bird_flamingo": "pink flamingo standing on one leg",
+  "bird_sarus_crane": "tall grey sarus crane with a red head",
+  "bird_woodpecker": "woodpecker on a tree trunk",
+  "bird_bulbul": "red-whiskered bulbul with a black crest",
+  "bird_swan": "white swan",
+  "bird_vulture": "vulture sitting on a rock",
+  "bird_weaver_bird": "yellow weaver bird next to its hanging nest",
+  "opp_tall_short": "tall giraffe standing next to a short penguin",
+  "opp_hot_cold": "steaming cup of hot tea next to a cold ice cream cone",
+  "opp_fast_slow": "fast rabbit running next to a slow tortoise",
+  "opp_full_empty": "glass full of milk next to an empty glass",
+  "opp_day_night": "bright yellow sun on the left and a crescent moon with stars on the right",
+  "opp_open_closed": "open gift box next to a closed gift box",
+  "opp_wet_dry": "wet towel dripping water next to a dry folded towel",
+  "opp_heavy_light": "heavy grey stone next to a light white feather",
+  "opp_long_short": "long yellow pencil next to a short yellow pencil",
+  "opp_clean_dirty": "clean white plate next to a dirty plate with food on it",
+  "opp_thick_thin": "thick book next to a thin book",
+  "inst_drum": "red snare drum with two drumsticks",
+  "inst_piano": "small black upright piano",
+  "inst_guitar": "acoustic guitar",
+  "inst_flute": "Indian bamboo flute (bansuri)",
+  "inst_bell": "golden hand bell",
+  "inst_trumpet": "golden trumpet",
+  "inst_violin": "violin with its bow",
+  "inst_harmonium": "Indian harmonium",
+  "inst_sitar": "sitar",
+  "inst_dhol": "Indian dhol drum with two sticks",
+  "inst_harmonica": "silver harmonica (mouth organ)",
+  "inst_cymbals": "pair of shiny golden cymbals",
+  "inst_mridangam": "mridangam drum",
+  "inst_tambourine": "tambourine",
+  "inst_saxophone": "golden saxophone",
+  "inst_harp": "golden harp",
+  "inst_accordion": "red accordion",
+  "inst_triangle": "metal triangle instrument with its beater",
+  "space_sun": "the Sun, a glowing yellow and orange star, floating in space with a few small stars on a dark blue background instead of sky blue",
+  "space_mercury": "planet Mercury, small and grey with craters, floating in space with a few small stars on a dark blue background instead of sky blue",
+  "space_venus": "planet Venus, pale yellow with swirly clouds, floating in space with a few small stars on a dark blue background instead of sky blue",
+  "space_earth": "planet Earth with blue oceans, green land and white clouds, floating in space with a few small stars on a dark blue background instead of sky blue",
+  "space_moon": "the Moon, grey with craters, floating in space with a few small stars on a dark blue background instead of sky blue",
+  "space_mars": "planet Mars, red and dusty, floating in space with a few small stars on a dark blue background instead of sky blue",
+  "space_jupiter": "planet Jupiter with orange and white stripes and a big red spot, floating in space with a few small stars on a dark blue background instead of sky blue",
+  "space_uranus": "planet Uranus, pale blue-green with thin rings, tilted on its side, floating in space with a few small stars on a dark blue background instead of sky blue",
+  "space_neptune": "planet Neptune, deep blue, floating in space with a few small stars on a dark blue background instead of sky blue",
+  "tree": "big green tree",
+  "toothbrush": "blue toothbrush with white toothpaste",
+  "pillow": "soft white pillow",
+  "shoes": "pair of red sneakers",
+  "spider": "friendly cartoon spider on its web",
+  "pencil": "yellow pencil with a pink eraser",
+  "t_rex": "friendly T. rex dinosaur with brown and orange skin, big head, small arms, side view, a plain dinosaur toy, not green",
+  "dino_triceratops": "friendly Triceratops with three horns and a big frill dinosaur, side view",
+  "dino_stegosaurus": "friendly Stegosaurus with plates on its back and a spiky tail dinosaur, side view",
+  "dino_brachiosaurus": "friendly Brachiosaurus with a very long neck dinosaur, side view",
+  "dino_velociraptor": "friendly Velociraptor with feathers dinosaur, side view",
+  "dino_ankylosaurus": "friendly Ankylosaurus with armour and a club tail dinosaur, side view",
+  "dino_spinosaurus": "friendly Spinosaurus with a tall sail on its back dinosaur, side view",
+  "dino_diplodocus": "friendly Diplodocus with a long neck and a very long tail dinosaur, side view",
+  "dino_parasaurolophus": "friendly Parasaurolophus with a long curved crest on its head dinosaur, side view",
+  "dino_iguanodon": "friendly Iguanodon with thumb spikes dinosaur, side view",
+  "dino_pachycephalosaurus": "friendly Pachycephalosaurus with a thick dome head dinosaur, side view",
+  "dino_allosaurus": "friendly Allosaurus, a big meat-eating dinosaur with small horns above the eyes dinosaur, side view",
+  "dino_dilophosaurus": "friendly Dilophosaurus with two crests on its head dinosaur, side view",
+  "dino_carnotaurus": "friendly Carnotaurus with two horns and tiny arms dinosaur, side view",
+  "dino_therizinosaurus": "friendly Therizinosaurus with very long claws dinosaur, side view",
+  "dino_gallimimus": "friendly Gallimimus, a fast ostrich-like dinosaur dinosaur, side view",
+  "dino_baryonyx": "friendly Baryonyx with a long crocodile-like snout and big thumb claws dinosaur, side view",
+  "dino_oviraptor": "friendly Oviraptor with a crest, next to its eggs dinosaur, side view",
+  "dino_argentinosaurus": "friendly Argentinosaurus, a giant long-necked dinosaur dinosaur, side view",
+  "dino_maiasaura": "friendly Maiasaura mother dinosaur next to its nest of eggs dinosaur, side view",
+  "rain_cloud": "small grey cloud with raindrops",
+  "ribbon_bow": "pink ribbon bow",
+  "butter": "block of yellow butter on a small plate",
+  "housefly": "cute cartoon housefly",
+  "foot": "cartoon bare foot",
+  "teacup": "white teacup",
+  "birthday_cake": "birthday cake with candles",
+  "snowflake": "white snowflake",
+  "man": "cheerful cartoon man waving",
+  "tooth": "smiling white tooth",
+  "paintbrush": "paintbrush with blue paint",
+  "frying_pan": "black frying pan",
+  "sea_waves": "blue sea waves",
+  "jelly": "wobbly red jelly dessert",
+  "winter_coat": "red winter coat",
+  "inst_maracas": "pair of colourful wooden maracas"
+ },
+ "ideas": [
+  {
+   "n": 1,
+   "id": "V32",
+   "slug": "01-who-says-that",
+   "title": "Who Says That",
+   "t1": "Who Says",
+   "t2": "That?",
+   "head": "Who says <span>that</span>?",
+   "mode": "sound",
+   "theme": "farm",
+   "music": "farm",
+   "title_line": [
+    "V32",
+    0
+   ],
+   "rules_line": [
+    "V32",
+    1
+   ],
+   "done_line": [
+    "V32",
+    2
+   ],
+   "prompts": [
+    [
+     "V32",
+     3
+    ],
+    [
+     "V32",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 3,
+     "items": [
+      {
+       "label": "Dog",
+       "img": "dog",
+       "say": "Dog!",
+       "sound": "dog",
+       "say_line": [
+        "V32",
+        5
+       ]
+      },
+      {
+       "label": "Cat",
+       "img": "cat",
+       "say": "Cat!",
+       "sound": "cat",
+       "say_line": [
+        "V32",
+        6
+       ]
+      },
+      {
+       "label": "Cow",
+       "img": "cow",
+       "say": "Cow!",
+       "sound": "cow",
+       "say_line": [
+        "V32",
+        7
+       ]
+      },
+      {
+       "label": "Duck",
+       "img": "duck",
+       "say": "Duck!",
+       "sound": "duck",
+       "say_line": [
+        "V32",
+        8
+       ]
+      },
+      {
+       "label": "Sheep",
+       "img": "sheep",
+       "say": "Sheep!",
+       "sound": "sheep",
+       "say_line": [
+        "V32",
+        9
+       ]
+      },
+      {
+       "label": "Horse",
+       "img": "horse",
+       "say": "Horse!",
+       "sound": "horse",
+       "say_line": [
+        "V32",
+        10
+       ]
+      },
+      {
+       "label": "Pig",
+       "img": "pig",
+       "say": "Pig!",
+       "sound": "pig",
+       "say_line": [
+        "V32",
+        11
+       ]
+      },
+      {
+       "label": "Rooster",
+       "img": "rooster",
+       "say": "Rooster!",
+       "sound": "rooster",
+       "say_line": [
+        "V32",
+        12
+       ]
+      },
+      {
+       "label": "Goat",
+       "img": "goat",
+       "say": "Goat!",
+       "sound": "goat",
+       "say_line": [
+        "V32",
+        13
+       ]
+      },
+      {
+       "label": "Donkey",
+       "img": "donkey",
+       "say": "Donkey!",
+       "sound": "donkey",
+       "say_line": [
+        "V32",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Lion",
+       "img": "lion",
+       "say": "Lion!",
+       "sound": "lion",
+       "say_line": [
+        "V32",
+        15
+       ]
+      },
+      {
+       "label": "Elephant",
+       "img": "elephant",
+       "say": "Elephant!",
+       "sound": "elephant",
+       "say_line": [
+        "V32",
+        16
+       ]
+      },
+      {
+       "label": "Monkey",
+       "img": "monkey",
+       "say": "Monkey!",
+       "sound": "monkey",
+       "say_line": [
+        "V32",
+        17
+       ]
+      },
+      {
+       "label": "Frog",
+       "img": "frog",
+       "say": "Frog!",
+       "sound": "frog",
+       "say_line": [
+        "V32",
+        18
+       ]
+      },
+      {
+       "label": "Tiger",
+       "img": "tiger",
+       "say": "Tiger!",
+       "sound": "tiger",
+       "say_line": [
+        "V32",
+        19
+       ]
+      },
+      {
+       "label": "Bear",
+       "img": "bear",
+       "say": "Bear!",
+       "sound": "bear",
+       "say_line": [
+        "V32",
+        20
+       ]
+      },
+      {
+       "label": "Wolf",
+       "img": "wolf",
+       "say": "Wolf!",
+       "sound": "wolf",
+       "say_line": [
+        "V32",
+        21
+       ]
+      },
+      {
+       "label": "Owl",
+       "img": "owl",
+       "say": "Owl!",
+       "sound": "owl",
+       "say_line": [
+        "V32",
+        22
+       ]
+      },
+      {
+       "label": "Snake",
+       "img": "snake",
+       "say": "Snake!",
+       "sound": "snake",
+       "say_line": [
+        "V32",
+        23
+       ]
+      },
+      {
+       "label": "Bee",
+       "img": "bee",
+       "say": "Bee!",
+       "sound": "bee",
+       "say_line": [
+        "V32",
+        24
+       ]
+      }
+     ]
+    }
+   ],
+   "needs_sound": true
+  },
+  {
+   "n": 2,
+   "id": "V33",
+   "slug": "02-guess-the-fruit",
+   "title": "Guess the Fruit",
+   "t1": "Guess the",
+   "t2": "Fruit!",
+   "head": "Guess the <span>fruit</span>!",
+   "mode": "picture",
+   "theme": "garden",
+   "music": "calypso",
+   "title_line": [
+    "V33",
+    0
+   ],
+   "rules_line": [
+    "V33",
+    1
+   ],
+   "done_line": [
+    "V33",
+    2
+   ],
+   "prompts": [
+    [
+     "V33",
+     3
+    ],
+    [
+     "V33",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 3,
+     "items": [
+      {
+       "label": "Apple",
+       "img": "fruit_apple",
+       "say": "Apple!",
+       "say_line": [
+        "V33",
+        5
+       ]
+      },
+      {
+       "label": "Banana",
+       "img": "fruit_banana",
+       "say": "Banana!",
+       "say_line": [
+        "V33",
+        6
+       ]
+      },
+      {
+       "label": "Mango",
+       "img": "fruit_mango",
+       "say": "Mango!",
+       "say_line": [
+        "V33",
+        7
+       ]
+      },
+      {
+       "label": "Orange",
+       "img": "fruit_orange",
+       "say": "Orange!",
+       "say_line": [
+        "V33",
+        8
+       ]
+      },
+      {
+       "label": "Grapes",
+       "img": "fruit_grapes",
+       "say": "Grapes!",
+       "say_line": [
+        "V33",
+        9
+       ]
+      },
+      {
+       "label": "Watermelon",
+       "img": "fruit_watermelon",
+       "say": "Watermelon!",
+       "say_line": [
+        "V33",
+        10
+       ]
+      },
+      {
+       "label": "Strawberry",
+       "img": "fruit_strawberry",
+       "say": "Strawberry!",
+       "say_line": [
+        "V33",
+        11
+       ]
+      },
+      {
+       "label": "Pineapple",
+       "img": "fruit_pineapple",
+       "say": "Pineapple!",
+       "say_line": [
+        "V33",
+        12
+       ]
+      },
+      {
+       "label": "Papaya",
+       "img": "fruit_papaya",
+       "say": "Papaya!",
+       "say_line": [
+        "V33",
+        13
+       ]
+      },
+      {
+       "label": "Guava",
+       "img": "fruit_guava",
+       "say": "Guava!",
+       "say_line": [
+        "V33",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Pomegranate",
+       "img": "fruit_pomegranate",
+       "say": "Pomegranate!",
+       "say_line": [
+        "V33",
+        15
+       ]
+      },
+      {
+       "label": "Pear",
+       "img": "fruit_pear",
+       "say": "Pear!",
+       "say_line": [
+        "V33",
+        16
+       ]
+      },
+      {
+       "label": "Cherry",
+       "img": "fruit_cherry",
+       "say": "Cherry!",
+       "say_line": [
+        "V33",
+        17
+       ]
+      },
+      {
+       "label": "Coconut",
+       "img": "fruit_coconut",
+       "say": "Coconut!",
+       "say_line": [
+        "V33",
+        18
+       ]
+      },
+      {
+       "label": "Lemon",
+       "img": "fruit_lemon",
+       "say": "Lemon!",
+       "say_line": [
+        "V33",
+        19
+       ]
+      },
+      {
+       "label": "Kiwi",
+       "img": "fruit_kiwi",
+       "say": "Kiwi!",
+       "say_line": [
+        "V33",
+        20
+       ]
+      },
+      {
+       "label": "Chikoo",
+       "img": "fruit_chikoo",
+       "say": "Chikoo!",
+       "say_line": [
+        "V33",
+        21
+       ]
+      },
+      {
+       "label": "Jackfruit",
+       "img": "fruit_jackfruit",
+       "say": "Jackfruit!",
+       "say_line": [
+        "V33",
+        22
+       ]
+      },
+      {
+       "label": "Custard apple",
+       "img": "fruit_custard_apple",
+       "say": "Custard apple!",
+       "say_line": [
+        "V33",
+        23
+       ]
+      },
+      {
+       "label": "Lychee",
+       "img": "fruit_lychee",
+       "say": "Lychee!",
+       "say_line": [
+        "V33",
+        24
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Dragon fruit",
+       "img": "fruit_dragon_fruit",
+       "say": "Dragon fruit!",
+       "say_line": [
+        "V33",
+        25
+       ]
+      },
+      {
+       "label": "Fig",
+       "img": "fruit_fig",
+       "say": "Fig!",
+       "say_line": [
+        "V33",
+        26
+       ]
+      },
+      {
+       "label": "Blueberry",
+       "img": "fruit_blueberry",
+       "say": "Blueberry!",
+       "say_line": [
+        "V33",
+        27
+       ]
+      },
+      {
+       "label": "Peach",
+       "img": "fruit_peach",
+       "say": "Peach!",
+       "say_line": [
+        "V33",
+        28
+       ]
+      },
+      {
+       "label": "Apricot",
+       "img": "fruit_apricot",
+       "say": "Apricot!",
+       "say_line": [
+        "V33",
+        29
+       ]
+      },
+      {
+       "label": "Avocado",
+       "img": "fruit_avocado",
+       "say": "Avocado!",
+       "say_line": [
+        "V33",
+        30
+       ]
+      },
+      {
+       "label": "Jamun",
+       "img": "fruit_jamun",
+       "say": "Jamun!",
+       "say_line": [
+        "V33",
+        31
+       ]
+      },
+      {
+       "label": "Star fruit",
+       "img": "fruit_star_fruit",
+       "say": "Star fruit!",
+       "say_line": [
+        "V33",
+        32
+       ]
+      },
+      {
+       "label": "Plum",
+       "img": "fruit_plum",
+       "say": "Plum!",
+       "say_line": [
+        "V33",
+        33
+       ]
+      },
+      {
+       "label": "Muskmelon",
+       "img": "fruit_muskmelon",
+       "say": "Muskmelon!",
+       "say_line": [
+        "V33",
+        34
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "id": "V34",
+   "slug": "03-what-colour",
+   "title": "What Colour Is It",
+   "t1": "What Colour",
+   "t2": "Is It?",
+   "head": "What <span>colour</span>?",
+   "mode": "picture",
+   "theme": "rainbow",
+   "music": "musicbox",
+   "title_line": [
+    "V34",
+    0
+   ],
+   "rules_line": [
+    "V34",
+    1
+   ],
+   "done_line": [
+    "V34",
+    2
+   ],
+   "prompts": [
+    [
+     "V34",
+     3
+    ],
+    [
+     "V34",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 3,
+     "items": [
+      {
+       "label": "Red",
+       "img": "red_balloon",
+       "say": "Red! The balloon is red.",
+       "say_line": [
+        "V34",
+        5
+       ]
+      },
+      {
+       "label": "Yellow",
+       "img": "fruit_banana",
+       "say": "Yellow! The banana is yellow.",
+       "say_line": [
+        "V34",
+        6
+       ]
+      },
+      {
+       "label": "Blue",
+       "img": "umbrella_blue",
+       "say": "Blue! The umbrella is blue.",
+       "say_line": [
+        "V34",
+        7
+       ]
+      },
+      {
+       "label": "Green",
+       "img": "leaf_green",
+       "say": "Green! The leaf is green.",
+       "say_line": [
+        "V34",
+        8
+       ]
+      },
+      {
+       "label": "Orange",
+       "img": "pumpkin",
+       "say": "Orange! The pumpkin is orange.",
+       "say_line": [
+        "V34",
+        9
+       ]
+      },
+      {
+       "label": "Pink",
+       "img": "pink_flower",
+       "say": "Pink! The flower is pink.",
+       "say_line": [
+        "V34",
+        10
+       ]
+      },
+      {
+       "label": "Purple",
+       "img": "fruit_grapes",
+       "say": "Purple! The grapes are purple.",
+       "say_line": [
+        "V34",
+        11
+       ]
+      },
+      {
+       "label": "Brown",
+       "img": "teddy_bear",
+       "say": "Brown! The teddy bear is brown.",
+       "say_line": [
+        "V34",
+        12
+       ]
+      },
+      {
+       "label": "Black",
+       "img": "black_cat",
+       "say": "Black! The cat is black.",
+       "say_line": [
+        "V34",
+        13
+       ]
+      },
+      {
+       "label": "White",
+       "img": "cloud",
+       "say": "White! The cloud is white.",
+       "say_line": [
+        "V34",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Red",
+       "img": "fire_engine",
+       "say": "Red! The fire engine is red.",
+       "say_line": [
+        "V34",
+        15
+       ]
+      },
+      {
+       "label": "Yellow",
+       "img": "school_bus",
+       "say": "Yellow! The school bus is yellow.",
+       "say_line": [
+        "V34",
+        16
+       ]
+      },
+      {
+       "label": "Blue",
+       "img": "blue_whale_toy",
+       "say": "Blue! The whale is blue.",
+       "say_line": [
+        "V34",
+        17
+       ]
+      },
+      {
+       "label": "Green",
+       "img": "frog",
+       "say": "Green! The frog is green.",
+       "say_line": [
+        "V34",
+        18
+       ]
+      },
+      {
+       "label": "Orange",
+       "img": "carrot",
+       "say": "Orange! The carrot is orange.",
+       "say_line": [
+        "V34",
+        19
+       ]
+      },
+      {
+       "label": "Pink",
+       "img": "piggy_bank",
+       "say": "Pink! The piggy bank is pink.",
+       "say_line": [
+        "V34",
+        20
+       ]
+      },
+      {
+       "label": "Purple",
+       "img": "purple_butterfly",
+       "say": "Purple! The butterfly is purple.",
+       "say_line": [
+        "V34",
+        21
+       ]
+      },
+      {
+       "label": "Brown",
+       "img": "cookie",
+       "say": "Brown! The cookie is brown.",
+       "say_line": [
+        "V34",
+        22
+       ]
+      },
+      {
+       "label": "Black",
+       "img": "black_boots",
+       "say": "Black! The boots are black.",
+       "say_line": [
+        "V34",
+        23
+       ]
+      },
+      {
+       "label": "White",
+       "img": "milk_glass",
+       "say": "White! The milk is white.",
+       "say_line": [
+        "V34",
+        24
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "id": "V35",
+   "slug": "04-touch-your-nose",
+   "title": "Touch Your Nose",
+   "t1": "Touch Your",
+   "t2": "Nose!",
+   "head": "Touch and <span>say</span>!",
+   "mode": "zoom",
+   "theme": "playroom",
+   "music": "claps",
+   "title_line": [
+    "V35",
+    0
+   ],
+   "rules_line": [
+    "V35",
+    1
+   ],
+   "done_line": [
+    "V35",
+    2
+   ],
+   "prompts": [
+    [
+     "V35",
+     3
+    ],
+    [
+     "V35",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Nose",
+       "img": "boy_face",
+       "say": "Nose! Touch your nose!",
+       "ring": "nose",
+       "say_line": [
+        "V35",
+        5
+       ]
+      },
+      {
+       "label": "Eyes",
+       "img": "boy_face",
+       "say": "Eyes! Touch your eyes!",
+       "ring": "eyes",
+       "say_line": [
+        "V35",
+        6
+       ]
+      },
+      {
+       "label": "Ears",
+       "img": "boy_face",
+       "say": "Ears! Touch your ears!",
+       "ring": "ears",
+       "say_line": [
+        "V35",
+        7
+       ]
+      },
+      {
+       "label": "Mouth",
+       "img": "boy_face",
+       "say": "Mouth! Touch your mouth!",
+       "ring": "mouth",
+       "say_line": [
+        "V35",
+        8
+       ]
+      },
+      {
+       "label": "Hair",
+       "img": "boy_face",
+       "say": "Hair! Touch your hair!",
+       "ring": "hair",
+       "say_line": [
+        "V35",
+        9
+       ]
+      },
+      {
+       "label": "Cheeks",
+       "img": "boy_face",
+       "say": "Cheeks! Touch your cheeks!",
+       "ring": "cheeks",
+       "say_line": [
+        "V35",
+        10
+       ]
+      },
+      {
+       "label": "Hands",
+       "img": "boy_full",
+       "say": "Hands! Touch your hands!",
+       "ring": "hands",
+       "say_line": [
+        "V35",
+        11
+       ]
+      },
+      {
+       "label": "Tummy",
+       "img": "boy_full",
+       "say": "Tummy! Touch your tummy!",
+       "ring": "tummy",
+       "say_line": [
+        "V35",
+        12
+       ]
+      },
+      {
+       "label": "Knees",
+       "img": "boy_full",
+       "say": "Knees! Touch your knees!",
+       "ring": "knees",
+       "say_line": [
+        "V35",
+        13
+       ]
+      },
+      {
+       "label": "Feet",
+       "img": "boy_full",
+       "say": "Feet! Touch your feet!",
+       "ring": "feet",
+       "say_line": [
+        "V35",
+        14
+       ]
+      },
+      {
+       "label": "Shoulders",
+       "img": "boy_full",
+       "say": "Shoulders! Touch your shoulders!",
+       "ring": "shoulders",
+       "say_line": [
+        "V35",
+        15
+       ]
+      },
+      {
+       "label": "Toes",
+       "img": "boy_full",
+       "say": "Toes! Touch your toes!",
+       "ring": "toes",
+       "say_line": [
+        "V35",
+        16
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "id": "V36",
+   "slug": "05-mummy-and-baby",
+   "title": "Mummy and Baby",
+   "t1": "Mummy and",
+   "t2": "Baby!",
+   "head": "Who is my <span>baby</span>?",
+   "mode": "swap",
+   "theme": "meadow",
+   "music": "lullaby",
+   "title_line": [
+    "V36",
+    0
+   ],
+   "rules_line": [
+    "V36",
+    1
+   ],
+   "done_line": [
+    "V36",
+    2
+   ],
+   "prompts": [
+    [
+     "V36",
+     3
+    ],
+    [
+     "V36",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Chick",
+       "sub": "Hen",
+       "img": "mummy_hen",
+       "img2": "mum_hen",
+       "say": "A chick! The hen's baby is a chick.",
+       "say_line": [
+        "V36",
+        5
+       ]
+      },
+      {
+       "label": "Puppy",
+       "sub": "Dog",
+       "img": "mummy_dog",
+       "img2": "mum_dog",
+       "say": "A puppy! The dog's baby is a puppy.",
+       "say_line": [
+        "V36",
+        6
+       ]
+      },
+      {
+       "label": "Kitten",
+       "sub": "Cat",
+       "img": "mummy_cat",
+       "img2": "mum_cat",
+       "say": "A kitten! The cat's baby is a kitten.",
+       "say_line": [
+        "V36",
+        7
+       ]
+      },
+      {
+       "label": "Calf",
+       "sub": "Cow",
+       "img": "mummy_cow",
+       "img2": "mum_cow",
+       "say": "A calf! The cow's baby is a calf.",
+       "say_line": [
+        "V36",
+        8
+       ]
+      },
+      {
+       "label": "Lamb",
+       "sub": "Sheep",
+       "img": "mummy_sheep",
+       "img2": "mum_sheep",
+       "say": "A lamb! The sheep's baby is a lamb.",
+       "say_line": [
+        "V36",
+        9
+       ]
+      },
+      {
+       "label": "Foal",
+       "sub": "Horse",
+       "img": "mummy_horse",
+       "img2": "mum_horse",
+       "say": "A foal! The horse's baby is a foal.",
+       "say_line": [
+        "V36",
+        10
+       ]
+      },
+      {
+       "label": "Duckling",
+       "sub": "Duck",
+       "img": "mummy_duck",
+       "img2": "mum_duck",
+       "say": "A duckling! The duck's baby is a duckling.",
+       "say_line": [
+        "V36",
+        11
+       ]
+      },
+      {
+       "label": "Piglet",
+       "sub": "Pig",
+       "img": "mummy_pig",
+       "img2": "mum_pig",
+       "say": "A piglet! The pig's baby is a piglet.",
+       "say_line": [
+        "V36",
+        12
+       ]
+      },
+      {
+       "label": "Cub",
+       "sub": "Lioness",
+       "img": "mummy_lioness",
+       "img2": "mum_lion",
+       "say": "A cub! The lioness's baby is a cub.",
+       "say_line": [
+        "V36",
+        13
+       ]
+      },
+      {
+       "label": "Joey",
+       "sub": "Kangaroo",
+       "img": "mummy_kangaroo",
+       "img2": "mum_kangaroo",
+       "say": "A joey! The kangaroo's baby is a joey.",
+       "say_line": [
+        "V36",
+        14
+       ]
+      },
+      {
+       "label": "Tadpole",
+       "sub": "Frog",
+       "img": "mummy_frog",
+       "img2": "mum_frog",
+       "say": "A tadpole! The frog's baby is a tadpole.",
+       "say_line": [
+        "V36",
+        15
+       ]
+      },
+      {
+       "label": "Calf",
+       "sub": "Elephant",
+       "img": "mummy_elephant",
+       "img2": "elephant_pair",
+       "say": "A calf! An elephant's baby is called a calf, just like a cow's.",
+       "say_line": [
+        "V36",
+        16
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "id": "V37",
+   "slug": "06-a-for-apple",
+   "title": "A for Apple",
+   "t1": "A for",
+   "t2": "Apple!",
+   "head": "What starts with <span>this</span>?",
+   "mode": "letter",
+   "theme": "chalk",
+   "music": "piano",
+   "title_line": [
+    "V37",
+    0
+   ],
+   "rules_line": [
+    "V37",
+    1
+   ],
+   "done_line": [
+    "V37",
+    2
+   ],
+   "prompts": [
+    [
+     "V37",
+     3
+    ],
+    [
+     "V37",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 3,
+     "items": [
+      {
+       "label": "A for Apple",
+       "letter": "A",
+       "img": "fruit_apple",
+       "say": "A for Apple!",
+       "say_line": [
+        "V37",
+        5
+       ]
+      },
+      {
+       "label": "B for Ball",
+       "letter": "B",
+       "img": "ball",
+       "say": "B for Ball!",
+       "say_line": [
+        "V37",
+        6
+       ]
+      },
+      {
+       "label": "C for Cat",
+       "letter": "C",
+       "img": "cat",
+       "say": "C for Cat!",
+       "say_line": [
+        "V37",
+        7
+       ]
+      },
+      {
+       "label": "D for Dog",
+       "letter": "D",
+       "img": "dog",
+       "say": "D for Dog!",
+       "say_line": [
+        "V37",
+        8
+       ]
+      },
+      {
+       "label": "E for Elephant",
+       "letter": "E",
+       "img": "elephant",
+       "say": "E for Elephant!",
+       "say_line": [
+        "V37",
+        9
+       ]
+      },
+      {
+       "label": "F for Fish",
+       "letter": "F",
+       "img": "fish",
+       "say": "F for Fish!",
+       "say_line": [
+        "V37",
+        10
+       ]
+      },
+      {
+       "label": "G for Grapes",
+       "letter": "G",
+       "img": "fruit_grapes",
+       "say": "G for Grapes!",
+       "say_line": [
+        "V37",
+        11
+       ]
+      },
+      {
+       "label": "H for Hat",
+       "letter": "H",
+       "img": "hat",
+       "say": "H for Hat!",
+       "say_line": [
+        "V37",
+        12
+       ]
+      },
+      {
+       "label": "I for Ice cream",
+       "letter": "I",
+       "img": "ice_cream",
+       "say": "I for Ice cream!",
+       "say_line": [
+        "V37",
+        13
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "J for Jug",
+       "letter": "J",
+       "img": "jug",
+       "say": "J for Jug!",
+       "say_line": [
+        "V37",
+        14
+       ]
+      },
+      {
+       "label": "K for Kite",
+       "letter": "K",
+       "img": "kite",
+       "say": "K for Kite!",
+       "say_line": [
+        "V37",
+        15
+       ]
+      },
+      {
+       "label": "L for Lion",
+       "letter": "L",
+       "img": "lion",
+       "say": "L for Lion!",
+       "say_line": [
+        "V37",
+        16
+       ]
+      },
+      {
+       "label": "M for Monkey",
+       "letter": "M",
+       "img": "monkey",
+       "say": "M for Monkey!",
+       "say_line": [
+        "V37",
+        17
+       ]
+      },
+      {
+       "label": "N for Nest",
+       "letter": "N",
+       "img": "nest",
+       "say": "N for Nest!",
+       "say_line": [
+        "V37",
+        18
+       ]
+      },
+      {
+       "label": "O for Orange",
+       "letter": "O",
+       "img": "fruit_orange",
+       "say": "O for Orange!",
+       "say_line": [
+        "V37",
+        19
+       ]
+      },
+      {
+       "label": "P for Parrot",
+       "letter": "P",
+       "img": "bird_parrot",
+       "say": "P for Parrot!",
+       "say_line": [
+        "V37",
+        20
+       ]
+      },
+      {
+       "label": "Q for Quilt",
+       "letter": "Q",
+       "img": "quilt",
+       "say": "Q for Quilt!",
+       "say_line": [
+        "V37",
+        21
+       ]
+      },
+      {
+       "label": "R for Rabbit",
+       "letter": "R",
+       "img": "rabbit",
+       "say": "R for Rabbit!",
+       "say_line": [
+        "V37",
+        22
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "S for Sun",
+       "letter": "S",
+       "img": "sun",
+       "say": "S for Sun!",
+       "say_line": [
+        "V37",
+        23
+       ]
+      },
+      {
+       "label": "T for Train",
+       "letter": "T",
+       "img": "train",
+       "say": "T for Train!",
+       "say_line": [
+        "V37",
+        24
+       ]
+      },
+      {
+       "label": "U for Umbrella",
+       "letter": "U",
+       "img": "umbrella_red",
+       "say": "U for Umbrella!",
+       "say_line": [
+        "V37",
+        25
+       ]
+      },
+      {
+       "label": "V for Van",
+       "letter": "V",
+       "img": "van",
+       "say": "V for Van!",
+       "say_line": [
+        "V37",
+        26
+       ]
+      },
+      {
+       "label": "W for Watermelon",
+       "letter": "W",
+       "img": "fruit_watermelon",
+       "say": "W for Watermelon!",
+       "say_line": [
+        "V37",
+        27
+       ]
+      },
+      {
+       "label": "X for Xylophone",
+       "letter": "X",
+       "img": "inst_xylophone",
+       "say": "X for Xylophone!",
+       "say_line": [
+        "V37",
+        28
+       ]
+      },
+      {
+       "label": "Y for Yo-yo",
+       "letter": "Y",
+       "img": "yoyo",
+       "say": "Y for Yo-yo!",
+       "say_line": [
+        "V37",
+        29
+       ]
+      },
+      {
+       "label": "Z for Zebra",
+       "letter": "Z",
+       "img": "zebra",
+       "say": "Z for Zebra!",
+       "say_line": [
+        "V37",
+        30
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "id": "V38",
+   "slug": "07-how-many",
+   "title": "How Many",
+   "t1": "How",
+   "t2": "Many?",
+   "head": "How <span>many</span>?",
+   "mode": "count",
+   "theme": "counting",
+   "music": "xylophone",
+   "title_line": [
+    "V38",
+    0
+   ],
+   "rules_line": [
+    "V38",
+    1
+   ],
+   "done_line": [
+    "V38",
+    2
+   ],
+   "prompts": [
+    [
+     "V38",
+     3
+    ],
+    [
+     "V38",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "3 ducks",
+       "count": 3,
+       "img": "rubber_duck",
+       "say": "Three ducks!",
+       "say_line": [
+        "V38",
+        5
+       ]
+      },
+      {
+       "label": "1 ball",
+       "count": 1,
+       "img": "ball",
+       "say": "One ball!",
+       "say_line": [
+        "V38",
+        6
+       ]
+      },
+      {
+       "label": "4 balloons",
+       "count": 4,
+       "img": "red_balloon",
+       "say": "Four balloons!",
+       "say_line": [
+        "V38",
+        7
+       ]
+      },
+      {
+       "label": "2 stars",
+       "count": 2,
+       "img": "star",
+       "say": "Two stars!",
+       "say_line": [
+        "V38",
+        8
+       ]
+      },
+      {
+       "label": "5 fish",
+       "count": 5,
+       "img": "fish",
+       "say": "Five fish!",
+       "say_line": [
+        "V38",
+        9
+       ]
+      },
+      {
+       "label": "2 apples",
+       "count": 2,
+       "img": "fruit_apple",
+       "say": "Two apples!",
+       "say_line": [
+        "V38",
+        10
+       ]
+      },
+      {
+       "label": "4 flowers",
+       "count": 4,
+       "img": "pink_flower",
+       "say": "Four flowers!",
+       "say_line": [
+        "V38",
+        11
+       ]
+      },
+      {
+       "label": "1 sun",
+       "count": 1,
+       "img": "sun",
+       "say": "One sun!",
+       "say_line": [
+        "V38",
+        12
+       ]
+      },
+      {
+       "label": "5 cars",
+       "count": 5,
+       "img": "car",
+       "say": "Five cars!",
+       "say_line": [
+        "V38",
+        13
+       ]
+      },
+      {
+       "label": "3 butterflies",
+       "count": 3,
+       "img": "butterfly",
+       "say": "Three butterflies!",
+       "say_line": [
+        "V38",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "6 stars",
+       "count": 6,
+       "img": "star",
+       "say": "Six stars!",
+       "say_line": [
+        "V38",
+        15
+       ]
+      },
+      {
+       "label": "8 ducks",
+       "count": 8,
+       "img": "rubber_duck",
+       "say": "Eight ducks!",
+       "say_line": [
+        "V38",
+        16
+       ]
+      },
+      {
+       "label": "7 strawberries",
+       "count": 7,
+       "img": "fruit_strawberry",
+       "say": "Seven strawberries!",
+       "say_line": [
+        "V38",
+        17
+       ]
+      },
+      {
+       "label": "10 balls",
+       "count": 10,
+       "img": "ball",
+       "say": "Ten balls!",
+       "say_line": [
+        "V38",
+        18
+       ]
+      },
+      {
+       "label": "9 flowers",
+       "count": 9,
+       "img": "pink_flower",
+       "say": "Nine flowers!",
+       "say_line": [
+        "V38",
+        19
+       ]
+      },
+      {
+       "label": "6 cupcakes",
+       "count": 6,
+       "img": "cupcake",
+       "say": "Six cupcakes!",
+       "say_line": [
+        "V38",
+        20
+       ]
+      },
+      {
+       "label": "7 fish",
+       "count": 7,
+       "img": "fish",
+       "say": "Seven fish!",
+       "say_line": [
+        "V38",
+        21
+       ]
+      },
+      {
+       "label": "8 balloons",
+       "count": 8,
+       "img": "red_balloon",
+       "say": "Eight balloons!",
+       "say_line": [
+        "V38",
+        22
+       ]
+      },
+      {
+       "label": "10 butterflies",
+       "count": 10,
+       "img": "butterfly",
+       "say": "Ten butterflies!",
+       "say_line": [
+        "V38",
+        23
+       ]
+      },
+      {
+       "label": "9 apples",
+       "count": 9,
+       "img": "fruit_apple",
+       "say": "Nine apples!",
+       "say_line": [
+        "V38",
+        24
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "id": "V39",
+   "slug": "08-shadow-match",
+   "title": "Shadow Match",
+   "t1": "Shadow",
+   "t2": "Match!",
+   "head": "Whose <span>shadow</span>?",
+   "mode": "shadow",
+   "theme": "night",
+   "music": "mystery",
+   "title_line": [
+    "V39",
+    0
+   ],
+   "rules_line": [
+    "V39",
+    1
+   ],
+   "done_line": [
+    "V39",
+    2
+   ],
+   "prompts": [
+    [
+     "V39",
+     3
+    ],
+    [
+     "V39",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 3,
+     "items": [
+      {
+       "label": "Dog",
+       "img": "dog",
+       "say": "Dog!",
+       "say_line": [
+        "V39",
+        5
+       ]
+      },
+      {
+       "label": "Cat",
+       "img": "cat",
+       "say": "Cat!",
+       "say_line": [
+        "V39",
+        6
+       ]
+      },
+      {
+       "label": "Cow",
+       "img": "cow",
+       "say": "Cow!",
+       "say_line": [
+        "V39",
+        7
+       ]
+      },
+      {
+       "label": "Horse",
+       "img": "horse",
+       "say": "Horse!",
+       "say_line": [
+        "V39",
+        8
+       ]
+      },
+      {
+       "label": "Rooster",
+       "img": "rooster",
+       "say": "Rooster!",
+       "say_line": [
+        "V39",
+        9
+       ]
+      },
+      {
+       "label": "Elephant",
+       "img": "elephant",
+       "say": "Elephant!",
+       "say_line": [
+        "V39",
+        10
+       ]
+      },
+      {
+       "label": "Lion",
+       "img": "lion",
+       "say": "Lion!",
+       "say_line": [
+        "V39",
+        11
+       ]
+      },
+      {
+       "label": "Monkey",
+       "img": "monkey",
+       "say": "Monkey!",
+       "say_line": [
+        "V39",
+        12
+       ]
+      },
+      {
+       "label": "Rabbit",
+       "img": "rabbit",
+       "say": "Rabbit!",
+       "say_line": [
+        "V39",
+        13
+       ]
+      },
+      {
+       "label": "Owl",
+       "img": "owl",
+       "say": "Owl!",
+       "say_line": [
+        "V39",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Car",
+       "img": "car",
+       "say": "Car!",
+       "say_line": [
+        "V39",
+        15
+       ]
+      },
+      {
+       "label": "Bus",
+       "img": "bus",
+       "say": "Bus!",
+       "say_line": [
+        "V39",
+        16
+       ]
+      },
+      {
+       "label": "Bicycle",
+       "img": "bicycle",
+       "say": "Bicycle!",
+       "say_line": [
+        "V39",
+        17
+       ]
+      },
+      {
+       "label": "Aeroplane",
+       "img": "aeroplane",
+       "say": "Aeroplane!",
+       "say_line": [
+        "V39",
+        18
+       ]
+      },
+      {
+       "label": "Helicopter",
+       "img": "helicopter",
+       "say": "Helicopter!",
+       "say_line": [
+        "V39",
+        19
+       ]
+      },
+      {
+       "label": "Tractor",
+       "img": "tractor",
+       "say": "Tractor!",
+       "say_line": [
+        "V39",
+        20
+       ]
+      },
+      {
+       "label": "Train",
+       "img": "train",
+       "say": "Train!",
+       "say_line": [
+        "V39",
+        21
+       ]
+      },
+      {
+       "label": "Rocket",
+       "img": "rocket",
+       "say": "Rocket!",
+       "say_line": [
+        "V39",
+        22
+       ]
+      },
+      {
+       "label": "Boat",
+       "img": "boat",
+       "say": "Boat!",
+       "say_line": [
+        "V39",
+        23
+       ]
+      },
+      {
+       "label": "Hot air balloon",
+       "img": "hot_air_balloon",
+       "say": "Hot air balloon!",
+       "say_line": [
+        "V39",
+        24
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Banana",
+       "img": "fruit_banana",
+       "say": "Banana!",
+       "say_line": [
+        "V39",
+        25
+       ]
+      },
+      {
+       "label": "Apple",
+       "img": "fruit_apple",
+       "say": "Apple!",
+       "say_line": [
+        "V39",
+        26
+       ]
+      },
+      {
+       "label": "Pineapple",
+       "img": "fruit_pineapple",
+       "say": "Pineapple!",
+       "say_line": [
+        "V39",
+        27
+       ]
+      },
+      {
+       "label": "Grapes",
+       "img": "fruit_grapes",
+       "say": "Grapes!",
+       "say_line": [
+        "V39",
+        28
+       ]
+      },
+      {
+       "label": "Strawberry",
+       "img": "fruit_strawberry",
+       "say": "Strawberry!",
+       "say_line": [
+        "V39",
+        29
+       ]
+      },
+      {
+       "label": "Pear",
+       "img": "fruit_pear",
+       "say": "Pear!",
+       "say_line": [
+        "V39",
+        30
+       ]
+      },
+      {
+       "label": "Cherry",
+       "img": "fruit_cherry",
+       "say": "Cherry!",
+       "say_line": [
+        "V39",
+        31
+       ]
+      },
+      {
+       "label": "Mango",
+       "img": "fruit_mango",
+       "say": "Mango!",
+       "say_line": [
+        "V39",
+        32
+       ]
+      },
+      {
+       "label": "Coconut",
+       "img": "fruit_coconut",
+       "say": "Coconut!",
+       "say_line": [
+        "V39",
+        33
+       ]
+      },
+      {
+       "label": "Lemon",
+       "img": "fruit_lemon",
+       "say": "Lemon!",
+       "say_line": [
+        "V39",
+        34
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "id": "V40",
+   "slug": "09-how-does-cheeko-feel",
+   "title": "How Does Cheeko Feel",
+   "t1": "How Does",
+   "t2": "Cheeko Feel?",
+   "head": "How does Cheeko <span>feel</span>?",
+   "mode": "picture",
+   "theme": "pastel",
+   "music": "ukulele",
+   "title_line": [
+    "V40",
+    0
+   ],
+   "rules_line": [
+    "V40",
+    1
+   ],
+   "done_line": [
+    "V40",
+    2
+   ],
+   "prompts": [
+    [
+     "V40",
+     3
+    ],
+    [
+     "V40",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Happy",
+       "img": "cheeko_happy",
+       "say": "Happy! Cheeko got a big hug.",
+       "say_line": [
+        "V40",
+        5
+       ]
+      },
+      {
+       "label": "Sad",
+       "img": "cheeko_sad",
+       "say": "Sad. Cheeko dropped an ice cream.",
+       "say_line": [
+        "V40",
+        6
+       ]
+      },
+      {
+       "label": "Angry",
+       "img": "cheeko_angry",
+       "say": "Angry! Someone broke Cheeko's block tower.",
+       "say_line": [
+        "V40",
+        7
+       ]
+      },
+      {
+       "label": "Scared",
+       "img": "cheeko_scared",
+       "say": "Scared! There was a loud thunder sound.",
+       "say_line": [
+        "V40",
+        8
+       ]
+      },
+      {
+       "label": "Surprised",
+       "img": "cheeko_surprised",
+       "say": "Surprised! A present for Cheeko!",
+       "say_line": [
+        "V40",
+        9
+       ]
+      },
+      {
+       "label": "Sleepy",
+       "img": "cheeko_sleepy",
+       "say": "Sleepy. It is time for bed.",
+       "say_line": [
+        "V40",
+        10
+       ]
+      },
+      {
+       "label": "Silly",
+       "img": "cheeko_silly",
+       "say": "Silly! Cheeko is making funny faces.",
+       "say_line": [
+        "V40",
+        11
+       ]
+      },
+      {
+       "label": "Proud",
+       "img": "cheeko_proud",
+       "say": "Proud! Cheeko built a tall tower all alone.",
+       "say_line": [
+        "V40",
+        12
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "id": "V41",
+   "slug": "10-shapes-around-us",
+   "title": "Shapes Around Us",
+   "t1": "Shapes",
+   "t2": "Around Us!",
+   "head": "What <span>shape</span>?",
+   "mode": "picture",
+   "theme": "shapes",
+   "music": "synthpop",
+   "title_line": [
+    "V41",
+    0
+   ],
+   "rules_line": [
+    "V41",
+    1
+   ],
+   "done_line": [
+    "V41",
+    2
+   ],
+   "prompts": [
+    [
+     "V41",
+     3
+    ],
+    [
+     "V41",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Circle",
+       "shape": "circle",
+       "img": "clock",
+       "say": "A circle! The clock is a circle.",
+       "say_line": [
+        "V41",
+        5
+       ]
+      },
+      {
+       "label": "Square",
+       "shape": "square",
+       "img": "gift_box",
+       "say": "A square! The gift box is a square.",
+       "say_line": [
+        "V41",
+        6
+       ]
+      },
+      {
+       "label": "Triangle",
+       "shape": "triangle",
+       "img": "pizza_slice",
+       "say": "A triangle! The pizza slice is a triangle.",
+       "say_line": [
+        "V41",
+        7
+       ]
+      },
+      {
+       "label": "Rectangle",
+       "shape": "rectangle",
+       "img": "door",
+       "say": "A rectangle! The door is a rectangle.",
+       "say_line": [
+        "V41",
+        8
+       ]
+      },
+      {
+       "label": "Oval",
+       "shape": "oval",
+       "img": "egg",
+       "say": "An oval! The egg is an oval.",
+       "say_line": [
+        "V41",
+        9
+       ]
+      },
+      {
+       "label": "Star",
+       "shape": "star",
+       "img": "star",
+       "say": "A star! It is a star!",
+       "say_line": [
+        "V41",
+        10
+       ]
+      },
+      {
+       "label": "Heart",
+       "shape": "heart",
+       "img": "heart_balloon",
+       "say": "A heart! The balloon is a heart.",
+       "say_line": [
+        "V41",
+        11
+       ]
+      },
+      {
+       "label": "Diamond",
+       "shape": "diamond",
+       "img": "diamond_sign",
+       "say": "A diamond! The sign is a diamond.",
+       "say_line": [
+        "V41",
+        22
+       ]
+      },
+      {
+       "label": "Semicircle",
+       "shape": "semicircle",
+       "img": "watermelon_slice",
+       "say": "A semicircle! The watermelon slice is a semicircle.",
+       "say_line": [
+        "V41",
+        13
+       ]
+      },
+      {
+       "label": "Hexagon",
+       "shape": "hexagon",
+       "img": "honeycomb",
+       "say": "A hexagon! The honeycomb is a hexagon.",
+       "say_line": [
+        "V41",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Circle",
+       "shape": "circle",
+       "img": "plate",
+       "say": "A circle! The plate is a circle.",
+       "say_line": [
+        "V41",
+        15
+       ]
+      },
+      {
+       "label": "Square",
+       "shape": "square",
+       "img": "cushion",
+       "say": "A square! The cushion is a square.",
+       "say_line": [
+        "V41",
+        16
+       ]
+      },
+      {
+       "label": "Triangle",
+       "shape": "triangle",
+       "img": "samosa",
+       "say": "A triangle! The samosa is a triangle.",
+       "say_line": [
+        "V41",
+        17
+       ]
+      },
+      {
+       "label": "Rectangle",
+       "shape": "rectangle",
+       "img": "book",
+       "say": "A rectangle! The book is a rectangle.",
+       "say_line": [
+        "V41",
+        18
+       ]
+      },
+      {
+       "label": "Oval",
+       "shape": "oval",
+       "img": "mirror_oval",
+       "say": "An oval! The mirror is an oval.",
+       "say_line": [
+        "V41",
+        19
+       ]
+      },
+      {
+       "label": "Star",
+       "shape": "star",
+       "img": "starfish",
+       "say": "A star! The starfish is a star.",
+       "say_line": [
+        "V41",
+        20
+       ]
+      },
+      {
+       "label": "Heart",
+       "shape": "heart",
+       "img": "heart_cookie",
+       "say": "A heart! The cookie is a heart.",
+       "say_line": [
+        "V41",
+        21
+       ]
+      },
+      {
+       "label": "Diamond",
+       "shape": "diamond",
+       "img": "diamond_sign",
+       "say": "A diamond! The sign is a diamond.",
+       "say_line": [
+        "V41",
+        22
+       ]
+      },
+      {
+       "label": "Semicircle",
+       "shape": "semicircle",
+       "img": "rainbow",
+       "say": "A semicircle! The rainbow is a semicircle.",
+       "say_line": [
+        "V41",
+        23
+       ]
+      },
+      {
+       "label": "Hexagon",
+       "shape": "hexagon",
+       "img": "hex_nut",
+       "say": "A hexagon! The nut is a hexagon.",
+       "say_line": [
+        "V41",
+        24
+       ]
+      }
+     ]
+    }
+   ],
+   "chip3": "Say its shape"
+  },
+  {
+   "n": 11,
+   "id": "V42",
+   "slug": "11-who-helps-us",
+   "title": "Who Helps Us",
+   "t1": "Who Helps",
+   "t2": "Us?",
+   "head": "Who <span>helps</span> us?",
+   "mode": "picture",
+   "theme": "city",
+   "music": "march",
+   "title_line": [
+    "V42",
+    0
+   ],
+   "rules_line": [
+    "V42",
+    1
+   ],
+   "done_line": [
+    "V42",
+    2
+   ],
+   "prompts": [
+    [
+     "V42",
+     3
+    ],
+    [
+     "V42",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Doctor",
+       "img": "doctor",
+       "say": "A doctor! Doctors help us get better.",
+       "say_line": [
+        "V42",
+        5
+       ]
+      },
+      {
+       "label": "Nurse",
+       "img": "helper_nurse",
+       "say": "A nurse! Nurses take care of us.",
+       "say_line": [
+        "V42",
+        6
+       ]
+      },
+      {
+       "label": "Police officer",
+       "img": "helper_police_officer",
+       "say": "A police officer! Police officers keep us safe.",
+       "say_line": [
+        "V42",
+        7
+       ]
+      },
+      {
+       "label": "Firefighter",
+       "img": "helper_firefighter",
+       "say": "A firefighter! Firefighters put out fires.",
+       "say_line": [
+        "V42",
+        8
+       ]
+      },
+      {
+       "label": "Teacher",
+       "img": "helper_teacher",
+       "say": "A teacher! Teachers help us learn.",
+       "say_line": [
+        "V42",
+        9
+       ]
+      },
+      {
+       "label": "Farmer",
+       "img": "helper_farmer",
+       "say": "A farmer! Farmers grow our food.",
+       "say_line": [
+        "V42",
+        10
+       ]
+      },
+      {
+       "label": "Chef",
+       "img": "helper_chef",
+       "say": "A chef! Chefs cook yummy food.",
+       "say_line": [
+        "V42",
+        11
+       ]
+      },
+      {
+       "label": "Postman",
+       "img": "helper_postman",
+       "say": "A postman! Postmen bring our letters.",
+       "say_line": [
+        "V42",
+        12
+       ]
+      },
+      {
+       "label": "Pilot",
+       "img": "helper_pilot",
+       "say": "A pilot! Pilots fly aeroplanes.",
+       "say_line": [
+        "V42",
+        13
+       ]
+      },
+      {
+       "label": "Bus driver",
+       "img": "helper_bus_driver",
+       "say": "A bus driver! Bus drivers take us places.",
+       "say_line": [
+        "V42",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Dentist",
+       "img": "helper_dentist",
+       "say": "A dentist! Dentists keep our teeth healthy.",
+       "say_line": [
+        "V42",
+        15
+       ]
+      },
+      {
+       "label": "Mechanic",
+       "img": "helper_mechanic",
+       "say": "A mechanic! Mechanics fix cars.",
+       "say_line": [
+        "V42",
+        16
+       ]
+      },
+      {
+       "label": "Carpenter",
+       "img": "helper_carpenter",
+       "say": "A carpenter! Carpenters make things from wood.",
+       "say_line": [
+        "V42",
+        17
+       ]
+      },
+      {
+       "label": "Tailor",
+       "img": "helper_tailor",
+       "say": "A tailor! Tailors stitch our clothes.",
+       "say_line": [
+        "V42",
+        18
+       ]
+      },
+      {
+       "label": "Barber",
+       "img": "helper_barber",
+       "say": "A barber! Barbers cut our hair.",
+       "say_line": [
+        "V42",
+        19
+       ]
+      },
+      {
+       "label": "Painter",
+       "img": "helper_painter",
+       "say": "A painter! Painters paint our walls.",
+       "say_line": [
+        "V42",
+        20
+       ]
+      },
+      {
+       "label": "Plumber",
+       "img": "helper_plumber",
+       "say": "A plumber! Plumbers fix our taps.",
+       "say_line": [
+        "V42",
+        21
+       ]
+      },
+      {
+       "label": "Electrician",
+       "img": "helper_electrician",
+       "say": "An electrician! Electricians fix our lights.",
+       "say_line": [
+        "V42",
+        22
+       ]
+      },
+      {
+       "label": "Astronaut",
+       "img": "helper_astronaut",
+       "say": "An astronaut! Astronauts go to space.",
+       "say_line": [
+        "V42",
+        23
+       ]
+      },
+      {
+       "label": "Vegetable seller",
+       "img": "helper_vegetable_seller",
+       "say": "A vegetable seller! Vegetable sellers bring us fresh vegetables.",
+       "say_line": [
+        "V42",
+        24
+       ]
+      }
+     ]
+    }
+   ],
+   "chip3": "Say their job"
+  },
+  {
+   "n": 12,
+   "id": "V43",
+   "slug": "12-sounds-around-the-house",
+   "title": "Sounds Around the House",
+   "t1": "Sounds Around",
+   "t2": "the House!",
+   "head": "What is that <span>sound</span>?",
+   "mode": "sound",
+   "theme": "home",
+   "music": "soft",
+   "title_line": [
+    "V43",
+    0
+   ],
+   "rules_line": [
+    "V43",
+    1
+   ],
+   "done_line": [
+    "V43",
+    2
+   ],
+   "prompts": [
+    [
+     "V43",
+     3
+    ],
+    [
+     "V43",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Doorbell",
+       "img": "house_doorbell",
+       "say": "Doorbell!",
+       "sound": "house_doorbell",
+       "say_line": [
+        "V43",
+        5
+       ]
+      },
+      {
+       "label": "Pressure cooker",
+       "img": "pressure_cooker",
+       "say": "Pressure cooker!",
+       "sound": "house_pressure_cooker",
+       "say_line": [
+        "V43",
+        6
+       ]
+      },
+      {
+       "label": "Mixer",
+       "img": "house_mixer",
+       "say": "Mixer!",
+       "sound": "house_mixer",
+       "say_line": [
+        "V43",
+        7
+       ]
+      },
+      {
+       "label": "Tap water",
+       "img": "house_tap",
+       "say": "Tap water!",
+       "sound": "house_tap",
+       "say_line": [
+        "V43",
+        8
+       ]
+      },
+      {
+       "label": "Clock",
+       "img": "clock",
+       "say": "Clock!",
+       "sound": "house_clock",
+       "say_line": [
+        "V43",
+        9
+       ]
+      },
+      {
+       "label": "Knock on the door",
+       "img": "house_knock",
+       "say": "Knock on the door!",
+       "sound": "house_knock",
+       "say_line": [
+        "V43",
+        10
+       ]
+      },
+      {
+       "label": "Alarm clock",
+       "img": "house_alarm",
+       "say": "Alarm clock!",
+       "sound": "house_alarm",
+       "say_line": [
+        "V43",
+        11
+       ]
+      },
+      {
+       "label": "Kettle",
+       "img": "house_kettle",
+       "say": "Kettle!",
+       "sound": "house_kettle",
+       "say_line": [
+        "V43",
+        12
+       ]
+      },
+      {
+       "label": "Broom",
+       "img": "house_broom",
+       "say": "Broom!",
+       "sound": "house_broom",
+       "say_line": [
+        "V43",
+        13
+       ]
+      },
+      {
+       "label": "Ceiling fan",
+       "img": "house_fan",
+       "say": "Ceiling fan!",
+       "sound": "house_fan",
+       "say_line": [
+        "V43",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Washing machine",
+       "img": "house_washer",
+       "say": "Washing machine!",
+       "sound": "house_washer",
+       "say_line": [
+        "V43",
+        15
+       ]
+      },
+      {
+       "label": "Keys",
+       "img": "house_keys",
+       "say": "Keys!",
+       "sound": "house_keys",
+       "say_line": [
+        "V43",
+        16
+       ]
+      },
+      {
+       "label": "Zip",
+       "img": "house_zip",
+       "say": "Zip!",
+       "sound": "house_zip",
+       "say_line": [
+        "V43",
+        17
+       ]
+      },
+      {
+       "label": "Scissors",
+       "img": "house_scissors",
+       "say": "Scissors!",
+       "sound": "house_scissors",
+       "say_line": [
+        "V43",
+        18
+       ]
+      },
+      {
+       "label": "Brushing teeth",
+       "img": "house_brushing",
+       "say": "Brushing teeth!",
+       "sound": "house_brushing",
+       "say_line": [
+        "V43",
+        19
+       ]
+      },
+      {
+       "label": "Rain",
+       "img": "house_rain",
+       "say": "Rain!",
+       "sound": "house_rain",
+       "say_line": [
+        "V43",
+        20
+       ]
+      },
+      {
+       "label": "Sizzling dosa",
+       "img": "house_tawa",
+       "say": "Sizzling dosa!",
+       "sound": "house_tawa",
+       "say_line": [
+        "V43",
+        21
+       ]
+      },
+      {
+       "label": "Door creak",
+       "img": "house_creak",
+       "say": "Door creak!",
+       "sound": "house_creak",
+       "say_line": [
+        "V43",
+        22
+       ]
+      },
+      {
+       "label": "Car horn",
+       "img": "house_horn",
+       "say": "Car horn!",
+       "sound": "house_horn",
+       "say_line": [
+        "V43",
+        23
+       ]
+      },
+      {
+       "label": "Footsteps",
+       "img": "house_footsteps",
+       "say": "Footsteps!",
+       "sound": "house_footsteps",
+       "say_line": [
+        "V43",
+        24
+       ]
+      }
+     ]
+    }
+   ],
+   "needs_sound": true
+  },
+  {
+   "n": 13,
+   "id": "V44",
+   "slug": "13-indian-birds",
+   "title": "Indian Birds",
+   "t1": "Indian",
+   "t2": "Birds!",
+   "head": "Guess the <span>bird</span>!",
+   "mode": "picture",
+   "theme": "sky",
+   "music": "flute",
+   "title_line": [
+    "V44",
+    0
+   ],
+   "rules_line": [
+    "V44",
+    1
+   ],
+   "done_line": [
+    "V44",
+    2
+   ],
+   "prompts": [
+    [
+     "V44",
+     3
+    ],
+    [
+     "V44",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Peacock",
+       "img": "peacock",
+       "say": "Peacock!",
+       "say_line": [
+        "V44",
+        5
+       ]
+      },
+      {
+       "label": "Parrot",
+       "img": "bird_parrot",
+       "say": "Parrot!",
+       "say_line": [
+        "V44",
+        6
+       ]
+      },
+      {
+       "label": "Crow",
+       "img": "bird_crow",
+       "say": "Crow!",
+       "say_line": [
+        "V44",
+        7
+       ]
+      },
+      {
+       "label": "Sparrow",
+       "img": "bird_sparrow",
+       "say": "Sparrow!",
+       "say_line": [
+        "V44",
+        8
+       ]
+      },
+      {
+       "label": "Pigeon",
+       "img": "bird_pigeon",
+       "say": "Pigeon!",
+       "say_line": [
+        "V44",
+        9
+       ]
+      },
+      {
+       "label": "Hen",
+       "img": "bird_hen",
+       "say": "Hen!",
+       "say_line": [
+        "V44",
+        10
+       ]
+      },
+      {
+       "label": "Duck",
+       "img": "duck",
+       "say": "Duck!",
+       "say_line": [
+        "V44",
+        11
+       ]
+      },
+      {
+       "label": "Owl",
+       "img": "owl",
+       "say": "Owl!",
+       "say_line": [
+        "V44",
+        12
+       ]
+      },
+      {
+       "label": "Eagle",
+       "img": "bird_eagle",
+       "say": "Eagle!",
+       "say_line": [
+        "V44",
+        13
+       ]
+      },
+      {
+       "label": "Kingfisher",
+       "img": "bird_kingfisher",
+       "say": "Kingfisher!",
+       "say_line": [
+        "V44",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Myna",
+       "img": "bird_myna",
+       "say": "Myna!",
+       "say_line": [
+        "V44",
+        15
+       ]
+      },
+      {
+       "label": "Koel",
+       "img": "bird_koel",
+       "say": "Koel!",
+       "say_line": [
+        "V44",
+        16
+       ]
+      },
+      {
+       "label": "Hornbill",
+       "img": "bird_hornbill",
+       "say": "Hornbill!",
+       "say_line": [
+        "V44",
+        17
+       ]
+      },
+      {
+       "label": "Flamingo",
+       "img": "bird_flamingo",
+       "say": "Flamingo!",
+       "say_line": [
+        "V44",
+        18
+       ]
+      },
+      {
+       "label": "Sarus crane",
+       "img": "bird_sarus_crane",
+       "say": "Sarus crane!",
+       "say_line": [
+        "V44",
+        19
+       ]
+      },
+      {
+       "label": "Woodpecker",
+       "img": "bird_woodpecker",
+       "say": "Woodpecker!",
+       "say_line": [
+        "V44",
+        20
+       ]
+      },
+      {
+       "label": "Bulbul",
+       "img": "bird_bulbul",
+       "say": "Bulbul!",
+       "say_line": [
+        "V44",
+        21
+       ]
+      },
+      {
+       "label": "Swan",
+       "img": "bird_swan",
+       "say": "Swan!",
+       "say_line": [
+        "V44",
+        22
+       ]
+      },
+      {
+       "label": "Vulture",
+       "img": "bird_vulture",
+       "say": "Vulture!",
+       "say_line": [
+        "V44",
+        23
+       ]
+      },
+      {
+       "label": "Weaver bird",
+       "img": "bird_weaver_bird",
+       "say": "Weaver bird!",
+       "say_line": [
+        "V44",
+        24
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "id": "V45",
+   "slug": "14-big-or-small",
+   "title": "Big or Small",
+   "t1": "Big or",
+   "t2": "Small?",
+   "head": "Say the <span>opposite</span>!",
+   "mode": "ask",
+   "theme": "split",
+   "music": "funky",
+   "title_line": [
+    "V45",
+    0
+   ],
+   "rules_line": [
+    "V45",
+    1
+   ],
+   "done_line": [
+    "V45",
+    2
+   ],
+   "prompts": [
+    [
+     "V45",
+     3
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Big and small",
+       "img": "big_small",
+       "ask": "The elephant is big. And the mouse is?",
+       "say": "Small! Big and small.",
+       "say_line": [
+        "V45",
+        4
+       ],
+       "ask_line": [
+        "V45",
+        5
+       ]
+      },
+      {
+       "label": "Tall and short",
+       "img": "opp_tall_short",
+       "ask": "The giraffe is tall. And the penguin is?",
+       "say": "Short! Tall and short.",
+       "say_line": [
+        "V45",
+        6
+       ],
+       "ask_line": [
+        "V45",
+        7
+       ]
+      },
+      {
+       "label": "Hot and cold",
+       "img": "opp_hot_cold",
+       "ask": "The tea is hot. And the ice cream is?",
+       "say": "Cold! Hot and cold.",
+       "say_line": [
+        "V45",
+        8
+       ],
+       "ask_line": [
+        "V45",
+        9
+       ]
+      },
+      {
+       "label": "Fast and slow",
+       "img": "opp_fast_slow",
+       "ask": "The rabbit is fast. And the tortoise is?",
+       "say": "Slow! Fast and slow.",
+       "say_line": [
+        "V45",
+        10
+       ],
+       "ask_line": [
+        "V45",
+        11
+       ]
+      },
+      {
+       "label": "Full and empty",
+       "img": "opp_full_empty",
+       "ask": "This glass is full. And that glass is?",
+       "say": "Empty! Full and empty.",
+       "say_line": [
+        "V45",
+        12
+       ],
+       "ask_line": [
+        "V45",
+        13
+       ]
+      },
+      {
+       "label": "Day and night",
+       "img": "opp_day_night",
+       "ask": "The sun comes out in the day. And the moon comes out at?",
+       "say": "Night! Day and night.",
+       "say_line": [
+        "V45",
+        14
+       ],
+       "ask_line": [
+        "V45",
+        15
+       ]
+      },
+      {
+       "label": "Open and closed",
+       "img": "opp_open_closed",
+       "ask": "This box is open. And that box is?",
+       "say": "Closed! Open and closed.",
+       "say_line": [
+        "V45",
+        16
+       ],
+       "ask_line": [
+        "V45",
+        17
+       ]
+      },
+      {
+       "label": "Wet and dry",
+       "img": "opp_wet_dry",
+       "ask": "This towel is wet. And that towel is?",
+       "say": "Dry! Wet and dry.",
+       "say_line": [
+        "V45",
+        18
+       ],
+       "ask_line": [
+        "V45",
+        19
+       ]
+      },
+      {
+       "label": "Heavy and light",
+       "img": "opp_heavy_light",
+       "ask": "The stone is heavy. And the feather is?",
+       "say": "Light! Heavy and light.",
+       "say_line": [
+        "V45",
+        20
+       ],
+       "ask_line": [
+        "V45",
+        21
+       ]
+      },
+      {
+       "label": "Long and short",
+       "img": "opp_long_short",
+       "ask": "This pencil is long. And that pencil is?",
+       "say": "Short! Long and short.",
+       "say_line": [
+        "V45",
+        22
+       ],
+       "ask_line": [
+        "V45",
+        23
+       ]
+      },
+      {
+       "label": "Clean and dirty",
+       "img": "opp_clean_dirty",
+       "ask": "This plate is clean. And that plate is?",
+       "say": "Dirty! Clean and dirty.",
+       "say_line": [
+        "V45",
+        24
+       ],
+       "ask_line": [
+        "V45",
+        25
+       ]
+      },
+      {
+       "label": "Thick and thin",
+       "img": "opp_thick_thin",
+       "ask": "This book is thick. And that book is?",
+       "say": "Thin! Thick and thin.",
+       "say_line": [
+        "V45",
+        26
+       ],
+       "ask_line": [
+        "V45",
+        27
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "id": "V46",
+   "slug": "15-guess-the-instrument",
+   "title": "Guess the Instrument",
+   "t1": "Guess the",
+   "t2": "Instrument!",
+   "head": "What is <span>playing</span>?",
+   "mode": "sound",
+   "theme": "notes",
+   "music": "indian",
+   "title_line": [
+    "V46",
+    0
+   ],
+   "rules_line": [
+    "V46",
+    1
+   ],
+   "done_line": [
+    "V46",
+    2
+   ],
+   "prompts": [
+    [
+     "V46",
+     3
+    ],
+    [
+     "V46",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Drum",
+       "img": "inst_drum",
+       "say": "Drum!",
+       "sound": "inst_drum",
+       "say_line": [
+        "V46",
+        5
+       ]
+      },
+      {
+       "label": "Piano",
+       "img": "inst_piano",
+       "say": "Piano!",
+       "sound": "inst_piano",
+       "say_line": [
+        "V46",
+        6
+       ]
+      },
+      {
+       "label": "Guitar",
+       "img": "inst_guitar",
+       "say": "Guitar!",
+       "sound": "inst_guitar",
+       "say_line": [
+        "V46",
+        7
+       ]
+      },
+      {
+       "label": "Flute",
+       "img": "inst_flute",
+       "say": "Flute!",
+       "sound": "inst_flute",
+       "say_line": [
+        "V46",
+        8
+       ]
+      },
+      {
+       "label": "Tabla",
+       "img": "tabla",
+       "say": "Tabla!",
+       "sound": "inst_tabla",
+       "say_line": [
+        "V46",
+        9
+       ]
+      },
+      {
+       "label": "Bell",
+       "img": "inst_bell",
+       "say": "Bell!",
+       "sound": "inst_bell",
+       "say_line": [
+        "V46",
+        10
+       ]
+      },
+      {
+       "label": "Xylophone",
+       "img": "inst_xylophone",
+       "say": "Xylophone!",
+       "sound": "inst_xylophone",
+       "say_line": [
+        "V46",
+        11
+       ]
+      },
+      {
+       "label": "Trumpet",
+       "img": "inst_trumpet",
+       "say": "Trumpet!",
+       "sound": "inst_trumpet",
+       "say_line": [
+        "V46",
+        12
+       ]
+      },
+      {
+       "label": "Violin",
+       "img": "inst_violin",
+       "say": "Violin!",
+       "sound": "inst_violin",
+       "say_line": [
+        "V46",
+        13
+       ]
+      },
+      {
+       "label": "Maracas",
+       "img": "inst_maracas",
+       "say": "Maracas! Shake, shake!",
+       "sound": "inst_maracas",
+       "say_line": [
+        "V46",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Sitar",
+       "img": "inst_sitar",
+       "say": "Sitar!",
+       "sound": "inst_sitar",
+       "say_line": [
+        "V46",
+        15
+       ]
+      },
+      {
+       "label": "Dhol",
+       "img": "inst_dhol",
+       "say": "Dhol!",
+       "sound": "inst_dhol",
+       "say_line": [
+        "V46",
+        16
+       ]
+      },
+      {
+       "label": "Harmonica",
+       "img": "inst_harmonica",
+       "say": "Harmonica!",
+       "sound": "inst_harmonica",
+       "say_line": [
+        "V46",
+        17
+       ]
+      },
+      {
+       "label": "Cymbals",
+       "img": "inst_cymbals",
+       "say": "Cymbals!",
+       "sound": "inst_cymbals",
+       "say_line": [
+        "V46",
+        18
+       ]
+      },
+      {
+       "label": "Mridangam",
+       "img": "inst_mridangam",
+       "say": "Mridangam!",
+       "sound": "inst_mridangam",
+       "say_line": [
+        "V46",
+        19
+       ]
+      },
+      {
+       "label": "Tambourine",
+       "img": "inst_tambourine",
+       "say": "Tambourine!",
+       "sound": "inst_tambourine",
+       "say_line": [
+        "V46",
+        20
+       ]
+      },
+      {
+       "label": "Saxophone",
+       "img": "inst_saxophone",
+       "say": "Saxophone!",
+       "sound": "inst_saxophone",
+       "say_line": [
+        "V46",
+        21
+       ]
+      },
+      {
+       "label": "Harp",
+       "img": "inst_harp",
+       "say": "Harp!",
+       "sound": "inst_harp",
+       "say_line": [
+        "V46",
+        22
+       ]
+      },
+      {
+       "label": "Accordion",
+       "img": "inst_accordion",
+       "say": "Accordion!",
+       "sound": "inst_accordion",
+       "say_line": [
+        "V46",
+        23
+       ]
+      },
+      {
+       "label": "Triangle",
+       "img": "inst_triangle",
+       "say": "Triangle!",
+       "sound": "inst_triangle",
+       "say_line": [
+        "V46",
+        24
+       ]
+      }
+     ]
+    }
+   ],
+   "needs_sound": true
+  },
+  {
+   "n": 16,
+   "id": "V47",
+   "slug": "16-space-quiz",
+   "title": "Space Quiz",
+   "t1": "Space",
+   "t2": "Quiz!",
+   "head": "What am <span>I</span>?",
+   "mode": "ask",
+   "theme": "space",
+   "music": "space",
+   "title_line": [
+    "V47",
+    0
+   ],
+   "rules_line": [
+    "V47",
+    1
+   ],
+   "done_line": [
+    "V47",
+    2
+   ],
+   "prompts": [
+    [
+     "V47",
+     3
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Sun",
+       "img": "space_sun",
+       "ask": "I am a big hot star. I give light to all the planets.",
+       "say": "The Sun!",
+       "say_line": [
+        "V47",
+        4
+       ],
+       "ask_line": [
+        "V47",
+        5
+       ]
+      },
+      {
+       "label": "Mercury",
+       "img": "space_mercury",
+       "ask": "I am the smallest planet, and the closest to the Sun.",
+       "say": "Mercury!",
+       "say_line": [
+        "V47",
+        6
+       ],
+       "ask_line": [
+        "V47",
+        7
+       ]
+      },
+      {
+       "label": "Venus",
+       "img": "space_venus",
+       "ask": "I am the hottest planet. I shine bright in the evening sky.",
+       "say": "Venus!",
+       "say_line": [
+        "V47",
+        8
+       ],
+       "ask_line": [
+        "V47",
+        9
+       ]
+      },
+      {
+       "label": "Earth",
+       "img": "space_earth",
+       "ask": "I am blue and green. I am our home!",
+       "say": "Earth!",
+       "say_line": [
+        "V47",
+        10
+       ],
+       "ask_line": [
+        "V47",
+        11
+       ]
+      },
+      {
+       "label": "Moon",
+       "img": "space_moon",
+       "ask": "I go around the Earth. You see me at night.",
+       "say": "The Moon!",
+       "say_line": [
+        "V47",
+        12
+       ],
+       "ask_line": [
+        "V47",
+        13
+       ]
+      },
+      {
+       "label": "Mars",
+       "img": "space_mars",
+       "ask": "I am red and dusty. People call me the red planet.",
+       "say": "Mars!",
+       "say_line": [
+        "V47",
+        14
+       ],
+       "ask_line": [
+        "V47",
+        15
+       ]
+      },
+      {
+       "label": "Jupiter",
+       "img": "space_jupiter",
+       "ask": "I am the biggest planet. I have a big red spot.",
+       "say": "Jupiter!",
+       "say_line": [
+        "V47",
+        16
+       ],
+       "ask_line": [
+        "V47",
+        17
+       ]
+      },
+      {
+       "label": "Saturn",
+       "img": "saturn",
+       "ask": "I have big shiny rings around me.",
+       "say": "Saturn!",
+       "say_line": [
+        "V47",
+        18
+       ],
+       "ask_line": [
+        "V47",
+        19
+       ]
+      },
+      {
+       "label": "Uranus",
+       "img": "space_uranus",
+       "ask": "I am a cold blue green planet. I spin on my side.",
+       "say": "Uranus!",
+       "say_line": [
+        "V47",
+        20
+       ],
+       "ask_line": [
+        "V47",
+        21
+       ]
+      },
+      {
+       "label": "Neptune",
+       "img": "space_neptune",
+       "ask": "I am dark blue and very windy. I am the farthest planet from the Sun.",
+       "say": "Neptune!",
+       "say_line": [
+        "V47",
+        22
+       ],
+       "ask_line": [
+        "V47",
+        23
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "id": "V48",
+   "slug": "17-odd-one-out",
+   "title": "Odd One Out",
+   "t1": "Odd One",
+   "t2": "Out!",
+   "head": "Which one is <span>different</span>?",
+   "mode": "odd",
+   "theme": "puzzle",
+   "music": "quirky",
+   "title_line": [
+    "V48",
+    0
+   ],
+   "rules_line": [
+    "V48",
+    1
+   ],
+   "done_line": [
+    "V48",
+    2
+   ],
+   "prompts": [
+    [
+     "V48",
+     3
+    ],
+    [
+     "V48",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Mango",
+       "imgs": [
+        "car",
+        "bus",
+        "train",
+        "fruit_mango"
+       ],
+       "odd": 3,
+       "img": "fruit_mango",
+       "say": "The mango! It is a fruit, not a vehicle.",
+       "say_line": [
+        "V48",
+        5
+       ]
+      },
+      {
+       "label": "Bicycle",
+       "imgs": [
+        "cow",
+        "dog",
+        "cat",
+        "bicycle"
+       ],
+       "odd": 3,
+       "img": "bicycle",
+       "say": "The bicycle! It is not an animal.",
+       "say_line": [
+        "V48",
+        6
+       ]
+      },
+      {
+       "label": "Ball",
+       "imgs": [
+        "fruit_apple",
+        "fruit_banana",
+        "fruit_grapes",
+        "ball"
+       ],
+       "odd": 3,
+       "img": "ball",
+       "say": "The ball! You cannot eat it.",
+       "say_line": [
+        "V48",
+        7
+       ]
+      },
+      {
+       "label": "Boat",
+       "imgs": [
+        "aeroplane",
+        "helicopter",
+        "hot_air_balloon",
+        "boat"
+       ],
+       "odd": 3,
+       "img": "boat",
+       "say": "The boat! It cannot fly.",
+       "say_line": [
+        "V48",
+        8
+       ]
+      },
+      {
+       "label": "Dog",
+       "imgs": [
+        "bird_parrot",
+        "bird_crow",
+        "duck",
+        "dog"
+       ],
+       "odd": 3,
+       "img": "dog",
+       "say": "The dog! It is not a bird.",
+       "say_line": [
+        "V48",
+        9
+       ]
+      },
+      {
+       "label": "Bus",
+       "imgs": [
+        "red_balloon",
+        "fruit_strawberry",
+        "fire_engine",
+        "bus"
+       ],
+       "odd": 3,
+       "img": "bus",
+       "say": "The bus! It is blue. The others are red.",
+       "say_line": [
+        "V48",
+        10
+       ]
+      },
+      {
+       "label": "Elephant",
+       "imgs": [
+        "doctor",
+        "helper_teacher",
+        "helper_chef",
+        "elephant"
+       ],
+       "odd": 3,
+       "img": "elephant",
+       "say": "The elephant! It is not a helper.",
+       "say_line": [
+        "V48",
+        11
+       ]
+      },
+      {
+       "label": "Gift box",
+       "imgs": [
+        "clock",
+        "ball",
+        "plate",
+        "gift_box"
+       ],
+       "odd": 3,
+       "img": "gift_box",
+       "say": "The gift box! It is a square. The others are round.",
+       "say_line": [
+        "V48",
+        12
+       ]
+      },
+      {
+       "label": "Tractor",
+       "imgs": [
+        "lion",
+        "tiger",
+        "monkey",
+        "tractor"
+       ],
+       "odd": 3,
+       "img": "tractor",
+       "say": "The tractor! It is not an animal.",
+       "say_line": [
+        "V48",
+        13
+       ]
+      },
+      {
+       "label": "Fish",
+       "imgs": [
+        "sun",
+        "space_moon",
+        "star",
+        "fish"
+       ],
+       "odd": 3,
+       "img": "fish",
+       "say": "The fish! It is not in the sky.",
+       "say_line": [
+        "V48",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 6,
+     "items": [
+      {
+       "label": "Aeroplane",
+       "imgs": [
+        "boat",
+        "ship",
+        "submarine",
+        "aeroplane"
+       ],
+       "odd": 3,
+       "img": "aeroplane",
+       "say": "The aeroplane! It does not go on water.",
+       "say_line": [
+        "V48",
+        15
+       ]
+      },
+      {
+       "label": "Car",
+       "imgs": [
+        "bicycle",
+        "motorbike",
+        "scooter",
+        "car"
+       ],
+       "odd": 3,
+       "img": "car",
+       "say": "The car! It has four wheels. The others have two.",
+       "say_line": [
+        "V48",
+        16
+       ]
+      },
+      {
+       "label": "Banana",
+       "imgs": [
+        "fruit_strawberry",
+        "fruit_cherry",
+        "fruit_apple",
+        "fruit_banana"
+       ],
+       "odd": 3,
+       "img": "fruit_banana",
+       "say": "The banana! It is yellow. The others are red.",
+       "say_line": [
+        "V48",
+        17
+       ]
+      },
+      {
+       "label": "Cow",
+       "imgs": [
+        "frog",
+        "fish",
+        "duck",
+        "cow"
+       ],
+       "odd": 3,
+       "img": "cow",
+       "say": "The cow! It does not swim in water.",
+       "say_line": [
+        "V48",
+        18
+       ]
+      },
+      {
+       "label": "Flute",
+       "imgs": [
+        "tabla",
+        "inst_drum",
+        "inst_dhol",
+        "inst_flute"
+       ],
+       "odd": 3,
+       "img": "inst_flute",
+       "say": "The flute! It is not a drum.",
+       "say_line": [
+        "V48",
+        19
+       ]
+      },
+      {
+       "label": "Elephant",
+       "imgs": [
+        "t_rex",
+        "dino_triceratops",
+        "dino_stegosaurus",
+        "elephant"
+       ],
+       "odd": 3,
+       "img": "elephant",
+       "say": "The elephant! It is not a dinosaur.",
+       "say_line": [
+        "V48",
+        20
+       ]
+      },
+      {
+       "label": "Snake",
+       "imgs": [
+        "bee",
+        "butterfly",
+        "bird_sparrow",
+        "snake"
+       ],
+       "odd": 3,
+       "img": "snake",
+       "say": "The snake! It cannot fly.",
+       "say_line": [
+        "V48",
+        21
+       ]
+      },
+      {
+       "label": "Kite",
+       "imgs": [
+        "pizza_slice",
+        "samosa",
+        "kite",
+        "egg"
+       ],
+       "odd": 2,
+       "img": "kite",
+       "say": "The kite! You cannot eat it.",
+       "say_line": [
+        "V48",
+        22
+       ]
+      },
+      {
+       "label": "Ceiling fan",
+       "imgs": [
+        "sun",
+        "opp_hot_cold",
+        "pressure_cooker",
+        "house_fan"
+       ],
+       "odd": 3,
+       "img": "house_fan",
+       "say": "The fan! It keeps us cool. The others are hot.",
+       "say_line": [
+        "V48",
+        23
+       ]
+      },
+      {
+       "label": "Grapes",
+       "imgs": [
+        "fruit_lemon",
+        "fruit_banana",
+        "sun",
+        "fruit_grapes"
+       ],
+       "odd": 3,
+       "img": "fruit_grapes",
+       "say": "The grapes! They are purple. The others are yellow.",
+       "say_line": [
+        "V48",
+        24
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "id": "V49",
+   "slug": "18-cheekos-riddles",
+   "title": "Cheeko's Riddles",
+   "t1": "Cheeko's",
+   "t2": "Riddles!",
+   "head": "Cheeko's <span>riddle</span>",
+   "mode": "riddle",
+   "theme": "question",
+   "music": "mystery2",
+   "title_line": [
+    "V49",
+    0
+   ],
+   "rules_line": [
+    "V49",
+    1
+   ],
+   "done_line": [
+    "V49",
+    2
+   ],
+   "prompts": [
+    [
+     "V49",
+     3
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Umbrella",
+       "img": "umbrella_red",
+       "ask": "I open up when it rains. I keep you dry. What am I?",
+       "say": "An umbrella!",
+       "say_line": [
+        "V49",
+        4
+       ],
+       "ask_line": [
+        "V49",
+        5
+       ]
+      },
+      {
+       "label": "Clock",
+       "img": "clock",
+       "ask": "I have a face and two hands, but no arms or legs. I tell you the time. What am I?",
+       "say": "A clock!",
+       "say_line": [
+        "V49",
+        6
+       ],
+       "ask_line": [
+        "V49",
+        7
+       ]
+      },
+      {
+       "label": "Sun",
+       "img": "sun",
+       "ask": "I am big, yellow and hot. I come up in the sky every morning. What am I?",
+       "say": "The sun!",
+       "say_line": [
+        "V49",
+        8
+       ],
+       "ask_line": [
+        "V49",
+        9
+       ]
+      },
+      {
+       "label": "Moon",
+       "img": "space_moon",
+       "ask": "I come out at night. Sometimes I am round, sometimes I am thin. What am I?",
+       "say": "The moon!",
+       "say_line": [
+        "V49",
+        10
+       ],
+       "ask_line": [
+        "V49",
+        11
+       ]
+      },
+      {
+       "label": "Cow",
+       "img": "cow",
+       "ask": "I say moo. I eat grass. I give you milk. Who am I?",
+       "say": "A cow!",
+       "say_line": [
+        "V49",
+        12
+       ],
+       "ask_line": [
+        "V49",
+        13
+       ]
+      },
+      {
+       "label": "Elephant",
+       "img": "elephant",
+       "ask": "I am very big and grey. I have a long trunk. Who am I?",
+       "say": "An elephant!",
+       "say_line": [
+        "V49",
+        14
+       ],
+       "ask_line": [
+        "V49",
+        15
+       ]
+      },
+      {
+       "label": "Banana",
+       "img": "fruit_banana",
+       "ask": "I am long and yellow. Monkeys love me. You peel me before you eat me. What am I?",
+       "say": "A banana!",
+       "say_line": [
+        "V49",
+        16
+       ],
+       "ask_line": [
+        "V49",
+        17
+       ]
+      },
+      {
+       "label": "Ice cream",
+       "img": "ice_cream",
+       "ask": "I am cold and sweet. I melt in the sun. What am I?",
+       "say": "An ice cream!",
+       "say_line": [
+        "V49",
+        18
+       ],
+       "ask_line": [
+        "V49",
+        19
+       ]
+      },
+      {
+       "label": "Fish",
+       "img": "fish",
+       "ask": "I live in water. I have fins and a tail. I swim but I cannot walk. Who am I?",
+       "say": "A fish!",
+       "say_line": [
+        "V49",
+        20
+       ],
+       "ask_line": [
+        "V49",
+        21
+       ]
+      },
+      {
+       "label": "Rainbow",
+       "img": "rainbow",
+       "ask": "I come after the rain. I have seven colours. I bend across the sky. What am I?",
+       "say": "A rainbow!",
+       "say_line": [
+        "V49",
+        22
+       ],
+       "ask_line": [
+        "V49",
+        23
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 6,
+     "items": [
+      {
+       "label": "Egg",
+       "img": "egg",
+       "ask": "I am white and oval. A little chick comes out of me. What am I?",
+       "say": "An egg!",
+       "say_line": [
+        "V49",
+        24
+       ],
+       "ask_line": [
+        "V49",
+        25
+       ]
+      },
+      {
+       "label": "Kite",
+       "img": "kite",
+       "ask": "I fly high in the sky, but I have no wings. You hold my string. What am I?",
+       "say": "A kite!",
+       "say_line": [
+        "V49",
+        26
+       ],
+       "ask_line": [
+        "V49",
+        27
+       ]
+      },
+      {
+       "label": "Tree",
+       "img": "tree",
+       "ask": "I am tall and green. Birds make nests in me. I give you shade. What am I?",
+       "say": "A tree!",
+       "say_line": [
+        "V49",
+        28
+       ],
+       "ask_line": [
+        "V49",
+        29
+       ]
+      },
+      {
+       "label": "Toothbrush",
+       "img": "toothbrush",
+       "ask": "I help you clean your teeth every morning and every night. What am I?",
+       "say": "A toothbrush!",
+       "say_line": [
+        "V49",
+        30
+       ],
+       "ask_line": [
+        "V49",
+        31
+       ]
+      },
+      {
+       "label": "Pillow",
+       "img": "pillow",
+       "ask": "I am soft. You put your head on me when you sleep. What am I?",
+       "say": "A pillow!",
+       "say_line": [
+        "V49",
+        32
+       ],
+       "ask_line": [
+        "V49",
+        33
+       ]
+      },
+      {
+       "label": "Shoes",
+       "img": "shoes",
+       "ask": "You wear us on your feet. We always come in a pair. What are we?",
+       "say": "Shoes!",
+       "say_line": [
+        "V49",
+        34
+       ],
+       "ask_line": [
+        "V49",
+        35
+       ]
+      },
+      {
+       "label": "Bee",
+       "img": "bee",
+       "ask": "I am small and I buzz. I make sweet honey. Who am I?",
+       "say": "A bee!",
+       "say_line": [
+        "V49",
+        36
+       ],
+       "ask_line": [
+        "V49",
+        37
+       ]
+      },
+      {
+       "label": "Spider",
+       "img": "spider",
+       "ask": "I have eight legs. I make a sticky web. Who am I?",
+       "say": "A spider!",
+       "say_line": [
+        "V49",
+        38
+       ],
+       "ask_line": [
+        "V49",
+        39
+       ]
+      },
+      {
+       "label": "Mirror",
+       "img": "mirror_oval",
+       "ask": "When you look at me, you see yourself. What am I?",
+       "say": "A mirror!",
+       "say_line": [
+        "V49",
+        40
+       ],
+       "ask_line": [
+        "V49",
+        41
+       ]
+      },
+      {
+       "label": "Pencil",
+       "img": "pencil",
+       "ask": "I help you write and draw. I get shorter when you sharpen me. What am I?",
+       "say": "A pencil!",
+       "say_line": [
+        "V49",
+        42
+       ],
+       "ask_line": [
+        "V49",
+        43
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "id": "V50",
+   "slug": "19-guess-the-dinosaur",
+   "title": "Guess the Dinosaur",
+   "t1": "Guess the",
+   "t2": "Dinosaur!",
+   "head": "Guess the <span>dinosaur</span>!",
+   "mode": "picture",
+   "theme": "jungle",
+   "music": "jungle",
+   "title_line": [
+    "V50",
+    0
+   ],
+   "rules_line": [
+    "V50",
+    1
+   ],
+   "done_line": [
+    "V50",
+    2
+   ],
+   "prompts": [
+    [
+     "V50",
+     3
+    ],
+    [
+     "V50",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "T. rex",
+       "img": "t_rex",
+       "say": "T. rex!",
+       "say_line": [
+        "V50",
+        5
+       ]
+      },
+      {
+       "label": "Triceratops",
+       "img": "dino_triceratops",
+       "say": "Triceratops!",
+       "say_line": [
+        "V50",
+        6
+       ]
+      },
+      {
+       "label": "Stegosaurus",
+       "img": "dino_stegosaurus",
+       "say": "Stegosaurus!",
+       "say_line": [
+        "V50",
+        7
+       ]
+      },
+      {
+       "label": "Brachiosaurus",
+       "img": "dino_brachiosaurus",
+       "say": "Brachiosaurus!",
+       "say_line": [
+        "V50",
+        8
+       ]
+      },
+      {
+       "label": "Velociraptor",
+       "img": "dino_velociraptor",
+       "say": "Velociraptor!",
+       "say_line": [
+        "V50",
+        9
+       ]
+      },
+      {
+       "label": "Ankylosaurus",
+       "img": "dino_ankylosaurus",
+       "say": "Ankylosaurus!",
+       "say_line": [
+        "V50",
+        10
+       ]
+      },
+      {
+       "label": "Spinosaurus",
+       "img": "dino_spinosaurus",
+       "say": "Spinosaurus!",
+       "say_line": [
+        "V50",
+        11
+       ]
+      },
+      {
+       "label": "Diplodocus",
+       "img": "dino_diplodocus",
+       "say": "Diplodocus!",
+       "say_line": [
+        "V50",
+        12
+       ]
+      },
+      {
+       "label": "Parasaurolophus",
+       "img": "dino_parasaurolophus",
+       "say": "Parasaurolophus!",
+       "say_line": [
+        "V50",
+        13
+       ]
+      },
+      {
+       "label": "Iguanodon",
+       "img": "dino_iguanodon",
+       "say": "Iguanodon!",
+       "say_line": [
+        "V50",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Pachycephalosaurus",
+       "img": "dino_pachycephalosaurus",
+       "say": "Pachycephalosaurus!",
+       "say_line": [
+        "V50",
+        15
+       ]
+      },
+      {
+       "label": "Allosaurus",
+       "img": "dino_allosaurus",
+       "say": "Allosaurus!",
+       "say_line": [
+        "V50",
+        16
+       ]
+      },
+      {
+       "label": "Dilophosaurus",
+       "img": "dino_dilophosaurus",
+       "say": "Dilophosaurus!",
+       "say_line": [
+        "V50",
+        17
+       ]
+      },
+      {
+       "label": "Carnotaurus",
+       "img": "dino_carnotaurus",
+       "say": "Carnotaurus!",
+       "say_line": [
+        "V50",
+        18
+       ]
+      },
+      {
+       "label": "Therizinosaurus",
+       "img": "dino_therizinosaurus",
+       "say": "Therizinosaurus!",
+       "say_line": [
+        "V50",
+        19
+       ]
+      },
+      {
+       "label": "Gallimimus",
+       "img": "dino_gallimimus",
+       "say": "Gallimimus!",
+       "say_line": [
+        "V50",
+        20
+       ]
+      },
+      {
+       "label": "Baryonyx",
+       "img": "dino_baryonyx",
+       "say": "Baryonyx!",
+       "say_line": [
+        "V50",
+        21
+       ]
+      },
+      {
+       "label": "Oviraptor",
+       "img": "dino_oviraptor",
+       "say": "Oviraptor!",
+       "say_line": [
+        "V50",
+        22
+       ]
+      },
+      {
+       "label": "Argentinosaurus",
+       "img": "dino_argentinosaurus",
+       "say": "Argentinosaurus!",
+       "say_line": [
+        "V50",
+        23
+       ]
+      },
+      {
+       "label": "Maiasaura",
+       "img": "dino_maiasaura",
+       "say": "Maiasaura!",
+       "say_line": [
+        "V50",
+        24
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "id": "V51",
+   "slug": "20-famous-places-of-india",
+   "title": "Famous Places of India",
+   "t1": "Famous Places",
+   "t2": "of India!",
+   "head": "Where is <span>this</span>?",
+   "mode": "picture",
+   "theme": "postcard",
+   "music": "travel",
+   "title_line": [
+    "V51",
+    0
+   ],
+   "rules_line": [
+    "V51",
+    1
+   ],
+   "done_line": [
+    "V51",
+    2
+   ],
+   "prompts": [
+    [
+     "V51",
+     3
+    ],
+    [
+     "V51",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 4,
+     "items": [
+      {
+       "label": "Taj Mahal",
+       "img": "taj_mahal",
+       "say": "The Taj Mahal!",
+       "say_line": [
+        "V51",
+        5
+       ]
+      },
+      {
+       "label": "India Gate",
+       "img": "place_india_gate",
+       "say": "The India Gate!",
+       "say_line": [
+        "V51",
+        6
+       ]
+      },
+      {
+       "label": "Qutub Minar",
+       "img": "place_qutub_minar",
+       "say": "The Qutub Minar!",
+       "say_line": [
+        "V51",
+        7
+       ]
+      },
+      {
+       "label": "Gateway of India",
+       "img": "place_gateway_of_india",
+       "say": "The Gateway of India!",
+       "say_line": [
+        "V51",
+        8
+       ]
+      },
+      {
+       "label": "Red Fort",
+       "img": "place_red_fort",
+       "say": "The Red Fort!",
+       "say_line": [
+        "V51",
+        9
+       ]
+      },
+      {
+       "label": "Hawa Mahal",
+       "img": "place_hawa_mahal",
+       "say": "The Hawa Mahal!",
+       "say_line": [
+        "V51",
+        10
+       ]
+      },
+      {
+       "label": "Mysore Palace",
+       "img": "place_mysore_palace",
+       "say": "Mysore Palace!",
+       "say_line": [
+        "V51",
+        11
+       ]
+      },
+      {
+       "label": "Victoria Memorial",
+       "img": "place_victoria_memorial",
+       "say": "The Victoria Memorial!",
+       "say_line": [
+        "V51",
+        12
+       ]
+      },
+      {
+       "label": "Lotus Temple",
+       "img": "place_lotus_temple",
+       "say": "The Lotus Temple!",
+       "say_line": [
+        "V51",
+        13
+       ]
+      },
+      {
+       "label": "Golden Temple",
+       "img": "place_golden_temple",
+       "say": "The Golden Temple!",
+       "say_line": [
+        "V51",
+        14
+       ]
+      }
+     ]
+    },
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Howrah Bridge",
+       "img": "place_howrah_bridge",
+       "say": "The Howrah Bridge!",
+       "say_line": [
+        "V51",
+        15
+       ]
+      },
+      {
+       "label": "Jantar Mantar",
+       "img": "place_jantar_mantar",
+       "say": "The Jantar Mantar!",
+       "say_line": [
+        "V51",
+        16
+       ]
+      },
+      {
+       "label": "Amber Fort",
+       "img": "place_amber_fort",
+       "say": "Amber Fort!",
+       "say_line": [
+        "V51",
+        17
+       ]
+      },
+      {
+       "label": "Hampi Stone Chariot",
+       "img": "place_hampi_stone_chariot",
+       "say": "Hampi Stone Chariot!",
+       "say_line": [
+        "V51",
+        18
+       ]
+      },
+      {
+       "label": "Bandra Worli Sea Link",
+       "img": "place_bandra_worli_sea_link",
+       "say": "Bandra Worli Sea Link!",
+       "say_line": [
+        "V51",
+        19
+       ]
+      },
+      {
+       "label": "Shore Temple",
+       "img": "place_shore_temple",
+       "say": "The Shore Temple!",
+       "say_line": [
+        "V51",
+        20
+       ]
+      },
+      {
+       "label": "Meenakshi Temple",
+       "img": "place_meenakshi_temple",
+       "say": "The Meenakshi Temple!",
+       "say_line": [
+        "V51",
+        21
+       ]
+      },
+      {
+       "label": "Sanchi Stupa",
+       "img": "place_sanchi_stupa",
+       "say": "The Sanchi Stupa!",
+       "say_line": [
+        "V51",
+        22
+       ]
+      },
+      {
+       "label": "Mehrangarh Fort",
+       "img": "place_mehrangarh_fort",
+       "say": "Mehrangarh Fort!",
+       "say_line": [
+        "V51",
+        23
+       ]
+      },
+      {
+       "label": "Konark Sun Temple",
+       "img": "place_konark_sun_temple",
+       "say": "The Konark Sun Temple!",
+       "say_line": [
+        "V51",
+        24
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "id": "V52",
+   "slug": "21-what-is-missing",
+   "title": "What Is Missing",
+   "t1": "What Is",
+   "t2": "Missing?",
+   "head": "What is <span>missing</span>?",
+   "mode": "missing",
+   "theme": "cards",
+   "music": "ticktock",
+   "title_line": [
+    "V52",
+    1
+   ],
+   "rules_line": [
+    "V52",
+    2
+   ],
+   "done_line": [
+    "V52",
+    3
+   ],
+   "prompts": [
+    [
+     "V52",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Bus",
+       "imgs": [
+        "car",
+        "bus",
+        "train",
+        "boat"
+       ],
+       "odd": 1,
+       "img": "bus",
+       "say": "The bus!",
+       "say_line": [
+        "V52",
+        5
+       ]
+      },
+      {
+       "label": "Mango",
+       "imgs": [
+        "fruit_apple",
+        "fruit_banana",
+        "fruit_mango",
+        "fruit_grapes"
+       ],
+       "odd": 2,
+       "img": "fruit_mango",
+       "say": "The mango!",
+       "say_line": [
+        "V52",
+        6
+       ]
+      },
+      {
+       "label": "Duck",
+       "imgs": [
+        "cow",
+        "dog",
+        "cat",
+        "duck"
+       ],
+       "odd": 3,
+       "img": "duck",
+       "say": "The duck!",
+       "say_line": [
+        "V52",
+        7
+       ]
+      },
+      {
+       "label": "Ball",
+       "imgs": [
+        "ball",
+        "red_balloon",
+        "rubber_duck",
+        "umbrella_red"
+       ],
+       "odd": 0,
+       "img": "ball",
+       "say": "The ball!",
+       "say_line": [
+        "V52",
+        8
+       ]
+      },
+      {
+       "label": "Flower",
+       "imgs": [
+        "sun",
+        "pink_flower",
+        "star",
+        "butterfly"
+       ],
+       "odd": 1,
+       "img": "pink_flower",
+       "say": "The flower!",
+       "say_line": [
+        "V52",
+        9
+       ]
+      },
+      {
+       "label": "Kite",
+       "imgs": [
+        "clock",
+        "gift_box",
+        "kite",
+        "egg"
+       ],
+       "odd": 2,
+       "img": "kite",
+       "say": "The kite!",
+       "say_line": [
+        "V52",
+        10
+       ]
+      },
+      {
+       "label": "Farmer",
+       "imgs": [
+        "doctor",
+        "helper_chef",
+        "helper_teacher",
+        "helper_farmer"
+       ],
+       "odd": 3,
+       "img": "helper_farmer",
+       "say": "The farmer!",
+       "say_line": [
+        "V52",
+        11
+       ]
+      },
+      {
+       "label": "Flute",
+       "imgs": [
+        "tabla",
+        "inst_drum",
+        "inst_flute",
+        "inst_bell"
+       ],
+       "odd": 2,
+       "img": "inst_flute",
+       "say": "The flute!",
+       "say_line": [
+        "V52",
+        12
+       ]
+      },
+      {
+       "label": "Lion",
+       "imgs": [
+        "lion",
+        "monkey",
+        "elephant",
+        "tiger"
+       ],
+       "odd": 0,
+       "img": "lion",
+       "say": "The lion!",
+       "say_line": [
+        "V52",
+        13
+       ]
+      },
+      {
+       "label": "Hot air balloon",
+       "imgs": [
+        "rocket",
+        "aeroplane",
+        "helicopter",
+        "hot_air_balloon"
+       ],
+       "odd": 3,
+       "img": "hot_air_balloon",
+       "say": "The hot air balloon!",
+       "say_line": [
+        "V52",
+        14
+       ]
+      }
+     ]
+    }
+   ],
+   "after_line": [
+    "V52",
+    0
+   ]
+  },
+  {
+   "n": 22,
+   "id": "V53",
+   "slug": "22-emoji-words",
+   "title": "Emoji Words",
+   "t1": "Emoji",
+   "t2": "Words!",
+   "head": "Two pictures, one <span>word</span>!",
+   "mode": "pair",
+   "theme": "stickers",
+   "music": "happysynth",
+   "title_line": [
+    "V53",
+    0
+   ],
+   "rules_line": [
+    "V53",
+    1
+   ],
+   "done_line": [
+    "V53",
+    2
+   ],
+   "prompts": [
+    [
+     "V53",
+     3
+    ],
+    [
+     "V53",
+     4
+    ],
+    [
+     "LCX",
+     9
+    ],
+    [
+     "LCX",
+     10
+    ],
+    [
+     "LCX",
+     11
+    ],
+    [
+     "LCX",
+     12
+    ],
+    [
+     "LCX",
+     13
+    ],
+    [
+     "LCX",
+     14
+    ]
+   ],
+   "levels": [
+    {
+     "answer": 5,
+     "items": [
+      {
+       "label": "Sunflower",
+       "imgs": [
+        "sun",
+        "pink_flower"
+       ],
+       "img": "sun",
+       "say": "Sunflower!",
+       "say_line": [
+        "V53",
+        5
+       ]
+      },
+      {
+       "label": "Rainbow",
+       "imgs": [
+        "rain_cloud",
+        "ribbon_bow"
+       ],
+       "img": "rain_cloud",
+       "say": "Rainbow!",
+       "say_line": [
+        "V53",
+        6
+       ]
+      },
+      {
+       "label": "Starfish",
+       "imgs": [
+        "star",
+        "fish"
+       ],
+       "img": "star",
+       "say": "Starfish!",
+       "say_line": [
+        "V53",
+        7
+       ]
+      },
+      {
+       "label": "Butterfly",
+       "imgs": [
+        "butter",
+        "housefly"
+       ],
+       "img": "butter",
+       "say": "Butterfly!",
+       "say_line": [
+        "V53",
+        8
+       ]
+      },
+      {
+       "label": "Football",
+       "imgs": [
+        "foot",
+        "ball"
+       ],
+       "img": "foot",
+       "say": "Football!",
+       "say_line": [
+        "V53",
+        9
+       ]
+      },
+      {
+       "label": "Cupcake",
+       "imgs": [
+        "teacup",
+        "birthday_cake"
+       ],
+       "img": "teacup",
+       "say": "Cupcake!",
+       "say_line": [
+        "V53",
+        10
+       ]
+      },
+      {
+       "label": "Snowman",
+       "imgs": [
+        "snowflake",
+        "man"
+       ],
+       "img": "snowflake",
+       "say": "Snowman!",
+       "say_line": [
+        "V53",
+        11
+       ]
+      },
+      {
+       "label": "Toothbrush",
+       "imgs": [
+        "tooth",
+        "paintbrush"
+       ],
+       "img": "tooth",
+       "say": "Toothbrush!",
+       "say_line": [
+        "V53",
+        12
+       ]
+      },
+      {
+       "label": "Pancake",
+       "imgs": [
+        "frying_pan",
+        "birthday_cake"
+       ],
+       "img": "frying_pan",
+       "say": "Pancake!",
+       "say_line": [
+        "V53",
+        13
+       ]
+      },
+      {
+       "label": "Seahorse",
+       "imgs": [
+        "sea_waves",
+        "horse"
+       ],
+       "img": "sea_waves",
+       "say": "Seahorse!",
+       "say_line": [
+        "V53",
+        14
+       ]
+      },
+      {
+       "label": "Jellyfish",
+       "imgs": [
+        "jelly",
+        "fish"
+       ],
+       "img": "jelly",
+       "say": "Jellyfish!",
+       "say_line": [
+        "V53",
+        15
+       ]
+      },
+      {
+       "label": "Raincoat",
+       "imgs": [
+        "rain_cloud",
+        "winter_coat"
+       ],
+       "img": "rain_cloud",
+       "say": "Raincoat!",
+       "say_line": [
+        "V53",
+        16
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

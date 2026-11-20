@@ -1,0 +1,244 @@
+{
+ "idea": "08-shadow-match",
+ "id": "V39",
+ "level": 3,
+ "nLevels": 3,
+ "mode": "shadow",
+ "theme": {
+  "bg": "night",
+  "pals": [
+   [
+    "#4B3B8F",
+    "#140D33"
+   ],
+   [
+    "#2B3F8F",
+    "#0B1233"
+   ],
+   [
+    "#5B2B7F",
+    "#1A0B2E"
+   ],
+   [
+    "#1F5F6F",
+    "#071E24"
+   ],
+   [
+    "#3F2B6F",
+    "#120B26"
+   ]
+  ],
+  "trans": "iris",
+  "enter": "pop",
+  "fx": "stars",
+  "knob": "🔦",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "mystery"
+ },
+ "answer": 5,
+ "dur": 112.28,
+ "n": 10,
+ "t1": "Shadow",
+ "t2": "Match!",
+ "head": "Whose <span>shadow</span>?",
+ "chips": [
+  [
+   "?",
+   "Look closely"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Awesome!",
+  "Level 3 done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.9050624999999997,
+  "rules": 5.112895833333333,
+  "go": 7.966125
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.789,
+   "label": "Banana",
+   "pill": "Banana",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 6.669,
+    "name": 6.919
+   },
+   "dur": 9.269,
+   "img": "sil_fruit_banana",
+   "img2": "fruit_banana"
+  },
+  {
+   "k": 2,
+   "start": 19.058,
+   "label": "Apple",
+   "pill": "Apple",
+   "times": {
+    "tick0": 1.691,
+    "reveal": 6.691,
+    "name": 6.941
+   },
+   "dur": 9.291,
+   "img": "sil_fruit_apple",
+   "img2": "fruit_apple"
+  },
+  {
+   "k": 3,
+   "start": 28.349,
+   "label": "Pineapple",
+   "pill": "Pineapple",
+   "times": {
+    "tick0": 2.466,
+    "reveal": 7.466,
+    "name": 7.716
+   },
+   "dur": 10.066,
+   "img": "sil_fruit_pineapple",
+   "img2": "fruit_pineapple"
+  },
+  {
+   "k": 4,
+   "start": 38.415,
+   "label": "Grapes",
+   "pill": "Grapes",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 6.708,
+    "name": 6.958
+   },
+   "dur": 9.308,
+   "img": "sil_fruit_grapes",
+   "img2": "fruit_grapes"
+  },
+  {
+   "k": 5,
+   "start": 47.723,
+   "label": "Strawberry",
+   "pill": "Strawberry",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 6.596,
+    "name": 6.846
+   },
+   "dur": 9.196,
+   "img": "sil_fruit_strawberry",
+   "img2": "fruit_strawberry"
+  },
+  {
+   "k": 6,
+   "start": 56.92,
+   "label": "Pear",
+   "pill": "Pear",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 6.584,
+    "name": 6.834
+   },
+   "dur": 9.184,
+   "img": "sil_fruit_pear",
+   "img2": "fruit_pear"
+  },
+  {
+   "k": 7,
+   "start": 66.103,
+   "label": "Cherry",
+   "pill": "Cherry",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 6.53,
+    "name": 6.78
+   },
+   "dur": 9.13,
+   "img": "sil_fruit_cherry",
+   "img2": "fruit_cherry"
+  },
+  {
+   "k": 8,
+   "start": 75.233,
+   "label": "Mango",
+   "pill": "Mango",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 6.58,
+    "name": 6.83
+   },
+   "dur": 9.18,
+   "img": "sil_fruit_mango",
+   "img2": "fruit_mango"
+  },
+  {
+   "k": 9,
+   "start": 84.413,
+   "label": "Coconut",
+   "pill": "Coconut",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 6.709,
+    "name": 6.959
+   },
+   "dur": 9.309,
+   "img": "sil_fruit_coconut",
+   "img2": "fruit_coconut"
+  },
+  {
+   "k": 10,
+   "start": 93.722,
+   "label": "Lemon",
+   "pill": "Lemon",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 6.851,
+    "name": 7.101
+   },
+   "dur": 9.451,
+   "img": "sil_fruit_lemon",
+   "img2": "fruit_lemon"
+  }
+ ],
+ "outroStart": 103.173,
+ "outro": {
+  "done": 103.52256250000003,
+  "howmany": 105.4837291666667,
+  "next": 107.1718541666667,
+  "bye": 109.84758333333336
+ },
+ "paths": {
+  "sil_fruit_banana": "../images/sil/fruit_banana.jpg",
+  "fruit_banana": "../images/fruit_banana.jpg",
+  "sil_fruit_apple": "../images/sil/fruit_apple.jpg",
+  "fruit_apple": "../images/fruit_apple.jpg",
+  "sil_fruit_pineapple": "../images/sil/fruit_pineapple.jpg",
+  "fruit_pineapple": "../images/fruit_pineapple.jpg",
+  "sil_fruit_grapes": "../images/sil/fruit_grapes.jpg",
+  "fruit_grapes": "../images/fruit_grapes.jpg",
+  "sil_fruit_strawberry": "../images/sil/fruit_strawberry.jpg",
+  "fruit_strawberry": "../images/fruit_strawberry.jpg",
+  "sil_fruit_pear": "../images/sil/fruit_pear.jpg",
+  "fruit_pear": "../images/fruit_pear.jpg",
+  "sil_fruit_cherry": "../images/sil/fruit_cherry.jpg",
+  "fruit_cherry": "../images/fruit_cherry.jpg",
+  "sil_fruit_mango": "../images/sil/fruit_mango.jpg",
+  "fruit_mango": "../images/fruit_mango.jpg",
+  "sil_fruit_coconut": "../images/sil/fruit_coconut.jpg",
+  "fruit_coconut": "../images/fruit_coconut.jpg",
+  "sil_fruit_lemon": "../images/sil/fruit_lemon.jpg",
+  "fruit_lemon": "../images/fruit_lemon.jpg"
+ }
+}

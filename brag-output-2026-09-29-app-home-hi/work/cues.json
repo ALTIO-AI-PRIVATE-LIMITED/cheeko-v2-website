@@ -1,0 +1,31 @@
+{
+ "dur": 40.43,
+ "shots": [
+  [
+   0,
+   "phone"
+  ],
+  [
+   35.455,
+   "title"
+  ]
+ ],
+ "bubbles": [],
+ "flashes": [],
+ "cards": [],
+ "presses": [],
+ "screens": [
+  0,
+  13.543,
+  20.051,
+  22.689,
+  27.666,
+  29.371
+ ],
+ "stamps": [],
+ "letters": [],
+ "pops": [],
+ "mood": "calm",
+ "lastLine": 35.555,
+ "calm": []
+}

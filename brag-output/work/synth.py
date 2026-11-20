@@ -2,7 +2,7 @@
 import numpy as np, wave
 
 SR = 44100
-DUR = 22.0
+DUR = 34.58
 BEAT = 0.5
 N = int(SR * DUR)
 rng = np.random.default_rng(3)
@@ -51,50 +51,58 @@ def boing(f0=300, d=.45):
     t = ts(d); f = f0*(1 + .6*np.sin(2*np.pi*9*t)*np.exp(-t*4)) * (1 + t)
     return np.sin(2*np.pi*np.cumsum(f)/SR) * np.exp(-t*5) * np.minimum(1, t/.005)
 
+import json as _json
+_W = _json.load(open("warp.json")); _OLD = [min(0.0, _W["old"][0] - _W["new"][0])] + _W["old"]; _NEW = [0.0] + _W["new"]   # the intro starts before the old opening
+def W(t):  # old timeline -> the voice-anchored one
+    return float(np.interp(t, _OLD, _NEW)) if t <= _OLD[-1] else _NEW[-1] + (t - _OLD[-1])
+place_raw = place
+def place(buf, sig, t0, gain=1.0): place_raw(buf, sig, W(t0), gain)
+
 # D - A - Bm - G, one bar (2s) each
 CH = [[62,66,69],[57,61,64],[59,62,66],[55,59,62]]
 RT = [38, 33, 35, 31]
-bars = int(DUR // 2)
 
 mus = np.zeros(N); drm = np.zeros(N); sfx = np.zeros(N)
 END = 20.0   # final downbeat
 
+G0 = W(2.5)   # the groove's bar grid lands a downbeat on the first feature cut
+PRE = int(np.ceil(G0 / 2.0))   # soft pre-roll bars from 0 s (intro and hook), full groove from G0
+bars = int((W(END) - G0) // 2) + PRE + 1
 for b in range(bars):
-    t0 = b*2.0; ch = CH[b % 4]; r = RT[b % 4]
-    if t0 >= END:
+    t0 = G0 - 2.0*PRE + b*2.0; ch = CH[b % 4]; r = RT[b % 4]
+    if t0 >= W(END):
         break
-    full = t0 >= 2.0
-    # bouncy octave bass in 8ths
+    full = t0 >= G0 - .01
     for i in range(8):
         if not full and i % 2: continue
         m = r + (12 if i % 2 else 0)
-        place(mus, bassnote(hz(m)), t0 + i*BEAT/2, .55)
-    # marimba off-beat skank
+        place_raw(mus, bassnote(hz(m)), t0 + i*BEAT/2, .55)
     for i in range(4):
         for m in ch:
-            place(mus, marimba(hz(m+12)), t0 + i*BEAT + BEAT/2, .16)
-    # glockenspiel hook (a little tune, repeats every 2 bars)
+            place_raw(mus, marimba(hz(m+12)), t0 + i*BEAT + BEAT/2, .16)
     hook = [(0, 2), (.5, 1), (1.0, 0), (1.25, 1), (1.5, 2)] if b % 2 == 0 else [(0, 1), (.5, 2), (.75, 1), (1.0, 0), (1.5, 1)]
-    if full and not (14.5 <= t0 < 17):
+    if full and not (W(14.5) <= t0 < W(17)):
         for k, idx in hook:
-            place(mus, glock(hz(ch[idx]+24)), t0 + k, .16)
-    # drums
+            place_raw(mus, glock(hz(ch[idx]+24)), t0 + k, .16)
     if full:
         for i in range(4):
             bt = t0 + i*BEAT
-            if 14.5 <= bt < 15.5: continue     # breakdown under "No video. No feed. No ads."
-            place(drm, kick(), bt, .75)
-            if i % 2: place(drm, clap(), bt, .5)
-            place(drm, hat(), bt + BEAT/2, .22)
-            place(drm, hat(), bt + BEAT*.75, .08)
+            if W(14.5) <= bt < W(15.5): continue     # breakdown under "No video. No feed. No ads."
+            place_raw(drm, kick(), bt, .75)
+            if i % 2: place_raw(drm, clap(), bt, .5)
+            place_raw(drm, hat(), bt + BEAT/2, .22)
+            place_raw(drm, hat(), bt + BEAT*.75, .08)
 
 # final chord + sparkle
 for m in (50, 62, 66, 69, 74):
-    place(mus, glock(hz(m+12), 2.5), END, .14)
-place(mus, bassnote(hz(38), 1.5), END, .6)
-place(drm, kick(), END, .75)
-place(drm, clap(), END, .4)
+    place_raw(mus, glock(hz(m+12), 2.5), W(END), .14)
+place_raw(mus, bassnote(hz(38), 1.5), W(END), .6)
+place_raw(drm, kick(), W(END), .75)
+place_raw(drm, clap(), W(END), .4)
 
+# intro: "Let's see everything Cheeko does!" (Cheeko pops in, the headline pops)
+for i, m in enumerate((74, 78, 81, 86, 90)): place(sfx, glock(hz(m+12), .7), -1.85 + i*.06, .09)
+place(sfx, pop(hz(81)), -1.7, .2); place(sfx, pop(hz(86)), -1.25, .22)
 # hook intro: riser into the card landing on beat 1 (0.5s)
 place(sfx, whoosh(.5)*np.linspace(0,1,int(SR*.5)), 0, .5)
 t = ts(.4); land = np.sin(2*np.pi*np.cumsum(hz(50)*(1+.8*np.exp(-t*40)))/SR)*np.exp(-t*12)
@@ -140,12 +148,24 @@ def reverb(x, secs=1.2, mix=0.15):
     wet = np.fft.irfft(np.fft.rfft(x, F)*np.fft.rfft(ir, F), F)[:len(x)]
     return x*(1-mix) + wet*mix*3
 
-mix = reverb(mus, mix=.18) + drm*.9 + reverb(sfx, mix=.25)*.8
+music = reverb(mus, mix=.18) + drm*.9 + reverb(sfx, mix=.25)*.8
+music = music / np.abs(music).max() * .9
+with wave.open('vo/vo-tight.wav') as w:
+    vo = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(float) / 32768
+v = np.zeros(N); place_raw(v, vo, 0); v = v / np.abs(v).max() * .92
+env = (np.abs(v) > .02).astype(float)
+k = int(SR*.2); env = np.convolve(env, np.ones(k)/k, mode='same'); env = np.clip(env*3, 0, 1)
+k2 = int(SR*.1); env = np.convolve(env, np.ones(k2)/k2, mode='same')
 t = np.arange(N)/SR
-mix *= np.minimum(1, t/.02) * np.clip((DUR - t)/1.2, 0, 1)**1.3
-mix = np.tanh(mix/np.abs(mix).max()*1.4)*.85
-st = np.stack([mix, np.roll(mix, 14)*.98], axis=1)
-with wave.open('music-final.wav', 'wb') as w:
-    w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
-    w.writeframes((st*32767).astype(np.int16).tobytes())
-print('ok', len(mix)/SR)
+fade = np.minimum(1, t/.02) * np.clip((DUR - t)/1.2, 0, 1)**1.3
+music_d = music * (1 - .6*env) * .42
+mix = (music_d + v) * fade
+mix = np.tanh(mix/np.abs(mix).max()*1.3)*.9
+def write(path, x):
+    st = np.stack([x, np.roll(x, 14)*.98], axis=1)
+    with wave.open(path, 'wb') as w:
+        w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
+        w.writeframes((st*32767).astype(np.int16).tobytes())
+write('music-final.wav', mix)
+write('music-only.wav', np.tanh(music*.62*fade*1.3)*.9)   # for posting with the voice track muted / re-editing
+print('ok', DUR)

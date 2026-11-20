@@ -1,0 +1,183 @@
+{
+ "title": "Everyone Is Home / Sab Ghar Aaye",
+ "note": "Original lyrics written for Cheeko. Not based on any existing song. Hindi needs a native speaker check.",
+ "en": {
+  "styles": [
+   "gentle lullaby",
+   "soft warm female vocal, intimate",
+   "music box, harp and soft strings",
+   "slow rocking 3/4 waltz feel",
+   "about 64 bpm",
+   "very quiet and calm",
+   "simple melody with falling phrases",
+   "instruments prominent in the mix",
+   "vocals soft and blended into the music, not upfront",
+   "long instrumental passages"
+  ],
+  "negative": [
+   "drums",
+   "percussion",
+   "electric guitar",
+   "loud",
+   "auto-tune",
+   "belting",
+   "choir",
+   "fast singing"
+  ],
+  "sections": [
+   {
+    "name": "Intro",
+    "ms": 12000,
+    "lines": [
+     "{instrumental only, music box and harp play the melody softly, no vocals}"
+    ]
+   },
+   {
+    "name": "Refrain",
+    "ms": 20000,
+    "lines": [
+     "Little moon is shining,",
+     "little stars are near.",
+     "Everyone is home now,",
+     "everyone is here."
+    ]
+   },
+   {
+    "name": "Verse 1",
+    "ms": 20000,
+    "lines": [
+     "The bird is in her nest,",
+     "the calf is by the cow,",
+     "the fish is in the pond,",
+     "and you are sleepy now."
+    ]
+   },
+   {
+    "name": "Interlude",
+    "ms": 16000,
+    "lines": [
+     "{instrumental only, music box and harp play the refrain melody, no vocals}"
+    ]
+   },
+   {
+    "name": "Verse 2",
+    "ms": 20000,
+    "lines": [
+     "The bee is in the hive,",
+     "the lamb is with the sheep,",
+     "the moon is in the sky,",
+     "and you are fast asleep."
+    ]
+   },
+   {
+    "name": "Refrain",
+    "ms": 20000,
+    "lines": [
+     "Little moon is shining,",
+     "little stars are near.",
+     "Everyone is home now,",
+     "everyone is here."
+    ]
+   },
+   {
+    "name": "Outro",
+    "ms": 18000,
+    "lines": [
+     "{instruments carry the melody, very soft humming, slowing down and fading out}",
+     "Mmm."
+    ]
+   }
+  ]
+ },
+ "hi": {
+  "styles": [
+   "gentle Indian lori lullaby",
+   "soft warm Indian female vocal singing in Hindi",
+   "short sung phrases with long held notes and pauses",
+   "harp, music box and soft bansuri with a tanpura drone",
+   "slow rocking 6/8 feel",
+   "about 64 bpm",
+   "very quiet and calm",
+   "instruments prominent in the mix",
+   "vocals soft and blended into the music, not upfront",
+   "long instrumental passages"
+  ],
+  "negative": [
+   "drums",
+   "tabla",
+   "percussion",
+   "electric guitar",
+   "loud",
+   "auto-tune",
+   "belting",
+   "Bollywood film orchestra",
+   "choir",
+   "fast singing",
+   "long wordy lines"
+  ],
+  "sections": [
+   {
+    "name": "Intro",
+    "ms": 12000,
+    "lines": [
+     "{instrumental only, bansuri, harp and music box play the melody softly, no vocals}"
+    ]
+   },
+   {
+    "name": "Refrain",
+    "ms": 20000,
+    "lines": [
+     "सब घर आए,",
+     "चाँद मुस्काए,",
+     "तारे पास,",
+     "आ आ आ।"
+    ]
+   },
+   {
+    "name": "Verse 1",
+    "ms": 20000,
+    "lines": [
+     "चिड़िया घोंसले में,",
+     "बछड़ा माँ के पास,",
+     "मछली ताल में,",
+     "तू मेरे पास।"
+    ]
+   },
+   {
+    "name": "Interlude",
+    "ms": 16000,
+    "lines": [
+     "{instrumental only, bansuri, harp and music box play the refrain melody, no vocals}"
+    ]
+   },
+   {
+    "name": "Verse 2",
+    "ms": 20000,
+    "lines": [
+     "मधुमक्खी छत्ते में,",
+     "मेमना भेड़ के पास,",
+     "चाँद आसमान में,",
+     "नींद तेरे पास।"
+    ]
+   },
+   {
+    "name": "Refrain",
+    "ms": 20000,
+    "lines": [
+     "सब घर आए,",
+     "चाँद मुस्काए,",
+     "तारे पास,",
+     "आ आ आ।"
+    ]
+   },
+   {
+    "name": "Outro",
+    "ms": 18000,
+    "lines": [
+     "{instruments carry the melody, very soft humming, slowing down and fading out}",
+     "Mmm."
+    ]
+   }
+  ]
+ }
+}

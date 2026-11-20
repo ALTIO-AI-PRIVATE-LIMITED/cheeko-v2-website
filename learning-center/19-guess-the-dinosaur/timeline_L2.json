@@ -1,0 +1,224 @@
+{
+ "idea": "19-guess-the-dinosaur",
+ "id": "V50",
+ "level": 2,
+ "nLevels": 2,
+ "mode": "picture",
+ "theme": {
+  "bg": "jungle",
+  "pals": [
+   [
+    "#8CE99A",
+    "#1E6B34"
+   ],
+   [
+    "#FFC078",
+    "#B85410"
+   ],
+   [
+    "#66D9E8",
+    "#0B6E7A"
+   ],
+   [
+    "#C0EB75",
+    "#4F7A12"
+   ],
+   [
+    "#FFA8A8",
+    "#9E2A2A"
+   ]
+  ],
+  "trans": "wave",
+  "enter": "drop",
+  "fx": "dots",
+  "knob": "🦖",
+  "bar": [
+   "#C0EB75",
+   "#94D82D"
+  ],
+  "music": "jungle"
+ },
+ "answer": 5,
+ "dur": 113.04,
+ "n": 10,
+ "t1": "Guess the",
+ "t2": "Dinosaur!",
+ "head": "Guess the <span>dinosaur</span>!",
+ "chips": [
+  [
+   "?",
+   "Look closely"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Awesome!",
+  "Level 2 done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.8806458333333333,
+  "rules": 5.143041666666666,
+  "go": 7.8511041666666666
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.674,
+   "label": "Pachycephalosaurus",
+   "pill": "Pachycephalosaurus",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 6.669,
+    "name": 6.919
+   },
+   "dur": 9.269,
+   "img": "dino_pachycephalosaurus"
+  },
+  {
+   "k": 2,
+   "start": 18.943,
+   "label": "Allosaurus",
+   "pill": "Allosaurus",
+   "times": {
+    "tick0": 1.992,
+    "reveal": 6.992,
+    "name": 7.242
+   },
+   "dur": 9.592,
+   "img": "dino_allosaurus"
+  },
+  {
+   "k": 3,
+   "start": 28.535,
+   "label": "Dilophosaurus",
+   "pill": "Dilophosaurus",
+   "times": {
+    "tick0": 2.074,
+    "reveal": 7.074,
+    "name": 7.324
+   },
+   "dur": 9.674,
+   "img": "dino_dilophosaurus"
+  },
+  {
+   "k": 4,
+   "start": 38.209,
+   "label": "Carnotaurus",
+   "pill": "Carnotaurus",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 6.708,
+    "name": 6.958
+   },
+   "dur": 9.308,
+   "img": "dino_carnotaurus"
+  },
+  {
+   "k": 5,
+   "start": 47.517,
+   "label": "Therizinosaurus",
+   "pill": "Therizinosaurus",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 6.596,
+    "name": 6.846
+   },
+   "dur": 9.196,
+   "img": "dino_therizinosaurus"
+  },
+  {
+   "k": 6,
+   "start": 56.713,
+   "label": "Gallimimus",
+   "pill": "Gallimimus",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 6.584,
+    "name": 6.834
+   },
+   "dur": 9.184,
+   "img": "dino_gallimimus"
+  },
+  {
+   "k": 7,
+   "start": 65.897,
+   "label": "Baryonyx",
+   "pill": "Baryonyx",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 6.53,
+    "name": 6.78
+   },
+   "dur": 9.13,
+   "img": "dino_baryonyx"
+  },
+  {
+   "k": 8,
+   "start": 75.027,
+   "label": "Oviraptor",
+   "pill": "Oviraptor",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 6.58,
+    "name": 6.83
+   },
+   "dur": 9.18,
+   "img": "dino_oviraptor"
+  },
+  {
+   "k": 9,
+   "start": 84.207,
+   "label": "Argentinosaurus",
+   "pill": "Argentinosaurus",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 6.709,
+    "name": 6.959
+   },
+   "dur": 9.309,
+   "img": "dino_argentinosaurus"
+  },
+  {
+   "k": 10,
+   "start": 93.516,
+   "label": "Maiasaura",
+   "pill": "Maiasaura",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 6.851,
+    "name": 7.101
+   },
+   "dur": 9.451,
+   "img": "dino_maiasaura"
+  }
+ ],
+ "outroStart": 102.966,
+ "outro": {
+  "done": 103.31631250000004,
+  "howmany": 106.24400000000003,
+  "next": 107.93212500000003,
+  "bye": 110.60785416666668
+ },
+ "paths": {
+  "dino_pachycephalosaurus": "../images/dino_pachycephalosaurus.jpg",
+  "dino_allosaurus": "../images/dino_allosaurus.jpg",
+  "dino_dilophosaurus": "../images/dino_dilophosaurus.jpg",
+  "dino_carnotaurus": "../images/dino_carnotaurus.jpg",
+  "dino_therizinosaurus": "../images/dino_therizinosaurus.jpg",
+  "dino_gallimimus": "../images/dino_gallimimus.jpg",
+  "dino_baryonyx": "../images/dino_baryonyx.jpg",
+  "dino_oviraptor": "../images/dino_oviraptor.jpg",
+  "dino_argentinosaurus": "../images/dino_argentinosaurus.jpg",
+  "dino_maiasaura": "../images/dino_maiasaura.jpg"
+ }
+}

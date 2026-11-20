@@ -1,0 +1,224 @@
+{
+ "idea": "20-famous-places-of-india",
+ "id": "V51",
+ "level": 1,
+ "nLevels": 2,
+ "mode": "picture",
+ "theme": {
+  "bg": "postcard",
+  "pals": [
+   [
+    "#FFC078",
+    "#E8590C"
+   ],
+   [
+    "#FFD8A8",
+    "#D9480F"
+   ],
+   [
+    "#FCC2D7",
+    "#C2255C"
+   ],
+   [
+    "#A5D8FF",
+    "#1971C2"
+   ],
+   [
+    "#B2F2BB",
+    "#2B8A3E"
+   ]
+  ],
+  "trans": "curtain",
+  "enter": "slide",
+  "fx": "confetti",
+  "knob": "🗺️",
+  "bar": [
+   "#FFA94D",
+   "#FD7E14"
+  ],
+  "music": "travel"
+ },
+ "answer": 4,
+ "dur": 102.23,
+ "n": 10,
+ "t1": "Famous Places",
+ "t2": "of India!",
+ "head": "Where is <span>this</span>?",
+ "chips": [
+  [
+   "?",
+   "Look closely"
+  ],
+  [
+   "4",
+   "4 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Awesome!",
+  "Level 1 done!",
+  "Play Level 2!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 4.406375,
+  "rules": 5.784645833333332,
+  "go": 8.758395833333333
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 10.582,
+   "label": "Taj Mahal",
+   "pill": "Taj Mahal",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 5.669,
+    "name": 5.919
+   },
+   "dur": 8.36,
+   "img": "taj_mahal"
+  },
+  {
+   "k": 2,
+   "start": 18.941,
+   "label": "India Gate",
+   "pill": "India Gate",
+   "times": {
+    "tick0": 1.895,
+    "reveal": 5.895,
+    "name": 6.145
+   },
+   "dur": 8.495,
+   "img": "place_india_gate"
+  },
+  {
+   "k": 3,
+   "start": 27.436,
+   "label": "Qutub Minar",
+   "pill": "Qutub Minar",
+   "times": {
+    "tick0": 2.043,
+    "reveal": 6.043,
+    "name": 6.293
+   },
+   "dur": 8.643,
+   "img": "place_qutub_minar"
+  },
+  {
+   "k": 4,
+   "start": 36.08,
+   "label": "Gateway of India",
+   "pill": "Gateway of India",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 5.708,
+    "name": 5.958
+   },
+   "dur": 8.308,
+   "img": "place_gateway_of_india"
+  },
+  {
+   "k": 5,
+   "start": 44.388,
+   "label": "Red Fort",
+   "pill": "Red Fort",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 5.596,
+    "name": 5.846
+   },
+   "dur": 8.196,
+   "img": "place_red_fort"
+  },
+  {
+   "k": 6,
+   "start": 52.584,
+   "label": "Hawa Mahal",
+   "pill": "Hawa Mahal",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 5.584,
+    "name": 5.834
+   },
+   "dur": 8.184,
+   "img": "place_hawa_mahal"
+  },
+  {
+   "k": 7,
+   "start": 60.768,
+   "label": "Mysore Palace",
+   "pill": "Mysore Palace",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 5.53,
+    "name": 5.78
+   },
+   "dur": 8.13,
+   "img": "place_mysore_palace"
+  },
+  {
+   "k": 8,
+   "start": 68.898,
+   "label": "Victoria Memorial",
+   "pill": "Victoria Memorial",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 5.58,
+    "name": 5.83
+   },
+   "dur": 8.18,
+   "img": "place_victoria_memorial"
+  },
+  {
+   "k": 9,
+   "start": 77.078,
+   "label": "Lotus Temple",
+   "pill": "Lotus Temple",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 5.709,
+    "name": 5.959
+   },
+   "dur": 8.309,
+   "img": "place_lotus_temple"
+  },
+  {
+   "k": 10,
+   "start": 85.387,
+   "label": "Golden Temple",
+   "pill": "Golden Temple",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 5.851,
+    "name": 6.101
+   },
+   "dur": 8.451,
+   "img": "place_golden_temple"
+  }
+ ],
+ "outroStart": 93.837,
+ "outro": {
+  "done": 94.18731250000002,
+  "howmany": 96.47652083333335,
+  "next": 98.16464583333335,
+  "bye": 99.79918750000002
+ },
+ "paths": {
+  "taj_mahal": "../images/taj_mahal.jpg",
+  "place_india_gate": "../images/place_india_gate.jpg",
+  "place_qutub_minar": "../images/place_qutub_minar.jpg",
+  "place_gateway_of_india": "../images/place_gateway_of_india.jpg",
+  "place_red_fort": "../images/place_red_fort.jpg",
+  "place_hawa_mahal": "../images/place_hawa_mahal.jpg",
+  "place_mysore_palace": "../images/place_mysore_palace.jpg",
+  "place_victoria_memorial": "../images/place_victoria_memorial.jpg",
+  "place_lotus_temple": "../images/place_lotus_temple.jpg",
+  "place_golden_temple": "../images/place_golden_temple.jpg"
+ }
+}

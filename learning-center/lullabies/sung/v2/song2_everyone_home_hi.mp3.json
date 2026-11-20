@@ -1,0 +1,202 @@
+{
+ "model": "music_v2_5",
+ "lang": "hi",
+ "secs": 19.2,
+ "headers": {
+  "song-id": "gpSdG5ctGYldHZMvSrbR",
+  "x-trace-id": "ea79d089e8dc79eaca4955bb94a8758d",
+  "x-region": "us-central1"
+ },
+ "plan": {
+  "model_id": "music_v2_5",
+  "composition_plan": {
+   "chunks": [
+    {
+     "text": "[Intro]\n{instrumental only, bansuri, harp and music box play the melody softly, no vocals}",
+     "duration_ms": 12000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi",
+      "short sung phrases with long held notes and pauses",
+      "harp, music box and soft bansuri with a tanpura drone",
+      "slow rocking 6/8 feel",
+      "about 64 bpm",
+      "very quiet and calm",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir",
+      "fast singing",
+      "long wordy lines"
+     ]
+    },
+    {
+     "text": "[Refrain]\nसब घर आए,\nचाँद मुस्काए,\nतारे पास,\nआ आ आ।",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi",
+      "short sung phrases with long held notes and pauses",
+      "harp, music box and soft bansuri with a tanpura drone",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir",
+      "fast singing",
+      "long wordy lines"
+     ]
+    },
+    {
+     "text": "[Verse 1]\nचिड़िया घोंसले में,\nबछड़ा माँ के पास,\nमछली ताल में,\nतू मेरे पास।",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi",
+      "short sung phrases with long held notes and pauses",
+      "harp, music box and soft bansuri with a tanpura drone",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir",
+      "fast singing",
+      "long wordy lines"
+     ]
+    },
+    {
+     "text": "[Interlude]\n{instrumental only, bansuri, harp and music box play the refrain melody, no vocals}",
+     "duration_ms": 16000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi",
+      "short sung phrases with long held notes and pauses",
+      "harp, music box and soft bansuri with a tanpura drone",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir",
+      "fast singing",
+      "long wordy lines"
+     ]
+    },
+    {
+     "text": "[Verse 2]\nमधुमक्खी छत्ते में,\nमेमना भेड़ के पास,\nचाँद आसमान में,\nनींद तेरे पास।",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi",
+      "short sung phrases with long held notes and pauses",
+      "harp, music box and soft bansuri with a tanpura drone",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir",
+      "fast singing",
+      "long wordy lines"
+     ]
+    },
+    {
+     "text": "[Refrain]\nसब घर आए,\nचाँद मुस्काए,\nतारे पास,\nआ आ आ।",
+     "duration_ms": 20000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi",
+      "short sung phrases with long held notes and pauses",
+      "harp, music box and soft bansuri with a tanpura drone",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir",
+      "fast singing",
+      "long wordy lines"
+     ]
+    },
+    {
+     "text": "[Outro]\n{instruments carry the melody, very soft humming, slowing down and fading out}\nMmm.",
+     "duration_ms": 18000,
+     "positive_styles": [
+      "gentle Indian lori lullaby",
+      "soft warm Indian female vocal singing in Hindi",
+      "short sung phrases with long held notes and pauses",
+      "harp, music box and soft bansuri with a tanpura drone",
+      "instruments prominent in the mix",
+      "vocals soft and blended into the music, not upfront",
+      "long instrumental passages"
+     ],
+     "negative_styles": [
+      "drums",
+      "tabla",
+      "percussion",
+      "electric guitar",
+      "loud",
+      "auto-tune",
+      "belting",
+      "Bollywood film orchestra",
+      "choir",
+      "fast singing",
+      "long wordy lines"
+     ]
+    }
+   ]
+  }
+ }
+}

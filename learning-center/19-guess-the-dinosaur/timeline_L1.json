@@ -1,0 +1,224 @@
+{
+ "idea": "19-guess-the-dinosaur",
+ "id": "V50",
+ "level": 1,
+ "nLevels": 2,
+ "mode": "picture",
+ "theme": {
+  "bg": "jungle",
+  "pals": [
+   [
+    "#8CE99A",
+    "#1E6B34"
+   ],
+   [
+    "#FFC078",
+    "#B85410"
+   ],
+   [
+    "#66D9E8",
+    "#0B6E7A"
+   ],
+   [
+    "#C0EB75",
+    "#4F7A12"
+   ],
+   [
+    "#FFA8A8",
+    "#9E2A2A"
+   ]
+  ],
+  "trans": "wave",
+  "enter": "drop",
+  "fx": "dots",
+  "knob": "🦖",
+  "bar": [
+   "#C0EB75",
+   "#94D82D"
+  ],
+  "music": "jungle"
+ },
+ "answer": 4,
+ "dur": 102.11,
+ "n": 10,
+ "t1": "Guess the",
+ "t2": "Dinosaur!",
+ "head": "Guess the <span>dinosaur</span>!",
+ "chips": [
+  [
+   "?",
+   "Look closely"
+  ],
+  [
+   "4",
+   "4 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Great job!",
+  "Level 1 done!",
+  "Play Level 2!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.8806458333333333,
+  "rules": 5.258916666666666,
+  "go": 7.9669791666666665
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.79,
+   "label": "T. rex",
+   "pill": "T. rex",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 5.669,
+    "name": 5.919
+   },
+   "dur": 8.269,
+   "img": "t_rex"
+  },
+  {
+   "k": 2,
+   "start": 18.059,
+   "label": "Triceratops",
+   "pill": "Triceratops",
+   "times": {
+    "tick0": 1.992,
+    "reveal": 5.992,
+    "name": 6.242
+   },
+   "dur": 8.592,
+   "img": "dino_triceratops"
+  },
+  {
+   "k": 3,
+   "start": 26.651,
+   "label": "Stegosaurus",
+   "pill": "Stegosaurus",
+   "times": {
+    "tick0": 2.074,
+    "reveal": 6.074,
+    "name": 6.324
+   },
+   "dur": 8.674,
+   "img": "dino_stegosaurus"
+  },
+  {
+   "k": 4,
+   "start": 35.325,
+   "label": "Brachiosaurus",
+   "pill": "Brachiosaurus",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 5.708,
+    "name": 5.958
+   },
+   "dur": 8.308,
+   "img": "dino_brachiosaurus"
+  },
+  {
+   "k": 5,
+   "start": 43.633,
+   "label": "Velociraptor",
+   "pill": "Velociraptor",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 5.596,
+    "name": 5.846
+   },
+   "dur": 8.196,
+   "img": "dino_velociraptor"
+  },
+  {
+   "k": 6,
+   "start": 51.829,
+   "label": "Ankylosaurus",
+   "pill": "Ankylosaurus",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 5.584,
+    "name": 5.834
+   },
+   "dur": 8.184,
+   "img": "dino_ankylosaurus"
+  },
+  {
+   "k": 7,
+   "start": 60.013,
+   "label": "Spinosaurus",
+   "pill": "Spinosaurus",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 5.53,
+    "name": 5.78
+   },
+   "dur": 8.13,
+   "img": "dino_spinosaurus"
+  },
+  {
+   "k": 8,
+   "start": 68.143,
+   "label": "Diplodocus",
+   "pill": "Diplodocus",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 5.58,
+    "name": 5.83
+   },
+   "dur": 8.18,
+   "img": "dino_diplodocus"
+  },
+  {
+   "k": 9,
+   "start": 76.323,
+   "label": "Parasaurolophus",
+   "pill": "Parasaurolophus",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 5.709,
+    "name": 5.959
+   },
+   "dur": 8.309,
+   "img": "dino_parasaurolophus"
+  },
+  {
+   "k": 10,
+   "start": 84.632,
+   "label": "Iguanodon",
+   "pill": "Iguanodon",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 5.851,
+    "name": 6.101
+   },
+   "dur": 8.451,
+   "img": "dino_iguanodon"
+  }
+ ],
+ "outroStart": 93.082,
+ "outro": {
+  "done": 93.43218750000003,
+  "howmany": 96.35987500000002,
+  "next": 98.04800000000002,
+  "bye": 99.68254166666668
+ },
+ "paths": {
+  "t_rex": "../images/t_rex.jpg",
+  "dino_triceratops": "../images/dino_triceratops.jpg",
+  "dino_stegosaurus": "../images/dino_stegosaurus.jpg",
+  "dino_brachiosaurus": "../images/dino_brachiosaurus.jpg",
+  "dino_velociraptor": "../images/dino_velociraptor.jpg",
+  "dino_ankylosaurus": "../images/dino_ankylosaurus.jpg",
+  "dino_spinosaurus": "../images/dino_spinosaurus.jpg",
+  "dino_diplodocus": "../images/dino_diplodocus.jpg",
+  "dino_parasaurolophus": "../images/dino_parasaurolophus.jpg",
+  "dino_iguanodon": "../images/dino_iguanodon.jpg"
+ }
+}

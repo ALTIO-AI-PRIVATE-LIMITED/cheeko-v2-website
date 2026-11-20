@@ -1,0 +1,179 @@
+{
+ "level": 2,
+ "answer": 4,
+ "dur": 120.43,
+ "round": 10.0,
+ "n": 10,
+ "intro": {
+  "hi": 0.45,
+  "title": 2.6732291666666668,
+  "level": 4.875729166666667,
+  "rules": 6.0326458333333335,
+  "go": 9.757791666666668
+ },
+ "rounds": [
+  {
+   "n": 11,
+   "k": 1,
+   "label": "Fire engine",
+   "start": 11.838,
+   "prompt": 8,
+   "promptEnd": 1.512,
+   "nameEnd": 6.945,
+   "img": "assets/vehicles/11_fire_engine.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 12,
+   "k": 2,
+   "label": "Ambulance",
+   "start": 21.838,
+   "prompt": 9,
+   "promptEnd": 1.542,
+   "nameEnd": 6.928,
+   "img": "assets/vehicles/12_ambulance.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 13,
+   "k": 3,
+   "label": "Police car",
+   "start": 31.838,
+   "prompt": 10,
+   "promptEnd": 1.467,
+   "nameEnd": 6.902,
+   "img": "assets/vehicles/13_police_car.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 14,
+   "k": 4,
+   "label": "Helicopter",
+   "start": 41.838,
+   "prompt": 11,
+   "promptEnd": 1.389,
+   "nameEnd": 6.881,
+   "img": "assets/vehicles/14_helicopter.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 15,
+   "k": 5,
+   "label": "Ship",
+   "start": 51.838,
+   "prompt": 12,
+   "promptEnd": 1.102,
+   "nameEnd": 6.633,
+   "img": "assets/vehicles/15_ship.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 16,
+   "k": 6,
+   "label": "Tractor",
+   "start": 61.838,
+   "prompt": 13,
+   "promptEnd": 1.21,
+   "nameEnd": 7.059,
+   "img": "assets/vehicles/16_tractor.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 17,
+   "k": 7,
+   "label": "School bus",
+   "start": 71.838,
+   "prompt": 14,
+   "promptEnd": 1.607,
+   "nameEnd": 6.836,
+   "img": "assets/vehicles/17_school_bus.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 18,
+   "k": 8,
+   "label": "Cycle rickshaw",
+   "start": 81.838,
+   "prompt": 15,
+   "promptEnd": 1.422,
+   "nameEnd": 7.107,
+   "img": "assets/vehicles/18_cycle_rickshaw.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 19,
+   "k": 9,
+   "label": "Garbage truck",
+   "start": 91.838,
+   "prompt": 16,
+   "promptEnd": 1.275,
+   "nameEnd": 7.003,
+   "img": "assets/vehicles/19_garbage_truck.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  },
+  {
+   "n": 20,
+   "k": 10,
+   "label": "Hot air balloon",
+   "start": 101.838,
+   "prompt": 17,
+   "promptEnd": 1.557,
+   "nameEnd": 7.13,
+   "img": "assets/vehicles/20_hot_air_balloon.jpg",
+   "crop": [
+    0.5,
+    0.52,
+    1.0
+   ]
+  }
+ ],
+ "outroStart": 111.838,
+ "outro": {
+  "done": 112.188375,
+  "howmany": 114.6010625,
+  "next": 116.31293749999999,
+  "bye": 117.90577083333332
+ },
+ "times": {
+  "prompt": 0.4,
+  "tick0": 1.9,
+  "reveal": 5.9,
+  "name": 6.15
+ }
+}

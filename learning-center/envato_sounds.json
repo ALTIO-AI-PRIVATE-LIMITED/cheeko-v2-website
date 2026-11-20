@@ -1,0 +1,1047 @@
+[
+  {
+    "key": "dog",
+    "sound": "dog barking",
+    "status": "ok",
+    "best": {
+      "title": "Dog Barks Close and Distant",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/dog-barks-close-and-distant-XGUV9BY",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Dog Bark",
+      "author": "GameChestAudio",
+      "item_url": "https://elements.envato.com/dog-bark-J9EV6KH",
+      "type": "sfx"
+    },
+    "note": "Classic medium-dog woof; cut one close bark pair."
+  },
+  {
+    "key": "cat",
+    "sound": "cat meowing",
+    "status": "ok",
+    "best": {
+      "title": "Cat Meows",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/cat-meows-2JWNMUP",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Cat Meowing",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/cat-meowing-TSQMDV8",
+      "type": "sfx"
+    },
+    "note": "Clean domestic meows."
+  },
+  {
+    "key": "cow",
+    "sound": "cow mooing",
+    "status": "ok",
+    "best": {
+      "title": "Cow Moo",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/cow-moo-T2UEALR",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Cow Moo",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/cow-moo-DASWG4N",
+      "type": "sfx"
+    },
+    "note": "Single moo, easy 2 s cut."
+  },
+  {
+    "key": "duck",
+    "sound": "duck quacking",
+    "status": "ok",
+    "best": {
+      "title": "Duck Quack",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/duck-quack-7HS2REN",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Duck Quacks",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/duck-quacks-ZEPT4G2",
+      "type": "sfx"
+    },
+    "note": "Real duck (avoid the rubber/cartoon quacks in results)."
+  },
+  {
+    "key": "sheep",
+    "sound": "sheep baaing",
+    "status": "ok",
+    "best": {
+      "title": "Sheep Baa",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/sheep-baa-S5Q6BFU",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Baaing Sheep",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/baaing-sheep-4JP7LWA",
+      "type": "sfx"
+    },
+    "note": "Single baa."
+  },
+  {
+    "key": "horse",
+    "sound": "horse neighing",
+    "status": "ok",
+    "best": {
+      "title": "Horse Neigh",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/horse-neigh-PN2TM9R",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Horse Neigh",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/horse-neigh-HU73USF",
+      "type": "sfx"
+    },
+    "note": "Classic whinny."
+  },
+  {
+    "key": "pig",
+    "sound": "pig oinking",
+    "status": "ok",
+    "best": {
+      "title": "Pig Oink 2783",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/pig-oink-2783-QBLNE5B",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Little Pig Oink",
+      "author": "FxProSound",
+      "item_url": "https://elements.envato.com/little-pig-oink-TJH5M68",
+      "type": "sfx"
+    },
+    "note": "Real pig grunts/oinks; pick the clearest oink."
+  },
+  {
+    "key": "rooster",
+    "sound": "rooster crowing",
+    "status": "ok",
+    "best": {
+      "title": "Rooster Crow",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/rooster-crow-FH78J4P",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Rooster Cock Crows",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/rooster-cock-crows-83SZ4C9",
+      "type": "sfx"
+    },
+    "note": "Full cock-a-doodle-doo, about 2-3 s."
+  },
+  {
+    "key": "goat",
+    "sound": "goat bleating",
+    "status": "ok",
+    "best": {
+      "title": "Goat Bleating",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/goat-bleating-W8BFQX6",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Goat Bleats",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/goat-bleats-4YF6XV3",
+      "type": "sfx"
+    },
+    "note": "Pick a 'meh-eh' bleat that differs from the sheep clip."
+  },
+  {
+    "key": "donkey",
+    "sound": "donkey braying",
+    "status": "ok",
+    "best": {
+      "title": "Donkey Bray",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/donkey-bray-VRQKJHZ",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "ANIMAL DONKEY Bray Classic 01",
+      "author": "SmartSoundFX",
+      "item_url": "https://elements.envato.com/animal-donkey-bray-classic-01-SQX2237",
+      "type": "sfx"
+    },
+    "note": "Hee-haw bray; may need trimming to 3 s."
+  },
+  {
+    "key": "lion",
+    "sound": "lion roaring",
+    "status": "ok",
+    "best": {
+      "title": "Lion Roar Single",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/lion-roar-single-QFLNG6R",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Lion Roar CU 1",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/lion-roar-cu-1-AFSY56M",
+      "type": "sfx"
+    },
+    "note": "Single close roar."
+  },
+  {
+    "key": "elephant",
+    "sound": "elephant trumpeting",
+    "status": "ok",
+    "best": {
+      "title": "Elephant Classic Trumpet",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/elephant-classic-trumpet-T56K4CH",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Elephant Trumpet",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/elephant-trumpet-TN3RUXV",
+      "type": "sfx"
+    },
+    "note": "Real elephant call (not the cartoon one)."
+  },
+  {
+    "key": "monkey",
+    "sound": "monkey chattering",
+    "status": "ok",
+    "best": {
+      "title": "Chattering Monkey",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/chattering-monkey-CA2NDKF",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Monkey Capuchin Chatter",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/monkey-capuchin-chatter-TEWJ2YA",
+      "type": "sfx"
+    },
+    "note": "Single monkey chatter; avoid jungle-ambience versions."
+  },
+  {
+    "key": "frog",
+    "sound": "frog croaking",
+    "status": "ok",
+    "best": {
+      "title": "Frog Croaks",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/frog-croaks-2KMR9EN",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Single Frog Croak",
+      "author": "FxProSound",
+      "item_url": "https://elements.envato.com/single-frog-croak-DUNJ79W",
+      "type": "sfx"
+    },
+    "note": "Monsoon-style croak; audition for a clear 'ribbit/croak'."
+  },
+  {
+    "key": "tiger",
+    "sound": "tiger growling",
+    "status": "ok",
+    "best": {
+      "title": "Tiger Growl Classic",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/tiger-growl-classic-NJQ87AB",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Tiger Growl",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/tiger-growl-XZPAWT3",
+      "type": "sfx"
+    },
+    "note": "Growl can resemble lion/bear; keep these in different quiz rounds."
+  },
+  {
+    "key": "bear",
+    "sound": "bear growling",
+    "status": "ok",
+    "best": {
+      "title": "Large Bear Growls",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/large-bear-growls-WM79TGQ",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Bear Growl",
+      "author": "Diplodo",
+      "item_url": "https://elements.envato.com/bear-growl-344L3L9",
+      "type": "sfx"
+    },
+    "note": "Real bear growl; inherently close to tiger, don't pair them as options."
+  },
+  {
+    "key": "wolf",
+    "sound": "wolf howling",
+    "status": "ok",
+    "best": {
+      "title": "Wolf Howl",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/wolf-howl-TYVCZQG",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Wolf Howls",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/wolf-howls-9YA7JU3",
+      "type": "sfx"
+    },
+    "note": "Single howl; skip 'Creepy/Halloween' variants."
+  },
+  {
+    "key": "owl",
+    "sound": "owl hooting",
+    "status": "ok",
+    "best": {
+      "title": "Owl Hoot 1",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/owl-hoot-1-D7VU4JS",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Owl Hooting",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/owl-hooting-CRLJUK4",
+      "type": "sfx"
+    },
+    "note": "Clean hoo-hoo."
+  },
+  {
+    "key": "snake",
+    "sound": "snake hissing",
+    "status": "ok",
+    "best": {
+      "title": "Snake Hiss",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/snake-hiss-JYFHR5V",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Snake Hiss",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/snake-hiss-JNDQWG7",
+      "type": "sfx"
+    },
+    "note": "Real hiss (avoid rattle/monster versions)."
+  },
+  {
+    "key": "bee",
+    "sound": "bee buzzing",
+    "status": "ok",
+    "best": {
+      "title": "Bee Buzz",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/bee-buzz-SXCHA3D",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Bee Buzzing Near",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/bee-buzzing-near-GAHE8CQ",
+      "type": "sfx"
+    },
+    "note": "Close single-bee buzz."
+  },
+  {
+    "key": "house_doorbell",
+    "sound": "ding-dong doorbell",
+    "status": "ok",
+    "best": {
+      "title": "Household Doorbell Ding Dong",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/household-doorbell-ding-dong-2RFMH32",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Doorbell Ding Dong",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/doorbell-ding-dong-5XU8WEQ",
+      "type": "sfx"
+    },
+    "note": "Classic two-tone chime."
+  },
+  {
+    "key": "pressure_cooker",
+    "sound": "Indian pressure cooker whistle",
+    "status": "missing",
+    "best": null,
+    "backup": null,
+    "note": "No cooker whistle on Envato (searched pressure cooker / cooker whistle / steam whistle / steam valve); record one at home. Closest stand-in, Sound-Ideas 'Steam Release Valve Heavy Pressure', sounds industrial."
+  },
+  {
+    "key": "house_mixer",
+    "sound": "kitchen mixer grinder / blender",
+    "status": "ok",
+    "best": {
+      "title": "Blender",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/blender-URH8S9K",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Electric Blender",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/electric-blender-WCX632K",
+      "type": "sfx"
+    },
+    "note": "Blender motor whine stands in for a mixie; a home mixie recording would be even more familiar."
+  },
+  {
+    "key": "house_tap",
+    "sound": "tap water running",
+    "status": "ok",
+    "best": {
+      "title": "Water Running In Kitchen Sink",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/water-running-in-kitchen-sink-UGSBLCD",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Water Running Kitchen Faucet On and Off 1",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/water-running-kitchen-faucet-on-and-off-1-8URC9JU",
+      "type": "sfx"
+    },
+    "note": "Steady tap flow."
+  },
+  {
+    "key": "clock",
+    "sound": "clock ticking",
+    "status": "ok",
+    "best": {
+      "title": "Clock Ticking",
+      "author": "MountainAudio",
+      "item_url": "https://elements.envato.com/clock-ticking-B4MEQGY",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Clock Ticking",
+      "author": "GameChestAudio",
+      "item_url": "https://elements.envato.com/clock-ticking-8U279TF",
+      "type": "sfx"
+    },
+    "note": "Plain tick-tock (avoid the 'Fast'/'Cartoon' versions)."
+  },
+  {
+    "key": "house_knock",
+    "sound": "knocking on a door",
+    "status": "ok",
+    "best": {
+      "title": "Knocking on Door",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/knocking-on-door-9YUJGNT",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "A wooden knock signals a visitor arriving at the door",
+      "author": "sounddogs",
+      "item_url": "https://elements.envato.com/a-wooden-knock-signals-a-visitor-arriving-at-the-d-G3UMT8R",
+      "type": "sfx"
+    },
+    "note": "Knock-knock on wood."
+  },
+  {
+    "key": "house_alarm",
+    "sound": "alarm clock bell ringing",
+    "status": "ok",
+    "best": {
+      "title": "Analog Alarm Clock Bell Rings",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/analog-alarm-clock-bell-rings-CMFRXB2",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Alarm Clock Bell Ringing",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/alarm-clock-bell-ringing-4TSX5FL",
+      "type": "sfx"
+    },
+    "note": "Twin-bell mechanical ring."
+  },
+  {
+    "key": "house_kettle",
+    "sound": "kettle whistling",
+    "status": "ok",
+    "best": {
+      "title": "Whistling Tea Kettle",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/whistling-tea-kettle-RZK4BG3",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Tea Pot Whistle Boiling Water Shrill",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/tea-pot-whistle-boiling-water-shrill-VEC6WBU",
+      "type": "sfx"
+    },
+    "note": "Stovetop whistle; less common in Indian homes than the cooker."
+  },
+  {
+    "key": "house_broom",
+    "sound": "broom sweeping the floor",
+    "status": "ok",
+    "best": {
+      "title": "Broom Sweeping Floor",
+      "author": "applehillstudios",
+      "item_url": "https://elements.envato.com/broom-sweeping-floor-YPQM9A6",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Broom sweeping across a wood floor",
+      "author": "VadiSoundLibrary",
+      "item_url": "https://elements.envato.com/broom-sweeping-across-a-wood-floor-8GRFG4Z",
+      "type": "sfx"
+    },
+    "note": "Western bristle broom; close to a jhadu swish but hard to guess in under 2 s."
+  },
+  {
+    "key": "house_fan",
+    "sound": "ceiling fan whirring",
+    "status": "ok",
+    "best": {
+      "title": "Ceiling Fan Run High 14133",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/ceiling-fan-run-high-14133-EYUHTAW",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Ceiling Fan Run Low 14135",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/ceiling-fan-run-low-14135-DKCWH7F",
+      "type": "sfx"
+    },
+    "note": "Real ceiling fan; a steady whir is subtle, so treat it as a hard question."
+  },
+  {
+    "key": "house_washer",
+    "sound": "washing machine running",
+    "status": "ok",
+    "best": {
+      "title": "Domestic Top Load Washing Machine Running",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/domestic-top-load-washing-machine-running-F8E8LEU",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "OBJECT HOUSEHOLD Washing Machine Running 01",
+      "author": "SmartSoundFX",
+      "item_url": "https://elements.envato.com/object-household-washing-machine-running-01-XJDX8G5",
+      "type": "sfx"
+    },
+    "note": "Top-loader, as in many Indian homes."
+  },
+  {
+    "key": "house_keys",
+    "sound": "keys jingling",
+    "status": "ok",
+    "best": {
+      "title": "Keys Rattle Jingle",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/keys-rattle-jingle-SLC53XV",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Keys Long Jingle",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/keys-long-jingle-57PF28K",
+      "type": "sfx"
+    },
+    "note": "Bunch of keys shaken."
+  },
+  {
+    "key": "house_zip",
+    "sound": "zipper",
+    "status": "ok",
+    "best": {
+      "title": "Zipper",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/zipper-3Z5L9W6",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Zip Up Zippers",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/zip-up-zippers-PJ44Q8X",
+      "type": "sfx"
+    },
+    "note": "Single zip pull."
+  },
+  {
+    "key": "house_scissors",
+    "sound": "scissors cutting paper",
+    "status": "ok",
+    "best": {
+      "title": "Scissors Cutting Thin Paper 1",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/scissors-cutting-thin-paper-1-J7CQNR2",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Scissors Cutting Paper",
+      "author": "SoundJay",
+      "item_url": "https://elements.envato.com/scissors-cutting-paper-BKGWL9V",
+      "type": "sfx"
+    },
+    "note": "Snip-snip on paper."
+  },
+  {
+    "key": "house_brushing",
+    "sound": "brushing teeth",
+    "status": "ok",
+    "best": {
+      "title": "Brush Teeth 15820",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/brush-teeth-15820-PKFWTXS",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Household Bathroom   Brushing Teeth Tooth Brush",
+      "author": "sounddogs",
+      "item_url": "https://elements.envato.com/household-bathroom-brushing-teeth-tooth-brush-2DWT4UH",
+      "type": "sfx"
+    },
+    "note": "Manual toothbrush (skip the electric-toothbrush items)."
+  },
+  {
+    "key": "house_rain",
+    "sound": "rain on a window",
+    "status": "ok",
+    "best": {
+      "title": "Medium Rain on Window",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/medium-rain-on-window-HERSG6T",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Rain on Window Light",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/rain-on-window-light-HN7WWM6",
+      "type": "sfx"
+    },
+    "note": "Pitter-patter on glass; avoid the gusty/wind versions."
+  },
+  {
+    "key": "house_tawa",
+    "sound": "sizzling on a hot pan",
+    "status": "ok",
+    "best": {
+      "title": "Frying Pan Sizzle 15245",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/frying-pan-sizzle-15245-K6X46VA",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Frying Sizzle Water in Frying Pan",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/frying-sizzle-water-in-frying-pan-EPH75VQ",
+      "type": "sfx"
+    },
+    "note": "Backup is water on a hot pan, just like testing a tawa."
+  },
+  {
+    "key": "house_creak",
+    "sound": "door creaking",
+    "status": "ok",
+    "best": {
+      "title": "Sharp Door Creak",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/sharp-door-creak-NCRJ3PY",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Door Creak",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/door-creak-CNDZRXH",
+      "type": "sfx"
+    },
+    "note": "Hinge creak; skip the horror-styled variants."
+  },
+  {
+    "key": "house_horn",
+    "sound": "small car horn beep",
+    "status": "ok",
+    "best": {
+      "title": "Indian Car Horn Short Beeps",
+      "author": "sounddogs",
+      "item_url": "https://elements.envato.com/indian-car-horn-short-beeps-EUPLABL",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Small Car Single Horn Honk",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/small-car-single-horn-honk-GAFSQHL",
+      "type": "sfx"
+    },
+    "note": "Indian car beep-beep is the most familiar for these kids."
+  },
+  {
+    "key": "house_footsteps",
+    "sound": "footsteps walking",
+    "status": "ok",
+    "best": {
+      "title": "Female Walking Moderately on Solid Wood Floor",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/female-walking-moderately-on-solid-wood-floor-AHPRCQJ",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Footsteps Walking Interior",
+      "author": "SoundJay",
+      "item_url": "https://elements.envato.com/footsteps-walking-interior-UQ4MEVB",
+      "type": "sfx"
+    },
+    "note": "Steady indoor steps."
+  },
+  {
+    "key": "inst_drum",
+    "sound": "drum kit / snare hits",
+    "status": "ok",
+    "best": {
+      "title": "Drum Fill 24999",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/drum-fill-24999-2XHFFT6",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Snare Drum Single Hit Drum Music",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/snare-drum-single-hit-drum-music-V4SP8TR",
+      "type": "sfx"
+    },
+    "note": "A kit fill reads as 'drums' better than one snare hit."
+  },
+  {
+    "key": "inst_piano",
+    "sound": "piano",
+    "status": "ok",
+    "best": {
+      "title": "Piano Chord C 25859",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/piano-chord-c-25859-57GNH7X",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Piano Chord E 25929",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/piano-chord-e-25929-5FV8JQV",
+      "type": "sfx"
+    },
+    "note": "Solo piano chord; a short run of chords sounds more musical."
+  },
+  {
+    "key": "inst_guitar",
+    "sound": "acoustic guitar strum",
+    "status": "ok",
+    "best": {
+      "title": "Acoustic Guitar Strum 24875",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/acoustic-guitar-strum-24875-R5MLAS3",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Nylon Acoustic Guitar Open E Strum",
+      "author": "applehillstudios",
+      "item_url": "https://elements.envato.com/nylon-acoustic-guitar-open-e-strum-2ZGVT2Q",
+      "type": "sfx"
+    },
+    "note": "Single clean strum."
+  },
+  {
+    "key": "inst_flute",
+    "sound": "flute (bansuri)",
+    "status": "ok",
+    "best": {
+      "title": "Indian Flute",
+      "author": "WistanSound",
+      "item_url": "https://elements.envato.com/indian-flute-USF6K3H",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Indian Flute",
+      "author": "musicstuffs",
+      "item_url": "https://elements.envato.com/indian-flute-TFCJAHP",
+      "type": "sfx"
+    },
+    "note": "Titled 'Indian Flute' (bansuri style); check there's no drone bed under it."
+  },
+  {
+    "key": "tabla",
+    "sound": "tabla",
+    "status": "weak",
+    "best": {
+      "title": "India Tabla Percussion Logo",
+      "author": "Tomasz_Redman",
+      "item_url": "https://elements.envato.com/india-tabla-percussion-logo-9WSTPCC",
+      "type": "music"
+    },
+    "backup": {
+      "title": "Indian Tabla",
+      "author": "fatbunny",
+      "item_url": "https://elements.envato.com/indian-tabla-ZU65CZU",
+      "type": "music"
+    },
+    "note": "Only music tracks/idents; titles don't confirm tabla alone, so audition for a solo bar. No tabla SFX on Envato."
+  },
+  {
+    "key": "inst_bell",
+    "sound": "hand bell ringing",
+    "status": "ok",
+    "best": {
+      "title": "Small Hand Bell Ringing",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/small-hand-bell-ringing-54HUF7K",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Short Hand Bell Ring",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/short-hand-bell-ring-BEHD3LZ",
+      "type": "sfx"
+    },
+    "note": "Ring-ring hand bell (like a school or puja bell)."
+  },
+  {
+    "key": "inst_xylophone",
+    "sound": "xylophone",
+    "status": "ok",
+    "best": {
+      "title": "Xylophone Trill",
+      "author": "MountainAudio",
+      "item_url": "https://elements.envato.com/xylophone-trill-255JDSM",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Xylophone Hits Low Keys Cute Dinks",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/xylophone-hits-low-keys-cute-dinks-UQHTK53",
+      "type": "sfx"
+    },
+    "note": "Real xylophone; skip the game 'win/confirm' jingles."
+  },
+  {
+    "key": "inst_trumpet",
+    "sound": "trumpet",
+    "status": "ok",
+    "best": {
+      "title": "Trumpet Note",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/trumpet-note-NKSGLFQ",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Brass Trumpet Fanfare",
+      "author": "applehillstudios",
+      "item_url": "https://elements.envato.com/brass-trumpet-fanfare-PKZX4XK",
+      "type": "sfx"
+    },
+    "note": "Solo note; the fanfare backup may layer several brass instruments."
+  },
+  {
+    "key": "inst_violin",
+    "sound": "violin",
+    "status": "ok",
+    "best": {
+      "title": "Violin Scale 26331",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/violin-scale-26331-9BDBLDC",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Violin Close Up 1",
+      "author": "sounddogs",
+      "item_url": "https://elements.envato.com/violin-close-up-1-X7TCMMT",
+      "type": "sfx"
+    },
+    "note": "Bowed solo violin; cut 2-3 notes."
+  },
+  {
+    "key": "inst_harmonium",
+    "sound": "harmonium",
+    "status": "weak",
+    "best": {
+      "title": "Small Reed Organ Playing Single Chord",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/small-reed-organ-playing-single-chord-D5PEXPC",
+      "type": "sfx"
+    },
+    "backup": null,
+    "note": "Reeds sound like a harmonium's, but it's a Western organ chord with no Indian phrasing. A home or teacher harmonium recording would be better."
+  },
+  {
+    "key": "inst_sitar",
+    "sound": "sitar",
+    "status": "ok",
+    "best": {
+      "title": "Twangy Sitar Accent 1",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/twangy-sitar-accent-1-KJ5NW36",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Indian Sitar",
+      "author": "musicstuffs",
+      "item_url": "https://elements.envato.com/indian-sitar-AM974DT",
+      "type": "sfx"
+    },
+    "note": "Short solo sitar phrase; skip 'transition/pad' items."
+  },
+  {
+    "key": "inst_dhol",
+    "sound": "dhol",
+    "status": "weak",
+    "best": {
+      "title": "Corporate Dhol Intro",
+      "author": "planetlogo",
+      "item_url": "https://elements.envato.com/corporate-dhol-intro-HG82U9E",
+      "type": "music"
+    },
+    "backup": {
+      "title": "Striking a dholak drum resonates with a single, impactful hit",
+      "author": "VadiSoundLibrary",
+      "item_url": "https://elements.envato.com/striking-a-dholak-drum-resonates-with-a-single-imp-PNRWZRG",
+      "type": "sfx"
+    },
+    "note": "No dhol-only recording. Best is a music intro that probably has other instruments; backup is a dholak (different, smaller drum). Record a dhol or audition for a solo bar."
+  },
+  {
+    "key": "inst_veena",
+    "sound": "veena",
+    "status": "missing",
+    "best": null,
+    "backup": null,
+    "note": "No veena anywhere on Envato (SFX or music). Record one or drop the key; a sitar clip is the nearest stand-in but would duplicate inst_sitar."
+  },
+  {
+    "key": "inst_shehnai",
+    "sound": "shehnai",
+    "status": "missing",
+    "best": null,
+    "backup": null,
+    "note": "No shehnai SFX or solo music on Envato. Record one or drop the key (wedding-music tracks have a full band)."
+  },
+  {
+    "key": "inst_mridangam",
+    "sound": "mridangam",
+    "status": "ok",
+    "best": {
+      "title": "Indian Mridangam Percussion Hands Hits",
+      "author": "sounddogs",
+      "item_url": "https://elements.envato.com/indian-mridangam-percussion-hands-hits-6HTKGU8",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Mridangam Percussive Drums",
+      "author": "sounddogs",
+      "item_url": "https://elements.envato.com/mridangam-percussive-drums-9JG4T3W",
+      "type": "sfx"
+    },
+    "note": "Real mridangam hand strokes; cut a short rhythmic phrase."
+  },
+  {
+    "key": "inst_tambourine",
+    "sound": "tambourine",
+    "status": "ok",
+    "best": {
+      "title": "Tambourine Shake",
+      "author": "HollywoodEdge",
+      "item_url": "https://elements.envato.com/tambourine-shake-YXVAG5Z",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Tambourine Hit",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/tambourine-hit-BH2QUN9",
+      "type": "sfx"
+    },
+    "note": "A shake is more recognisable than one hit."
+  },
+  {
+    "key": "inst_saxophone",
+    "sound": "saxophone",
+    "status": "ok",
+    "best": {
+      "title": "Alto Sax Tune 24884",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/alto-sax-tune-24884-3HRGFW9",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Tenor Sax Scale 26231",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/tenor-sax-scale-26231-7ELSHGC",
+      "type": "sfx"
+    },
+    "note": "Solo alto sax line; skip the baritone/bass items, which sound too low."
+  },
+  {
+    "key": "inst_harp",
+    "sound": "harp",
+    "status": "ok",
+    "best": {
+      "title": "Harp Glissando Up",
+      "author": "Sound-Ideas",
+      "item_url": "https://elements.envato.com/harp-glissando-up-7BZV8C4",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Harp Gliss 25573",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/harp-gliss-25573-QRNYE2T",
+      "type": "sfx"
+    },
+    "note": "Classic harp sweep."
+  },
+  {
+    "key": "inst_accordion",
+    "sound": "accordion",
+    "status": "ok",
+    "best": {
+      "title": "Accordion 1",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/accordion-1-63R783B",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Accordion 5",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/accordion-5-U9NZCWF",
+      "type": "sfx"
+    },
+    "note": "Solo accordion; may sound close to the harmonium clip, so don't pair them."
+  },
+  {
+    "key": "inst_triangle",
+    "sound": "triangle (instrument)",
+    "status": "ok",
+    "best": {
+      "title": "Large Metal Triangle Single Ringing Hits 18",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/large-metal-triangle-single-ringing-hits-18-CF9FKUS",
+      "type": "sfx"
+    },
+    "backup": {
+      "title": "Large Metal Triangle Single Ringing Hits 8",
+      "author": "prosoundfx",
+      "item_url": "https://elements.envato.com/large-metal-triangle-single-ringing-hits-8-XTU8U3U",
+      "type": "sfx"
+    },
+    "note": "Ting; chain 2-3 hits so it isn't mistaken for a bell."
+  }
+]

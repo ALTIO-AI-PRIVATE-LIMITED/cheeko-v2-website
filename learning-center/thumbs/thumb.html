@@ -1,0 +1,57 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@800;900&display=block">
+<style>
+  /* Learning shelf thumbnail: exactly 208 x 116, drawn at 1:1 so the text stays crisp on the device */
+  html, body { margin: 0; width: 208px; height: 116px; overflow: hidden; }
+  #t { position: relative; width: 208px; height: 116px; overflow: hidden; font-family: 'Gabarito', sans-serif; }
+  .bg { position: absolute; inset: 0; }
+  .dots { position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.16) 1.2px, transparent 1.4px); background-size: 12px 12px; }
+  .pic { position: absolute; right: 6px; top: 7px; width: 98px; height: 102px; border-radius: 12px; overflow: hidden; background: #8EC5F5;
+         box-shadow: 0 0 0 2.5px #fff, 0 3px 8px rgba(0,0,0,.3); }
+  .pic > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2px; width: 100%; height: 100%; background: #fff; }
+  .grid div { background: #8EC5F5; overflow: hidden; }
+  .grid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .grid .q { background: radial-gradient(circle, #5b8def, #2b4fb8); color: #fff; font: 900 28px 'Gabarito'; display: flex; align-items: center; justify-content: center; -webkit-text-stroke: 2px #10204a; paint-order: stroke fill; }
+  .count { width: 100%; height: 100%; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 0 2px; }
+  .count img { width: 40px; height: 40px; object-fit: contain; }
+  .pair { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+  .pair img { width: 40px; height: 44px; object-fit: contain; }
+  .pair b { color: #fff; font: 900 20px 'Gabarito'; -webkit-text-stroke: 3px #10204a; paint-order: stroke fill; margin: 0 1px; }
+  .badge { position: absolute; right: 2px; bottom: 2px; min-width: 30px; height: 30px; padding: 0 4px; box-sizing: border-box; border-radius: 15px; background: #FFD84A;
+           color: #10204a; font-weight: 900; font-size: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 2px #fff; }
+  .letter { position: absolute; left: 4px; top: 0; color: #fff; font-weight: 900; font-size: 44px; -webkit-text-stroke: 4px #10204a; paint-order: stroke fill; }
+  .spk { position: absolute; right: 3px; bottom: 3px; width: 30px; height: 30px; border-radius: 50%; background: #FFD84A; box-shadow: 0 0 0 2px #fff; display: flex; align-items: center; justify-content: center; }
+  .title { position: absolute; left: 7px; top: 6px; width: 88px; height: 78px; display: flex; align-items: center; color: #fff; font-weight: 900;
+           line-height: .98; -webkit-text-stroke: 3.5px #10204a; paint-order: stroke fill; letter-spacing: .1px; }
+  .lvl { position: absolute; left: 8px; bottom: 8px; height: 20px; padding: 0 8px; border-radius: 10px; background: #FFD84A; color: #10204a;
+         font-weight: 900; font-size: 13px; display: flex; align-items: center; box-shadow: 0 0 0 2px #fff; }
+</style></head><body><div id="t"></div>
+<script>
+const S = JSON.parse(decodeURIComponent(location.hash.slice(1)));
+const t = document.getElementById('t');
+let pic = '';
+if (S.mode === 'odd' || S.mode === 'missing') pic = `<div class="grid">${S.pics.map((p, i) => i === S.hide ? `<div class="q">?</div>` : `<div><img src="${p}"></div>`).join('')}</div>`;
+else if (S.mode === 'count') { const n = Math.min(+S.overlay, 4); pic = `<div class="count">${Array.from({ length: n }, () => `<img src="${S.pics[0]}">`).join('')}</div><div class="badge">${S.overlay}</div>`; }
+else if (S.mode === 'pair') pic = `<div class="pair"><img src="${S.pics[0]}"><b>+</b><img src="${S.pics[1]}"></div>`;
+else {
+  pic = `<img src="${S.pics[0]}">`;
+  if (S.overlay === 'sound') pic += `<div class="spk"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z" fill="#10204a"/><path d="M16 8.5c1.6 1.8 1.6 5.2 0 7M18.6 6c3 3.3 3 8.7 0 12" stroke="#10204a" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></div>`;
+  else if (S.overlay === '?') pic += `<div class="badge" style="font-size:22px">?</div>`;
+  else if (S.mode === 'letter') pic += `<div class="letter">${S.overlay}</div>`;
+}
+const title = S.title.replace(/!$/, '');
+t.innerHTML = `<div class="bg" style="background:linear-gradient(135deg, ${S.c1}, ${S.c2})"></div><div class="dots"></div>
+  <div class="title"><span>${title}</span></div><div class="pic">${pic}</div>${S.level ? `<div class="lvl">Level ${S.level}</div>` : ''}`;
+window.ready = (async () => {
+  await document.fonts.ready; await Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
+  const box = t.querySelector('.title'), span = box.querySelector('span'), maxH = S.level ? 74 : 98;
+  box.style.height = maxH + 'px';
+  for (let fs = 24; fs >= 12; fs -= .5) {           // biggest size whose lines fit the box, never breaking inside a word
+    box.style.fontSize = fs + 'px';
+    const words = span.textContent.split(' '); const tooWide = words.some(w => { const m = document.createElement('span'); m.textContent = w; m.style.whiteSpace = 'nowrap'; box.appendChild(m); const wd = m.offsetWidth; m.remove(); return wd > 86; });
+    if (!tooWide && span.offsetHeight <= maxH) break;
+  }
+})();
+</script></body></html>

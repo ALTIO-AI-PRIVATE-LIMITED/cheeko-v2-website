@@ -1,0 +1,1144 @@
+[
+  {
+    "n": 1,
+    "name": "Car",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 27805894,
+        "title": "Compact urban premium car in a red hatchback on a white isolated background 3d illustration",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/compact-urban-premium-car-red-hatchback-white-isolated-background-3d-illustration_101266-24606.jpg",
+        "look": "3d",
+        "note": "Generic brandless 3D hatchback on white; same 3D series as bus/school bus/helicopter/mixer/crane picks."
+      },
+      {
+        "id": 255611173,
+        "title": "Right side view of red car SUV on white background 3D rendered high quality image",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/right-side-view-red-car-suv-white-background-3d-rendered-high-quality-image_610532-1391.jpg",
+        "look": "3d",
+        "note": "Pure side view SUV on white."
+      },
+      {
+        "id": 5429940,
+        "title": "Red sport car front side view, black wheel with metallic silver color. ",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/red-sport-car-front-side-view-black-wheel-with-metallic-silver-color_114579-1160.jpg",
+        "look": "photo",
+        "note": "Free real photo; check for maker badge."
+      }
+    ],
+    "terms_tried": [
+      "red car side view isolated white background"
+    ]
+  },
+  {
+    "n": 2,
+    "name": "Bus",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 17510324,
+        "title": "Mediun urban yellow bus on a white background. 3d rendering.",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/mediun-urban-yellow-bus-white-background-3d-rendering_101266-4227.jpg",
+        "look": "3d",
+        "note": "City bus 3D on white (101266 series)."
+      },
+      {
+        "id": 202213358,
+        "title": "Blue modern city bus isolated on white background 3d rendering",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/blue-modern-city-bus-isolated-white-background-3d-rendering_14117-535224.jpg",
+        "look": "3d",
+        "note": "Alternative 3D city bus on white."
+      },
+      {
+        "id": 427284117,
+        "title": "Green double decker bus drives on highway modern tourist coach moves along the road",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/green-double-decker-bus-drives-highway-modern-tourist-coach-moves-along-road_169016-72221.jpg",
+        "look": "photo",
+        "note": "Free realistic shot on a road; busier background."
+      }
+    ],
+    "terms_tried": [
+      "bus 3d render white background side view",
+      "3d render of a bus",
+      "3D tram isolated (bus results)"
+    ]
+  },
+  {
+    "n": 3,
+    "name": "Truck",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 38732165,
+        "title": "Tipper Dump Truck Isolated",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/tipper-dump-truck-isolated_1048-18265.jpg",
+        "look": "3d",
+        "note": "Free 3D render, isolated; tipper style common in India."
+      },
+      {
+        "id": 1110770,
+        "title": "3d render of a cargo delivery truck",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/3d-render-cargo-delivery-truck_1048-5605.jpg",
+        "look": "3d",
+        "note": "Free 3D cargo truck; background not stated."
+      },
+      {
+        "id": 427605711,
+        "title": "Orange semi truck on white 3D render illustration",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/orange-semi-truck-white-3d-render-illustration_37416-2201.jpg",
+        "look": "3d",
+        "note": "Semi truck on white."
+      }
+    ],
+    "terms_tried": [
+      "truck isolated white background side view"
+    ]
+  },
+  {
+    "n": 4,
+    "name": "Bicycle",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 145065452,
+        "title": "Red Bicycle side view 3D rendering",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/red-bicycle-side-view-3d-rendering_808337-17970.jpg",
+        "look": "3d",
+        "note": "Side view 3D bicycle."
+      },
+      {
+        "id": 209806316,
+        "title": "Red childrens bicycle isolated on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/red-childrens-bicycle-isolated-white-background_711700-21680.jpg",
+        "look": "photo",
+        "note": "Studio photo on white."
+      },
+      {
+        "id": 13291073,
+        "title": "Red bicycle with black details",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/red-bicycle-with-black-details_23-2148907985.jpg",
+        "look": "photo",
+        "note": "Free photo; background not stated."
+      }
+    ],
+    "terms_tried": [
+      "bicycle isolated white background side view"
+    ]
+  },
+  {
+    "n": 5,
+    "name": "Motorbike",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 190916690,
+        "title": "Classic motorcycle 3D rendering on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/classic-motorcycle-3d-rendering-white-background_1113051-1333.jpg",
+        "look": "3d",
+        "note": "3D on white (1113051 series)."
+      },
+      {
+        "id": 1186505,
+        "title": "Black motorcycle on white",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/black-motorcycle-white_1398-276.jpg",
+        "look": "photo",
+        "note": "Free photo on white; real bike, check for brand badge."
+      },
+      {
+        "id": 433238401,
+        "title": "Red modern sport motorcycle isolated on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/red-modern-sport-motorcycle-isolated-white-background_53876-2152111399.jpg",
+        "look": "photo",
+        "note": "Studio photo on white."
+      }
+    ],
+    "terms_tried": [
+      "motorcycle isolated white background side view",
+      "3D motor scooter isolated white background"
+    ]
+  },
+  {
+    "n": 6,
+    "name": "Aeroplane",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 427702085,
+        "title": "Commercial airplane flying in the sky threequarter view Isolated generic passenger aircraft with a blue tail fin on a white background Concept of travel aviation and transport",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/commercial-airplane-flying-sky-threequarter-view-isolated-generic-passenger-aircraft-with-blue-tail-fin-white-background-concept-travel-aviation-transport_338491-30194.jpg",
+        "look": "3d",
+        "note": "Title says generic airliner, three-quarter view, white background."
+      },
+      {
+        "id": 31073650,
+        "title": "Airplane isolated on white background 3D rendering",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/airplane-isolated-white-background-3d-rendering_542094-234.jpg",
+        "look": "3d",
+        "note": "3D airliner on white."
+      },
+      {
+        "id": 14724259,
+        "title": "Airplane isolated on blank wall",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/airplane-isolated-blank-wall_1048-14174.jpg",
+        "look": "3d",
+        "note": "Free 3D render on plain wall."
+      }
+    ],
+    "terms_tried": [
+      "airplane 3d render isolated white background"
+    ]
+  },
+  {
+    "n": 7,
+    "name": "Train",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 190917064,
+        "title": "Passenger Train 3D rendering on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/passenger-train-3d-rendering-white-background_1113051-1643.jpg",
+        "look": "3d",
+        "note": "3D passenger train on white."
+      },
+      {
+        "id": 428484319,
+        "title": "3D Blue Passenger Train Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-blue-passenger-train-isolated_1021802-49732.jpg",
+        "look": "3d",
+        "note": "Alternative 3D train."
+      },
+      {
+        "id": 2760848,
+        "title": "Steam train in a open countryside.",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/steam-train-open-countryside_53876-14066.jpg",
+        "look": "photo",
+        "note": "Free photo, countryside background."
+      }
+    ],
+    "terms_tried": [
+      "passenger train side view",
+      "train locomotive 3d render isolated"
+    ]
+  },
+  {
+    "n": 8,
+    "name": "Boat",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 16475805,
+        "title": "3d Render Old Row Boat Isolated on White Background.",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-render-old-row-boat-isolated-white-background_460848-910.jpg",
+        "look": "3d",
+        "note": "Simple rowing boat on white."
+      },
+      {
+        "id": 170141350,
+        "title": "White motorboat on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/white-motorboat-white-background_1086923-1850.jpg",
+        "look": "3d",
+        "note": "Motorboat on white; look (render vs photo) not stated."
+      },
+      {
+        "id": 6925863,
+        "title": "Wooden boat",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/wooden-boat_1308-39968.jpg",
+        "look": "photo",
+        "note": "Free photo; context not stated."
+      }
+    ],
+    "terms_tried": [
+      "boat isolated white background",
+      "3D boat isolated white background"
+    ]
+  },
+  {
+    "n": 9,
+    "name": "Auto rickshaw",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 190917752,
+        "title": "Auto Rickshaw TukTuk 3D rendering on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/auto-rickshaw-tuktuk-3d-rendering-white-background_1113051-2162.jpg",
+        "look": "3d",
+        "note": "3D on white; confirm it is the Indian three-wheeler shape and has no maker logo."
+      },
+      {
+        "id": 18960209,
+        "title": "D render of autorickshaw isolated on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/d-render-autorickshaw-isolated-white-background_361767-120.jpg",
+        "look": "3d",
+        "note": "3D autorickshaw on white."
+      },
+      {
+        "id": 17818790,
+        "title": "Autorickshaw isolated on white background. Traditional Indian public transport. Tricycle vintage retro motorcycle 50-60 years of the 20th century",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/autorickshaw-isolated-white-background-traditional-indian-public-transport-tricycle-vintage-retro-motorcycle-50-60-years-20th-century_431724-2263.jpg",
+        "look": "photo",
+        "note": "Real Indian auto on white; maker badge likely visible."
+      }
+    ],
+    "terms_tried": [
+      "auto rickshaw tuk tuk",
+      "3D rickshaw isolated"
+    ]
+  },
+  {
+    "n": 10,
+    "name": "Scooter",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 23978598,
+        "title": "Modern urban blue moped on a white background 3d illustration",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/modern-urban-blue-moped-white-background-3d-illustration_101266-16105.jpg",
+        "look": "3d",
+        "note": "Modern scooter shape on white (101266 series)."
+      },
+      {
+        "id": 20494571,
+        "title": "3D Render Classic Motor Scooter Side View on a Black Background.",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/3d-render-classic-motor-scooter-side-view-black-background_460848-7136.jpg",
+        "look": "3d",
+        "note": "Free 3D, side view, plain black background; retro shape."
+      },
+      {
+        "id": 17430050,
+        "title": "Side view of modern scooter isolated on white background. Urban transport",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/side-view-modern-scooter-isolated-white-background-urban-transport_97889-514.jpg",
+        "look": "photo",
+        "note": "Studio photo on white."
+      }
+    ],
+    "terms_tried": [
+      "scooter isolated white background side view",
+      "3D motor scooter isolated white background"
+    ]
+  },
+  {
+    "n": 11,
+    "name": "Fire engine",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 190916898,
+        "title": "Rescue Fire Pumper Truck 3D rendering on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/rescue-fire-pumper-truck-3d-rendering-white-background_1113051-1509.jpg",
+        "look": "3d",
+        "note": "3D on white; may carry FIRE/RESCUE lettering."
+      },
+      {
+        "id": 432000497,
+        "title": "3D Red Fire Truck Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-red-fire-truck-isolated_1284299-13718.jpg",
+        "look": "3d",
+        "note": "Alternative 3D on white."
+      },
+      {
+        "id": 21843743,
+        "title": "Firefighters truck ready for his mission",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/firefighters-truck-ready-his-mission_23-2149237355.jpg",
+        "look": "photo",
+        "note": "Free photo; may show station/text."
+      }
+    ],
+    "terms_tried": [
+      "fire truck 3D rendering on white background",
+      "fire truck white background three-dimensional illustration 3d rendering"
+    ]
+  },
+  {
+    "n": 12,
+    "name": "Ambulance",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 431972834,
+        "title": "3D White and Blue Ambulance Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-white-blue-ambulance-isolated_1301236-126484.jpg",
+        "look": "3d",
+        "note": "White/blue livery suggests no red cross; confirm emblem."
+      },
+      {
+        "id": 37795433,
+        "title": "Ambulance van 3D rendering",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/ambulance-van-3d-rendering_808337-1067.jpg",
+        "look": "3d",
+        "note": "Plain ambulance van render; emblem unknown."
+      },
+      {
+        "id": 427028624,
+        "title": "Ambulance driving on winter road during emergency response medical transport vehicle",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/ambulance-driving-winter-road-emergency-response-medical-transport-vehicle_169016-71798.jpg",
+        "look": "photo",
+        "note": "Free; snowy road background, emblem/text unknown."
+      }
+    ],
+    "terms_tried": [
+      "ambulance 3D rendering on white background",
+      "ambulance van isolated white background",
+      "3d render ambulance",
+      "3D ambulance isolated"
+    ]
+  },
+  {
+    "n": 13,
+    "name": "Police car",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 133484619,
+        "title": "3D Rendering Police Car on White Background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-rendering-police-car-white-background_667560-259.jpg",
+        "look": "3d",
+        "note": "Likely POLICE lettering + light bar."
+      },
+      {
+        "id": 429816198,
+        "title": "3D Blue and White Police Car Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-blue-white-police-car-isolated_1316278-15000.jpg",
+        "look": "3d",
+        "note": "Alternative 3D on white."
+      },
+      {
+        "id": 424252090,
+        "title": "Dark Blue Police Patrol Car with Lights and Push Bar",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/dark-blue-police-patrol-car-with-lights-push-bar_81048-54144.jpg",
+        "look": "3d",
+        "note": "Look not stated in title; has light bar."
+      }
+    ],
+    "terms_tried": [
+      "police car 3D rendering on white background",
+      "police car isolated white background"
+    ]
+  },
+  {
+    "n": 14,
+    "name": "Helicopter",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 12900496,
+        "title": "Yellow helicopter isolated on the white background. 3d rendering.",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/yellow-helicopter-isolated-white-background-3d-rendering_101266-2311.jpg",
+        "look": "3d",
+        "note": "Bright civilian heli on white."
+      },
+      {
+        "id": 6223524,
+        "title": "White helicopter isolated on the white background. 3d rendering.",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/white-helicopter-isolated-white-background-3d-rendering_101266-993.jpg",
+        "look": "3d",
+        "note": "White on white: lower contrast."
+      },
+      {
+        "id": 7879541,
+        "title": "Yellow and Black Helicopter",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/yellow-black-helicopter_198169-46.jpg",
+        "look": "photo",
+        "note": "Free photo; background not stated."
+      }
+    ],
+    "terms_tried": [
+      "helicopter isolated white background"
+    ]
+  },
+  {
+    "n": 15,
+    "name": "Ship",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 31073664,
+        "title": "Cargo ship isolated on white background 3D rendering",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/cargo-ship-isolated-white-background-3d-rendering_542094-238.jpg",
+        "look": "3d",
+        "note": "3D cargo ship on white."
+      },
+      {
+        "id": 429653337,
+        "title": "3D Container Ship Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-container-ship-isolated_1301236-115573.jpg",
+        "look": "3d",
+        "note": "Alternative 3D on white."
+      },
+      {
+        "id": 1120089,
+        "title": "Side view of Cargo container ship",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/side-view-cargo-container-ship_1359-275.jpg",
+        "look": "photo",
+        "note": "Free real photo; shipping-line logos on containers likely."
+      }
+    ],
+    "terms_tried": [
+      "cargo ship sea side view",
+      "container ship 3d render isolated"
+    ]
+  },
+  {
+    "n": 16,
+    "name": "Tractor",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 190915653,
+        "title": "Farm Tractor 3D rendering on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/farm-tractor-3d-rendering-white-background_1113051-658.jpg",
+        "look": "3d",
+        "note": "3D on white (1113051 series)."
+      },
+      {
+        "id": 25407230,
+        "title": "New and modern green agricultural generic tractor isolated on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/new-modern-green-agricultural-generic-tractor-isolated-white-background_627281-1642.jpg",
+        "look": "photo",
+        "note": "Title says generic; on white."
+      },
+      {
+        "id": 17344444,
+        "title": "Big yellow tractor in the sunflower and cornfield under a blue cloudy sky",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/big-yellow-tractor-sunflower-cornfield-blue-cloudy-sky_181624-47086.jpg",
+        "look": "photo",
+        "note": "Free; field background."
+      }
+    ],
+    "terms_tried": [
+      "tractor isolated white background",
+      "tractor white background 3d illustration"
+    ]
+  },
+  {
+    "n": 17,
+    "name": "School bus",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 23877187,
+        "title": "School yellow bus to transport schoolchildren to school 3D illustration",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/school-yellow-bus-transport-schoolchildren-school-3d-illustration_101266-15728.jpg",
+        "look": "3d",
+        "note": "US-style yellow school bus; may say SCHOOL BUS."
+      },
+      {
+        "id": 430177623,
+        "title": "Yellow school bus in side profile on white background isolated studio view showing windows wheels",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/yellow-school-bus-side-profile-white-background-isolated-studio-view-showing-windows-wheels_434420-3181.jpg",
+        "look": "3d",
+        "note": "Side profile on white; look not stated."
+      },
+      {
+        "id": 58537675,
+        "title": "Yellow school bus",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/yellow-school-bus_268835-4931.jpg",
+        "look": "photo",
+        "note": "Free real photo; lettering likely."
+      }
+    ],
+    "terms_tried": [
+      "yellow school bus isolated"
+    ]
+  },
+  {
+    "n": 18,
+    "name": "Cycle rickshaw",
+    "status": "weak",
+    "candidates": [
+      {
+        "id": 39010779,
+        "title": "Indian cycle rickshaw with passenger on Old Delhi street, India",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/indian-cycle-rickshaw-with-passenger-old-delhi-street-india_759575-5900.jpg",
+        "look": "photo",
+        "note": "Right vehicle but has a passenger and a busy street."
+      },
+      {
+        "id": 249401849,
+        "title": "Rickshaw in Dhaka",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/rickshaw-dhaka_913560-251.jpg",
+        "look": "photo",
+        "note": "Bangladeshi cycle rickshaw (same shape as Indian); framing unknown."
+      },
+      {
+        "id": 7602185,
+        "title": "Bicycle rickshaw",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/bicycle-rickshaw_163782-411.jpg",
+        "look": "photo",
+        "note": "No tags or context; check preview."
+      }
+    ],
+    "terms_tried": [
+      "cycle rickshaw",
+      "pedicab rickshaw bicycle India",
+      "3D rickshaw isolated"
+    ]
+  },
+  {
+    "n": 19,
+    "name": "Garbage truck",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 428033176,
+        "title": "3D Green and Silver Garbage Truck with Ladder Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-green-silver-garbage-truck-with-ladder-isolated_1063035-954.jpg",
+        "look": "3d",
+        "note": "3D on white."
+      },
+      {
+        "id": 429780834,
+        "title": "Modern garbage truck side view isolated on white background for sanitation services",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/modern-garbage-truck-side-view-isolated-white-background-sanitation-services_1048363-30717.jpg",
+        "look": "3d",
+        "note": "Side view on white; look not stated."
+      },
+      {
+        "id": 1489302,
+        "title": "Recycling truck picking up bin at city",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/recycling-truck-picking-up-bin-city_1398-4392.jpg",
+        "look": "photo",
+        "note": "Free real photo; city text/logos possible."
+      }
+    ],
+    "terms_tried": [
+      "garbage truck isolated white background",
+      "garbage truck 3d rendering white background"
+    ]
+  },
+  {
+    "n": 20,
+    "name": "Hot air balloon",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 430228386,
+        "title": "3D Red and White Striped Hot Air Balloon Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-red-white-striped-hot-air-balloon-isolated_1301236-118387.jpg",
+        "look": "3d",
+        "note": "3D on white."
+      },
+      {
+        "id": 879661,
+        "title": "Coloured hot air balloon",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/coloured-hot-air-balloon_1048-1850.jpg",
+        "look": "3d",
+        "note": "Free 3D render; background not stated."
+      },
+      {
+        "id": 9859765,
+        "title": "Yellow hot air balloon flying in clear blue sky",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/yellow-hot-air-balloon-flying-clear-blue-sky_158595-6512.jpg",
+        "look": "photo",
+        "note": "Free photo on plain blue sky."
+      }
+    ],
+    "terms_tried": [
+      "hot air balloon sky",
+      "3D hot air balloon isolated"
+    ]
+  },
+  {
+    "n": 21,
+    "name": "Excavator",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 66747454,
+        "title": "Excavator 3D rendering isolated on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/excavator-3d-rendering-isolated-white-background_823159-6648.jpg",
+        "look": "3d",
+        "note": "3D on white."
+      },
+      {
+        "id": 12959640,
+        "title": "Small yellow excavator on the white background. 3d render",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/small-yellow-excavator-white-background-3d-render_103577-5952.jpg",
+        "look": "3d",
+        "note": "Yellow mini excavator on white."
+      },
+      {
+        "id": 11138245,
+        "title": "Excavator construction machine",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/excavator-construction-machine_342744-969.jpg",
+        "look": "photo",
+        "note": "Free real photo; JCB/CAT badge risk."
+      }
+    ],
+    "terms_tried": [
+      "3D rendering on white background excavator",
+      "Excavator heavy construction machinery 3D rendering on white background",
+      "crawler bulldozer isolated white background"
+    ]
+  },
+  {
+    "n": 22,
+    "name": "Cement mixer truck",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 20535722,
+        "title": "Red concrete mixer truck white background. Three-dimensional illustration of construction equipment. 3d rendering.",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/red-concrete-mixer-truck-white-background-three-dimensional-illustration-construction-equipment-3d-rendering_101266-10585.jpg",
+        "look": "3d",
+        "note": "3D on white (101266 series)."
+      },
+      {
+        "id": 20894501,
+        "title": "Orange concrete mixer truck white background. Three-dimensional illustration of construction equipment. 3d rendering.",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/orange-concrete-mixer-truck-white-background-three-dimensional-illustration-construction-equipment-3d-rendering_101266-11228.jpg",
+        "look": "3d",
+        "note": "Same series, orange."
+      },
+      {
+        "id": 427022314,
+        "title": "White Concrete Mixer Truck at a Construction Site",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/white-concrete-mixer-truck-construction-site_84443-85924.jpg",
+        "look": "photo",
+        "note": "Free; site background."
+      }
+    ],
+    "terms_tried": [
+      "concrete mixer truck isolated white background",
+      "Concrete mixer truck 3D rendering on white background"
+    ]
+  },
+  {
+    "n": 23,
+    "name": "Crane",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 17833304,
+        "title": "Orange mobile crane. Three-dimensional illustration. 3d rendering.",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/orange-mobile-crane-three-dimensional-illustration-3d-rendering_101266-4970.jpg",
+        "look": "3d",
+        "note": "Mobile crane truck, 3D on white (101266 series)."
+      },
+      {
+        "id": 429933404,
+        "title": "3D Yellow Mobile Construction Crane Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-yellow-mobile-construction-crane-isolated_1295754-48883.jpg",
+        "look": "3d",
+        "note": "Alternative 3D on white."
+      },
+      {
+        "id": 2296272,
+        "title": "3D industrial crane against a blue sky with fluffy white clouds",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/3d-industrial-crane-against-blue-sky-with-fluffy-white-clouds_1048-7947.jpg",
+        "look": "3d",
+        "note": "Free 3D tower crane on sky; tall/thin, may read small on screen."
+      }
+    ],
+    "terms_tried": [
+      "mobile crane truck isolated white background",
+      "Mobile crane 3D rendering on white background"
+    ]
+  },
+  {
+    "n": 24,
+    "name": "Road roller",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 432247388,
+        "title": "3D Road Roller Construction Vehicle Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-road-roller-construction-vehicle-isolated_1301236-130669.jpg",
+        "look": "3d",
+        "note": "3D on white."
+      },
+      {
+        "id": 174430552,
+        "title": "Soil compactor d rendering on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/soil-compactor-d-rendering-white-background_1113051-403.jpg",
+        "look": "3d",
+        "note": "Single-drum compactor (front drum, rear tyres) rather than classic tandem roller."
+      },
+      {
+        "id": 431864422,
+        "title": "Yellow Road Roller Construction Vehicle Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/yellow-road-roller-construction-vehicle-isolated_538547-30664.jpg",
+        "look": "photo",
+        "note": "Isolated; render vs photo not stated."
+      }
+    ],
+    "terms_tried": [
+      "road roller compactor isolated",
+      "road roller white background 3d illustration",
+      "bulldozer 3d rendering white background"
+    ]
+  },
+  {
+    "n": 25,
+    "name": "Bulldozer",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 190916469,
+        "title": "Tracked Dozer heavy construction machinery 3D rendering on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/tracked-dozer-heavy-construction-machinery-3d-rendering-white-background_1113051-1162.jpg",
+        "look": "3d",
+        "note": "Crawler dozer, 3D on white."
+      },
+      {
+        "id": 182991182,
+        "title": "Yellow Bulldozer 3d render Isolated on white",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/yellow-bulldozer-3d-render-isolated-white_268321-2643.jpg",
+        "look": "3d",
+        "note": "Yellow 3D on white."
+      },
+      {
+        "id": 1271428,
+        "title": "Crawler Bulldozer",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/crawler-bulldozer_1388-577.jpg",
+        "look": "photo",
+        "note": "Free real photo; CAT/Komatsu badge risk."
+      }
+    ],
+    "terms_tried": [
+      "crawler bulldozer isolated white background",
+      "bulldozer 3d rendering white background"
+    ]
+  },
+  {
+    "n": 26,
+    "name": "Rocket",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 431959161,
+        "title": "3D White and Orange Rocket Ship Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-white-orange-rocket-ship-isolated_1301365-25269.jpg",
+        "look": "3d",
+        "note": "Isolated on white, no agency named; check it is not cartoon-styled."
+      },
+      {
+        "id": 19590573,
+        "title": "Rocket launch into outer space. Spaceship lift off into the starry sky. Successful start, concept",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/rocket-launch-into-outer-space-spaceship-lift-off-into-starry-sky-successful-start-concept_338491-12875.jpg",
+        "look": "3d",
+        "note": "Realistic generic render in flight; dark starry background, big smoke plume."
+      },
+      {
+        "id": 85202534,
+        "title": "New space rocket takes off through the clouds into space Spaceship launch above the clouds Space mission and science Rocket creative idea",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/new-space-rocket-takes-off-through-clouds-into-space-spaceship-launch-clouds-space-mission-science-rocket-creative-idea_338491-22608.jpg",
+        "look": "3d",
+        "note": "Same author; rocket above clouds."
+      }
+    ],
+    "terms_tried": [
+      "space rocket launch",
+      "3d render submarine rocket",
+      "3D rocket isolated"
+    ]
+  },
+  {
+    "n": 27,
+    "name": "Submarine",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 431740427,
+        "title": "3D Military Submarine Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-military-submarine-isolated_990473-13206.jpg",
+        "look": "3d",
+        "note": "Whole sub on white; 'military' may mean hull numbers."
+      },
+      {
+        "id": 137288043,
+        "title": "Submarine underwater 3D rendering",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/submarine-underwater-3d-rendering_808337-13467.jpg",
+        "look": "3d",
+        "note": "Whole sub underwater."
+      },
+      {
+        "id": 431597070,
+        "title": "Submarine sailing on the blue ocean near coastal landscape",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/submarine-sailing-blue-ocean-near-coastal-landscape_1275261-16481.jpg",
+        "look": "photo",
+        "note": "Surfaced, so lower hull hidden."
+      }
+    ],
+    "terms_tried": [
+      "submarine",
+      "3d render submarine rocket"
+    ]
+  },
+  {
+    "n": 28,
+    "name": "Tram",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 432241698,
+        "title": "3D Yellow Tram Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-yellow-tram-isolated_1301236-130329.jpg",
+        "look": "3d",
+        "note": "3D on white; rails may not be shown."
+      },
+      {
+        "id": 28068449,
+        "title": "City tram 3D rendering isolated on white background",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/city-tram-3d-rendering-isolated-white-background_667573-36.jpg",
+        "look": "3d",
+        "note": "Alternative 3D on white."
+      },
+      {
+        "id": 422787224,
+        "title": "Yellow city tram on urban street modern public transport",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/yellow-city-tram-urban-street-modern-public-transport_169016-69853.jpg",
+        "look": "photo",
+        "note": "Free; city street with rails."
+      }
+    ],
+    "terms_tried": [
+      "passenger train side view",
+      "tram on rails city street",
+      "3D tram isolated"
+    ]
+  },
+  {
+    "n": 29,
+    "name": "Cable car",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 427529031,
+        "title": "Single Cable Car Gondola Suspended Against a Bright Blue Sky",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/single-cable-car-gondola-suspended-against-bright-blue-sky_1308-189073.jpg",
+        "look": "photo",
+        "note": "Free; one gondola on its cable against plain sky."
+      },
+      {
+        "id": 11278050,
+        "title": "Beautiful vintage red aerial cableway train cabine moving across, isolated on bright blue sky",
+        "premium": false,
+        "creditCost": 40,
+        "previewUrl": "https://img.magnific.com/free-photo/beautiful-vintage-red-aerial-cableway-train-cabine-moving-across-isolated-bright-blue-sky_346278-461.jpg",
+        "look": "photo",
+        "note": "Free; red cabin on cable, plain blue sky."
+      },
+      {
+        "id": 431668633,
+        "title": "3D Red Cable Car Gondola Isolated",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/3d-red-cable-car-gondola-isolated_1313274-23539.jpg",
+        "look": "3d",
+        "note": "3D option for set consistency; may lack the cable."
+      }
+    ],
+    "terms_tried": [
+      "cable car gondola cabin",
+      "3D cable car gondola isolated"
+    ]
+  },
+  {
+    "n": 30,
+    "name": "Hovercraft",
+    "status": "ok",
+    "candidates": [
+      {
+        "id": 431597204,
+        "title": "Orange hovercraft navigates on a calm blue lake",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/orange-hovercraft-navigates-calm-blue-lake_1275261-16557.jpg",
+        "look": "photo",
+        "note": "On water, simple background."
+      },
+      {
+        "id": 15218064,
+        "title": "Hovercraft in winter tundra. Air cushion on the beach. Yellow hover craft under snow.",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/hovercraft-winter-tundra-air-cushion-beach-yellow-hover-craft-snow_160321-5317.jpg",
+        "look": "photo",
+        "note": "On land, skirt visible; snowy scene."
+      },
+      {
+        "id": 102666429,
+        "title": "Hovercraft on landscape against sky",
+        "premium": true,
+        "creditCost": 150,
+        "previewUrl": "https://img.magnific.com/premium-photo/hovercraft-landscape-against-sky_1633153-270.jpg",
+        "look": "photo",
+        "note": "On land against sky."
+      }
+    ],
+    "terms_tried": [
+      "hovercraft",
+      "3D hovercraft isolated"
+    ]
+  }
+]

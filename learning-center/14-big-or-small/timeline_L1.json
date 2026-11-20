@@ -1,0 +1,288 @@
+{
+ "idea": "14-big-or-small",
+ "id": "V45",
+ "level": 1,
+ "nLevels": 1,
+ "mode": "ask",
+ "theme": {
+  "bg": "split",
+  "pals": [
+   [
+    "#FF6B6B",
+    "#4DABF7"
+   ],
+   [
+    "#FCC419",
+    "#845EF7"
+   ],
+   [
+    "#51CF66",
+    "#F06595"
+   ],
+   [
+    "#FF922B",
+    "#22B8CF"
+   ],
+   [
+    "#94D82D",
+    "#7950F2"
+   ]
+  ],
+  "trans": "blinds",
+  "enter": "flip",
+  "fx": "rings",
+  "knob": "↔️",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "funky"
+ },
+ "answer": 4,
+ "dur": 142.37,
+ "n": 12,
+ "t1": "Big or",
+ "t2": "Small?",
+ "head": "Say the <span>opposite</span>!",
+ "chips": [
+  [
+   "?",
+   "Listen to Cheeko"
+  ],
+  [
+   "4",
+   "4 seconds"
+  ],
+  [
+   "!",
+   "Say the answer"
+  ]
+ ],
+ "outroText": [
+  "Great job!",
+  "All done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "rules": 3.767458333333333,
+  "go": 7.0692916666666665,
+  "level": 3.2383958333333336
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 8.893,
+   "label": "Big and small",
+   "pill": "Big and small",
+   "bubble": "The elephant is big. And the mouse is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.355,
+    "reveal": 7.355,
+    "name": 7.605
+   },
+   "dur": 10.495,
+   "img": "big_small",
+   "edge": "rgb(136,194,250)"
+  },
+  {
+   "k": 2,
+   "start": 19.387,
+   "label": "Tall and short",
+   "pill": "Tall and short",
+   "bubble": "The giraffe is tall. And the penguin is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.099,
+    "reveal": 7.099,
+    "name": 7.349
+   },
+   "dur": 10.651,
+   "img": "opp_tall_short",
+   "edge": "rgb(125,190,250)"
+  },
+  {
+   "k": 3,
+   "start": 30.039,
+   "label": "Hot and cold",
+   "pill": "Hot and cold",
+   "bubble": "The tea is hot. And the ice cream is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.13,
+    "reveal": 7.13,
+    "name": 7.38
+   },
+   "dur": 9.988,
+   "img": "opp_hot_cold",
+   "edge": "rgb(138,196,249)"
+  },
+  {
+   "k": 4,
+   "start": 40.027,
+   "label": "Fast and slow",
+   "pill": "Fast and slow",
+   "bubble": "The rabbit is fast. And the tortoise is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.179,
+    "reveal": 7.179,
+    "name": 7.429
+   },
+   "dur": 10.478,
+   "img": "opp_fast_slow",
+   "edge": "rgb(129,191,248)"
+  },
+  {
+   "k": 5,
+   "start": 50.505,
+   "label": "Full and empty",
+   "pill": "Full and empty",
+   "bubble": "This glass is full. And that glass is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.065,
+    "reveal": 7.065,
+    "name": 7.315
+   },
+   "dur": 10.429,
+   "img": "opp_full_empty",
+   "edge": "rgb(129,192,251)"
+  },
+  {
+   "k": 6,
+   "start": 60.934,
+   "label": "Day and night",
+   "pill": "Day and night",
+   "bubble": "The sun comes out in the day. And the moon comes out at?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 4.061,
+    "reveal": 8.061,
+    "name": 8.311
+   },
+   "dur": 10.92,
+   "img": "opp_day_night",
+   "edge": "rgb(132,189,243)"
+  },
+  {
+   "k": 7,
+   "start": 71.854,
+   "label": "Open and closed",
+   "pill": "Open and closed",
+   "bubble": "This box is open. And that box is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 2.994,
+    "reveal": 6.994,
+    "name": 7.244
+   },
+   "dur": 10.74,
+   "img": "opp_open_closed",
+   "edge": "rgb(132,195,253)"
+  },
+  {
+   "k": 8,
+   "start": 82.594,
+   "label": "Wet and dry",
+   "pill": "Wet and dry",
+   "bubble": "This towel is wet. And that towel is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.344,
+    "reveal": 7.344,
+    "name": 7.594
+   },
+   "dur": 10.606,
+   "img": "opp_wet_dry",
+   "edge": "rgb(132,195,252)"
+  },
+  {
+   "k": 9,
+   "start": 93.201,
+   "label": "Heavy and light",
+   "pill": "Heavy and light",
+   "bubble": "The stone is heavy. And the feather is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.052,
+    "reveal": 7.052,
+    "name": 7.302
+   },
+   "dur": 10.375,
+   "img": "opp_heavy_light",
+   "edge": "rgb(132,191,248)"
+  },
+  {
+   "k": 10,
+   "start": 103.576,
+   "label": "Long and short",
+   "pill": "Long and short",
+   "bubble": "This pencil is long. And that pencil is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.185,
+    "reveal": 7.185,
+    "name": 7.435
+   },
+   "dur": 10.252,
+   "img": "opp_long_short",
+   "edge": "rgb(128,194,253)"
+  },
+  {
+   "k": 11,
+   "start": 113.828,
+   "label": "Clean and dirty",
+   "pill": "Clean and dirty",
+   "bubble": "This plate is clean. And that plate is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 2.971,
+    "reveal": 6.971,
+    "name": 7.221
+   },
+   "dur": 10.139,
+   "img": "opp_clean_dirty",
+   "edge": "rgb(132,193,249)"
+  },
+  {
+   "k": 12,
+   "start": 123.967,
+   "label": "Thick and thin",
+   "pill": "Thick and thin",
+   "bubble": "This book is thick. And that book is?",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 2.852,
+    "reveal": 6.852,
+    "name": 7.102
+   },
+   "dur": 9.86,
+   "img": "opp_thick_thin",
+   "edge": "rgb(131,195,253)"
+  }
+ ],
+ "outroStart": 133.828,
+ "outro": {
+  "done": 134.17766666666668,
+  "howmany": 135.57556250000002,
+  "next": 137.2636875,
+  "bye": 139.93941666666666
+ },
+ "paths": {
+  "big_small": "../images/big_small.jpg",
+  "opp_tall_short": "../images/opp_tall_short.jpg",
+  "opp_hot_cold": "../images/opp_hot_cold.jpg",
+  "opp_fast_slow": "../images/opp_fast_slow.jpg",
+  "opp_full_empty": "../images/opp_full_empty.jpg",
+  "opp_day_night": "../images/opp_day_night.jpg",
+  "opp_open_closed": "../images/opp_open_closed.jpg",
+  "opp_wet_dry": "../images/opp_wet_dry.jpg",
+  "opp_heavy_light": "../images/opp_heavy_light.jpg",
+  "opp_long_short": "../images/opp_long_short.jpg",
+  "opp_clean_dirty": "../images/opp_clean_dirty.jpg",
+  "opp_thick_thin": "../images/opp_thick_thin.jpg"
+ }
+}

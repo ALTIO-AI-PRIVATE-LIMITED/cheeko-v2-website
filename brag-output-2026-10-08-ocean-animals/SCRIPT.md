@@ -1,0 +1,42 @@
+# V30 Ocean and Water Animals: script (10 animals)
+
+Cheeko's voice (MiniMax English_PlayfulGirl). Times are in the finished video.
+
+-   0.45s  Hi! I'm Cheeko!
+-   2.21s  Let's play Ocean and Water Animals!
+-   4.49s  Look at the picture. You have three seconds to name the animal.
+-   8.30s  Ready? Let's go!
+-  10.82s  Here's the first one!
+-  12.32s  (3, 2, 1 ticks)
+-  15.57s  Dolphin!   (label "Dolphin")
+-  19.82s  What animal is this?
+-  21.32s  (3, 2, 1 ticks)
+-  24.57s  Sea Turtle!   (label "Sea Turtle")
+-  28.82s  Can you guess this one?
+-  30.32s  (3, 2, 1 ticks)
+-  33.57s  Orca!   (label "Orca")
+-  37.82s  Do you know this one?
+-  39.32s  (3, 2, 1 ticks)
+-  42.57s  Crab!   (label "Crab")
+-  46.82s  Who is this?
+-  48.32s  (3, 2, 1 ticks)
+-  51.57s  Great White Shark!   (label "Great White Shark")
+-  55.82s  Look closely!
+-  57.32s  (3, 2, 1 ticks)
+-  60.57s  Jellyfish!   (label "Jellyfish")
+-  64.82s  Ooh, what's this?
+-  66.32s  (3, 2, 1 ticks)
+-  69.57s  Goldfish!   (label "Goldfish")
+-  73.82s  Make your guess!
+-  75.32s  (3, 2, 1 ticks)
+-  78.57s  Octopus!   (label "Octopus")
+-  82.82s  Try this one!
+-  84.32s  (3, 2, 1 ticks)
+-  87.57s  Shrimp!   (label "Shrimp")
+-  91.82s  Here's the last one!
+-  93.32s  (3, 2, 1 ticks)
+-  96.57s  Emperor Penguin!   (label "Emperor Penguin")
+- 100.77s  Wow, great job!
+- 103.01s  How many did you get right?
+- 104.75s  Play again and beat your score!
+- 106.53s  Bye bye, ocean explorer!

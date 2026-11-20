@@ -1,0 +1,157 @@
+{
+ "vid": "V08",
+ "dur": 33.97,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 1.737,
+   "spk": "N",
+   "text": "Meet Ravi. Age four.",
+   "show": "Meet Ravi. Age four.",
+   "emoji": {
+    "four.": "👦"
+   },
+   "hl": [
+    "Ravi."
+   ]
+  },
+  {
+   "s": 2.037,
+   "e": 3.963,
+   "spk": "N",
+   "text": "Won't eat a bite without rhymes.",
+   "show": "Won't eat a bite without rhymes.",
+   "emoji": {
+    "rhymes.": "📱"
+   },
+   "hl": [
+    "rhymes."
+   ]
+  },
+  {
+   "s": 4.263,
+   "e": 5.549,
+   "spk": "N",
+   "text": "Swipes his storybook.",
+   "show": "Swipes his storybook.",
+   "emoji": {
+    "storybook.": "👆"
+   },
+   "hl": [
+    "Swipes"
+   ]
+  },
+  {
+   "s": 5.849,
+   "e": 8.396,
+   "spk": "N",
+   "text": "Checks Nanaji's pocket before saying hi.",
+   "show": "Checks Nanaji's pocket before saying hi.",
+   "emoji": {
+    "hi.": "👴"
+   },
+   "hl": [
+    "pocket"
+   ]
+  },
+  {
+   "s": 8.696,
+   "e": 10.895,
+   "spk": "N",
+   "text": "Answers Daadi Maa in cartoon English.",
+   "show": "Answers Dadi Maa in cartoon English.",
+   "emoji": {
+    "English.": "🗣️"
+   },
+   "hl": [
+    "cartoon"
+   ]
+  },
+  {
+   "s": 11.195,
+   "e": 13.773,
+   "spk": "N",
+   "text": "Phone goes away? The whole building hears it.",
+   "show": "Phone goes away? The whole building hears it.",
+   "emoji": {
+    "it.": "😱"
+   },
+   "hl": [
+    "whole",
+    "building"
+   ]
+  },
+  {
+   "s": 14.223,
+   "e": 15.579,
+   "spk": "N",
+   "text": "Five minutes of rhymes.",
+   "show": "Five minutes of rhymes.",
+   "emoji": {},
+   "hl": [
+    "Five",
+    "minutes"
+   ]
+  },
+  {
+   "s": 15.779,
+   "e": 17.253,
+   "spk": "N",
+   "text": "Autoplay did the rest.",
+   "show": "Autoplay did the rest.",
+   "emoji": {
+    "rest.": "🔁"
+   },
+   "hl": [
+    "Autoplay"
+   ]
+  },
+  {
+   "s": 17.703,
+   "e": 18.654,
+   "spk": "N",
+   "text": "Meet Cheeko.",
+   "show": "Meet Cheeko.",
+   "emoji": {
+    "Cheeko.": "🦊"
+   },
+   "hl": [
+    "Cheeko."
+   ]
+  },
+  {
+   "s": 18.954,
+   "e": 23.68,
+   "spk": "N",
+   "text": "Stories, questions and play. No videos, no feed, no ads.",
+   "show": "Stories, questions and play. No videos, no feed, no ads.",
+   "emoji": {
+    "play.": "📖",
+    "ads.": "🚫"
+   },
+   "hl": []
+  },
+  {
+   "s": 24.03,
+   "e": 27.584,
+   "spk": "N",
+   "text": "Let him ask why the moon follows him. Not for one more video.",
+   "show": "Let him ask why the moon follows him. Not for one more video.",
+   "emoji": {
+    "him.": "🌙"
+   },
+   "hl": [
+    "moon"
+   ]
+  },
+  {
+   "s": 27.984,
+   "e": 30.567,
+   "spk": "N",
+   "text": "Cheeko. Less screen, more childhood!",
+   "show": "Cheeko. Less screen, more childhood!",
+   "emoji": {},
+   "hl": []
+  }
+ ]
+}

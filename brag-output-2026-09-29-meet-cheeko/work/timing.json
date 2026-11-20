@@ -1,0 +1,228 @@
+{
+ "vid": "V20",
+ "dur": 55.28,
+ "lines": [
+  {
+   "s": 0.1,
+   "e": 1.093,
+   "spk": "N",
+   "text": "Meet Cheeko!",
+   "show": "Meet Cheeko!",
+   "emoji": {
+    "Cheeko!": "🦊"
+   },
+   "hl": [
+    "Cheeko!"
+   ]
+  },
+  {
+   "s": 1.393,
+   "e": 2.395,
+   "spk": "cheeko",
+   "text": "Hello my friend!",
+   "show": "Hello my friend!",
+   "emoji": {},
+   "hl": []
+  },
+  {
+   "s": 2.695,
+   "e": 5.995,
+   "spk": "N",
+   "text": "A learning buddy for kids from 3 to 10. Made in India.",
+   "show": "A learning buddy for kids from 3 to 10. Made in India.",
+   "emoji": {
+    "India.": "🧡"
+   },
+   "hl": [
+    "3",
+    "10."
+   ]
+  },
+  {
+   "s": 6.295,
+   "e": 7.628,
+   "spk": "N",
+   "text": "Let's take a quick tour.",
+   "show": "Let's take a quick tour.",
+   "emoji": {
+    "tour.": "👀"
+   },
+   "hl": []
+  },
+  {
+   "s": 7.928,
+   "e": 10.994,
+   "spk": "N",
+   "text": "The screen shows Cheeko's face. Never videos.",
+   "show": "The screen shows Cheeko's face. Never videos.",
+   "emoji": {},
+   "hl": [
+    "Never"
+   ]
+  },
+  {
+   "s": 11.294,
+   "e": 13.951,
+   "spk": "N",
+   "text": "Turn the knob to explore. Press it to choose.",
+   "show": "Turn the knob to explore. Press it to choose.",
+   "emoji": {
+    "choose.": "👆"
+   },
+   "hl": [
+    "Turn",
+    "Press"
+   ]
+  },
+  {
+   "s": 14.251,
+   "e": 16.042,
+   "spk": "N",
+   "text": "The power button is on the side.",
+   "show": "The power button is on the side.",
+   "emoji": {
+    "side.": "⏻"
+   },
+   "hl": [
+    "power"
+   ]
+  },
+  {
+   "s": 16.192,
+   "e": 18.15,
+   "spk": "N",
+   "text": "These two buttons change the volume.",
+   "show": "These two buttons change the volume.",
+   "emoji": {
+    "volume.": "🔊"
+   },
+   "hl": [
+    "volume."
+   ]
+  },
+  {
+   "s": 18.45,
+   "e": 22.191,
+   "spk": "N",
+   "text": "Slide a card into the pocket on the back, and it comes alive.",
+   "show": "Slide a card into the pocket on the back, and it comes alive.",
+   "emoji": {
+    "alive.": "✨"
+   },
+   "hl": [
+    "pocket"
+   ]
+  },
+  {
+   "s": 22.491,
+   "e": 25.616,
+   "spk": "N",
+   "text": "A big speaker, and a headphone jack for quiet time.",
+   "show": "A big speaker, and a headphone jack for quiet time.",
+   "emoji": {
+    "time.": "🎧"
+   },
+   "hl": []
+  },
+  {
+   "s": 25.916,
+   "e": 30.025,
+   "spk": "N",
+   "text": "Charge it with any USB-C charger. About 6 hours of play.",
+   "show": "Charge it with any USB-C charger. About 6 hours of play.",
+   "emoji": {
+    "play.": "🔋"
+   },
+   "hl": [
+    "6",
+    "hours"
+   ]
+  },
+  {
+   "s": 30.375,
+   "e": 32.748,
+   "spk": "N",
+   "text": "Cheeko comes in yellow, pink and white.",
+   "show": "Cheeko comes in yellow, pink and white.",
+   "emoji": {
+    "white.": "🎨"
+   },
+   "hl": [
+    "yellow,",
+    "pink",
+    "white."
+   ]
+  },
+  {
+   "s": 33.098,
+   "e": 35.93,
+   "spk": "N",
+   "text": "In the box: Cheeko and ten cards.",
+   "show": "In the box: Cheeko and 10 cards.",
+   "emoji": {
+    "cards.": "🎁"
+   },
+   "hl": [
+    "10",
+    "cards."
+   ]
+  },
+  {
+   "s": 36.23,
+   "e": 38.814,
+   "spk": "N",
+   "text": "Cards play stories, rhymes and games.",
+   "show": "Cards play stories, rhymes and games.",
+   "emoji": {
+    "games.": "📖"
+   },
+   "hl": []
+  },
+  {
+   "s": 39.064,
+   "e": 43.063,
+   "spk": "N",
+   "text": "Ask anything, and Cheeko talks back. Say a wish, and it draws it.",
+   "show": "Ask anything, and Cheeko talks back. Say a wish, and it draws it.",
+   "emoji": {
+    "back.": "🗣️",
+    "it.": "🎨"
+   },
+   "hl": []
+  },
+  {
+   "s": 43.313,
+   "e": 46.81,
+   "spk": "N",
+   "text": "Plus 8 games, silly voices, and an app for you.",
+   "show": "Plus 8 games, silly voices, and an app for you.",
+   "emoji": {
+    "you.": "📱"
+   },
+   "hl": [
+    "8",
+    "games,"
+   ]
+  },
+  {
+   "s": 47.11,
+   "e": 50.023,
+   "spk": "N",
+   "text": "No video. No feed. No ads.",
+   "show": "No video. No feed. No ads.",
+   "emoji": {},
+   "hl": []
+  },
+  {
+   "s": 50.373,
+   "e": 51.876,
+   "spk": "N",
+   "text": "Next, let's set it up!",
+   "show": "Next, let's set it up!",
+   "emoji": {
+    "up!": "👉"
+   },
+   "hl": []
+  }
+ ]
+}

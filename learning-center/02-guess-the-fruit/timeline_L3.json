@@ -1,0 +1,224 @@
+{
+ "idea": "02-guess-the-fruit",
+ "id": "V33",
+ "level": 3,
+ "nLevels": 3,
+ "mode": "picture",
+ "theme": {
+  "bg": "garden",
+  "pals": [
+   [
+    "#FF8A65",
+    "#D84315"
+   ],
+   [
+    "#AED581",
+    "#558B2F"
+   ],
+   [
+    "#FFD54F",
+    "#F57F17"
+   ],
+   [
+    "#F48FB1",
+    "#AD1457"
+   ],
+   [
+    "#81D4FA",
+    "#0277BD"
+   ]
+  ],
+  "trans": "slide",
+  "enter": "spin",
+  "fx": "confetti",
+  "knob": "🍎",
+  "bar": [
+   "#FF8A80",
+   "#FF5252"
+  ],
+  "music": "calypso"
+ },
+ "answer": 5,
+ "dur": 113.28,
+ "n": 10,
+ "t1": "Guess the",
+ "t2": "Fruit!",
+ "head": "Guess the <span>fruit</span>!",
+ "chips": [
+  [
+   "?",
+   "Look closely"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Great job!",
+  "Level 3 done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.821833333333333,
+  "rules": 5.0296666666666665,
+  "go": 8.763229166666667
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 10.587,
+   "label": "Dragon fruit",
+   "pill": "Dragon fruit",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 6.669,
+    "name": 6.919
+   },
+   "dur": 9.269,
+   "img": "fruit_dragon_fruit"
+  },
+  {
+   "k": 2,
+   "start": 19.855,
+   "label": "Fig",
+   "pill": "Fig",
+   "times": {
+    "tick0": 1.852,
+    "reveal": 6.852,
+    "name": 7.102
+   },
+   "dur": 9.452,
+   "img": "fruit_fig"
+  },
+  {
+   "k": 3,
+   "start": 29.307,
+   "label": "Blueberry",
+   "pill": "Blueberry",
+   "times": {
+    "tick0": 1.658,
+    "reveal": 6.658,
+    "name": 6.908
+   },
+   "dur": 9.258,
+   "img": "fruit_blueberry"
+  },
+  {
+   "k": 4,
+   "start": 38.566,
+   "label": "Peach",
+   "pill": "Peach",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 6.708,
+    "name": 6.958
+   },
+   "dur": 9.308,
+   "img": "fruit_peach"
+  },
+  {
+   "k": 5,
+   "start": 47.874,
+   "label": "Apricot",
+   "pill": "Apricot",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 6.596,
+    "name": 6.846
+   },
+   "dur": 9.196,
+   "img": "fruit_apricot"
+  },
+  {
+   "k": 6,
+   "start": 57.07,
+   "label": "Avocado",
+   "pill": "Avocado",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 6.584,
+    "name": 6.834
+   },
+   "dur": 9.184,
+   "img": "fruit_avocado"
+  },
+  {
+   "k": 7,
+   "start": 66.254,
+   "label": "Jamun",
+   "pill": "Jamun",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 6.53,
+    "name": 6.78
+   },
+   "dur": 9.13,
+   "img": "fruit_jamun"
+  },
+  {
+   "k": 8,
+   "start": 75.384,
+   "label": "Star fruit",
+   "pill": "Star fruit",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 6.58,
+    "name": 6.83
+   },
+   "dur": 9.18,
+   "img": "fruit_star_fruit"
+  },
+  {
+   "k": 9,
+   "start": 84.564,
+   "label": "Plum",
+   "pill": "Plum",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 6.709,
+    "name": 6.959
+   },
+   "dur": 9.309,
+   "img": "fruit_plum"
+  },
+  {
+   "k": 10,
+   "start": 93.873,
+   "label": "Muskmelon",
+   "pill": "Muskmelon",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 6.851,
+    "name": 7.101
+   },
+   "dur": 9.451,
+   "img": "fruit_muskmelon"
+  }
+ ],
+ "outroStart": 103.323,
+ "outro": {
+  "done": 103.67327083333336,
+  "howmany": 106.48802083333337,
+  "next": 108.17614583333336,
+  "bye": 110.85187500000002
+ },
+ "paths": {
+  "fruit_dragon_fruit": "../images/fruit_dragon_fruit.jpg",
+  "fruit_fig": "../images/fruit_fig.jpg",
+  "fruit_blueberry": "../images/fruit_blueberry.jpg",
+  "fruit_peach": "../images/fruit_peach.jpg",
+  "fruit_apricot": "../images/fruit_apricot.jpg",
+  "fruit_avocado": "../images/fruit_avocado.jpg",
+  "fruit_jamun": "../images/fruit_jamun.jpg",
+  "fruit_star_fruit": "../images/fruit_star_fruit.jpg",
+  "fruit_plum": "../images/fruit_plum.jpg",
+  "fruit_muskmelon": "../images/fruit_muskmelon.jpg"
+ }
+}

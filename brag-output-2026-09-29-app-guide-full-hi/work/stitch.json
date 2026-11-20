@@ -1,0 +1,29 @@
+{
+ "out": "brag-output-2026-09-29-app-guide-full-hi",
+ "parts": [
+  "brag-output-2026-09-29-app-home-hi",
+  "brag-output-2026-09-29-app-device-hi",
+  "brag-output-2026-09-29-app-analytics-hi",
+  "brag-output-2026-09-29-app-gallery-cards-hi",
+  "brag-output-2026-09-29-app-profile-hi"
+ ],
+ "chapters": [
+  "होम",
+  "डिवाइस",
+  "एनालिटिक्स",
+  "गैलरी और कार्ड",
+  "प्रोफ़ाइल"
+ ],
+ "title": "Cheeko<br><span class=\"hl\">ऐप गाइड</span>",
+ "sub": "पेरेंट ऐप का हर टैब और हर सेटिंग, एक एक करके।",
+ "pill": "iPhone और Android",
+ "hook": "पूरा <span class=\"hl\">Cheeko ऐप</span><br>3 मिनट से कम में <span class=\"e\">📱</span>",
+ "thumbPill": "पूरी ऐप गाइड · 5 भाग",
+ "thumbShots": [
+  "app-shots-ios/01_home.png",
+  "app-shots-ios/03_device_controls.png",
+  "app-shots-ios/06_analytics_week_breakdown.png"
+ ],
+ "hi": 1,
+ "tail": 1.2
+}

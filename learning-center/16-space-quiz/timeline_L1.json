@@ -1,0 +1,254 @@
+{
+ "idea": "16-space-quiz",
+ "id": "V47",
+ "level": 1,
+ "nLevels": 1,
+ "mode": "ask",
+ "theme": {
+  "bg": "space",
+  "pals": [
+   [
+    "#2B2F77",
+    "#0B0C2A"
+   ],
+   [
+    "#3B1F6B",
+    "#120725"
+   ],
+   [
+    "#1F3B6B",
+    "#071325"
+   ],
+   [
+    "#4A1F5B",
+    "#170A1F"
+   ],
+   [
+    "#1F4B5B",
+    "#071A1F"
+   ]
+  ],
+  "trans": "iris",
+  "enter": "spin",
+  "fx": "stars",
+  "knob": "🚀",
+  "bar": [
+   "#91A7FF",
+   "#5C7CFA"
+  ],
+  "music": "space"
+ },
+ "answer": 5,
+ "dur": 133.42,
+ "n": 10,
+ "t1": "Space",
+ "t2": "Quiz!",
+ "head": "What am <span>I</span>?",
+ "chips": [
+  [
+   "?",
+   "Listen to Cheeko"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Say the answer"
+  ]
+ ],
+ "outroText": [
+  "Super!",
+  "All done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "rules": 3.795375,
+  "go": 6.652291666666667,
+  "level": 3.2383958333333336
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 8.476,
+   "label": "Sun",
+   "pill": "Sun",
+   "bubble": "I am a big hot star. I give light to all the planets.",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 4.39,
+    "reveal": 9.39,
+    "name": 9.64
+   },
+   "dur": 11.99,
+   "img": "space_sun",
+   "edge": "rgb(123,188,249)"
+  },
+  {
+   "k": 2,
+   "start": 20.465,
+   "label": "Mercury",
+   "pill": "Mercury",
+   "bubble": "I am the smallest planet, and the closest to the Sun.",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 4.082,
+    "reveal": 9.082,
+    "name": 9.332
+   },
+   "dur": 11.682,
+   "img": "space_mercury",
+   "edge": "rgb(126,187,249)"
+  },
+  {
+   "k": 3,
+   "start": 32.148,
+   "label": "Venus",
+   "pill": "Venus",
+   "bubble": "I am the hottest planet. I shine bright in the evening sky.",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 4.397,
+    "reveal": 9.397,
+    "name": 9.647
+   },
+   "dur": 11.997,
+   "img": "space_venus",
+   "edge": "rgb(131,189,246)"
+  },
+  {
+   "k": 4,
+   "start": 44.145,
+   "label": "Earth",
+   "pill": "Earth",
+   "bubble": "I am blue and green. I am our home!",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 4.025,
+    "reveal": 9.025,
+    "name": 9.275
+   },
+   "dur": 11.625,
+   "img": "space_earth",
+   "edge": "rgb(129,195,251)"
+  },
+  {
+   "k": 5,
+   "start": 55.77,
+   "label": "Moon",
+   "pill": "Moon",
+   "bubble": "I go around the Earth. You see me at night.",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.374,
+    "reveal": 8.374,
+    "name": 8.624
+   },
+   "dur": 10.974,
+   "img": "space_moon",
+   "edge": "rgb(138,194,249)"
+  },
+  {
+   "k": 6,
+   "start": 66.744,
+   "label": "Mars",
+   "pill": "Mars",
+   "bubble": "I am red and dusty. People call me the red planet.",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.718,
+    "reveal": 8.718,
+    "name": 8.968
+   },
+   "dur": 11.318,
+   "img": "space_mars",
+   "edge": "rgb(130,189,246)"
+  },
+  {
+   "k": 7,
+   "start": 78.062,
+   "label": "Jupiter",
+   "pill": "Jupiter",
+   "bubble": "I am the biggest planet. I have a big red spot.",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 3.889,
+    "reveal": 8.889,
+    "name": 9.139
+   },
+   "dur": 11.489,
+   "img": "space_jupiter",
+   "edge": "rgb(126,188,248)"
+  },
+  {
+   "k": 8,
+   "start": 89.551,
+   "label": "Saturn",
+   "pill": "Saturn",
+   "bubble": "I have big shiny rings around me.",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 2.8,
+    "reveal": 7.8,
+    "name": 8.05
+   },
+   "dur": 10.4,
+   "img": "saturn",
+   "edge": "rgb(129,183,239)"
+  },
+  {
+   "k": 9,
+   "start": 99.951,
+   "label": "Uranus",
+   "pill": "Uranus",
+   "bubble": "I am a cold blue green planet. I spin on my side.",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 4.181,
+    "reveal": 9.181,
+    "name": 9.431
+   },
+   "dur": 11.781,
+   "img": "space_uranus",
+   "edge": "rgb(127,190,251)"
+  },
+  {
+   "k": 10,
+   "start": 111.732,
+   "label": "Neptune",
+   "pill": "Neptune",
+   "bubble": "I am dark blue and very windy. I am the farthest planet from the Sun.",
+   "times": {
+    "ask0": 0.4,
+    "tick0": 4.98,
+    "reveal": 9.98,
+    "name": 10.23
+   },
+   "dur": 12.58,
+   "img": "space_neptune",
+   "edge": "rgb(111,182,250)"
+  }
+ ],
+ "outroStart": 124.312,
+ "outro": {
+  "done": 124.66172916666672,
+  "howmany": 126.62570833333338,
+  "next": 128.31383333333338,
+  "bye": 130.98956250000003
+ },
+ "paths": {
+  "space_sun": "../images/space_sun.jpg",
+  "space_mercury": "../images/space_mercury.jpg",
+  "space_venus": "../images/space_venus.jpg",
+  "space_earth": "../images/space_earth.jpg",
+  "space_moon": "../images/space_moon.jpg",
+  "space_mars": "../images/space_mars.jpg",
+  "space_jupiter": "../images/space_jupiter.jpg",
+  "saturn": "../images/saturn.jpg",
+  "space_uranus": "../images/space_uranus.jpg",
+  "space_neptune": "../images/space_neptune.jpg"
+ }
+}

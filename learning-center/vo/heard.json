@@ -1,0 +1,2334 @@
+{
+ "LCX_0": [
+  "Hi! I'm Cheeko!",
+  "Hi, I'm Chico."
+ ],
+ "LCX_1": [
+  "Ready? Let's go!",
+  "Ready? Let's go!"
+ ],
+ "LCX_2": [
+  "Here's the first one!",
+  "Here's the first one."
+ ],
+ "LCX_3": [
+  "Here's the last one!",
+  "Here's the last one."
+ ],
+ "LCX_4": [
+  "How many did you get right?",
+  "How many did you get right?"
+ ],
+ "LCX_5": [
+  "Bye bye!",
+  "Bye bye"
+ ],
+ "LCX_6": [
+  "Level one!",
+  "Level one."
+ ],
+ "LCX_7": [
+  "Level two!",
+  "Level two."
+ ],
+ "LCX_8": [
+  "Level three!",
+  "Level three."
+ ],
+ "LCX_9": [
+  "Can you guess this one?",
+  "Can you guess this one?"
+ ],
+ "LCX_10": [
+  "Do you know this one?",
+  "Do you know this one?"
+ ],
+ "LCX_11": [
+  "Look closely!",
+  "Look closely."
+ ],
+ "LCX_12": [
+  "Make your guess!",
+  "Make your guess."
+ ],
+ "LCX_13": [
+  "Try this one!",
+  "Try this one."
+ ],
+ "LCX_14": [
+  "Ooh, what's this?",
+  "Ooh, what's this?"
+ ],
+ "LCX_15": [
+  "Ready for level two?",
+  "Ready for level two?"
+ ],
+ "LCX_16": [
+  "Now try level three!",
+  "Now try level three."
+ ],
+ "LCX_17": [
+  "Play again and beat your score!",
+  "Play again and beat your score."
+ ],
+ "V35_0": [
+  "Let's play Touch Your Nose!",
+  "Let's play touch your nose."
+ ],
+ "V35_1": [
+  "Look where the circle is, touch it on your own body, and say its name!",
+  "Look where the circle is, touch it on your own body, and say its name."
+ ],
+ "V35_2": [
+  "You know your body so well!",
+  "You know your body so well."
+ ],
+ "V35_3": [
+  "What is this part called?",
+  "What is this park called?"
+ ],
+ "V35_4": [
+  "Touch it! What is it?",
+  "Touch it. What is it?"
+ ],
+ "V35_5": [
+  "Nose! Touch your nose!",
+  "Nose. Touch your nose."
+ ],
+ "V35_6": [
+  "Eyes! Touch your eyes!",
+  "Eyes, touch your eyes."
+ ],
+ "V35_7": [
+  "Ears! Touch your ears!",
+  "Ears, touch your ears."
+ ],
+ "V35_8": [
+  "Mouth! Touch your mouth!",
+  "Mouth, touch your mouth."
+ ],
+ "V35_9": [
+  "Hair! Touch your hair!",
+  "Hair, touch your hair."
+ ],
+ "V35_10": [
+  "Cheeks! Touch your cheeks!",
+  "Cheeks, touch your cheeks."
+ ],
+ "V35_11": [
+  "Hands! Touch your hands!",
+  "Hands, touch your hands."
+ ],
+ "V35_12": [
+  "Tummy! Touch your tummy!",
+  "Tummy, touch your tummy!"
+ ],
+ "V35_13": [
+  "Knees! Touch your knees!",
+  "Knees. Touch your knees."
+ ],
+ "V35_14": [
+  "Feet! Touch your feet!",
+  "Feet, touch your feet."
+ ],
+ "V35_15": [
+  "Shoulders! Touch your shoulders!",
+  "Shoulders, touch your shoulders."
+ ],
+ "V35_16": [
+  "Toes! Touch your toes!",
+  "Toes, touch your toes."
+ ],
+ "V39_0": [
+  "Let's play Shadow Match!",
+  "Let's play shadow match."
+ ],
+ "V39_1": [
+  "Look at the shadow, and guess what it is!",
+  "Look at the shadow, and guess what it is?"
+ ],
+ "V39_2": [
+  "You are a shadow detective!",
+  "You are a shadow detective."
+ ],
+ "V39_3": [
+  "Whose shadow is this?",
+  "Whose shadow is this?"
+ ],
+ "V39_4": [
+  "What is hiding in the shadow?",
+  "What is hiding in the shadow?"
+ ],
+ "V39_5": [
+  "Dog!",
+  "Dog"
+ ],
+ "V39_6": [
+  "Cat!",
+  "Can't."
+ ],
+ "V39_7": [
+  "Cow!",
+  "Cow"
+ ],
+ "V39_8": [
+  "Horse!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_8b52bbfd-6158-4572-"
+ ],
+ "V39_9": [
+  "Rooster!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_646f2515-519e-4fe5-"
+ ],
+ "V39_10": [
+  "Elephant!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_10c7917f-6afd-4772-"
+ ],
+ "V39_11": [
+  "Lion!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_0bbea240-138c-4383-"
+ ],
+ "V39_12": [
+  "Monkey!",
+  "Monkey"
+ ],
+ "V39_13": [
+  "Rabbit!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_5807080f-7044-47b0-"
+ ],
+ "V39_14": [
+  "Owl!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_022c3218-491f-40e3-"
+ ],
+ "V39_15": [
+  "Car!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_48bbfd0f-6388-4a55-"
+ ],
+ "V39_16": [
+  "Bus!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_7d0b65ae-a1d0-4d41-"
+ ],
+ "V39_17": [
+  "Bicycle!",
+  "Bicycle"
+ ],
+ "V39_18": [
+  "Aeroplane!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_27fb79b0-cea0-497b-"
+ ],
+ "V39_19": [
+  "Helicopter!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_ba3b45d2-bf9b-4dc2-"
+ ],
+ "V39_20": [
+  "Tractor!",
+  "Tractor"
+ ],
+ "V39_21": [
+  "Train!",
+  "Train"
+ ],
+ "V39_22": [
+  "Rocket!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_075da4f5-dc82-4f97-"
+ ],
+ "V39_23": [
+  "Boat!",
+  "Boat"
+ ],
+ "V39_24": [
+  "Hot air balloon!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_6254a368-d47f-4aae-"
+ ],
+ "V39_25": [
+  "Banana!",
+  "Banana"
+ ],
+ "V39_26": [
+  "Apple!",
+  "Apple"
+ ],
+ "V39_27": [
+  "Pineapple!",
+  "Pineapple."
+ ],
+ "V39_28": [
+  "Grapes!",
+  "Grapes"
+ ],
+ "V39_29": [
+  "Strawberry!",
+  "Strawberry"
+ ],
+ "V39_30": [
+  "Pear!",
+  "There"
+ ],
+ "V39_31": [
+  "Cherry!",
+  "Cherry"
+ ],
+ "V39_32": [
+  "Mango!",
+  "Mango"
+ ],
+ "V39_33": [
+  "Coconut!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_ac54592e-cb81-4490-"
+ ],
+ "V39_34": [
+  "Lemon!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_86b18a9e-98e4-423f-"
+ ],
+ "V43_0": [
+  "Let's play Sounds Around the House!",
+  "Let's play sounds around the house."
+ ],
+ "V43_1": [
+  "Listen to the sound, and say what it is!",
+  "Listen to the sound and say what it is."
+ ],
+ "V43_2": [
+  "Your ears are so clever!",
+  "Your ears are so clever."
+ ],
+ "V43_3": [
+  "Listen! What is that sound?",
+  "Listen, what is that sound?"
+ ],
+ "V43_4": [
+  "Where have you heard this sound?",
+  "Where have you heard this sound?"
+ ],
+ "V43_5": [
+  "Doorbell!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_c66e7888-a04c-47d7-"
+ ],
+ "V43_6": [
+  "Pressure cooker!",
+  "Pressure cooker."
+ ],
+ "V43_7": [
+  "Mixer!",
+  "Mixer"
+ ],
+ "V43_8": [
+  "Tap water!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_7fb9de23-fad5-4eb0-"
+ ],
+ "V43_9": [
+  "Clock!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_696caae8-336a-40a2-"
+ ],
+ "V43_10": [
+  "Knock on the door!",
+  "Knock on the door."
+ ],
+ "V43_11": [
+  "Alarm clock!",
+  "Alarm clock"
+ ],
+ "V43_12": [
+  "Kettle!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_9e504b89-1c02-4ccc-"
+ ],
+ "V43_13": [
+  "Broom!",
+  "Broom."
+ ],
+ "V43_14": [
+  "Ceiling fan!",
+  "Ceiling fan."
+ ],
+ "V43_15": [
+  "Washing machine!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_5140c90c-c2c3-47d5-"
+ ],
+ "V43_16": [
+  "Keys!",
+  "Kees"
+ ],
+ "V43_17": [
+  "Zip!",
+  "Zip"
+ ],
+ "V43_18": [
+  "Scissors!",
+  "Scissors"
+ ],
+ "V43_19": [
+  "Brushing teeth!",
+  "Brushing teeth."
+ ],
+ "V43_20": [
+  "Rain!",
+  "Rain."
+ ],
+ "V43_21": [
+  "Sizzling dosa!",
+  "Sizzling dosa."
+ ],
+ "V43_22": [
+  "Door creak!",
+  "Door Creek"
+ ],
+ "V43_23": [
+  "Car horn!",
+  "Car horn"
+ ],
+ "V43_24": [
+  "Footsteps!",
+  "Footsteps"
+ ],
+ "V47_0": [
+  "Let's play Space Quiz!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_e4b8720e-0311-452c-"
+ ],
+ "V47_1": [
+  "Listen to Cheeko's clue, and say what it is!",
+  "Listen to Chico's clue and say what it is."
+ ],
+ "V47_2": [
+  "You are a space explorer!",
+  "You are a space explorer."
+ ],
+ "V47_3": [
+  "What am I?",
+  "What am I?"
+ ],
+ "V47_4": [
+  "The Sun!",
+  "The sun."
+ ],
+ "V47_5": [
+  "I am a big hot star. I give light to all the planets.",
+  "I am a big hot star. I give light to all the planets."
+ ],
+ "V47_6": [
+  "Mercury!",
+  "Laughter"
+ ],
+ "V47_7": [
+  "I am the smallest planet, and the closest to the Sun.",
+  "I am the smallest planet and the closest to the sun."
+ ],
+ "V47_8": [
+  "Venus!",
+  "Venus"
+ ],
+ "V47_9": [
+  "I am the hottest planet. I shine bright in the evening sky.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_9866ebb2-13ea-4422-"
+ ],
+ "V47_10": [
+  "Earth!",
+  "Earth"
+ ],
+ "V47_11": [
+  "I am blue and green. I am our home!",
+  "I am blue and green. I am our home."
+ ],
+ "V47_12": [
+  "The Moon!",
+  "The moon."
+ ],
+ "V47_13": [
+  "I go around the Earth. You see me at night.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_fc7e66f8-71c4-4c6a-"
+ ],
+ "V47_14": [
+  "Mars!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_6e0bcec9-da8a-4648-"
+ ],
+ "V47_15": [
+  "I am red and dusty. People call me the red planet.",
+  "I am red and dusty. People call me the red planet."
+ ],
+ "V47_16": [
+  "Jupiter!",
+  "Jupiter"
+ ],
+ "V47_17": [
+  "I am the biggest planet. I have a big red spot.",
+  "I am the biggest planet. I have a big red spot."
+ ],
+ "V47_18": [
+  "Saturn!",
+  "Saturn"
+ ],
+ "V47_19": [
+  "I have big shiny rings around me.",
+  "I have big shiny rings around me."
+ ],
+ "V47_20": [
+  "Uranus!",
+  "Uranus"
+ ],
+ "V47_21": [
+  "I am a cold blue green planet. I spin on my side.",
+  "I am a cold blue green planet. I spin on my side."
+ ],
+ "V47_22": [
+  "Neptune!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_7ce5bb7b-b49b-4e21-"
+ ],
+ "V47_23": [
+  "I am dark blue and very windy. I am the farthest planet from the Sun.",
+  "I am dark blue and very windy. I am the farthest planet from the sun."
+ ],
+ "V51_0": [
+  "Let's play Famous Places of India!",
+  "Let's play famous places of India."
+ ],
+ "V51_1": [
+  "Look at the famous place, and say its name!",
+  "Look at the famous place and say its name."
+ ],
+ "V51_2": [
+  "You know India so well!",
+  "You know India so well"
+ ],
+ "V51_3": [
+  "Which place is this?",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_11a70527-8b1f-4160-"
+ ],
+ "V51_4": [
+  "Have you seen this place?",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_dff75b35-c3e4-406f-"
+ ],
+ "V51_5": [
+  "The Taj Mahal!",
+  "The Taj Mahal"
+ ],
+ "V51_6": [
+  "The India Gate!",
+  "The India Gate"
+ ],
+ "V51_7": [
+  "The Qutub Minar!",
+  "The Qutub Minar"
+ ],
+ "V51_8": [
+  "The Gateway of India!",
+  "The Gateway of India"
+ ],
+ "V51_9": [
+  "The Charminar!",
+  "The Sharminar"
+ ],
+ "V51_10": [
+  "The Red Fort!",
+  "The Red Fort"
+ ],
+ "V51_11": [
+  "The Hawa Mahal!",
+  "The Howrah Mahal"
+ ],
+ "V51_12": [
+  "Mysore Palace!",
+  "Mysore Palace"
+ ],
+ "V51_13": [
+  "The Victoria Memorial!",
+  "The Victoria Memorial"
+ ],
+ "V51_14": [
+  "Statue of Unity!",
+  "Statue of Unity"
+ ],
+ "V51_15": [
+  "The Howrah Bridge!",
+  "The Howrah Bridge"
+ ],
+ "V51_16": [
+  "The Gol Gumbaz!",
+  "The Gor Gumbaz"
+ ],
+ "V51_17": [
+  "The Jantar Mantar!",
+  "The Jantar Mantar"
+ ],
+ "V51_18": [
+  "Amber Fort!",
+  "Amber Fort"
+ ],
+ "V51_19": [
+  "Golconda Fort!",
+  "Golconda Fort"
+ ],
+ "V51_20": [
+  "The Vidhana Soudha!",
+  "The Virahana Sutta"
+ ],
+ "V51_21": [
+  "Hampi Stone Chariot!",
+  "Hampi stone chariot"
+ ],
+ "V51_22": [
+  "Bandra Worli Sea Link!",
+  "Bandra Worli Sea Link"
+ ],
+ "V51_23": [
+  "Rashtrapati Bhavan!",
+  "Rashtrapati Bhavan"
+ ],
+ "V51_24": [
+  "The Lighthouse of Mahabalipuram!",
+  "The lighthouse of Mahabalipuram."
+ ],
+ "V32_0": [
+  "Let's play Who Says That!",
+  "Let's play who says that."
+ ],
+ "V32_1": [
+  "Listen to the sound, and say which animal it is!",
+  "Listen to the sound and say which animal it is."
+ ],
+ "V32_2": [
+  "You know so many animal sounds!",
+  "You know so many animal sounds."
+ ],
+ "V32_3": [
+  "Listen! Who is that?",
+  "Listen, who is that?"
+ ],
+ "V32_4": [
+  "Who makes this sound?",
+  "Who makes this sound?"
+ ],
+ "V32_5": [
+  "Dog!",
+  "Dog"
+ ],
+ "V32_6": [
+  "Cat!",
+  "Cat"
+ ],
+ "V32_7": [
+  "Cow!",
+  "Cow"
+ ],
+ "V32_8": [
+  "Duck!",
+  "Duck"
+ ],
+ "V32_9": [
+  "Sheep!",
+  "Shape"
+ ],
+ "V32_10": [
+  "Horse!",
+  "Horse"
+ ],
+ "V32_11": [
+  "Pig!",
+  "Pig"
+ ],
+ "V32_12": [
+  "Rooster!",
+  "Rooster"
+ ],
+ "V32_13": [
+  "Goat!",
+  "Goat"
+ ],
+ "V32_14": [
+  "Donkey!",
+  "Donkey"
+ ],
+ "V32_15": [
+  "Lion!",
+  "Lion"
+ ],
+ "V32_16": [
+  "Elephant!",
+  "Elephant"
+ ],
+ "V32_17": [
+  "Monkey!",
+  "Monkey"
+ ],
+ "V32_18": [
+  "Frog!",
+  "Frog."
+ ],
+ "V32_19": [
+  "Tiger!",
+  "Tiger"
+ ],
+ "V32_20": [
+  "Bear!",
+  "Bear"
+ ],
+ "V32_21": [
+  "Wolf!",
+  "Wolf"
+ ],
+ "V32_22": [
+  "Owl!",
+  "Ow!"
+ ],
+ "V32_23": [
+  "Snake!",
+  "Snake"
+ ],
+ "V32_24": [
+  "Bee!",
+  "B."
+ ],
+ "V36_0": [
+  "Let's play Baby and Mummy!",
+  "Let's play baby and mummy."
+ ],
+ "V36_1": [
+  "Look at the baby animal, and say who its mummy is!",
+  "Look at the baby animal and say who its mommy is."
+ ],
+ "V36_2": [
+  "Every baby found its mummy!",
+  "Every baby found its mommy."
+ ],
+ "V36_3": [
+  "Who is my mummy?",
+  "Who is my mummy?"
+ ],
+ "V36_4": [
+  "Whose baby is this?",
+  "Whose baby is this?"
+ ],
+ "V36_5": [
+  "A chick! Its mummy is a hen.",
+  "A chick, its mummy is a hen."
+ ],
+ "V36_6": [
+  "A puppy! Its mummy is a dog.",
+  "A puppy, its mommy is a dog."
+ ],
+ "V36_7": [
+  "A kitten! Its mummy is a cat.",
+  "A kitten, its mommy is a cat."
+ ],
+ "V36_8": [
+  "A calf! Its mummy is a cow.",
+  "A calf. Its mummy is a cow."
+ ],
+ "V36_9": [
+  "A lamb! Its mummy is a sheep.",
+  "A lamb, its mummy is a sheep."
+ ],
+ "V36_10": [
+  "A foal! Its mummy is a horse.",
+  "A foal. Its mummy is a horse."
+ ],
+ "V36_11": [
+  "A duckling! Its mummy is a duck.",
+  "A duckling, its mummy is a duck."
+ ],
+ "V36_12": [
+  "A piglet! Its mummy is a pig.",
+  "A piglet. Its mommy is a pig."
+ ],
+ "V36_13": [
+  "A cub! Its mummy is a lion.",
+  "A cub, its mummy is a lion."
+ ],
+ "V36_14": [
+  "A joey! Its mummy is a kangaroo.",
+  "A Joey, its mommy is a kangaroo."
+ ],
+ "V36_15": [
+  "A tadpole! Its mummy is a frog.",
+  "A tadpole, its mummy is a frog."
+ ],
+ "V36_16": [
+  "A baby elephant! Its mummy is an elephant.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_65168ea6-1839-4064-"
+ ],
+ "V40_0": [
+  "Let's play How Does Cheeko Feel!",
+  "Let's play How Does Chico Feel."
+ ],
+ "V40_1": [
+  "Look at Cheeko's face, and say how Cheeko feels!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_7c460037-d05b-4e5a-"
+ ],
+ "V40_2": [
+  "You understand feelings so well!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_d2e121f1-146d-4d96-"
+ ],
+ "V40_3": [
+  "How does Cheeko feel?",
+  "How does Chico feel?"
+ ],
+ "V40_4": [
+  "What is Cheeko feeling?",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_cad5c2f9-d780-4e32-"
+ ],
+ "V40_5": [
+  "Happy! Cheeko got a big hug.",
+  "Happy, Chico got a big hug."
+ ],
+ "V40_6": [
+  "Sad. Cheeko dropped an ice cream.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_36a47f8c-05f6-446e-"
+ ],
+ "V40_7": [
+  "Angry! Someone broke Cheeko's block tower.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_e1c285af-e752-4e4f-"
+ ],
+ "V40_8": [
+  "Scared! There was a loud thunder sound.",
+  "Scared, there was a loud thunder sound."
+ ],
+ "V40_9": [
+  "Surprised! A present for Cheeko!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_6fde52f9-9f61-45b1-"
+ ],
+ "V40_10": [
+  "Sleepy. It is time for bed.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_0349a4d9-bc7d-4bc3-"
+ ],
+ "V40_11": [
+  "Silly! Cheeko is making funny faces.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_3a46b034-1754-4267-"
+ ],
+ "V40_12": [
+  "Proud! Cheeko built a tall tower all alone.",
+  "Proud, Chico built a tall tower all alone."
+ ],
+ "V44_0": [
+  "Let's play Indian Birds!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_537007b6-b1e5-4b49-"
+ ],
+ "V44_1": [
+  "Look at the bird, and say its name!",
+  "Look at the bird and say its name."
+ ],
+ "V44_2": [
+  "You are a bird expert!",
+  "You are a bird expert."
+ ],
+ "V44_3": [
+  "Which bird is this?",
+  "Which bird is this?"
+ ],
+ "V44_4": [
+  "What is this bird called?",
+  "What is this bird called?"
+ ],
+ "V44_5": [
+  "Peacock!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_617b3b55-4d56-4395-"
+ ],
+ "V44_6": [
+  "Parrot!",
+  "Parrot"
+ ],
+ "V44_7": [
+  "Crow!",
+  "Crow"
+ ],
+ "V44_8": [
+  "Sparrow!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_2f1c5742-7c60-4ad2-"
+ ],
+ "V44_9": [
+  "Pigeon!",
+  "Pigeon"
+ ],
+ "V44_10": [
+  "Hen!",
+  "Hen"
+ ],
+ "V44_11": [
+  "Duck!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_75e2c967-9d2b-4876-"
+ ],
+ "V44_12": [
+  "Owl!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_46a63407-6ba8-40c9-"
+ ],
+ "V44_13": [
+  "Eagle!",
+  "Eagle"
+ ],
+ "V44_14": [
+  "Kingfisher!",
+  "Kingfisher"
+ ],
+ "V44_15": [
+  "Myna!",
+  "Mina"
+ ],
+ "V44_16": [
+  "Koel!",
+  "Koel"
+ ],
+ "V44_17": [
+  "Hornbill!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_8d07927a-38e4-421a-"
+ ],
+ "V44_18": [
+  "Flamingo!",
+  "Flamingo"
+ ],
+ "V44_19": [
+  "Sarus crane!",
+  "Sarah's crane."
+ ],
+ "V44_20": [
+  "Woodpecker!",
+  "Woodpecker"
+ ],
+ "V44_21": [
+  "Bulbul!",
+  "Bubble"
+ ],
+ "V44_22": [
+  "Swan!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_67f192fd-5696-4966-"
+ ],
+ "V44_23": [
+  "Vulture!",
+  "Vulture"
+ ],
+ "V44_24": [
+  "Weaver bird!",
+  "Leave her bird."
+ ],
+ "V48_0": [
+  "Let's play Odd One Out!",
+  "Let's play Odd One Out."
+ ],
+ "V48_1": [
+  "Look at the four pictures, and find the one that is different!",
+  "Look at the four pictures and find the one that is different."
+ ],
+ "V48_2": [
+  "Great thinking!",
+  "Great thinking."
+ ],
+ "V48_3": [
+  "Which one is different?",
+  "Which one is different?"
+ ],
+ "V48_4": [
+  "Find the odd one out!",
+  "Find the odd one out."
+ ],
+ "V48_5": [
+  "The mango! It is a fruit, not a vehicle.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_8bf7f5e7-2f7f-4bce-"
+ ],
+ "V48_6": [
+  "The bicycle! It is not an animal.",
+  "The bicycle, it is not an animal."
+ ],
+ "V48_7": [
+  "The ball! You cannot eat it.",
+  "The ball, you cannot eat it."
+ ],
+ "V48_8": [
+  "The boat! It cannot fly.",
+  "The boat, it cannot fly."
+ ],
+ "V48_9": [
+  "The dog! It is not a bird.",
+  "The dog, it is not a bird."
+ ],
+ "V48_10": [
+  "The bus! It is blue. The others are red.",
+  "The bus, it is blue, the others are red."
+ ],
+ "V48_11": [
+  "The elephant! It is not a helper.",
+  "The elephant, it is not a helper."
+ ],
+ "V48_12": [
+  "The gift box! It is a square. The others are round.",
+  "The gift box, it is a square, the others are round."
+ ],
+ "V48_13": [
+  "The tractor! It is not an animal.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_007923d0-7a75-4db0-"
+ ],
+ "V48_14": [
+  "The fish! It is not in the sky.",
+  "The fish, it is not in the sky."
+ ],
+ "V48_15": [
+  "The aeroplane! It does not go on water.",
+  "The airplane, it does not go on water."
+ ],
+ "V48_16": [
+  "The car! It has four wheels. The others have two.",
+  "The car, it has four wheels. The others have two."
+ ],
+ "V48_17": [
+  "The banana! It is yellow. The others are red.",
+  "The banana, it is yellow, the others are red."
+ ],
+ "V48_18": [
+  "The cow! It does not swim in water.",
+  "The cow, it does not swim in water."
+ ],
+ "V48_19": [
+  "The flute! It is not a drum.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_5f6dc9e2-2209-4682-"
+ ],
+ "V48_20": [
+  "The elephant! It is not a dinosaur.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_cabb39f0-9d75-41d6-"
+ ],
+ "V48_21": [
+  "The snake! It cannot fly.",
+  "The snake, it cannot fly."
+ ],
+ "V48_22": [
+  "The kite! You cannot eat it.",
+  "The kite, you cannot eat it."
+ ],
+ "V48_23": [
+  "The fan! It keeps us cool. The others are hot.",
+  "The fan, it keeps us cool. The others are hot."
+ ],
+ "V48_24": [
+  "The grapes! They are purple. The others are yellow.",
+  "The grapes, they are purple, the others are yellow."
+ ],
+ "V52old_0": [
+  "Let's play What Is Missing!",
+  "Let's play what is missing."
+ ],
+ "V52old_1": [
+  "Look at the four pictures and remember them. Then say which one went away!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_e9bb757b-2925-4d4e-"
+ ],
+ "V52old_2": [
+  "Your memory is amazing!",
+  "Your memory is amazing."
+ ],
+ "V52old_3": [
+  "Remember these four!",
+  "Remember these four."
+ ],
+ "V52old_4": [
+  "The bus!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_44979806-afc6-4af6-"
+ ],
+ "V52old_5": [
+  "The mango!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_7323a565-3969-4b57-"
+ ],
+ "V52old_6": [
+  "The duck!",
+  "The duck."
+ ],
+ "V52old_7": [
+  "The ball!",
+  "The ball."
+ ],
+ "V52old_8": [
+  "The flower!",
+  "The flower."
+ ],
+ "V52old_9": [
+  "The kite!",
+  "The kite"
+ ],
+ "V52old_10": [
+  "The farmer!",
+  "The farmer"
+ ],
+ "V52old_11": [
+  "The flute!",
+  "The flute."
+ ],
+ "V52old_12": [
+  "The lion!",
+  "The lion."
+ ],
+ "V52old_13": [
+  "The hot air balloon!",
+  "The hot air balloon."
+ ],
+ "V33_0": [
+  "Let's play Guess the Fruit!",
+  "Let's play guess the fruit."
+ ],
+ "V33_1": [
+  "Look at the picture, and say the fruit's name before the time runs out!",
+  "Look at the picture and say the fruit's name before the time runs out."
+ ],
+ "V33_2": [
+  "Yum! You know so many fruits!",
+  "Yum, you know so many fruits."
+ ],
+ "V33_3": [
+  "What fruit is this?",
+  "What fruit is this?"
+ ],
+ "V33_4": [
+  "Which fruit is this?",
+  "Which fruit is this?"
+ ],
+ "V33_5": [
+  "Apple!",
+  "Apple"
+ ],
+ "V33_6": [
+  "Banana!",
+  "Banana"
+ ],
+ "V33_7": [
+  "Mango!",
+  "Mango"
+ ],
+ "V33_8": [
+  "Orange!",
+  "Orange"
+ ],
+ "V33_9": [
+  "Grapes!",
+  "Grapes"
+ ],
+ "V33_10": [
+  "Watermelon!",
+  "Watermelon"
+ ],
+ "V33_11": [
+  "Strawberry!",
+  "Strawberry"
+ ],
+ "V33_12": [
+  "Pineapple!",
+  "Pineapple"
+ ],
+ "V33_13": [
+  "Papaya!",
+  "Papaya"
+ ],
+ "V33_14": [
+  "Guava!",
+  "Quaver"
+ ],
+ "V33_15": [
+  "Pomegranate!",
+  "Pomegranate"
+ ],
+ "V33_16": [
+  "Pear!",
+  "Pair."
+ ],
+ "V33_17": [
+  "Cherry!",
+  "Terry"
+ ],
+ "V33_18": [
+  "Coconut!",
+  "Coconut"
+ ],
+ "V33_19": [
+  "Lemon!",
+  "Lemon"
+ ],
+ "V33_20": [
+  "Kiwi!",
+  "Kiwi"
+ ],
+ "V33_21": [
+  "Chikoo!",
+  "Chiku"
+ ],
+ "V33_22": [
+  "Jackfruit!",
+  "Jackfruit"
+ ],
+ "V33_23": [
+  "Custard apple!",
+  "Custard apple."
+ ],
+ "V33_24": [
+  "Lychee!",
+  "Lightsy"
+ ],
+ "V33_25": [
+  "Dragon fruit!",
+  "Dragon fruit."
+ ],
+ "V33_26": [
+  "Fig!",
+  "Fig"
+ ],
+ "V33_27": [
+  "Blueberry!",
+  "Blueberry"
+ ],
+ "V33_28": [
+  "Peach!",
+  "Peach"
+ ],
+ "V33_29": [
+  "Apricot!",
+  "Apricot"
+ ],
+ "V33_30": [
+  "Avocado!",
+  "Avocado"
+ ],
+ "V33_31": [
+  "Jamun!",
+  "For example"
+ ],
+ "V33_32": [
+  "Star fruit!",
+  "Star fruit."
+ ],
+ "V33_33": [
+  "Plum!",
+  "Plum"
+ ],
+ "V33_34": [
+  "Muskmelon!",
+  "Muskmelon"
+ ],
+ "V37_0": [
+  "Let's play A for Apple!",
+  "Let's play A for Apple."
+ ],
+ "V37_1": [
+  "Look at the letter and the picture, and say the word!",
+  "Look at the letter and the picture and say the word."
+ ],
+ "V37_2": [
+  "You know your A B C!",
+  "You know your ABC"
+ ],
+ "V37_3": [
+  "What starts with this letter?",
+  "What starts with this letter?"
+ ],
+ "V37_4": [
+  "Say the word!",
+  "Say the word."
+ ],
+ "V37_5": [
+  "A for Apple!",
+  "A for apple."
+ ],
+ "V37_6": [
+  "B for Ball!",
+  "B for ball."
+ ],
+ "V37_7": [
+  "C for Cat!",
+  "C for cat."
+ ],
+ "V37_8": [
+  "D for Dog!",
+  "D for dog."
+ ],
+ "V37_9": [
+  "E for Elephant!",
+  "E for elephant."
+ ],
+ "V37_10": [
+  "F for Fish!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_d6e3edbf-ed61-4132-"
+ ],
+ "V37_11": [
+  "G for Grapes!",
+  "G for grapes."
+ ],
+ "V37_12": [
+  "H for Hat!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_9b53db16-e388-4370-"
+ ],
+ "V37_13": [
+  "I for Ice cream!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_2aa1366d-60a8-4d6a-"
+ ],
+ "V37_14": [
+  "J for Jug!",
+  "J for jug."
+ ],
+ "V37_15": [
+  "K for Kite!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_44adddfb-f9d1-43bd-"
+ ],
+ "V37_16": [
+  "L for Lion!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_1fd82544-d0ca-4fb3-"
+ ],
+ "V37_17": [
+  "M for Monkey!",
+  "M for monkey."
+ ],
+ "V37_18": [
+  "N for Nest!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_c7603494-7c6b-4c39-"
+ ],
+ "V37_19": [
+  "O for Orange!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_f8b87293-fe21-4988-"
+ ],
+ "V37_20": [
+  "P for Parrot!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_8075b260-97b0-4f0e-"
+ ],
+ "V37_21": [
+  "Q for Quilt!",
+  "Q for quilt."
+ ],
+ "V37_22": [
+  "R for Rabbit!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_3ffe633d-e3c6-4d86-"
+ ],
+ "V37_23": [
+  "S for Sun!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_8bf5b3ed-a282-4ce4-"
+ ],
+ "V37_24": [
+  "T for Train!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_7d06a148-4667-442a-"
+ ],
+ "V37_25": [
+  "U for Umbrella!",
+  "U for umbrella."
+ ],
+ "V37_26": [
+  "V for Van!",
+  "V for van."
+ ],
+ "V37_27": [
+  "W for Watermelon!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_a8178ddb-e666-4863-"
+ ],
+ "V37_28": [
+  "X for Xylophone!",
+  "X for xylophone."
+ ],
+ "V37_29": [
+  "Y for Yo-yo!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_903b8996-d963-4ca2-"
+ ],
+ "V37_30": [
+  "Z for Zebra!",
+  "Z for zebra."
+ ],
+ "V41_0": [
+  "Let's play Shapes Around Us!",
+  "Let's play shapes around us."
+ ],
+ "V41_1": [
+  "Look at the picture, and say its shape!",
+  "Look at the picture and say its shape."
+ ],
+ "V41_2": [
+  "You found all the shapes!",
+  "You found all the shapes."
+ ],
+ "V41_3": [
+  "What shape is this?",
+  "What shape is this?"
+ ],
+ "V41_4": [
+  "Which shape do you see?",
+  "Which shape do you see?"
+ ],
+ "V41_5": [
+  "A circle! The clock is a circle.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_1c8a9097-88e4-47a4-"
+ ],
+ "V41_6": [
+  "A square! The gift box is a square.",
+  "A square. The gift box is a square."
+ ],
+ "V41_7": [
+  "A triangle! The pizza slice is a triangle.",
+  "A triangle. The pizza slice is a triangle."
+ ],
+ "V41_8": [
+  "A rectangle! The door is a rectangle.",
+  "A rectangle. The door is a rectangle."
+ ],
+ "V41_9": [
+  "An oval! The egg is an oval.",
+  "An oval, the egg is an oval."
+ ],
+ "V41_10": [
+  "A star! It is a star!",
+  "A star, it is a star."
+ ],
+ "V41_11": [
+  "A heart! The balloon is a heart.",
+  "A heart, the balloon is a heart."
+ ],
+ "V41_12": [
+  "A diamond! The kite is a diamond.",
+  "A diamond. The kite is a diamond."
+ ],
+ "V41_13": [
+  "A semicircle! The watermelon slice is a semicircle.",
+  "A semicircle. The watermelon slice is a semicircle."
+ ],
+ "V41_14": [
+  "A hexagon! The honeycomb is a hexagon.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_bacb9c0c-35f3-4ff1-"
+ ],
+ "V41_15": [
+  "A circle! The plate is a circle.",
+  "A circle. The plate is a circle."
+ ],
+ "V41_16": [
+  "A square! The cushion is a square.",
+  "A square. The cushion is a square."
+ ],
+ "V41_17": [
+  "A triangle! The samosa is a triangle.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_27f11b8e-ac48-4ec1-"
+ ],
+ "V41_18": [
+  "A rectangle! The book is a rectangle.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_e1734dd9-86ad-4627-"
+ ],
+ "V41_19": [
+  "An oval! The mirror is an oval.",
+  "An oval, the mirror is an oval."
+ ],
+ "V41_20": [
+  "A star! The starfish is a star.",
+  "A star. The starfish is a star."
+ ],
+ "V41_21": [
+  "A heart! The cookie is a heart.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_4033c828-1123-456f-"
+ ],
+ "V41_22": [
+  "A diamond! The sign is a diamond.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_70cd8173-5475-4c38-"
+ ],
+ "V41_23": [
+  "A semicircle! The rainbow is a semicircle.",
+  "A semicircle. The rainbow is a semicircle."
+ ],
+ "V41_24": [
+  "A hexagon! The nut is a hexagon.",
+  "A hexagon. The nut is a hexagon."
+ ],
+ "V45_0": [
+  "Let's play Big or Small!",
+  "Let's play big or small."
+ ],
+ "V45_1": [
+  "Listen to Cheeko, and say the opposite word!",
+  "Listen to Chico and say the opposite word."
+ ],
+ "V45_2": [
+  "You know your opposites!",
+  "You know your opposites."
+ ],
+ "V45_3": [
+  "Say the opposite!",
+  "Say the opposite."
+ ],
+ "V45_4": [
+  "Small! Big and small.",
+  "Small, big and small."
+ ],
+ "V45_5": [
+  "The elephant is big. And the mouse is?",
+  "The elephant is big, and the mouse is?"
+ ],
+ "V45_6": [
+  "Short! Tall and short.",
+  "Short, tall, and short."
+ ],
+ "V45_7": [
+  "The giraffe is tall. And the penguin is?",
+  "The giraffe is tall, and the penguin is?"
+ ],
+ "V45_8": [
+  "Cold! Hot and cold.",
+  "Cold, hot and cold."
+ ],
+ "V45_9": [
+  "The tea is hot. And the ice cream is?",
+  "The tea is hot, and the ice cream is?"
+ ],
+ "V45_10": [
+  "Slow! Fast and slow.",
+  "Slow, fast, and slow."
+ ],
+ "V45_11": [
+  "The rabbit is fast. And the tortoise is?",
+  "The rabbit is fast, and the tortoise is slow."
+ ],
+ "V45_12": [
+  "Empty! Full and empty.",
+  "Empty, full and empty."
+ ],
+ "V45_13": [
+  "This glass is full. And that glass is?",
+  "This glass is full, and that glass is..."
+ ],
+ "V45_14": [
+  "Night! Day and night.",
+  "Night, day, and night."
+ ],
+ "V45_15": [
+  "The sun comes out in the day. And the moon comes out at?",
+  "The sun comes out in the day, and the moon comes out at..."
+ ],
+ "V45_16": [
+  "Closed! Open and closed.",
+  "Closed. Open and closed."
+ ],
+ "V45_17": [
+  "This box is open. And that box is?",
+  "This box is open, and that box is..."
+ ],
+ "V45_18": [
+  "Dry! Wet and dry.",
+  "Dry, wet and dry."
+ ],
+ "V45_19": [
+  "This towel is wet. And that towel is?",
+  "This towel is wet, and that towel is?"
+ ],
+ "V45_20": [
+  "Light! Heavy and light.",
+  "Light, heavy, and light."
+ ],
+ "V45_21": [
+  "The stone is heavy. And the feather is?",
+  "The stone is heavy, and the feather is?"
+ ],
+ "V45_22": [
+  "Short! Long and short.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_41fd7360-5629-4dcb-"
+ ],
+ "V45_23": [
+  "This pencil is long. And that pencil is?",
+  "This pencil is long, and that pencil is..."
+ ],
+ "V45_24": [
+  "Dirty! Clean and dirty.",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_eb1dcb2f-7f31-4c20-"
+ ],
+ "V45_25": [
+  "This plate is clean. And that plate is?",
+  "This plate is clean, and that plate is?"
+ ],
+ "V45_26": [
+  "Thin! Thick and thin.",
+  "Thin, thick and thin."
+ ],
+ "V45_27": [
+  "This book is thick. And that book is?",
+  "This book is thick, and that book is?"
+ ],
+ "V49_0": [
+  "Let's play Cheeko's Riddles!",
+  "Let's play Chico's riddles"
+ ],
+ "V49_1": [
+  "Listen to Cheeko's riddle, and guess the answer!",
+  "Listen to Chico's riddle and guess the answer."
+ ],
+ "V49_2": [
+  "You solved my riddles!",
+  "You solved my riddles."
+ ],
+ "V49_3": [
+  "Guess my riddle!",
+  "Guess my riddle."
+ ],
+ "V49_4": [
+  "An umbrella!",
+  "An umbrella."
+ ],
+ "V49_5": [
+  "I open up when it rains. I keep you dry. What am I?",
+  "I open up when it rains, I keep you dry. What am I?"
+ ],
+ "V49_6": [
+  "A clock!",
+  "A clock."
+ ],
+ "V49_7": [
+  "I have a face and two hands, but no arms or legs. I tell you the time. What am I?",
+  "I have a face and two hands, but no arms or legs. I tell you the time. What am I?"
+ ],
+ "V49_8": [
+  "The sun!",
+  "The sun."
+ ],
+ "V49_9": [
+  "I am big, yellow and hot. I come up in the sky every morning. What am I?",
+  "I am big, yellow, and hot. I come up in the sky every morning. What am I?"
+ ],
+ "V49_10": [
+  "The moon!",
+  "The moon."
+ ],
+ "V49_11": [
+  "I come out at night. Sometimes I am round, sometimes I am thin. What am I?",
+  "I come out at night. Sometimes I am round, sometimes I am thin. What am I?"
+ ],
+ "V49_12": [
+  "A cow!",
+  "A cow"
+ ],
+ "V49_13": [
+  "I say moo. I eat grass. I give you milk. Who am I?",
+  "I say moo, I eat grass, I give you milk, who am I?"
+ ],
+ "V49_14": [
+  "An elephant!",
+  "An elephant."
+ ],
+ "V49_15": [
+  "I am very big and grey. I have a long trunk. Who am I?",
+  "I am very big and gray. I have a long trunk. Who am I?"
+ ],
+ "V49_16": [
+  "A banana!",
+  "A banana."
+ ],
+ "V49_17": [
+  "I am long and yellow. Monkeys love me. You peel me before you eat me. What am I?",
+  "I am long and yellow. Monkeys love me. You peel me before you eat me. What am I?"
+ ],
+ "V49_18": [
+  "An ice cream!",
+  "An ice cream."
+ ],
+ "V49_19": [
+  "I am cold and sweet. I melt in the sun. What am I?",
+  "I am cold and sweet, I melt in the sun, what am I?"
+ ],
+ "V49_20": [
+  "A fish!",
+  "A fish."
+ ],
+ "V49_21": [
+  "I live in water. I have fins and a tail. I swim but I cannot walk. Who am I?",
+  "I live in water, I have fins and a tail, I swim but I cannot walk, who am I?"
+ ],
+ "V49_22": [
+  "A rainbow!",
+  "A rainbow."
+ ],
+ "V49_23": [
+  "I come after the rain. I have seven colours. I bend across the sky. What am I?",
+  "I come after the rain, I have seven colors, I bend across the sky, what am I?"
+ ],
+ "V49_24": [
+  "An egg!",
+  "An egg."
+ ],
+ "V49_25": [
+  "I am white and oval. A little chick comes out of me. What am I?",
+  "I am white and oval. A little chick comes out of me. What am I?"
+ ],
+ "V49_26": [
+  "A kite!",
+  "A kite."
+ ],
+ "V49_27": [
+  "I fly high in the sky, but I have no wings. You hold my string. What am I?",
+  "I fly high in the sky, but I have no wings. You hold my string. What am I?"
+ ],
+ "V49_28": [
+  "A tree!",
+  "A tree."
+ ],
+ "V49_29": [
+  "I am tall and green. Birds make nests in me. I give you shade. What am I?",
+  "I am tall and green, birds make nests in me, I give you shade, what am I?"
+ ],
+ "V49_30": [
+  "A toothbrush!",
+  "A toothbrush."
+ ],
+ "V49_31": [
+  "I help you clean your teeth every morning and every night. What am I?",
+  "I help you clean your teeth every morning and every night. What am I?"
+ ],
+ "V49_32": [
+  "A pillow!",
+  "A pillow."
+ ],
+ "V49_33": [
+  "I am soft. You put your head on me when you sleep. What am I?",
+  "I am soft. You put your head on me when you sleep. What am I?"
+ ],
+ "V49_34": [
+  "Shoes!",
+  "Shoes"
+ ],
+ "V49_35": [
+  "You wear us on your feet. We always come in a pair. What are we?",
+  "You wear us on your feet. We always come in a pair. What are we?"
+ ],
+ "V49_36": [
+  "A bee!",
+  "A bee?"
+ ],
+ "V49_37": [
+  "I am small and I buzz. I make sweet honey. Who am I?",
+  "I am small and I buzz. I make sweet honey. Who am I?"
+ ],
+ "V49_38": [
+  "A spider!",
+  "A spider."
+ ],
+ "V49_39": [
+  "I have eight legs. I make a sticky web. Who am I?",
+  "I have eight legs. I make a sticky web. Who am I?"
+ ],
+ "V49_40": [
+  "A mirror!",
+  "A mirror."
+ ],
+ "V49_41": [
+  "When you look at me, you see yourself. What am I?",
+  "When you look at me, you see yourself. What am I?"
+ ],
+ "V49_42": [
+  "A pencil!",
+  "A pencil"
+ ],
+ "V49_43": [
+  "I help you write and draw. I get shorter when you sharpen me. What am I?",
+  "I help you write and draw. I get shorter when you sharpen me. What am I?"
+ ],
+ "V53_0": [
+  "Let's play Emoji Words!",
+  "Let's play emoji words."
+ ],
+ "V53_1": [
+  "Look at the two pictures, put them together, and say the word!",
+  "Look at the two pictures, put them together and say the word."
+ ],
+ "V53_2": [
+  "You are a word wizard!",
+  "You are a word wizard."
+ ],
+ "V53_3": [
+  "What word do they make?",
+  "What word do they make?"
+ ],
+ "V53_4": [
+  "Put them together!",
+  "Put them together."
+ ],
+ "V53_5": [
+  "Sunflower!",
+  "Sunflower."
+ ],
+ "V53_6": [
+  "Rainbow!",
+  "Rainbow!"
+ ],
+ "V53_7": [
+  "Starfish!",
+  "Starfish"
+ ],
+ "V53_8": [
+  "Butterfly!",
+  "Butterfly"
+ ],
+ "V53_9": [
+  "Football!",
+  "Football"
+ ],
+ "V53_10": [
+  "Cupcake!",
+  "Cupcake"
+ ],
+ "V53_11": [
+  "Snowman!",
+  "Snowman"
+ ],
+ "V53_12": [
+  "Toothbrush!",
+  "Toothbrush"
+ ],
+ "V53_13": [
+  "Pancake!",
+  "Pancake"
+ ],
+ "V53_14": [
+  "Seahorse!",
+  "Seahorse"
+ ],
+ "V53_15": [
+  "Jellyfish!",
+  "Jellyfish"
+ ],
+ "V53_16": [
+  "Raincoat!",
+  "Raincoat."
+ ],
+ "V34_0": [
+  "Let's play What Colour Is It!",
+  "Let's play what color is it."
+ ],
+ "V34_1": [
+  "Look at the picture, and say its colour!",
+  "Look at the picture and say its color."
+ ],
+ "V34_2": [
+  "You know all your colours!",
+  "You know all your colors."
+ ],
+ "V34_3": [
+  "What colour is this?",
+  "What color is this?"
+ ],
+ "V34_4": [
+  "Which colour do you see?",
+  "Which color do you see?"
+ ],
+ "V34_5": [
+  "Red! The balloon is red.",
+  "Red, the balloon is red."
+ ],
+ "V34_6": [
+  "Yellow! The banana is yellow.",
+  "Yellow, the banana is yellow."
+ ],
+ "V34_7": [
+  "Blue! The umbrella is blue.",
+  "Blue, the umbrella is blue."
+ ],
+ "V34_8": [
+  "Green! The leaf is green.",
+  "Green. The leaf is green."
+ ],
+ "V34_9": [
+  "Orange! The pumpkin is orange.",
+  "Orange, the pumpkin is orange."
+ ],
+ "V34_10": [
+  "Pink! The flower is pink.",
+  "Pink, the flower is pink."
+ ],
+ "V34_11": [
+  "Purple! The grapes are purple.",
+  "Purple. The grapes are purple."
+ ],
+ "V34_12": [
+  "Brown! The teddy bear is brown.",
+  "Brown, the teddy bear is brown."
+ ],
+ "V34_13": [
+  "Black! The cat is black.",
+  "Black. The cat is black."
+ ],
+ "V34_14": [
+  "White! The cloud is white.",
+  "White, the cloud is white."
+ ],
+ "V34_15": [
+  "Red! The fire engine is red.",
+  "Red. The fire engine is red."
+ ],
+ "V34_16": [
+  "Yellow! The school bus is yellow.",
+  "Yellow, the school bus is yellow."
+ ],
+ "V34_17": [
+  "Blue! The whale is blue.",
+  "Blue, the whale is blue."
+ ],
+ "V34_18": [
+  "Green! The frog is green.",
+  "Green. The frog is green."
+ ],
+ "V34_19": [
+  "Orange! The carrot is orange.",
+  "Orange, the carrot is orange."
+ ],
+ "V34_20": [
+  "Pink! The piggy bank is pink.",
+  "Pink, the piggy bank is pink."
+ ],
+ "V34_21": [
+  "Purple! The butterfly is purple.",
+  "Purple, the butterfly is purple."
+ ],
+ "V34_22": [
+  "Brown! The cookie is brown.",
+  "Brown, the cookie is brown."
+ ],
+ "V34_23": [
+  "Black! The boots are black.",
+  "Black, the boots are black."
+ ],
+ "V34_24": [
+  "White! The milk is white.",
+  "White, the milk is white."
+ ],
+ "V38_0": [
+  "Let's play How Many!",
+  "Let's play how many."
+ ],
+ "V38_1": [
+  "Count the things on the screen, and say how many!",
+  "Count the things on the screen and say how many."
+ ],
+ "V38_2": [
+  "Super counting!",
+  "Super counting."
+ ],
+ "V38_3": [
+  "How many can you count?",
+  "How many can you count?"
+ ],
+ "V38_4": [
+  "Count them with me!",
+  "Count them with me."
+ ],
+ "V38_5": [
+  "Three ducks!",
+  "Three ducks."
+ ],
+ "V38_6": [
+  "One ball!",
+  "Wind ball"
+ ],
+ "V38_7": [
+  "Four balloons!",
+  "Four balloons."
+ ],
+ "V38_8": [
+  "Two stars!",
+  "Two stars."
+ ],
+ "V38_9": [
+  "Five fish!",
+  "Five fish"
+ ],
+ "V38_10": [
+  "Two apples!",
+  "Two apples."
+ ],
+ "V38_11": [
+  "Four flowers!",
+  "Four flowers."
+ ],
+ "V38_12": [
+  "One sun!",
+  "One son."
+ ],
+ "V38_13": [
+  "Five cars!",
+  "Five cars"
+ ],
+ "V38_14": [
+  "Three butterflies!",
+  "Three butterflies."
+ ],
+ "V38_15": [
+  "Six stars!",
+  "Six stars."
+ ],
+ "V38_16": [
+  "Eight ducks!",
+  "Eight ducks."
+ ],
+ "V38_17": [
+  "Seven strawberries!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_58e62592-b47c-4ae7-"
+ ],
+ "V38_18": [
+  "Ten balls!",
+  "Ten balls."
+ ],
+ "V38_19": [
+  "Nine flowers!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_05bcd30e-f351-4f7e-"
+ ],
+ "V38_20": [
+  "Six cupcakes!",
+  "Six cupcakes."
+ ],
+ "V38_21": [
+  "Seven fish!",
+  "Seven fish."
+ ],
+ "V38_22": [
+  "Eight balloons!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_4b132d91-0923-45e8-"
+ ],
+ "V38_23": [
+  "Ten butterflies!",
+  "Ten butterflies."
+ ],
+ "V38_24": [
+  "Nine apples!",
+  "Nine apples."
+ ],
+ "V42_0": [
+  "Let's play Who Helps Us!",
+  "Let's play who helps us."
+ ],
+ "V42_1": [
+  "Look at the helper, and say what their job is!",
+  "Look at the helper and say what their job is."
+ ],
+ "V42_2": [
+  "Thank you, helpers!",
+  "Thank you helpers"
+ ],
+ "V42_3": [
+  "Who is this helper?",
+  "Who is this helper?"
+ ],
+ "V42_4": [
+  "What is this job called?",
+  "What is this job called?"
+ ],
+ "V42_5": [
+  "A doctor! Doctors help us get better.",
+  "A doctor, doctors help us get better."
+ ],
+ "V42_6": [
+  "A nurse! Nurses take care of us.",
+  "A nurse. Nurses take care of us."
+ ],
+ "V42_7": [
+  "A police officer! Police officers keep us safe.",
+  "A police officer. Police officers keep us safe."
+ ],
+ "V42_8": [
+  "A firefighter! Firefighters put out fires.",
+  "A firefighter. Firefighters put out fires."
+ ],
+ "V42_9": [
+  "A teacher! Teachers help us learn.",
+  "A teacher. Teachers help us learn."
+ ],
+ "V42_10": [
+  "A farmer! Farmers grow our food.",
+  "A farmer, farmers grow our food."
+ ],
+ "V42_11": [
+  "A chef! Chefs cook yummy food.",
+  "A chef, chefs cook yummy food."
+ ],
+ "V42_12": [
+  "A postman! Postmen bring our letters.",
+  "A postman. Postmen bring our letters."
+ ],
+ "V42_13": [
+  "A pilot! Pilots fly aeroplanes.",
+  "A pilot. Pilots fly airplanes."
+ ],
+ "V42_14": [
+  "A bus driver! Bus drivers take us places.",
+  "A bus driver. Bus drivers take us places."
+ ],
+ "V42_15": [
+  "A dentist! Dentists keep our teeth healthy.",
+  "A dentist, dentists keep our teeth healthy."
+ ],
+ "V42_16": [
+  "A mechanic! Mechanics fix cars.",
+  "A mechanic. Mechanics fix cars."
+ ],
+ "V42_17": [
+  "A carpenter! Carpenters make things from wood.",
+  "A carpenter. Carpenters make things from wood."
+ ],
+ "V42_18": [
+  "A tailor! Tailors stitch our clothes.",
+  "A tailor, tailor stitch our clothes."
+ ],
+ "V42_19": [
+  "A barber! Barbers cut our hair.",
+  "A barber, barbers cut our hair."
+ ],
+ "V42_20": [
+  "A painter! Painters paint our walls.",
+  "A painter. Painters paint our walls."
+ ],
+ "V42_21": [
+  "A plumber! Plumbers fix our taps.",
+  "A plumber, plumbers fix our taps."
+ ],
+ "V42_22": [
+  "An electrician! Electricians fix our lights.",
+  "An electrician. Electricians fix our lights."
+ ],
+ "V42_23": [
+  "An astronaut! Astronauts go to space.",
+  "An astronaut, astronauts go to space."
+ ],
+ "V42_24": [
+  "A vegetable seller! Vegetable sellers bring us fresh vegetables.",
+  "A vegetable seller. Vegetable sellers bring us fresh vegetables."
+ ],
+ "V46_0": [
+  "Let's play Guess the Instrument!",
+  "Let's play Guess the Instrument."
+ ],
+ "V46_1": [
+  "Listen to the music, and say which instrument is playing!",
+  "Listen to the music and say which instrument is playing."
+ ],
+ "V46_2": [
+  "You have musical ears!",
+  "You have musical ears."
+ ],
+ "V46_3": [
+  "Listen! What is playing?",
+  "Listen, what is playing?"
+ ],
+ "V46_4": [
+  "Which instrument is this?",
+  "Which instrument is this?"
+ ],
+ "V46_5": [
+  "Drum!",
+  "Drum"
+ ],
+ "V46_6": [
+  "Piano!",
+  "Piano"
+ ],
+ "V46_7": [
+  "Guitar!",
+  "Guitar"
+ ],
+ "V46_8": [
+  "Flute!",
+  "Flute."
+ ],
+ "V46_9": [
+  "Tabla!",
+  "Tabla"
+ ],
+ "V46_10": [
+  "Bell!",
+  "Bell"
+ ],
+ "V46_11": [
+  "Xylophone!",
+  "Xylophone"
+ ],
+ "V46_12": [
+  "Trumpet!",
+  "Trumpet."
+ ],
+ "V46_13": [
+  "Violin!",
+  "Violin"
+ ],
+ "V46_14": [
+  "Harmonium!",
+  "Harmonium"
+ ],
+ "V46_15": [
+  "Sitar!",
+  "Sitar"
+ ],
+ "V46_16": [
+  "Dhol!",
+  "Tongue"
+ ],
+ "V46_17": [
+  "Veena!",
+  "Veena"
+ ],
+ "V46_18": [
+  "Shehnai!",
+  "Shenai"
+ ],
+ "V46_19": [
+  "Mridangam!",
+  "Ridangam"
+ ],
+ "V46_20": [
+  "Tambourine!",
+  "{\"error\":{\"message\":\"Rate limit exceeded.\",\"code\":\"rate_limit_exceeded_error\",\"request_id\":\"20261008_376f147c-6528-4716-"
+ ],
+ "V46_21": [
+  "Saxophone!",
+  "Saxophone"
+ ],
+ "V46_22": [
+  "Harp!",
+  "Harp"
+ ],
+ "V46_23": [
+  "Accordion!",
+  "Achordian"
+ ],
+ "V46_24": [
+  "Triangle!",
+  "Triangle"
+ ],
+ "V50_0": [
+  "Let's play Guess the Dinosaur!",
+  "Let's play guess the dinosaur."
+ ],
+ "V50_1": [
+  "Look at the dinosaur, and say its name!",
+  "Look at the dinosaur and say its name."
+ ],
+ "V50_2": [
+  "Roar! You are a dinosaur expert!",
+  "Roar, you are a dinosaur expert."
+ ],
+ "V50_3": [
+  "Which dinosaur is this?",
+  "Which dinosaur is this?"
+ ],
+ "V50_4": [
+  "Do you know this dinosaur?",
+  "Do you know this dinosaur?"
+ ],
+ "V50_5": [
+  "T. rex!",
+  "T-Rex"
+ ],
+ "V50_6": [
+  "Triceratops!",
+  "Triceratops"
+ ],
+ "V50_7": [
+  "Stegosaurus!",
+  "Stegosaurus"
+ ],
+ "V50_8": [
+  "Brachiosaurus!",
+  "Brachiosaurus"
+ ],
+ "V50_9": [
+  "Velociraptor!",
+  "Velociraptor"
+ ],
+ "V50_10": [
+  "Ankylosaurus!",
+  "Ankylosaurus"
+ ],
+ "V50_11": [
+  "Spinosaurus!",
+  "Spinosaurus"
+ ],
+ "V50_12": [
+  "Diplodocus!",
+  "Diplodocus."
+ ],
+ "V50_13": [
+  "Parasaurolophus!",
+  "Paracerulosis."
+ ],
+ "V50_14": [
+  "Iguanodon!",
+  "Iguanodon"
+ ],
+ "V50_15": [
+  "Pachycephalosaurus!",
+  "Pachycephalosaurus"
+ ],
+ "V50_16": [
+  "Allosaurus!",
+  "Alasaurus"
+ ],
+ "V50_17": [
+  "Dilophosaurus!",
+  "Dilophosaurus"
+ ],
+ "V50_18": [
+  "Carnotaurus!",
+  "Carnotaurus"
+ ],
+ "V50_19": [
+  "Therizinosaurus!",
+  "There is Xenosaurus"
+ ],
+ "V50_20": [
+  "Gallimimus!",
+  "Gallamimus"
+ ],
+ "V50_21": [
+  "Baryonyx!",
+  "Baryonyx"
+ ],
+ "V50_22": [
+  "Oviraptor!",
+  "Ovi Raptor"
+ ],
+ "V50_23": [
+  "Argentinosaurus!",
+  "Argentinosaurus"
+ ],
+ "V50_24": [
+  "Maiasaura!",
+  "Maya Sora"
+ ],
+ "V52_0": [
+  "What is missing?",
+  "What is missing?"
+ ],
+ "V52_1": [
+  "Let's play What Is Missing!",
+  "Let's play what is missing."
+ ],
+ "V52_2": [
+  "Look at the four pictures and remember them. Then say which one went away!",
+  "Look at the four pictures and remember them. Then say which one went away."
+ ],
+ "V52_3": [
+  "Your memory is amazing!",
+  "Your memory is amazing."
+ ],
+ "V52_4": [
+  "Remember these four!",
+  "Remember these four."
+ ],
+ "V52_5": [
+  "The bus!",
+  "The bus"
+ ],
+ "V52_6": [
+  "The mango!",
+  "The mango."
+ ],
+ "V52_7": [
+  "The duck!",
+  "The duck."
+ ],
+ "V52_8": [
+  "The ball!",
+  "The ball."
+ ],
+ "V52_9": [
+  "The flower!",
+  "The flower."
+ ],
+ "V52_10": [
+  "The kite!",
+  "The kite."
+ ],
+ "V52_11": [
+  "The farmer!",
+  "The farmer."
+ ],
+ "V52_12": [
+  "The flute!",
+  "The flute."
+ ],
+ "V52_13": [
+  "The lion!",
+  "The lion."
+ ],
+ "V52_14": [
+  "The hot air balloon!",
+  "The hot air balloon."
+ ]
+}

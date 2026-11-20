@@ -1,0 +1,612 @@
+{
+  "generated": "2026-10-09",
+  "source": "Envato Elements via Envato MCP search + public item pages (og:image, uncropped srcset rendition). Search only: nothing downloaded or licensed.",
+  "screen": "296x240 on-device video, kids 4-8",
+  "summary": {
+    "ok": 12,
+    "weak": 4,
+    "missing": 4
+  },
+  "packs": [
+    {
+      "title": "Tourism of India 3D Icon Set",
+      "author": "EklipStudio",
+      "item_url": "https://elements.envato.com/tourism-of-india-3d-icon-set-6VV4MZS",
+      "type": "3d",
+      "covers": [
+        "taj_mahal",
+        "place_india_gate",
+        "place_amber_fort",
+        "place_qutub_minar"
+      ],
+      "covers_count": 4,
+      "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/pack__6VV4MZS.jpg",
+      "note": "Closest to a pack: 10 cute clay-style 3D icons (PNG 3000px + OBJ/FBX) by EklipStudio. Lists Taj Mahal, India Gate, Amber Fort and Qutub Minar; the rest are rickshaws and food. Covers 4 of 20."
+    },
+    {
+      "title": "Travel India elements map and landmarks symbol",
+      "author": "Feelplus",
+      "item_url": "https://elements.envato.com/travel-india-elements-map-and-landmarks-symbol-KXLSDN5",
+      "type": "graphic",
+      "covers": [
+        "taj_mahal",
+        "place_india_gate",
+        "place_red_fort"
+      ],
+      "covers_count": 3,
+      "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/pack__KXLSDN5.jpg",
+      "note": "Flat vector set by Feelplus. The Red Fort is drawn WITH an Indian flag on top, and the set also has a flag and a map. Covers 3 of 20."
+    },
+    {
+      "title": "Indian Landmarks Illustration Collection",
+      "author": "delook_creative",
+      "item_url": "https://elements.envato.com/indian-landmarks-illustration-collection-62ERBVU",
+      "type": "graphic",
+      "covers": [
+        "taj_mahal",
+        "place_india_gate"
+      ],
+      "covers_count": 2,
+      "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/pack__62ERBVU.jpg",
+      "note": "Cream hand-drawn vector set by delook_creative: Taj Mahal, India Gate and Lotus Temple plus cultural objects. Covers 2 of 20."
+    },
+    {
+      "title": "Indian Landmarks, Symbols, Sights - Illustration",
+      "author": "BoykoPictures",
+      "item_url": "https://elements.envato.com/indian-landmarks-symbols-sights-illustration-NZZBEXV",
+      "type": "graphic",
+      "covers": [
+        "taj_mahal",
+        "place_india_gate"
+      ],
+      "covers_count": 2,
+      "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/pack__NZZBEXV.jpg",
+      "note": "BoykoPictures single flat-vector scene (Taj Mahal with India Gate). The same author has separate Red Fort (XCXEGCK) and Lotus Temple/Akshardham scenes in the same style. CS2QBJ2 in this series shows a flag."
+    }
+  ],
+  "landmarks": [
+    {
+      "key": "taj_mahal",
+      "name": "Taj Mahal",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Taj Mahal - Agra - India",
+          "author": "SteveAllenPhoto999",
+          "item_url": "https://elements.envato.com/taj-mahal-agra-india-VR8YDU7",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/taj_mahal__1.jpg",
+          "flag_visible": false,
+          "note": "Best pick. Bright midday, white marble, blue sky, front-on and centred. A few tiny figures on the plinth, no close-up people."
+        },
+        {
+          "title": "Taj Mahal, Agra, India",
+          "author": "Dmitry_Rukhlenko",
+          "item_url": "https://elements.envato.com/taj-mahal-agra-india-Y5US7KG",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/taj_mahal__2.jpg",
+          "flag_visible": false,
+          "note": "Front-on, blue sky with soft clouds, lots of sky headroom. Tiny far-away figures on the plinth."
+        },
+        {
+          "title": "Taj Mahal - Agra - India",
+          "author": "SteveAllenPhoto999",
+          "item_url": "https://elements.envato.com/taj-mahal-agra-india-ZEMPJ46",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/taj_mahal__3.jpg",
+          "flag_visible": false,
+          "note": "Classic view along the reflecting pool at sunrise (warm, soft light, not night). Very recognisable."
+        }
+      ]
+    },
+    {
+      "key": "place_india_gate",
+      "name": "India Gate (New Delhi)",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "India Gate - New Delhi - India",
+          "author": "SteveAllenPhoto999",
+          "item_url": "https://elements.envato.com/india-gate-new-delhi-india-F7W2M5A",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_india_gate__1.jpg",
+          "flag_visible": false,
+          "note": "Best pick. Whole arch centred, deep blue sky, no flag. The carved word INDIA on the arch top is tiny and unreadable at 296x240, but it does spell the answer."
+        },
+        {
+          "title": "India Gate landmark war memorial in New Delhi near Kartavya path, All India War Memorial",
+          "author": "travelarium",
+          "item_url": "https://elements.envato.com/india-gate-landmark-war-memorial-in-new-delhi-near-5EXBJ69",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_india_gate__2.jpg",
+          "flag_visible": false,
+          "note": "Whole arch centred, flat grey sky, Netaji statue canopy visible through the arch, street lamps at the sides. No flag."
+        },
+        {
+          "title": "India Gate framed by bougainvillea flowers in New Delhi, India",
+          "author": "ederpaisan",
+          "item_url": "https://elements.envato.com/india-gate-framed-by-bougainvillea-flowers-in-new--P26HFQB",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_india_gate__3.jpg",
+          "flag_visible": false,
+          "note": "Arch framed by pink bougainvillea, cloudy daytime sky. Flowers cover the lower part, so it is less clear."
+        }
+      ]
+    },
+    {
+      "key": "place_qutub_minar",
+      "name": "Qutub Minar",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Qutub Minar, The tallest minaret a UNESCO World Heritage Site, New Delhi, India",
+          "author": "crshelare",
+          "item_url": "https://elements.envato.com/qutub-minar-the-tallest-minaret-a-unesco-world-her-M94FMT5",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_qutub_minar__1.jpg",
+          "flag_visible": false,
+          "note": "Best for the landscape screen. Whole minaret centred above the Alai Darwaza, garden path, pale sky."
+        },
+        {
+          "title": "Qutub Minar and buildings under a blue sky",
+          "author": "Dmitry_Rukhlenko",
+          "item_url": "https://elements.envato.com/qutub-minar-3TFUGZJ",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_qutub_minar__2.jpg",
+          "flag_visible": false,
+          "note": "Most striking: whole tower, blue sky, white clouds, green lawn. Portrait original: tall subject, needs letterbox or a side-padded frame on the 296x240 screen."
+        },
+        {
+          "title": "Qutub Minar, The tallest minaret a UNESCO World Heritage Site, New Delhi, India",
+          "author": "crshelare",
+          "item_url": "https://elements.envato.com/qutub-minar-the-tallest-minaret-a-unesco-world-her-9HL6RFM",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_qutub_minar__3.jpg",
+          "flag_visible": false,
+          "note": "Whole tower centred, framed by trees, bright pale sky. Portrait original: tall subject, needs letterbox or a side-padded frame on the 296x240 screen."
+        }
+      ]
+    },
+    {
+      "key": "place_gateway_of_india",
+      "name": "Gateway of India (Mumbai)",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Gateway Of India, Mumbai, Maharashtra, India, South Asia",
+          "author": "AltrendoImages",
+          "item_url": "https://elements.envato.com/gateway-of-india-mumbai-maharashtra-india-south-as-RNHRYWJ",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_gateway_of_india__1.jpg",
+          "flag_visible": false,
+          "note": "Best pick. Front-on, centred, clear blue sky. Small distant tourists along the base. The flagpole on the roof is bare, so no flag shows."
+        },
+        {
+          "title": "Gateway Of India Mumbai",
+          "author": "surangaw",
+          "item_url": "https://elements.envato.com/gateway-of-india-mumbai-BZM4XNZ",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_gateway_of_india__2.jpg",
+          "flag_visible": false,
+          "note": "Front-on, centred, on a wet plaza under a dark stormy sky. The mood is gloomy."
+        },
+        {
+          "title": "View To Mumbai Harbor And Gateway Of India, Mumbai, Maharashtra, India, South Asia",
+          "author": "AltrendoImages",
+          "item_url": "https://elements.envato.com/view-to-mumbai-harbor-and-gateway-of-india-mumbai--B992R3Y",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_gateway_of_india__3.jpg",
+          "flag_visible": false,
+          "note": "Elevated harbour view, monument on the left with ferries. Hazy daytime. Less centred."
+        }
+      ]
+    },
+    {
+      "key": "place_charminar",
+      "name": "Charminar (Hyderabad)",
+      "status": "missing",
+      "candidates": [],
+      "note": "No Charminar photo on Envato Elements. Searches for 'Charminar' and Hyderabad return only skylines and food. No illustration or 3D model either. Suggest another source or swap to Golden Temple / Lotus Temple, which are well stocked."
+    },
+    {
+      "key": "place_red_fort",
+      "name": "Red Fort (Delhi)",
+      "status": "weak",
+      "candidates": [
+        {
+          "title": "Exterior of Red Fort, Delhi, India",
+          "author": "Image-Source",
+          "item_url": "https://elements.envato.com/exterior-of-red-fort-delhi-india-JB3WRH2",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_red_fort__1.jpg",
+          "flag_visible": false,
+          "note": "Best flag-free option. Side angle of the Lahore Gate towers and chhatris against a pale sky. Zoomed check: no flag in frame. Less iconic than the straight front view."
+        },
+        {
+          "title": "The Red Fort in Delhi - India",
+          "author": "SteveAllenPhoto999",
+          "item_url": "https://elements.envato.com/the-red-fort-in-delhi-india-LHYE545",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_red_fort__2.jpg",
+          "flag_visible": false,
+          "note": "Red sandstone bastion and walls under a blue sky. No flag, but it reads as a generic red fort rather than the famous gate. Portrait original: tall subject, needs letterbox or a side-padded frame on the 296x240 screen."
+        },
+        {
+          "title": "Indian Sights, Landmark and Culture - Illustration",
+          "author": "BoykoPictures",
+          "item_url": "https://elements.envato.com/indian-sights-landmark-and-culture-illustration-XCXEGCK",
+          "type": "graphic",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_red_fort__3.jpg",
+          "flag_visible": false,
+          "note": "Fallback in a different style (BoykoPictures flat vector). The author describes it as the Red Fort (Lal Qila), with an elephant and no flag drawn. The stylised gate could be mistaken for the Gateway of India, so it is a weak fallback, useful only if the video mixes in illustrations."
+        }
+      ],
+      "note": "Every straight-on Lahore Gate photo (PZJAJPV, WR2HQ3G, FQQ5LRN, J5FCH8Z, MJ7B3Y2, UYU5HXD, 7BJ3UEC, FD49NNX, EC6S5MK, FSGBKWJ) shows the Indian flag on the central pole. In PZJAJPV and WR2HQ3G the flag hangs limp as a thin strip that a retouch could remove, but they are excluded under the no-flag rule."
+    },
+    {
+      "key": "place_hawa_mahal",
+      "name": "Hawa Mahal (Jaipur)",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Hawa Mahal or Palace of the Winds - Jaipur in Rajasthan - India",
+          "author": "SteveAllenPhoto999",
+          "item_url": "https://elements.envato.com/hawa-mahal-or-palace-of-the-winds-jaipur-in-rajast-RLTLBT6",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_hawa_mahal__1.jpg",
+          "flag_visible": false,
+          "note": "Best pick. Whole facade front-on, deep blue sky, bright pink, no people."
+        },
+        {
+          "title": "Hawa Mahal Palace of the Winds, Jaipur, Rajasthan",
+          "author": "Dmitry_Rukhlenko",
+          "item_url": "https://elements.envato.com/hawa-mahal-palace-of-the-winds-jaipur-rajasthan-H7PVW5Y",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_hawa_mahal__2.jpg",
+          "flag_visible": false,
+          "note": "Whole facade, warm orange light, dramatic blue sky with wispy clouds. SAVQ2CW by the same author is nearly identical."
+        },
+        {
+          "title": "Hawa Mahal palace Jaipur, India, vivid tone",
+          "author": "Rawpixel",
+          "item_url": "https://elements.envato.com/hawa-mahal-palace-jaipur-india-vivid-tone-GAQPSSS",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_hawa_mahal__3.jpg",
+          "flag_visible": false,
+          "note": "Upper facade only, flat light-blue sky, very clean. Usable as a tight crop."
+        }
+      ]
+    },
+    {
+      "key": "place_mysore_palace",
+      "name": "Mysore Palace",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Beautiful Mysore palace of India under cloudy sky making mirror reflection in water",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/beautiful-mysore-palace-of-india-under-cloudy-sky--PMA493G",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_mysore_palace__1.jpg",
+          "flag_visible": false,
+          "note": "Best pick. Symmetrical front with mirror reflection, blue sky with clouds. HDR look, saturated red. No flag visible."
+        },
+        {
+          "title": "Mysore Palace in Karnataka, India",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/mysore-palace-in-karnataka-india-BTKBL3Q",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_mysore_palace__2.jpg",
+          "flag_visible": false,
+          "note": "Daytime, blue sky. The palace sits right of centre behind lawn and hedges, and a lamp post crosses it."
+        }
+      ],
+      "note": "Only two Mysore Palace photos exist on Envato."
+    },
+    {
+      "key": "place_victoria_memorial",
+      "name": "Victoria Memorial (Kolkata)",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "The Victoria Memorial is a large marble building in Kolkata, West Bengal, India.",
+          "author": "crshelare",
+          "item_url": "https://elements.envato.com/the-victoria-memorial-is-a-large-marble-building-i-XAHBZXT",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_victoria_memorial__1.jpg",
+          "flag_visible": false,
+          "note": "Best pick. Symmetrical front with the central dome and both corner towers, deep blue sky, warm late-day sun (still daylight)."
+        },
+        {
+          "title": "The Victoria Memorial is a large marble building in Kolkata, West Bengal, India.",
+          "author": "crshelare",
+          "item_url": "https://elements.envato.com/the-victoria-memorial-is-a-large-marble-building-i-7M42HES",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_victoria_memorial__2.jpg",
+          "flag_visible": false,
+          "note": "Whole building from a corner, blue sky, lawn in front."
+        },
+        {
+          "title": "The Victoria Memorial is a large marble building in Kolkata, West Bengal, India.",
+          "author": "crshelare",
+          "item_url": "https://elements.envato.com/the-victoria-memorial-is-a-large-marble-building-i-YVJLALJ",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_victoria_memorial__3.jpg",
+          "flag_visible": false,
+          "note": "Whole building from a corner, blue sky."
+        }
+      ],
+      "note": "The 'at sunset' crshelare series is mostly dusk silhouettes with bare trees. Avoid it."
+    },
+    {
+      "key": "place_statue_of_unity",
+      "name": "Statue of Unity (Gujarat)",
+      "status": "weak",
+      "candidates": [
+        {
+          "title": "Beautiful shot of a statue of Unity in India against a cloudy sky at sunset",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/beautiful-shot-of-a-statue-of-unity-in-india-again-UM6FJDR",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_statue_of_unity__1.jpg",
+          "flag_visible": false,
+          "note": "The only Statue of Unity photo on Envato. Dusk with a purple sky; the statue is small on the right with a lit walkway. A tight crop on the statue would be soft."
+        }
+      ],
+      "note": "No daytime photo and no illustration found."
+    },
+    {
+      "key": "place_howrah_bridge",
+      "name": "Howrah Bridge (Kolkata)",
+      "status": "weak",
+      "candidates": [
+        {
+          "title": "View of a bridge near the Millennium Park at the sunset in Kolkata, India",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/view-of-a-bridge-near-the-millennium-park-at-the-s-2TF38FZ",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_howrah_bridge__1.jpg",
+          "flag_visible": false,
+          "note": "The only clean Howrah Bridge shot (keywords confirm it). Misty pastel sunrise; one cantilever span on the left over the river. Recognisable but soft and off-centre."
+        }
+      ],
+      "note": "CFAE4VU shows the bridge behind street clutter and a person. Rejected."
+    },
+    {
+      "key": "place_gol_gumbaz",
+      "name": "Gol Gumbaz (Vijayapura)",
+      "status": "missing",
+      "candidates": [],
+      "note": "Nothing on Envato for Gol Gumbaz, Bijapur or Vijayapura (photos, graphics or 3D). Swap suggestion: Golden Temple (Amritsar), Lotus Temple (Delhi) or Shore Temple (Mahabalipuram, see the swap list on the lighthouse entry)."
+    },
+    {
+      "key": "place_jantar_mantar",
+      "name": "Jantar Mantar (Jaipur or Delhi)",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Astronomical observatory Jantar Mantar in Delhi, India.",
+          "author": "crshelare",
+          "item_url": "https://elements.envato.com/astronomical-observatory-jantar-mantar-in-delhi-in-744FX8M",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_jantar_mantar__1.jpg",
+          "flag_visible": false,
+          "note": "The big triangular Samrat Yantra in Delhi, side view, whole structure. Hazy bright sky with sun flare."
+        },
+        {
+          "title": "Sun dial at an observatory or Jantar Mantar, Jaipur, Rajasthan, India UNESCO World Heritage Site",
+          "author": "crshelare",
+          "item_url": "https://elements.envato.com/sun-dial-at-an-observatory-or-jantar-mantar-jaipur-Z2VCV9C",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_jantar_mantar__2.jpg",
+          "flag_visible": false,
+          "note": "Clean triangular yantra with an arched base and a staircase on the hypotenuse (Jaipur, the smaller Samrat Yantra). Overcast sky, no people. The shape is very readable."
+        },
+        {
+          "title": "Jantar Mantar Monumental Astronomical Instruments in Jaipur India",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/a-person-standing-on-top-of-a-platform-next-to-a-b-5JADBDA",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_jantar_mantar__3.jpg",
+          "flag_visible": false,
+          "note": "Jaipur's giant Vrihat Samrat Yantra (chhatri on top) on the right with another yantra on the left, deep blue sky. A railing runs through the foreground."
+        }
+      ]
+    },
+    {
+      "key": "place_amber_fort",
+      "name": "Amber Fort (Jaipur)",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Amer Amber fort. Jaipur, Rajasthan, India",
+          "author": "Dmitry_Rukhlenko",
+          "item_url": "https://elements.envato.com/amer-amber-fort-jaipur-rajasthan-india-B2WG3TJ",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_amber_fort__1.jpg",
+          "flag_visible": false,
+          "note": "Best pick. Classic view across Maota lake with reflection, warm light, blue sky with clouds. One small boatman in the water, no close-up people."
+        },
+        {
+          "title": "Amber Fort, Amber, Jaipur, Rajasthan, India, South Asia",
+          "author": "AltrendoImages",
+          "item_url": "https://elements.envato.com/amber-fort-amber-jaipur-rajasthan-india-south-asia-3LZYDH8",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_amber_fort__2.jpg",
+          "flag_visible": false,
+          "note": "Wide panorama across the lake, daytime, pale sky. Fort is small; a central crop is needed."
+        },
+        {
+          "title": "Majestic Amber Fort near Jaipur, Rajasthan, India",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/majestic-amber-fort-near-jaipur-rajasthan-india-UWMLRZL",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_amber_fort__3.jpg",
+          "flag_visible": false,
+          "note": "Golden-hour view across the lake with flying birds. Soft and hazy."
+        }
+      ]
+    },
+    {
+      "key": "place_golconda_fort",
+      "name": "Golconda Fort",
+      "status": "missing",
+      "candidates": [],
+      "note": "Nothing labelled Golconda on Envato. One unlabelled wirestock photo (7PJN32Y, 'Mosque against a evening sun shine in India') may be the hilltop mosque inside Golconda, but it is unverified and not the classic fort view, so it is not listed. Swap suggestion: Mehrangarh or Jaisalmer Fort, which are well stocked."
+    },
+    {
+      "key": "place_vidhana_soudha",
+      "name": "Vidhana Soudha (Bengaluru)",
+      "status": "weak",
+      "candidates": [
+        {
+          "title": "Large Government Building with Formal Garden and Sky",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/vidhana-soudha-in-bangalore-V73SHU3",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_vidhana_soudha__1.jpg",
+          "flag_visible": true,
+          "note": "Whole front facade, dramatic clouds, flower beds. FLAG: a small Indian flag on a pole left of the central dome. Needs a retouch (sky clone); not compliant as-is."
+        },
+        {
+          "title": "Legislative Building Against a Partly Cloudy Sky",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/vidhana-soudha-in-bangalore-MTJBSGT",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_vidhana_soudha__2.jpg",
+          "flag_visible": true,
+          "note": "Front with blue sky and lawn. FLAG: an Indian flag right next to the dome, clearly visible. Not compliant; a crop would cut the dome. Portrait original: tall subject, needs letterbox or a side-padded frame on the 296x240 screen."
+        },
+        {
+          "title": "Vidhana Soudha in Bangalore, India - the seat of the state legislature of Karnataka",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/vidhana-soudha-in-bangalore-india-the-seat-of-the--7H3WFES",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_vidhana_soudha__3.jpg",
+          "flag_visible": true,
+          "note": "Wide facade at dusk-ish light with a statue on the left. FLAG: a tiny flag left of the main dome. Needs a retouch."
+        }
+      ],
+      "note": "All three Vidhana Soudha photos on Envato show the national flag next to the dome. The Ashoka lion emblem on top is not a flag. Use one only after a retouch, or swap the landmark."
+    },
+    {
+      "key": "place_hampi_stone_chariot",
+      "name": "Hampi Stone Chariot (Vittala temple)",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Stone chariot in Vittala temple. Hampi, Karnataka, India",
+          "author": "Dmitry_Rukhlenko",
+          "item_url": "https://elements.envato.com/stone-chariot-in-vittala-temple-hampi-karnataka-in-6SPR2C9",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_hampi_stone_chariot__1.jpg",
+          "flag_visible": false,
+          "note": "Best pick. Chariot big and central, blue sky, bright daylight. Two small ground plaques in the foreground (unreadable)."
+        },
+        {
+          "title": "Ancient Stone Chariot and Temple in Hampi, India",
+          "author": "gilitukha",
+          "item_url": "https://elements.envato.com/stone-chariot-in-hampi-vittala-temple-at-sunset-LKUCERZ",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_hampi_stone_chariot__2.jpg",
+          "flag_visible": false,
+          "note": "Chariot with the gopuram behind, soft evening light, no people."
+        },
+        {
+          "title": "Unbelievable Stone chariot in Hampi Vittala Temple at sunset, india",
+          "author": "gilitukha",
+          "item_url": "https://elements.envato.com/unbelievable-stone-chariot-in-hampi-vittala-temple-WCTY7W6",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_hampi_stone_chariot__3.jpg",
+          "flag_visible": false,
+          "note": "Chariot at sunset, warm, wider view."
+        }
+      ]
+    },
+    {
+      "key": "place_bandra_worli_sea_link",
+      "name": "Bandra Worli Sea Link",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Scenic view to Bandra Worli Sea Link bridge during sunset with Arabian sea around under blue sky",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/scenic-view-to-bandra-worli-sea-link-bridge-during-5TTAYM4",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_bandra_worli_sea_link__1.jpg",
+          "flag_visible": false,
+          "note": "Best pick. Daytime, blue sky with clouds, bridge running across the sea with the cable towers. The towers are small at the right."
+        },
+        {
+          "title": "High angle shot of Bandra Worli sealink in Mumbai enveloped with fog",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/high-angle-shot-of-bandra-worli-sealink-in-mumbai--VC6R9SK",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_bandra_worli_sea_link__2.jpg",
+          "flag_visible": false,
+          "note": "High-angle view of the whole curve and cable-stay towers with the city behind. Hazy daylight."
+        },
+        {
+          "title": "High angle shot of Bandra Worli sealink in Mumbai enveloped with fog",
+          "author": "wirestock",
+          "item_url": "https://elements.envato.com/high-angle-shot-of-bandra-worli-sealink-in-mumbai--CCZ7EWL",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_bandra_worli_sea_link__3.jpg",
+          "flag_visible": false,
+          "note": "Same high-angle curve as VC6R9SK, a little tighter. Hazy."
+        }
+      ]
+    },
+    {
+      "key": "place_rashtrapati_bhavan",
+      "name": "Rashtrapati Bhavan",
+      "status": "missing",
+      "candidates": [],
+      "note": "No real Rashtrapati Bhavan photo on Envato. The near-misses (PSSH9Z4 sunset, Y6HCEEU fountain courtyard) show the North/South Block Secretariat domes, not Rashtrapati Bhavan. The real building also usually shows the flag on its dome. Suggest dropping it or swapping."
+    },
+    {
+      "key": "place_lighthouse_of_mahabalipuram",
+      "name": "Mahabalipuram lighthouse",
+      "status": "ok",
+      "candidates": [
+        {
+          "title": "Lighthouse of Mahabalipuram, Tamil Nadu, India",
+          "author": "crshelare",
+          "item_url": "https://elements.envato.com/lighthouse-of-mahabalipuram-tamil-nadu-india-TD2RTEG",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_lighthouse_of_mahabalipuram__1.jpg",
+          "flag_visible": false,
+          "note": "The only lighthouse photo, and a good one: whole red-topped lighthouse centred on its rock, blue sky, green trees, daytime."
+        },
+        {
+          "title": "Shore Temple in Mahabalipuram against a Cloudy Sky",
+          "author": "Dmitry_Rukhlenko",
+          "item_url": "https://elements.envato.com/shore-temple-world-heritage-site-in-mahabalipuram--JS2UFM7",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_lighthouse_of_mahabalipuram__2.jpg",
+          "flag_visible": false,
+          "note": "SWAP OPTION - Shore Temple, Mahabalipuram: both towers centred, deep blue sky, no people. Better known than the lighthouse."
+        },
+        {
+          "title": "Ancient Shore Temple Mahabalipuram India Under Blue Sky",
+          "author": "Dmitry_Rukhlenko",
+          "item_url": "https://elements.envato.com/shore-temple-world-heritage-site-in-mahabalipuram--332GUBM",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_lighthouse_of_mahabalipuram__3.jpg",
+          "flag_visible": false,
+          "note": "SWAP OPTION - Shore Temple, three-quarter view, blue sky."
+        },
+        {
+          "title": "Vishnu Shore Temple in Mamallapuram - India",
+          "author": "SteveAllenPhoto999",
+          "item_url": "https://elements.envato.com/vishnu-shore-temple-in-mamallapuram-india-XGPGUEP",
+          "type": "photo",
+          "preview_file": "/private/tmp/claude-501/-Users-ravikumar-Cheeko-Master/8c4c221e-d511-41eb-be3d-73e9f21c3a69/scratchpad/places_previews/place_lighthouse_of_mahabalipuram__4.jpg",
+          "flag_visible": false,
+          "note": "SWAP OPTION - Shore Temple close, front-on with a lion statue, dramatic sky."
+        }
+      ],
+      "note": "There is only one lighthouse photo. The Shore Temple candidates are a possible swap with stronger visuals for kids."
+    }
+  ]
+}

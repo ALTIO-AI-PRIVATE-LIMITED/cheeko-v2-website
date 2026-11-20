@@ -5,6 +5,17 @@ description: Make short launch or social videos (Reels, Shorts, YouTube) for Che
 
 # Cheeko video
 
+## Latest process (updated 2026-09-28, read this first)
+
+Videos V01 to V05 and Hindi V03-HI to V05-HI were made with a newer pipeline than the one described below. The full guide is `HOW WE MAKE CHEEKO VIDEOS.md` and the style rules are `Production rules.md`, both in the Google Drive folder "cheeko ai videos/00 Plan" (all scripts are in `00 Plan/Pipeline code`). On Ravi's Mac the same files are in `/Users/ravikumar/Cheeko Master/marketing/tools/`, and a user-level skill `~/.claude/skills/cheeko-video` summarises them. The short version:
+
+- Reels first: hook in the first second, a new shot every 1-2 s, word-synced captions with emojis, about 20-35 s, plus a designed thumbnail (1080x1920).
+- Voiceover recorded one line at a time with its own emotion: MiniMax `speech-2.8-hd`, English voice `English_Upbeat_Woman`, Hindi voice `hindi_male_1_v2`. Lines live in `vo_lines.json` / `vo_lines_hi.json`; `build_vo.py` writes the voice and `work/warp.json`, and each `compose.html` follows the voice through a time-warp script.
+- No em dashes, no ellipsis character, no curly quotes in anything people read or hear. Emojis in captions, never in voice text.
+- Only the 10 shipping cards (`assets/img/cards-shipping/`), the current device image (`assets/img/device_current.png`) and real firmware screens (`assets/img/fw-screens/`, rendered from cheeko-os-v2). Never `device_live.png`, `live/card-*.jpg` or the July design-handoff screenshots.
+- The firmware cannot display Hindi text, so Hindi transcripts and captions show blank on the device.
+- Finals are published by `publish_to_drive.py` to Drive, including `Ready to post/English|Hindi/<video>/` (video, thumbnail, caption).
+
 Follow `.claude/skills/brag-slim/SKILL.md` for the creative method: inspect, plan, build, check, render, deliver. This file adds what is specific to Cheeko and the pipeline that already works in this repo. Three finished examples are in the repo. Read the closest one before building, because each `work/compose.html` is a complete, working composition to adapt:
 
 | Folder | Video | Style |
@@ -40,8 +51,10 @@ Put each new video in a new timestamped folder (`brag-output-YYYY-MM-DD-HHMMSS/`
 
 | Need | Use |
 |---|---|
-| Device, transparent, front | `device_live.png` (500×847, Talk menu on screen) |
-| Real card fronts (760×1196) | `live/card-storytime.jpg` (stories), `card-ravi.jpg`, `card-clever.jpg`, `card-nani.jpg`, `card-mitthu.jpg` (spelling), `card-playsing.jpg` (rhymes), `card-dreamy.jpg`, `card-lava.jpg` (game), `card-makeyourown.jpg` |
+| Device, transparent, front | **`device_current.png`** (500×847) — the current firmware home screen (light "Sunny" theme, TALK) composited into the screen. `device_live.png` shows the OLD dark UI: don't use it |
+| Current device screens | `fw-screens/*.png` (296×240) rendered from the firmware itself (b05c95d, FW 2.4.311) with `marketing/tools/fwsim`: every menu item, Talk states for all 7 characters, all 8 games, Funny Voice, Radio, Imagine (plus `imagine_tiger_*` / `imagine_rickshaw_*` with real drawings), settings, card reveal, charging, tutorial. Put them on the device through the `.scr` mask. The Talk picker only offers Cheeko and Quizzy |
+| **Shipping cards (use these)** | `cards-shipping/01-tales-of-kindness.jpg`, `02-floor-is-lava`, `03-play-and-sing-along`, `04-dreamy-melodies`, `05-mitthu-the-parrot`, `06-make-your-own`, `07-clever-little-tales`, `08-ravi-and-nila`, `09-sounds-around-me`, `10-nani` (760×1196; full-size art for backgrounds in `cards-shipping/large/`). These are the 10 cards that actually ship (Ravi, 2026-09-28); originals and a README are in `Cheeko Master/marketing/cards-shipping/`. |
+| Old website card fronts (do not use) | `live/card-*.jpg` — "Storytime Adventures", "Ravi's Wild Journey" and "Around the House" do not ship |
 | Card worlds (screen and background) | `bg_stories.jpg` (jungle lion), `rhymes_world.jpg` (cow over the moon, portrait), `bg_games.jpg` (glowing games world), `bg_rhymes.jpg` (moonlit night) |
 | Fox mascot art, transparent | `live/menu-talk.png`, `menu-games.png` (controller), `menu-radio.png` (headphones), `menu-funny.png` (megaphone), `menu-imagine.png`, `char-cheeko.png` |
 | Characters | `live/char-quizzy.png`, `char-nani.png`, `char-mitthu.png`, `char-chanda.png`, `char-masti.png`, `char-tara.png` |
@@ -53,7 +66,14 @@ Put each new video in a new timestamped folder (`brag-output-YYYY-MM-DD-HHMMSS/`
 
 ### Device screen
 
-In `device_live.png` the screen sits at **x 118–418, y 94–334** (inside the bezel, radius about 28px). Scale it with the device. Wrap the device image and a `#scr` overlay in one container so they squash together. `brag-output-2026-09-28-095057/work/compose.html` shows the full pattern: `#devwrap`, `#scr`, and a circle-reveal of each card's world as it lands.
+The screen is not a plain rounded rectangle: its corners are uneven, so a CSS `border-radius` box pokes out past the bezel (Ravi caught this on a phone). Always clip screen content with the measured mask `assets/img/device_live_screen_mask.png` (312×254, the dark screen area of `device_live.png` at **x 112–424, y 88–342**). Size the overlay in percentages so it scales with any device size, and inline the mask as a `data:` URI, because Chromium refuses CSS masks loaded from `file://` and silently hides the element instead:
+
+```css
+.scr{position:absolute;left:22.4%;top:10.39%;width:62.4%;height:29.99%;overflow:hidden;
+  -webkit-mask:url(data:image/png;base64,...) 0 0/100% 100% no-repeat; mask:url(data:image/png;base64,...) 0 0/100% 100% no-repeat}
+```
+
+Put the device image and the `.scr` overlay in one container so they squash together. Never leave the screen blank or black while the device is on camera: the idle screen is the Talk menu (it is baked into `device_live.png`), so only cover it when something else is really on screen. `brag-output-2026-09-28-made-to-end/work/compose.html` has the full pattern (menus flipping, the screen dimming to sleep); `brag-output-2026-09-28-reel/work/compose.html` has a card's world and an Imagine drawing appearing on screen.
 
 ## Pipeline
 

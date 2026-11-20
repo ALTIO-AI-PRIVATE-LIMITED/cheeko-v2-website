@@ -1,0 +1,4119 @@
+{
+ "voices": {
+  "N": [
+   "minimax",
+   "English_Upbeat_Woman"
+  ],
+  "cheeko": [
+   "minimax",
+   "English_PlayfulGirl"
+  ],
+  "nani": [
+   "minimax",
+   "English_Graceful_Lady"
+  ],
+  "mitthu": [
+   "qwen",
+   "loongnorahu"
+  ],
+  "quizzy": [
+   "qwen",
+   "loongivyhu"
+  ],
+  "kid": [
+   "minimax",
+   "English_LovelyGirl"
+  ],
+  "grandma": [
+   "minimax",
+   "English_Wiselady"
+  ],
+  "mom": [
+   "minimax",
+   "English_CalmWoman"
+  ],
+  "mumma": [
+   "gemini",
+   "Kore"
+  ],
+  "ramp": [
+   "minimax",
+   "minimax_a24acd5b-5049-4728"
+  ]
+ },
+ "LCX": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Hi! I'm Cheeko!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Ready? Let's go!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Here's the first one!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Here's the last one!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "How many did you get right?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Bye bye!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Level one!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Level two!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Level three!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Can you guess this one?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Do you know this one?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look closely!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Make your guess!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Try this one!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Ooh, what's this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Ready for level two?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Now try level three!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Play again and beat your score!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V32": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Who Says That!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Listen to the sound, and say which animal it is!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You know so many animal sounds!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Listen! Who is that?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Who makes this sound?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Dog!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cat!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cow!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Duck!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Sheep!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Horse!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pig!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Rooster!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Goat!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Donkey!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Lion!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Elephant!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Monkey!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Frog!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Tiger!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Bear!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Wolf!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Owl!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Snake!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Bee!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V33": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Guess the Fruit!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the picture, and say the fruit's name before the time runs out!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Yum! You know so many fruits!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What fruit is this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Which fruit is this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Apple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Banana!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Mango!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Orange!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Grapes!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Watermelon!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Strawberry!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pineapple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Papaya!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Guava!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pomegranate!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pear!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cherry!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Coconut!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Lemon!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Kiwi!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Chikoo!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Jackfruit!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Custard apple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Lychee!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Dragon fruit!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Fig!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Blueberry!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Peach!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Apricot!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Avocado!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Jamun!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Star fruit!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Plum!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Muskmelon!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V34": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play What Colour Is It!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the picture, and say its colour!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You know all your colours!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What colour is this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Which colour do you see?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Red! The balloon is red.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Yellow! The banana is yellow.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Blue! The umbrella is blue.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Green! The leaf is green.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Orange! The pumpkin is orange.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pink! The flower is pink.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Purple! The grapes are purple.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Brown! The teddy bear is brown.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Black! The cat is black.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "White! The cloud is white.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Red! The fire engine is red.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Yellow! The school bus is yellow.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Blue! The whale is blue.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Green! The frog is green.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Orange! The carrot is orange.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pink! The piggy bank is pink.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Purple! The butterfly is purple.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Brown! The cookie is brown.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Black! The boots are black.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "White! The milk is white.",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V35": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Touch Your Nose!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look where the circle is, touch it on your own body, and say its name!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You know your body so well!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What is this part called?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Touch it! What is it?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Nose! Touch your nose!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Eyes! Touch your eyes!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Ears! Touch your ears!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Mouth! Touch your mouth!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Hair! Touch your hair!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cheeks! Touch your cheeks!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Hands! Touch your hands!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Tummy! Touch your tummy!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Knees! Touch your knees!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Feet! Touch your feet!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Shoulders! Touch your shoulders!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Toes! Touch your toes!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V36": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Mummy and Baby!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the mummy animal, and say the name of her baby!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Every mummy found her baby!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Who is my baby?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What is my baby called?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A chick! The hen's baby is a chick.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A puppy! The dog's baby is a puppy.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A kitten! The cat's baby is a kitten.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A calf! The cow's baby is a calf.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A lamb! The sheep's baby is a lamb.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A foal! The horse's baby is a foal.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A duckling! The duck's baby is a duckling.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A piglet! The pig's baby is a piglet.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A cub! The lioness's baby is a cub.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A joey! The kangaroo's baby is a joey.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A tadpole! The frog's baby is a tadpole.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A calf! An elephant's baby is called a calf, just like a cow's.",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V37": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play A for Apple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the letter and the picture, and say the word!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You know your A B C!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What starts with this letter?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Say the word!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A for Apple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "B for Ball!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "C for Cat!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "D for Dog!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "E for Elephant!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "F for Fish!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "G for Grapes!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "H for Hat!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I for Ice cream!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "J for Jug!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "K for Kite!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "L for Lion!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "M for Monkey!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "N for Nest!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "O for Orange!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "P for Parrot!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Q for Quilt!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "R for Rabbit!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "S for Sun!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "T for Train!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "U for Umbrella!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "V for Van!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "W for Watermelon!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "X for Xylophone!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Y for Yo-yo!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Z for Zebra!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V38": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play How Many!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Count the things on the screen, and say how many!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Super counting!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "How many can you count?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Count them with me!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Three ducks!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "One ball!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Four balloons!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Two stars!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Five fish!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Two apples!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Four flowers!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "One sun!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Five cars!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Three butterflies!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Six stars!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Eight ducks!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Seven strawberries!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Ten balls!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Nine flowers!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Six cupcakes!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Seven fish!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Eight balloons!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Ten butterflies!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Nine apples!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V39": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Shadow Match!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the shadow, and guess what it is!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You are a shadow detective!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Whose shadow is this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What is hiding in the shadow?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Dog!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cat!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cow!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Horse!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Rooster!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Elephant!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Lion!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Monkey!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Rabbit!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Owl!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Car!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Bus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Bicycle!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Aeroplane!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Helicopter!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Tractor!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Train!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Rocket!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Boat!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Hot air balloon!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Banana!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Apple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pineapple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Grapes!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Strawberry!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pear!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cherry!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Mango!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Coconut!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Lemon!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V40": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play How Does Cheeko Feel!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at Cheeko's face, and say how Cheeko feels!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You understand feelings so well!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "How does Cheeko feel?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What is Cheeko feeling?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Happy! Cheeko got a big hug.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Sad. Cheeko dropped an ice cream.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Angry! Someone broke Cheeko's block tower.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Scared! There was a loud thunder sound.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Surprised! A present for Cheeko!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Sleepy. It is time for bed.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Silly! Cheeko is making funny faces.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Proud! Cheeko built a tall tower all alone.",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V41": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Shapes Around Us!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the picture, and say its shape!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You found all the shapes!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What shape is this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Which shape do you see?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A circle! The clock is a circle.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A square! The gift box is a square.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A triangle! The pizza slice is a triangle.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A rectangle! The door is a rectangle.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "An oval! The egg is an oval.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A star! It is a star!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A heart! The balloon is a heart.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A diamond! The kite is a diamond.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A semicircle! The watermelon slice is a semicircle.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A hexagon! The honeycomb is a hexagon.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A circle! The plate is a circle.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A square! The cushion is a square.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A triangle! The samosa is a triangle.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A rectangle! The book is a rectangle.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "An oval! The mirror is an oval.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A star! The starfish is a star.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A heart! The cookie is a heart.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A diamond! The sign is a diamond.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A semicircle! The rainbow is a semicircle.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A hexagon! The nut is a hexagon.",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V42": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Who Helps Us!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the helper, and say what their job is!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Thank you, helpers!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Who is this helper?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What is this job called?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A doctor! Doctors help us get better.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A nurse! Nurses take care of us.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A police officer! Police officers keep us safe.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A firefighter! Firefighters put out fires.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A teacher! Teachers help us learn.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A farmer! Farmers grow our food.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A chef! Chefs cook yummy food.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A postman! Postmen bring our letters.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A pilot! Pilots fly aeroplanes.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A bus driver! Bus drivers take us places.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A dentist! Dentists keep our teeth healthy.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A mechanic! Mechanics fix cars.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A carpenter! Carpenters make things from wood.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A tailor! Tailors stitch our clothes.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A barber! Barbers cut our hair.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A painter! Painters paint our walls.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A plumber! Plumbers fix our taps.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "An electrician! Electricians fix our lights.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "An astronaut! Astronauts go to space.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A vegetable seller! Vegetable sellers bring us fresh vegetables.",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V43": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Sounds Around the House!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Listen to the sound, and say what it is!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Your ears are so clever!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Listen! What is that sound?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Where have you heard this sound?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Doorbell!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pressure cooker!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Mixer!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Tap water!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Clock!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Knock on the door!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Alarm clock!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Kettle!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Broom!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Ceiling fan!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Washing machine!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Keys!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Zip!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Scissors!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Brushing teeth!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Rain!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Sizzling dosa!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Door creak!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Car horn!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Footsteps!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V44": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Indian Birds!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the bird, and say its name!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You are a bird expert!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Which bird is this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What is this bird called?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Peacock!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Parrot!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Crow!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Sparrow!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pigeon!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Hen!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Duck!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Owl!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Eagle!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Kingfisher!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Myna!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Koel!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Hornbill!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Flamingo!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Sarus crane!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Woodpecker!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Bulbul!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Swan!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Vulture!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Weaver bird!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V45": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Big or Small!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Listen to Cheeko, and say the opposite word!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You know your opposites!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Say the opposite!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Small! Big and small.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The elephant is big. And the mouse is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Short! Tall and short.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The giraffe is tall. And the penguin is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cold! Hot and cold.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The tea is hot. And the ice cream is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Slow! Fast and slow.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The rabbit is fast. And the tortoise is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Empty! Full and empty.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "This glass is full. And that glass is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Night! Day and night.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The sun comes out in the day. And the moon comes out at?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Closed! Open and closed.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "This box is open. And that box is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Dry! Wet and dry.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "This towel is wet. And that towel is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Light! Heavy and light.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The stone is heavy. And the feather is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Short! Long and short.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "This pencil is long. And that pencil is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Dirty! Clean and dirty.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "This plate is clean. And that plate is?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Thin! Thick and thin.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "This book is thick. And that book is?",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V46": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Guess the Instrument!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Listen to the music, and say which instrument is playing!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You have musical ears!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Listen! What is playing?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Which instrument is this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Drum!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Piano!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Guitar!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Flute!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Tabla!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Bell!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Xylophone!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Trumpet!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Violin!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Maracas! Shake, shake!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Sitar!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Dhol!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Harmonica!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cymbals!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Mridangam!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Tambourine!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Saxophone!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Harp!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Accordion!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Triangle!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V47": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Space Quiz!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Listen to Cheeko's clue, and say what it is!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You are a space explorer!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Sun!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am a big hot star. I give light to all the planets.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Mercury!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am the smallest planet, and the closest to the Sun.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Venus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am the hottest planet. I shine bright in the evening sky.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Earth!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am blue and green. I am our home!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Moon!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I go around the Earth. You see me at night.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Mars!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am red and dusty. People call me the red planet.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Jupiter!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am the biggest planet. I have a big red spot.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Saturn!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I have big shiny rings around me.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Uranus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am a cold blue green planet. I spin on my side.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Neptune!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am dark blue and very windy. I am the farthest planet from the Sun.",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V48": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Odd One Out!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the four pictures, and find the one that is different!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Great thinking!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Which one is different?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Find the odd one out!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The mango! It is a fruit, not a vehicle.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The bicycle! It is not an animal.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The ball! You cannot eat it.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The boat! It cannot fly.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The dog! It is not a bird.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The bus! It is blue. The others are red.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The elephant! It is not a helper.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The gift box! It is a square. The others are round.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The tractor! It is not an animal.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The fish! It is not in the sky.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The aeroplane! It does not go on water.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The car! It has four wheels. The others have two.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The banana! It is yellow. The others are red.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The cow! It does not swim in water.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The flute! It is not a drum.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The elephant! It is not a dinosaur.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The snake! It cannot fly.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The kite! You cannot eat it.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The fan! It keeps us cool. The others are hot.",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The grapes! They are purple. The others are yellow.",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V49": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Cheeko's Riddles!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Listen to Cheeko's riddle, and guess the answer!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You solved my riddles!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Guess my riddle!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "An umbrella!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I open up when it rains. I keep you dry. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A clock!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I have a face and two hands, but no arms or legs. I tell you the time. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The sun!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am big, yellow and hot. I come up in the sky every morning. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The moon!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I come out at night. Sometimes I am round, sometimes I am thin. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A cow!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I say moo. I eat grass. I give you milk. Who am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "An elephant!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am very big and grey. I have a long trunk. Who am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A banana!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am long and yellow. Monkeys love me. You peel me before you eat me. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "An ice cream!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am cold and sweet. I melt in the sun. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A fish!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I live in water. I have fins and a tail. I swim but I cannot walk. Who am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A rainbow!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I come after the rain. I have seven colours. I bend across the sky. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "An egg!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am white and oval. A little chick comes out of me. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A kite!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I fly high in the sky, but I have no wings. You hold my string. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A tree!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am tall and green. Birds make nests in me. I give you shade. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A toothbrush!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I help you clean your teeth every morning and every night. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A pillow!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am soft. You put your head on me when you sleep. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Shoes!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "You wear us on your feet. We always come in a pair. What are we?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A bee!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I am small and I buzz. I make sweet honey. Who am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A spider!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I have eight legs. I make a sticky web. Who am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A mirror!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "When you look at me, you see yourself. What am I?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "A pencil!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "I help you write and draw. I get shorter when you sharpen me. What am I?",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V50": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Guess the Dinosaur!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the dinosaur, and say its name!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Roar! You are a dinosaur expert!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Which dinosaur is this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Do you know this dinosaur?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "T. rex!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Triceratops!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Stegosaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Brachiosaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Velociraptor!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Ankylosaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Spinosaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Diplodocus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Parasaurolophus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Iguanodon!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pachycephalosaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Allosaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Dilophosaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Carnotaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Therizinosaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Gallimimus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Baryonyx!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Oviraptor!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Argentinosaurus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Maiasaura!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V51": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Famous Places of India!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the famous place, and say its name!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You know India so well!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Which place is this?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Have you seen this place?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Taj Mahal!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The India Gate!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Qutub Minar!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Gateway of India!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Red Fort!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Hawa Mahal!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Mysore Palace!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Victoria Memorial!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Lotus Temple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Golden Temple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Howrah Bridge!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Jantar Mantar!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Amber Fort!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Hampi Stone Chariot!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Bandra Worli Sea Link!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Shore Temple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Meenakshi Temple!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Sanchi Stupa!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Mehrangarh Fort!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The Konark Sun Temple!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V52": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "What is missing?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Let's play What Is Missing!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the four pictures and remember them. Then say which one went away!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "Your memory is amazing!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Remember these four!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The bus!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The mango!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The duck!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The ball!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The flower!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The kite!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The farmer!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The flute!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The lion!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "The hot air balloon!",
+    0,
+    {}
+   ]
+  ]
+ },
+ "V53": {
+  "lines": [
+   [
+    "cheeko",
+    "happy",
+    "Let's play Emoji Words!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Look at the two pictures, put them together, and say the word!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "surprised",
+    "You are a word wizard!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "What word do they make?",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Put them together!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Sunflower!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Rainbow!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Starfish!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Butterfly!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Football!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Cupcake!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Snowman!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Toothbrush!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Pancake!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Seahorse!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Jellyfish!",
+    0,
+    {}
+   ],
+   [
+    "cheeko",
+    "happy",
+    "Raincoat!",
+    0,
+    {}
+   ]
+  ]
+ }
+}

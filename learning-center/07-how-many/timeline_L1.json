@@ -1,0 +1,254 @@
+{
+ "idea": "07-how-many",
+ "id": "V38",
+ "level": 1,
+ "nLevels": 2,
+ "mode": "count",
+ "theme": {
+  "bg": "counting",
+  "pals": [
+   [
+    "#FFD43B",
+    "#F08C00"
+   ],
+   [
+    "#74C0FC",
+    "#1864AB"
+   ],
+   [
+    "#FF8787",
+    "#C92A2A"
+   ],
+   [
+    "#69DB7C",
+    "#2B8A3E"
+   ],
+   [
+    "#DA77F2",
+    "#862E9C"
+   ]
+  ],
+  "trans": "diamond",
+  "enter": "pop",
+  "fx": "dots",
+  "knob": "🔢",
+  "bar": [
+   "#69DB7C",
+   "#40C057"
+  ],
+  "music": "xylophone"
+ },
+ "answer": 4,
+ "dur": 105.87,
+ "n": 10,
+ "t1": "How",
+ "t2": "Many?",
+ "head": "How <span>many</span>?",
+ "chips": [
+  [
+   "?",
+   "Count them"
+  ],
+  [
+   "4",
+   "4 seconds"
+  ],
+  [
+   "!",
+   "Say how many"
+  ]
+ ],
+ "outroText": [
+  "Brilliant!",
+  "Level 1 done!",
+  "Play Level 2!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.435875,
+  "rules": 4.814145833333333,
+  "go": 7.775020833333333
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.598,
+   "label": "3 ducks",
+   "pill": "3 ducks",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 2.24,
+    "reveal": 6.24,
+    "name": 6.49
+   },
+   "dur": 8.84,
+   "cut": "cut_rubber_duck",
+   "count": 3
+  },
+  {
+   "k": 2,
+   "start": 18.438,
+   "label": "1 ball",
+   "pill": "1 ball",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 1.883,
+    "reveal": 5.883,
+    "name": 6.133
+   },
+   "dur": 8.483,
+   "cut": "cut_ball",
+   "count": 1
+  },
+  {
+   "k": 3,
+   "start": 26.921,
+   "label": "4 balloons",
+   "pill": "4 balloons",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 2.62,
+    "reveal": 6.62,
+    "name": 6.87
+   },
+   "dur": 9.22,
+   "cut": "cut_red_balloon",
+   "count": 4
+  },
+  {
+   "k": 4,
+   "start": 36.141,
+   "label": "2 stars",
+   "pill": "2 stars",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 1.86,
+    "reveal": 5.86,
+    "name": 6.11
+   },
+   "dur": 8.46,
+   "cut": "cut_star",
+   "count": 2
+  },
+  {
+   "k": 5,
+   "start": 44.601,
+   "label": "5 fish",
+   "pill": "5 fish",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 3.0,
+    "reveal": 7.0,
+    "name": 7.25
+   },
+   "dur": 9.6,
+   "cut": "cut_fish",
+   "count": 5
+  },
+  {
+   "k": 6,
+   "start": 54.201,
+   "label": "2 apples",
+   "pill": "2 apples",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 1.86,
+    "reveal": 5.86,
+    "name": 6.11
+   },
+   "dur": 8.46,
+   "cut": "cut_fruit_apple",
+   "count": 2
+  },
+  {
+   "k": 7,
+   "start": 62.661,
+   "label": "4 flowers",
+   "pill": "4 flowers",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 2.62,
+    "reveal": 6.62,
+    "name": 6.87
+   },
+   "dur": 9.22,
+   "cut": "cut_pink_flower",
+   "count": 4
+  },
+  {
+   "k": 8,
+   "start": 71.881,
+   "label": "1 sun",
+   "pill": "1 sun",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 1.58,
+    "reveal": 5.58,
+    "name": 5.83
+   },
+   "dur": 8.18,
+   "cut": "cut_sun",
+   "count": 1
+  },
+  {
+   "k": 9,
+   "start": 80.062,
+   "label": "5 cars",
+   "pill": "5 cars",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 3.0,
+    "reveal": 7.0,
+    "name": 7.25
+   },
+   "dur": 9.6,
+   "cut": "cut_car",
+   "count": 5
+  },
+  {
+   "k": 10,
+   "start": 89.662,
+   "label": "3 butterflies",
+   "pill": "3 butterflies",
+   "times": {
+    "pop0": 0.55,
+    "popGap": 0.38,
+    "tick0": 2.24,
+    "reveal": 6.24,
+    "name": 6.49
+   },
+   "dur": 8.84,
+   "cut": "cut_butterfly",
+   "count": 3
+  }
+ ],
+ "outroStart": 98.502,
+ "outro": {
+  "done": 98.85162500000001,
+  "howmany": 100.11747916666668,
+  "next": 101.80560416666668,
+  "bye": 103.44014583333335
+ },
+ "paths": {
+  "cut_rubber_duck": "../images/cut/rubber_duck.png",
+  "cut_ball": "../images/cut/ball.png",
+  "cut_red_balloon": "../images/cut/red_balloon.png",
+  "cut_star": "../images/cut/star.png",
+  "cut_fish": "../images/cut/fish.png",
+  "cut_fruit_apple": "../images/cut/fruit_apple.png",
+  "cut_pink_flower": "../images/cut/pink_flower.png",
+  "cut_sun": "../images/cut/sun.png",
+  "cut_car": "../images/cut/car.png",
+  "cut_butterfly": "../images/cut/butterfly.png"
+ }
+}

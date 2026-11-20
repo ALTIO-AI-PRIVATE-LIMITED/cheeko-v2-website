@@ -1,0 +1,311 @@
+{
+ "idea": "17-odd-one-out",
+ "id": "V48",
+ "level": 1,
+ "nLevels": 2,
+ "mode": "odd",
+ "theme": {
+  "bg": "puzzle",
+  "pals": [
+   [
+    "#FF922B",
+    "#C2410C"
+   ],
+   [
+    "#4DABF7",
+    "#1864AB"
+   ],
+   [
+    "#69DB7C",
+    "#2B8A3E"
+   ],
+   [
+    "#DA77F2",
+    "#862E9C"
+   ],
+   [
+    "#FFD43B",
+    "#E67700"
+   ]
+  ],
+  "trans": "slide",
+  "enter": "flip",
+  "fx": "confetti",
+  "knob": "🧩",
+  "bar": [
+   "#FFE066",
+   "#FFC93C"
+  ],
+  "music": "quirky"
+ },
+ "answer": 5,
+ "dur": 121.48,
+ "n": 10,
+ "t1": "Odd One",
+ "t2": "Out!",
+ "head": "Which one is <span>different</span>?",
+ "chips": [
+  [
+   "?",
+   "Look at all four"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Find the odd one"
+  ]
+ ],
+ "outroText": [
+  "Brilliant!",
+  "Level 1 done!",
+  "Play Level 2!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.7354583333333333,
+  "rules": 5.113729166666666,
+  "go": 8.598104166666667
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 10.421,
+   "label": "Mango",
+   "pill": "Mango",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 6.669,
+    "name": 6.919
+   },
+   "dur": 10.514,
+   "grid": [
+    "car",
+    "bus",
+    "train",
+    "fruit_mango"
+   ],
+   "odd": 3
+  },
+  {
+   "k": 2,
+   "start": 20.936,
+   "label": "Bicycle",
+   "pill": "Bicycle",
+   "times": {
+    "tick0": 1.722,
+    "reveal": 6.722,
+    "name": 6.972
+   },
+   "dur": 10.375,
+   "grid": [
+    "cow",
+    "dog",
+    "cat",
+    "bicycle"
+   ],
+   "odd": 3
+  },
+  {
+   "k": 3,
+   "start": 31.311,
+   "label": "Ball",
+   "pill": "Ball",
+   "times": {
+    "tick0": 1.899,
+    "reveal": 6.899,
+    "name": 7.149
+   },
+   "dur": 10.055,
+   "grid": [
+    "fruit_apple",
+    "fruit_banana",
+    "fruit_grapes",
+    "ball"
+   ],
+   "odd": 3
+  },
+  {
+   "k": 4,
+   "start": 41.366,
+   "label": "Boat",
+   "pill": "Boat",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 6.708,
+    "name": 6.958
+   },
+   "dur": 9.836,
+   "grid": [
+    "aeroplane",
+    "helicopter",
+    "hot_air_balloon",
+    "boat"
+   ],
+   "odd": 3
+  },
+  {
+   "k": 5,
+   "start": 51.202,
+   "label": "Dog",
+   "pill": "Dog",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 6.596,
+    "name": 6.846
+   },
+   "dur": 9.774,
+   "grid": [
+    "bird_parrot",
+    "bird_crow",
+    "duck",
+    "dog"
+   ],
+   "odd": 3
+  },
+  {
+   "k": 6,
+   "start": 60.975,
+   "label": "Bus",
+   "pill": "Bus",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 6.584,
+    "name": 6.834
+   },
+   "dur": 11.003,
+   "grid": [
+    "red_balloon",
+    "fruit_strawberry",
+    "fire_engine",
+    "bus"
+   ],
+   "odd": 3
+  },
+  {
+   "k": 7,
+   "start": 71.979,
+   "label": "Elephant",
+   "pill": "Elephant",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 6.53,
+    "name": 6.78
+   },
+   "dur": 10.089,
+   "grid": [
+    "doctor",
+    "helper_teacher",
+    "helper_chef",
+    "elephant"
+   ],
+   "odd": 3
+  },
+  {
+   "k": 8,
+   "start": 82.068,
+   "label": "Gift box",
+   "pill": "Gift box",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 6.58,
+    "name": 6.83
+   },
+   "dur": 11.442,
+   "grid": [
+    "clock",
+    "ball",
+    "plate",
+    "gift_box"
+   ],
+   "odd": 3
+  },
+  {
+   "k": 9,
+   "start": 93.509,
+   "label": "Tractor",
+   "pill": "Tractor",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 6.709,
+    "name": 6.959
+   },
+   "dur": 10.338,
+   "grid": [
+    "lion",
+    "tiger",
+    "monkey",
+    "tractor"
+   ],
+   "odd": 3
+  },
+  {
+   "k": 10,
+   "start": 103.847,
+   "label": "Fish",
+   "pill": "Fish",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 6.851,
+    "name": 7.101
+   },
+   "dur": 10.146,
+   "grid": [
+    "sun",
+    "space_moon",
+    "star",
+    "fish"
+   ],
+   "odd": 3
+  }
+ ],
+ "outroStart": 113.993,
+ "outro": {
+  "done": 114.34299999999999,
+  "howmany": 115.72864583333332,
+  "next": 117.41677083333332,
+  "bye": 119.05131249999998
+ },
+ "paths": {
+  "car": "../images/car.jpg",
+  "bus": "../images/bus.jpg",
+  "train": "../images/train.jpg",
+  "fruit_mango": "../images/fruit_mango.jpg",
+  "cow": "../images/cow.jpg",
+  "dog": "../images/dog.jpg",
+  "cat": "../images/cat.jpg",
+  "bicycle": "../images/bicycle.jpg",
+  "fruit_apple": "../images/fruit_apple.jpg",
+  "fruit_banana": "../images/fruit_banana.jpg",
+  "fruit_grapes": "../images/fruit_grapes.jpg",
+  "ball": "../images/ball.jpg",
+  "aeroplane": "../images/aeroplane.jpg",
+  "helicopter": "../images/helicopter.jpg",
+  "hot_air_balloon": "../images/hot_air_balloon.jpg",
+  "boat": "../images/boat.jpg",
+  "bird_parrot": "../images/bird_parrot.jpg",
+  "bird_crow": "../images/bird_crow.jpg",
+  "duck": "../images/duck.jpg",
+  "red_balloon": "../images/red_balloon.jpg",
+  "fruit_strawberry": "../images/fruit_strawberry.jpg",
+  "fire_engine": "../images/fire_engine.jpg",
+  "doctor": "../images/doctor.jpg",
+  "helper_teacher": "../images/helper_teacher.jpg",
+  "helper_chef": "../images/helper_chef.jpg",
+  "elephant": "../images/elephant.jpg",
+  "clock": "../images/clock.jpg",
+  "plate": "../images/plate.jpg",
+  "gift_box": "../images/gift_box.jpg",
+  "lion": "../images/lion.jpg",
+  "tiger": "../images/tiger.jpg",
+  "monkey": "../images/monkey.jpg",
+  "tractor": "../images/tractor.jpg",
+  "sun": "../images/sun.jpg",
+  "space_moon": "../images/space_moon.jpg",
+  "star": "../images/star.jpg",
+  "fish": "../images/fish.jpg"
+ }
+}

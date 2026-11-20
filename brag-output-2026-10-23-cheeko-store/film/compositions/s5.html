@@ -1,0 +1,58 @@
+<!-- S5 more (24.6 to 37.55 s). Pull back out of the quiz: it was playing on Cheeko. Then Cheeko's screen plays each of the
+     other six new videos at its answer reveal, the name and what children learn land under Cheeko on the narrator's word.
+     Cheeko: 560 wide at (260, 120); screen (350.7, 192.3) 365.5 x 304.6. Start: the screen covers S4's video rect (0, 230, 1080 wide). -->
+<template>
+  <style>
+    @font-face { font-family: 'Gabarito'; src: url('assets/fonts/Gabarito.woff2') format('woff2'); font-weight: 400 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #FFA9C9; }
+    #s5-cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    #s5-floor { position: absolute; left: 230px; top: 1010px; width: 620px; height: 90px; border-radius: 50%; background: rgba(35, 26, 16, .12); }
+    .dev { position: absolute; }
+    .dev > img.d { position: absolute; inset: 0; width: 100%; height: 100%; filter: drop-shadow(0 30px 36px rgba(35, 26, 16, .28)); }
+    .scr { position: absolute; left: 16.19%; top: 7.71%; width: 65.26%; height: 32.5%; overflow: hidden; background: #1D1A17;
+      -webkit-mask: url('assets/img/screen_mask.png') 0 0/100% 100% no-repeat; mask: url('assets/img/screen_mask.png') 0 0/100% 100% no-repeat; }
+    .scr video { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: fill; }
+    .ttl { position: absolute; left: 0; top: 1078px; width: 1080px; text-align: center; }
+    .ttl .nm { font-family: 'Gabarito', sans-serif; font-weight: 900; font-size: 92px; line-height: 1; letter-spacing: -.02em; color: #231A10; white-space: nowrap; }
+    .ttl .ch { display: inline-block; margin-top: 26px; background: #F0521D; color: #fff; font-family: 'Gabarito', sans-serif; font-weight: 800; font-size: 52px;
+      line-height: 1; padding: 18px 40px 20px; border-radius: 99px; box-shadow: 0 12px 26px rgba(35, 26, 16, .22); white-space: nowrap; }
+  </style>
+  <div data-hf-id="hf-ejdb" id="root" data-composition-id="s5" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-057f" id="s5-cam">
+      <div data-hf-id="hf-8bh8" id="s5-floor"></div>
+      <div data-hf-id="hf-0ook" id="s5-dev" class="dev" style="left:260px;top:120px;width:560px;height:937.4px">
+        <img data-hf-id="hf-1zye" class="d" src="assets/img/cheeko_yellow.png" />
+        <div data-hf-id="hf-zn7g" class="scr">
+          <video data-hf-id="hf-pf5m" id="s5-v0" class="clip" data-start="0" data-duration="1.85" data-media-start="1.65" muted playsinline src="assets/video/dino_roundB.mp4"></video>
+          <video data-hf-id="hf-2ll7" id="s5-v1" class="clip" data-start="1.85" data-duration="2.6" muted playsinline src="assets/video/v_instrument.mp4"></video>
+          <video data-hf-id="hf-vtwq" id="s5-v2" class="clip" data-start="4.45" data-duration="2.15" muted playsinline src="assets/video/v_space.mp4"></video>
+          <video data-hf-id="hf-5jp2" id="s5-v3" class="clip" data-start="6.6" data-duration="0.9" muted playsinline src="assets/video/v_odd.mp4"></video>
+          <video data-hf-id="hf-vdyc" id="s5-v4" class="clip" data-start="7.5" data-duration="2.15" muted playsinline src="assets/video/v_riddles.mp4"></video>
+          <video data-hf-id="hf-lcsw" id="s5-v5" class="clip" data-start="9.65" data-duration="1.5" muted playsinline src="assets/video/v_missing.mp4"></video>
+          <video data-hf-id="hf-g72s" id="s5-v6" class="clip" data-start="11.15" data-duration="1.8" muted playsinline src="assets/video/v_emoji.mp4"></video>
+        </div>
+      </div>
+    </div>
+    <div data-hf-id="hf-gyex" id="s5-t0" class="ttl clip" data-start="0.45" data-duration="1.4"><div data-hf-id="hf-ffgp" class="nm" id="s5-t0n">+6 new videos ✨</div></div>
+    <div data-hf-id="hf-637y" id="s5-t1" class="ttl clip" data-start="1.85" data-duration="2.6"><div data-hf-id="hf-0d90" class="nm" id="s5-t1n">Guess the Instrument</div><div data-hf-id="hf-uivc" class="ch" id="s5-t1c">🎵 Music</div></div>
+    <div data-hf-id="hf-mgxw" id="s5-t2" class="ttl clip" data-start="4.45" data-duration="2.15"><div data-hf-id="hf-8uil" class="nm" id="s5-t2n">Space Quiz</div><div data-hf-id="hf-0j14" class="ch" id="s5-t2c">🪐 Planets and stars</div></div>
+    <div data-hf-id="hf-3r78" id="s5-t3" class="ttl clip" data-start="6.6" data-duration="3.05" style="top:1040px"><div data-hf-id="hf-hacx" class="nm" id="s5-t3n" style="font-size:80px">Odd One Out</div><div data-hf-id="hf-oy97" class="nm" id="s5-t4n" style="font-size:80px;margin-top:10px">&amp; Cheeko's Riddles</div><div data-hf-id="hf-f9ae" class="ch" id="s5-t3c" style="margin-top:20px">🧩 Logic · 💡 Thinking</div></div>
+    <div data-hf-id="hf-hqwk" id="s5-t5" class="ttl clip" data-start="9.65" data-duration="1.5"><div data-hf-id="hf-ltmr" class="nm" id="s5-t5n">What Is Missing</div><div data-hf-id="hf-2t3h" class="ch" id="s5-t5c">👀 Sharp eyes</div></div>
+    <div data-hf-id="hf-kdqm" id="s5-t6" class="ttl clip" data-start="11.15" data-duration="1.8"><div data-hf-id="hf-xv0h" class="nm" id="s5-t6n">Emoji Words</div><div data-hf-id="hf-je9b" class="ch" id="s5-t6c">🔤 New words</div></div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    // pull back: the quiz was on Cheeko's screen all along
+    tl.fromTo("#s5-cam", { x: -1036.3, y: -338.2, scale: 2.955, transformOrigin: "0 0" }, { x: 0, y: 0, scale: 1, duration: .6, ease: "power2.inOut" }, 0);
+    // each title blurs in as a line, its chip lands a beat later; the screen hops when the video changes
+    [[0, .45], [1, 1.85], [2, 4.45], [3, 6.6], [4, 7.5], [5, 9.65], [6, 11.15]].forEach(([i, t]) => {
+      tl.fromTo("#s5-t" + i + "n", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: .16, ease: "power2.out" }, t);
+      if (i && i !== 4) tl.fromTo("#s5-t" + i + "c", { scale: .4, opacity: 0 }, { scale: 1, opacity: 1, duration: .24, ease: "back.out(1.8)" }, i === 3 ? 8.45 : t + .1);
+      if (i) {
+        tl.fromTo("#s5-dev", { scaleX: 1, scaleY: 1, transformOrigin: "50% 100%" }, { scaleX: 1.025, scaleY: .975, duration: .08, yoyo: true, repeat: 1, ease: "power1.out" }, t);
+      }
+    });
+    window.__timelines["s5"] = tl;
+  </script>
+</template>

@@ -1,0 +1,587 @@
+[
+ {
+  "mode": "sound",
+  "pics": [
+   "../images/dog.jpg"
+  ],
+  "overlay": "sound",
+  "title": "Who Says That?",
+  "level": 1,
+  "c1": "#7ED957",
+  "c2": "#2E8B3A",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/01-who-says-that/device/Cheeko_V32.1_Who_Says_That_Level_1_thumb_208x116.jpg",
+  "drive": "Who Says That"
+ },
+ {
+  "mode": "sound",
+  "pics": [
+   "../images/lion.jpg"
+  ],
+  "overlay": "sound",
+  "title": "Who Says That?",
+  "level": 2,
+  "c1": "#7ED957",
+  "c2": "#2E8B3A",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/01-who-says-that/device/Cheeko_V32.2_Who_Says_That_Level_2_thumb_208x116.jpg",
+  "drive": "Who Says That"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/fruit_apple.jpg"
+  ],
+  "overlay": "",
+  "title": "Guess the Fruit!",
+  "level": 1,
+  "c1": "#FF8A65",
+  "c2": "#D84315",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/02-guess-the-fruit/device/Cheeko_V33.1_Guess_the_Fruit_Level_1_thumb_208x116.jpg",
+  "drive": "Guess the Fruit"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/fruit_pomegranate.jpg"
+  ],
+  "overlay": "",
+  "title": "Guess the Fruit!",
+  "level": 2,
+  "c1": "#FF8A65",
+  "c2": "#D84315",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/02-guess-the-fruit/device/Cheeko_V33.2_Guess_the_Fruit_Level_2_thumb_208x116.jpg",
+  "drive": "Guess the Fruit"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/fruit_dragon_fruit.jpg"
+  ],
+  "overlay": "",
+  "title": "Guess the Fruit!",
+  "level": 3,
+  "c1": "#FF8A65",
+  "c2": "#D84315",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/02-guess-the-fruit/device/Cheeko_V33.3_Guess_the_Fruit_Level_3_thumb_208x116.jpg",
+  "drive": "Guess the Fruit"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/red_balloon.jpg"
+  ],
+  "overlay": "",
+  "title": "What Colour Is It?",
+  "level": 1,
+  "c1": "#7FD3FF",
+  "c2": "#2B7BD6",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/03-what-colour/device/Cheeko_V34.1_What_Colour_Is_It_Level_1_thumb_208x116.jpg",
+  "drive": "What Colour Is It"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/fire_engine.jpg"
+  ],
+  "overlay": "",
+  "title": "What Colour Is It?",
+  "level": 2,
+  "c1": "#7FD3FF",
+  "c2": "#2B7BD6",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/03-what-colour/device/Cheeko_V34.2_What_Colour_Is_It_Level_2_thumb_208x116.jpg",
+  "drive": "What Colour Is It"
+ },
+ {
+  "mode": "zoom",
+  "pics": [
+   "../images/boy_face.jpg"
+  ],
+  "overlay": "",
+  "title": "Touch Your Nose!",
+  "level": 0,
+  "c1": "#FFB86B",
+  "c2": "#E8590C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/04-touch-your-nose/device/Cheeko_V35_Touch_Your_Nose_thumb_208x116.jpg",
+  "drive": "Touch Your Nose"
+ },
+ {
+  "mode": "swap",
+  "pics": [
+   "../images/mum_hen.jpg"
+  ],
+  "overlay": "",
+  "title": "Mummy and Baby!",
+  "level": 0,
+  "c1": "#B2F2BB",
+  "c2": "#2F9E44",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/05-mummy-and-baby/device/Cheeko_V36_Mummy_and_Baby_thumb_208x116.jpg",
+  "drive": "Mummy and Baby"
+ },
+ {
+  "mode": "letter",
+  "pics": [
+   "../images/fruit_apple.jpg"
+  ],
+  "overlay": "A",
+  "title": "A for Apple!",
+  "level": 1,
+  "c1": "#2F6B4F",
+  "c2": "#173D2C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/06-a-for-apple/device/Cheeko_V37.1_A_for_Apple_Level_1_thumb_208x116.jpg",
+  "drive": "A for Apple"
+ },
+ {
+  "mode": "letter",
+  "pics": [
+   "../images/jug.jpg"
+  ],
+  "overlay": "J",
+  "title": "A for Apple!",
+  "level": 2,
+  "c1": "#2F6B4F",
+  "c2": "#173D2C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/06-a-for-apple/device/Cheeko_V37.2_A_for_Apple_Level_2_thumb_208x116.jpg",
+  "drive": "A for Apple"
+ },
+ {
+  "mode": "letter",
+  "pics": [
+   "../images/sun.jpg"
+  ],
+  "overlay": "S",
+  "title": "A for Apple!",
+  "level": 3,
+  "c1": "#2F6B4F",
+  "c2": "#173D2C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/06-a-for-apple/device/Cheeko_V37.3_A_for_Apple_Level_3_thumb_208x116.jpg",
+  "drive": "A for Apple"
+ },
+ {
+  "mode": "count",
+  "pics": [
+   "../images/cut/rubber_duck.png"
+  ],
+  "overlay": "3",
+  "title": "How Many?",
+  "level": 1,
+  "c1": "#FFD43B",
+  "c2": "#F08C00",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/07-how-many/device/Cheeko_V38.1_How_Many_Level_1_thumb_208x116.jpg",
+  "drive": "How Many"
+ },
+ {
+  "mode": "count",
+  "pics": [
+   "../images/cut/star.png"
+  ],
+  "overlay": "6",
+  "title": "How Many?",
+  "level": 2,
+  "c1": "#FFD43B",
+  "c2": "#F08C00",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/07-how-many/device/Cheeko_V38.2_How_Many_Level_2_thumb_208x116.jpg",
+  "drive": "How Many"
+ },
+ {
+  "mode": "shadow",
+  "pics": [
+   "../images/sil/dog.jpg"
+  ],
+  "overlay": "shadow",
+  "title": "Shadow Match!",
+  "level": 1,
+  "c1": "#4B3B8F",
+  "c2": "#140D33",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/08-shadow-match/device/Cheeko_V39.1_Shadow_Match_Level_1_thumb_208x116.jpg",
+  "drive": "Shadow Match"
+ },
+ {
+  "mode": "shadow",
+  "pics": [
+   "../images/sil/car.jpg"
+  ],
+  "overlay": "shadow",
+  "title": "Shadow Match!",
+  "level": 2,
+  "c1": "#4B3B8F",
+  "c2": "#140D33",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/08-shadow-match/device/Cheeko_V39.2_Shadow_Match_Level_2_thumb_208x116.jpg",
+  "drive": "Shadow Match"
+ },
+ {
+  "mode": "shadow",
+  "pics": [
+   "../images/sil/fruit_banana.jpg"
+  ],
+  "overlay": "shadow",
+  "title": "Shadow Match!",
+  "level": 3,
+  "c1": "#4B3B8F",
+  "c2": "#140D33",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/08-shadow-match/device/Cheeko_V39.3_Shadow_Match_Level_3_thumb_208x116.jpg",
+  "drive": "Shadow Match"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/cheeko_happy.jpg"
+  ],
+  "overlay": "",
+  "title": "How Does Cheeko Feel?",
+  "level": 0,
+  "c1": "#FFC9DE",
+  "c2": "#E86AA0",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/09-how-does-cheeko-feel/device/Cheeko_V40_How_Does_Cheeko_Feel_thumb_208x116.jpg",
+  "drive": "How Does Cheeko Feel"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/clock.jpg"
+  ],
+  "overlay": "",
+  "title": "Shapes Around Us!",
+  "level": 1,
+  "c1": "#5C7CFA",
+  "c2": "#2B3990",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/10-shapes-around-us/device/Cheeko_V41.1_Shapes_Around_Us_Level_1_thumb_208x116.jpg",
+  "drive": "Shapes Around Us"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/plate.jpg"
+  ],
+  "overlay": "",
+  "title": "Shapes Around Us!",
+  "level": 2,
+  "c1": "#5C7CFA",
+  "c2": "#2B3990",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/10-shapes-around-us/device/Cheeko_V41.2_Shapes_Around_Us_Level_2_thumb_208x116.jpg",
+  "drive": "Shapes Around Us"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/doctor.jpg"
+  ],
+  "overlay": "",
+  "title": "Who Helps Us?",
+  "level": 1,
+  "c1": "#74C0FC",
+  "c2": "#1C5A99",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/11-who-helps-us/device/Cheeko_V42.1_Who_Helps_Us_Level_1_thumb_208x116.jpg",
+  "drive": "Who Helps Us"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/helper_dentist.jpg"
+  ],
+  "overlay": "",
+  "title": "Who Helps Us?",
+  "level": 2,
+  "c1": "#74C0FC",
+  "c2": "#1C5A99",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/11-who-helps-us/device/Cheeko_V42.2_Who_Helps_Us_Level_2_thumb_208x116.jpg",
+  "drive": "Who Helps Us"
+ },
+ {
+  "mode": "sound",
+  "pics": [
+   "../images/house_doorbell.jpg"
+  ],
+  "overlay": "sound",
+  "title": "Sounds Around the House!",
+  "level": 1,
+  "c1": "#FFE3B3",
+  "c2": "#B5835A",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/12-sounds-around-the-house/device/Cheeko_V43.1_Sounds_Around_the_House_Level_1_thumb_208x116.jpg",
+  "drive": "Sounds Around the House"
+ },
+ {
+  "mode": "sound",
+  "pics": [
+   "../images/house_washer.jpg"
+  ],
+  "overlay": "sound",
+  "title": "Sounds Around the House!",
+  "level": 2,
+  "c1": "#FFE3B3",
+  "c2": "#B5835A",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/12-sounds-around-the-house/device/Cheeko_V43.2_Sounds_Around_the_House_Level_2_thumb_208x116.jpg",
+  "drive": "Sounds Around the House"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/peacock.jpg"
+  ],
+  "overlay": "",
+  "title": "Indian Birds!",
+  "level": 1,
+  "c1": "#A5D8FF",
+  "c2": "#3A86D6",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/13-indian-birds/device/Cheeko_V44.1_Indian_Birds_Level_1_thumb_208x116.jpg",
+  "drive": "Indian Birds"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/bird_myna.jpg"
+  ],
+  "overlay": "",
+  "title": "Indian Birds!",
+  "level": 2,
+  "c1": "#A5D8FF",
+  "c2": "#3A86D6",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/13-indian-birds/device/Cheeko_V44.2_Indian_Birds_Level_2_thumb_208x116.jpg",
+  "drive": "Indian Birds"
+ },
+ {
+  "mode": "ask",
+  "pics": [
+   "../images/big_small.jpg"
+  ],
+  "overlay": "",
+  "title": "Big or Small?",
+  "level": 0,
+  "c1": "#FF6B6B",
+  "c2": "#4DABF7",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/14-big-or-small/device/Cheeko_V45_Big_or_Small_thumb_208x116.jpg",
+  "drive": "Big or Small"
+ },
+ {
+  "mode": "sound",
+  "pics": [
+   "../images/inst_drum.jpg"
+  ],
+  "overlay": "sound",
+  "title": "Guess the Instrument!",
+  "level": 1,
+  "c1": "#E599F7",
+  "c2": "#862E9C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/15-guess-the-instrument/device/Cheeko_V46.1_Guess_the_Instrument_Level_1_thumb_208x116.jpg",
+  "drive": "Guess the Instrument"
+ },
+ {
+  "mode": "sound",
+  "pics": [
+   "../images/inst_sitar.jpg"
+  ],
+  "overlay": "sound",
+  "title": "Guess the Instrument!",
+  "level": 2,
+  "c1": "#E599F7",
+  "c2": "#862E9C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/15-guess-the-instrument/device/Cheeko_V46.2_Guess_the_Instrument_Level_2_thumb_208x116.jpg",
+  "drive": "Guess the Instrument"
+ },
+ {
+  "mode": "ask",
+  "pics": [
+   "../images/space_sun.jpg"
+  ],
+  "overlay": "",
+  "title": "Space Quiz!",
+  "level": 0,
+  "c1": "#2B2F77",
+  "c2": "#0B0C2A",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/16-space-quiz/device/Cheeko_V47_Space_Quiz_thumb_208x116.jpg",
+  "drive": "Space Quiz"
+ },
+ {
+  "mode": "odd",
+  "pics": [
+   "../images/car.jpg",
+   "../images/bus.jpg",
+   "../images/train.jpg",
+   "../images/fruit_mango.jpg"
+  ],
+  "overlay": "",
+  "hide": -1,
+  "title": "Odd One Out!",
+  "level": 1,
+  "c1": "#FF922B",
+  "c2": "#C2410C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/17-odd-one-out/device/Cheeko_V48.1_Odd_One_Out_Level_1_thumb_208x116.jpg",
+  "drive": "Odd One Out"
+ },
+ {
+  "mode": "odd",
+  "pics": [
+   "../images/boat.jpg",
+   "../images/ship.jpg",
+   "../images/submarine.jpg",
+   "../images/aeroplane.jpg"
+  ],
+  "overlay": "",
+  "hide": -1,
+  "title": "Odd One Out!",
+  "level": 2,
+  "c1": "#FF922B",
+  "c2": "#C2410C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/17-odd-one-out/device/Cheeko_V48.2_Odd_One_Out_Level_2_thumb_208x116.jpg",
+  "drive": "Odd One Out"
+ },
+ {
+  "mode": "riddle",
+  "pics": [
+   "../images/cheeko_surprised.jpg"
+  ],
+  "overlay": "?",
+  "title": "Cheeko's Riddles!",
+  "level": 1,
+  "c1": "#845EF7",
+  "c2": "#3B1F9E",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/18-cheekos-riddles/device/Cheeko_V49.1_Cheekos_Riddles_Level_1_thumb_208x116.jpg",
+  "drive": "Cheekos Riddles"
+ },
+ {
+  "mode": "riddle",
+  "pics": [
+   "../images/cheeko_surprised.jpg"
+  ],
+  "overlay": "?",
+  "title": "Cheeko's Riddles!",
+  "level": 2,
+  "c1": "#845EF7",
+  "c2": "#3B1F9E",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/18-cheekos-riddles/device/Cheeko_V49.2_Cheekos_Riddles_Level_2_thumb_208x116.jpg",
+  "drive": "Cheekos Riddles"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/t_rex.jpg"
+  ],
+  "overlay": "",
+  "title": "Guess the Dinosaur!",
+  "level": 1,
+  "c1": "#8CE99A",
+  "c2": "#1E6B34",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/19-guess-the-dinosaur/device/Cheeko_V50.1_Guess_the_Dinosaur_Level_1_thumb_208x116.jpg",
+  "drive": "Guess the Dinosaur"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/dino_pachycephalosaurus.jpg"
+  ],
+  "overlay": "",
+  "title": "Guess the Dinosaur!",
+  "level": 2,
+  "c1": "#8CE99A",
+  "c2": "#1E6B34",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/19-guess-the-dinosaur/device/Cheeko_V50.2_Guess_the_Dinosaur_Level_2_thumb_208x116.jpg",
+  "drive": "Guess the Dinosaur"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/taj_mahal.jpg"
+  ],
+  "overlay": "",
+  "title": "Famous Places of India!",
+  "level": 1,
+  "c1": "#FFC078",
+  "c2": "#E8590C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/20-famous-places-of-india/device/Cheeko_V51.1_Famous_Places_of_India_Level_1_thumb_208x116.jpg",
+  "drive": "Famous Places of India"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../images/place_howrah_bridge.jpg"
+  ],
+  "overlay": "",
+  "title": "Famous Places of India!",
+  "level": 2,
+  "c1": "#FFC078",
+  "c2": "#E8590C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/20-famous-places-of-india/device/Cheeko_V51.2_Famous_Places_of_India_Level_2_thumb_208x116.jpg",
+  "drive": "Famous Places of India"
+ },
+ {
+  "mode": "missing",
+  "pics": [
+   "../images/car.jpg",
+   "../images/bus.jpg",
+   "../images/train.jpg",
+   "../images/boat.jpg"
+  ],
+  "overlay": "",
+  "hide": 1,
+  "title": "What Is Missing?",
+  "level": 0,
+  "c1": "#748FFC",
+  "c2": "#2B3990",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/21-what-is-missing/device/Cheeko_V52_What_Is_Missing_thumb_208x116.jpg",
+  "drive": "What Is Missing"
+ },
+ {
+  "mode": "pair",
+  "pics": [
+   "../images/cut/sun.png",
+   "../images/cut/pink_flower.png"
+  ],
+  "overlay": "",
+  "title": "Emoji Words!",
+  "level": 0,
+  "c1": "#FFD43B",
+  "c2": "#F08C00",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/learning-center/22-emoji-words/device/Cheeko_V53_Emoji_Words_thumb_208x116.jpg",
+  "drive": "Emoji Words"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../../../marketing/assets/envato/v30-ocean-animals/03_bigg-s-orca-whale-jumping-out-of-the-sea-in-vancou-2026-09-24-03-12-13-utc.jpeg"
+  ],
+  "overlay": "",
+  "title": "Ocean Animals",
+  "level": 0,
+  "c1": "#4DC3FF",
+  "c2": "#0B4F8A",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-08-ocean-animals/device/Cheeko_V30_Ocean_Animals_10_thumb_208x116.jpg",
+  "drive": "Ocean and Water Animals"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../../brag-output-2026-10-09-vehicles/work/assets/vehicles/01_car.jpg"
+  ],
+  "overlay": "",
+  "title": "Guess the Vehicle",
+  "level": 1,
+  "c1": "#FFD43B",
+  "c2": "#E8590C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-09-vehicles/device/Cheeko_V31.1_Guess_the_Vehicle_Level_1_thumb_208x116.jpg",
+  "drive": "Guess the Vehicle"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../../brag-output-2026-10-09-vehicles/work/assets/vehicles/11_fire_engine.jpg"
+  ],
+  "overlay": "",
+  "title": "Guess the Vehicle",
+  "level": 2,
+  "c1": "#FFD43B",
+  "c2": "#E8590C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-09-vehicles/device/Cheeko_V31.2_Guess_the_Vehicle_Level_2_thumb_208x116.jpg",
+  "drive": "Guess the Vehicle"
+ },
+ {
+  "mode": "picture",
+  "pics": [
+   "../../brag-output-2026-10-09-vehicles/work/assets/vehicles/26_rocket.jpg"
+  ],
+  "overlay": "",
+  "title": "Guess the Vehicle",
+  "level": 3,
+  "c1": "#FFD43B",
+  "c2": "#E8590C",
+  "out": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-09-vehicles/device/Cheeko_V31.3_Guess_the_Vehicle_Level_3_thumb_208x116.jpg",
+  "drive": "Guess the Vehicle"
+ }
+]

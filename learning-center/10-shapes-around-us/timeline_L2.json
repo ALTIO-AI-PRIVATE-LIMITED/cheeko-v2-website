@@ -1,0 +1,234 @@
+{
+ "idea": "10-shapes-around-us",
+ "id": "V41",
+ "level": 2,
+ "nLevels": 2,
+ "mode": "picture",
+ "theme": {
+  "bg": "shapes",
+  "pals": [
+   [
+    "#5C7CFA",
+    "#2B3990"
+   ],
+   [
+    "#F76707",
+    "#A93E00"
+   ],
+   [
+    "#12B886",
+    "#087050"
+   ],
+   [
+    "#E64980",
+    "#9C1752"
+   ],
+   [
+    "#FAB005",
+    "#B37400"
+   ]
+  ],
+  "trans": "diamond",
+  "enter": "spin",
+  "fx": "rings",
+  "knob": "🔷",
+  "bar": [
+   "#74C0FC",
+   "#339AF0"
+  ],
+  "music": "synthpop"
+ },
+ "answer": 5,
+ "dur": 125.15,
+ "n": 10,
+ "t1": "Shapes",
+ "t2": "Around Us!",
+ "head": "What <span>shape</span>?",
+ "chips": [
+  [
+   "?",
+   "Look closely"
+  ],
+  [
+   "5",
+   "5 seconds"
+  ],
+  [
+   "!",
+   "Say its shape"
+  ]
+ ],
+ "outroText": [
+  "Super!",
+  "Level 2 done!",
+  "Play again!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.6818333333333335,
+  "rules": 4.944229166666666,
+  "go": 7.324833333333333
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 9.148,
+   "label": "Circle",
+   "pill": "Circle",
+   "times": {
+    "tick0": 1.669,
+    "reveal": 6.669,
+    "name": 6.919
+   },
+   "dur": 10.631,
+   "img": "plate",
+   "shape": "circle"
+  },
+  {
+   "k": 2,
+   "start": 19.779,
+   "label": "Square",
+   "pill": "Square",
+   "times": {
+    "tick0": 1.706,
+    "reveal": 6.706,
+    "name": 6.956
+   },
+   "dur": 10.465,
+   "img": "cushion",
+   "shape": "square"
+  },
+  {
+   "k": 3,
+   "start": 30.244,
+   "label": "Triangle",
+   "pill": "Triangle",
+   "times": {
+    "tick0": 2.049,
+    "reveal": 7.049,
+    "name": 7.299
+   },
+   "dur": 11.605,
+   "img": "samosa",
+   "shape": "triangle"
+  },
+  {
+   "k": 4,
+   "start": 41.849,
+   "label": "Rectangle",
+   "pill": "Rectangle",
+   "times": {
+    "tick0": 1.708,
+    "reveal": 6.708,
+    "name": 6.958
+   },
+   "dur": 10.449,
+   "img": "book",
+   "shape": "rectangle"
+  },
+  {
+   "k": 5,
+   "start": 52.299,
+   "label": "Oval",
+   "pill": "Oval",
+   "times": {
+    "tick0": 1.596,
+    "reveal": 6.596,
+    "name": 6.846
+   },
+   "dur": 10.533,
+   "img": "mirror_oval",
+   "shape": "oval"
+  },
+  {
+   "k": 6,
+   "start": 62.832,
+   "label": "Star",
+   "pill": "Star",
+   "times": {
+    "tick0": 1.584,
+    "reveal": 6.584,
+    "name": 6.834
+   },
+   "dur": 10.362,
+   "img": "starfish",
+   "shape": "star"
+  },
+  {
+   "k": 7,
+   "start": 73.194,
+   "label": "Heart",
+   "pill": "Heart",
+   "times": {
+    "tick0": 1.53,
+    "reveal": 6.53,
+    "name": 6.78
+   },
+   "dur": 10.231,
+   "img": "heart_cookie",
+   "shape": "heart"
+  },
+  {
+   "k": 8,
+   "start": 83.424,
+   "label": "Diamond",
+   "pill": "Diamond",
+   "times": {
+    "tick0": 1.58,
+    "reveal": 6.58,
+    "name": 6.83
+   },
+   "dur": 10.339,
+   "img": "diamond_sign",
+   "shape": "diamond"
+  },
+  {
+   "k": 9,
+   "start": 93.763,
+   "label": "Semicircle",
+   "pill": "Semicircle",
+   "times": {
+    "tick0": 1.709,
+    "reveal": 6.709,
+    "name": 6.959
+   },
+   "dur": 11.255,
+   "img": "rainbow",
+   "shape": "semicircle"
+  },
+  {
+   "k": 10,
+   "start": 105.018,
+   "label": "Hexagon",
+   "pill": "Hexagon",
+   "times": {
+    "tick0": 1.851,
+    "reveal": 6.851,
+    "name": 7.101
+   },
+   "dur": 11.313,
+   "img": "hex_nut",
+   "shape": "hexagon"
+  }
+ ],
+ "outroStart": 116.331,
+ "outro": {
+  "done": 116.68145833333334,
+  "howmany": 118.35627083333334,
+  "next": 120.04439583333334,
+  "bye": 122.720125
+ },
+ "paths": {
+  "plate": "../images/plate.jpg",
+  "cushion": "../images/cushion.jpg",
+  "samosa": "../images/samosa.jpg",
+  "book": "../images/book.jpg",
+  "mirror_oval": "../images/mirror_oval.jpg",
+  "starfish": "../images/starfish.jpg",
+  "heart_cookie": "../images/heart_cookie.jpg",
+  "diamond_sign": "../images/diamond_sign.jpg",
+  "rainbow": "../images/rainbow.jpg",
+  "hex_nut": "../images/hex_nut.jpg"
+ }
+}

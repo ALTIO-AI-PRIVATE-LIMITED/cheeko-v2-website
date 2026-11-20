@@ -1,0 +1,1760 @@
+{
+  "version": 1,
+  "historyId": "64d2d600-824d-40a6-965f-a0f340cd7c3e",
+  "currentRevision": "2df7ae6d-8d7d-4278-8e83-9713dc32ae26",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/1b/1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "CLAUDE.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/1b/1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "SPEC.md": {
+      "hash": "63a1796aefb2f698a1c9162a9305d544aba75ffd47907381bd2193a88a33b4e1",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/63/63a1796aefb2f698a1c9162a9305d544aba75ffd47907381bd2193a88a33b4e1"
+    },
+    "assets/fonts/BricolageGrotesque.woff2": {
+      "hash": "85f55a58a31e61a2e19e8bb25fed503181bf2a6b4cab76c589992cfaac377447",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/85/85f55a58a31e61a2e19e8bb25fed503181bf2a6b4cab76c589992cfaac377447"
+    },
+    "assets/fonts/Gabarito.woff2": {
+      "hash": "3f5e6ec227ca614c873d8e0b2502c64d99e96fe3d1bb9f996ab46d2769ad9a2c",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/3f/3f5e6ec227ca614c873d8e0b2502c64d99e96fe3d1bb9f996ab46d2769ad9a2c"
+    },
+    "assets/fonts/HankenGrotesk.woff2": {
+      "hash": "1f21c6eaa0000f3329cfcfac966b43d5bebf5aa610303e33294ac31bc6f4bb59",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/1f/1f21c6eaa0000f3329cfcfac966b43d5bebf5aa610303e33294ac31bc6f4bb59"
+    },
+    "assets/img/dino_card.png": {
+      "hash": "f51d20ba9b697423a8f8229ed47e820b549b90302d08122d85c7731b7bd3c3cf",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/f5/f51d20ba9b697423a8f8229ed47e820b549b90302d08122d85c7731b7bd3c3cf"
+    },
+    "assets/img/fox.png": {
+      "hash": "284d48977e3af4a3bd63b72092e20af4fde526306bd489e68f73351a6b3da0e7",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/28/284d48977e3af4a3bd63b72092e20af4fde526306bd489e68f73351a6b3da0e7"
+    },
+    "assets/img/fw_00_home_clock.png": {
+      "hash": "cdc56208eb75788d0c347c3560821d2c46433da2ce7f33d6893f4b1c84d918d4",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/cd/cdc56208eb75788d0c347c3560821d2c46433da2ce7f33d6893f4b1c84d918d4"
+    },
+    "assets/img/fw_03_talk_2_quizzy_6_talking.png": {
+      "hash": "f500c813c8da0fe5b41fc6ec8ca7888fd9fa392156e8f845733f9272ba37d2f4",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/f5/f500c813c8da0fe5b41fc6ec8ca7888fd9fa392156e8f845733f9272ba37d2f4"
+    },
+    "assets/img/fw_03_talk_4_nani_6_talking.png": {
+      "hash": "a79091f8bd957a3976ee0ae8bad7bc106cc62355cbfe2311733e933531acc7f2",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/a7/a79091f8bd957a3976ee0ae8bad7bc106cc62355cbfe2311733e933531acc7f2"
+    },
+    "assets/img/fw_03_talk_5_mitthu_6_talking.png": {
+      "hash": "bbdf00a942d8c90b980ff333b8069b2c8066c966071dd34383d6c8b79dc9522c",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/bb/bbdf00a942d8c90b980ff333b8069b2c8066c966071dd34383d6c8b79dc9522c"
+    },
+    "assets/img/fw_content_play_2b_downloading.png": {
+      "hash": "9104bc4ecf637fe3055d80501fc00c6fedd481a2608cd1e542a5acc08a6a8052",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/91/9104bc4ecf637fe3055d80501fc00c6fedd481a2608cd1e542a5acc08a6a8052"
+    },
+    "assets/img/screen_mask.png": {
+      "hash": "8bb14e7fd4b55f9212cb1738bf4cae9a93c4967d221523618202d6e1be2a762f",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/8b/8bb14e7fd4b55f9212cb1738bf4cae9a93c4967d221523618202d6e1be2a762f"
+    },
+    "assets/img/st_a8-laugh-point.png": {
+      "hash": "3d07c9572753a639127d77dd08411b619416a1823b4f65268f42146f3fd1d3fb",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/3d/3d07c9572753a639127d77dd08411b619416a1823b4f65268f42146f3fd1d3fb"
+    },
+    "assets/img/st_b3-mumma-tired.png": {
+      "hash": "5a75e4c808886885fd3d7b13bca41f4e70d73e2b5bd649c502985d09386fff2f",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/5a/5a75e4c808886885fd3d7b13bca41f4e70d73e2b5bd649c502985d09386fff2f"
+    },
+    "assets/img/st_c5-theory.png": {
+      "hash": "f894de627d6cd3d32d906b7dc444d9cff0562c571990ac78c1cceff09a9de1c6",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/f8/f894de627d6cd3d32d906b7dc444d9cff0562c571990ac78c1cceff09a9de1c6"
+    },
+    "assets/img/st_c7-amazed.png": {
+      "hash": "7055f12fc244dec09c8c69c93a54f5c5ddf70dfbe3a94ea0e7a170b140267fc8",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/70/7055f12fc244dec09c8c69c93a54f5c5ddf70dfbe3a94ea0e7a170b140267fc8"
+    },
+    "assets/store/04_videos.png": {
+      "hash": "ab9973c5289527a0acfa1a8f5e4846bd74a44d0c5f7117b59ef2eb623fb47fa8",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/ab/ab9973c5289527a0acfa1a8f5e4846bd74a44d0c5f7117b59ef2eb623fb47fa8"
+    },
+    "assets/store/07_dino_detail.png": {
+      "hash": "439ec98ac32cd593385ef6910b79ee7117999b2dac4a4c25f1de71ed81d81255",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/43/439ec98ac32cd593385ef6910b79ee7117999b2dac4a4c25f1de71ed81d81255"
+    },
+    "assets/store/08_dino_queued.png": {
+      "hash": "96a602cd1e71f6ba020674c9d8f97b35096eeeccc337e67349d64009e9b55a70",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/96/96a602cd1e71f6ba020674c9d8f97b35096eeeccc337e67349d64009e9b55a70"
+    },
+    "assets/store/09_dino_sending40.png": {
+      "hash": "2062a3e9cdb30d5806259a120c47e7688231a730097db8368d6c74d66f1455dc",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/20/2062a3e9cdb30d5806259a120c47e7688231a730097db8368d6c74d66f1455dc"
+    },
+    "assets/store/10_dino_sending85.png": {
+      "hash": "c3914a8d97b082c89ed7f105e8279ac06ef38273927c6fc6c681f41d14eaa033",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/c3/c3914a8d97b082c89ed7f105e8279ac06ef38273927c6fc6c681f41d14eaa033"
+    },
+    "assets/store/11_dino_sent.png": {
+      "hash": "c4644198276d7364c1cb55957d031eff0a64a15ae08371b596135d03c9d2821b",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/c4/c4644198276d7364c1cb55957d031eff0a64a15ae08371b596135d03c9d2821b"
+    },
+    "assets/store/header_videos.png": {
+      "hash": "44625f40cc2509a4275ee25b70588d2349defdec3f4a1058d9522e1fe3aa5bf1",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/44/44625f40cc2509a4275ee25b70588d2349defdec3f4a1058d9522e1fe3aa5bf1"
+    },
+    "assets/video/dino_intro.mp4": {
+      "hash": "2a179ea9f28200502f55d8b2435018c2c605e662900329ad508e8f644498b988",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/2a/2a179ea9f28200502f55d8b2435018c2c605e662900329ad508e8f644498b988"
+    },
+    "assets/video/dino_roundA.mp4": {
+      "hash": "57b1ac26998fd6bf215cc779ebcc7a895258038cee78cdf715cf6c9fc10e328d",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/57/57b1ac26998fd6bf215cc779ebcc7a895258038cee78cdf715cf6c9fc10e328d"
+    },
+    "assets/video/dino_roundB.mp4": {
+      "hash": "e102b9468d0b6238b12dcf444fe1b5e288dcfa61534b1f80a3c2286f85c431b9",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/e1/e102b9468d0b6238b12dcf444fe1b5e288dcfa61534b1f80a3c2286f85c431b9"
+    },
+    "assets/video/v_emoji.mp4": {
+      "hash": "6809b3bfe343c3f0cfbbd12b833db6ae435c8254df84c7756f88310ab7836531",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/68/6809b3bfe343c3f0cfbbd12b833db6ae435c8254df84c7756f88310ab7836531"
+    },
+    "assets/video/v_instrument.mp4": {
+      "hash": "1c6dff2e3cc7c138df49a0703d6f7666a36cd56b6c387cf19350340fbce9fca2",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/1c/1c6dff2e3cc7c138df49a0703d6f7666a36cd56b6c387cf19350340fbce9fca2"
+    },
+    "assets/video/v_missing.mp4": {
+      "hash": "f925e0c45c850d9a10dc86ac76133461ac68f4f607e97c70ed22d7135d27cd11",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/f9/f925e0c45c850d9a10dc86ac76133461ac68f4f607e97c70ed22d7135d27cd11"
+    },
+    "assets/video/v_odd.mp4": {
+      "hash": "1a1d3676dc3ec603153f3a4e525c81af3f50a15fc15c045c8a04e7629729a171",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/1a/1a1d3676dc3ec603153f3a4e525c81af3f50a15fc15c045c8a04e7629729a171"
+    },
+    "assets/video/v_riddles.mp4": {
+      "hash": "2f4e7ab6760ea8815fe72c628872cc60452812e2f9c7a890c1e6b2c9aa25e10c",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/2f/2f4e7ab6760ea8815fe72c628872cc60452812e2f9c7a890c1e6b2c9aa25e10c"
+    },
+    "assets/video/v_space.mp4": {
+      "hash": "1f56c03620df50a7a47b821828c310b5cd62eedcc0eafa3e98b2b8b06f005681",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/1f/1f56c03620df50a7a47b821828c310b5cd62eedcc0eafa3e98b2b8b06f005681"
+    },
+    "compositions/caps.html": {
+      "hash": "06a048afdb875c986eb92ae612f70643910d2bef4af2390691f1b93d02c00494",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/06/06a048afdb875c986eb92ae612f70643910d2bef4af2390691f1b93d02c00494"
+    },
+    "compositions/s1.html": {
+      "hash": "13ef925f783e3d55ed42cb9f769944b4fc185d310080ebe42de470b7fc9c6e4c",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/13/13ef925f783e3d55ed42cb9f769944b4fc185d310080ebe42de470b7fc9c6e4c"
+    },
+    "compositions/s2.html": {
+      "hash": "3ad073e20a3c75a63299995394f6f97cd810d8ac30f8cf6602f696ea1119bd82",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/3a/3ad073e20a3c75a63299995394f6f97cd810d8ac30f8cf6602f696ea1119bd82"
+    },
+    "compositions/s3.html": {
+      "hash": "d8bb5aa8fb8f2b0f9034f8fadf85d0235e90d4e34c3cb58e3844c68fc3404417",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/d8/d8bb5aa8fb8f2b0f9034f8fadf85d0235e90d4e34c3cb58e3844c68fc3404417"
+    },
+    "compositions/s4.html": {
+      "hash": "af89b5814abc471de6cada35111e1771cebd78b14cb17b121e16a5d77f478e85",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/af/af89b5814abc471de6cada35111e1771cebd78b14cb17b121e16a5d77f478e85"
+    },
+    "compositions/s5.html": {
+      "hash": "cd8a0e7948e58b3cd72e5da61e0ba8ae737b1486c7a836c2fe3e67e22fde3f2b",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/cd/cd8a0e7948e58b3cd72e5da61e0ba8ae737b1486c7a836c2fe3e67e22fde3f2b"
+    },
+    "compositions/s6.html": {
+      "hash": "633b0283032648ef4fd7cd373620f58a5360c43fd0642df632f3cd216045ecd7",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/63/633b0283032648ef4fd7cd373620f58a5360c43fd0642df632f3cd216045ecd7"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "82ce0f93148e6108856cd4e10314c066cf0d3db732f44d1f4830dda76aa6fc10",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/82/82ce0f93148e6108856cd4e10314c066cf0d3db732f44d1f4830dda76aa6fc10"
+    },
+    "meta.json": {
+      "hash": "384c6d0d5c700adc5611060d42be2919585371f817710e9aee6f9058201822ac",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/38/384c6d0d5c700adc5611060d42be2919585371f817710e9aee6f9058201822ac"
+    },
+    "package.json": {
+      "hash": "f071759b3d63c77877b5ff9e3d00c61d9d3a1f1a18b6f28fd0e3e8de41aa03ed",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/f0/f071759b3d63c77877b5ff9e3d00c61d9d3a1f1a18b6f28fd0e3e8de41aa03ed"
+    },
+    "assets/audio/mix.wav": {
+      "hash": "0014d0628d46bea7c1af355a32a350f551305a89e7fd65aae1f3924bcd31f811",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/00/0014d0628d46bea7c1af355a32a350f551305a89e7fd65aae1f3924bcd31f811"
+    },
+    "assets/img/cheeko_yellow.png": {
+      "hash": "28472bdff33d75ac869a3b4ce5db245bcf56d4e94a331fc7cbeacd9438c7d332",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/28/28472bdff33d75ac869a3b4ce5db245bcf56d4e94a331fc7cbeacd9438c7d332"
+    },
+    "assets/img/store_icon.png": {
+      "hash": "2dd8e95e0be2734448f35cfc40ef07ec1756b1e82a3ac5e5b83085835374abb2",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/2d/2dd8e95e0be2734448f35cfc40ef07ec1756b1e82a3ac5e5b83085835374abb2"
+    },
+    "assets/store/01_home.png": {
+      "hash": "234b2287a2961b99f772f4b8bfb84d058048e685415e0d894db3acdd6622437e",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/23/234b2287a2961b99f772f4b8bfb84d058048e685415e0d894db3acdd6622437e"
+    },
+    "assets/store/05_videos_scroll.png": {
+      "hash": "d595edea7cf87a6c09d9ccf5e4039af066d6f67d5363a5cc2c81e6b083d7c21d",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/d5/d595edea7cf87a6c09d9ccf5e4039af066d6f67d5363a5cc2c81e6b083d7c21d"
+    },
+    "assets/img/fw_store_dl_a.png": {
+      "hash": "77f751425c370bc2f894b28c24ffb7f7a85f7ff17e32376f46c21f925f54aa1f",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/77/77f751425c370bc2f894b28c24ffb7f7a85f7ff17e32376f46c21f925f54aa1f"
+    },
+    "assets/img/fw_store_dl_b.png": {
+      "hash": "5c8fc6284c490a281c6df3f8b3b940e619e948ebaf9d1dc5d8af16b0f36bab6b",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/5c/5c8fc6284c490a281c6df3f8b3b940e619e948ebaf9d1dc5d8af16b0f36bab6b"
+    },
+    "assets/img/fw_store_dl_c.png": {
+      "hash": "4459fb73a8a609dee03440bd6b5a0899c2a9843eacd55d198cf81b342a969939",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/44/4459fb73a8a609dee03440bd6b5a0899c2a9843eacd55d198cf81b342a969939"
+    },
+    "REVIEW.md": {
+      "hash": "1916272ca56dc6d52a1811464dad2aa1813a491daf60a585d7b253397c0eaff5",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/19/1916272ca56dc6d52a1811464dad2aa1813a491daf60a585d7b253397c0eaff5"
+    },
+    "assets/audio/mix.transcript.json": {
+      "hash": "af95e2ae8ccf86d1c9a8635c0f6f149520427ed2af5968210450e68c2a9c2024",
+      "content": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/af/af95e2ae8ccf86d1c9a8635c0f6f149520427ed2af5968210450e68c2a9c2024"
+    }
+  },
+  "revisions": {
+    "12f84f48-abeb-4869-a937-31827ef51a0c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792774905736,
+      "endedAt": 1792774905982,
+      "files": {
+        "compositions/s1.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/f9/f9157d41e554b626353c2847d1109179ace227d04ec5866f7c16acd874a86e23",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/63/63a2f3a24f91734c16de8ef13742922fd97a7205bcbd73d93ba3a43d38004d35"
+        },
+        "compositions/s2.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/b7/b7e85ee61659c8190b6aaa12539d13602fc31db7935a9b0a6bee561c914a50b5",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/ca/ca04e363c288589ce5ff85a7f21514e72b3e39bc0e06a4c00a23e8a434a1d576"
+        },
+        "compositions/s3.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/4d/4da350b4634ea7c7746aebdcd5615a1dd69aa8a86a85c464ff41baacfabfb771",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/7d/7d6f81a1b12b5b9cde346b7a85fafaa867963f0d19a642bd41712c1394fe9281"
+        },
+        "compositions/s5.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/db/db4e45e7b29d0b3ce1e62249e72c9647b35dc82b5e1849f644f4e4d15550a469",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/14/145b29233ddaa9ffe24d766f4efa24c244c9d99583a424265ac58c0b1f56f8ef"
+        }
+      }
+    },
+    "a0030138-fed3-4a27-a5d1-d6880aa8bbf0": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792775237746,
+      "endedAt": 1792775237787,
+      "files": {
+        "assets/img/fw_store_dl_a.png": {
+          "before": null,
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/77/77f751425c370bc2f894b28c24ffb7f7a85f7ff17e32376f46c21f925f54aa1f"
+        },
+        "assets/img/fw_store_dl_b.png": {
+          "before": null,
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/5c/5c8fc6284c490a281c6df3f8b3b940e619e948ebaf9d1dc5d8af16b0f36bab6b"
+        },
+        "assets/img/fw_store_dl_c.png": {
+          "before": null,
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/44/4459fb73a8a609dee03440bd6b5a0899c2a9843eacd55d198cf81b342a969939"
+        },
+        "compositions/s1.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/63/63a2f3a24f91734c16de8ef13742922fd97a7205bcbd73d93ba3a43d38004d35",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/d8/d881ceeb8ff836f216a343d07a6fbfe71d2ab6bed99a3984726ae28fd68ba85b"
+        },
+        "compositions/s2.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/ca/ca04e363c288589ce5ff85a7f21514e72b3e39bc0e06a4c00a23e8a434a1d576",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/8b/8b0d29e42f2fd23dea3f5ee1ca5956b9d76e81fd56ca05b7ca9c890b4024628a"
+        },
+        "compositions/s3.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/7d/7d6f81a1b12b5b9cde346b7a85fafaa867963f0d19a642bd41712c1394fe9281",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/b2/b21608481a0d826cbf6f50c714a6597a44386c29b33835af66db926dd63f9dc4"
+        },
+        "compositions/s4.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/a9/a913d207a6d8dba98da317f5dbe82c52d6fdb0fc31820c4b6b8379d17e430c24",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/a1/a1714f99def5ebd26e3fc06b0fd08379a36eddcb8b6c5d2f7456620b983951d2"
+        },
+        "compositions/s6.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/82/8206b808340a1aa93d41493cf280242d9f4b84bd4a1238a8425cdbba93fd225e",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/03/03d63fb0265a7e5d2004d39253b0707695e8c27a8c0d5f6c6e845f5ce6a2a416"
+        }
+      }
+    },
+    "6463b82c-ce0e-4edd-ad26-a7ff1e18fd7b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792775369453,
+      "endedAt": 1792775369532,
+      "files": {
+        "compositions/caps.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/f1/f1a99acccecb225027fd19a2215a96281802423800341d5e4d291f6ad50e3b10",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/06/06a048afdb875c986eb92ae612f70643910d2bef4af2390691f1b93d02c00494"
+        },
+        "compositions/s1.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/d8/d881ceeb8ff836f216a343d07a6fbfe71d2ab6bed99a3984726ae28fd68ba85b",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/13/13ef925f783e3d55ed42cb9f769944b4fc185d310080ebe42de470b7fc9c6e4c"
+        },
+        "compositions/s2.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/8b/8b0d29e42f2fd23dea3f5ee1ca5956b9d76e81fd56ca05b7ca9c890b4024628a",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/3a/3ad073e20a3c75a63299995394f6f97cd810d8ac30f8cf6602f696ea1119bd82"
+        },
+        "compositions/s3.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/b2/b21608481a0d826cbf6f50c714a6597a44386c29b33835af66db926dd63f9dc4",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/d8/d8bb5aa8fb8f2b0f9034f8fadf85d0235e90d4e34c3cb58e3844c68fc3404417"
+        },
+        "compositions/s4.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/a1/a1714f99def5ebd26e3fc06b0fd08379a36eddcb8b6c5d2f7456620b983951d2",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/af/af89b5814abc471de6cada35111e1771cebd78b14cb17b121e16a5d77f478e85"
+        },
+        "compositions/s5.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/14/145b29233ddaa9ffe24d766f4efa24c244c9d99583a424265ac58c0b1f56f8ef",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/cd/cd8a0e7948e58b3cd72e5da61e0ba8ae737b1486c7a836c2fe3e67e22fde3f2b"
+        },
+        "compositions/s6.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/03/03d63fb0265a7e5d2004d39253b0707695e8c27a8c0d5f6c6e845f5ce6a2a416",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/63/633b0283032648ef4fd7cd373620f58a5360c43fd0642df632f3cd216045ecd7"
+        },
+        "index.html": {
+          "before": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/f6/f6c8588fff94406d92c3c2222170cba434e1c9b94419070acf60a7a489554e52",
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/82/82ce0f93148e6108856cd4e10314c066cf0d3db732f44d1f4830dda76aa6fc10"
+        }
+      }
+    },
+    "4788be75-daa5-4012-86d7-5af62d3f9236": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792775480155,
+      "endedAt": 1792775482167,
+      "files": {
+        "REVIEW.md": {
+          "before": null,
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/19/1916272ca56dc6d52a1811464dad2aa1813a491daf60a585d7b253397c0eaff5"
+        }
+      }
+    },
+    "2df7ae6d-8d7d-4278-8e83-9713dc32ae26": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794144893306,
+      "endedAt": 1794144895307,
+      "files": {
+        "assets/audio/mix.transcript.json": {
+          "before": null,
+          "after": "/Users/ravikumar/.cache/hyperframes/history/64d2d600-824d-40a6-965f-a0f340cd7c3e/blobs/af/af95e2ae8ccf86d1c9a8635c0f6f149520427ed2af5968210450e68c2a9c2024"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+      "id": "8b2d3f8c-52a4-4fc8-bc8c-2d677116d631"
+    },
+    "revisions": {
+      "12f84f48-abeb-4869-a937-31827ef51a0c": [
+        {
+          "id": "6834792f-1014-450c-b1ae-c7eef4f0630b",
+          "scope": "project",
+          "report": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/checks/6834792f-1014-450c-b1ae-c7eef4f0630b.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792774960765,
+          "contentHash": "363d17b47d6e5a9d88cf2b4b494ffe9be189555b3cce98dea27ef298599f4435",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "a0030138-fed3-4a27-a5d1-d6880aa8bbf0": [
+        {
+          "id": "8b2d3f8c-52a4-4fc8-bc8c-2d677116d631",
+          "scope": "project",
+          "report": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/checks/8b2d3f8c-52a4-4fc8-bc8c-2d677116d631.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792775266643,
+          "contentHash": "0138475f401fe85bf360ce6b4b9c5af0ce0f495d7e4f6ecc9b5cba4a70b1d2bd",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "64c45ebd-675e-4f1b-ae73-adb0bf5eaf93",
+        "scope": "project",
+        "report": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/checks/64c45ebd-675e-4f1b-ae73-adb0bf5eaf93.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792774851101,
+        "contentHash": "3be82f476e0e05884bb2a928cac3bafb0a753f8a98110081fe07d1cd62aeea75",
+        "revision": null,
+        "inputFingerprint": "532dfd9fa742f5cac14300cabd357ebf92da29e44771adf42bbe75db5cd541fb",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+      "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-18"
+    },
+    "revisions": {
+      "12f84f48-abeb-4869-a937-31827ef51a0c": [
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-0",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-01-at-0.3s.png",
+          "time": 0.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "e63eaebe6575a7d9a0d5ff30e6c10d46fd778b98db0e6ef74214fafa735aa7ab",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-1",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-02-at-2.375s.png",
+          "time": 2.375,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s1 mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "7bdc80b302438bf437e0f03adbfa5a64a31b44988c6fbcd3ccd3df9f5fbc63c0",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-2",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-03-at-5.05s.png",
+          "time": 5.05,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "a13111d12a00f718798e6cc48495aa4fac6b27897e02391e2ed7dc8961f199e7",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-3",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-04-at-8.9s.png",
+          "time": 8.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s2 mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "52d7601bc62a31ee89ddcde31b98303607b0644a783a08daa6a13cbbee3203bf",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-4",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-05-at-13.35s.png",
+          "time": 13.35,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s3"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "2d5070424c2f25e85fa6474634f0a8333bb16955fd60ae2b75618152de809f3f",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-5",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-06-at-17.05s.png",
+          "time": 17.05,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s3 mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "3422fd1575cd89f265b3a16dc003d926f1cd24ee1fcff4ad5cab4b002cff63d6",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-6",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-07-at-21.35s.png",
+          "time": 21.35,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s4"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "859482d5c0cea3eb9715623cf448c99484ba7b3061c126645a276fdc9bd23e8f",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-7",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-08-at-22.825s.png",
+          "time": 22.825,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s4 mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "7ae87fdee28617ccc77c3be045969e7d556837947de6904195a93d53c3d5eb7d",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-8",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-09-at-24.9s.png",
+          "time": 24.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s5"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "d782add76fe55ab35030491621b34810fe71cbc02a02b3a9ef32231589c38419",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-9",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-10-at-31.075s.png",
+          "time": 31.075,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s5 mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "9bbb0394888d05395d5ef3cfcf7fad4ff10ab7abd43a1d6892b530743e2b80a8",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-10",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-11-at-37.85s.png",
+          "time": 37.85,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s6"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "54a34ba4a225142d305430426b069eb23efcac8098dd6de4756720b47fd9f0ab",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-11",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/beat-12-at-41.525s.png",
+          "time": 41.525,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "beat",
+              "label": "s6 mid"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "f8ba73ecd7b17a83e32c5294db2b64844191169cc664f1621557abe6198c8a46",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-12",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-01-1-at-4.55s.png",
+          "time": 4.55,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043223,
+          "contentHash": "fae943bed835da60f9d86e9b734c96acb00292633fc9ea5b30db7d8e851d10f5",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-13",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-01-2-at-4.65s.png",
+          "time": 4.65,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "494e487a6fbe27fb5a4afc9ba1f97b74b434fd9a758d72863e26b6279140efa5",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-14",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-01-3-at-4.75s.png",
+          "time": 4.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut s1 -> s2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "db9a5e640ae05eba8788111c8900f2b3cb9d8257c901639ecae0a688de93a914",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-15",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-01-4-at-4.85s.png",
+          "time": 4.85,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "3287d0fcac734fd59281b34c37f3986b075ef85a0cabdfbdf52d01d2a15ae9d8",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-16",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-01-5-at-4.95s.png",
+          "time": 4.95,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "8da51c3651ad80d6a9b31e146bb3ccb8b9a7b3c7e16edba093d1f97fe92788a0",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-17",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-02-1-at-12.85s.png",
+          "time": 12.85,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "59306d57ec75b6636bf6c233cb706010f04b38a7d82bb211e245a5b1bb640bd0",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-18",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-02-2-at-12.95s.png",
+          "time": 12.95,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "e2584d4bef84671495cef1dbeb03acbe9073c2d66be44946febc94f0c190723b",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-19",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-02-3-at-13.05s.png",
+          "time": 13.05,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut s2 -> s3"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "7f8bd2eacd6f0d3b3a64ef38247fad1e91395437da6f746f4cdaf410fe888ecf",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-20",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-02-4-at-13.15s.png",
+          "time": 13.15,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "99b8c1fa61339359e4191c92e97f7a228e6461309718d3284b89f46ce57c9dec",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-21",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-02-5-at-13.25s.png",
+          "time": 13.25,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "303e1634c413481dc326499df387d46fe3dd2c2c3b2444ce40029c02df98c257",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-22",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-03-1-at-20.85s.png",
+          "time": 20.85,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043224,
+          "contentHash": "67fed7a234244fa841b02407217125d676dc14ff70c71feb9f290d7191453404",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-23",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-03-2-at-20.95s.png",
+          "time": 20.95,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043225,
+          "contentHash": "f7a93c28376f3882b420cefe7305ca503cb351d70d6aaf94eb1efac3fc2354c1",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-24",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-03-3-at-21.05s.png",
+          "time": 21.05,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut s3 -> s4"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043225,
+          "contentHash": "7f109f239fa9c709f4e4d567151f334136a4e6a1caa2b566296b9a22c9434011",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-25",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-03-4-at-21.15s.png",
+          "time": 21.15,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043225,
+          "contentHash": "702e43247316da35b1e348c673aff0674f1afbe0ed612b16d74ceac63cc3708f",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-26",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-03-5-at-21.25s.png",
+          "time": 21.25,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043225,
+          "contentHash": "b3056df3f58b2fcb2ae2da0daaf1f3cf433e28f25556cda199c84bd28f8ae53a",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-27",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-04-1-at-24.4s.png",
+          "time": 24.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043225,
+          "contentHash": "3e7d5fd203b79531a1b31983ba4626cbba7bb7a7c1d9da4c572fa58fff37fe6e",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-28",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-04-2-at-24.5s.png",
+          "time": 24.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043225,
+          "contentHash": "523ee3aeb5cc0c9c6d570c50c1d9148b0d03732435690358d6315827485351ea",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-29",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-04-3-at-24.6s.png",
+          "time": 24.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut s4 -> s5"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043225,
+          "contentHash": "b4a9f6ed2abbca8dc3fb365d29f82317feff691ef21b18259d11b5a64e3f584b",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-30",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-04-4-at-24.7s.png",
+          "time": 24.7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043225,
+          "contentHash": "42386b141223d94fa7a4d05e73c582ffb4fac641533d904c8db667b4b18b2138",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-31",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-04-5-at-24.8s.png",
+          "time": 24.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043225,
+          "contentHash": "99e72f2606677fcd072061fc9e39fb7dd341f5d2ce72b5dc856ee12ac5c428ac",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-32",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-05-1-at-37.35s.png",
+          "time": 37.35,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut -0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043226,
+          "contentHash": "8ddd17af040affd766b69c9068d7fa5b23629d1ae047435f805b68dcd957a58e",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-33",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-05-2-at-37.45s.png",
+          "time": 37.45,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "-0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043226,
+          "contentHash": "d0640a9022dd4b818e32ad0b59375244712f84babf61ed636c852e2911a6e511",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-34",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-05-3-at-37.55s.png",
+          "time": 37.55,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "cut s5 -> s6"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043226,
+          "contentHash": "5b9a631430e1fc0025889b69ce85771db836e78688c5e9ef389f416a9be82017",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-35",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-05-4-at-37.65s.png",
+          "time": 37.65,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.1"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043226,
+          "contentHash": "5b9a631430e1fc0025889b69ce85771db836e78688c5e9ef389f416a9be82017",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "57b82383-e092-43ed-a190-413d75f5a498-36",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/d8a7e0b3-4163-40b5-9a80-5f644c687bcd/seam-05-5-at-37.75s.png",
+          "time": 37.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "review": {
+              "role": "seam",
+              "label": "+0.2"
+            },
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775043226,
+          "contentHash": "abbcb640d589d61c0e610a31372e2f802b70643b2b58002bc20b8c0f9a69096c",
+          "revision": "12f84f48-abeb-4869-a937-31827ef51a0c",
+          "inputFingerprint": "0230e511cd85140e251fe02394ca123fde5b329eab5375e4190a53464af1ff0d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "a0030138-fed3-4a27-a5d1-d6880aa8bbf0": [
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-0",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-00-at-0.4s.png",
+          "time": 0.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302297,
+          "contentHash": "5befefe7231a4c85c5cad2c4ef82a3551aefa491b32c08d6648faba1c1e28cd5",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-1",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-01-at-2.5s.png",
+          "time": 2.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302298,
+          "contentHash": "f7b378b2139823d1cd811368fe0a25a2307055bed767fb30d87e0606e6dd46f5",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-2",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-02-at-3.7s.png",
+          "time": 3.7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302299,
+          "contentHash": "d61ea6b2387b13e4bdb507c8bc47b8236ddbb26a738cd07f3cc9a8881df50300",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-3",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-03-at-5.6s.png",
+          "time": 5.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302299,
+          "contentHash": "c03f72b61d5c709183d1605e5b03ef738bb3cffbaec3fed4712344a0ef8514df",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-4",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-04-at-8.4s.png",
+          "time": 8.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302299,
+          "contentHash": "7fb9a6a3cadfd67559cca67e6c59c2242b374ec8adda432729c2ea13a4fc3e62",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-5",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-05-at-9.9s.png",
+          "time": 9.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302299,
+          "contentHash": "aafee538f3eb3d48336476b74d5835a8c3a4545ba7fd9a5f25eeb195dd340f24",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-6",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-06-at-11.6s.png",
+          "time": 11.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302299,
+          "contentHash": "944ae5414c26a276a1b2964b1ea85e94ebb0f4ac81786f359be4adacafaf5487",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-7",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-07-at-12.8s.png",
+          "time": 12.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302300,
+          "contentHash": "6e2dbfcdf74f99fcae22912dc20ff82d59cf19587c3ee29a0159eee3cd8a46a3",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-8",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-08-at-13.6s.png",
+          "time": 13.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302300,
+          "contentHash": "01d05ddda53343b4094f93445f167b0db843da067d38a2316f3c92bda75d13c6",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-9",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-09-at-15s.png",
+          "time": 15,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302300,
+          "contentHash": "8bb9baefe6be85de7f1f0c2bb224d928fe77c92ba0c6153de76417056f7d0323",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-10",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-10-at-17.1s.png",
+          "time": 17.1,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302300,
+          "contentHash": "ff1e1af42dbea2f6a2115236921c8f67a45b79c3be6bed7a85ac5ec8a95731fd",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-11",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-11-at-19.2s.png",
+          "time": 19.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302301,
+          "contentHash": "8c0f1b2eed8145f58a8b055de5231b1977dafa870d6f1adabb8292ad110a8882",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-12",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-12-at-23.3s.png",
+          "time": 23.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302301,
+          "contentHash": "da5a2fd013e326bf131d2c1bf018ca2ef5c8a65474d7b383d6678485407ba319",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-13",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-13-at-27.2s.png",
+          "time": 27.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302301,
+          "contentHash": "b6464903b926851546a42ba5266a6c79cedfe6c1b7499792c95d811de0f398d7",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-14",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-14-at-33s.png",
+          "time": 33,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302302,
+          "contentHash": "85802c7bff27ae86112340e6e1a55fe83d27f5220986197f9fc73a65c522bc8b",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-15",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-15-at-36.3s.png",
+          "time": 36.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302303,
+          "contentHash": "ac8db66f7ba06cf4e735629f19f0361fe43c5e92c47056d6fb057f5f13fb4d89",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-16",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-16-at-40s.png",
+          "time": 40,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302303,
+          "contentHash": "a041f6d91920f3f718e29039e434b8cf6330850db630ed8214c4a3d19f423bde",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-17",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-17-at-43.5s.png",
+          "time": 43.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302303,
+          "contentHash": "03d9f83866519b16c30d781dce2c9e6a041e82be5d4bbf0e320510992f3d3126",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "96feaf91-c96f-4f71-9f46-bba27bb2b17f-18",
+          "image": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/film/.hyperframes/artifacts/snapshots/c61febc9-33fb-416c-b368-7910ae020fbe/frame-18-at-44.135s.png",
+          "time": 44.135,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792775302304,
+          "contentHash": "03d9f83866519b16c30d781dce2c9e6a041e82be5d4bbf0e320510992f3d3126",
+          "revision": "a0030138-fed3-4a27-a5d1-d6880aa8bbf0",
+          "inputFingerprint": "74c39999bf62362c67362b38d1179b2480783eaf8845370b5282cdc07832f63a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "32cf2c3d-f409-4fe1-ba5c-1f5a258e9aed",
+      "completedAt": 1792775625287,
+      "output": "/Users/ravikumar/Cheeko Master/cheeko-v2-website/brag-output-2026-10-23-cheeko-store/review/V55-cheeko-store-v1.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

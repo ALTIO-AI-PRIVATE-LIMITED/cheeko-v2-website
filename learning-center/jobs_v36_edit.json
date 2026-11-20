@@ -1,0 +1,86 @@
+[
+ {
+  "tag": "lc_mummy_hen",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_hen.jpg",
+  "prompt": "Edit this picture: remove the yellow chick completely, so only the hen is left. Keep the hen exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_dog",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_dog.jpg",
+  "prompt": "Edit this picture: remove the puppy completely, so only the mother dog is left. Keep the mother dog exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_cat",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_cat.jpg",
+  "prompt": "Edit this picture: remove the kitten completely, so only the mother cat is left. Keep the mother cat exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_cow",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_cow.jpg",
+  "prompt": "Edit this picture: remove the calf completely, so only the cow is left. Keep the cow exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_sheep",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_sheep.jpg",
+  "prompt": "Edit this picture: remove the lamb completely, so only the mother sheep is left. Keep the mother sheep exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_horse",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_horse.jpg",
+  "prompt": "Edit this picture: remove the foal completely, so only the mother horse is left. Keep the mother horse exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_duck",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_duck.jpg",
+  "prompt": "Edit this picture: remove the duckling completely, so only the mother duck is left. Keep the mother duck exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_pig",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_pig.jpg",
+  "prompt": "Edit this picture: remove the piglet completely, so only the mother pig is left. Keep the mother pig exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_lioness",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_lion.jpg",
+  "prompt": "Edit this picture: remove the lion cub completely, so only the lioness is left. Keep the lioness exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_kangaroo",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_kangaroo.jpg",
+  "prompt": "Edit this picture: remove the joey peeking out of her pouch completely, so only the mother kangaroo is left. Her pouch is now empty and closed. Keep the mother kangaroo exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_frog",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/mum_frog.jpg",
+  "prompt": "Edit this picture: remove the small tadpole in the water completely, so only the big frog is left. Keep the big frog exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ },
+ {
+  "tag": "lc_mummy_elephant",
+  "model": "dola-seedream-5-0-flash-260915",
+  "size": "1536x1152",
+  "ref": "/root/tts-compare/v36ref/elephant_pair.jpg",
+  "prompt": "Edit this picture: remove the baby elephant completely, so only the big mother elephant is left. Keep the big mother elephant exactly the same: same place, same pose, same size, same colours, same 3D toy style and lighting. Fill the empty space with the same plain soft sky-blue background and soft floor shadow. Do not add anything else. No text, no letters, no logos."
+ }
+]

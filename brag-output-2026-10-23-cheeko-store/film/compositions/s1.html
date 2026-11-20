@@ -1,0 +1,57 @@
+<!-- S1 hook (0 to 4.75 s): the boy has finished everything on his Cheeko. "DONE." x3, "x2", then Mumma: "So, now what?" -->
+<template>
+  <style>
+    @font-face { font-family: 'Gabarito'; src: url('assets/fonts/Gabarito.woff2') format('woff2'); font-weight: 400 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #FFC81A; }
+    #s1-floor { position: absolute; left: -60px; right: -60px; top: 1080px; height: 140px; border-radius: 50%; background: rgba(35, 26, 16, .07); }
+    .s1-st { position: absolute; filter: drop-shadow(0 18px 24px rgba(35, 26, 16, .22)); }
+    .dev { position: absolute; }
+    .dev > img.d { position: absolute; inset: 0; width: 100%; height: 100%; filter: drop-shadow(0 26px 30px rgba(35, 26, 16, .3)); }
+    .scr { position: absolute; left: 16.19%; top: 7.71%; width: 65.26%; height: 32.5%; overflow: hidden; background: #1D1A17;
+      -webkit-mask: url('assets/img/screen_mask.png') 0 0/100% 100% no-repeat; mask: url('assets/img/screen_mask.png') 0 0/100% 100% no-repeat; }
+    .scr img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: fill; }
+    .stamp { position: absolute; font-family: 'Gabarito', sans-serif; font-weight: 900; font-size: 140px; line-height: 1; letter-spacing: -.02em;
+      color: #231A10; border: 12px solid #231A10; border-radius: 30px; padding: 6px 30px 14px; white-space: nowrap; }
+    #s1-x2 { color: #FFF6E8; background: #F0521D; border-color: #F0521D; font-size: 130px; }
+    #s1-iris { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; background: #FFF6E8; clip-path: circle(0px at 540px 2000px); }
+  </style>
+  <div data-hf-id="hf-qmpn" id="root" data-composition-id="s1" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-nmug" id="s1-floor"></div>
+    <img data-hf-id="hf-lg52" id="s1-boy" class="s1-st" src="assets/img/st_c5-theory.png" style="left:40px;top:490px;width:600px" />
+    <div data-hf-id="hf-bbeg" id="s1-dev" class="dev" style="left:690px;top:620px;width:330px;height:552px">
+      <img data-hf-id="hf-1zye" class="d" src="assets/img/cheeko_yellow.png" />
+      <div data-hf-id="hf-zn7g" class="scr">
+        <img data-hf-id="hf-zh3a" id="s1-scr-home" class="clip" data-start="0" data-duration="0.35" src="assets/img/fw_00_home_clock.png" />
+        <img data-hf-id="hf-lfat" id="s1-scr-nani" class="clip" data-start="0.35" data-duration="0.7" src="assets/img/fw_03_talk_4_nani_6_talking.png" />
+        <img data-hf-id="hf-38gd" id="s1-scr-quizzy" class="clip" data-start="1.05" data-duration="0.7" src="assets/img/fw_03_talk_2_quizzy_6_talking.png" />
+        <img data-hf-id="hf-jcpr" id="s1-scr-mitthu" class="clip" data-start="1.75" data-duration="0.65" src="assets/img/fw_03_talk_5_mitthu_6_talking.png" />
+        <img data-hf-id="hf-dn58" id="s1-scr-home2" class="clip" data-start="2.4" data-duration="2.35" src="assets/img/fw_00_home_clock.png" />
+      </div>
+    </div>
+    <div data-hf-id="hf-fzg5" id="s1-d1" class="stamp" style="left:50px;top:150px">DONE.</div>
+    <div data-hf-id="hf-dxb5" id="s1-d2" class="stamp" style="left:530px;top:215px">DONE.</div>
+    <div data-hf-id="hf-xt4y" id="s1-d3" class="stamp" style="left:190px;top:350px">DONE.</div>
+    <div data-hf-id="hf-ilxz" id="s1-x2" class="stamp" style="left:800px;top:410px">×2</div>
+    <img data-hf-id="hf-fw7r" id="s1-mumma" class="s1-st" src="assets/img/st_b3-mumma-tired.png" style="left:430px;top:200px;width:620px" />
+    <div data-hf-id="hf-s9jr" id="s1-iris"></div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    // frame 0 already shows the boy, Cheeko and the first stamp landing
+    tl.fromTo("#s1-boy", { scale: .94, rotation: 0, transformOrigin: "50% 100%" }, { scale: 1, duration: .5, ease: "back.out(1.6)" }, 0);
+    tl.set("#s1-dev", { y: 0, transformOrigin: "50% 100%" }, 0);
+    tl.fromTo("#s1-dev", { scale: .9 }, { scale: 1, duration: .5, ease: "back.out(1.6)" }, .05);
+    [["#s1-d1", .3, -8], ["#s1-d2", 1.0, 6], ["#s1-d3", 1.7, -4], ["#s1-x2", 2.16, 10]].forEach(([id, t, r]) => {
+      tl.fromTo(id, { scale: 2.4, rotation: r, opacity: 0 }, { scale: 1, opacity: 1, duration: .16, ease: "power4.in" }, t);
+    });
+    [.35, 1.05, 1.75].forEach(t => tl.to("#s1-dev", { y: -10, duration: .08, yoyo: true, repeat: 1, ease: "power1.out" }, t));   // a small hop as each screen changes
+    // stamps leave, Mumma arrives: "So, now what?"
+    tl.to(["#s1-d1", "#s1-d2", "#s1-d3", "#s1-x2"], { opacity: 0, filter: "blur(10px)", duration: .2, stagger: .03, ease: "power2.in" }, 2.95);
+    tl.fromTo("#s1-mumma", { x: 760, opacity: 1 }, { x: 0, duration: .45, ease: "expo.out" }, 3.12);
+    tl.to("#s1-boy", { rotation: -3, duration: .4, ease: "power2.out" }, 3.3);
+    // her phone opens the next world: iris from her hands
+    tl.fromTo("#s1-iris", { clipPath: "circle(0px at 540px 2000px)" }, { clipPath: "circle(2300px at 540px 2000px)", duration: .45, ease: "power3.in" }, 4.3);
+    window.__timelines["s1"] = tl;
+  </script>
+</template>

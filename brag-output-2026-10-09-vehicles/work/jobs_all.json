@@ -1,0 +1,164 @@
+[
+ {
+  "tag": "v03_truck",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered bright orange goods truck with a big open cargo bed for a children's picture book, smooth glossy rounded shapes, the whole truck visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the truck.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v04_bicycle",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered green bicycle with a small front basket for a children's picture book, smooth glossy rounded shapes, the whole bicycle visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the bicycle.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v05_motorbike",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered red motorbike for a children's picture book, smooth glossy rounded shapes, the whole motorbike visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the motorbike.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v07_train",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered red and yellow passenger train engine pulling two coaches on rails for a children's picture book, smooth glossy rounded shapes, the whole train visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the train.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v08_boat",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered small wooden rowing boat with two oars, floating on a little patch of water for a children's picture book, smooth glossy rounded shapes, the whole boat visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the boat.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v09_auto_rickshaw",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered Indian auto rickshaw with three wheels, a yellow roof and a green body for a children's picture book, smooth glossy rounded shapes, the whole auto rickshaw visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the auto rickshaw.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v10_scooter",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered light blue scooter for a children's picture book, smooth glossy rounded shapes, the whole scooter visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the scooter.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v11_fire_engine",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered red fire engine with a long ladder on top and siren lights for a children's picture book, smooth glossy rounded shapes, the whole fire engine visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the fire engine.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v12_ambulance",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white ambulance van with red stripes and blue siren lights on the roof, with no cross symbol for a children's picture book, smooth glossy rounded shapes, the whole ambulance visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the ambulance.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v13_police_car",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white and dark blue police car with a red and blue light bar on the roof for a children's picture book, smooth glossy rounded shapes, the whole police car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the police car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v14_helicopter",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered yellow helicopter with big rotor blades for a children's picture book, smooth glossy rounded shapes, the whole helicopter visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the helicopter.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v15_ship",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered big ship with a white hull, a red funnel and stacked colourful containers, on a little patch of sea for a children's picture book, smooth glossy rounded shapes, the whole ship visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the ship.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v16_tractor",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered green farm tractor with big back wheels and small front wheels for a children's picture book, smooth glossy rounded shapes, the whole tractor visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the tractor.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v17_school_bus",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered yellow school bus for a children's picture book, smooth glossy rounded shapes, the whole school bus visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the school bus.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v18_cycle_rickshaw",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered Indian cycle rickshaw: a three-wheeled pedal tricycle with a rider seat in front and a covered passenger seat with a folding canopy at the back for a children's picture book, smooth glossy rounded shapes, the whole cycle rickshaw visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the cycle rickshaw.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v19_garbage_truck",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered green garbage truck with a big rear loader for bins for a children's picture book, smooth glossy rounded shapes, the whole garbage truck visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the garbage truck.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v20_hot_air_balloon",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered colourful striped hot air balloon with a wicker basket, floating for a children's picture book, smooth glossy rounded shapes, the whole hot air balloon visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the hot air balloon.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v21_excavator",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered yellow excavator on crawler tracks with a long digging arm and bucket for a children's picture book, smooth glossy rounded shapes, the whole excavator visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the excavator.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v22_cement_mixer",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered cement mixer truck with a big striped rotating drum for a children's picture book, smooth glossy rounded shapes, the whole cement mixer truck visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the cement mixer truck.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v23_crane",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered yellow and red mobile crane truck with a long raised boom and a hook for a children's picture book, smooth glossy rounded shapes, the whole crane visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the crane.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v24_road_roller",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered yellow road roller with a huge smooth steel drum at the front for a children's picture book, smooth glossy rounded shapes, the whole road roller visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the road roller.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v25_bulldozer",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered orange bulldozer on crawler tracks with a big flat front blade for a children's picture book, smooth glossy rounded shapes, the whole bulldozer visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the bulldozer.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v26_rocket",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered white and red space rocket standing upright on a small launch pad for a children's picture book, smooth glossy rounded shapes, the whole rocket visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the rocket.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v27_submarine",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered red and white submarine with a periscope and a propeller, underwater with a few bubbles for a children's picture book, smooth glossy rounded shapes, the whole submarine visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the submarine.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v28_tram",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered red and cream city tram on rails with a pole touching an overhead wire for a children's picture book, smooth glossy rounded shapes, the whole tram visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the tram.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v29_cable_car",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered red cable car cabin hanging from a thick cable, high in the air for a children's picture book, smooth glossy rounded shapes, the whole cable car visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the cable car.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ },
+ {
+  "tag": "v30_hovercraft",
+  "model": "dola-seedream-5-0-flash-260915",
+  "prompt": "A cute 3D rendered hovercraft with a black inflated rubber skirt and a big fan at the back, gliding on a little patch of water for a children's picture book, smooth glossy rounded shapes, the whole hovercraft visible in a three-quarter front side view, centred with space around it, on a plain soft sky-blue background with a gentle shadow under it. No people, no driver, no text, no letters, no numbers, no number plate, no logos, no brand badges, no flags. Use the reference image only for its style: the same 3D toy render look, soft lighting, plain sky-blue background and camera angle. Do not copy the car; the subject is the hovercraft.",
+  "ref": "/root/tts-compare/out/v31/test2_car_toy_seedflash.jpg"
+ }
+]

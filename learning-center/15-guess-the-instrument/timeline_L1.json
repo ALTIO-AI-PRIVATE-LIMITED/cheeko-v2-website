@@ -1,0 +1,244 @@
+{
+ "idea": "15-guess-the-instrument",
+ "id": "V46",
+ "level": 1,
+ "nLevels": 2,
+ "mode": "sound",
+ "theme": {
+  "bg": "notes",
+  "pals": [
+   [
+    "#E599F7",
+    "#862E9C"
+   ],
+   [
+    "#FFC078",
+    "#D9480F"
+   ],
+   [
+    "#91A7FF",
+    "#364FC7"
+   ],
+   [
+    "#8CE99A",
+    "#2B8A3E"
+   ],
+   [
+    "#FFA8A8",
+    "#C92A2A"
+   ]
+  ],
+  "trans": "zoom",
+  "enter": "pop",
+  "fx": "stars",
+  "knob": "🎵",
+  "bar": [
+   "#E599F7",
+   "#CC5DE8"
+  ],
+  "music": "indian"
+ },
+ "answer": 4,
+ "dur": 127.92,
+ "n": 10,
+ "t1": "Guess the",
+ "t2": "Instrument!",
+ "head": "What is <span>playing</span>?",
+ "chips": [
+  [
+   "?",
+   "Listen closely"
+  ],
+  [
+   "4",
+   "4 seconds"
+  ],
+  [
+   "!",
+   "Say the name"
+  ]
+ ],
+ "outroText": [
+  "Awesome!",
+  "Level 1 done!",
+  "Play Level 2!"
+ ],
+ "intro": {
+  "hi": 0.45,
+  "title": 2.0383958333333334,
+  "level": 3.9925625,
+  "rules": 5.370833333333333,
+  "go": 8.751416666666666
+ },
+ "rounds": [
+  {
+   "k": 1,
+   "start": 10.575,
+   "label": "Drum",
+   "pill": "Drum",
+   "times": {
+    "snd0": 1.619,
+    "snd1": 3.999,
+    "tick0": 4.299,
+    "reveal": 8.299,
+    "name": 8.549
+   },
+   "dur": 10.899,
+   "img": "inst_drum"
+  },
+  {
+   "k": 2,
+   "start": 21.473,
+   "label": "Piano",
+   "pill": "Piano",
+   "times": {
+    "snd0": 2.436,
+    "snd1": 5.036,
+    "tick0": 5.336,
+    "reveal": 9.336,
+    "name": 9.586
+   },
+   "dur": 11.936,
+   "img": "inst_piano"
+  },
+  {
+   "k": 3,
+   "start": 33.409,
+   "label": "Guitar",
+   "pill": "Guitar",
+   "times": {
+    "snd0": 1.743,
+    "snd1": 4.343,
+    "tick0": 4.643,
+    "reveal": 8.643,
+    "name": 8.893
+   },
+   "dur": 11.243,
+   "img": "inst_guitar"
+  },
+  {
+   "k": 4,
+   "start": 44.653,
+   "label": "Flute",
+   "pill": "Flute",
+   "times": {
+    "snd0": 1.658,
+    "snd1": 4.258,
+    "tick0": 4.558,
+    "reveal": 8.558,
+    "name": 8.808
+   },
+   "dur": 11.158,
+   "img": "inst_flute"
+  },
+  {
+   "k": 5,
+   "start": 55.811,
+   "label": "Tabla",
+   "pill": "Tabla",
+   "times": {
+    "snd0": 1.546,
+    "snd1": 4.146,
+    "tick0": 4.446,
+    "reveal": 8.446,
+    "name": 8.696
+   },
+   "dur": 11.046,
+   "img": "tabla"
+  },
+  {
+   "k": 6,
+   "start": 66.857,
+   "label": "Bell",
+   "pill": "Bell",
+   "times": {
+    "snd0": 1.534,
+    "snd1": 4.134,
+    "tick0": 4.434,
+    "reveal": 8.434,
+    "name": 8.684
+   },
+   "dur": 11.034,
+   "img": "inst_bell"
+  },
+  {
+   "k": 7,
+   "start": 77.891,
+   "label": "Xylophone",
+   "pill": "Xylophone",
+   "times": {
+    "snd0": 1.48,
+    "snd1": 2.84,
+    "tick0": 3.14,
+    "reveal": 7.14,
+    "name": 7.39
+   },
+   "dur": 9.74,
+   "img": "inst_xylophone"
+  },
+  {
+   "k": 8,
+   "start": 87.631,
+   "label": "Trumpet",
+   "pill": "Trumpet",
+   "times": {
+    "snd0": 1.53,
+    "snd1": 3.53,
+    "tick0": 3.83,
+    "reveal": 7.83,
+    "name": 8.08
+   },
+   "dur": 10.43,
+   "img": "inst_trumpet"
+  },
+  {
+   "k": 9,
+   "start": 98.061,
+   "label": "Violin",
+   "pill": "Violin",
+   "times": {
+    "snd0": 1.659,
+    "snd1": 3.999,
+    "tick0": 4.299,
+    "reveal": 8.299,
+    "name": 8.549
+   },
+   "dur": 10.899,
+   "img": "inst_violin"
+  },
+  {
+   "k": 10,
+   "start": 108.96,
+   "label": "Maracas",
+   "pill": "Maracas",
+   "times": {
+    "snd0": 1.801,
+    "snd1": 3.688,
+    "tick0": 3.988,
+    "reveal": 7.988,
+    "name": 8.238
+   },
+   "dur": 11.154,
+   "img": "inst_maracas"
+  }
+ ],
+ "outroStart": 120.114,
+ "outro": {
+  "done": 120.46379216666668,
+  "howmany": 122.16952133333334,
+  "next": 123.85764633333334,
+  "bye": 125.492188
+ },
+ "paths": {
+  "inst_drum": "../images/inst_drum.jpg",
+  "inst_piano": "../images/inst_piano.jpg",
+  "inst_guitar": "../images/inst_guitar.jpg",
+  "inst_flute": "../images/inst_flute.jpg",
+  "tabla": "../images/tabla.jpg",
+  "inst_bell": "../images/inst_bell.jpg",
+  "inst_xylophone": "../images/inst_xylophone.jpg",
+  "inst_trumpet": "../images/inst_trumpet.jpg",
+  "inst_violin": "../images/inst_violin.jpg",
+  "inst_maracas": "../images/inst_maracas.jpg"
+ }
+}

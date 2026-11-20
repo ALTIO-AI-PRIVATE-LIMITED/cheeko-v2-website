@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<!-- V08 Tiny CEO: the grown-up feed on the parent's phone, 4 iPhone screens stacked (393 x 852 pt each, rendered at 3x).
+     Made-up accounts and posts, no real brands. The top 59 pt stay clear for the iOS status bar the template draws. -->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:393px;background:#000;font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;color:#fff}
+.s{position:relative;width:393px;height:852px;overflow:hidden}
+.top{position:absolute;top:62px;left:0;right:0;display:flex;justify-content:center;gap:22px;font-weight:700;font-size:16px;opacity:.95}
+.top span{opacity:.6}.top b{border-bottom:2px solid #fff;padding-bottom:4px}
+.grid{position:absolute;top:104px;left:10px;right:10px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tile{height:218px;border-radius:14px;padding:12px;display:flex;flex-direction:column;justify-content:flex-end;font-weight:800;font-size:15px;line-height:1.2;position:relative}
+.tile i{position:absolute;top:14px;left:12px;font-style:normal;font-size:48px}
+.tile small{display:block;font-weight:600;font-size:11px;opacity:.8;margin-top:4px}
+.big{position:absolute;left:24px;right:64px;top:360px;font-weight:900;letter-spacing:-.02em;line-height:1.02}
+.big p{font-size:21px;font-weight:700;opacity:.9;letter-spacing:0;line-height:1.25;margin-top:14px}
+.emoji{position:absolute;left:0;right:0;text-align:center;font-size:150px;top:160px}
+.side{position:absolute;right:12px;bottom:170px;display:flex;flex-direction:column;gap:18px;align-items:center;font-size:12px;font-weight:700}
+.side div{display:flex;flex-direction:column;align-items:center;gap:3px}.side em{font-style:normal;font-size:30px}
+.who{position:absolute;left:16px;right:80px;bottom:92px;font-size:14px;line-height:1.35}
+.who b{font-size:15px}.who .sp{display:inline-block;font-size:11px;font-weight:700;background:rgba(255,255,255,.22);padding:2px 7px;border-radius:5px;margin-left:6px}
+.cta{position:absolute;left:16px;right:16px;bottom:40px;height:42px;border-radius:10px;background:#fff;color:#111;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center}
+.nav{position:absolute;left:0;right:0;bottom:0;height:34px}
+</style></head><body>
+
+<!-- 0: For you -->
+<div class="s" style="background:#0d0d10">
+  <div class="top"><span>Following</span><b>For you</b></div>
+  <div class="grid">
+    <div class="tile" style="background:linear-gradient(160deg,#1f7a4d,#0b3b24)"><i>📈</i>10 stocks to buy before 30<small>@money.monk</small></div>
+    <div class="tile" style="background:linear-gradient(160deg,#2b4a9b,#101f47)"><i>🏦</i>Home loan hacks nobody tells you<small>@loan.guru</small></div>
+    <div class="tile" style="background:linear-gradient(160deg,#b8456e,#4a1328)"><i>🧴</i>My 12-step night routine<small>@glow.after.40</small></div>
+    <div class="tile" style="background:linear-gradient(160deg,#c46b18,#3d1d02)"><i>⏰</i>Why I wake up at 4 AM<small>@hustle.daily</small></div>
+    <div class="tile" style="background:linear-gradient(160deg,#5c5c66,#1e1e24)"><i>💼</i>Passive income in 5 steps<small>@side.hustle.bhai</small></div>
+    <div class="tile" style="background:linear-gradient(160deg,#6b3fa0,#23113d)"><i>📊</i>Is your portfolio ready?<small>@market.mood</small></div>
+  </div>
+</div>
+
+<!-- 1: home loans -->
+<div class="s" style="background:linear-gradient(170deg,#1c3f94 0%,#0a1638 70%)">
+  <div class="top"><span>Following</span><b>For you</b></div>
+  <div class="emoji">🏠</div>
+  <div class="big" style="font-size:40px">PRE-APPROVED HOME LOAN<p>Rates from 8.4%* a year. EMI calculator inside.</p></div>
+  <div class="side"><div><em>♥</em>12.4k</div><div><em>💬</em>890</div><div><em>↗</em>Share</div></div>
+  <div class="who"><b>@loan.guru</b><span class="sp">Sponsored</span><br>Your dream home is one click away #EMI #dreamhome</div>
+  <div class="cta">Apply now</div>
+</div>
+
+<!-- 2: anti-ageing -->
+<div class="s" style="background:linear-gradient(170deg,#e0558a 0%,#5a1030 75%)">
+  <div class="top"><span>Following</span><b>For you</b></div>
+  <div class="emoji">🧴</div>
+  <div class="big" style="font-size:40px">LOOK 10 YEARS YOUNGER<p>Anti-ageing night cream. Wrinkles? Never heard of them.</p></div>
+  <div class="side"><div><em>♥</em>48.1k</div><div><em>💬</em>2.3k</div><div><em>↗</em>Share</div></div>
+  <div class="who"><b>@glow.after.40</b><span class="sp">Sponsored</span><br>Use code AGELESS for 20% off #skincare #over40</div>
+  <div class="cta">Shop now</div>
+</div>
+
+<!-- 3: the 4 AM club -->
+<div class="s" style="background:linear-gradient(170deg,#ff7a1a 0%,#1a0b00 72%)">
+  <div class="top"><span>Following</span><b>For you</b></div>
+  <div class="emoji">⏰</div>
+  <div class="big" style="font-size:48px">THE 4 AM CLUB<p>Wake up. Grind. Cold shower. Repeat.</p></div>
+  <div class="side"><div><em>♥</em>203k</div><div><em>💬</em>9.8k</div><div><em>↗</em>Share</div></div>
+  <div class="who"><b>@hustle.daily</b><br>Sleep is for people without goals #grindset #mindset</div>
+  <div class="cta">Follow</div>
+</div>
+</body></html>
